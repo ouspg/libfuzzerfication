@@ -1,0 +1,41 @@
+#!/bin/bash
+
+umask 022
+. build
+
+echo ========== BENCHMARKING FUZZER ==========
+export OLD_FUZZER_OPTIONS=$FUZZER_OPTIONS
+export FUZZER_OPTIONS="$FUZZER_OPTIONS -output_csv=1 -verbosity=0"
+
+echo "FUZZER_OPTIONS=$FUZZER_OPTIONS"
+echo "ASAN_OPTIONS=$ASAN_OPTIONS"
+
+cd /work
+
+for F in $FUZZERS; do
+  dat_files=()
+
+  for I in `seq 1 30`;
+  do
+    dir=`mktemp -d`
+    $F $FUZZER_OPTIONS &> "$dir/fuzzer.dat" &
+    dat_files+=("$dir/fuzzer.dat")
+  done
+  wait
+
+  fuzzer_name=$(basename $F)
+
+  #report_file=`mktemp --tmpdir=/work --suffix=.pdf report-XXXX`
+  # echo "report: $report_file"
+  report_file="/work/$fuzzer_name.pdf"
+  unique_report_file="$(mktemp --tmpdir=/work --suffix=.pdf $fuzzer_name-XXXX)"
+  chmod +r $unique_report_file
+  gnuplot \
+    -e "filenames='${dat_files[*]}'"\
+    -e "outputfile='$report_file'" \
+    -e "maintitle='$fuzzer_name ($OLD_FUZZER_OPTIONS)'" \
+    /src/scripts/plot.gp
+  cp $report_file $unique_report_file
+
+  echo "Report generated to $report_file ($unique_report_file)"
+done

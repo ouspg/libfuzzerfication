@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "umask=$(umask)"
+
+umask 022
+. build
+
+echo ========== RUNNING FUZZER ==========
+for F in $FUZZERS; do
+  FUZZER_ADDITIONAL_OPTIONS=""
+  if  [ -n "$FUZZER_DICTIONARY" ]; then
+    FUZZER_ADDITIONAL_OPTIONS="$FUZZER_ADDITIONAL_OPTIONS -dict=$FUZZER_DICTIONARY"
+  fi
+  CORPUS="/work/corpuses/$(basename $F)"
+  mkdir -p $CORPUS
+  cd $(dirname $F)
+  FUZZER_ADDITIONAL_OPTIONS="$FUZZER_ADDITIONAL_OPTIONS $CORPUS"
+  env ASAN_OPTIONS=$ASAN_OPTIONS $F $FUZZER_OPTIONS $FUZZER_ADDITIONAL_OPTIONS
+done
