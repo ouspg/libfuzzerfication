@@ -1,0 +1,2 @@
+run container with:
+docker run --rm -it libfuzzer/libxml bash
