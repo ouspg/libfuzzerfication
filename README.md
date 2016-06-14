@@ -4,7 +4,9 @@
 
 =======
 # Synopsis
-Purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from Protecode SC. Top targets are:
+Purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from Protecode SC.
+
+Currently our top targets are:
 * libxslt
 * speex
 * libflac
@@ -25,6 +27,10 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * Share dockerfile with other users
 * Use libFuzzer to collect corpus so that other people can continue where you left off
 
+# To whom is this?
+* library developers
+* users
+
 # Material
 
 * [libFuzzer](http://llvm.org/docs/LibFuzzer.html)
@@ -36,6 +42,14 @@ There have been lots of vulnerabilities in popular libraries that should have be
 # How is this different from libfuzzer-bot?
 * Stubs
 * Dockerfiles
+
+# About libfuzzer
+* For fuzzing "libs"
+* requires stub "main" to hook the function to be tested & lib init
+* stub + lib compiled with asan/msan/ubsan
+* uses the sanitizer
+* clang build -> C/C++
+* Fast!
 
 # Contributors
 * Mikko Yliniemi (mikessu)
