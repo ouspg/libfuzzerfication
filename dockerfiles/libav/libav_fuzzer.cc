@@ -1,24 +1,30 @@
 #include <string.h>
 #include <stdint.h>
 #include "libavcodec/avcodec.h"
+#include "libavutil/avutil.h"
 
 #define INBUF_SIZE 4096
 #define AUDIO_INBUF_SIZE 20480
 #define AUDIO_REFILL_THRESH 4096
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+  avcodec_register_all();
 
-  c = avcodec_alloc_context3(codec);
-  c->request_sample_fmt = AV_SAMPLE_FMT_S16;
+  picture = av_frame_alloc();
+  parser = av_parser_init(AV_CODEC_ID_H264);
 
-  avpkt.data = inbuf;
-  avpkt.size = fread(inbuf, 1, AUDIO_INBUF_SIZE, f);
+  AVPacket pkt;
+  int got_picture = 0;
+  int len = 0;
+
+  av_init_packet(&pkt);
+
+  avcodec_close(codec_context);
+  av_free(codec_context);
+  codec_context = NULL;
 
 
 
-     fclose(outfile);
-     fclose(f);
-     free(outbuf);
 
   return 0;
 }
