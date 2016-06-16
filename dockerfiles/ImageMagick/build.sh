@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 export CXXFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp"
 export CXX="clang++"
@@ -6,13 +6,6 @@ export CFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-c
 export CC="clang"
 export LDFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp"
 export LIBFUZZER_OBJS="/work/libfuzzer/*.o"
-
-#Build libFuzzer
-mkdir -p /work/libfuzzer; 
-cd /work/libfuzzer; 
-for f in /src/llvm/lib/Fuzzer/*cpp; do 
-	$CXX -std=c++11 -fsanitize=address -IFuzzer -c $f 
-done 
 
 #Build ImageMagick
 cd /src/ImageMagick
