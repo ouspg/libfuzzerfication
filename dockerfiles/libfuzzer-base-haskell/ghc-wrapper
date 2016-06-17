@@ -1,0 +1,11 @@
+#!/bin/sh
+
+ghc \
+    -fllvm \
+    -threaded \
+    -fforce-recomp \
+    -pgmP=clang \
+    -pgmc=clang \
+    -pgma=clang \
+    -pgml=clang++ \
+    $*
