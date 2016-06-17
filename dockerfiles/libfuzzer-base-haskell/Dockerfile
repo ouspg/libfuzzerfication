@@ -19,19 +19,22 @@ RUN apt-get -y update && \
         clang \
         git
 
-# Libfuzzer
-RUN mkdir -p /src /work/libfuzzer && \
-	cd /src && git clone --depth 1 http://llvm.org/git/llvm.git && \
-	cd /work/libfuzzer &&	\
-	for f in /src/llvm/lib/Fuzzer/*cpp; do \
-            clang++ -std=c++11 -IFuzzer -g -O2 -c $f; \
-        done
-
 # GHC and requirements
 RUN apt-get -y install \
         cabal-install-${CABAL_VERSION} \
         ghc-${GHC_VERSION} \
         llvm-${GHC_LLVM}
+
+# Libfuzzer (needs GHC)
+COPY FuzzerMain.cpp.patch /tmp/
+RUN mkdir -p /src /work/libfuzzer && \
+	cd /src && git clone --depth 1 http://llvm.org/git/llvm.git && \
+        cd /src/llvm/lib/Fuzzer && \
+        patch </tmp/FuzzerMain.cpp.patch && \
+	cd /work/libfuzzer && \
+	for f in /src/llvm/lib/Fuzzer/*.cpp; do \
+            clang++ -std=c++11 -IFuzzer -I/opt/ghc/${GHC_VERSION}/lib/ghc-${GHC_VERSION}/include -c $f; \
+        done
 
 # My devel tools
 RUN apt-get -y install emacs-nox
