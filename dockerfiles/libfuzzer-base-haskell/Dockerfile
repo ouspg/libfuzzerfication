@@ -48,4 +48,4 @@ ENV PATH /opt/ghc/${GHC_VERSION}/bin/:/opt/cabal/${CABAL_VERSION}/bin/:${PATH}
 COPY ghc-wrapper ghc-asan /usr/local/bin/
 RUN chmod a+x /usr/local/bin/ghc-*
 
-COPY test.hs /src/
+COPY Makefile test.hs /src/
