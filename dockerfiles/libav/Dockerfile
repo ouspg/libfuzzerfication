@@ -2,7 +2,7 @@ FROM libfuzzer/base-fuzzer
 
 MAINTAINER mikessu
 
-RUN apt-get install -y libavcodec-dev nasm pkg-config
+RUN apt-get install -y libavcodec-dev pkg-config && apt-get build-dep libavcodec-dev -y
 RUN cd /src && git clone git://git.libav.org/libav.git libav
 ADD libav_fuzzer.cc /src/libav/
 #VOLUME /src/libav
