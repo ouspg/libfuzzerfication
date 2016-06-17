@@ -1,21 +1,22 @@
 #!/bin/bash
 
-export CXXFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls"
+export CXXFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls -fPIC"
 export CXX="clang++"
-export CFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls"
+export CFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls -fPIC"
 export CC="clang"
 export LDFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls"
 export LIBFUZZER_OBJS="/home/mikko/work/libfuzzer/*.o"
 
 #Build libav
-cd /home/mikko/src/libav
-./configure --prefix=$HOME
-#make -j4
-#make install
+cd /home/mikessu/src/libav
+./configure --prefix=$HOME --cc=clang --enable-shared --disable-asm
+make -j4
+make install
 
 
 #Build fuzzer
-#$CXX $CFLAGS -std=c++11 -I$(pwd) /usr/lib/libMagick*.so -lxml2 -lm -lpthread -lz -lX11 -lfontconfig \
-#			 -lfreetype -llzma -fopenmp -lpng -ltiff -lXext -lrt -ljbig -ljpeg -lcairo -lpango-1.0 \
-#			 -lgobject-2.0 -lbz2 -lpangocairo-1.0 -llcms2 -llqr-1 -lfftw3 -lltdl \
-#			 /work/libfuzzer/Fuzzer*.o  -o ImageMagick_fuzzer ImageMagick_fuzzer.c
+#$CXX $CFLAGS -std=c++11 -I$(pwd) /home/mikessu/libfuzzer/Fuzzer*.o  -o libav_fuzzer $HOME/libav_fuzzer.c
+
+$CXX $CFLAGS -std=c++11 -I$(pwd) $(pwd)/libavutil/*.so -lz -lvdpau -lX11  \
+/home/mikessu/libfuzzer/Fuzzer*.o  $(pwd)/libavcodec/*.o $(pwd)/libavcodec/x86/*.o   $(pwd)/libavresample/*.o \
+ -o libav_fuzzer $HOME/libav_fuzzer.c
