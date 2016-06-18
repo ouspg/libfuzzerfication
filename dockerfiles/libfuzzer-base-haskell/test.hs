@@ -5,10 +5,13 @@ module Test where
 import Foreign.C.Types
 import Foreign.C.String
 
--- extern "C" int LLVMFuzzerTestOneInput(uint8_t *data, size_t size)
-foreign export ccall "LLVMFuzzerTestOneInput" testOneInput :: CString -> CSize -> IO CInt
+import qualified Data.ByteString as BS
 
-testOneInput :: CString -> CSize -> IO CInt
-testOneInput str size = do
-  putStrLn "Hello from Haskell!"
-  return 0
+-- extern "C" int LLVMFuzzerTestOneInput(uint8_t *data, size_t size)
+foreign export ccall "LLVMFuzzerTestOneInput" testOneInputM :: CString -> CSize -> IO CInt
+
+testOneInputM :: CString -> CSize -> IO CInt
+testOneInputM str size = do
+  bs <- BS.packCStringLen (str, fromIntegral size)
+  print $ BS.length bs
+  return 0 -- Non-zero return values are reserved for future use.

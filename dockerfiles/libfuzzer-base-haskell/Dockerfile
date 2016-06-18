@@ -32,12 +32,17 @@ RUN mkdir -p /src /work/libfuzzer && \
         cd /src/llvm/lib/Fuzzer && \
         patch </tmp/FuzzerMain.cpp.patch && \
 	cd /work/libfuzzer && \
-	for f in /src/llvm/lib/Fuzzer/*.cpp; do \
-            clang++ -std=c++11 -IFuzzer -I/opt/ghc/${GHC_VERSION}/lib/ghc-${GHC_VERSION}/include -c $f; \
-        done
+        clang++ -std=c++11 -IFuzzer -I/opt/ghc/${GHC_VERSION}/lib/ghc-${GHC_VERSION}/include -c /src/llvm/lib/Fuzzer/*.cpp && \
+        ar ruv libFuzzer.a Fuzzer*.o
 
 # My devel tools
 RUN apt-get -y install emacs-nox
+
+# Set Clang as default compiler
+RUN update-alternatives --set cc /usr/bin/clang && \
+    update-alternatives --set c89 /usr/bin/clang && \
+    update-alternatives --set c99 /usr/bin/clang && \
+    update-alternatives --install /usr/bin/gcc gcc /usr/bin/clang 1
 
 # GHC needs to find correct version of LLVM's opt and llc
 RUN update-alternatives --install /usr/bin/opt opt /usr/bin/opt-${GHC_LLVM} 1 && \
@@ -45,7 +50,10 @@ RUN update-alternatives --install /usr/bin/opt opt /usr/bin/opt-${GHC_LLVM} 1 &&
 
 ENV PATH /opt/ghc/${GHC_VERSION}/bin/:/opt/cabal/${CABAL_VERSION}/bin/:${PATH}
 
+RUN mkdir -p /root/.cabal/
+COPY cabal.config /root/.cabal/config
+
 COPY ghc-wrapper ghc-asan /usr/local/bin/
 RUN chmod a+x /usr/local/bin/ghc-*
 
-COPY Makefile test.hs /src/
+COPY test.hs build.sh /src/
