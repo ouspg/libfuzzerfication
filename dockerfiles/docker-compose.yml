@@ -17,8 +17,8 @@ services:
         - ~/samples:/samples
       mem_limit: 4g
       shm_size: 512M
-      entrypoint: '/src/scripts/fuzz.sh' 
-      command: [  
+      entrypoint: '/src/scripts/fuzz.sh'
+      command: [
         '/src/ImageMagick/ImageMagick_fuzzer',
         '-rss_limit_mb=4096',
         '-detect_leaks=0',
@@ -47,5 +47,15 @@ services:
         '-max_len=5000',
         '-use_counters=1',
         '-max_total_time=600',
-        '/samples/libfuzzer-libxml' 
+        '/samples/libfuzzer-libxml'
       ]
+
+  #
+  # Haskell base and libraries
+  #
+  libfuzzer-base-haskell:
+      build: ./libfuzzer-base-haskell
+      image: ouspg/libfuzzer-base-haskell
+  haskell-x509:
+      build: ./haskell-x509
+      image: ouspg/libfuzzer-haskell-x509
