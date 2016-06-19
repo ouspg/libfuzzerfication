@@ -37,6 +37,7 @@ RUN mkdir -p /src /work/libfuzzer && \
 
 # My devel tools
 RUN apt-get -y install emacs-nox
+COPY dotemacs /root/.emacs
 
 # Set Clang as default compiler
 RUN update-alternatives --set cc /usr/bin/clang && \
@@ -52,6 +53,8 @@ ENV PATH /opt/ghc/${GHC_VERSION}/bin/:/opt/cabal/${CABAL_VERSION}/bin/:${PATH}
 
 RUN mkdir -p /root/.cabal/
 COPY cabal.config /root/.cabal/config
+
+RUN cabal update && cabal install cryptohash
 
 COPY ghc-wrapper ghc-asan /usr/local/bin/
 RUN chmod a+x /usr/local/bin/ghc-*
