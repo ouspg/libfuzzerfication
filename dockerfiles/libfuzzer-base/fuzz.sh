@@ -76,7 +76,7 @@ function parse_timeout_trace {
 #    #8 0x7f6e57c68e49 in ReadDPXImage (/usr/lib/libMagickCore-7.Q16HDRI.so.0+0xb93e49)
 #
 #Example output:
-#timeout-8b9-5ee-e49
+#timeout-5ee-e49
 
 FILE=$1
 
@@ -86,8 +86,10 @@ FINGERPRINT='timeout'
 #note: we cannot do this without symbolization
 FILE=$(cat $FILE| grep -v 'in fuzzer' | grep -v '__sanitizer' | grep -v 'libpthread')
 
-#Take first three frames left.
-FRAMES=$(echo $FILE | grep -oP '#. 0x\S+' | head -3 | sed s/'#. '//g)
+#Take first three frames and discard the first. 
+#Timeout interrupts the current execution, so first valid frame can be with different
+#address even in same function.
+FRAMES=$(echo $FILE | grep -oP '#. 0x\S+' | head -3 | tail -2 | sed s/'#. '//g)
 
 for foo in $FRAMES; do 
 	FINGERPRINT="$FINGERPRINT-${foo:(-3)}"
@@ -115,13 +117,14 @@ while true; do
 			#Save results to the RESULTS_FOLDER 
 			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
 			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
-		elif [ "$(grep "ERROR: libFuzzer" ./asan.txt)" ]; then
+		elif [ "$(grep "ERROR: libFuzzer: timeout" ./asan.txt)" ]; then
 			RESULT=$(parse_timeout_trace ./asan.txt)
 			echo "New timeout: "$TARGET-$RESULT
 			#Save results to the RESULTS_FOLDER 
 			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
 			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
 		fi
+		#TODO: Add dictionary collection.
 		rm asan.txt
 	done
 done
