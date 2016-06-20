@@ -1,25 +1,20 @@
-FROM libfuzzer/base-fuzzer
+FROM ouspg/libfuzzer-base
 
-MAINTAINER mikessu
+ENV TARGET 'libav'
+
+#Install dependencies and fetch the source.
 
 RUN apt-get install -y libavcodec-dev pkg-config && apt-get build-dep libavcodec-dev -y
 RUN cd /src && git clone git://git.libav.org/libav.git libav
-ADD libav_fuzzer.cc /src/libav/
-#VOLUME /src/libav
+ADD libav_fuzzer.c /src/libav/
 
-ENV FUZZERS "/work/libav/libav_fuzzer"
-ENV CXX "clang++"
-ENV CXXFLAGS "-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp"
-ENV LIBFUZZER_OBJS "/work/libav/*.o"
-ENV LD_LIBRARY_PATH "/src/libav/.libs/"
+ADD ${TARGET}_fuzzer.c /src/$TARGET/
+RUN mkdir -p /work/$TARGET/
 
-
-RUN	mkdir -p /work/libfuzzer; \
-	cd /work/libfuzzer; \
-	for f in /src/llvm/lib/Fuzzer/*cpp; do $CXX -std=c++11 -fsanitize=address -IFuzzer -c $f & done; \
-	wait
-
+#Build
 ADD build.sh /src/scripts/
-
-RUN mkdir -p /work/libav/
 RUN bash /src/scripts/build.sh
+
+#Entrypoint and default args
+#ENTRYPOINT /src/scripts/fuzz.sh
+#CMD ['/samples/libfuzzer-libav']
