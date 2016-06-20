@@ -102,7 +102,7 @@ echo "$FINGERPRINT"
 TARGET=$(basename $1)
 echo "Target: $TARGET"
 
-export ASAN_SYMBOLIZER_PATH='/work/llvm/bin/llvm-symbolizer'
+export ASAN_SYMBOLIZER_PATH='/usr/lib/llvm-3.8/bin/llvm-symbolizer'
 #ImageMagick sometimes tries to allocate huge amounts of memory, when it does ASAN allocator fails.
 export ASAN_OPTIONS='allocator_may_return_null=1:detect_leaks=0:coverage=1:symbolize=1'
 
