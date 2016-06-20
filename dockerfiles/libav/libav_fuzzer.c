@@ -14,6 +14,10 @@ extern "C" {
 
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+
+  /* register all the codecs */
+  avcodec_register_all();
+
   AVCodec *codec;
   AVCodecContext *c= NULL;
   int len;
