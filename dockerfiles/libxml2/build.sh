@@ -6,7 +6,7 @@ export CXX="clang++"
 export CFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp"
 export CC="clang"
 export LDFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp"
-export LIBFUZZER_OBJS="/work/libfuzzer/*.o"
+export LIBFUZZER_OBJS="/work/libfuzzer/libFuzzer.a"
 export LD_LIBRARY_PATH="/src/libxml2/.libs/"
 
 
