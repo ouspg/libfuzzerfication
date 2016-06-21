@@ -10,8 +10,8 @@ RUN mkdir /src /work && \
 	git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer && \
 	clang++ -c -g -O2 -std=c++11 Fuzzer/*.cpp -IFuzzer && \
 	ar ruv libFuzzer.a Fuzzer*.o && \
-	mkdir -p /work/libfuzzer && \ 
-	cp libFuzzer.a /work/libfuzzer && \
+	mkdir -p /work/libfuzzer && \
+	cp libFuzzer.a /usr/local/lib
 	rm *.o && \
 	rm -rf Fuzzer
 
