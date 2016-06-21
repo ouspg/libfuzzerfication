@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 RUN apt-get update && \
 	apt-get upgrade -y && \
-	apt-get install -y build-essential git clang
+	apt-get install -y  git clang
 
 # Checkout & build libFuzzer
 #
@@ -11,7 +11,9 @@ RUN mkdir /src /work && \
 	clang++ -c -g -O2 -std=c++11 Fuzzer/*.cpp -IFuzzer && \
 	ar ruv libFuzzer.a Fuzzer*.o && \
 	mkdir -p /work/libfuzzer && \ 
-	cp libFuzzer.a /work/libfuzzer
+	cp libFuzzer.a /work/libfuzzer && \
+	rm *.o && \
+	rm -rf Fuzzer
 
 # Add fuzzing script
 #
