@@ -51,10 +51,10 @@ RUN update-alternatives --install /usr/bin/opt opt /usr/bin/opt-${GHC_LLVM} 1 &&
 
 ENV PATH /opt/ghc/${GHC_VERSION}/bin/:/opt/cabal/${CABAL_VERSION}/bin/:${PATH}
 
+RUN cabal update && cabal install cryptohash
+
 RUN mkdir -p /root/.cabal/
 COPY cabal.config /root/.cabal/config
-
-RUN cabal update && cabal install cryptohash
 
 COPY ghc-wrapper ghc-asan /usr/local/bin/
 RUN chmod a+x /usr/local/bin/ghc-*
