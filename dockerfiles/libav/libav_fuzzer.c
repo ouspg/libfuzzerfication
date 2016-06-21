@@ -23,7 +23,8 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 	int len;
 	AVPacket avpkt;
 	AVFrame *decoded_frame = NULL;
-
+	//printf("New file.\n");
+		
 	av_init_packet(&avpkt);
 
 	codec = avcodec_find_decoder(AV_CODEC_ID_MP2);
@@ -47,14 +48,11 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 	while (avpkt.size > 0) {
 		int got_frame = 0;
 
-		if (!decoded_frame) {
-			if (!(decoded_frame = av_frame_alloc())) {
-				fprintf(stderr, "out of memory\n");
-				exit(1);
-			}
-		}
+		decoded_frame = av_frame_alloc();
+		
 
 		len = avcodec_decode_audio4(c, decoded_frame, &got_frame, &avpkt);
+		//printf("len: %d\n",len);
 		if (len < 0) {
 			//fprintf(stderr, "Error while decoding\n");
 			break;
