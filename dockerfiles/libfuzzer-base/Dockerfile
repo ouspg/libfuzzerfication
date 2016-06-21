@@ -11,7 +11,7 @@ RUN mkdir /src /work && \
 	clang++ -c -g -O2 -std=c++11 Fuzzer/*.cpp -IFuzzer && \
 	ar ruv libFuzzer.a Fuzzer*.o && \
 	mkdir -p /work/libfuzzer && \
-	cp libFuzzer.a /usr/local/lib
+	mv libFuzzer.a /usr/local/lib && \
 	rm *.o && \
 	rm -rf Fuzzer
 
