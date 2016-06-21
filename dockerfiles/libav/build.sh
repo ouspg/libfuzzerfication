@@ -5,7 +5,6 @@ export CXX="clang++"
 export CFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls -fPIC"
 export CC="clang"
 export LDFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls"
-export LIBFUZZER_OBJS="/work/libfuzzer/libFuzzer.a"
 
 #Build libav
 cd /src/libav
@@ -16,5 +15,5 @@ make install
 
 #Build fuzzer
 $CXX $CFLAGS -std=c++11 -I$(pwd) $(pwd)/libavutil/*.so -lz -lvdpau -lX11  \
-$LIBFUZZER_OBJS $(pwd)/libavcodec/*.o $(pwd)/libavresample/*.o \
- -o libav_fuzzer libav_fuzzer.c
+			 -lFuzzer $(pwd)/libavcodec/*.o $(pwd)/libavresample/*.o \
+ 			 -o libav_fuzzer libav_fuzzer.c
