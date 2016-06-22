@@ -12,7 +12,3 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 }
 ```
 Data is the data and size is the size to be tested.
-
-* Build.sh explanation here ..
-* Dockerfile
-jne..
