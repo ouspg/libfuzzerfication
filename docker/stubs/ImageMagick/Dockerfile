@@ -4,7 +4,7 @@ ENV TARGET 'ImageMagick'
 
 #Install dependencies and fetch the source.
 
-RUN apt-get update && apt-get upgrade && apt-get build-dep imagemagick -y && apt-get install libiomp5 libiomp-dev -y
+RUN apt-get update && apt-get upgrade -y && apt-get build-dep imagemagick -y && apt-get install libiomp5 libiomp-dev -y
 RUN cd /src && git clone https://github.com/ImageMagick/ImageMagick.git
 
 ADD ${TARGET}_fuzzer.c /src/$TARGET/

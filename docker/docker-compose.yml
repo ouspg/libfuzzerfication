@@ -12,7 +12,7 @@ services:
   libfuzzer-base:
       build: ./base/libfuzzer-base
       image: ouspg/libfuzzer-base
-  imagemagick:
+  ImageMagick:
       build: ./stubs/ImageMagick
       image: ouspg/libfuzzer-imagemagick
       volumes:
