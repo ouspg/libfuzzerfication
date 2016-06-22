@@ -79,7 +79,6 @@ services:
         '/samples/libfuzzer-libav'
       ]
 
- 
 ## Haskell base image
 
   libfuzzer-base-haskell:
