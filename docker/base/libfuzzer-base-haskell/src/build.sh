@@ -2,7 +2,7 @@
 
 set -ex
 
-GHCOPTS="-package bytestring"
+GHCOPTS="-package libfuzzer"
 
 clang -Wall -c -I/opt/ghc/8.0.1/lib/ghc-8.0.1/include/ hsinit.c
 ghc-asan ${GHCOPTS} -c test.hs

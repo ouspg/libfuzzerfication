@@ -2,12 +2,13 @@
 
 module Test where
 
+import Libfuzzer (storeTestCase)
+
 import Foreign.C.Types
 import Foreign.C.String
 
 import qualified Data.ByteString as BS
 
--- extern "C" int LLVMFuzzerTestOneInput(uint8_t *data, size_t size)
 foreign export ccall "LLVMFuzzerTestOneInput" testOneInputM :: CString -> CSize -> IO CInt
 
 testOneInputM :: CString -> CSize -> IO CInt
