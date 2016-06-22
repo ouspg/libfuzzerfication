@@ -7,10 +7,10 @@ version: '2'
 #Note: Change volumes and command to match your system.
 services:
   libfuzzer-base:
-      build: ./libfuzzer-base
+      build: ./base/libfuzzer-base
       image: ouspg/libfuzzer-base
   imagemagick:
-      build: ./ImageMagick
+      build: ./stubs/ImageMagick
       image: ouspg/libfuzzer-imagemagick
       volumes:
         - ~/results/:/results
@@ -30,7 +30,7 @@ services:
         '/samples/libfuzzer-imagemagick'
       ]
   libxml2:
-      build: ./libxml2
+      build: ./stubs/libxml2
       image: ouspg/libfuzzer-libxml2
       shm_size: 512M
       mem_limit: 4g
@@ -50,7 +50,7 @@ services:
         '/samples/libfuzzer-libxml'
       ]
   libav:
-      build: ./libav
+      build: ./stubs/libav
       image: ouspg/libfuzzer-libav
       volumes:
         - ~/results/:/results
@@ -73,8 +73,8 @@ services:
   # Haskell base and libraries
   #
   libfuzzer-base-haskell:
-      build: ./libfuzzer-base-haskell
+      build: ./base/libfuzzer-base-haskell
       image: ouspg/libfuzzer-base-haskell
   haskell-x509:
-      build: ./haskell-x509
+      build: ./stubs/haskell-x509
       image: ouspg/libfuzzer-haskell-x509
