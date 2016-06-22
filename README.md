@@ -31,8 +31,6 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * Share dockerfile with other users
 * Use libFuzzer to collect corpus so that other people can continue where you left off
 
-d)
-
 # Requirements
 * [docker-machine version 0.7.0](https://docs.docker.com/machine/)
 * [Docker version 1.11.2](https://www.docker.com/)
