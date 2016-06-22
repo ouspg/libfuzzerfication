@@ -4,10 +4,10 @@
 <img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing.png" width="500" height="284" alt="Fuzzing in action">
 
 # Synopsis
-Fuzz-testing is software design technique that involves providing pseudo-random data to the inputs of a computer program. The program is used to monitor for crashes or failing built-in code assertions or for finding potential memory leaks. This project uses libFuzzer and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from Protecode SC.
+Fuzz-testing is software design technique that involves providing pseudo-random data to the inputs of a computer program. The program is used to monitor for crashes or failing built-in code assertions or for finding potential memory leaks. This project uses [libFuzzer](http://llvm.org/docs/LibFuzzer.html) and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/).
 
 "LibFuzzer is a library for in-process, coverage-guided, evolutionary fuzzing of other libraries.
-LibFuzzer is similar in concept to American Fuzzy Lop (AFL), but it performs all of its fuzzing inside a single process. This in-process fuzzing can be more restrictive and fragile, but is potentially much faster as there is no overhead for process start-up."
+LibFuzzer is similar in concept to [American Fuzzy Lop (AFL)](http://lcamtuf.coredump.cx/afl/), but it performs all of its fuzzing inside a single process. This in-process fuzzing can be more restrictive and fragile, but is potentially much faster as there is no overhead for process start-up."
 http://llvm.org/docs/LibFuzzer.html
 
 
