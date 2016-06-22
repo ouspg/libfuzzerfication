@@ -12,6 +12,9 @@ services:
   libfuzzer-base:
       build: ./base/libfuzzer-base
       image: ouspg/libfuzzer-base
+  
+## ImageMagick stub, with automatic crash-repro minimizer
+
   ImageMagick:
       build: ./stubs/ImageMagick
       image: ouspg/libfuzzer-imagemagick
@@ -20,6 +23,8 @@ services:
         - ~/samples/:/samples
       mem_limit: 4g
       shm_size: 512M
+      environment:
+        MINIMIZE: "true"
       entrypoint: '/src/scripts/fuzz.sh'
       command: [
         '/src/ImageMagick/ImageMagick_fuzzer',
@@ -27,7 +32,6 @@ services:
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=1000',
-        '-timeout=5',
         '-use_counters=1',
         '-max_total_time=3600',
         '/samples/libfuzzer-imagemagick'
