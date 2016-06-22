@@ -1,7 +1,7 @@
 
 # libfuzzerfication
 
-<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing.png" width="500" height="284" alt="Fuzzing in action">
+![Fuzzing in Action](pictures/fuzzing-scaled.png)
 
 # Synopsis
 Fuzz-testing is software design technique that involves providing random data to the inputs of a computer program. The program
