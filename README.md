@@ -52,6 +52,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * Fast!
 
 # Contributors
-* Mikko Yliniemi (mikessu)
-* Atte Kettunen (attekett)
+* Mikko Yliniemi (@mikessu)
+* Atte Kettunen (@attekett)
+* Pauli Huttunen (@WhiteEyeDoll)
 * ... you?
