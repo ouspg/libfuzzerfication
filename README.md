@@ -1,7 +1,7 @@
 
 # libfuzzerfication
 
-<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing.png" width="500" height="284" alt="Fuzzing in action">
+![Fuzzing in Action](pictures/fuzzing-scaled.png)
 
 # Synopsis
 Fuzz-testing is software design technique that involves providing pseudo-random data to the inputs of a computer program. The program is used to monitor for crashes or failing built-in code assertions or for finding potential memory leaks. This project uses [libFuzzer](http://llvm.org/docs/LibFuzzer.html) and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/).
