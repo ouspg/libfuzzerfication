@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
 RUN apt-get update && \
 	apt-get upgrade -y && \
-	apt-get install -y  git clang
+	apt-get install -y git clang nodejs && \
+	apt-get clean && \
+	rm -rf /var/lib/apt/lists/*
 
 # Checkout & build libFuzzer
 #
@@ -14,6 +16,13 @@ RUN mkdir /src /work && \
 	mv libFuzzer.a /usr/local/lib && \
 	rm *.o && \
 	rm -rf Fuzzer
+
+
+#Checkout minimizer
+#
+RUN cd src && \
+	git clone https://github.com/attekett/nipsu/ && \
+	rm -rf ./nipsu/.git
 
 # Add fuzzing script
 #
