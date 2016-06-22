@@ -1,11 +1,14 @@
 version: '2'
 
-#Build: docker-compose build <service>
-#Run: docker-compose run <service>
+## Build: docker-compose build <service>
+## Run: docker-compose run <service>
 
+## Note: Change volumes and command to match your system.
 
-#Note: Change volumes and command to match your system.
 services:
+
+## libfuzzer base image
+
   libfuzzer-base:
       build: ./base/libfuzzer-base
       image: ouspg/libfuzzer-base
@@ -14,7 +17,7 @@ services:
       image: ouspg/libfuzzer-imagemagick
       volumes:
         - ~/results/:/results
-        - ~/samples:/samples
+        - ~/samples/:/samples
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -29,6 +32,9 @@ services:
         '-max_total_time=3600',
         '/samples/libfuzzer-imagemagick'
       ]
+
+## libxml2 stub
+
   libxml2:
       build: ./stubs/libxml2
       image: ouspg/libfuzzer-libxml2
@@ -36,7 +42,7 @@ services:
       mem_limit: 4g
       volumes:
           - ~/results/:/results
-          - ~/samples:/samples
+          - ~/samples/:/samples
       environment:
           LD_LIBRARY_PATH: "/src/libxml2/.libs/"
       command: [
@@ -49,12 +55,15 @@ services:
         '-max_total_time=600',
         '/samples/libfuzzer-libxml'
       ]
+
+## libav stub
+
   libav:
       build: ./stubs/libav
       image: ouspg/libfuzzer-libav
       volumes:
         - ~/results/:/results
-        - ~/samples:/samples
+        - ~/samples/:/samples
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -69,12 +78,16 @@ services:
         '-max_total_time=3600',
         '/samples/libfuzzer-libav'
       ]
-  #
-  # Haskell base and libraries
-  #
+
+ 
+## Haskell base image
+
   libfuzzer-base-haskell:
       build: ./base/libfuzzer-base-haskell
       image: ouspg/libfuzzer-base-haskell
+
+## Haskell stub
+
   haskell-x509:
       build: ./stubs/haskell-x509
       image: ouspg/libfuzzer-haskell-x509
