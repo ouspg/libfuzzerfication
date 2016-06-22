@@ -2,7 +2,7 @@ FROM ouspg/libfuzzer-base
 
 MAINTAINER https://github.com/ouspg/libfuzzerification
 
-RUN apt-get install -y liblzma-dev
+RUN apt-get update && apt-get install -y liblzma-dev
 RUN apt-get build-dep libxml2 -y
 RUN cd /src && git clone git://git.gnome.org/libxml2
 
