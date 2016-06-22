@@ -1,8 +1,8 @@
 
 # libfuzzerfication
 
+<img src="https://i.imgur.com/RUZRyTO.gif" width="500" height="289" alt="Fuzzing in action">
 
-=======
 # Synopsis
 Purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from Protecode SC.
 
