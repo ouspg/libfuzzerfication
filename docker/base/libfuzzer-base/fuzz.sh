@@ -99,6 +99,7 @@ echo "$FINGERPRINT"
 
 }
 
+TARGET_FULL=$1
 TARGET=$(basename $1)
 echo "Target: $TARGET"
 
@@ -110,17 +111,17 @@ export ASAN_OPTIONS='allocator_may_return_null=1:detect_leaks=0:coverage=1:symbo
 while true; do
 	echo "Round."
 		$@ 2>&1 | tee asan.txt
-		cat ./asan.txt
 		if [ "$(grep "ERROR: AddressSanitizer" ./asan.txt)" ]; then
 			RESULT=$(parse_asan_trace ./asan.txt)
 			echo "New crash: "$TARGET-$RESULT
-			#Save results to the RESULTS_FOLDER 
 			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
 			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
+			if [ $MINIMIZE == "true" ]; then
+				nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f /results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
+			fi
 		elif [ "$(grep "ERROR: libFuzzer: timeout" ./asan.txt)" ]; then
 			RESULT=$(parse_timeout_trace ./asan.txt)
 			echo "New timeout: "$TARGET-$RESULT
-			#Save results to the RESULTS_FOLDER 
 			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
 			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
 		fi
