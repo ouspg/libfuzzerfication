@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Add local user
+# Either use the LOCAL_USER_ID if passed in at runtime or
+# fallback
+
 #Print args for debug
 echo "fuzz.sh args: $@"
 
@@ -36,12 +40,12 @@ ERROR=$(grep 'ERROR: AddressSanitizer: ' $FILE)
 
 set -- $ERROR
 
-#ASAN-trace has two different beginnings depending on build: 
+#ASAN-trace has two different beginnings depending on build:
 #	1. "==<pid>==ERROR"
-#	2. "==<pid>== ERROR" 
+#	2. "==<pid>== ERROR"
 #Extra whitespace messes up indexes.
 
-if grep -q 'ERROR' <<< $1; then 
+if grep -q 'ERROR' <<< $1; then
 	ERROR=$3
 else
 	ERROR=$4
@@ -86,12 +90,12 @@ FINGERPRINT='timeout'
 #note: we cannot do this without symbolization
 FILE=$(cat $FILE| grep -v 'in fuzzer' | grep -v '__sanitizer' | grep -v 'libpthread')
 
-#Take first three frames and discard the first. 
+#Take first three frames and discard the first.
 #Timeout interrupts the current execution, so first valid frame can be with different
 #address even in same function.
 FRAMES=$(echo $FILE | grep -oP '#. 0x\S+' | head -3 | tail -2 | sed s/'#. '//g)
 
-for foo in $FRAMES; do 
+for foo in $FRAMES; do
 	FINGERPRINT="$FINGERPRINT-${foo:(-3)}"
 done
 

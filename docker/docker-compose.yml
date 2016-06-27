@@ -12,7 +12,7 @@ services:
   libfuzzer-base:
       build: ./base/libfuzzer-base
       image: ouspg/libfuzzer-base
-  
+
 ## ImageMagick stub, with automatic crash-repro minimizer
 
   ImageMagick:
@@ -49,6 +49,7 @@ services:
           - ~/samples/:/samples
       environment:
           LD_LIBRARY_PATH: "/src/libxml2/.libs/"
+
       command: [
         '/src/libxml2/libxml2_fuzzer',
         '-rss_limit_mb=4096',
