@@ -12,10 +12,10 @@ class: center, middle
  * Ossi Herrala (@oherrala)
  * https://github.com/oherrala
  * Codenomicon / Synopsys / AbuseSA
- * Defensics fuzzers (IPv4, TLS, NFS, MPEG4, ..)
+ * Defensics fuzzers (IPv4, TLS, NFS, MPEG4, …)
  * Sysadmin
  * Bachelor's thesis work as part of OUSPG Open
-   * this fuzzing thingie is not that thesis..
+   * this fuzzing thingie is not that thesis…
 
 ---
 
@@ -34,7 +34,20 @@ class: center, middle
 
 # Motivation
 
-### Languages with compilers that use LLVM include:
+### Fuzz libs of your favorite lang!
+
+ * Software has bugs. Break the myth that *hype-of-the-month-language*
+   will lead to safer world because it eliminates all the bugs.
+ * Learn how your favorite language and libs behave under pressure.
+ * Fast and cost effective way to do negative testing.
+ * Libfuzzer is easy to automate
+   * Include some fuzzing into Continous Integration.
+
+---
+
+# Motivation
+
+### Some languages with LLVM backends:
 
   ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran,
   OpenGL Shading Language, Halide, **Haskell**, Java bytecode, Julia,
@@ -42,11 +55,10 @@ class: center, middle
 
 Source: https://en.wikipedia.org/wiki/LLVM
 
-### Fuzz libs of your favorite lang!
+### Compiles via C
 
- * Software has bugs. Break the myth that *hype-of-the-month-language*
-   will lead to safer world because it eliminates all the bugs.
- * Learn how your favorite language and libs behave under pressure
+ * Some languages provide compiler into C.
+ * This C could be compiled with LLVM.
 
 ---
 
@@ -59,7 +71,7 @@ Source: https://en.wikipedia.org/wiki/LLVM
  * Purely functional: *One typical approach to achieve this is by excluding destructive modifications (updates)*
  * Non-strict semantics: Aka lazy evaluation (infinite lists and recursions are ok)
  * Static typing: Type safety at compile time
- * Strong typing: "True == 1" is compile time error
+ * Strong typing: `True == 1`, `"1" + 1` and `print 42` are all compile time errors
 
 Source: Wikipedia
 
@@ -78,9 +90,26 @@ Source: http://llvm.org/docs/LibFuzzer.html
 
 ---
 
+# Haskell approach to libfuzzer stub
+
+ * Use Haskell's FFI (foreign function interface)
+ * Export Haskell function via FFI (using C Calling Convention)
+ * Minimal layer of C to initialize Haskell runtime
+ * Compilation produces object file (test.o) which can be linked with libfuzzer
+ * Alter Haskell packaging tools to enable SanitizerCoverage
+
+Same approach could be used for other languages.
+
+---
+
 # Sample stub in Haskell
 
 ```haskell
+-- Export function via FFI:
+--   testOneInputM (in Haskell) to LLVMFuzzerTestOneInput() (in C)
+foreign export ccall "LLVMFuzzerTestOneInput" testOneInputM
+    :: CString -> CSize -> IO CInt
+
 testOneInputM :: CString -> CSize -> IO CInt
 testOneInputM str size = do
 
@@ -105,7 +134,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 
 ---
 
-# Sample stub (boilerplate)
+# Sample stub (with boilerplate)
 
 ```haskell
 {-# LANGUAGE ForeignFunctionInterface #-}
@@ -118,6 +147,12 @@ import qualified Data.ByteString as BS
 
 foreign export ccall "LLVMFuzzerTestOneInput" testOneInputM
     :: CString -> CSize -> IO CInt
+
+testOneInputM :: CString -> CSize -> IO CInt
+testOneInputM str size = do
+  bs <- BS.packCStringLen (str, fromIntegral size)
+  doSomethingInterestingWithMyAPI bs
+  return 0
 ```
 
 ---
@@ -169,6 +204,10 @@ ghc-asan ${GHCOPTS} -c test.hs
 ghc-wrapper ${GHCOPTS} -no-hs-main -lFuzzer -o test test.o hsinit.o
 ```
 
+Note:
+ * `-package libfuzzer` is my Haskell utils
+ * `-lFuzzer` is the LLVM's libFuzzer lib
+
 ---
 
 ## ghc-wrapper
@@ -194,6 +233,27 @@ ghc-wrapper                                                                 \
     -optl="-fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp" \
     $*
 ```
+
+---
+
+# Cabal (Haskell's build tool)
+
+`$HOME/.cabal/config`:
+
+```
+program-default-options
+  gcc-options: -g \
+    -fsanitize=address \
+    -fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp
+  ghc-options: -fllvm \
+    -optc="-fsanitize=address" \
+    -optc="-fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp" \
+    -optl="-fsanitize=address" \
+    -optl="-fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp"
+```
+
+With this we can install (any) Haskell library and it's depends with
+SanitizerCoverage.
 
 ---
 
@@ -225,7 +285,7 @@ Prelude> import Data.X509
 Prelude Data.X509> :t Data.X509.decodeSignedCertificate
 Data.X509.decodeSignedCertificate
   :: Data.ByteString.Internal.ByteString
-     -> Either String SignedCertificate
+  -> Either String SignedCertificate
 ```
 
 This is how it should work:
@@ -236,8 +296,7 @@ Left "ParsingPartial"
 
 This is wrong behavior:
 ```
-
-Data.X509.decodeSignedCertificate "\DLE;\217:\131'';\189:!&6!!Ly\222(\167ri'\186;)(U\240:;:})*:t;\226(;::\189:\239')\ENQ,)(*3\248V)$\FS*\169"
+Prelude Data.X509> Data.X509.decodeSignedCertificate "\DLE;\217:\131'';\189:!&6!!Ly\222(\167ri'\186;)(U\240:;:})*:t;\226(;::\189:\239')\ENQ,)(*3\248V)$\FS*\169"
 *** Exception: sequence not a primitive
 ```
 
@@ -269,10 +328,11 @@ testOneInputM str size = do
 
 # 1M test cases for X.509 lib
 
-## "Exception is error" instrumentation
+### "Exception is error" instrumentation
 
 * `time ./test -runs=1000000`
 * `real 0m3.682s  user 0m3.250s  sys 0m0.480s`
+* ~270k cases/sec
 * Results:
 ```
 error, called at ./Data/ASN1/Prim.hs:172:54 in asn1-encoding-0.9.4-G3Eu427lfih60n7Hu41ILm:Data.ASN1.Prim
@@ -294,11 +354,21 @@ sequence not a primitive
 
 ---
 
+# Pros and cons of libfuzzer
+
+ * Can be used with other languages than C/C++
+ * Blazing fast apparently
+ * Setup once, run forever
+ * Depending on instrumentation we miss some features
+   * "Exception is error" example is probably "doing it wrong"
+
+---
+
 # Summary
 
  * It is possible to fuzz beyond C
  * It can produce results
- * Is libfuzzer The Tool?
+ * Is libfuzzer The Right Tool?
 
 ## Challenges
 
