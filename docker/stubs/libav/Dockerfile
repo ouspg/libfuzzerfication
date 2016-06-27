@@ -4,7 +4,7 @@ ENV TARGET 'libav'
 
 #Install dependencies and fetch the source.
 
-RUN apt-get install -y libavcodec-dev pkg-config && apt-get build-dep libavcodec-dev -y
+RUN apt-get update && apt-get upgrade -y && apt-get install -y libavcodec-dev pkg-config && apt-get build-dep libavcodec-dev -y
 RUN cd /src && git clone git://git.libav.org/libav.git libav
 ADD libav_fuzzer.c /src/libav/
 
