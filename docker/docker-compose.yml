@@ -60,6 +60,29 @@ services:
         '/samples/libfuzzer-libxml'
       ]
 
+## libxslt
+
+  libxslt:
+      build: ./stubs/libxslt
+      image: ouspg/libfuzzer-libxslt
+      shm_size: 512M
+      mem_limit: 4g
+      volumes:
+          - ~/results/:/results
+          - ~/samples/:/samples
+      environment:
+          LD_LIBRARY_PATH: "/src/libxslt/libxslt/.libs/"
+      command: [
+        '/src/libxslt/libxslt_fuzzer',
+        '-rss_limit_mb=4096',
+        '-detect_leaks=0',
+        '-exact_artifact_path=/dev/shm/repro-file',
+        '-max_len=5000',
+        '-use_counters=1',
+        '-max_total_time=600',
+        '/samples/libfuzzer-libxslt'
+      ]
+
 ## libav stub
 
   libav:

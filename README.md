@@ -32,6 +32,15 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * Share dockerfile with other users
 * Use libFuzzer to collect corpus so that other people can continue where you left off
 
+# Example stub
+```
+// fuzz_target.cc
+extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
+  DoSomethingInterestingWithMyAPI(Data, Size);
+  return 0;  // Non-zero return values are reserved for future use.
+}
+```
+
 # Requirements
 * [docker-machine version 0.7.0](https://docs.docker.com/machine/)
 * [Docker version 1.11.2](https://www.docker.com/)
@@ -51,7 +60,7 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * [SanitizerCoverage](http://clang.llvm.org/docs/SanitizerCoverage.html)
 * You can find some nice examples from: [libfuzzer-bot repo](https://github.com/google/libfuzzer-bot)
 * [libFuzzer in Chrome](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/README.md)
-* [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.m
+* [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md)
 
 # Contributors
 * Mikko Yliniemi (@mikessu)
