@@ -15,6 +15,15 @@ RUN mkdir -p /work/$TARGET/
 ADD build.sh /src/scripts/
 RUN bash /src/scripts/build.sh
 
-#Entrypoint and default args
-#ENTRYPOINT /src/scripts/fuzz.sh
-#CMD ['/samples/libfuzzer-libav']
+#Execute default commands
+
+CMD ["/src/scripts/fuzz.sh",
+     "/src/libav/libav_fuzzer",
+     "-rss_limit_mb=4096",
+     "-detect_leaks=0",
+     "-exact_artifact_path=/dev/shm/repro-file",
+     "-max_len=1000",
+     "timeout=5",
+     "-use_counters=1",
+     "-max_total_time=3600",
+     "/samples/libfuzzer-libav"]
