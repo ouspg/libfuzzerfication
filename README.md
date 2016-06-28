@@ -32,6 +32,19 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * Share dockerfile with other users
 * Use libFuzzer to collect corpus so that other people can continue where you left off
 
+# Example stub
+```
+extern "C" int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
+  xmlSetGenericErrorFunc(NULL, &ignore);
+  auto doc = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xml", NULL, 0);
+  //if (doc) {
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+  //}
+  return 0;
+}
+```
+
 # Requirements
 * [docker-machine version 0.7.0](https://docs.docker.com/machine/)
 * [Docker version 1.11.2](https://www.docker.com/)
