@@ -16,10 +16,8 @@ ADD build.sh /src/scripts/
 RUN bash /src/scripts/build.sh
 
 #Execute default commands
-
-CMD ["/src/scripts/fuzz.sh",
-     "/src/libav/libav_fuzzer",
-     "-rss_limit_mb=4096",
+ENTRYPOINT ["/src/scripts/fuzz.sh","/src/libav/libav_fuzzer"]
+CMD ["-rss_limit_mb=4096",
      "-detect_leaks=0",
      "-exact_artifact_path=/dev/shm/repro-file",
      "-max_len=1000",
