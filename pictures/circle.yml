@@ -1,3 +1,5 @@
+# Configuration file for CircleCI
+
 machine:
 
     services:
