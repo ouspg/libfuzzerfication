@@ -34,19 +34,10 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 
 # Example stub
 ```
-#include "libxml/parser.h"
-void ignore(void *ctx, const char *msg, ...) {
-  // Error handler to avoid spam of error messages from libxml parser.
-}
-
-extern "C" int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
-  xmlSetGenericErrorFunc(NULL, &ignore);
-  auto doc = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xml", NULL, 0);
-  //if (doc) {
-    xmlFreeDoc(doc);
-    xmlCleanupParser();
-  //}
-  return 0;
+// fuzz_target.cc
+extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
+  DoSomethingInterestingWithMyAPI(Data, Size);
+  return 0;  // Non-zero return values are reserved for future use.
 }
 ```
 
