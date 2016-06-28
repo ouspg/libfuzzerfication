@@ -21,4 +21,4 @@ spec:
             containers:
 
             - name: libav-fuzzer
-              image: ouspg/libfuzzer-libav:testing
+              image: ouspg/libfuzzer-libav:kubetesting
