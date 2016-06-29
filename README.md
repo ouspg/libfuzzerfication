@@ -18,8 +18,6 @@ Currently our top targets are:
 * libflac
 * gstreamer
 
-Google cloud is going to be used for scale.
-
 You're welcome to collaborate!
 
 This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
