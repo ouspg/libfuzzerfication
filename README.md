@@ -22,9 +22,17 @@ You're welcome to collaborate!
 
 This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 
-# How does it work?
-* Pull container from Dockerhub
-* Write your own libfuzzer stub
+# About libfuzzer
+* LibFuzzer is open-source library (part of LLVM)
+* Relies on compiler instrumentation to get coverage feedback
+* It is linked with the library under test
+* Works fully in process -> Fast!
+
+LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
+
+# How does this project work?
+* You pull container from Dockerhub
+* Start Writing your own libfuzzer stub
 * Share dockerfile with other users
 * Use libFuzzer to collect corpus so that other people can continue where you left off
 
@@ -35,23 +43,14 @@ You can start writing stubs without docker.
 * [Docker version 1.11.2](https://www.docker.com/)
 * [docker-compose version 1.7.1](https://docs.docker.com/compose/)
 
-# About libfuzzer
-* LibFuzzer is open-source library (part of LLVM)
-* Relies on compiler instrumentation to get coverage feedback
-* It is linked with the library under test
-* Works fully in process -> Fast!
-
-LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
-
 # Material
-
 * [libFuzzer](http://llvm.org/docs/LibFuzzer.html)
 * [SanitizerCoverage](http://clang.llvm.org/docs/SanitizerCoverage.html)
 * You can find some nice examples from: [libfuzzer-bot repo](https://github.com/google/libfuzzer-bot)
 * [libFuzzer in Chrome](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/README.md)
 * [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.m
 
-# Contributors
+# Team
 * Mikko Yliniemi (@mikessu)
 * Atte Kettunen (@attekett)
 * Pauli Huttunen (@WhiteEyeDoll)
