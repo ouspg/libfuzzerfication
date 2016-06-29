@@ -5,16 +5,12 @@
 
 
 # About
-Purpose of fuzzing is to automatically generate lots of pseudo-random test input and to make code crash and increase code coverage.
-
-We use [libFuzzer](http://llvm.org/docs/LibFuzzer.html) as fuzzing and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/). LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
-
-"LibFuzzer is a library for in-process, coverage-guided, evolutionary fuzzing of other libraries.
-LibFuzzer is similar in concept to [American Fuzzy Lop (AFL)](http://lcamtuf.coredump.cx/afl/), but it performs all of its fuzzing inside a single process. This in-process fuzzing can be more restrictive and fragile, but is potentially much faster as there is no overhead for process start-up."
-http://llvm.org/docs/LibFuzzer.html
+Purpose of fuzzing is to automatically generate lots of test input and to make code crash and increase code coverage. [libFuzzer](http://llvm.org/docs/LibFuzzer.html) is a library for in-process, coverage-guided evolutionary fuzzing of other libraries. It is similiar to [American Fuzzy Lop (AFL)](http://lcamtuf.coredump.cx/afl/) but performs fuzzing inside single process and is much faster.
 
 # Motivation
 There have been lots of vulnerabilities in popular libraries that should have been (theoretically) easy to test. We want to offer easy way to fuzz-test these libraries and increase awareness about the situation. We also want this to be available to everyone.
+
+We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/).
 
 Currently our top targets are:
 * libxslt
@@ -34,6 +30,8 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * Share dockerfile with other users
 * Use libFuzzer to collect corpus so that other people can continue where you left off
 
+You can start writing stubs without docker.
+
 # Requirements
 * [docker-machine version 0.7.0](https://docs.docker.com/machine/)
 * [Docker version 1.11.2](https://www.docker.com/)
@@ -44,7 +42,8 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * Relies on compiler instrumentation to get coverage feedback
 * It is linked with the library under test
 * Works fully in process -> Fast!
-* Should be combined with [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html)
+
+LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
 
 # Material
 
