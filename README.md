@@ -3,9 +3,10 @@
 
 <img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing.png" width="500" height="284" alt="Fuzzing in action">
 
-
 # Synopsis
-Fuzz-testing is software design technique that involves providing pseudo-random data to the inputs of a computer program. The program is used to monitor for crashes or failing built-in code assertions or for finding potential memory leaks. This project uses [libFuzzer](http://llvm.org/docs/LibFuzzer.html) and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/).
+Purpose of fuzzing is to automatically generate lots of pseudo-random test input and to make code crash and increase code coverage.
+
+This project uses [libFuzzer](http://llvm.org/docs/LibFuzzer.html) and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/). LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
 
 "LibFuzzer is a library for in-process, coverage-guided, evolutionary fuzzing of other libraries.
 LibFuzzer is similar in concept to [American Fuzzy Lop (AFL)](http://lcamtuf.coredump.cx/afl/), but it performs all of its fuzzing inside a single process. This in-process fuzzing can be more restrictive and fragile, but is potentially much faster as there is no overhead for process start-up."
@@ -13,12 +14,6 @@ http://llvm.org/docs/LibFuzzer.html
 
 # Motivation
 There have been lots of vulnerabilities in popular libraries that should have been (theoretically) easy to test. We want to offer easy way to fuzz-test these libraries and increase awareness about the situation. We also want this to be available to everyone.
-
-Currently our top targets are:
-* libxslt
-* speex
-* libflac
-* gstreamer
 
 Google cloud is going to be used for scale.
 
@@ -38,12 +33,11 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * [docker-compose version 1.7.1](https://docs.docker.com/compose/)
 
 # About libfuzzer
-* For fuzzing "libs"
-* requires stub "main" to hook the function to be tested & lib init
-* stub + lib compiled with asan/msan/ubsan
-* uses the sanitizer
-* clang build -> C/C++
-* Fast!
+* LibFuzzer is open-source library (part of LLVM)
+* Relies on compiler instrumentation to get coverage feedback
+* It is linked with the library under test
+* Works fully in process -> Fast!
+* Should be combined with [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html)
 
 # Material
 
@@ -53,8 +47,7 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * [libFuzzer in Chrome](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/README.md)
 * [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.m
 
-# Contributors
+# Team
 * Mikko Yliniemi (@mikessu)
 * Atte Kettunen (@attekett)
 * Pauli Huttunen (@WhiteEyeDoll)
-* ... you?
