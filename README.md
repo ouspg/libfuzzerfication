@@ -4,8 +4,10 @@
 <img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing.png" width="500" height="284" alt="Fuzzing in action">
 
 
-# Synopsis
-Fuzz-testing is software design technique that involves providing pseudo-random data to the inputs of a computer program. The program is used to monitor for crashes or failing built-in code assertions or for finding potential memory leaks. We use [libFuzzer](http://llvm.org/docs/LibFuzzer.html) as fuzzing and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/). LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
+# About
+Purpose of fuzzing is to automatically generate lots of pseudo-random test input and to make code crash and increase code coverage.
+
+We use [libFuzzer](http://llvm.org/docs/LibFuzzer.html) as fuzzing and purpose is to make it easy to find vulnerabilities from commonly used libraries. We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/). LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
 
 "LibFuzzer is a library for in-process, coverage-guided, evolutionary fuzzing of other libraries.
 LibFuzzer is similar in concept to [American Fuzzy Lop (AFL)](http://lcamtuf.coredump.cx/afl/), but it performs all of its fuzzing inside a single process. This in-process fuzzing can be more restrictive and fragile, but is potentially much faster as there is no overhead for process start-up."
