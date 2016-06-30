@@ -12,7 +12,7 @@ services:
   libfuzzer-base:
       build: ./base/libfuzzer-base
       image: ouspg/libfuzzer-base
-  
+
 ## ImageMagick stub, with automatic crash-repro minimizer
 
   ImageMagick:
