@@ -54,3 +54,5 @@ You can start writing stubs without docker.
 * Mikko Yliniemi (@mikessu)
 * Atte Kettunen (@attekett)
 * Pauli Huttunen (@WhiteEyeDoll)
+
+Visit #ouspg @ IRCnet if you're interested!
