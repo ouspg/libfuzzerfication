@@ -51,9 +51,9 @@ You can start writing stubs without docker.
 * [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md)
 
 # Sample files
-
+These downlads can be used as initial corpus directories  for more efficient fuzzing.
 ###### HTTP Direct Downloads
-* [MP3](http://storage.googleapis.com/libfuzzerfication/samples/samples-mp3.tar.gz)
+  * [MP3](http://storage.googleapis.com/libfuzzerfication/samples/samples-mp3.tar.gz)
 
 # Team
 * Mikko Yliniemi (@mikessu)
