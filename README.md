@@ -50,7 +50,7 @@ You can start writing stubs without docker.
 * [libFuzzer in Chrome](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/README.md)
 * [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md)
 
-# Sample file downloads
+# Sample files
 
 ###### HTTP Direct Downloads
 * [MP3](http://storage.googleapis.com/libfuzzerfication/samples/samples-mp3.tar.gz)
