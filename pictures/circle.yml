@@ -1,7 +1,0 @@
-# Configuration file for CircleCI
-# Builds libfuzzerfication images for fuzzing per target basis
-
-machine:
-
-    services:
-        - docker
