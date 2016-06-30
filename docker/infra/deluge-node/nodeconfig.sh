@@ -25,12 +25,16 @@ funtion start () {
 }
 
 funtion getsamples () {
-    for sample in samplelist=$(curl $sampleurl/samplelist.txt); do
-        curl -O --output $sampledir $sampleurl$sample
+    for sample in $(curl --silent $baseurl/samplelist.txt); do
+        curl -O --output $sampledir $baseurl$sample
+        echo "Downloading $sample..."
+    done
 }
 
 funtion addtorrent () {
-
+    for link in $(curl $baseurl/magnetlinks.txt); do
+    
+    done
 }
 
 funtion error () {
@@ -42,7 +46,7 @@ funtion error () {
 
 
 sampledir=/srv/deluge/samples
-sampleurl="http://storage.googleapis.com/libfuzzerfication/samples"
+baseurl="http://storage.googleapis.com/libfuzzerfication/samples"
 user=admin
 passwd=libfuzzerfication
 
