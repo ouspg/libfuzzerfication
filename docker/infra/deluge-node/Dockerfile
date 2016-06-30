@@ -11,6 +11,10 @@ RUN apt-get update && apt-get dist-upgrade -y && \
 
 RUN apt-get install -y deluged deluge-console
 
-ADD ./configure-node.sh /opt/tools/configure-node.sh
+# Add the node configuration script and make it executable
 
-RUN chmod +x /opt/tools/configure-node.sh
+ADD ./nodeconfig.sh /opt/scripts/nodeconfig.sh
+RUN chmod +x /opt/scripts/nodeconfig.sh
+RUN /opt/scripts/nodeconfig.sh
+
+ENTRYPOINT /opt/scripts/nodeconfig.sh
