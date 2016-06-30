@@ -1,8 +1,3 @@
-
-# libfuzzerfication dockerfiles
-
-# libfuzzerfication stubs
-
 # Getting started
 * Decide what program you want to fuzz. You can see [Protecode list of top 50 libraries](https://github.com/ouspg/libfuzzerfication/blob/master/doc/protecode-sc-top-components-native-20160609.txt) as an example.
 * Install Clang. Clang version distributed with most Linux distribution is too old. You should get it from [trunk](http://clang.llvm.org/get_started.html) or use Clang binaries from Chromium developers.
