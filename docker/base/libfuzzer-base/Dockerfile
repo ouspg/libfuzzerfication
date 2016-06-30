@@ -29,6 +29,4 @@ RUN cd src && \
 ADD ./fuzz.sh /src/scripts/fuzz.sh
 RUN chmod +x /src/scripts/fuzz.sh
 
-ENV PATH="/work/llvm/bin:$PATH"
-
 	
