@@ -46,5 +46,3 @@ docker-compose run imagemagick
 docker run -it --rm -v <path>/<to>/docker/stubs/ImageMagick/:/src/src/ImageMagick --entrypoint bash <image>
 ```
 This will run ImageMagick container with your development directory mounted inside container.
-
-* [Docker tutorial](https://rominirani.com/docker-tutorial-series-a7e6ff90a023#.zysi49h2s)
