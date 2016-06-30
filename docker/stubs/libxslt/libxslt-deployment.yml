@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 
 metadata:
-    name: libav-fuzzing-pod
+    name: libxslt-fuzzing-pod
 
 spec:
 
@@ -14,11 +14,11 @@ spec:
 
             labels:
 
-                target: libav
+                target: libxslt
 
         spec:
 
             containers:
 
-            - name: libav-fuzzer
-              image: ouspg/libfuzzer-libav:ops-testing
+            - name: libxslt-fuzzer
+              image: ouspg/libfuzzer-libxslt:ops-testing

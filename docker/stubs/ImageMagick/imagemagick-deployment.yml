@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 
 metadata:
-    name: libav-fuzzing-pod
+    name: imagemagick-fuzzing-pod
 
 spec:
 
@@ -14,11 +14,11 @@ spec:
 
             labels:
 
-                target: libav
+                target: ImageMagick
 
         spec:
 
             containers:
 
-            - name: libav-fuzzer
-              image: ouspg/libfuzzer-libav:ops-testing
+            - name: imagemagick-fuzzer
+              image: ouspg/libfuzzer-imagemagick:ops-testing
