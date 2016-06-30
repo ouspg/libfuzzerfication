@@ -18,7 +18,7 @@ Currently our top targets are:
 * libflac
 * gstreamer
 
-You're welcome to collaborate!
+This project is currently in very early stage of development. You're welcome to collaborate!
 
 This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 
