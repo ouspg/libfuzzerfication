@@ -13,28 +13,39 @@ funtion help () {
 }
 
 funtion configure () {
+    echo "Starting deluge daemon temporary to populate configuration files..."
+    systemctl start deluged.service
+    echo "Stopping deluge daemon..."
+    systemctl stop deluged.service
+    echo "Done"
     mkdir -p $sampledir
-    mkdir -p /srv/deluge/.config/deluge
+    mkdir -p $autoadd_dir
     echo "$user:$passwd:10" > /srv/deluge/.config/deluge/auth
+    chown deluge:deluge $autoadd_dir $sampledir
+    chmod 700 $autoadd_dir $sampledir
 }
 
 funtion start () {
     systemctl enable deluged.service
     echo "Starting deluge daemon..."
     systemctl start deluged.service
+    echo "Done."
 }
 
 funtion getsamples () {
     for sample in $(curl --silent $baseurl/samplelist.txt); do
-        curl -O --output $sampledir $baseurl$sample
         echo "Downloading $sample..."
+        curl -O --output $sampledir $baseurl$sample
+        echo "Done."    
     done
+    echo "Downloading samples complete."
 }
 
-funtion addtorrent () {
-    for link in $(curl $baseurl/magnetlinks.txt); do
-    
+funtion gettorrents () {
+    for torrentfile in $(curl $baseurl/torrentfiles.txt); do
+        curl -O --output $autoadd_dir $baseurl$torrentfile
     done
+    echo "Getting torrents complete."
 }
 
 funtion error () {
@@ -45,7 +56,8 @@ funtion error () {
 
 
 
-sampledir=/srv/deluge/samples
+sampledir="/srv/deluge/samples"
+autoadd_dir="/srv/deluge/autoadd"
 baseurl="http://storage.googleapis.com/libfuzzerfication/samples"
 user=admin
 passwd=libfuzzerfication
