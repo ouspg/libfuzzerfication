@@ -25,7 +25,7 @@ funtion start () {
 }
 
 funtion getsamples () {
-    for sample in (curl $sampleurl/samplelist.txt); do
+    for sample in samplelist=$(curl $sampleurl/samplelist.txt); do
         curl -O --output $sampledir $sampleurl$sample
 }
 
@@ -39,8 +39,10 @@ funtion error () {
     help
 }
 
+
+
 sampledir=/srv/deluge/samples
-sampleurl="http://storage.googleapis.com/libfuzzerfication/samples/"
+sampleurl="http://storage.googleapis.com/libfuzzerfication/samples"
 user=admin
 passwd=libfuzzerfication
 
