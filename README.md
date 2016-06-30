@@ -48,7 +48,7 @@ You can start writing stubs without docker.
 * [SanitizerCoverage](http://clang.llvm.org/docs/SanitizerCoverage.html)
 * You can find some nice examples from: [libfuzzer-bot repo](https://github.com/google/libfuzzer-bot)
 * [libFuzzer in Chrome](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/README.md)
-* [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.m
+* [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md)
 
 # Team
 * Mikko Yliniemi (@mikessu)
