@@ -114,16 +114,16 @@ while true; do
 		if [ "$(grep "ERROR: AddressSanitizer" ./asan.txt)" ]; then
 			RESULT=$(parse_asan_trace ./asan.txt)
 			echo "New crash: "$TARGET-$RESULT
-			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /srv/fuzzer/results/$TARGET-$RESULT.txt"
-			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /srv/fuzzer/results/$TARGET-$RESULT.repro"
+			cp ./asan.txt /$HOME/results/$TARGET-$RESULT.txt && echo "Report saved: /$HOME/results/$TARGET-$RESULT.txt"
+			cp /dev/shm/repro-file /$HOME/results/$TARGET-$RESULT.repro && echo "Repro-file saved: /$HOME/results/$TARGET-$RESULT.repro"
 			if [ $MINIMIZE == "true" ]; then
-				nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f /results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
+				nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f /$HOME/results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
 			fi
 		elif [ "$(grep "ERROR: libFuzzer: timeout" ./asan.txt)" ]; then
 			RESULT=$(parse_timeout_trace ./asan.txt)
 			echo "New timeout: "$TARGET-$RESULT
-			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
-			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
+			cp ./asan.txt /$HOME/results/$TARGET-$RESULT.txt && echo "Report saved: /$HOME/results/$TARGET-$RESULT.txt"
+			cp /dev/shm/repro-file /$HOME/results/$TARGET-$RESULT.repro && echo "Repro-file saved: /$HOME/results/$TARGET-$RESULT.repro"
 		fi
 		#TODO: Add dictionary collection.
 		rm asan.txt
