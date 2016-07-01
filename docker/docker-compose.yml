@@ -106,6 +106,29 @@ services:
         '/samples/libfuzzer-libav'
       ]
 
+## flac stub
+
+  flac:
+      build: ./stubs/flac
+      image: ouspg/libfuzzer-flac
+      volumes:
+        - ~/results/:/results
+        - ~/samples/:/samples
+      mem_limit: 4g
+      shm_size: 512M
+      entrypoint: '/src/scripts/fuzz.sh'
+      command: [
+        '/src/flac/flac_fuzzer',
+        '-rss_limit_mb=4096',
+        '-detect_leaks=0',
+        '-exact_artifact_path=/dev/shm/repro-file',
+        '-max_len=1000',
+        '-timeout=5',
+        '-use_counters=1',
+        '-max_total_time=3600',
+        '/samples/libfuzzer-flac'
+      ]
+
 ## Haskell base image
 
   libfuzzer-base-haskell:

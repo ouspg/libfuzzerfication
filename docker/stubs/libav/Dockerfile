@@ -2,6 +2,8 @@ FROM ouspg/libfuzzer-base
 
 ENV TARGET 'libav'
 
+MAINTAINER https://github.com/ouspg/libfuzzerification
+
 #Install dependencies and fetch the source.
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y libavcodec-dev pkg-config && apt-get build-dep libavcodec-dev -y
