@@ -27,3 +27,5 @@ RUN cd src && \
 #
 ADD ./fuzz.sh /src/scripts/fuzz.sh
 RUN chmod +x /src/scripts/fuzz.sh
+
+RUN groupadd -r fuzzer_group && useradd -r -g fuzzer_group fuzzer_user

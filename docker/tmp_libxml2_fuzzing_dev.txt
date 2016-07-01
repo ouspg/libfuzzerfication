@@ -1,0 +1,3 @@
+groupadd -r fuzzer_user && useradd -r -g docker_user fuzzer_user
+su fuzzer_user
+./fuzz.sh /src/libxml2/libxml2_fuzzer -rss_limit_mb=4096 -detect_leaks=0 -exact_artifact_path=/dev/shm/repro-file -max_len=5000 -use_counters=1 -max_total_time=600 /samples/libfuzzer-libxml
