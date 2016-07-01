@@ -36,12 +36,12 @@ ERROR=$(grep 'ERROR: AddressSanitizer: ' $FILE)
 
 set -- $ERROR
 
-#ASAN-trace has two different beginnings depending on build: 
+#ASAN-trace has two different beginnings depending on build:
 #	1. "==<pid>==ERROR"
-#	2. "==<pid>== ERROR" 
+#	2. "==<pid>== ERROR"
 #Extra whitespace messes up indexes.
 
-if grep -q 'ERROR' <<< $1; then 
+if grep -q 'ERROR' <<< $1; then
 	ERROR=$3
 else
 	ERROR=$4
@@ -86,12 +86,12 @@ FINGERPRINT='timeout'
 #note: we cannot do this without symbolization
 FILE=$(cat $FILE| grep -v 'in fuzzer' | grep -v '__sanitizer' | grep -v 'libpthread')
 
-#Take first three frames and discard the first. 
+#Take first three frames and discard the first.
 #Timeout interrupts the current execution, so first valid frame can be with different
 #address even in same function.
 FRAMES=$(echo $FILE | grep -oP '#. 0x\S+' | head -3 | tail -2 | sed s/'#. '//g)
 
-for foo in $FRAMES; do 
+for foo in $FRAMES; do
 	FINGERPRINT="$FINGERPRINT-${foo:(-3)}"
 done
 
@@ -114,16 +114,16 @@ while true; do
 		if [ "$(grep "ERROR: AddressSanitizer" ./asan.txt)" ]; then
 			RESULT=$(parse_asan_trace ./asan.txt)
 			echo "New crash: "$TARGET-$RESULT
-			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
-			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
+			cp ./asan.txt /$HOME/results/$TARGET-$RESULT.txt && echo "Report saved: /$HOME/results/$TARGET-$RESULT.txt"
+			cp /dev/shm/repro-file /$HOME/results/$TARGET-$RESULT.repro && echo "Repro-file saved: /$HOME/results/$TARGET-$RESULT.repro"
 			if [ $MINIMIZE == "true" ]; then
-				nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f /results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
+				nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f /$HOME/results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
 			fi
 		elif [ "$(grep "ERROR: libFuzzer: timeout" ./asan.txt)" ]; then
 			RESULT=$(parse_timeout_trace ./asan.txt)
 			echo "New timeout: "$TARGET-$RESULT
-			cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
-			cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
+			cp ./asan.txt /$HOME/results/$TARGET-$RESULT.txt && echo "Report saved: /$HOME/results/$TARGET-$RESULT.txt"
+			cp /dev/shm/repro-file /$HOME/results/$TARGET-$RESULT.repro && echo "Repro-file saved: /$HOME/results/$TARGET-$RESULT.repro"
 		fi
 		#TODO: Add dictionary collection.
 		rm asan.txt

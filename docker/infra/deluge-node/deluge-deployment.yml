@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+
+metadata:
+    name: sample-share-pod
+
+spec:
+
+    replicas:
+
+    template:
+
+        metadata:
+
+            labels:
+
+        spec:
+
+            containers:
+
+            - name: deluge-node
+              image: ouspg/deluge-node:ops-testing
