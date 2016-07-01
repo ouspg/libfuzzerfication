@@ -17,7 +17,6 @@ RUN mkdir /src /work && \
 	rm *.o && \
 	rm -rf Fuzzer
 
-
 #Checkout minimizer
 #
 RUN cd src && \
@@ -28,5 +27,3 @@ RUN cd src && \
 #
 ADD ./fuzz.sh /src/scripts/fuzz.sh
 RUN chmod +x /src/scripts/fuzz.sh
-
-	
