@@ -13,7 +13,7 @@ extern "C" {
 }
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
-    int status, result, i;
+    int status, result;
     double ret;
     lua_State *L;
 
@@ -31,14 +31,14 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
         /* If something went wrong, error message is at the top of */
         /* the stack */
         //fprintf(stderr, "Couldn't load script: %s\n", lua_tostring(L, -1));
-        return(0);
+        goto lua_exit;
     }
 
     /* Ask Lua to run our little script */
     result = lua_pcall(L, 0, LUA_MULTRET, 0);
     if (result) {
         //fprintf(stderr, "Failed to run script: %s\n", lua_tostring(L, -1));
-        return(0);
+        goto lua_exit;
     }
 
     /* Get the returned value at the top of the stack (index -1) */
@@ -46,6 +46,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 
     //printf("Script returned: %.0f\n", ret);
 
+lua_exit:
     lua_pop(L, 1);  /* Take the returned value out of the stack */
     lua_close(L);   /* Cya, Lua */
 
