@@ -9,7 +9,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y libflac-dev pkg-c
 RUN cd /src && git clone https://git.xiph.org/flac.git
 ADD flac_fuzzer.c /src/$TARGET/
 
-RUN mkdir -p /work/$TARGET/
+#RUN mkdir -p /work/$TARGET/
 
 #Build
 ADD build.sh /src/$TARGET/

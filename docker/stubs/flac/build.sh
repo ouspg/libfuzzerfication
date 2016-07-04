@@ -10,14 +10,15 @@ export LDFLAGS=$SANCOV
 
 
 #Build flac
-#cd /src/flac
+
 if [ ! -f configure ]
 then
   ./autogen.sh
 fi
-./configure
-make -j 4
+./configure --enable-shared --prefix=/usr/
+make -j4
+make install
 
 $CXX $CXXFLAGS -std=c++11 flac_fuzzer.c \
-  			   -Iinclude -L.libs -lFuzzer \
+  			   -Iinclude -lFLAC -lFuzzer \
    			    -o flac_fuzzer
