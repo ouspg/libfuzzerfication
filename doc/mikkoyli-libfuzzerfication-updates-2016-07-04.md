@@ -36,12 +36,16 @@ There have been lots of vulnerabilities in popular libraries that should have be
 # What we have done this far?
 
 * We have currently following stubs in repository:
-- haskell-x509
-- ImageMagick
-- libav
-- libxml2
-- libxslt (newest)
-- lua (newest)
+- haskell-x509 (@oherrala)
+- ImageMagick (@attekett)
+- libav (@mikessu)
+- libxml2 (@attekett)
+
+# After last session:
+
+* Lua stub was committed by Joonas Kuorilehto (@joneskoo)
+* libxslt stub was committed by Ari Kauppi (@kauppi
+
 
 ---
 # Docker base image
@@ -64,12 +68,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 (show example stub dockerfile for libav)
 
 ---
-# After last session:
 
-* Lua stub was committed by Joonas Kuorilehto (@joneskoo)
-* libxslt stub was committed by Ari Kauppi (@kauppi)
-
----
 # Under development
 * libflac stub is currently under development
 * Make fuzzing in container to run as non root user.
