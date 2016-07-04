@@ -40,7 +40,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 - ImageMagick
 - libav
 - libxml2
-- libxslt
+- libxslt (newest)
 - lua (newest)
 
 ---
@@ -72,7 +72,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 ---
 # Under development
 * libflac stub is currently under development
-* Make fuzzing in container to run as non-root user
+* Make fuzzing in container to run as non root user.
 * Pauli (@WhiteEyeDoll) is currently working to get fuzzing running in Google cloud
 ---
 
