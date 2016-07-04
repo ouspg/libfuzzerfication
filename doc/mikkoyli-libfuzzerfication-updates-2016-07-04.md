@@ -15,7 +15,7 @@ class: center, middle
 
 LibFuzzerfication is a project thats purpose is to do fuzz-testing for applications and libraries.
 
-<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing.png" width="500" height="284" alt="Fuzzing in action">
+<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action">
 
 Example of lua fuzz test running.
 
