@@ -44,34 +44,38 @@ There have been lots of vulnerabilities in popular libraries that should have be
 - lua (newest)
 
 ---
+# Docker base image
 
+* This project is using docker
 * We are using ubuntu:16.04 as base image
 * libFuzzer is included in base image
 * Nipsu minimizer is also included in base image (Crash repro minifier for ASan-instrumented commandline tools.)
 * Fuzz.sh script is used as entrypoint, it takes care of running fuzz tests and gathering results
 
+(show libfuzzer-base dockerfile)
+
 ---
-After last session:
+# After last session:
 
 * Lua stub was committed by Joonas Kuorilehto (@joneskoo)
-* libxslt stub was committed by  Ari Kauppi
+* libxslt stub was committed by Ari Kauppi
 
 ---
-#Under development
+# Under development
 - libflac stub is currently under development
 - Pauli (@WhiteEyeDoll) is currently working to get fuzzing running in Google cloud
 ---
 
-#Documentation
+# Documentation
 
-Documentation has beed improved. You can find improved documentation from github:
+We are working to make participating this project easy. Documentation is being written and improved all the time. You can find documentation from github. We are trying to make it easy to get started with libFuzzer.
 
 https://github.com/ouspg/libfuzzerfication
 
 ---
 
 
-#Feel free to contribute
+# Feel free to contribute
 * Everyone can contribute
 
 # How does this project work?
