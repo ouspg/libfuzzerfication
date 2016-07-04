@@ -55,15 +55,25 @@ There have been lots of vulnerabilities in popular libraries that should have be
 (show libfuzzer-base dockerfile)
 
 ---
+# Docker images for stubs
+
+* Every stub has its own dockerfile
+* Images are created from dockerfiles
+* Containers are run to do the testing
+
+(show example stub dockerfile for libav)
+
+---
 # After last session:
 
 * Lua stub was committed by Joonas Kuorilehto (@joneskoo)
-* libxslt stub was committed by Ari Kauppi
+* libxslt stub was committed by Ari Kauppi (@kauppi)
 
 ---
 # Under development
-- libflac stub is currently under development
-- Pauli (@WhiteEyeDoll) is currently working to get fuzzing running in Google cloud
+* libflac stub is currently under development
+* Make fuzzing in container to run as non-root user
+* Pauli (@WhiteEyeDoll) is currently working to get fuzzing running in Google cloud
 ---
 
 # Documentation
@@ -73,7 +83,6 @@ We are working to make participating this project easy. Documentation is being w
 https://github.com/ouspg/libfuzzerfication
 
 ---
-
 
 # Feel free to contribute
 * Everyone can contribute
