@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Libfuzzerfication by ouspg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Libfuzzerfication</h1>
+      <h2 class="project-tagline">libfuzzerfication - fuzzing for the rest of us!</h2>
+      <a href="https://github.com/ouspg/libfuzzerfication" class="btn">View on GitHub</a>
+      <a href="https://github.com/ouspg/libfuzzerfication/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ouspg/libfuzzerfication/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="libfuzzerfication" class="anchor" href="#libfuzzerfication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>libfuzzerfication</h1>
+
+<p>LibFuzzerfication is a project thats purpose is to do fuzz-testing for applications and libraries.</p>
+
+<p><img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action"></p>
+
+<h1>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h1>
+
+<p>Purpose of fuzzing is to automatically generate lots of test input and to make code crash and increase code coverage. <a href="http://llvm.org/docs/LibFuzzer.html">libFuzzer</a> is a library for in-process, coverage-guided evolutionary fuzzing of other libraries. It is similiar to <a href="http://lcamtuf.coredump.cx/afl/">American Fuzzy Lop (AFL)</a> but performs fuzzing inside single process and is much faster.</p>
+
+<h1>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motivation</h1>
+
+<p>There have been lots of vulnerabilities in popular libraries that should have been (theoretically) easy to test. We want to offer easy way to fuzz-test these libraries and increase awareness about the situation. We also want this to be available to everyone.</p>
+
+<p>We have list of top 50 most used libraries from <a href="http://www.codenomicon.com/products/appcheck/">Protecode SC</a>.</p>
+
+<p>Currently our top targets are:</p>
+
+<ul>
+<li>libxslt</li>
+<li>speex</li>
+<li>libflac</li>
+<li>gstreamer</li>
+</ul>
+
+<p>This project is currently in very early stage of development. You're welcome to collaborate!</p>
+
+<p>This is part of <a href="https://github.com/ouspg/ouspg-open">OUSPG-open</a></p>
+
+<h1>
+<a id="about-libfuzzer" class="anchor" href="#about-libfuzzer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About libfuzzer</h1>
+
+<ul>
+<li>LibFuzzer is open-source library (part of LLVM)</li>
+<li>Relies on compiler instrumentation to get coverage feedback</li>
+<li>It is linked with the library under test</li>
+<li>Works fully in process -&gt; Fast!</li>
+</ul>
+
+<p>LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using <a href="http://clang.llvm.org/docs/AddressSanitizer.html">ASan</a>, <a href="http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html">USan</a> or <a href="http://clang.llvm.org/docs/MemorySanitizer.html">MSan</a> and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]</p>
+
+<h1>
+<a id="how-does-this-project-work" class="anchor" href="#how-does-this-project-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How does this project work?</h1>
+
+<ul>
+<li>You pull container from Dockerhub</li>
+<li>Start Writing your own libfuzzer stub</li>
+<li>Share dockerfile with other users</li>
+<li>Use libFuzzer to collect corpus so that other people can continue where you left off</li>
+</ul>
+
+<p>You can start writing stubs without docker.</p>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h1>
+
+<ul>
+<li><a href="https://docs.docker.com/machine/">docker-machine version 0.7.0</a></li>
+<li><a href="https://www.docker.com/">Docker version 1.11.2</a></li>
+<li><a href="https://docs.docker.com/compose/">docker-compose version 1.7.1</a></li>
+</ul>
+
+<h1>
+<a id="material" class="anchor" href="#material" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Material</h1>
+
+<ul>
+<li><a href="http://llvm.org/docs/LibFuzzer.html">libFuzzer</a></li>
+<li><a href="http://clang.llvm.org/docs/SanitizerCoverage.html">SanitizerCoverage</a></li>
+<li>You can find some nice examples from: <a href="https://github.com/google/libfuzzer-bot">libfuzzer-bot repo</a>
+</li>
+<li><a href="https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/README.md">libFuzzer in Chrome</a></li>
+<li><a href="https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md">Efficient Fuzzer</a></li>
+</ul>
+
+<h1>
+<a id="sample-files" class="anchor" href="#sample-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample files</h1>
+
+<p>These downloads can be used as initial corpus directories for more efficient fuzzing.</p>
+
+<p><strong>Notice!</strong></p>
+
+<p>The links are currently down when we are creating new sample directories for multiple file formats.</p>
+
+<p></p><p>Coming soon ™</p><p></p>
+
+<h6>
+<a id="http-direct-downloads" class="anchor" href="#http-direct-downloads" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTTP Direct Downloads</h6>
+
+<ul>
+<li><a href="http://storage.googleapis.com/libfuzzerfication/downloads/samples/samples-mp3-20160630.tar.gz">MP3</a></li>
+</ul>
+
+<h6>
+<a id="checksums" class="anchor" href="#checksums" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Checksums</h6>
+
+<ul>
+<li><a href="http://storage.googleapis.com/libfuzzerfication/downloads/samples/sha256sums.txt">SHA256</a></li>
+</ul>
+
+<h1>
+<a id="tracking" class="anchor" href="#tracking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tracking</h1>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml">Target tracking sheet</a></p>
+
+<h1>
+<a id="team" class="anchor" href="#team" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Team</h1>
+
+<ul>
+<li>Mikko Yliniemi (<a href="https://github.com/mikessu" class="user-mention">@mikessu</a>)</li>
+<li>Atte Kettunen (<a href="https://github.com/attekett" class="user-mention">@attekett</a>)</li>
+<li>Pauli Huttunen (<a href="https://github.com/WhiteEyeDoll" class="user-mention">@WhiteEyeDoll</a>)</li>
+</ul>
+
+<p>Visit #ouspg @ IRCnet if you're interested!</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ouspg/libfuzzerfication">Libfuzzerfication</a> is maintained by <a href="https://github.com/ouspg">ouspg</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
