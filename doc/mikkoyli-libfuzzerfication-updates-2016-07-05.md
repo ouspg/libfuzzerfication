@@ -73,6 +73,8 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * Make fuzzing in container to run as non root user
 * Pauli (@WhiteEyeDoll) is currently working to get fuzzing running in Google cloud
 
+(ask Pauli to tell what he has been doing)
+
 ---
 
 # Documentation
