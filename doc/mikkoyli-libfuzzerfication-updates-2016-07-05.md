@@ -72,7 +72,13 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * Make fuzzing in container to run as non root user
 * Pauli (@WhiteEyeDoll) is currently working to get fuzzing running in Google cloud
 
-(ask Pauli to tell what he has been doing)
+  * Get samplesets to the cloud platform for distribution to masses
+    * Minimize the samplesets and apply relevant checksums with dates
+    * Automatic p2p container node with deluge to save on bandwith costs (the sets are from few gigs to over 100 gigs in size)
+
+  * Create kubernetes pod files for different fuzzers to automate scaled fuzzing of a desired target
+    * Easily scale from a few pods to hunderds of containers doing efficient fuzzing and generating new corpus quickly
+
 
 ---
 
