@@ -28,7 +28,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * LibFuzzer is open-source library (part of LLVM)
 * Relies on compiler instrumentation to get coverage feedback
 * It is linked with the library under test
-* Works fully in process -> Fast!
+* Works fully inside the running program (a process) -> Fast!
 
 ---
 
@@ -43,8 +43,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 # After last session:
 
 * Lua stub was committed by Joonas Kuorilehto (@joneskoo)
-* libxslt stub was committed by Ari Kauppi (@kauppi
-
+* libxslt stub was committed by Ari Kauppi (@kauppi)
 
 ---
 # Docker base image
