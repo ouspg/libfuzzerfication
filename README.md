@@ -1,6 +1,6 @@
 
 # libfuzzerfication
-LibFuzzerfication is a project thats purpose is to do fuzz-testing for applications and libraries.
+LibFuzzerfication project uses libFuzzer for fuzzing popular applications and libraries.
 
 <img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action">
 
