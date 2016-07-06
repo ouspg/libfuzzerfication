@@ -18,7 +18,24 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 
 LibFuzzer uses corpus of sample inputs to test the code. Corpus is a set of valid and invalid inputs for the target. Corpus is usually collected manually, by fuzzing or by crawling from web. For example, for graphics library for example corpus should hold different image files. Fuzzer generates mutations for these files automatically which are then tested again. If mutations trigger new code pathes under test the mutations are saved to corpus. It is possible to minimize corpus but still preserve code coverage.
 
-You can easily get started with stubs by installing Clang and libFuzzer locally.
+You can easily get started with stubs by installing Clang and libFuzzer locally. Your fuzzer should produce output like this:
+```
+INFO: Seed: 219835401
+#0	READ   units: 202 exec/s: 0
+#202	INITED cov: 2610 indir: 22 units: 145 exec/s: 0
+#928	NEW    cov: 2611 indir: 22 units: 146 exec/s: 0 L: 19 MS: 1 ChangeBit-
+#1859	NEW    cov: 2615 indir: 22 units: 147 exec/s: 1859 L: 11 MS: 2 ChangeASCIIInt-CrossOver-
+#4096	pulse  cov: 2615 indir: 22 units: 147 exec/s: 2048
+#4964	NEW    cov: 2616 indir: 22 units: 148 exec/s: 2482 L: 19 MS: 2 ChangeBit-ChangeASCIIInt-
+#5599	NEW    cov: 2617 indir: 22 units: 149 exec/s: 1866 L: 23 MS: 2 ShuffleBytes-CrossOver-
+#5673	NEW    cov: 2618 indir: 22 units: 150 exec/s: 1891 L: 31 MS: 1 CrossOver-
+#5699	NEW    cov: 2628 indir: 22 units: 151 exec/s: 1899 L: 15 MS: 2 EraseByte-CrossOver-
+#5809	NEW    cov: 2639 indir: 22 units: 152 exec/s: 1936 L: 210 MS: 2 ChangeBit-CrossOver-
+#7596	NEW    cov: 2640 indir: 22 units: 153 exec/s: 1899 L: 186 MS: 4
+
+```
+The NEW line appears when libFuzzer finds new interesting input.
+The pulse line shows current status and appears periodically
 
 # Using docker
 
