@@ -1,4 +1,3 @@
-
 # libfuzzerfication
 LibFuzzerfication is a project thats purpose is to do fuzz-testing for applications and libraries.
 
@@ -37,6 +36,9 @@ LibFuzzer itself can be built with any compiler without specific flags. Target c
 * Use libFuzzer to collect corpus so that other people can continue where you left off
 
 You can start writing stubs without docker.
+
+# Getting started
+* You can get started by reading our [Getting started tutorial](https://github.com/ouspg/libfuzzerfication/tree/master/docker)
 
 # Requirements
 * [docker-machine version 0.7.0](https://docs.docker.com/machine/)
