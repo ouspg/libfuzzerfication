@@ -1,5 +1,5 @@
 # libfuzzerfication
-LibFuzzerfication is a project thats purpose is to do fuzz-testing for applications and libraries.
+LibFuzzerfication project uses libFuzzer for fuzzing popular applications and libraries.
 
 <img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action">
 
@@ -66,6 +66,9 @@ The links are currently down when we are creating new sample directories for mul
 
 ###### Checksums
 * [SHA256](http://storage.googleapis.com/libfuzzerfication/downloads/samples/sha256sums.txt)
+
+# Tracking
+[Target tracking sheet](https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
 
 # Team
 * Mikko Yliniemi (@mikessu)

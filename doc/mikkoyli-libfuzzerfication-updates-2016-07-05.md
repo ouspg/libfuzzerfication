@@ -1,7 +1,7 @@
 class: center, middle
 
 ## LibFuzzerfication updates
-## OUSPG Open, 2016-07-04
+## OUSPG Open, 2016-07-05
 
 ---
 
@@ -12,8 +12,7 @@ class: center, middle
 * Pauli Huttunen (@WhiteEyeDoll)
 
 ---
-
-LibFuzzerfication is a project thats purpose is to do fuzz-testing for applications and libraries.
+Purpose of libFuzzerfication is to do fuzz-testing for applications and libraries.
 
 <img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action">
 
@@ -29,7 +28,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * LibFuzzer is open-source library (part of LLVM)
 * Relies on compiler instrumentation to get coverage feedback
 * It is linked with the library under test
-* Works fully in process -> Fast!
+* Works fully inside the running program (a process) -> Fast!
 
 ---
 
@@ -44,8 +43,7 @@ There have been lots of vulnerabilities in popular libraries that should have be
 # After last session:
 
 * Lua stub was committed by Joonas Kuorilehto (@joneskoo)
-* libxslt stub was committed by Ari Kauppi (@kauppi
-
+* libxslt stub was committed by Ari Kauppi (@kauppi)
 
 ---
 # Docker base image
@@ -73,6 +71,12 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * libflac stub is currently under development
 * Make fuzzing in container to run as non root user
 * Pauli (@WhiteEyeDoll) is currently working to get fuzzing running in Google cloud
+
+  * Get the minimized samplesets to the cloud platform for distribution to masses
+  * Automatic p2p container node with deluge to save in bandwith costs (the sets are from few gigs to over 100 gigs in size)
+  * Create kubernetes pod files for different fuzzers to automate scaled fuzzing of a desired target
+  * Easily scale from a few pods to hunderds of containers doing efficient fuzzing and generating new corpus quickly
+
 
 ---
 
