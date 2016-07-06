@@ -35,6 +35,7 @@ INFO: Seed: 219835401
 
 ```
 The NEW line appears when libFuzzer finds new interesting input.
+
 The pulse line shows current status and appears periodically
 
 # Using docker
