@@ -3,6 +3,10 @@
 #include "share/compat.h"
 #include "FLAC/stream_decoder.h"
 
+static void error_callback(const FLAC__StreamDecoder *decoder, FLAC__StreamDecoderErrorStatus status, void *data);
+static FLAC__StreamDecoderWriteStatus write_callback(const FLAC__StreamDecoder *decoder, const FLAC__Frame *frame, const FLAC__int32 * const buffer[], void *data);
+static FLAC__StreamDecoderReadStatus read_callback(const FLAC__StreamDecoder *decoder, FLAC__byte buffer[], size_t *bytes, void *data);
+
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 	FLAC__bool ok = true;
 	FLAC__StreamDecoder *decoder = 0;
@@ -23,9 +27,9 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 																										/*length_callback*/ NULL,
 																										/*eof_callback*/ NULL,
 																										write_callback,
-																										/*metadata_callback*/,
+																										/*metadata_callback*/ NULL,
 																										error_callback,
-																										client_data);
+																										data);
 
 	if(init_status != FLAC__STREAM_DECODER_INIT_STATUS_OK) {
 		fprintf(stderr, "ERROR: initializing decoder: %s\n", FLAC__StreamDecoderInitStatusString[init_status]);
@@ -41,4 +45,10 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 	FLAC__stream_decoder_delete(decoder);
 
 	return 0;
+}
+
+void error_callback(const FLAC__StreamDecoder *decoder, FLAC__StreamDecoderErrorStatus status, void *data)
+{
+	(void)decoder, (void)data;
+  fprintf(stderr, "Got error callback: %s\n", FLAC__StreamDecoderErrorStatusString[status]);
 }
