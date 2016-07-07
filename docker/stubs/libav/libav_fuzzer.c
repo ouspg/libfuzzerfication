@@ -16,55 +16,55 @@ extern "C" {
 
 //TODO: Remove extra check etc.
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
-	avcodec_register_all();
-	av_log_set_level(-1);
-	AVCodec *codec;
-	AVCodecContext *c= NULL;
-	int len;
-	AVPacket avpkt;
-	AVFrame *decoded_frame = NULL;
-	//printf("New file.\n");
-		
-	av_init_packet(&avpkt);
+    avcodec_register_all();
+    av_log_set_level(-1);
+    AVCodec *codec;
+    AVCodecContext *c= NULL;
+    int len;
+    AVPacket avpkt;
+    AVFrame *decoded_frame = NULL;
+    //printf("New file.\n");
 
-	codec = avcodec_find_decoder(AV_CODEC_ID_MP2);
-	  if (!codec) {
-	      fprintf(stderr, "codec not found\n");
-	      exit(1);
-	  }
+    av_init_packet(&avpkt);
 
-	c = avcodec_alloc_context3(codec);
+    codec = avcodec_find_decoder(AV_CODEC_ID_MP2);
+    if (!codec) {
+        fprintf(stderr, "codec not found\n");
+        exit(1);
+    }
 
-	if (avcodec_open2(c, codec, NULL) < 0) {
-	       fprintf(stderr, "could not open codec\n");
-	       exit(1);
-	   }
+    c = avcodec_alloc_context3(codec);
 
-	/* decode until eof */
-	//TODO: Check that the data is actually read as it should.
-	avpkt.data = (uint8_t *) data;
-	avpkt.size = size; //fread(inbuf, 1, AUDIO_INBUF_SIZE, f);
+    if (avcodec_open2(c, codec, NULL) < 0) {
+        fprintf(stderr, "could not open codec\n");
+        exit(1);
+    }
 
-	while (avpkt.size > 0) {
-		int got_frame = 0;
+    /* decode until eof */
+    //TODO: Check that the data is actually read as it should.
+    avpkt.data = (uint8_t *) data;
+    avpkt.size = size; //fread(inbuf, 1, AUDIO_INBUF_SIZE, f);
 
-		decoded_frame = av_frame_alloc();
-		
+    while (avpkt.size > 0) {
+        int got_frame = 0;
 
-		len = avcodec_decode_audio4(c, decoded_frame, &got_frame, &avpkt);
-		//printf("len: %d\n",len);
-		if (len < 0) {
-			//fprintf(stderr, "Error while decoding\n");
-			break;
-		}
+        decoded_frame = av_frame_alloc();
 
-		avpkt.size -= len;
-		avpkt.data += len;
 
-	}
+        len = avcodec_decode_audio4(c, decoded_frame, &got_frame, &avpkt);
+        //printf("len: %d\n",len);
+        if (len < 0) {
+            //fprintf(stderr, "Error while decoding\n");
+            break;
+        }
 
-	avcodec_close(c);
-	av_free(c);
+        avpkt.size -= len;
+        avpkt.data += len;
 
-	return 0;
+    }
+
+    avcodec_close(c);
+    av_free(c);
+
+    return 0;
 }

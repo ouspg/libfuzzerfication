@@ -11,6 +11,7 @@ ADD ${TARGET}_fuzzer.c /src/$TARGET/
 RUN mkdir -p /work/$TARGET/
 
 #Build
+
 ADD build.sh /src/scripts/
 RUN bash /src/scripts/build.sh
 

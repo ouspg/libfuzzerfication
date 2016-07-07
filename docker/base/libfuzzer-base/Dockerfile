@@ -17,20 +17,21 @@ RUN mkdir -p /srv/fuzzer/{samples,results}
 # Checkout & build libFuzzer
 
 RUN mkdir /src /work && \
-	cd /src && \
-	git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer && \
-	clang++ -c -g -O2 -std=c++11 Fuzzer/*.cpp -IFuzzer && \
-	ar ruv libFuzzer.a Fuzzer*.o && \
-	mkdir -p /work/libfuzzer && \
-	mv libFuzzer.a /usr/local/lib && \
-	rm *.o && \
-	rm -rf Fuzzer
+    cd /src && \
+    git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer && \
+    clang++ -c -g -O2 -std=c++11 Fuzzer/*.cpp -IFuzzer && \
+    ar ruv libFuzzer.a Fuzzer*.o && \
+    mkdir -p /work/libfuzzer && \
+    mv libFuzzer.a /usr/local/lib && \
+    rm *.o && \
+    rm -rf Fuzzer
 
-#Checkout minimizer
+
+# Checkout minimizer
 
 RUN cd src && \
-	git clone https://github.com/attekett/nipsu/ && \
-	rm -rf ./nipsu/.git
+    git clone https://github.com/attekett/nipsu/ && \
+    rm -rf ./nipsu/.git
 
 # Add fuzzing script
 

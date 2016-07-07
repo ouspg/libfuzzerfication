@@ -9,16 +9,17 @@ export LDFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-
 
 
 cd /src/libxslt/
+
 if [ ! -f configure ]
 then
-  ./autogen.sh
+    ./autogen.sh
 fi
 
 echo =========== MAKE
 make -j 16
 
 $CXX $CXXFLAGS -std=c++11 libxslt_fuzzer.cc -Werror \
-			    -I. $(xml2-config --cflags) \
-			    -Llibxslt/.libs -lxslt -lFuzzer \
-			    $(xml2-config --libs) \
-   			    -o /src/libxslt/libxslt_fuzzer
+                -I. $(xml2-config --cflags) \
+                -Llibxslt/.libs -lxslt -lFuzzer \
+                $(xml2-config --libs) \
+                -o /src/libxslt/libxslt_fuzzer
