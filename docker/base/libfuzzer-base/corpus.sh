@@ -3,7 +3,7 @@
 # This script is used to download the corpus archive and check its contents
 # Minimizing and upload options to be included
 
-sampledir=$HOME/$TARGET/samples/
+sampledir=/srv/fuzzer/samples/
 
 function dl_corpus () {
     curl -O --output $sampledir $CORPUS_URL/$CORPUS_ARCHIVE
