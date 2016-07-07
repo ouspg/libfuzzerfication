@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 
 metadata:
-    name: libxml2-fuzzing-pod
+    name: imagemagick-fuzzing-pod
 
 spec:
 
@@ -14,11 +14,11 @@ spec:
 
             labels:
 
-                target: libxml2
+                target: ImageMagick
 
         spec:
 
             containers:
 
-            - name: libxml2-fuzzer
-              image: ouspg/libfuzzer-libxml2:ops-testing
+            - name: imagemagick-fuzzer
+              image: ouspg/libfuzzer-imagemagick:ops-dev

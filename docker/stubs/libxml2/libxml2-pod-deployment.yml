@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+
+metadata:
+    name: libxml2-fuzzing-pod
+
+spec:
+
+    replicas:
+
+    template:
+
+        metadata:
+
+            labels:
+
+                target: libxml2
+
+        spec:
+
+            containers:
+
+            - name: libxml2-fuzzer
+              image: ouspg/libfuzzer-libxml2:ops-dev
