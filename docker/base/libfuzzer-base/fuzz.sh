@@ -93,9 +93,11 @@ function parse_timeout_trace {
     echo "$FINGERPRINT"
 }
 
-TARGET_FULL=$1
-TARGET=$(basename $1)
-echo "Target: $TARGET"
+# TODO: handle $TARGET env with a cleaner solution
+
+# TARGET_FULL=$1
+# TARGET=$(basename $1)
+# echo "Target: $TARGET"
 
 export ASAN_SYMBOLIZER_PATH='/usr/lib/llvm-3.8/bin/llvm-symbolizer'
 #Fuzzers sometimes tries to allocate huge amounts of memory, when it does ASAN allocator fails.
@@ -108,16 +110,16 @@ while true; do
         if [ "$(grep "ERROR: AddressSanitizer" ./asan.txt)" ]; then
             RESULT=$(parse_asan_trace ./asan.txt)
             echo "New crash: "$TARGET-$RESULT
-            cp ./asan.txt $HOME/results/$TARGET-$RESULT.txt && echo "Report saved: $HOME/results/$TARGET-$RESULT.txt"
-            cp /dev/shm/repro-file $HOME/results/$TARGET-$RESULT.repro && echo "Repro-file saved: $HOME/results/$TARGET-$RESULT.repro"
+            cp ./asan.txt $HOME/$TARGET/results/$TARGET-$RESULT.txt && echo "Report saved: $HOME/$TARGET/results/$TARGET-$RESULT.txt"
+            cp /dev/shm/repro-file $HOME/$TARGET/results/$TARGET-$RESULT.repro && echo "Repro-file saved: $HOME/$TARGET/results/$TARGET-$RESULT.repro"
             if [ "$MINIMIZE" == "true" ]; then
-                nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f $HOME/results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
+                nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f $HOME/$TARGET/results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
             fi
         elif [ "$(grep "ERROR: libFuzzer: timeout" ./asan.txt)" ]; then
             RESULT=$(parse_timeout_trace ./asan.txt)
             echo "New timeout: "$TARGET-$RESULT
-            cp ./asan.txt $HOME/results/$TARGET-$RESULT.txt && echo "Report saved: $HOME/results/$TARGET-$RESULT.txt"
-            cp /dev/shm/repro-file $HOME/results/$TARGET-$RESULT.repro && echo "Repro-file saved: $HOME/results/$TARGET-$RESULT.repro"
+            cp ./asan.txt $HOME/$TARGET/results/$TARGET-$RESULT.txt && echo "Report saved: $HOME/$TARGET/results/$TARGET-$RESULT.txt"
+            cp /dev/shm/repro-file $HOME/$TARGET/results/$TARGET-$RESULT.repro && echo "Repro-file saved: $HOME/$TARGET/results/$TARGET-$RESULT.repro"
         fi
         #TODO: Add dictionary collection.
         rm asan.txt

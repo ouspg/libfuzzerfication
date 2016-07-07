@@ -28,4 +28,4 @@ CMD ["/lua_fuzzer",\
      "-timeout=5",\
      "-use_counters=1",\
      "-max_total_time=3600",\
-     "/samples/libfuzzer-lua"]
+     "$HOME/$TARGET/samples/"]
