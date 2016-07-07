@@ -5,11 +5,11 @@ We are glad that you are reading this! If you are unsure about anything please f
 
 * You find us from IRC channel #ouspg @ IRCnet
 * Read the [licence](https://github.com/ouspg/libfuzzerfication/blob/master/LICENSE)
+
 # Submitting pull requests
+
 * You can submit to this project by using [pull requests](https://help.github.com/articles/using-pull-requests/).
 * Write a good commit message
-
-# Submitting issues
 
 # Coding conventions
 * We indent using two spaces (soft tabs)
