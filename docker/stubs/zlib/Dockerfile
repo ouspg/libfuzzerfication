@@ -1,0 +1,1 @@
+FROM ouspg/libfuzzer-base
