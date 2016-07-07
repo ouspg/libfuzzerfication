@@ -1,8 +1,7 @@
-
 # libfuzzerfication
-LibFuzzerfication is a project thats purpose is to do fuzz-testing for applications and libraries.
+LibFuzzerfication project uses libFuzzer for fuzzing popular applications and libraries.
 
-<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing.png" width="500" height="284" alt="Fuzzing in action">
+<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/pictures/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action">
 
 # About
 Purpose of fuzzing is to automatically generate lots of test input and to make code crash and increase code coverage. [libFuzzer](http://llvm.org/docs/LibFuzzer.html) is a library for in-process, coverage-guided evolutionary fuzzing of other libraries. It is similiar to [American Fuzzy Lop (AFL)](http://lcamtuf.coredump.cx/afl/) but performs fuzzing inside single process and is much faster.
@@ -38,6 +37,9 @@ LibFuzzer itself can be built with any compiler without specific flags. Target c
 
 You can start writing stubs without docker.
 
+# Getting started
+* You can get started by reading our [Getting started tutorial](https://github.com/ouspg/libfuzzerfication/tree/master/docker)
+
 # Requirements
 * [docker-machine version 0.7.0](https://docs.docker.com/machine/)
 * [Docker version 1.11.2](https://www.docker.com/)
@@ -52,11 +54,21 @@ You can start writing stubs without docker.
 
 # Sample files
 These downloads can be used as initial corpus directories for more efficient fuzzing.
+
+**Notice!**
+
+The links are currently down when we are creating new sample directories for multiple file formats.
+
+<p>Coming soon &trade;<p>
+
 ###### HTTP Direct Downloads
-  * [MP3](http://storage.googleapis.com/libfuzzerfication/samples/samples-mp3-20160630.tar.gz)
+  * [MP3](http://storage.googleapis.com/libfuzzerfication/downloads/samples/samples-mp3-20160630.tar.gz)
 
 ###### Checksums
-* [SHA256](http://storage.googleapis.com/libfuzzerfication/samples/sha256sums.txt)
+* [SHA256](http://storage.googleapis.com/libfuzzerfication/downloads/samples/sha256sums.txt)
+
+# Tracking
+[Target tracking sheet](https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
 
 # Team
 * Mikko Yliniemi (@mikessu)
