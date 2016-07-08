@@ -19,6 +19,6 @@ fi
 make -j4
 make install
 
-$CXX $CXXFLAGS -std=c++11 flac_fuzzer.c \
+$CXX $CXXFLAGS -std=c++11 flac_fuzzer.cc \
   			   -Iinclude -lFLAC -lFuzzer \
    			    -o flac_fuzzer

@@ -7,7 +7,7 @@ ENV TARGET 'flac'
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y libflac-dev pkg-config libtool-bin && apt-get build-dep libflac-dev -y
 RUN cd /src && git clone https://git.xiph.org/flac.git
-ADD flac_fuzzer.c /src/$TARGET/
+ADD flac_fuzzer.cc /src/$TARGET/
 
 #RUN mkdir -p /work/$TARGET/
 
