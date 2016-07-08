@@ -12,4 +12,4 @@ We are glad that you are reading this! If you are unsure about anything please f
 * Write a good commit message
 
 # Coding conventions
-* We indent using two spaces (soft tabs)
+* We indent using four spaces
