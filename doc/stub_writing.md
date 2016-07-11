@@ -9,10 +9,10 @@ class: center, middle
 Purpose of libFuzzerfication is to do fuzz-testing for applications and libraries. Today we are going to write some libFuzzer stubs for libFuzzerfication.
 
 Fuzzing is to automatically generate lots of test input to crash your code and to increase code coverage.
-Some important words:
+Some important terms:
 
 Target:
-- A function that consumes array of byters and does something non trivial to them.
+- A function that consumes array of bytes and does something non trivial to them.
 
 Fuzzer engine
 - A tool that needs a fuzz target with different random inputs
@@ -45,8 +45,14 @@ List of targets to fuzz:
 - https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml
 
 ---
+# How to get started writing stubs?
 
-First step is to build base image:
+First clone the repo:
+```
+git clone https://github.com/ouspg/libfuzzerfication.git
+```
+
+Second step is to build base image. Go to libfuzzerfication/docker directory and write:
 ```
 docker-compose build libfuzzer-base
 ```
@@ -67,7 +73,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
   return 0;  // Non-zero return values are reserved for future use.
 }
 ```
----
+
 LibFuzzer is already installed in base image.
 
 ---
