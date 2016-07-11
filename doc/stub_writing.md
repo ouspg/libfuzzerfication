@@ -37,11 +37,11 @@ There have been lots of vulnerabilities in popular libraries that should have be
 ---
 
 # How to get started writing stubs?
-* You need:
+You need:
 - clang
 - libFuzzer
 
-* List of targets to fuzz:
+List of targets to fuzz:
 - https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml
 
 ---
