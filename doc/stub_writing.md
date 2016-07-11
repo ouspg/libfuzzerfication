@@ -11,11 +11,11 @@ Purpose of libFuzzerfication is to do fuzz-testing for applications and librarie
 Fuzzing is to automatically generate lots of test input to crash your code and to increase code coverage.
 Some important words:
 
-Target:
+* Target:
 - A function that consumes array of byters and does something non trivial to them.
-Fuzzer engine
+* Fuzzer engine
 - A tool that needs a fuzz target with different random inputs
-Corpus
+* Corpus
 - A set on inputs that are either valid or invalid.
 - Collected manually or by fuzzing or by crawling from web
 - Can be minimized (to have only files with different code coverage)
