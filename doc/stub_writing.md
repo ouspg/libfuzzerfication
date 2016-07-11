@@ -19,6 +19,7 @@ Corpus
 - A set on inputs that are either valid or invalid.
 - Collected manually or by fuzzing or by crawling from web
 - Can be minimized (to have only files with different code coverage)
+
 ---
 # Motivation
 There have been lots of vulnerabilities in popular libraries that should have been (theoretically) easy to test. We want to offer easy way to fuzz-test these libraries and increase awareness about the situation. We also want this to be available to everyone.
