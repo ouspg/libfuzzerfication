@@ -67,14 +67,24 @@ docker run -it --rm -v <host_dir>:<container_dir> --entrypoint bash <image>
 Then you can implement a fuzzing target function that accepts a sequence of bytes, like this:
 
 ```
-// fuzz_target.cc
-extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
-  DoSomethingInterestingWithMyAPI(Data, Size);
-  return 0;  // Non-zero return values are reserved for future use.
+// libxml2_fuzzer.cc
+#include "libxml/parser.h"
+void ignore(void *ctx, const char *msg, ...) {
+  // Error handler to avoid spam of error messages from libxml parser.
+}
+extern "C" int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
+  xmlSetGenericErrorFunc(NULL, &ignore);
+  auto doc = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xml", NULL, 0);
+  //if (doc) {
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+  //}
+  return 0;
 }
 ```
 
 LibFuzzer is already installed in base image.
+(Show build.sh and Dockerfile, show example)
 
 ---
 
