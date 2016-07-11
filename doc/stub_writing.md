@@ -38,15 +38,27 @@ There have been lots of vulnerabilities in popular libraries that should have be
 
 # How to get started writing stubs?
 You need:
-- clang
-- libFuzzer
+- Docker
+- Clang, libFuzzer (included in libfuzzer-base image)
 
 List of targets to fuzz:
 - https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml
 
 ---
 
-The first step for using libFuzzer on a library is to implement a fuzzing target function that accepts a sequence of bytes, like this:
+First step is to build base image:
+```
+docker-compose build libfuzzer-base
+```
+
+Then you can start developing:
+```
+docker run -it --rm -v <host_dir>:<container_dir> --entrypoint bash <image>
+```
+
+---
+
+Then you can implement a fuzzing target function that accepts a sequence of bytes, like this:
 
 ```
 // fuzz_target.cc
@@ -56,20 +68,11 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 }
 ```
 ---
-Next, build the libFuzzer library as a static archive, without any sanitizer options. Note that the libFuzzer library contains the main() function:
+LibFuzzer is already installed in base image.
 
-```
-svn co http://llvm.org/svn/llvm-project/llvm/trunk/lib/Fuzzer
-# Alternative: get libFuzzer from a dedicated git mirror:
-# git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer
-clang++ -c -g -O2 -std=c++11 Fuzzer/*.cpp -IFuzzer
-ar ruv libFuzzer.a Fuzzer*.o
-```
-
-clang -fsanitize-coverage=edge -fsanitize=address your_lib.cc fuzz_target.cc libFuzzer.a -o my_fuzzer
-
-See: http://llvm.org/docs/LibFuzzer.html
 ---
+
+libFuzzer output looks like this:
 
 ```
 INFO: Seed: 219835401
@@ -91,27 +94,3 @@ The NEW line appears when libFuzzer finds new interesting input.
 The pulse line shows current status and appears periodically
 
 ---
-
-# Using docker
-
-If you want to start using Docker you have to should read  [Docker documentation](https://docs.docker.com/) if you are not familiar with it. Before starting to write dockerfiles it is recommened to read [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/).
-
-# How to run containers?
-* Build base image
-```
-docker-compose build libfuzzer-base
-```
-* Run container (ImageMagick example)
-```
-docker-compose run imagemagick
-```
-* You can find other targets from docker-compose.yml
-* libfuzzer-base includes fuzz.sh script for collecting results
-
-# Developing
-* Build image
-* If you want to do developing (for ImageMagick in example) use:
-```
-docker run -it --rm -v <path>/<to>/docker/stubs/ImageMagick/:/src/src/ImageMagick --entrypoint bash <image>
-```
-This will run ImageMagick container with your development directory mounted inside container.
