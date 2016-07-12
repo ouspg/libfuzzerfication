@@ -4,7 +4,8 @@ RUN apt-get update && \
     apt-get full-upgrade -y && \
     apt-get install -y git clang nodejs && \
     apt-get autoremove -y && \
-    apt-get clean
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Checkout & build libFuzzer
 
