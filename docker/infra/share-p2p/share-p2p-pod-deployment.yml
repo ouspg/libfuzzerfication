@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 
 metadata:
-    name: sample-share-pod
+    name: share-p2p-pod
 
 spec:
 
