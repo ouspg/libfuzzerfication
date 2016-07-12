@@ -50,8 +50,8 @@ Four different fuzzing strategies are summaries below and details on how to run 
 fuzzing strategy | attempts until crash found
 ---------------- | ---------------------------
 coverage only | 9488
-dictionary seed | 3064
-corpus seed | 1374
+dictionary | 3064
+corpus | 1374
 corpus from fuzzing | 149
 
 ## Coverage guided fuzzing
@@ -67,7 +67,7 @@ INFO: A corpus is not provided, starting from an empty corpus
 9488
 ```
 
-## Coverage guided fuzzing with dictionary seed
+## Coverage guided fuzzing with dictionary
 
 ```console
 $ ./fuzzer -seed=2016 -dict=./dictionary.txt | wc -l
@@ -81,7 +81,7 @@ INFO: A corpus is not provided, starting from an empty corpus
 3064
 ```
 
-## Coverage guided fuzzing with corpus seed (samples)
+## Coverage guided fuzzing with corpus (samples)
 
 ```console
 $ ./fuzzer -seed=2016 corpus | wc -l
