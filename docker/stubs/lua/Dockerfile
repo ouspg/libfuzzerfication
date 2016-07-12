@@ -1,16 +1,13 @@
 FROM ouspg/libfuzzer-base
 
-ENV TARGET 'lua'
-ENV TARGET_VERSION '5.3.3'
-
 #Install dependencies and fetch the source.
 
 RUN apt-get update && apt-get -y build-dep lua5.3
 
-ADD https://www.lua.org/ftp/lua-${TARGET_VERSION}.tar.gz /src/
-RUN tar -C /src -zxf /src/lua-${TARGET_VERSION}.tar.gz
+ADD https://www.lua.org/ftp/lua-5.3.3.tar.gz /src/
+RUN tar -C /src -zxf /src/lua-5.3.3.tar.gz
 
-ADD lua_fuzzer.c /src/lua-${TARGET_VERSION}
+ADD lua_fuzzer.c /src/lua-5.3.3
 
 ADD samples /samples/libfuzzer-lua
 
