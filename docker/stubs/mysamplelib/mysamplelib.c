@@ -6,7 +6,7 @@ const char *_mytarget = "Fuzzing in Style ..............";
 
 
 int _cmp(const uint8_t *buf, size_t len) {
-  if (len > strlen(_mytarget))
+  if (!len || (len > strlen(_mytarget)))
     return 1;
   if (memcmp(buf, _mytarget, len))
     return 1;
