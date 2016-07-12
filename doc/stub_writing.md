@@ -54,16 +54,16 @@ git clone https://github.com/ouspg/libfuzzerfication.git
 
 Second step is to build base image. Go to libfuzzerfication/docker directory and write:
 ```
-docker-compose build libfuzzer-base
+# docker-compose build libfuzzer-base
 ```
 Or alternatively pull the ready to go automagically built image from dockerhub:
 ```
-docker pull ouspg/libfuzzer-base
+# docker pull ouspg/libfuzzer-base
 ```
 
 Then you can start developing:
 ```
-docker run -it --rm -v <host_dir>:<container_dir> --entrypoint bash <image>
+# docker run -it --rm -v <host_dir>:<container_dir> --entrypoint bash <image>
 ```
 
 ---
