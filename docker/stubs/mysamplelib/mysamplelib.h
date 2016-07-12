@@ -1,1 +1,1 @@
-int fuzzinginstyle(const unsigned char *buf);
+int mysamplefunction(const uint8_t *, size_t);

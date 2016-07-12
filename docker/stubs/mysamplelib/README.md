@@ -1,9 +1,11 @@
 # Building
 
 ```sh
-docker build -t mysamplelib-fuzzer .
+$ docker build -t mysamplelib-fuzzer .
 ```
 
 # Running
 
-TBD
+```sh
+$ docker run -ti --rm mysamplelib-fuzzer
+```

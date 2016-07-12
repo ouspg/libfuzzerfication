@@ -3,10 +3,11 @@
 
 const char *_mytarget = "Fuzzing in Style ..............";
 
-inline int _cmp(const unsigned char *buf, size_t len) {
+
+inline int _cmp(const uint8_t *buf, size_t len) {
   if (len > strlen(_mytarget))
     return 1;
-  if (strncmp(buf, _mytarget, len))
+  if (memcmp(buf, _mytarget, len))
     return 1;
 
   printf("%c", _mytarget[len-1]);
@@ -14,7 +15,7 @@ inline int _cmp(const unsigned char *buf, size_t len) {
 }
 
 
-int fuzzinginstyle(const unsigned char *buf) {
+int mysamplefunction(const uint8_t *buf, size_t len) {
 
   int index = 0;
   int ret = 1;
@@ -56,16 +57,3 @@ int fuzzinginstyle(const unsigned char *buf) {
 
   return ret;
 }
-
-
-/*
-int main(int argc, char *argv[]) {
-
-  if (argc != 2) {
-    fprintf(stderr, "Usage: %s <test input string>\n", argv[0]);
-    return 1;
-  }
-
-  return fuzzinginstyle(argv[1], strlen(argv[1]));
-}
-*/
