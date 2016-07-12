@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get build-dep imagemagick -y && \
     apt-get install libiomp5 libiomp-dev -y && \
     apt-get autoremove -y && \
-    apt-get clean
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 
