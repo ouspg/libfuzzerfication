@@ -1,13 +1,10 @@
 FROM ubuntu:16.04
 
-# Install updates and clean afterwards
-
 RUN apt-get update && \
-	apt-get dist-upgrade -y && \
-	apt-get install -y git clang nodejs && \
-	apt-get autoremove && \
-    apt-get autoclean && \
-	rm -rf /var/lib/apt/lists/*
+    apt-get full-upgrade -y && \
+    apt-get install -y git clang nodejs && \
+    apt-get autoremove -y && \
+    apt-get clean
 
 # Create fuzzer user
 
@@ -29,7 +26,7 @@ RUN mkdir /src /work && \
 
 # Checkout minimizer
 
-RUN cd src && \
+RUN cd /src && \
     git clone https://github.com/attekett/nipsu/ && \
     rm -rf ./nipsu/.git
 
