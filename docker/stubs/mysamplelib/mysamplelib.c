@@ -2,11 +2,13 @@
 #include <stdint.h>
 #include <string.h>
 
-const char *_mytarget = "Fuzzing in Style ..............";
+#include "mysamplelib.h"
+
+const char *_mytarget = "Fuzz in Style!";
 
 
-int _cmp(const uint8_t *buf, size_t len) {
-  if (!len || (len > strlen(_mytarget)))
+int _cmp(const uint8_t *buf, size_t len, size_t size) {
+  if ((size < 1) || (len > size))
     return 1;
   if (memcmp(buf, _mytarget, len))
     return 1;
@@ -18,42 +20,40 @@ int _cmp(const uint8_t *buf, size_t len) {
 
 int mysamplefunction(const uint8_t *buf, size_t len) {
 
-  int index = 0;
+  int index = 1;
   int ret = 1;
 
-  if (!_cmp(buf, index++))
-    if (!_cmp(buf, index++))
-      if (!_cmp(buf, index++))
-        if (!_cmp(buf, index++))
-          if (!_cmp(buf, index++))
-            if (!_cmp(buf, index++))
-              if (!_cmp(buf, index++))
-                if (!_cmp(buf, index++))
-                  if (!_cmp(buf, index++))
-                    if (!_cmp(buf, index++))
-                      if (!_cmp(buf, index++))
-                        if (!_cmp(buf, index++))
-                          if (!_cmp(buf, index++))
-                            if (!_cmp(buf, index++))
-                              if (!_cmp(buf, index++))
-                                if (!_cmp(buf, index++))
-                                  if (!_cmp(buf, index++))
-                                    if (!_cmp(buf, index++))
-                                      if (!_cmp(buf, index++))
-                                        if (!_cmp(buf, index++))
-                                          if (!_cmp(buf, index++))
-                                            if (!_cmp(buf, index++))
-                                              if (!_cmp(buf, index++))
-                                                if (!_cmp(buf, index++))
-                                                  if (!_cmp(buf, index++))
-                                                    if (!_cmp(buf, index++))
-                                                      if (!_cmp(buf, index++))
-                                                        ret = 0;
+  if (!_cmp(buf, index++, len))
+    if (!_cmp(buf, index++, len))
+      if (!_cmp(buf, index++, len))
+        if (!_cmp(buf, index++, len))
+          if (!_cmp(buf, index++, len))
+            if (!_cmp(buf, index++, len))
+              if (!_cmp(buf, index++, len))
+                if (!_cmp(buf, index++, len))
+                  if (!_cmp(buf, index++, len))
+                    if (!_cmp(buf, index++, len))
+                      if (!_cmp(buf, index++, len))
+                        if (!_cmp(buf, index++, len))
+                          if (!_cmp(buf, index++, len))
+                            if (!_cmp(buf, index++, len))
+                              if (!_cmp(buf, index++, len))
+                                if (!_cmp(buf, index++, len))
+                                  if (!_cmp(buf, index++, len))
+                                    if (!_cmp(buf, index++, len))
+                                      if (!_cmp(buf, index++, len))
+                                        if (!_cmp(buf, index++, len))
+                                          if (!_cmp(buf, index++, len))
+                                            if (!_cmp(buf, index++, len))
+                                              ret = 0;
+
+  if (index > (strlen(_mytarget) + 1))
+    ret = 0;
 
   if (ret) {
-    printf("\nYou fail.\n");
+    printf("\n--- You fail ---\n");
   } else {
-    printf("\nGrant success!\n");
+    printf("\n*** Grand success ***\n");
   }
 
   return ret;

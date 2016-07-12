@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/sh -ex
 
-CFLAGS="-g -Wall -fsanitize=address \
+CFLAGS="-g -Wall -O0 -fsanitize=address \
         -fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp"
 
 ## compile the library
