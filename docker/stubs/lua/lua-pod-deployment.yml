@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 
 metadata:
-    name: lua-fuzzing-pod
+    name: lua-fuzz-pod
 
 spec:
 
