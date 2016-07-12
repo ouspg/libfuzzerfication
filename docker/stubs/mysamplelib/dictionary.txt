@@ -1,5 +1,2 @@
-Live
-or
-Fuzz
-in
-Style
+"Fuzz"
+"in Style"
