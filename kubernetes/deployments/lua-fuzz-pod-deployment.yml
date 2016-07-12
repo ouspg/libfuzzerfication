@@ -12,15 +12,13 @@ spec:
             - name: lua-fuzzer
               image: ouspg/libfuzzer-lua:ops-dev
               env:
-                - name: CORPUS_URL
+                - name: CORPUS_URL_LUA
                   valueFrom:
                       secretKeyRef:
-                          corpus-url: <url>
-                - name: CORPUS_TYPE
+                          name: lua-fuzz-secret
+                          key: corpus-url
+                - name: CORPUS_VERSION_LUA
                   valueFrom:
                       secretKeyRef:
-                          corpus-target: <target>
-                - name: CORPUS_VERSION
-                  valueFrom:
-                      secretKeyRef:
-                          corpusl-version: <version>
+                          name: lua-fuzz-secret
+                          key: corpus-version
