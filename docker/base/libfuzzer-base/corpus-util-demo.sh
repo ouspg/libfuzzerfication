@@ -5,12 +5,16 @@
 
 sampledir=/srv/fuzzer/samples/
 
-function dl_corpus () {
+function download () {
     curl -O --output $sampledir $CORPUS_URL/$CORPUS_ARCHIVE
     curl -O --output $sampledir $CORPUS_URL/$SHA256SUMS_FILE
 }
 
-funtion check_files () {
+funtion upload () {
+    echo "Funtion does not exist."
+}
+
+funtion check () {
     cd $sampledir
 
     if $(sha256sum -c $SHA256SUMS_FILE); do

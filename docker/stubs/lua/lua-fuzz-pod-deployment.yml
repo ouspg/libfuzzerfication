@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    name: lua-fuzz-pod
+spec:
+    template:
+        metadata:
+            labels:
+                target: lua
+        spec:
+            containers:
+            - name: lua-fuzzer
+              image: ouspg/libfuzzer-lua:ops-dev
+              env:
+                - name: CORPUS_URL
+                  valueFrom:
+                      secretKeyRef:
+                          corpus-url: <url>
+                - name: CORPUS_TYPE
+                  valueFrom:
+                      secretKeyRef:
+                          corpus-target: <target>
+                - name: CORPUS_VERSION
+                  valueFrom:
+                      secretKeyRef:
+                          corpusl-version: <version>
