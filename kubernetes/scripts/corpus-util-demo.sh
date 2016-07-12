@@ -6,7 +6,7 @@
 sampledir=/srv/fuzzer/samples/
 
 function download () {
-    curl -O --output $sampledir $CORPUS_URL/$CORPUS_ARCHIVE
+    curl -O --output $sampledir $CORPUS_SERVICE_URL
     curl -O --output $sampledir $CORPUS_URL/$SHA256SUMS_FILE
 }
 
