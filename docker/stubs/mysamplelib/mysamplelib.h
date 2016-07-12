@@ -1,1 +1,1 @@
-int fuzzinginstyle(const char *buf);
+int fuzzinginstyle(const unsigned char *buf);

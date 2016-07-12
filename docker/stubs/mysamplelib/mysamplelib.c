@@ -14,7 +14,7 @@ inline int _cmp(const char *buf, size_t len) {
 }
 
 
-int fuzzinginstyle(const char *buf) {
+int fuzzinginstyle(const unsigned char *buf) {
 
   int index = 0;
   int ret = 1;
