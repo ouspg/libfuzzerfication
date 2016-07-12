@@ -22,31 +22,31 @@ int fuzzinginstyle(const char *buf) {
   if (!_cmp(buf, index++))
     if (!_cmp(buf, index++))
       if (!_cmp(buf, index++))
-	if (!_cmp(buf, index++))
-	  if (!_cmp(buf, index++))
-	    if (!_cmp(buf, index++))
-	      if (!_cmp(buf, index++))
-		if (!_cmp(buf, index++))
-		  if (!_cmp(buf, index++))
-		    if (!_cmp(buf, index++))
-		      if (!_cmp(buf, index++))
-			if (!_cmp(buf, index++))
-			  if (!_cmp(buf, index++))
-			    if (!_cmp(buf, index++))
-			      if (!_cmp(buf, index++))
-				if (!_cmp(buf, index++))
-				  if (!_cmp(buf, index++))
-				    if (!_cmp(buf, index++))
-				      if (!_cmp(buf, index++))
-					if (!_cmp(buf, index++))
-					  if (!_cmp(buf, index++))
-					    if (!_cmp(buf, index++))
-					      if (!_cmp(buf, index++))
-						if (!_cmp(buf, index++))
-						  if (!_cmp(buf, index++))
-						    if (!_cmp(buf, index++))
-						      if (!_cmp(buf, index++))
-							ret = 0;
+        if (!_cmp(buf, index++))
+          if (!_cmp(buf, index++))
+            if (!_cmp(buf, index++))
+              if (!_cmp(buf, index++))
+                if (!_cmp(buf, index++))
+                  if (!_cmp(buf, index++))
+                    if (!_cmp(buf, index++))
+                      if (!_cmp(buf, index++))
+                        if (!_cmp(buf, index++))
+                          if (!_cmp(buf, index++))
+                            if (!_cmp(buf, index++))
+                              if (!_cmp(buf, index++))
+                                if (!_cmp(buf, index++))
+                                  if (!_cmp(buf, index++))
+                                    if (!_cmp(buf, index++))
+                                      if (!_cmp(buf, index++))
+                                        if (!_cmp(buf, index++))
+                                          if (!_cmp(buf, index++))
+                                            if (!_cmp(buf, index++))
+                                              if (!_cmp(buf, index++))
+                                                if (!_cmp(buf, index++))
+                                                  if (!_cmp(buf, index++))
+                                                    if (!_cmp(buf, index++))
+                                                      if (!_cmp(buf, index++))
+                                                        ret = 0;
 
   if (ret) {
     printf("\nYou fail.\n");
@@ -66,6 +66,6 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  return fuzzinginstyle(argv[1]);
+  return fuzzinginstyle(argv[1], strlen(argv[1]));
 }
-*/ 
+*/
