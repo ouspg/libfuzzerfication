@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdint.h>
 #include <string.h>
 
 const char *_mytarget = "Fuzzing in Style ..............";
 
 
-inline int _cmp(const uint8_t *buf, size_t len) {
+int _cmp(const uint8_t *buf, size_t len) {
   if (len > strlen(_mytarget))
     return 1;
   if (memcmp(buf, _mytarget, len))
