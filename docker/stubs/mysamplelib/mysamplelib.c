@@ -3,7 +3,7 @@
 
 const char *_mytarget = "Fuzzing in Style ..............";
 
-inline int _cmp(const char *buf, size_t len) {
+inline int _cmp(const unsigned char *buf, size_t len) {
   if (len > strlen(_mytarget))
     return 1;
   if (strncmp(buf, _mytarget, len))
