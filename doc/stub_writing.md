@@ -56,6 +56,10 @@ Second step is to build base image. Go to libfuzzerfication/docker directory and
 ```
 docker-compose build libfuzzer-base
 ```
+Or alternatively pull the ready to go automagically built image from dockerhub:
+```
+docker pull ouspg/libfuzzer-base
+```
 
 Then you can start developing:
 ```
