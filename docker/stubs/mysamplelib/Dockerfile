@@ -4,6 +4,8 @@ RUN apt-get update && apt-get upgrade -y
 
 RUN cd /src && git clone https://github.com/ouspg/libfuzzerfication.git
 
-WORKDIR /src/libfuzzerfication/docker/stubs/
+## temporary
+RUN cd /src/libfuzzerfication && git checkout mysamplelib-stub
 
-RUN git checkout mysamplelib-stub && cd mysamplelib && build.sh
+WORKDIR /src/libfuzzerfication/docker/stubs/mysamplelib
+RUN ./build.sh
