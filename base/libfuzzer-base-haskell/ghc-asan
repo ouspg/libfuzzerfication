@@ -1,9 +1,0 @@
-#!/bin/sh
-
-ghc-wrapper \
-    -optc="-g" -optl="-g" \
-    -optc="-fsanitize=address" \
-    -optc="-fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp" \
-    -optl="-fsanitize=address" \
-    -optl="-fsanitize-coverage=edge,indirect-calls,8bit-counters,trace-cmp" \
-    $*

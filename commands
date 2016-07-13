@@ -1,4 +1,0 @@
-run container with:
-docker run --rm -it libfuzzer/libxml bash
-
-docker run --rm -it -v ~/results:/results -v ~/samples/:/samples libfuzzer/libxml /work/libxml2/libxml2_fuzzer -rss_limit_mb=4096 -detect_leaks=0 -artifact_prefix=/results/ -max_len=5000 -use_counters=1 -max_total_time=600 -dict=/src/libxml2/xml.dict /samples/libfuzzer-libxml/;
