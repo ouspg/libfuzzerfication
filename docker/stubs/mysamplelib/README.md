@@ -1,3 +1,27 @@
+# Purpose
+
+This is a [libfuzzerfication stub](https://github.com/ouspg/libfuzzerfication)
+for demonstration purposes.
+
+`mysamplelib` is a simple library that provides `mysamplefunction()`-function as
+a target for Fuzz-testing. `mysamplefunction()` takes two arguments: the "string"
+to be tested as test input and the length of the test input.
+Test input is compared against the target string `"Fuzzing in Style!"`. The
+portion of the string that has been guessed successfully is displayed. The comparison is
+implemented with an artificial nested `if`-construct to simulate the
+basic block structure of a real protocol or file format parser. This
+approach makes `mysamplefunction()` a "realistic" parser-type target for
+the coverage guided fuzzing.
+
+What included?
+
+ * [`samplelib`](samplelib.c)-library with `mysamplefunction()`-function as test target
+ * [`fuzzer`](fuzzer.c)-stub to act as the interface between the `libfuzzer` and the test target
+ * [`build.sh`](build.sh)-script to build the library, and the stub and to link them with the fuzzer
+ * [`dictionary.txt`](dictionary.txt)-file as a sample dictionary for dictionary aided fuzzing strategy
+ * [`corpus/](corpus/)-directory as a sample corpus for the corpus aided fuzzing strategy
+ * [`Dockerfile`](Dockerfile) to make this demonstration easily repeatable
+
 # Building
 
 ```console
@@ -105,3 +129,15 @@ INFO: -max_len is not provided, using 64
 ...
 149
 ```
+
+# Further work
+
+It appears that changing the compiler optimizations (`-On`) has a radical impact
+on the fuzzer performance with this sample test target. This setup would allow
+us to to study it further.
+
+Furthermore, in addition to using the `libfuzzer` as the coverage guided fuzzer
+we could implement a simple brute force fuzzer and output guided brute force
+fuzzer for this test target. We could also document how to run the [american
+fuzzy lop](http://lcamtuf.coredump.cx/afl/)-fuzzer (afl) against this target.
+Then we could compare all these alternative approaches.
