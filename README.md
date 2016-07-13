@@ -27,7 +27,8 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * It is linked with the library under test
 * Works fully in process -> Fast!
 
-LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
+LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge
+Optional features are: 8bit-counters,trace-cmp,indirect-calls
 
 # How does this project work?
 * You pull container from Dockerhub
