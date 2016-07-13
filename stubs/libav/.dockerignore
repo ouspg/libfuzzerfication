@@ -1,0 +1,3 @@
+# Ignore files used for building the libav kubernetes pod.
+
+    *libav-pod.yml
