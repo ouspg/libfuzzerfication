@@ -12,7 +12,7 @@ function help () {
     echo "Usage nodeconfig.sh [options]"
 }
 
-funtion configure () {
+function configure () {
     echo "Starting deluge daemon temporary to populate configuration files..."
     systemctl start deluged.service
     echo "Stopping deluge daemon..."
@@ -32,35 +32,12 @@ function start () {
     echo "Done."
 }
 
-function getsamples () {
-    for sample in $(curl --silent $baseurl/samplelist.txt); do
-        echo "Downloading $sample..."
-        curl -O --output $sampledir $baseurl$sample
-        echo "Done."    
-    done
-    echo "Downloading samples complete."
-}
-
-function gettorrents () {
-    for torrentfile in $(curl $baseurl/torrentfiles.txt); do
-        curl -O --output $autoadd_dir $baseurl$torrentfile
-    done
-    echo "Getting torrents complete."
-}
-
 function error () {
     echo "Invalid options detected!"
     echo ""
     help
 }
 
-
-
-sampledir="/srv/deluge/samples"
-autoadd_dir="/srv/deluge/autoadd"
-baseurl="http://storage.googleapis.com/libfuzzerfication/samples"
-user=admin
-passwd=libfuzzerfication
 
 # TODO: implement these options:
 # -d | --download | directly download the samples
