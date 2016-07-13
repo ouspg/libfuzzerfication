@@ -8,7 +8,7 @@
 #    when there isn't existing seeds)
 # 3. Adds the torrent(s) from a magnet link and starts seeding them.
 
-funtion help () {
+function help () {
     echo "Usage nodeconfig.sh [options]"
 }
 
@@ -25,14 +25,14 @@ funtion configure () {
     chmod 700 $autoadd_dir $sampledir
 }
 
-funtion start () {
+function start () {
     systemctl enable deluged.service
     echo "Starting deluge daemon..."
     systemctl start deluged.service
     echo "Done."
 }
 
-funtion getsamples () {
+function getsamples () {
     for sample in $(curl --silent $baseurl/samplelist.txt); do
         echo "Downloading $sample..."
         curl -O --output $sampledir $baseurl$sample
@@ -41,14 +41,14 @@ funtion getsamples () {
     echo "Downloading samples complete."
 }
 
-funtion gettorrents () {
+function gettorrents () {
     for torrentfile in $(curl $baseurl/torrentfiles.txt); do
         curl -O --output $autoadd_dir $baseurl$torrentfile
     done
     echo "Getting torrents complete."
 }
 
-funtion error () {
+function error () {
     echo "Invalid options detected!"
     echo ""
     help
