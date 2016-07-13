@@ -19,7 +19,7 @@ What is included?
  * [`fuzzer`](fuzzer.c)-stub to act as the interface between the `libfuzzer` and the test target
  * [`build.sh`](build.sh)-script to build the library, and the stub and to link them with the fuzzer
  * [`dictionary.txt`](dictionary.txt)-file as a sample dictionary for dictionary aided fuzzing strategy
- * [`corpus/](corpus/)-directory as a sample corpus for the corpus aided fuzzing strategy
+ * [`corpus/`](corpus/)-directory as a sample corpus for the corpus aided fuzzing strategy
  * [`Dockerfile`](Dockerfile) to make this demonstration easily repeatable
 
 Last but not least. There is at least one *crash-boom-bang* (read beyond bounds)
