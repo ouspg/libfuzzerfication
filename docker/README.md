@@ -43,10 +43,13 @@ The pulse line shows current status and appears periodically
 If you want to start using Docker you have to should read  [Docker documentation](https://docs.docker.com/) if you are not familiar with it. Before starting to write dockerfiles it is recommened to read [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/).
 
 # How to run containers?
-* Build base image
+
+* Get base image
+
 ```
-docker-compose build libfuzzer-base
+docker pull ouspg/libfuzzer-base
 ```
+
 * Run container (ImageMagick example)
 ```
 docker-compose run imagemagick
