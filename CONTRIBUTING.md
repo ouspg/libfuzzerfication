@@ -12,8 +12,8 @@ We are glad that you are reading this! If you are unsure about anything please f
 * Write a good commit message
 
 # Coding conventions
-* We indent using four spaces
+* We indent using four spaces (may be different in some programming languages)
 
 # Abandon-*lib*-ware
 
-* Cautionary note should be written about libraries without an active upstream but which are still in wide use.
+* Cautionary note should be written about libraries without an active upstream but which are still widely in use.
