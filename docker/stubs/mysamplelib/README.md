@@ -13,7 +13,7 @@ basic block structure of a real protocol or file format parser. This
 approach makes `mysamplefunction()` a "realistic" parser-type target for
 the coverage guided fuzzing.
 
-What included?
+What is included?
 
  * [`samplelib`](samplelib.c)-library with `mysamplefunction()`-function as test target
  * [`fuzzer`](fuzzer.c)-stub to act as the interface between the `libfuzzer` and the test target
@@ -21,6 +21,9 @@ What included?
  * [`dictionary.txt`](dictionary.txt)-file as a sample dictionary for dictionary aided fuzzing strategy
  * [`corpus/](corpus/)-directory as a sample corpus for the corpus aided fuzzing strategy
  * [`Dockerfile`](Dockerfile) to make this demonstration easily repeatable
+
+Last but not least. There is at least one *crash-boom-bang* (read beyond bounds)
+bug that the fuzzer should find.
 
 # Building
 
