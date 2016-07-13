@@ -13,3 +13,7 @@ We are glad that you are reading this! If you are unsure about anything please f
 
 # Coding conventions
 * We indent using four spaces
+
+# Abandon-*lib*-ware
+
+* Cautionary note should be written about libraries without an active upstream but which are still in wide use.
