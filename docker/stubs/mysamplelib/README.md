@@ -58,7 +58,7 @@ F
 Fuzz i
 --- You fail ---
 Fuzz in Style!
-*** Grant success ***
+*** Grand success ***
 Fuzz in
 --- You fail ---
 ...
