@@ -4,7 +4,9 @@
 #include <string.h>
 #include "MagickCore/MagickCore.h"
 
-# We use BlobToImage to load input as an image, if successful destroy image.
+/*
+*We use BlobToImage to load input as an image, if successful destroy image.
+*/
 
 extern "C" int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
     Image *image;
@@ -15,7 +17,7 @@ extern "C" int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
     exception = AcquireExceptionInfo();
 
     image = BlobToImage(&image_info, data, size, exception);
-    
+
     if (exception->severity != UndefinedException) {
         //CatchException(exception);
     }
