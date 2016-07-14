@@ -25,7 +25,7 @@ This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
 * LibFuzzer is open-source library (part of LLVM)
 * Relies on compiler instrumentation to get coverage feedback
 * It is linked with the library under test
-* Works fully in process -> Fast!
+* Works fully inside the running program (a process) -> Fast!
 
 LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge
 Optional features are: 8bit-counters,trace-cmp,indirect-calls
