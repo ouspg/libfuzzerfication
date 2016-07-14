@@ -1,7 +1,6 @@
-# libfuzzerfication stubs
+# libFuzzerfication stubs
 
-# Purpose
-
+# About
 
 What is included in directories?
 
