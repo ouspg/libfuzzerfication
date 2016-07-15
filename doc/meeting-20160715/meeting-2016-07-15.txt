@@ -1,0 +1,56 @@
+Meeting 15.7.2016
+
+Discussion about MVP
+
+libfuzzer-base documentation is tells howto run in native
+we dont support how to use libfuzzer natively -> use libfuzzer-base
+quality of libfuzzer-base is important!
+use ubuntu in base image, no need to change
+
+run:
+-docker (we document libfuzzer only in docker, not in native)
+--own engine
+--cloud engine
+
+Corpus pool:
+-no feedback
+
+results:
+- log file
+- documentation how to get results from log files
+
+-corpus:
+-we are going to use bundled corpus
+
+scale:
+-1 instance : 1 target
+
+-stubs:
+-libav is broken
+-policies, packaging documentation, build documentation, run documentation
+-stubs can also be used by other fuzzers
+-main product are stubs
+-Important: how to build and run a stub! prio high
+-no need to change directory structure or file locations
+
+cloud
+-For scaling
+- documentation!
+
+docker-compose:
+-rss_limit_mb=4096' not needed in docker-compose?
+-default values for fuzz.sh that can be overrided
+
+docker base image:
+RUN chmod +x /src/scripts/fuzz.sh not needed,
+chmod a+x fuzz.sh
+
+corpus, samples in documentation when to use which
+
+mikko creates initial corpus, small, use lfs
+
+corpus cloud project gets started
+
+mikko takes care of bundled corpus
+
+split project between corpus and libfuzzer
