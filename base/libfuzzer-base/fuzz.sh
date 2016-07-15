@@ -29,32 +29,32 @@ trap control_c SIGINT
 function parse_asan_trace {
 
     FILE=$1
-    
+
     ERROR=$(grep 'ERROR: AddressSanitizer: ' $FILE)
-    
+
     set -- $ERROR
-    
-    #ASAN-trace has two different beginnings depending on build: 
+
+    #ASAN-trace has two different beginnings depending on build:
     #	1. "==<pid>==ERROR"
-    #	2. "==<pid>== ERROR" 
+    #	2. "==<pid>== ERROR"
     #Extra whitespace messes up indexes.
-    
-    if grep -q 'ERROR' <<< $1; then 
+
+    if grep -q 'ERROR' <<< $1; then
         ERROR=$3
     else
         ERROR=$4
     fi
-    
-    
+
+
     FRAME0=$(grep -oP '#0 0x\S+' $FILE | head -1)
     FRAME1=$(grep -oP '#1 0x\S+' $FILE | head -1)
     FRAME2=$(grep -oP '#2 0x\S+' $FILE | head -1)
-    
+
     FRAME0=${FRAME0:(-3)}
     FRAME1=${FRAME1:(-3)}
     FRAME2=${FRAME2:(-3)}
-    
-    echo "$ERROR-$FRAME2-$FRAME1-$FRAME0" 
+
+    echo "$ERROR-$FRAME2-$FRAME1-$FRAME0"
 }
 
 #libFuzzer timeout-trace parser for instrumentation
@@ -74,28 +74,30 @@ function parse_asan_trace {
 #Example output: timeout-5ee-e49
 function parse_timeout_trace {
     FILE=$1
-    
+
     FINGERPRINT='timeout'
-    
+
     #timeout-trace always has stack frames from instrumentation, we filter these out.
     #note: we cannot do this without symbolization
     FILE=$(cat $FILE| grep -v 'in fuzzer' | grep -v '__sanitizer' | grep -v 'libpthread')
-    
-    #Take first three frames and discard the first. 
+
+    #Take first three frames and discard the first.
     #Timeout interrupts the current execution, so first valid frame can be with different
     #address even in same function.
     FRAMES=$(echo $FILE | grep -oP '#. 0x\S+' | head -3 | tail -2 | sed s/'#. '//g)
-    
-    for foo in $FRAMES; do 
+
+    for foo in $FRAMES; do
         FINGERPRINT="$FINGERPRINT-${foo:(-3)}"
     done
-    
-    echo "$FINGERPRINT"  
+
+    echo "$FINGERPRINT"
 }
 
-TARGET_FULL=$1
-TARGET=$(basename $1)
-echo "Target: $TARGET"
+# TODO: handle $TARGET env with a cleaner solution
+
+# TARGET_FULL=$1
+# TARGET=$(basename $1)
+# echo "Target: $TARGET"
 
 export ASAN_SYMBOLIZER_PATH='/usr/lib/llvm-3.8/bin/llvm-symbolizer'
 #Fuzzers sometimes tries to allocate huge amounts of memory, when it does ASAN allocator fails.
@@ -108,16 +110,16 @@ while true; do
         if [ "$(grep "ERROR: AddressSanitizer" ./asan.txt)" ]; then
             RESULT=$(parse_asan_trace ./asan.txt)
             echo "New crash: "$TARGET-$RESULT
-            cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
-            cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
+            cp ./asan.txt /srv/fuzzer/results/$TARGET-$RESULT.txt && echo "Report saved: /srv/fuzzer/results/$TARGET-$RESULT.txt"
+            cp /dev/shm/repro-file /srv/fuzzer/results/$TARGET-$RESULT.repro && echo "Repro-file saved: /srv/fuzzer/results/$TARGET-$RESULT.repro"
             if [ "$MINIMIZE" == "true" ]; then
-                nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f /results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
+                nodejs /src/nipsu/nipsu.js -temp /dev/shm -i /dev/shm/repro-file -f /srv/fuzzer/results/$TARGET-$RESULT-min.repro $TARGET_FULL @@
             fi
         elif [ "$(grep "ERROR: libFuzzer: timeout" ./asan.txt)" ]; then
             RESULT=$(parse_timeout_trace ./asan.txt)
             echo "New timeout: "$TARGET-$RESULT
-            cp ./asan.txt /results/$TARGET-$RESULT.txt && echo "Report saved: /results/$TARGET-$RESULT.txt"
-            cp /dev/shm/repro-file /results/$TARGET-$RESULT.repro && echo "Repro-file saved: /results/$TARGET-$RESULT.repro"
+            cp ./asan.txt /srv/fuzzer/results/$TARGET-$RESULT.txt && echo "Report saved: /srv/fuzzer/results/$TARGET-$RESULT.txt"
+            cp /dev/shm/repro-file /srv/fuzzer/results/$TARGET-$RESULT.repro && echo "Repro-file saved: /srv/fuzzer/results/$TARGET-$RESULT.repro"
         fi
         #TODO: Add dictionary collection.
         rm asan.txt

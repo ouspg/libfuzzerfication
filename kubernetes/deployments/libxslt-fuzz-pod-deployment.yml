@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+
+metadata:
+    name: libxslt-fuzzing-pod
+
+spec:
+
+    replicas:
+
+    template:
+
+        metadata:
+
+            labels:
+
+                target: libxslt
+
+        spec:
+
+            containers:
+
+            - name: libxslt-fuzzer
+              image: ouspg/libfuzzer-libxslt:ops-dev
