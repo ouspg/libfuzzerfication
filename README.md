@@ -54,21 +54,6 @@ You can start writing stubs without docker.
 * [libFuzzer in Chrome](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/README.md)
 * [Efficient Fuzzer](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md)
 
-# Sample files
-These downloads can be used as initial corpus directories for more efficient fuzzing.
-
-**Notice!**
-
-The links are currently down when we are creating new sample directories for multiple file formats.
-
-<p>Coming soon &trade;<p>
-
-###### HTTP Direct Downloads
-  * [MP3](http://storage.googleapis.com/libfuzzerfication/downloads/samples/samples-mp3-20160630.tar.gz)
-
-###### Checksums
-* [SHA256](http://storage.googleapis.com/libfuzzerfication/downloads/samples/sha256sums.txt)
-
 # Tracking
 [Target tracking sheet](https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
 
