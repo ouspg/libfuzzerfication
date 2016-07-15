@@ -18,4 +18,4 @@ make install
 
 #Build fuzzer
 $CXX $CFLAGS -std=c++11 -I$(pwd) -lFuzzer -lz -o \
-    zlib_fuzzer zlib_fuzzer.cc
+    zlib-fuzzer zlib-fuzzer.cc
