@@ -3,14 +3,14 @@
 // found in the LICENSE file.
 #include "libxml/parser.h"
 void ignore(void *ctx, const char *msg, ...) {
-  // Error handler to avoid spam of error messages from libxml parser.
+    // Error handler to avoid spam of error messages from libxml parser.
 }
 extern "C" int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
-  xmlSetGenericErrorFunc(NULL, &ignore);
-  auto doc = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xml", NULL, 0);
-  //if (doc) {
+    xmlSetGenericErrorFunc(NULL, &ignore);
+    auto doc = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xml", NULL, 0);
+    //if (doc) {
     xmlFreeDoc(doc);
     xmlCleanupParser();
-  //}
-  return 0;
+    //}
+return 0;
 }

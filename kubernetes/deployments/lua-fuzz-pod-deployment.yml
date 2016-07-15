@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    name: lua-fuzz-pod
+spec:
+    template:
+        metadata:
+            labels:
+                target: lua
+        spec:
+            containers:
+            - name: lua-fuzzer
+              image: ouspg/libfuzzer-lua:latest

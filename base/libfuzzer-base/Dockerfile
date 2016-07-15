@@ -7,6 +7,11 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# Create fuzzer user
+
+RUN useradd --system --create-home --base-dir /srv/ --shell /bin/false fuzzer
+RUN mkdir -p /srv/fuzzer/{samples,results}
+
 # Checkout & build libFuzzer
 
 RUN mkdir /src /work && \
