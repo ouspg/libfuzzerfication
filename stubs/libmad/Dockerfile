@@ -8,7 +8,7 @@ RUN apt-get update && apt-get build-dep libmad0 -y
 RUN mkdir -p /src/ && cd /src/ && apt-get source libmad0 && ls -p | grep -v / | xargs rm
 
 #Copy stub
-ADD libmad_fuzzer.c /src/libmad-0.15.1b/
+ADD libmad-fuzzer.c /src/libmad-0.15.1b/
 
 #Add build script and build
 ADD build.sh /src/scripts/

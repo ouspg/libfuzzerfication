@@ -9,11 +9,10 @@ export LDFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls,8bit-
 
 cd /src/libmad-0.15.1b/
 
-./configure --prefix=/usr/ --enable-speed 
+./configure --prefix=/usr/ --enable-speed
 
 make -j4
 make install
 
 $CXX $CXXFLAGS -std=c++11 ./.libs/libmad.so -Iinclude -lFuzzer \
-               ./libmad_fuzzer.c -o /src/libmad-0.15.1b/libmad_fuzzer
-
+               ./libmad-fuzzer.c -o /src/libmad-0.15.1b/libmad-fuzzer
