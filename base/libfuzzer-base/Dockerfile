@@ -34,4 +34,3 @@ RUN cd /src && \
 # Add fuzzing script
 
 ADD ./fuzz.sh /src/scripts/fuzz.sh
-RUN chmod +x /src/scripts/fuzz.sh
