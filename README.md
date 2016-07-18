@@ -57,9 +57,11 @@ You can start writing stubs without docker.
 # Tracking
 [Target tracking sheet](https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
 
-# Team
+# Core team
 * Mikko Yliniemi (@mikessu)
 * Atte Kettunen (@attekett)
 * Pauli Huttunen (@WhiteEyeDoll)
+
+List of contributors: [Contributors](https://github.com/ouspg/libfuzzerfication/graphs/contributors)
 
 Visit #ouspg @ IRCnet if you're interested!
