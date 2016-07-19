@@ -1,0 +1,8 @@
+<?xml version="ent" /><foo a="ent" /><foo /><foo a="ent" /><doc /><!NOTATION not SYSTEM "not">
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo a ENTITIES "--1">
+<!ENTITY ent SYSTEM "foo" NDATA not>
+<!NOTATION not SYSTEM "not">
+]>
+<foo /><foo /><foo /><foo a="ent" /><foo a="ent" /><doc />

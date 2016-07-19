@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE spec SYSTEM "spec.dtd">
+<spec w3c-doctype="wd" role="editors-copy">
+<!--
+  *************************************************************************
+  * FRONT MATTER                                                          *
+  *************************************************************************
+  -->
+<!-- 
+  ****************************************************** 
+  | filenames to be used for each section              |
+  ******************************************************
+-->
+<?command-options
+--map Copyright-Notice copyright-notice
+--map Introduction     introduction
+--map TOC              expanded-toc
+--map Core             core
+--map Events           events
+--map idl              idl-definitions
+--map ecma-binding     ecma-script-binding
+--map java-binding     java-binding
+--map Index            def-index
+--map Objects          object-index
+--map References       references
+--map Errors           errors
+--map Level-3-AS       abstract-schemas
+--map Load-Save        load-save
+--map XPath            xpath
+--map KeySet           keyset
+?>
+<?command-options
+--map -IndexFile-       def-index
+--map -OjbectIndexFile- object-index
+--strip-references
+--strip-glossary
+?>
+<?command-options
+--map-type ECMAScript void void
+--map-type ECMAScript "unsigned short" Number
+--map-type ECMAScript "unsigned int" Number
+--map-type ECMAScript "unsigned long" Number
+--map-type ECMAScript short Number
+--map-type ECMAScript long Number
+--map-type ECMAScript float Number
+--map-type ECMAScript double Number
+--map-type ECMAScript boolean Boolean
+--map-type ECMAScript Object Object
+--map-type ECMAScript DOMString String
+--map-type ECMAScript DOMTimeStamp Number
+--map-type ECMAScript DOMObject Object
+--map-type ECMAScript DOMUserData "any type"
+--map-type ECMAScript LSInputStream Object
+--map-type ECMAScript LSOutputStream Object
+--map-type ECMAScript LSReader "this is an error and shouldn't be used."
+--map-type ECMAScript LSWriter "this is an error and shouldn't be used."
+--map-type ECMAScript DOMSystemException Object
+
+--map-type Java void void
+--map-type Java Object Object
+--map-type Java DOMString String
+--map-type Java "unsigned short" short
+--map-type Java "unsigned int" int
+--map-type Java "unsigned long" int
+--map-type Java long int
+--map-type Java short short
+--map-type Java float float
+--map-type Java double double
+--map-type Java boolean boolean
+--map-type Java DOMTimeStamp long
+--map-type Java DOMObject Object
+--map-type Java DOMUserData Object
+--map-type Java LSInputStream java.io.InputStream
+--map-type Java LSOutputStream java.io.OutputStream
+--map-type Java LSReader java.io.Reader
+--map-type Java LSWriter java.io.Writer
+--map-type Java DOMSystemException Exception
+?>
+ <header>
+  <title>
+   Document Object Model (DOM) Level 3 Events Specification
+  </title>
+
+  <version>
+   1.0
+  </version>
+
+  <w3c-designation>@@@</w3c-designation>
+
+  <w3c-doctype>Editor's Draft</w3c-doctype>
+
+  <pubdate>
+<!--
+   <day>7</day>
+-->
+   <month>January</month>
+
+   <year>2008</year>
+  </pubdate>
+
+  <publoc>
+   <loc href="http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207">http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207
+   (outdated)</loc>
+  </publoc>
+<!--
+  <altlocs>
+   <loc role="html" href="http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207/xml-source.xml">XML
+   file</loc>
+   <loc role="postscript" href="http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207/DOM3-Events.ps">PostScript
+   file</loc>
+   <loc role="pdf" href="http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207/DOM3-Events.pdf">PDF
+   file</loc>
+   <loc role="html" href="http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207/DOM3-Events.html">single
+   HTML file</loc>
+   <loc role="zip" href="http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207/DOM3-Events.zip">ZIP
+   file</loc>
+  </altlocs>
+-->
+  <latestloc>
+   <loc href="http://www.w3.org/TR/DOM-Level-3-Events">http://www.w3.org/TR/DOM-Level-3-Events</loc>
+  </latestloc>
+
+  <prevlocs>
+   <loc href="http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207">http://www.w3.org/TR/2007/WD-DOM-Level-3-Events-20071207</loc>
+  </prevlocs>
+
+  <authlist>
+   <author role="editor">
+    <name>Bj&#xf6;rn H&#xf6;hrmann</name>
+
+    <email href='mailto:bjoern@hoehrmann.de'>bjoern@hoehrmann.de</email>
+   </author>
+
+   <author role="editor">
+    <name>Philippe Le H&#233;garet</name>
+
+    <affiliation>W3C (until November 2003)</affiliation>
+   </author>
+
+   <author role="editor">
+    <name>Tom Pixley</name>
+
+    <affiliation>Netscape Communications Corporation (until July 2002)</affiliation>
+   </author>
+  </authlist>
+<!--
+    ******************************************************
+    * DOCUMENT ABSTRACT                                  *
+    ******************************************************
+-->
+  <abstract id="id-abstract">
+   <p>
+    This specification defines the Document Object Model Events Level 3,
+    a generic platform- and language-neutral e

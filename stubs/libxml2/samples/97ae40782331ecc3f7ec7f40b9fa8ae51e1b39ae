@@ -1,0 +1,4 @@
+        <car xmlns="">
+          <make/>
+          <color>red</color>
+        </car>

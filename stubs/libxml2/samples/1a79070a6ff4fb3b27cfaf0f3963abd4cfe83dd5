@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document xmlns="http://myNamespace1.example.com">
+ <head>
+  <its:rules version="1.0" xmlns:its="http://www.w3.org/2005/11/its"
+   xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="xmlns_NSTest2_LinkedRules1.xml"
+    xmlns:d="http://myNamespace1.example.com">
+   <its:translateRule translate="no" selector="//d:code/@title"/>
+  </its:rules>
+ </head>
+ <body>
+  <p title="TITLE TEXT">PARAGRAPH TEXT.</p>
+  <data>data not to be translated.</data>
+  <p>TEXT AND <code title="non-translatable title">code</code> MORE TEXT.</p>
+ </body>
+</document><!-- timestamp $Id: xmlns_NSTest2.xml,v 1.4 2007/02/02 16:55:05 srahtz3 Exp $ -->

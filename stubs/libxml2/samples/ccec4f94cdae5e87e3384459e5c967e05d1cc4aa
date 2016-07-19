@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../../style/mathml.xsl"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title> MathML TestSuite, Version 2: mi1</title>
+  </head>
+      
+  <body style="background:#ffffff">
+
+    <table width="100%" cellpadding="8"><tr><td>
+        <a href="../../Characters/UTF8/p.xml"> prev </a>
+    </td><td style="text-align:right"> 
+        <a href="../../Characters/UTF8/r.xml"> next </a>
+    </td></tr></table>
+
+      <table style="background:#cccccc" cellpadding="4">
+        <tr>
+          <td style="text-align: right" valign="top">File:</td>
+          <td>/Characters/UTF8/q.xml</td>
+        </tr>
+        <tr>
+          <td style="text-align: right" valign="top">Author:</td>
+          <td>MathML 2 Recommendation</td>
+        </tr>
+        <tr>
+          <td style="text-align: right" valign="top">Description:</td>
+          <td>Wide Characters starting with  q</td>
+        </tr>
+
+        <tr>
+          <td style="text-align: right" valign="top">Sample Rendering:</td><td>N/A</td></tr></table>
+
+      <p><b>Your browser's rendering</b>:</p>
+      <table><tr><th>name</th><th>pic</th><th>render</th></tr>
+      <tr><td>Qfr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D5/U1D514.png" alt="U1D514"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝔔</mi></math></td></tr>
+      <tr><td>qfr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D5/U1D52E.png" alt="U1D52E"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝔮</mi></math></td></tr>
+      <tr><td>qint</td><td><img src="http://www.w3.org/Math/characters/glyphs/02A/U02A0C.png" alt="U02A0C"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>⨌</mi></math></td></tr>
+      <tr><td>Qopf</td><td><img src="http://www.w3.org/Math/characters/glyphs/021/U0211A.png" alt="U0211A"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℚ</mi></math></td></tr>
+      <tr><td>qopf</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D5/U1D562.png" alt="U1D562"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝕢</mi></math></td></tr>
+      <tr><td>qprime</td><td><img src="http://www.w3.org/Math/characters/glyphs/020/U02057.png" alt="U02057"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>⁗</mi></math></td></tr>
+      <tr><td>qscr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D4/U1D4C6.png" alt="U1D4C6"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝓆</mi></math></td></tr>
+      <tr><td>Qscr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D4/U1D4AC.png" alt="U1D4AC"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒬</mi></math></td></tr>
+      <tr><td>quaternions</td><td><img src="http://www.w3.org/Math/characters/glyphs/021/U0210D.png" alt="U0210D"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℍ</mi></math></td></tr>
+      <tr><td>quatint</td><td><img src="http://www.w3.org/Math/characters/glyphs/02A/U02A16.png" alt="U02A16"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>⨖</mi></math></td></tr>
+      <tr><td>quest</td><td><img src="http://www.w3.org/Math/characters/glyphs/000/U0003F.png" alt="U0003F"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>?</mi></math></td></tr>
+      <tr><td>questeq</td><td><img src="http://www.w3.org/Math/characters/glyphs/022/U0225F.png" alt="U0225F"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>≟</mi></math></td></tr>
+      <tr><td>quot</td><td><img src="http://www.w3.org/Math/characters/glyphs/000/U00022.png" alt="U00022"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>"</mi></math></td></tr>
+</table>
+    <hr />
+    <p>
+      <b>Source Code</b>:</p>
+    <pre>
+        N/A
+  </pre>
+    <p style="text-align: right">
+         <a href="../../../index.html" target="_top">Test Suite Home</a>
+    </p>
+  </body>
+</html>

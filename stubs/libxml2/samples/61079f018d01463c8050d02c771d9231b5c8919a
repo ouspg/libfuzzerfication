@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' x='0' y='0' preserveAspectRatio='xMinYMin meet'>
+    <polygon points='150,100 180,115 180,115 150,130 150,100' stroke='none' fill='rgb(100%,100%,100%)' />
+    <polyline points='150,100 180,115 180,115 150,130 150,100' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+    <polyline points='146,112 149,115 146,118' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+    <polyline points='180,112 184,115 180,118' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+    <text stroke='none' x='152' y='144' font-size='12' fill='rgb(0%,0%,0%)' font-family='Arial'>Gain</text>
+    <text stroke='none' x='152.5' y='120.5' font-size='12' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_1)' font-family='Arial'>1</text>
+  <defs>
+    <clipPath id='clip_rect_1'>
+      <rect x='150' y='100' width='30' height='30' />
+    </clipPath>
+  </defs>
+</svg>

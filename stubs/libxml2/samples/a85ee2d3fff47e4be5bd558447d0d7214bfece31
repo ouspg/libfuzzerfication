@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no" ?>
+<GopherDemoFile>
+
+  <Libraries>
+    <Library FileName="Basic3D.dll">
+      <Function Name="Clear3D"/>
+      <Function Name="SetCamera3D">
+        <Param Name="VecX"/>
+        <Param Name="VecY"/>
+        <Param Name="VecZ"/>
+        <Param Name="QuatX"/>
+        <Param Name="QuatY"/>
+        <Param Name="QuatZ"/>
+        <Param Name="QuatW"/>
+        <Param Name="Aspect"/>
+        <Param Name="Near"/>
+        <Param Name="Far"/>
+      </Function>
+      <Function Name="Make3DGroup">
+        <Param Name="TXT ID"/>
+        <Param Name="VecX"/>
+        <Param Name="VecY"/>
+        <Param Name="VecZ"/>
+        <Param Name="QuatX"/>
+        <Param Name="QuatY"/>
+        <Param Name="QuatZ"/>
+        <Param Name="QuatW"/>
+        <Param Name="Scale"/>
+        <Param Name="TXT ParentID"/>
+        <Param Name="Debug"/>
+      </Function>
+      <Function Name="Make3DKaleido">
+        <Param Name="TXT ID"/>
+        <Param Name="VecX"/>
+        <Param Name="VecY"/>
+        <Param Name="VecZ"/>
+        <Param Name="QuatX"/>
+        <Param Name="QuatY"/>
+        <Param Name="QuatZ"/>
+        <Param Name="QuatW"/>
+        <Param Name="Scale"/>
+        <Param Name="TXT ParentID"/>
+        <Param Name="Debug"/>
+        <Param Name="Copies"/>
+        <Param Name="Start"/>
+        <Param Name="VecXK"/>
+        <Param Name="VecYK"/>
+        <Param Name="VecZK"/>
+        <Param Name="QuatXK"/>
+        <Param Name="QuatYK"/>
+        <Param Name="QuatZK"/>
+        <Param Name="QuatWK"/>
+        <Param Name="ScaleK"/>
+      </Function>
+      <Function Name="MakeSwarmGroup">
+        <Param Name="TXT ID"/>
+        <Param Name="TXT Swarm"/>
+        <Param Name="VecX"/>
+        <Param Name="VecY"/>
+        <Param Name="VecZ"/>
+        <Param Name="QuatX"/>
+        <Param Name="QuatY"/>
+        <Param Name="QuatZ"/>
+        <Param Name="QuatW"/>
+        <Param Name="Scale"/>
+        <Param Name="TXT ParentID"/>
+        <Param Name="Debug"/>
+        <Param Name="Copies"/>
+        <Param Name="Start"/>
+        <Param Name="VecXK"/>
+        <Param Name="VecYK"/>
+        <Param Name="VecZK"/>
+        <Param Name="QuatXK"/>
+        <Param Name="QuatYK"/>
+        <Param Name="QuatZK"/>
+        <Param Name="QuatWK"/>
+        <Param Name="ScaleK"/>
+      </Function>
+      <Function Name="CopyGroupToGroups">
+        <Param Name="TXT ID"/>
+        <Param Name="TXT Parent1"/>
+        <Param Name="TXT Parent2"/>
+        <Param Name="TXT Parent3"/>
+        <Param Name="TXT Parent4"/>
+        <Param Name="TXT Parent5"/>
+        <Param Name="TXT Parent6"/>
+        <Param Name="TXT Parent7"/>
+        <Param Name="TXT Parent8"/>
+        <Param Name="TXT Parent9"/>
+        <Param Name="TXT Parent10"/>
+        <Param Name="TXT Parent11"/>
+        <Param Name="TXT Parent12"/>
+      </Function>
+      <Function Name="Show3D">
+        <Param Name="RenderTo"/>
+        <Param Name="TargetX"/>
+        <Param Name="TargetY"/>
+        <Param Name="Clear"/>
+        <Param Name="Red"/>
+        <Param Name="Green"/>
+        <Param Name="Blue"/>
+      </Function>
+      <Function Name="Rectangle3D">
+        <Param Name="SizeX"/>
+        <Param Name="SizeY"/>
+        <Param Name="Red"/>
+        <Param Name="Green"/>
+        <Param Name="Blue"/>
+        <Param Name="VecX"/>
+        <Param Name="VecY"/>
+        <Param Name="VecZ"/>
+        <Param Name="QuatX"/>
+        <Param Name="QuatY"/>
+        <Param Name="QuatZ"/>
+        <Param Name="QuatW"/>
+        <Param Name="Opacity"/>
+        <Param Name="BlendSrc"/>
+        <Param Name="BlendDst"/>
+        <Param Name="Scale"/>
+        <Param Name="TXT Parent"/>
+        <Param Name="Debug"/>
+      </Function>
+      <Function Name="Oval3D">
+        <Param Name="RadiusX"/>
+        <Param Name="RadiusY"/>
+        <Param Name="Roundness"/>
+        <Param Name="Red"/>
+        <Param Name="Green"/>
+        <Param Name="Blue"/>
+        <Param Name="VecX"/>
+        <Param Name="VecY"/>
+        <Param Name="VecZ"/>
+        <Param Name="QuatX"/>
+        <Param Name="QuatY"/>
+        <Param Name="QuatZ"/>
+        <Param Name="QuatW"/>
+        <Param Name="Opacity"/>
+        <Param Name="BlendSrc"/>
+        <Param Name="BlendDst"/>
+        <Param Name="Scale"/>
+        <Param Name="TXT Parent"/>
+        <Param Name="Debug"/>
+      </Function>
+      <Function Name="PostBlurPrecise">
+        <Param Name="AmountX"/>
+        <Param Name="AmountY"/>
+        <Param Name="Precision"/>
+      </Function>
+      <Function Name="PostBlurUgly">
+        <Param Name="AmountX"/>
+        <Param Name="AmountY"/>
+      </Function>
+      <Function Name="PostGlare">
+        <Param Name="Limit"/>
+        <Param Name="Width"/>
+        <Param Name="ExtraBright"/>
+      </Function>
+      <Function Name="InvertColors"/>
+      <Function Name="ShowRibbons3D">
+        <Param Name="TXT Swarm"/>
+        <Param Name="Width"/>
+        <Param Name="Length"/>
+        <Param Name="VecX"/>
+        <Param Name="

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+	<!-- Local copy of http://greath.example.com/2004/schemas/resSvc.xsd -->
+	<uri name="http://greath.example.com/2004/schemas/resSvc.xsd"
+		uri="resSvc.xsd" />
+</catalog>

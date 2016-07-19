@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ENTITY e "&#x-4;&#x0FFFD;&#x0FFFF;">
+<!ELEMENT doc (#PCDATA)>
+]>
+<doc>&e;</doc><doc><doc>&e;</doc><doc>&e;</doc><doc><doc><doc><doc><doc><doc><doc><doc><doc>&e;</doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc><doc>
+<a / >
+</doc><folder /><doc><doc><doc><doc><doc><doc>&e;</doc><doc></doc></doc></doc><doc><g id="G0"><doc><doc><doc><book />&e;</doc></doc></doc></doc></doc></doc><g transform="translate(100, 120)" id="G0"><g transform="translate(100, 120)" id="G0">

@@ -1,0 +1,5 @@
+<foo><p><p><p><uri>&Ï9223372036854775808;<
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+]>
+<foo><foo><foo><foo><foo><foo>

@@ -1,0 +1,15 @@
+<!DOCTYPE book SYSTEM "schema/tdg.dtd" [
+
+<!-- Build the expanded version by default -->
+<!ENTITY % unexpanded "IGNORE">
+
+<!-- source in the book content and other entities -->
+<!ENTITY % content SYSTEM "entities/content.ent">
+%content;
+]>
+
+<book id="docbook">
+<?dbhtml filename="docbook.html"?>
+&bookinfo;
+&bookbody;
+</book>

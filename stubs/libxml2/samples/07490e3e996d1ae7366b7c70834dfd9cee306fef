@@ -1,0 +1,10 @@
+<?xml version='1.0' ?>
+<root xmlns:xlink="http://www.w3.org/1999/xlink">
+<child1 xlink:type="simple" xlink:href="http://www.xbrlapi.org/">
+<child2 xlink:type="extended"/>
+<child3 xlink:type="extended" xlink:role="www.xbrlapi.org/malformedRole/"/>
+</child1>
+<child4 xlink:type="extended" xlink:title="Human readable extended link title">
+<child5 xlink:type="extended"/>
+</child4>
+</root>

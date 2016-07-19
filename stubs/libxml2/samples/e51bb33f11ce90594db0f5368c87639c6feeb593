@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-2" ?> 
+
+<!DOCTYPE polskie_partie [
+<!ENTITY po "Platforma Obywatelska">
+<!ENTITY pis "Prawo i Sprawiedliwość">
+<!ENTITY sld "Sojusz Lewicy Demokratycznej">
+<!ENTITY sdpl "Socjaldemokracja Polska">
+<!ENTITY lpr "Liga Polskich Rodzin">
+<!ENTITY pd "Partia Demokratyczna">
+<!ENTITY so "Samoobrona">
+]>
+
+<polskie_partie>
+	<partia>&po;
+	</partia>
+	<partia>&pis;
+	</partia>
+	<partia>&sld;
+	</partia>
+	<partia>&lpr;
+	</partia>
+	<partia>&so;
+	</partia>
+	<partia>&pd;
+	</partia>
+	<partia>&so;
+	</partia>
+</polskie_partie>

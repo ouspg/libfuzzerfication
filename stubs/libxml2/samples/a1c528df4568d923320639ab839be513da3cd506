@@ -1,0 +1,23 @@
+<testCaseGroup
+    xmlns="http://www.sun.com/japex/testSuite"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    name="Compression interoperability tests">
+    <param name="compressionDataDir" value="${japex.exi.ttfms.testCasesDir}/interop/compression"/>
+
+    <param name="groupId" value="${groupId} | compression"/>
+    <param name="org.w3c.exi.ttf.compression" value="true"/>
+    <param name="reference" value="http://www.w3.org/TR/exi/#compression"/>
+
+    <!-- note: blockSize tests only apply to compression and preCompressin cases -->
+    <xi:include href="general.xml"/>
+    <xi:include href="blockSize.xml"/>
+    <xi:include href="emptyBlock.xml"/>
+    
+    <testCase name="compression.valueOrder-01">
+        <param name="testDescription" 
+          value="EXI compression changes the order in which event codes and values are read
+                 and written to and from an EXI stream."/>
+        <param name="japex.inputFile" value="${compressionDataDir}/valueOrder-01.xml" />
+    </testCase>
+
+</testCaseGroup>

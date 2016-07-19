@@ -1,0 +1,25 @@
+<!-- =================================================================== -->
+<!-- Tests undeclared SE(*) where there's a declared attribute wildcard. -->
+<!-- =================================================================== -->
+<foo:P xmlns:foo='urn:foo' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <foo:P3>
+    <foo:none/><!-- SE(*) -->
+    <foo:AD>a</foo:AD><!-- SE(foo:AD) -->
+    <foo:AD>a</foo:AD><!-- SE(*) -->
+  </foo:P3>
+  <foo:P3 foo:aA=""><!-- AT(foo:*) -->
+    <foo:none/><!-- SE(*) -->
+    <foo:AD>a</foo:AD><!-- SE(foo:AD) -->
+    <foo:AD>a</foo:AD><!-- SE(*) -->
+  </foo:P3>
+  <foo:P3 xsi:nil='true' foo:aA=""><!-- AT(xsi:nil), AT(foo:*) -->
+    <foo:AD>a</foo:AD><!-- SE(*) -->
+  </foo:P3>
+  <foo:P3 xsi:type='foo:extended_P3' foo:aA=""><!-- AT(xsi:type), AT(foo:*) -->
+    <foo:none/><!-- SE(*) -->
+    <foo:AD>a</foo:AD><!-- SE(foo:AD) -->
+    <foo:none/><!-- SE(*) -->
+    <foo:AD>a</foo:AD><!-- SE(foo:AD) -->
+    <foo:AD>a</foo:AD><!-- SE(*) -->
+  </foo:P3>
+</foo:P>

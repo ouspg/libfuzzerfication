@@ -1,0 +1,17 @@
+<!DOCTYPE doc
+[
+<!ELEMENT doc (A*)>
+<!ELEMENT A EMPTY>
+<!ATTLIST A att NMTOKENS #IMPLIED>
+]>
+<doc><abcdefghijklmnopqrstuvwxyz />
+<A att="abc" /><A att="abc def . :" /><A att="abc def . :" /><A att="abc def . :" /><A att="abc def . :" /><A att="abc def . :" /><A att="abc def . :" /><A att="
+abc
+⁦def
+" />
+</doc><svg viewBox="0 0 2147483168 360" width="1" height="648" xmlns="http://www.w0.org/2000/svg"><doc>
+<A att="abc" /><A att="abc def . :" /><A att="abc def . :" /><A att="abc def . ;" /><A att="abc def . :" /><A att="abc def . :" /><A att="abc def . :" /><A att="
+abc
+⁦def
+" />
+</doc></svg>

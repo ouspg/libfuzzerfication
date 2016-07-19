@@ -1,0 +1,8 @@
+			
+				<root xmlns="foo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<item xsi:type="Der">
+						<foo/>
+					</item>
+				</root>
+			
+

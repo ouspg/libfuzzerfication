@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xfm="http://www.w3.org/2002/01/xforms">
+	<head>
+		<xfm:model id="form1">
+			<xfm:submitInfo id="submit1" method="post" action="http://www.example.com/"/>
+			<xfm:instance id="instance1" xmlns="">
+				<my>
+				<items>
+				<item><value>100.4</value><name>Item 1</name></item>
+				<item><value>-10.4</value><name>Item 2</name></item>
+				<item><value>0.4</value><name>Item 3</name></item>
+				</items>
+				<info>
+					<min></min>
+					<max></max>
+					<sum></sum>
+					<nonEmpty></nonEmpty>
+					<avg></avg>
+					<if></if>
+					<now></now>
+					<version></version>
+					<conformance></conformance>
+				</info>
+				</my>
+			</xfm:instance>
+			<xfm:bind ref="/my/info/sum" calculate="sum(/my/items/item/value)"/>
+			<xfm:bind ref="/my/info/min" calculate="xfm:min(/my/items/item/value)"/>
+			<xfm:bind ref="/my/info/max" calculate="xfm:max(/my/items/item/value)"/>
+			<xfm:bind ref="/my/info/avg" calculate="xfm:avg(/my/items/item/value)"/>
+			<xfm:bind ref="/my/info/nonEmpty" calculate="xfm:count-non-empty(/my/items/item/value)"/>
+			<xfm:bind ref="/my/info/if" calculate="xfm:if(/my/items/item[1]/value=/my/items/item[2]/value,'match','nomatch')"/>
+			<xfm:bind ref="/my/info/now" calculate="xfm:now()"/>
+			<xfm:bind ref="/my/info/version" calculate="xfm:property('version')"/>
+			<xfm:bind ref="/my/info/conformance" calculate="xfm:property('conformance-level')"/>
+		</xfm:model>
+	</head>
+	<body>
+	<h1>XForms functions</h1>
+		<p>
+			<xfm:input ref="/my/items/item[1]/value">
+				<xfm:caption>Value 1</xfm:caption>
+			</xfm:input >
+		</p>
+		<p>
+			<xfm:input ref="/my/items/item[2]/value">
+				<xfm:caption>Value 2</xfm:caption>
+			</xfm:input >
+		</p>
+		<p>
+			<xfm:input ref="/my/items/item[3]/value">
+				<xfm:caption>Value 3</xfm:caption>
+			</xfm:input >
+		</p>
+		 	<h2>Function results</h2>
+		<p/>
+		<p>
+			<xfm:output ref="/my/info/min" >
+				<xfm:caption >xfm:min(value)</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/max" >
+				<xfm:caption >xfm:max(value)</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/sum" >
+				<xfm:caption >sum(value)</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/nonEmpty" >
+				<xfm:caption >xfm:count-non-empty(value)</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/avg" >
+				<xfm:caption >xfm:avg(value)</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/if" >
+				<xfm:caption >xfm:if(value1=value2)</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/version" >
+				<xfm:caption >xfm:property('version')</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/conformance" >
+				<xfm:caption >xfm:property('conformance-level')</xfm:caption>
+			</xfm:output>
+		</p>
+		<p>
+			<xfm:output ref="/my/info/now" >
+				<xfm:caption >xfm:now()</xfm:caption>
+			</xfm:output>
+		</p>
+	</body>
+</html>

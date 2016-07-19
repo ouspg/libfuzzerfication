@@ -1,0 +1,11 @@
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!ENTITY % refpurps.ent PUBLIC "-//O'Reilly//ENTITIES DocBook RefPurposes V2.0//EN" "../../../entities/refpurps.ent">
+%refpurps.ent;
+<!ENTITY % entities.ent SYSTEM "entities.e.ent">
+%entities.ent;
+<!ENTITY refentry.xml SYSTEM "refentry.xml">
+]>
+<reference><title>tr Refentry</title>
+&refentry.xml;
+</reference>

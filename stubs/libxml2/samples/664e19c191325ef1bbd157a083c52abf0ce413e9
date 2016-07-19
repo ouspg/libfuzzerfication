@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<skipwords>
+	<word>the</word>
+	<word>of</word>
+	<word>a</word>
+	<word>and</word>
+	<word>but</word>
+	<word>for</word>
+	<word>is</word>
+	<word>to</word>
+	<word>at</word>
+	<word>many</word>
+	<word>use</word>
+	<word>from</word>
+	<word>in</word>
+	<word>this</word>
+	<word>were</word>
+	<word>that</word>
+	<word>these</word>
+	<word>has</word>
+	<word>no</word>
+	<word>not</word>
+
+
+
+</skipwords>

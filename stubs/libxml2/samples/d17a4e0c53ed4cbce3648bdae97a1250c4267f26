@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!--
+      The National Institute of Standards and Technology.
+      Conformance test for W3C XML Schema Part 2: Datatypes.
+      (see http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/).
+
+      Date: Oct 23, 2003.
+
+      File name: NISTXML-SV-IV-atomic-gDay-maxInclusive-3-5.xml
+      Description: XML instance number 5 in a series of 5.
+      Schema location:
+      NISTSchema-SV-IV-atomic-gDay-maxInclusive-3.xsd
+      This instance is intended to be valid with
+      regard to the defining schema.
+-->
+
+<NISTSchema-SV-IV-atomic-gDay-maxInclusive-3
+    xmlns="NISTSchema-SV-IV-atomic-gDay-maxInclusive-3-NS"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="NISTSchema-SV-IV-atomic-gDay-maxInclusive-3-NS NISTSchema-SV-IV-atomic-gDay-maxInclusive-3.xsd">---11</NISTSchema-SV-IV-atomic-gDay-maxInclusive-3>

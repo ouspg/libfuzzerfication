@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<tracklist>
+  <track index=10 name="flipper" filename="res\levels\flip1.lua" max_high_scores=5/>
+  <track index=3 name="city night 1" filename="res\levels\citynight1.lua" max_high_scores=5/>
+  <track index=4 name="city night 2" filename="res\levels\citynight2.lua" max_high_scores=5/>
+  <track index=5 name="tightrope 1" filename="res\levels\tightrope1.lua" max_high_scores=5/>
+  <track index=6 name="wheelies 1" filename="res\levels\wheelies1.lua" max_high_scores=5/>
+  <track index=7 name="summer dock 1" filename="res\levels\dock1.lua" max_high_scores=5/>
+  <track index=8 name="utopia" filename="res\levels\space1.lua" max_high_scores=5/>
+  <track index=9 name="lost in space" filename="res\levels\space2.lua" max_high_scores=5/>
+  <track index=2 name="easy" filename="res\levels\easy1.lua" max_high_scores=5/>
+  <track index=1 name="tutorial" filename="res\levels\tutorial1.lua" max_high_scores=0/>
+</tracklist>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE svg [
+  
+  <!ENTITY dataURI
+     "data:imaght=ge/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;g id='empty'/&gt;&lt;mask id='mask' maskContentUnits='userSpaceOnUse'&gt;&lt;rect width='50' height='0.06668537960424681' fill='white'/&gt;&lt;/mask&gt;&lt;/svg&gt;">
+]>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <style type="text/css">
+      }
+  </style>ø-uæÜz‰,"1ûö9¥πp«ÄÎÃ%ª9ï¨ÅÌu8xø0l
+
+  
+  <use xlink:href="&dataURI;#empty"/>
+
+  
+  <rect width="100%" height="100%" fill="lime"/>
+
+  
+  <rect width="75" height="75" fill="red" class="masked"/>
+  <rect width="50" height="50"fill="lime"/>
+
+  
+  <g"transform="translate(0, 100)">
+    <rect width="50" height="50" fill="red"/>
+    <rect width="75dßVÆôtΩt="75" fill="lime" class="masked"/>
+  </g>
+</svg>

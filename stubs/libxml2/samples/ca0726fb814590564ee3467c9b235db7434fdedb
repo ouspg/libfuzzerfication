@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<effect type="mesh">
+
+  <mesh>
+    <file>data/mesh_cube5000.x</file>
+    <file>data/mesh_ball5000.x</file>
+    <file>data/mesh_kolkku.x</file>
+    <file>data/mesh_cube1.x</file>
+    <file>data/mesh_seitti2.x</file>
+    <file>data/mesh_rusty6.x</file>
+    <file>data/alienhead1.x</file>
+    <file>data/mesh_sphere_tiled.x</file>
+
+	<mat>data/mat_rocks_plane.xml</mat>
+	<mat>data/mat_water.xml</mat>
+	<mat>data/mat_hiekkaa.xml</mat>
+	<mat>data/mat_cherry.xml</mat>
+	<mat>data/mat_hiekka.xml</mat>
+	<mat>data/mat_cubes.xml</mat>
+	<mat>data/mat_testikoho.xml</mat>
+	<mat>data/mat_checker.xml</mat>
+	<mat>data/mat_default.xml</mat>
+	<mat>data/mat_rusty_wood.xml</mat>
+	<mat>data/mat_march_torus.xml</mat>
+    <position>0.0, -3.0, 0.0</position>
+	<position>$px,$py,$pz</position>
+	<position>$pOfsNoEmit,0.0,0.0</position>
+    <scale>150.0, 1.0, 150.0</scale>
+    <rotate>0.0, 0.0, 0.0</rotate>
+	<texcoord_scale>5.0,5.0</texcoord_scale>
+  </mesh>
+  
+  <mesh>
+    <file>data/mesh_cube5000.x</file>
+    <file>data/mesh_ball5000.x</file>
+    <file>data/mesh_kolkku.x</file>
+    <file>data/mesh_cube1.x</file>
+    <file>data/mesh_seitti2.x</file>
+    <file>data/mesh_rusty6.x</file>
+    <file>data/alienhead1.x</file>
+    <file>data/mesh_sphere_tiled.x</file>
+
+	<mat>data/mat_rocks_plane_emit.xml</mat>
+	<mat>data/mat_water.xml</mat>
+	<mat>data/mat_hiekkaa.xml</mat>
+	<mat>data/mat_cherry.xml</mat>
+	<mat>data/mat_hiekka.xml</mat>
+	<mat>data/mat_cubes.xml</mat>
+	<mat>data/mat_testikoho.xml</mat>
+	<mat>data/mat_checker.xml</mat>
+	<mat>data/mat_default.xml</mat>
+	<mat>data/mat_rusty_wood.xml</mat>
+	<mat>data/mat_march_torus.xml</mat>
+    <position>0.0, -3.0, 0.0</position>
+	<position>$px,$py,$pz</position>
+	<position>$pOfsEmit,0.0,0.0</position>	
+    <scale>150.0, 1.0, 150.0</scale>
+    <rotate>0.0, 0.0, 0.0</rotate>
+	<texcoord_scale>5.0,5.0</texcoord_scale>
+  </mesh>
+      
+    
+</effect>

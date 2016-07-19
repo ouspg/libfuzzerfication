@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE script SYSTEM "script.dtd">
+<script>
+	<include>
+	    <filename>data/textures.xml</filename>
+    	    <filename>data/scene1.xml</filename>
+    	    <filename>data/scene2.xml</filename>
+    	    <filename>data/scene3.xml</filename>
+    	    <filename>data/scene4.xml</filename>
+    	    <filename>data/scene5.xml</filename>
+    	    <filename>data/scene6.xml</filename>
+    	    <filename>data/scene7.xml</filename>
+    	    <filename>data/scene8.xml</filename> 
+	 </include>
+</script>
+

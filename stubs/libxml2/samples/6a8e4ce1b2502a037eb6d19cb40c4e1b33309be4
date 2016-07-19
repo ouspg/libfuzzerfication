@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="../xhtml2.css" ?>
+<!DOCTYPE html [
+	<!ATTLIST section id ID #IMPLIED>
+	<!ATTLIST h       id ID #IMPLIED>
+	<!ATTLIST div     id ID #IMPLIED>
+	<!ATTLIST nl      id ID #IMPLIED>
+]>
+<html xmlns="http://www.w3.org/2002/06/xhtml2"
+      xmlns:xforms="http://www.w3.org/2002/xforms"
+      xmlns:ev="http://www.w3.org/2001/xml-events"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:foreign="http://example.com/2003/foreign"
+      xml:lang="en">
+  <head>
+    <title>Test case for assertion 2.</title>
+    <xforms:model id="m_001" foreign:test="foreignAttribute">
+    	<xforms:instance id="i_001" xmlns="" foreign:test="foreignAttribute">
+    		<r>
+    			<a></a>
+    			<b/>
+    		</r>
+    	</xforms:instance>
+    	<xforms:submission id="s1" action="http://example.com/2003/foreignTest" />
+    </xforms:model>
+  </head>
+  <body>
+    <xforms:group foreign:test="foreignAttribute">
+       <xforms:label foreign:test="foreignAttribute">If it displays, foreign Namespace attributes work ok.</xforms:label>
+      <xforms:input ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>Input:</xforms:label>
+       </xforms:input>
+       <xforms:secret ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>Secret:</xforms:label>
+       </xforms:secret>
+       <xforms:textarea ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>Textarea:</xforms:label>
+       </xforms:textarea>
+       <xforms:output ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>output:</xforms:label>
+       </xforms:output>
+       <xforms:upload  ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>upload:</xforms:label>
+       </xforms:upload>
+       <xforms:range ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>range:</xforms:label>
+       </xforms:range>
+       <xforms:trigger foreign:test="foreignAttribute">
+       	<xforms:label>Trigger</xforms:label>
+       </xforms:trigger>
+       <xforms:submit  ref="a" submission="s1" foreign:test="foreignAttribute">
+       	<xforms:label>Submit</xforms:label>
+       </xforms:submit>
+       <xforms:select1 ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>Select1:</xforms:label>
+       		<xforms:item foreign:test="foreignAttribute">
+				  	<xforms:label>Three</xforms:label>
+				  	<xforms:value foreign:test="foreignAttribute">3</xforms:value>
+				  </xforms:item>
+       </xforms:select1>
+       <xforms:select ref="a" foreign:test="foreignAttribute">
+       	<xforms:label>Select:</xforms:label>
+       		<xforms:item>
+				  	<xforms:label>Three</xforms:label>
+				  	<xforms:value>3</xforms:value>
+				  </xforms:item>
+       </xforms:select>
+    </xforms:group>
+  </body>
+</html>

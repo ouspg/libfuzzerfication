@@ -1,0 +1,10 @@
+<!DOCTYPE its:documentRules SYSTEM "../its.dtd" >
+<its:documentRules  xmlns:its="http://www.w3.org/2005/11/its">
+  <its:ns its:prefix="tei" its:uri="http://www.tei-c.org/ns/1.0"/>
+  <its:documentRule its:translate="no" 
+		its:translateSelector="//tei:body/tei:p/attribute::*"/>
+  <its:documentRule its:translate="yes"
+		its:translateSelector="//tei:body/tei:p[1]/descendant-or-self::*"/>
+  <its:documentRule its:translate="no"
+		its:translateSelector="//tei:body/tei:p[2]"/> 
+</its:documentRules>

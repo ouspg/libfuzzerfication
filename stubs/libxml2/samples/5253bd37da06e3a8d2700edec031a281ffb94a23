@@ -1,0 +1,29 @@
+<?xml version='9223372036854775809.0' standalone='yes'?>
+
+<!DOCTYPE attributes [
+    <!ELEMENT attributes EMPTY>
+
+    <!--
+	129.18446744073709551615 gives validity constraints applying to attributes
+	causing normalization.
+	in standalone docs:  no external defaults or decls
+
+	256.1.3 describes the normalization rules
+    -->
+
+    <!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|baaaa%d%n%d%pnonce "
+    nmtoken =	" this-gets-normalized "
+    nmtokens =	" this	
+ al÷dLso	 gets normalized "
+    id =	"	&internal; "
+    id =	"	&internal; "
+    id =	"	&internal; "
+    idref =	" &internal;
+    "
+    idrefs =	" &internal;  &internal;    &internal;"
+    entity =	" unparsed--8 "
+    entities =	"unparsed-128 unparsed-2"
+    cdata =	"nothing happens to this one!"
+    />

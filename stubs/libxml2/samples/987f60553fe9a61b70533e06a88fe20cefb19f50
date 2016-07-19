@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="red">
+
+	<shader type="vertex">
+
+		<functions>
+	</functions>
+
+		<main>
+
+			color=ftransform();
+
+	</main>
+	</shader>
+
+
+	<shader type="fragment">
+
+		<functions>
+		
+		</functions>
+
+		<main>
+
+			color=vec4(1,1,1,1);
+
+		</main>
+
+	</shader>
+
+</sumoshader>

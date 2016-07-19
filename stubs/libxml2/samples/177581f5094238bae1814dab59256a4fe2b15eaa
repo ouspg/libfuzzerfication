@@ -1,0 +1,9 @@
+<demo>
+	<hud mini="off"/>
+	<archive file="./data"/>
+	<window type="opengl" caption="mydiamondmindbroken" width="800" height="600" mode="fullscreen"/>
+	<time start="0"/>
+	<music file="mydiamondmindbroken.mp3" mute="off"/>
+	<script file="script.xml"/>
+	<!-- <videodump name="underground.png" fps="60" frameskip="1"/> -->
+</demo>

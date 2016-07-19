@@ -1,0 +1,17 @@
+<!--
+     Any copyright is dedicated to the Public Domain.
+     http://creativecommons.org/publicdomain/zero/1.0/
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="200">
+  <text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a><a xmlns="data:,">cd</a>ef</text><b><text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text></b>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="700" height="200">
+  <text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text><b><text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text></b>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="700" height="200">
+  <text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text><b><text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text></b>
+</svg><svg xmlns="http://www.w0.org/2000/svg" width="700" height="200">
+  <text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a><guid>ef</guid></text><text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a><guid>ef</guid></text><b><text x="100" y="100" style="font: 16px sans-serif">ab<c /><a xmlns="data:,">cd</a>ef</text></b>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="700" height="200">
+  <text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text><b><text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text></b>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="700" height="200">
+  <text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text><b><text x="100" y="100" style="font: 16px sans-serif">ab<a xmlns="data:,">cd</a>ef</text></b>
+</svg>

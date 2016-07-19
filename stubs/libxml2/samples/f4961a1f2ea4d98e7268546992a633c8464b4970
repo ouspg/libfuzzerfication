@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0.1 U (http://www.xmlspy.com) by Microsoft Employee (Microsoft XML Core Services Team) -->
+<?xml-stylesheet type='text/xsl' href='xmlspec-req.xsl'?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.1//EN" "xmlspec.dtd" [
+<!ENTITY year "2002">
+<!ENTITY month "April">
+<!ENTITY MM "04">
+<!ENTITY day "23">
+<!ENTITY DD "23">
+<!ENTITY MMDD "&MM;&DD;">
+<!ENTITY internalversion "http://www.w3.org/XML/Group/&year;/&MM;/ws-wsdl-primer-&year;&MMDD;">
+<!ENTITY externalversion "http://www.w3.org/TR/&year;/wd-wsdl-primer-&year;&MMDD;">
+<!ENTITY thisversion "&internalversion;">
+]>
+<spec w3c-doctype="wd" role="editors-copy">
+	<header>
+		<title>Web Service Description Language Part 0 (Primer)</title>
+		<w3c-designation>Working Draft</w3c-designation>
+		<w3c-doctype>Working Draft</w3c-doctype>
+		<pubdate>
+			<day>&day;</day>
+			<month>&month;</month>
+			<year>&year;</year>
+		</pubdate>
+		<publoc>
+			<loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest" href="&thisversion;">&thisversion;</loc>
+		</publoc>
+		<prevlocs>
+		</prevlocs>
+		<latestloc>
+			<loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest" href="http://www.w3.org/TR/wd-wsdl-primer/">http://www.w3.org/TR/wd-wsdl-primer/</loc>
+		</latestloc>
+		<authlist>
+			<author>
+				<name>Krishna Sankar</name>
+				<affiliation>Cisco Systems</affiliation>
+			</author>
+		</authlist>
+		<abstract>
+			<p>This document introduces the Web Service Description Language specification.</p>
+		</abstract>
+		<status>
+			<p>
+				<emph>This section describes the status of this document at the time of its publication. Other documents may supersede this document. The latest status of this document series is maintained at the W3C.</emph>
+			</p>
+			<p>This is the first <loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://www.w3.org/Consortium/Process-20010719/tr.html#RecsWD" xlink:show="replace" xlink:actuate="onRequest">W3C Working Draft</loc> of the Web Service Description Language Primer document. It is a <loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://www.w3.org/2002/01/ws-desc-charter" xlink:show="replace" xlink:actuate="onRequest">chartered</loc> deliverable of the <loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://www.w3.org/2002/ws/desc/" xlink:show="replace" xlink:actuate="onRequest">Web Service Description Working Group (WG)</loc>, which is part of the <loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://www.w3.org/2002/ws/" xlink:show="replace" xlink:actuate="onRequest">Web Service Activity</loc>. The Working has agreed to publish this document, although this document does not necessarily represent consensus within the Working Group about Web Service Description requirements.</p>
+			<p>Comments on this document should be sent to <loc href="mailto:www-ws-desc-comments@w3.org">ws-desc-comments@w3.org</loc> (public archive <loc href="http://lists.w3.org/Archive/Public/www-ws-desc-comments">http://lists.w3.org/Archive/Public/www-ws-desc-comments</loc>). It is inappropriate to send discussion emails to this address.</p>
+			<p>Discussion of this document takes place on the public <loc href="mailto:www-ws-desc@w3.org">ws-desc@w3.org</loc> mailing list <loc href="http://lists.w3.org/Archive/Public/www-ws-desc">http://lists.w3.org/Archive/Public/www-ws-desc</loc> per the email communication rules in the Web Service Description Working Group Charter.</p>
+			<p>This is a public W3C Working Draft. It is a draft document and may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to use W3C Working Drafts as reference material or to cite them as other than 'work in progress'. A list of all <loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://www.w3.org/TR/" xlink:show="replace" xlink:actuate="onRequest">W3C technical reports</loc> can be found at the W3C TR page.</p>
+		</status>
+		<langusage>
+			<language id="en">English</language>
+		</langusage>
+		<revisiondesc>
+			<p>Last Modified: $Date: 2002-06-11 10:15:08 $</p>
+		</revisiondesc>
+	</header>
+	<body>
+		<div1 id="notations">
+			<head>Introduction</head>
+			<p>Content goes here.</p>
+		</div1>
+	</body>
+</spec>

@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE spec SYSTEM "../schema/xsl-query.dtd" [ 
+<!-- <!DOCTYPE spec SYSTEM "xsl-query.dtd" [ -->
+<!ENTITY date.day "23">
+<!ENTITY date.DD "23">
+<!ENTITY date.month "January">
+<!ENTITY date.MM "01">
+<!ENTITY date.year "2007">
+<!ENTITY xdt-schema-app SYSTEM "../data-model/xdt-schema-app.xml">
+<!ENTITY prevdate.day "21">
+<!ENTITY prevdate.DD "21">
+<!ENTITY prevdate.month "November">
+<!ENTITY prevdate.MM "11">
+<!ENTITY prevdate.year "2006">
+<!ENTITY doc.date "&date.year;&date.MM;&date.DD;">
+<!ENTITY doc.prevdate "&prevdate.year;&prevdate.MM;&prevdate.DD;">
+
+<!--* AC.close date: what is the expected end date of the PR
+    * review period?  This can go away when we exit PR. *-->
+<!ENTITY AC.close.date "31 December 2006">
+
+<!ENTITY w3c.tr "http://www.w3.org/TR">
+<!ENTITY doc.shortname "xpath-functions">
+<!ENTITY doc.nsname "xpath-functions">
+<!-- Changed this version back to correspond to other XQuery specs... JM 2001-08-22
+<!ENTITY doc.publoc "&w3c.tr;/&date.year;/&date.MM;/&doc.shortname;"> -->
+<!ENTITY doc.publoc "&w3c.tr;/&date.year;/REC-&doc.shortname;-&doc.date;/">
+<!ENTITY doc.prevloc "&w3c.tr;/&prevdate.year;/PR-&doc.shortname;-&doc.prevdate;/">
+<!ENTITY doc.latestloc "&w3c.tr;/&doc.shortname;/">
+<!ENTITY doc.version "">
+<!ENTITY codepoint.collation "http://www.w3.org/2005/xpath-functions/collation/codepoint">
+<!-- Added several entities for characters used in this document JM 2001-08-20 -->
+<!ENTITY currency "&#x00A4;">
+<!ENTITY divide "&#x00F7;">
+<!-- DIVISION SIGN -->
+<!ENTITY times "&#x00D7;">
+<!-- MULTIPLICATION SIGN -->
+<!ENTITY eacute "&#x00E9;">
+<!ENTITY ocircumflex "&#x00F4;">
+<!ENTITY aumlaut "&#x00E4;">
+<!ENTITY uumlaut "&#x00FC;">
+
+<!ENTITY t1 "&#x0905;">
+<!ENTITY t2 "&#x0936;">
+<!ENTITY t3 "&#x094A;">
+<!ENTITY t4 "&#x0915;">
+
+<!ENTITY e1 "&#x00E8;">
+<!ENTITY e2 "&#x00E9;">
+
+<!ENTITY egrave "&#x00E8;">
+<!ENTITY Egrave "&#x00C8;">
+
+
+<!ENTITY % status-entities SYSTEM "../etc/status-entities.dtd">
+%status-entities;
+
+<!ENTITY status-section-id "status">
+<!ENTITY spec-devby    "&fo-devby;">
+<!ENTITY changelog-id  "&fo-changelog-id;">
+<!ENTITY changes-para  "&post.PR.changes;">
+<!ENTITY implementation-para  "&no-implementation-report-exists;">
+<!ENTITY Bugzilla-key "[&fo-Bugzilla-key;]">
+<!ENTITY patent-policy-paragraph "&ppp-two;">
+
+<!ENTITY status-section SYSTEM "../etc/status-REC.xml">
+
+
+]>
+<!--
+<?xml-stylesheet type="text/xsl" href="E:\XMLdocs\XML Query Language (XQuery)\Functions and Operators\Current Functions and Operators Build Files\xquery-operators.xsl"?> -->
+<spec w3c-doctype="rec" status="ext-review">
+    <header>
+        <title>XQuery 1.0 and XPath 2.0 Functions and Operators</title>
+        <version>&doc.version;</version>
+        <w3c-designation>REC-&doc.shortname;</w3c-designation>
+        <w3c-doctype>W3C Recommendation</w3c-doctype>
+        <pubdate>
+            <day>&date.day;</day>
+            <month>&date.month;</month>
+            <year>&date.year;</year>
+        </pubdate>
+        <publoc>
+            <loc href="&doc.publoc;">&doc.publoc;</loc>
+        </publoc>
+  <altlocs>
+    <loc href="&doc.publoc;xpath-functions.xml">XML</loc>
+    <loc href="&doc.publoc;diff-from-20061121.html">Recent revisions</loc>
+  </altlocs>
+        <latestloc>
+            <loc href="&doc.latestloc;">&doc.latestloc;</loc>
+        </latestloc>
+        <prevlocs>
+            <loc href="&doc.prevloc;">&doc.prevloc;</loc>    
+<!--*	    <loc href="http://www.w3.org/TR/2006/CR-xpath-functions-20060608/">http://www.w3.org/TR/2006/CR-xpath-functions-20060608/</loc> 
+	    <loc href="http://www.w3.org/TR/2005/CR-xpath-functions-20051103/">http://www.w3.org/TR/2005/WD-xpath-functions-20051103/</loc> *-->
+<!--
+            <loc href="http://www.w3.org/TR/2005/WD-xpath-functions-20050404/">http://www.w3.org/TR/2005/WD-xpath-functions-20050404/</loc> 
+-->
+        </prevlocs>
+        <authlist>
+            <author>
+                <name>Ashok Malhotra (XML Query and XSL WGs)</name>
+                <affiliation>Oracle Corporation</affiliation>
+                <email href="mailto:ashok.malhotra@alum.mit.edu">ashok.malhotra@alum.mit.edu</email>
+            </author>
+            <author>
+                <name>Jim Melton (XML Query WG)</name>
+                <affiliation>Oracle Corporation</affiliation>
+                <email href="mailto:jim.melton@acm.org">jim.melton@acm.org</email>
+            </author>
+            <author>
+                <name>Norman Walsh (XSL WG)</name>
+                <affiliation>Sun Microsystems</affiliation>
+                <email href="mailto:Norman.Walsh@Sun.COM">Norman.Walsh@Sun.COM</email>
+            </author>
+        </authlist>
+
+<errataloc xmlns:xlink = "http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/XML/2007/qt-errata/xpath-functions-errata.html" xlink:type="simple"/>
+
+        <translationloc
+   href="http://www.w3.org/2003/03/Translations/byTechnology?technology=xpath-functions"
+                      /> 
+        <abstract>
+            <p>Th

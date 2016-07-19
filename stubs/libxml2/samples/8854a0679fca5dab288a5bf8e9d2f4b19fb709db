@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="a"
+	xmlns:a="a"
+        xmlns:b="b"
+        xmlns:c="c"
+        xsi:schemaLocation="a s3_10_6v03.xsd">
+ <e1 b:asd="asd"/>
+ <e2 b:asd="asd"/>
+</root>
+
+<!-- 
+Test Case Type: Valid test
+Description   : Tests notNamespace attribute on xs:anyAttribute
+-->

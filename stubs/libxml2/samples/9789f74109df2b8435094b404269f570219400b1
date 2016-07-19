@@ -1,0 +1,83 @@
+<!--
+    Copyright © 2001-2005 World Wide Web Consortium, 
+    (Massachusetts Institute of Technology, European Research Consortium 
+    for Informatics and Mathematics, Keio University). All 
+    Rights Reserved. This work is distributed under the W3C® Software License [1] in the 
+    hope that it will be useful, but WITHOUT ANY WARRANTY; without even 
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+    
+    [1] http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+    -->
+<!DOCTYPE results [
+<!ENTITY dom2-events-xerces1 SYSTEM 'dom2-events-xerces1.xml'>
+<!ENTITY dom2-events-xerces1-alt SYSTEM 'dom2-events-xerces1AltConfig.xml'>
+<!ENTITY dom2-events-xerces2 SYSTEM 'dom2-events-xerces2.xml'>
+<!ENTITY dom2-events-xerces2-alt SYSTEM 'dom2-events-xerces2AltConfig.xml'>
+<!ENTITY dom2-events-xerces2_svg SYSTEM 'dom2-events-xerces2_svg.xml'>
+<!ENTITY dom2-events-xerces2_svg-alt SYSTEM 'dom2-events-xerces2_svgAltConfig.xml'>
+<!ENTITY dom2-events-xerces2_xhtml SYSTEM 'dom2-events-xerces2_xhtml.xml'>
+<!ENTITY dom2-events-xerces2_xhtml-alt SYSTEM 'dom2-events-xerces2_xhtmlAltConfig.xml'>
+<!ENTITY dom2-events-batik SYSTEM 'dom2-events-batik.xml'>
+<!ENTITY dom2-events-kaffe SYSTEM 'dom2-events-kaffe.xml'>
+<!ENTITY dom2-events-kaffe-alt SYSTEM 'dom2-events-kaffeAltConfig.xml'>
+<!ENTITY dom2-events-firefox_html SYSTEM 'dom2-events-firefox_html.xml'>
+<!ENTITY dom2-events-firefox_xhtml SYSTEM 'dom2-events-firefox_xhtml.xml'>
+<!ENTITY dom2-events-firefox_xml SYSTEM 'dom2-events-firefox_xml.xml'>
+<!ENTITY dom2-events-opera_html SYSTEM 'dom2-events-opera_html.xml'>
+<!ENTITY dom2-events-opera_xml SYSTEM 'dom2-events-opera_xml.xml'>
+<!ENTITY dom2-events-opera_xhtml SYSTEM 'dom2-events-opera_xhtml.xml'>
+]>
+<results>
+<implementation name="Xerces-J 2">
+&dom2-events-xerces2;
+</implementation>
+<implementation name="Xerces-J 2 Alt">
+&dom2-events-xerces2-alt;
+</implementation>
+<implementation name="Batik">
+&dom2-events-batik;
+</implementation>
+<implementation name="Xerces-J 2 SVG">
+&dom2-events-xerces2_svg;
+</implementation>
+<implementation name="Xerces-J 2 SVG Alt">
+&dom2-events-xerces2_svg-alt;
+</implementation>
+<implementation name="Xerces-J 2 XHTML">
+&dom2-events-xerces2_xhtml;
+</implementation>
+<implementation name="Xerces-J 2 XHTML Alt">
+&dom2-events-xerces2_xhtml-alt;
+</implementation>
+<implementation name="Xerces-J 1">
+&dom2-events-xerces1;
+</implementation>
+<implementation name="Xerces-J 1 Alt">
+&dom2-events-xerces1-alt;
+</implementation>
+<!-- implementation name="Kaffe">
+&dom2-events-kaffe;
+</implementation>
+<implementation name="Kaffe Alt">
+&dom2-events-kaffe-alt;
+</implementation -->
+<implementation name="Firefox HTML">
+  &dom2-events-firefox_html;
+</implementation>
+<implementation name="Firefox XHTML">
+  &dom2-events-firefox_xhtml;
+</implementation>
+<implementation name="Firefox XML">
+  &dom2-events-firefox_xml;
+</implementation>
+<implementation name="Opera HTML">
+  &dom2-events-opera_html;
+</implementation>
+<implementation name="Opera XHTML">
+  &dom2-events-opera_xhtml;
+</implementation>
+<implementation name="Opera XML">
+  &dom2-events-opera_xml;
+</implementation>
+
+</results>

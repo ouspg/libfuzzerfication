@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<body>
+
+		<h1>Quick recipes for SVG Wow!</h1>
+		
+		<p style="font-style:italic">Abstract:</p>
+		<p style="margin-left:20px">
+		This presentation aims to show some ways for dazzling an audience using svg.
+		</p>
+		<p style="font-style:italic">
+		Outline:
+		</p>
+		<ul>
+		<li>Tricks of svg video</li>
+		<li>A library of effects</li>
+		<li>Widgets using svg</li>
+		</ul>
+		
+	</body>
+</html>

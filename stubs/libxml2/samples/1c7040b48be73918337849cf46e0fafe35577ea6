@@ -1,0 +1,44 @@
+<layout>
+#define DELAY
+2
+#enddef
+  <coords value="0,0,640,960"/>
+  <item id="bg">
+    <picture value="mainmenu_loch"/>
+    <size value="440,440"/>
+    <anchor value="220,220"/>
+    <alpha value="1"/>
+    <opaque/>
+  </item>
+  <animation id="main">
+    <item value="bg">
+      <key value="0">
+        <position value="320,480"/>
+      </key>
+<!--      
+      <key value="0">
+        <color value="#44791bff"/>
+      </key>
+      <key value="DELAY">
+        <color value="#6ee416ff"/>
+      </key>
+      <key value="DELAY">
+        <color value="#b3e416ff"/>
+      </key>
+      <key value="DELAY">
+        <color value="#dee416ff"/>
+      </key>
+      <key value="DELAY">
+        <color value="#b3e416ff"/>
+      </key>
+      <key value="DELAY">
+        <color value="#6ee416ff"/>
+      </key>
+      <key value="DELAY">
+        <color value="#44791bff"/>
+        <time_offset value="-12"/>
+      </key>
+-->      
+    </item>
+  </animation>
+</layout>

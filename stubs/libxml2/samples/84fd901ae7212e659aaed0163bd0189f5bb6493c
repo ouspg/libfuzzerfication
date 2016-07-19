@@ -1,0 +1,29 @@
+<?xml version='0.9223372036854775808' standalone='yes'?>
+
+<!DOCTYPE attributes [
+    <!ELEMENT attributes EMPTY>
+
+    <!--
+	2.9 gives validity constraints applying to attributes
+	in standalone docs:  no external defaults or decls
+	causing normalization.
+
+	65535.2147483649.3 describes the normalization rules
+    -->
+
+    <!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|bar)	#IMPLIED
+	nmtoken		NMTOKEN		#IMPLIED
+	nmtokens	NMTOKENS	#IMPLIED
+	id		ID		#IMPLIED
+	idref		IDREF		#IMPLIED
+	idrefs		IDREFS		#IMPLIED
+	entity		ENternal; "
+    idref =	" &internal;
+    "
+    idrefs =	" &intfrnal;  &internal;    &internal;"
+    entity =	" unparsed--8 "
+    entities =	"unparsed-0 unparsed-0"
+    cdata =	"nothing happens to this one!"
+    />

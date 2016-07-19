@@ -1,0 +1,4 @@
+<foo:H2 xmlns:foo='urn:foo'>
+  <foo:AB/> <!-- xsd:any namespace="##targetNamespace ##local" minOccurs="0" 
+                 Make sure it does not match the preceding ##other wildcard. -->
+</foo:H2>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- 
+    Web Services Addressing Test Scenarios
+    $Date: 2005-09-09 21:09:24 $
+-->
+<scenarios xmlns="http://www.w3.org/2005/08/addressing/test-cases/scenarios">
+
+  <description>Each Web Service Addressing test case may demonstrates 
+    the following abstract scenarios, usually at most one from each
+	category.</description>
+
+      <scenario xml:id="oneway-inonly" group="MessagePassing">
+	<title>One Way Robust In-Only</title>
+	<description>A Web Services addressed message is sent from node A to 
+	node B using an underlying protocol which has no natural return path for
+	 a reply, e.g. UDP. No reply or fault message is expected by A
+	within the scope of this scenario.</description>
+      </scenario>
+
+      <scenario xml:id="oneway-robustinonly" group="MessagePassing">
+	<title>One Way Robust In-Only</title>
+	<description>A Web Services addressed message is sent from node A to 
+	node B using an underlying protocol which has no natural return path for
+	 a reply, e.g. UDP. No reply message is expected by B
+	within the scope of this scenario, however B may later send A 
+	a fault message in a separate response message.</description>
+      </scenario>
+
+      <scenario xml:id="oneway-inout" group="MessagePassing"/>
+
+      <scenario xml:id="oneway-outonly" group="MessagePassing">
+	<title>One Way Out-Only</title>
+	<description>A Web Services addressed message is sent from node A to 
+	node B using an underlying protocol which has no natural return path for
+	 a reply, e.g. UDP. No reply or fault message is expected by B
+	within the scope of this scenario.</description>
+      </scenario>
+
+      <scenario xml:id="twoway-inonly" group="MessagePassing">
+	<title>Two Way In-Only</title>
+	<description>A Web Services addressed message is sent from node A to 
+	node B using an underlying protocol which has a natural return path for
+	 a reply, e.g. HTTP. No reply or fault message is expected by A
+	within the scope of this scenario.</description>
+      </scenario>
+
+      <scenario xml:id="twoway-robustinonly-a" group="MessagePassing"/>
+      <scenario xml:id="twoway-robustinonly-b" group="MessagePassing"/>
+      <scenario xml:id="twoway-inout-a" group="MessagePassing"/>
+      <scenario xml:id="twoway-inout-b" group="MessagePassing"/>
+
+</scenarios>

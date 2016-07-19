@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="errata2xhtml-1.2T.xsl"?>
+
+<!--
+  Entity declaration for &nbsp; in HTML. xsltproc does not recognise this
+  unless it's declared.
+-->
+<!DOCTYPE errata [
+  <!ENTITY nbsp " ">
+  <!ENTITY eacute "é">
+]>
+
+<errata xmlns="http://www.w3.org/2005/04/svg-errata" xmlns:h="http://www.w3.org/1999/xhtml">
+  <!--
+    - statuses: draft, proposed
+    - specs:
+            t12 Tiny 1.2
+            f12 Full 1.2
+            f11 Full 1.1
+            m11 Mobile 1.1
+    - errata format is described in:
+    http://www.w3.org/2005/10/Process-20051014/tr.html#errata
+    Type 1 - No changes to text content
+             These changes include fixing broken links or invalid markup.
+    Type 2 - Corrections that do not affect conformance
+             Editorial changes or clarifications that do not change the technical content of the specification.
+    Type 3 - Corrections that MAY affect conformance, but add no new features
+             These changes MAY affect conformance to the Recommendation. A change that affects conformance is one that:
+             1. turns conforming data, processors, or other conforming agents into non-conforming agents, or
+             2. turns non-conforming agents into conforming ones, or
+             3. clears up an ambiguity or under-specified part of the specification in such a way that an agent whose conformance was once unclear becomes clearly conforming or non-conforming.
+    Type 4 - New features
+             DON'T DO THIS ONE BECAUSE IT'S NAUGHTY.
+    -->
+
+  <!--
+  
+  TEMPLATE FOR ERRATA
+  
+  Use 'discussion' for internal working group discussion, and 'comment' for public list discussion.
+  
+  For each change to the standard, create a change element:
+    * The @date attribute is required if the @status is "normative" or
+      "proposed".  It represents the date the erratum was moved to the
+      given status.
+    * ...
+  
+  <erratum status="normative | proposed | draft" spec="f11 | f12 | m11 | t12" cat="1 | 2 | 3 | 4 | ?" date="YYYY-MM-DD" xml:id="">
+    <title></title>
+    <reporter email="">reporterName</reporter>
+    <test-case href=""/>
+    <pointer href=""/>
+    <discussion href="" author=""/>
+    <comment href=""/>
+    <action href="" author="ACTION-XXXX OPEN | CLOSED authorName"/>
+    <desc>
+    </desc>
+    <resolution>
+    </resolution>
+    <change href="">
+        <current>
+        </current>
+        <replacement>
+        </replacement>
+    </change>
+  </erratum>
+  
+  -->
+
+  <erratum status="draft" spec="t12" cat="3" xml:id="font-attribute-list-syntax">
+    <title>Font attribute list syntax</title>
+    <reporter email="redurbf@yahoo.de">Frank Bruder</reporter>
+    <comment href='http://www.mail-archive.com/svg-developers@yahoogroups.com/msg13827.html' author='Frank Bruder'/>
+    <pointer href='http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/fonts.html#GlyphElementGlyphNameAttribute'/>
+    <action href='http://www.w3.org/Graphics/SVG/WG/track/actions/2390' author='ACTION-2390 CLOSED Cameron McCormack'/>
+    <desc>
+      <div xmlns='http://www.w3.org/1999/xhtml'>
+        <p>
+          The <span class='attr-name'>'g1'</span> and <span class='attr-name'>'g2'</span>
+          attributes on the <span class='element-name'>'hkern'</span> element and the
+          <span class='attr-name'>'glyph-name'</span> attribute on the
+          <span class='element-name'>'glyph'</span> element are all defined
+          to take space-separated lists in SVG Tiny 1.2, where in SVG 1.1 they
+          were defined to be comma-separated.
+        </p>
+        <p>
+          Also, the description of the <span class='attr-name'>'glyph-name'</span>
+          attribute implies that it gives a single name for the glyph, when it
+          should actually be a list of names for the glyph.
+        </p>
+      </div>
+    </desc>
+    <resolution>
+      XXX
+    </resolution>
+    <change href='http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/fonts.html#GlyphElement'>
+      <current>
+        <div xmlns='http://www.w3.org/1999/xhtml'>
+          <dl>
+            <dt><span class="adef">glyph-name</span> = "<span class="attr-value"><a href="types.html#DataTypeListOfString">&lt;list-of-strings&gt;</a></span>"</dt>
+            <dd>
+              <p>An optional name for the glyph.</p>
+            </dd>
+          </dl>
+        </div>
+      </current>
+      <replacement>
+        <div xmlns='http://www.w3.org/1999/xhtml'>
+          <dl>
+            <dt><span class="adef">glyph-name</span> = "<span class="attr-value"><a href="types.html#DataTypeList">&lt;list-of-XML-Names&gt;</a></span>"</dt>
+          </dl>
+          <dd>
+            <p>An optional list of names for the glyph.</p>
+          </dd>
+        </div>
+      </replacement>
+    </change>
+    <change href='http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/fonts.html#HKernElement'>
+      <current>
+        <dl xmlns='http://www.w3.org/1999/xhtml'>
+          <dt><span class="adef">g1</span> = "<span class="attr-value"><a href="ty

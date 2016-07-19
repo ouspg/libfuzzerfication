@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:a="a"
+        xsi:schemaLocation="a s3_4_1ii01.xsd">
+ <p>
+  <a>1</a>
+  <c>h</c>	<!-- wildcard inserted in between -->
+  <b>1</b>
+ </p>
+ <o>
+  <c>h</c>	<!-- wildcard inserted in front -->
+  <a>1</a>
+  <b>1</b>
+ </o>
+ <i>
+  <n>1</n>
+  <a>h</a>	<!-- wildcard inserted in between -->
+  <m>1</m>
+ </i>
+ <u>
+  <a>h</a>	<!-- wildcard inserted in front -->
+  <m>1</m>  
+ </u>
+</a:root>
+
+<!-- 
+Test Case Type: Instance invalid test
+Description   : 3.4.4.3 Element Sequence Locally valid (Complex Content) Validation rule
+     2. <openContent>.mode = suffix BUT wildcard inserted in front of and in between CT group particles 
+-->

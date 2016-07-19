@@ -1,0 +1,15 @@
+<!-- Non-syntactic validity errors in default attributes only happen if the attribute is in fact defaulted. -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo id ID #IMPLIED>
+<!ATTLIST foo ref IDREF "undef">
+<!ATTLIST foo ent ENTITY "undef">
+<!-- can't test NOTATION attribute, because if it's undeclared then we'll
+     get an error for one of the enumerated values being undeclared. -->
+<!ENTITY ent SYSTEM "foo" NDA<body><body><body><body><p><body><body>TA not>
+<!NOTATION not SYSTEM "not">
+]>
+</body></body></p></body></body></body><body><body><body><body><body>TA not>
+<!NOTATION not SYSTEM "not">
+]>
+</body></body></body></body></body></body><foo id="g0034" ref="g0034" ent="ent" />

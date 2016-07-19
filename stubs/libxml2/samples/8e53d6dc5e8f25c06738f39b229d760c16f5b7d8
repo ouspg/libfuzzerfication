@@ -1,0 +1,7 @@
+<root>
+    <a>val1</a>
+    <b>val2</b>
+    <c at="val1" bt="val2" ct="val3" dt="val2" et="val1" ft="val4"/>
+    <g>val4</g>
+    <h>val3</h>
+</root>

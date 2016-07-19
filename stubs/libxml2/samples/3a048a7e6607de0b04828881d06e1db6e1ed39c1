@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<effect type="glow">
+
+  <glow>
+    <input>rt16b_buffer0</input>
+    <size>4, 0.0</size>
+    <iter>32</iter>
+    <blur_loop_base>1.0, 1.0, 1.0, 0.0</blur_loop_base>
+    <blur_loop_mul>1, 1, 1, 0.0</blur_loop_mul>
+    <resdiv>1</resdiv>
+
+    <low_limit>0</low_limit>
+    <pre_mul>1</pre_mul>
+    <exponent>16</exponent>
+
+    <color>0.6, 0.8, 1.0, 1.0</color>
+    <intensity>0.125</intensity>
+
+        <shape>box</shape> <!-- box, cross -->
+        <base_angle>0.0</base_angle>
+<!--    <angle_texmul>-2</angle_texmul> -->
+<!--    <disp>0.00, 0.0, 0.00</disp> -->
+<!--    <disp_texmul>0</disp_texmul> -->
+
+  </glow>
+
+</effect>

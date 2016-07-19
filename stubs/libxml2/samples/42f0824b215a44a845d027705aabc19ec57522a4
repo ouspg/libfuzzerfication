@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<testSuiteStatus>
+    <!-- ================================================================== -->
+    <!-- The test element describes a test shortly and captures its         -->
+    <!-- status.                                                            -->
+    <!--                                                                    --> 
+    <!-- + the name attribute is the full test name such as                 -->
+    <!--   animate-elem-34-t.svg.                                           -->
+    <!-- + the owner attribute is the two letter accronym.                  -->
+    <!-- + the reviewer attribute is the two-letter accronym of the         -->
+    <!--   reviewer.                                                        -->
+    <!-- + the status attribute is one of:                                  -->
+    <!--   . eval : the evaluation has determined this test is needed       -->
+    <!--            but the test has not been created.                      -->
+    <!--   . created : an empty test has been created in CVS to reserve     -->
+    <!--               the name.                                            -->
+    <!--   . review : the test is in review.                                -->
+    <!--   . reviewed : the test has been reviewed.                         -->
+    <!--   . commited : the test has been reviewed and commited into        -->
+    <!--                the CVS repository.                                 -->
+    <!--   . refGen : the test reference image has been generated.          -->
+    <!--   . refRevOwn : the reference image has been reviewed by the       -->
+    <!--                 test owner.                                        -->
+    <!--   . complete : the test reference has been reviewed by the         -->
+    <!--                test reviewer.                                      -->
+    <!--   . cancelled : the test has been cancelled for some reason,       -->
+    <!--                 for example if it was found it was a duplicate     -->
+    <!-- + the issue attribute is optional. If present, it means that       -->
+    <!--   the test has raised an issue and the value is the issue #        -->
+    <!--                                                                    -->
+    <!-- $RCSfile: test_status_header.xml,v $ -->
+    <!-- $Revision: 1.1 $ -->
+    <!-- ================================================================== -->

@@ -1,0 +1,7 @@
+<!-- =================================================================== -->
+<!-- Undeclared EEs are available only in default (non-strict) schema    -->
+<!-- mode. Use of end-of-element event in the middle of simple-content   -->
+<!-- where simple-type content is expected as well as required to        -->
+<!-- appear.                                                             -->
+<!-- =================================================================== -->
+<goo:AF xmlns:goo='urn:goo'><goo:AC>xyz</goo:AC></goo:AF>

@@ -1,0 +1,8 @@
+<foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="&ns_cu//example.org/namesp!ce#apples"><foo xmlns="http:%daaaa%d%n\0%naaaa%d%n%n%n%ses"><foo xmlns="&ns'_vars;"//example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apple+s"><<tspan><tspan><tspan><tspan><tspan><tspan><defs>foo xmlns="&ns_custom;"//exampld.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan></tspan></tspan></tspan></tspan><doc ANY><doc ANY><defs><defs><defs><doc ANY><foo />
+<!ELEMENT g ((a,b)*)>
+⁦<!ELEMENT h ((a,b)?)>
+<!ELEMENT i ((a,b)+)>
+]>
+<doc ANY>

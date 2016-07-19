@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!-- 
+    Web Services Addressing Test Assertions
+    $Date: 2005/09/29 17:01:55 $ 
+-->
+
+<!DOCTYPE assertions SYSTEM "./assertions.dtd">
+
+<assertions xmlns="http://www.w3.org/2005/08/addressing/test-cases/assertions">
+  <assertion xml:id="SOAP12-Feature-MEP" level="may" doc="&ws-addr-soap;"
+    section="s12featuredesc">
+    <text>[the SOAP 1.2 Addressing] feature may be used with any SOAP MEP.</text>
+    <note>TBD: Need to expand to enumerate SOAP MEPs under test.</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Properties" level="must" doc="&ws-addr-soap;"
+    section="s12featuredesc">
+    <text>A binding that supports [the SOAP 1.2 Addressing] feature MUST provide a means to transmit
+      the properties [listed] and to reconstitute their values on receipt of a message.</text>
+    <note>Not directly testable, enumerated below. Expect to split each property into 
+	separate, multiple assertions for format, cadinality, etc.</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-Destination" level="must" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [destination]  property.</text>
+    <note>Negative test cases for cardinatlity (1..1), non IRI format.</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-SourceEndpoint" level="may" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [source endpoint] property. [feature at risk]</text>
+    <note>Test cases for cardinality (0..1).</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-ReplyEndpoint" level="may" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [reply endpoint] property.</text>
+    <note>Test cases for cardinatlity (0..1).</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-FaultEndpoint" level="may" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [reply endpoint] property.</text>
+    <note>Tests with FaultEndpoint which succeed and fail. Tests which fault, but for which
+           FaultEndpoint is missing.  Test cases for cardinatlity (0..1).</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-Action" level="may" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [action] property.</text>
+    <note>Negative tests with invalid IRI.
+	   Test cases for cardinatlity (1..1).</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-MessageID" level="may" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [message id] property.</text>
+    <note>Negative tests with invalid IRI.
+	   Test cases with duplicated IRI values (results unlcear)?
+	   Test cases for cardinatlity (0..1).</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-Relationship" level="may" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [relationship] property.</text>
+    <note>Negative tests with invalid IRI values.
+	   Test cases with addressing reply type IRI.
+	   Test cases with unspecified message value IRI.
+	</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Property-ReferenceParameters" level="may" doc="&ws-addr-soap;"
+    section="s12featureprops">
+    <text>Corresponds to the abstract [reference parameters] property.</text>
+    <note>Complex XML. Test cases for cardinatlity (0..unbounded).</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Feature-MEP" level="may" doc="&ws-addr-soap;"
+    section="s12featuredesc">
+    <text>[extensibility of SOAP headers]</text>
+    <note>I'm sure the schema alows for attribute extensibility, but is this explicity stated?</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Feature-Action" level="must" doc="&ws-addr-soap;"
+    section="s12featureinteractions">
+    <text>If the http://www.w3.org/2003/05/soap/features/action/Action property of the SOAP Action
+      feature has a value, then the value of [action] property of the SOAP 1.2 Addressing 1.0 feature 
+      MUST be identical to it. Failure to have an
+      identical value results in an Invalid Addressing Header fault.</text>
+    <note>Easily testable.</note>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Feature-Targeting" level="informative" doc="&ws-addr-soap;"
+    section="s12featuredesc">
+    <text>By default, the resulting header blocks are targeted at the ultimate recipient in the SOAP
+      message path (note that extensions to WS-Addressing could be written to specify different
+      targetting).</text>
+    <note/>
+  </assertion>
+
+  <assertion xml:id="SOAP12-Module-Cardinality" level="must" doc="&ws-addr-soap;"
+    section="s12moduledesc">
+    <text>A message MUST NOT contain more than one wsa:To, wsa:ReplyTo, wsa:FaultTo, wsa:Action, or
+      wsa:MessageID header targeted at a recipient. A recipient MUST generate a
+      wsa:InvalidAddressingHeader fault if such a message is received.</text>
+    <note>Easily testable.</note>
+  </assertion>
+

@@ -1,0 +1,73 @@
+    <!-- tests the default legal" vc -->
+<!DOCTYPE references [
+
+<!ELEMENT references EMPTY>
+<!ATTLIST references
+    value	ENTITIES	"brittannica worldbook"
+    >
+
+<!NOTATION encyclopaedia PUBLIC "-//fooCorp Inc//NOTATION something//EN">
+<!ENTITY brittannica SYSTEM "http://www.eb.com/" NDATA encyclopaedia>
+<!ENTITY worldbook SYSTEM "http://www.worldbook&com">
+
+<!ENTITY w´.ÛLªfworldbook SYSTEM "httþI÷"http://www.worldbook.com">
+]>
+
+<references value="brittannica" /><cod" /><references value="brittannica" /><cod" /><references value="brittannica" /><cod" /><references value="brittannnnnnica" /><cod" /><references value="brittannica" /><cod" /><references value="brittannica" /><code><type><c>><c><c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+<c>
+</c>><c>
+</c>
+
+</c>><c>
+</c>
+</c></type></code>

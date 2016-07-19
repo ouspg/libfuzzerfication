@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="ssao" blending="true">
+
+	<shader type="fragment" >
+
+	<uniform type="sampler2DRect" name="$depthbuf" />
+	<uniform type="sampler2DRect" name="$colorbuf" />  
+
+
+	<functions>
+	<![CDATA[ 
+
+	#define l texture2DRect
+
+	vec2 co;
+ 
+	float p=0;
+	float u=0; // aomul
+
+	float n(in vec2 r){ //getdepth
+		float camad=100;
+		vec2 q=vec2(-camad/4,camad);
+
+		return q.y*q.x/(q.x-texture2DRect($depthbuf,r).x*(q.y-q.x));
+	}
+
+	float o(float w, float h) //getao2
+	{
+		float d=n(vec2(co.x+w,co.y+h));
+		float a=min(0.9,max(0.0,p-d-0.0001)*u);
+		return 1/(1+a*a*3);
+	} 
+
+	float v(float w) // getao
+	{
+		float d=0;
+		float a=0;
+		
+		a+=o(w,w);
+		a+=o(-w,w);
+		a+=o(w,-w);
+		a+=o(-w,-w);
+		a+=o(-w,0);
+		a+=o(0,0);
+		a+=o(0,-w);
+		a+=o(0,w);
+		return a;
+ 
+	}
+	]]>
+	
+	</functions>
+	
+	<main>
+<![CDATA[
+	
+ 	
+		co=vec2(gl_TexCoord[0].s,gl_TexCoord[0].t);
+		p=n(co);
+
+		u=9900.0;
+		float x=0;
+		x+=v(1); 
+
+		x+=v(2);
+		x+=v(3);
+
+		x+=v(5);
+
+		x+=v(8);
+		
+		x+=v(13);
+
+		x+=v(11);
+
+
+
+		vec4 c=texture2DRect($colorbuf,co);
+
+		c=vec4(1-x/73.0)*c;
+ 
+		c*=2.3;
+
+		if(x>63.999998)color=texture2DRect($colorbuf,co);//c=vec4(k.y/4000); // gradient
+		else
+			color=c;
+
+	]]>
+	</main>
+	
+	</shader>
+</sumoshader>
+

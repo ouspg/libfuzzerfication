@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.1//EN"
+ "http://www.w3.org/XML/1998/06/xmlspec-v21.dtd" [
+<!ENTITY doctype "NOTE">
+<!ENTITY nickname "xml-pipeline">
+<!ENTITY http-ident "http://www.w3.org/TR/">
+<!ENTITY draft.month "02">
+<!ENTITY draft.monthname "February">
+<!ENTITY draft.day "28">
+
+<!ELEMENT e:element-syntax
+  (e:in-category*, e:attribute*, (e:empty|e:text|e:element|e:model|e:sequence|e:choice))
+>
+<!ATTLIST e:element-syntax
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+  xmlns:xs CDATA #IMPLIED
+  xmlns:xi CDATA #IMPLIED
+  xmlns:p CDATA #IMPLIED
+  name NMTOKEN #REQUIRED
+>
+<!ELEMENT e:in-category EMPTY>
+<!ATTLIST
+  e:in-category name NMTOKEN #REQUIRED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:attribute (e:attribute-value-template|(e:constant|e:data-type)+)>
+<!ATTLIST e:attribute
+  name NMTOKEN #REQUIRED
+  required (yes) #IMPLIED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:attribute-value-template (e:constant|e:data-type)+>
+<!ATTLIST e:attribute-value-template
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:constant EMPTY>
+<!ATTLIST
+  e:constant value CDATA #REQUIRED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:data-type EMPTY>
+<!ATTLIST e:data-type
+  name NMTOKEN #REQUIRED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:empty EMPTY>
+<!ATTLIST e:empty
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:text EMPTY>
+<!ATTLIST e:text
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:element EMPTY>
+<!ATTLIST e:element
+  name NMTOKEN #REQUIRED
+  repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:model EMPTY>
+<!ATTLIST e:model
+  name NMTOKEN #REQUIRED
+  repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:sequence (e:element|e:model|e:choice)+>
+<!ATTLIST e:sequence
+  repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:choice (e:element|e:model|e:sequence)+>
+<!ATTLIST e:choice
+  repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+<!ELEMENT e:element-syntax-summary EMPTY>
+<!ATTLIST e:element-syntax-summary
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+
+<!ENTITY % local.illus.class "|e:element-syntax|e:element-syntax-summary">
+<!ATTLIST spec
+  xmlns:xlink CDATA #IMPLIED
+  xmlns:xi CDATA #IMPLIED
+  xmlns:e CDATA #FIXED "http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+>
+
+<!ENTITY % local.p.class "|xi:include">
+<!ENTITY % local.annot.class "|xi:include">
+<!ELEMENT xi:include EMPTY>
+<!ATTLIST xi:include
+        href    CDATA   #REQUIRED
+        parse   (xml|text)      "xml"
+        diff    CDATA   #IMPLIED
+>
+
+<!ENTITY draft.year "2002">
+<!ENTITY iso6.doc.date "&draft.year;&draft.month;&draft.day;">
+<!ENTITY draft-name "NOTE-xml-pipeline">
+<!ENTITY namespaceName "http://www.w3.org/2002/02/xml-pipeline">
+]>
+<spec w3c-doctype="note">
+<header>
+<title>XML Pipeline Definition Language</title>
+<version>Version 1.0</version>
+<w3c-designation>&doctype;-&nickname;-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Note</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.monthname;</month>
+<year>
+&draft.year;</year>
+</pubdate>
+<publoc><loc href="&http-ident;&draft.year;/&doctype;-&nickname;-&iso6.doc.date;">&http-ident;&draft.year;/&doctype;-&nickname;-&iso6.doc.date;/</loc>
+(in <loc href="&http-ident;&draft.year;/&doctype;-&nickname;-&iso6.doc.date;/Overview.html">HTML</loc>
+and <loc href="&http-ident;&draft.year;/&doctype;-&nickname;-&iso6.doc.date;/Overview.xml">XML</loc>
+with separate provision of the <loc href="http://www.w3.org/2002/02/xml-pipeline.xsd">Pipeline
+schema</loc>) </publoc>
+<latestloc><loc href="&http-ident;&nickname;/">&http-ident;&nickname;/</loc>
+</latestloc>
+<authlist>
+<author><name>Norman Walsh</name><affiliation>Sun Microsystems,
+Inc.</affiliation>
+<email href="mailto:Norman.Walsh@Sun.COM">Norman.Walsh@Sun.COM</email></author>
+<author><name>Eve Maler</name><affiliation>Sun Microsystems,
+Inc.</affiliation>
+<email href="mailto:Eve.Maler@Sun.COM">Eve.Maler@Sun.COM</email>
+</author>
+</authlist>
+<copyright>
+<p>Copyright © 2001 <loc href="http://www.sun.com/">Sun
+Microsystems,
+Inc.</loc></p>
+</copyright>
+<abstract>
+<p>This Note describes the features and syntax for XML Pipeline
+Definition Language. Pipeline is an XML vocabulary for describing the
+processing relationships between XML resources. A pipeline document
+specifies the inputs and outputs to XML processes and
+a pipeline controller uses this doc

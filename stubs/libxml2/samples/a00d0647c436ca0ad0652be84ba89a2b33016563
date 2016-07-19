@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../../style/mathml.xsl"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title> MathML TestSuite, Version 2: mi1</title>
+  </head>
+      
+  <body style="background:#ffffff">
+
+    <table width="100%" cellpadding="8"><tr><td>
+        <a href="../../Characters/UTF8/v.xml"> prev </a>
+    </td><td style="text-align:right"> 
+        <a href="../../Characters/UTF8/x.xml"> next </a>
+    </td></tr></table>
+
+      <table style="background:#cccccc" cellpadding="4">
+        <tr>
+          <td style="text-align: right" valign="top">File:</td>
+          <td>/Characters/UTF8/w.xml</td>
+        </tr>
+        <tr>
+          <td style="text-align: right" valign="top">Author:</td>
+          <td>MathML 2 Recommendation</td>
+        </tr>
+        <tr>
+          <td style="text-align: right" valign="top">Description:</td>
+          <td>Wide Characters starting with  w</td>
+        </tr>
+
+        <tr>
+          <td style="text-align: right" valign="top">Sample Rendering:</td><td>N/A</td></tr></table>
+
+      <p><b>Your browser's rendering</b>:</p>
+      <table><tr><th>name</th><th>pic</th><th>render</th></tr>
+      <tr><td>Wcirc</td><td><img src="http://www.w3.org/Math/characters/glyphs/001/U00174.png" alt="U00174"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ŵ</mi></math></td></tr>
+      <tr><td>wcirc</td><td><img src="http://www.w3.org/Math/characters/glyphs/001/U00175.png" alt="U00175"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ŵ</mi></math></td></tr>
+      <tr><td>wedbar</td><td><img src="http://www.w3.org/Math/characters/glyphs/02A/U02A5F.png" alt="U02A5F"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>⩟</mi></math></td></tr>
+      <tr><td>Wedge</td><td><img src="http://www.w3.org/Math/characters/glyphs/022/U022C0.png" alt="U022C0"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>⋀</mi></math></td></tr>
+      <tr><td>wedge</td><td><img src="http://www.w3.org/Math/characters/glyphs/022/U02227.png" alt="U02227"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>∧</mi></math></td></tr>
+      <tr><td>wedgeq</td><td><img src="http://www.w3.org/Math/characters/glyphs/022/U02259.png" alt="U02259"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>≙</mi></math></td></tr>
+      <tr><td>weierp</td><td><img src="http://www.w3.org/Math/characters/glyphs/021/U02118.png" alt="U02118"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>℘</mi></math></td></tr>
+      <tr><td>Wfr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D5/U1D51A.png" alt="U1D51A"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝔚</mi></math></td></tr>
+      <tr><td>wfr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D5/U1D534.png" alt="U1D534"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝔴</mi></math></td></tr>
+      <tr><td>wopf</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D5/U1D568.png" alt="U1D568"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝕨</mi></math></td></tr>
+      <tr><td>Wopf</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D5/U1D54E.png" alt="U1D54E"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝕎</mi></math></td></tr>
+      <tr><td>wp</td><td><img src="http://www.w3.org/Math/characters/glyphs/021/U02118.png" alt="U02118"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>℘</mi></math></td></tr>
+      <tr><td>wr</td><td><img src="http://www.w3.org/Math/characters/glyphs/022/U02240.png" alt="U02240"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>≀</mi></math></td></tr>
+      <tr><td>wreath</td><td><img src="http://www.w3.org/Math/characters/glyphs/022/U02240.png" alt="U02240"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>≀</mi></math></td></tr>
+      <tr><td>Wscr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D4/U1D4B2.png" alt="U1D4B2"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒲</mi></math></td></tr>
+      <tr><td>wscr</td><td><img src="http://www.w3.org/Math/characters/glyphs/1D4/U1D4CC.png" alt="U1D4CC"/></td> <td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝓌</mi></math></td></tr>
+</table>
+    <hr />
+    <p>
+      <b>Source Code</b>:</p>
+    <pre>
+        N/A
+  </pre>
+    <p style="text-align: right">
+         <a href="../../../index.html" target="_top">Test Suite Home</a>
+    </p>
+  </body>
+</html>

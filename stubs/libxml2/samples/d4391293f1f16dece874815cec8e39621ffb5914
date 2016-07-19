@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<color_map>
+<v dbz="35" c="#ffff00" />
+<v dbz="40" c="#ffc000" />
+<v dbz="45" c="#ff9000" />
+<v dbz="50" c="#ff0000" />
+<v dbz="55" c="#d60000" />
+<v dbz="60" c="#c00000" />
+<v dbz="65" c="#ff00ff" />
+<v dbz="70" c="#9955c9" />
+<v dbz="75" c="#ffffff" />
+</color_map>

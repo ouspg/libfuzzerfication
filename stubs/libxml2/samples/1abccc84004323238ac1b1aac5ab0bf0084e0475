@@ -1,0 +1,4 @@
+<doc xmlns:z="http://open205x.com/">
+  <a z:extra-number="23.45" z:extra-date="2007-12-12"/>
+  <b z:extra-number="23.45" z:extra-date="2007-12-12"/>
+</doc>

@@ -1,0 +1,6 @@
+<?xml-stylesheet href="css1.css" type="text/css"?>
+<?xml-stylesheet href="css2.css" title="test" type="text/css"?>
+<?xml-stylesheet href="css3.css" title="test" type="text/css"?>
+<root>
+    <a>test</a>
+</root>

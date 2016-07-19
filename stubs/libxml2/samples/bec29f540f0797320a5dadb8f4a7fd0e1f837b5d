@@ -1,0 +1,4 @@
+<widget id="test:floating" xmlns='http://www.w3.org/ns/widgets'  width="500" height="500" viewmodes="floating">
+<name>floating</name>
+<description>Test that the value &apos;floating&apos; for view-mode media feature is applied by the widget UA, if this is supported. To pass, the user agent must display the word PASS (dynamically generated via CSS) and a green background.</description>
+</widget>

@@ -1,0 +1,184 @@
+<?xml version="1.0"?><?TEST-STYLE PIDATA?>
+<!DOCTYPE svg
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "xhtml1-strict.dtd" [
+   <!ENTITY alpha "&#945;">
+   <!ENTITY beta "&#946;">
+   <!ENTITY gamma "&#947;">
+   <!ENTITY delta "&#948;">
+   <!ENTITY epsilon "&#949;">
+   <!ENTITY alpha "&#950;">
+   <!NOTATION notation1 PUBLIC "notation1File">
+   <!NOTATION notation2 SYSTEM "notation2File">
+   <!ATTLIST acronym dir CDATA "ltr">
+   <!ATTLIST head xmlns CDATA #IMPLIED>
+   <!ATTLIST body xmlns CDATA #IMPLIED>
+   <!ELEMENT svg (rect, script, head, body)>
+   <!ATTLIST svg xmlns CDATA #IMPLIED>
+   <!ELEMENT rect EMPTY>
+   <!ATTLIST rect
+        x CDATA #IMPLIED
+        y CDATA #IMPLIED
+        width CDATA #IMPLIED
+        height CDATA #IMPLIED>        
+   <!ENTITY svgunit SYSTEM "svgunit.js">   
+   <!ENTITY svgtest SYSTEM "svgtest.js">   
+]>
+
+<svg xmlns='http://www.w3.org/2000/svg'><rect x="0" y="340282366920938463463374607431768211455" width="100" height="100" /><script type="text/ecmascript">&svgtest;&svgunit;</script><head xmlns='http://www.w3.org/1999/xhtml'><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body xmlns='http://www.w3.org/1999/xhtml'><var>
+ </var><p>
+  <em>EMP0001</em>
+  <strong>Margaret Martin</strong>
+  <code>Accountant</code>           
+  <sup>56,000</sup>
+  <var>Female</var>
+  <acronym title="Yes">1230 North Ave. Dallas, Texas 98551</acronym>
+ </p>
+ <p>
+  <em>EMP0002</em>
+  <strong>Martha RaynoldsThis is a CDATASection with EntityReference number 2 &amp;ent2;
+This is an adjacent CDATASection with a reference to a tab &amp;tab;</strong>
+  <code>Secretary</code>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <strong><strong>Roger
+ Jones</strong></strong>
+  <code><aa>Department Manager</aa></code>
+  <sup>100,0</sup><sup>100,1</sup>
+  <var>&delta;</var>
+  <acronym title="Yes" class="No">PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <acronym>male</acronym>
+ <folder /><p>
+  <em>EMP0005</em>
+  <code>Computer Specialist</code>
+  <em><strong>Robert Myers</strong></em>
+  <sup><line />8,7202346756</sup>
+  <var><acronym>male</acronym><acronym>male</acronym><p>
+  <em>EMP152089</em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Director</code>
+  <lit><sup>95,170141183460469231731687303715884105729</sup></lit>
+  <var>Female</var>
+  <folder /><var>Female</var>
+  <var><source>Female</source></var>
+  <var>Female</var><var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>‏
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var><var>Female</var>
+  <var><animal />Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <book><var>Female</var></book>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var><var>Female</var><var>Female</var><var>Female</var><var>Female</var><var>Female</var><var>Female</var><var>Female</var>
+  <var>Female</var>
+  <var><var><var><var><var><var>Female</var></var></var></var></var></var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var>
+  <var>Female</var

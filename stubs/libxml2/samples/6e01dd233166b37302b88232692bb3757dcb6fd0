@@ -1,0 +1,13 @@
+<doc>
+    <e value="-INF"/>
+    <e value="+INF"/>
+    <e value="0.0"/>
+    <e value="-0.0"/>
+    <e value="0.0000"/>
+    <e value="0"/>
+    <e value="1.0"/>
+    <e value="1e0"/>
+    <e value="10e-1"/>
+    <e value="1"/>
+    <e value="1.00000000000"/>
+</doc>

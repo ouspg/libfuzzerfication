@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../../../style/mathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <!--
+Copyright &#251; 1994-2003 World Wide Web Consortium, (Massachusetts Institute
+of Technology, European Consortium for Informatics and
+Mathematics, Keio University). All Rights Reserved. See
+http://www.w3.org/Consortium/Legal/.
+  -->
+  <head>
+    <title> W3C MathML TestSuite, Version 2: mfracBhoriz11</title>
+</head>
+  <body style="background: #ffffff">
+    <table width="100%" cellpadding="8">
+      <tr>
+        <td>
+          <a href="../../../Presentation/GeneralLayout/mfrac/mfracBheight17.xml">
+    prev </a>
+        </td>
+        <td style="text-align: right">
+          <a href="../../../Presentation/GeneralLayout/mfrac/mfracBvert12.xml">
+    next</a>
+        </td>
+      </tr>
+    </table>
+      <table style="background:#cccccc" cellpadding="4">
+        <tr>
+          <td style="text-align: right" valign="top">File:</td>
+          <td>Presentation/GeneralLayout/mfrac/mfracBhoriz11.xml (<a href="mfracBhoriz11.mml">mml file</a>)
+        </td>
+        </tr>
+        <tr>
+          <td style="text-align: right" valign="top">Author:</td>
+          <td>Robert Miner and Jeff Schaefer, Geometry Technologies</td>
+        </tr>
+        <tr>
+          <td style="text-align: right" valign="top">Description:</td>
+          <td>This example tests that &lt;mfrac> does reasonable things with the
+bar and horizontal centering for wide fractions.</td>
+        </tr>
+        <tr>
+          <td style="text-align: right" valign="top">Sample Rendering:</td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <img src="mfracBhoriz11.png" alt="Created by: webeq"/>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    <p>
+      <b>Your browser's rendering</b>:</p>
+    <p>
+    <math xmlns="http://www.w3.org/1998/Math/MathML"> 
+      <mfrac> 
+        <mn>1</mn> 
+        <mi>a</mi> 
+      </mfrac> 
+      <mo>-</mo> 
+      <mfrac> 
+        <mn>1</mn> 
+        <mrow> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+        </mrow> 
+      </mfrac> 
+      <mo>-</mo> 
+      <mfrac> 
+        <mn>1</mn> 
+        <mrow> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+          <mo>+</mo> 
+          <mi>a</mi> 
+        </mrow> 
+      </mfrac> 
+    </math>
+  </p>
+    <hr/>
+    <p>
+      <b>Source Code</b>:</p>
+    <pre>
+    &lt;math> 
+      &lt;mfrac> 
+        &lt;mn>1&lt;/mn> 
+        &lt;mi>a&lt;/mi> 
+      &lt;/mfrac> 
+      &lt;mo>-&lt;/mo> 
+      &lt;mfrac> 
+        &lt;mn>1&lt;/mn> 
+        &lt;mrow> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+        &lt;/mrow> 
+      &lt;/mfrac> 
+      &lt;mo>-&lt;/mo> 
+      &lt;mfrac> 
+        &lt;mn>1&lt;/mn> 
+        &lt;mrow> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+          &lt;mo>+&lt;/mo> 
+          &lt;mi>a&lt;/mi> 
+        &lt;/mrow> 
+      &lt;/mfrac> 
+    &lt;/math>
+  </pre>
+    <p style="text-align: right">
+      <a href="../../../../overview.html" target="_top">
+	Test Suite Home
+	</a>
+    </p>
+    <hr/>
+  </body>
+</html>

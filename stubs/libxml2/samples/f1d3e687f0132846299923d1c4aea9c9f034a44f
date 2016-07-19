@@ -1,0 +1,8 @@
+<doot EMPTY>
+<!ATTLIST root
+    value	NMTOKEN	"alpha/beta"
+    >
+    <!-- tests the "attribute default legal" vc -->
+]>
+
+<root value="brittannica" /><root value="brittannica" /><root value="brittannica" /><root value="brittannica" /><b battr0="def"><root value="brittannict value="brittannica" /><root value="brittannica" /><root value="brittannic/

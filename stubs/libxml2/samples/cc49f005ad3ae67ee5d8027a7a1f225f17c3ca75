@@ -1,0 +1,31 @@
+<!DOCTYPE bnf  [
+<!ELEMENT bnf ANY>
+<!ENTITY % ref-req.att "ref                    CDATA           #REQUIRED">
+
+<!ENTITY XML "http://www.w3.org/TR/REC-xml">
+<!ENTITY XMLNames "http://www.w3.org/TR/REC-xml-names">
+<!ENTITY year "2002">
+<!ENTITY month "June">
+<!ENTITY MM "06">
+<!ENTITY day "28">
+<!ENTITY DD "28">
+<!ENTITY YYYYMMDD "&year;&MM;&DD;">
+<!ENTITY LEV "REC">
+<!ENTITY language "<phrase role='spec-language'/>">
+<!ENTITY version "<phrase role='spec-version'/>">
+<!ENTITY working-group "<phrase role='spec-wg'/>">
+<!ENTITY for-name "<phrase role='spec-for-name'/>">
+<!ENTITY query-expr "<phrase role='spec-query'/>">
+<!ENTITY introduction SYSTEM "introduction.xml">
+<!ENTITY expressions SYSTEM "expressions.xml">
+<!ENTITY prolog SYSTEM "query-prolog.xml">
+<!ENTITY examples SYSTEM "query-examples.xml">
+<!ENTITY use-cases SYSTEM "use-cases.xml">
+<!ENTITY constructors SYSTEM "constructors.xml">
+<!ENTITY flwr SYSTEM "flwr-expressions.xml">
+<!ENTITY ebnf SYSTEM "ebnf.xml">
+]>
+<spec id="spec-top">
+  &ebnf;
+</spec>
+

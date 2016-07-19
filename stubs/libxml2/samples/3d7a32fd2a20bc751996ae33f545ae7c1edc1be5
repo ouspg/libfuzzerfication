@@ -1,0 +1,8 @@
+<doc>
+   <chap type="date">2010-12-12</chap>
+   <chap type="dateTime">2010-10-10T12:30:00</chap>
+   <chap type="time">12:30:15Z</chap>
+   <appendix type="date">2010-12-12</appendix>
+   <appendix type="dateTime">2010-10-10T12:30:00-05:00</appendix>
+   <appendix type="time">12:30:15Z</appendix>
+</doc>

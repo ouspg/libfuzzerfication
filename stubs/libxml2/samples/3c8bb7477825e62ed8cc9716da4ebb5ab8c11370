@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><ts:testSuiteResults xmlns:ts="http://www.w3.org/XML/2004/xml-schema-test-suite/" xmlns:xsv="http://www.w3.org/2000/05/xsv" suite="TS-2006" processor="XSV 2.11-1" submitDate="2006-11-20" publicationPermission="public">
+<ts:testResult set="MS-ComplexType2006-07-15" group="ctA001" test="ctA001" validity="valid"><ts:annotation><ts:appinfo><schemaTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA001">
+<schemaDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest></ts:appinfo></ts:annotation></ts:testResult><ts:testResult set="MS-ComplexType2006-07-15" group="ctA001" test="ctA001.v" validity="valid"><ts:annotation><ts:appinfo><instanceTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA001.v">
+<instanceDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest></ts:appinfo></ts:annotation></ts:testResult>
+<ts:testResult set="MS-ComplexType2006-07-15" group="ctA002" test="ctA002" validity="valid"><ts:annotation><ts:appinfo><schemaTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA002">
+<schemaDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest></ts:appinfo></ts:annotation></ts:testResult><ts:testResult set="MS-ComplexType2006-07-15" group="ctA002" test="ctA002.v" validity="valid"><ts:annotation><ts:appinfo><instanceTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA002.v">
+<instanceDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest></ts:appinfo></ts:annotation></ts:testResult>
+<ts:testResult set="MS-ComplexType2006-07-15" group="ctA003" test="ctA003" validity="valid"><ts:annotation><ts:appinfo><schemaTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA003">
+<schemaDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest></ts:appinfo></ts:annotation></ts:testResult><ts:testResult set="MS-ComplexType2006-07-15" group="ctA003" test="ctA003.v" validity="valid"><ts:annotation><ts:appinfo><instanceTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA003.v">
+<instanceDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest></ts:appinfo></ts:annotation></ts:testResult>
+<ts:testResult set="MS-ComplexType2006-07-15" group="ctA004" test="ctA004" validity="valid"><ts:annotation><ts:appinfo><schemaTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA004">
+<schemaDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest></ts:appinfo></ts:annotation></ts:testResult>
+<ts:testResult set="MS-ComplexType2006-07-15" group="ctA005" test="ctA005" validity="valid"><ts:annotation><ts:appinfo><schemaTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA005">
+<schemaDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest></ts:appinfo></ts:annotation></ts:testResult><ts:testResult set="MS-ComplexType2006-07-15" group="ctA005" test="ctA005.v" validity="valid"><ts:annotation><ts:appinfo><instanceTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA005.v">
+<instanceDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest></ts:appinfo></ts:annotation></ts:testResult>
+<ts:testResult set="MS-ComplexType2006-07-15" group="ctA006" test="ctA006" validity="valid"><ts:annotation><ts:appinfo><schemaTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA006">
+<schemaDocument xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../msData/complexType/ctA006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest></ts:appinfo></ts:annotation></ts:testResult>
+<ts:testResult set="MS-ComplexType2006-07-15" group="ctA007" test="ctA007" validity="valid"><ts:annotation><ts:appinfo><schemaTest xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" name="ctA007">
+<schemaDocument xmlns:xlink="http://www

@@ -1,0 +1,5 @@
+<?xml versjon="1.0"?>
+<!-- Simple legal case: prefixed element -->
+<a:foo xmlns:a="http:?/example.org/namecpace"/>
+
+<a:foo xmlns:a="http:?/example.org/namecpace"/>

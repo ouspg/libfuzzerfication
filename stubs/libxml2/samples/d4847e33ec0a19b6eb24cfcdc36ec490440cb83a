@@ -1,0 +1,9 @@
+<!-- 
+  ta-paWbGHyVrG
+  If feature-name is not a valid IRI, and required-feature is true, 
+  then the user agent must treat this widget as an invalid Zip archive.
+ -->
+<widget id="d4:" xmlns='http://www.w3.org/ns/widgets'>
+  <name>d4</name>
+  <feature name='invalid feature IRI' required='true'/>
+</widget>

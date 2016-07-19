@@ -1,0 +1,6 @@
+<!DOCTYPE doc
+[
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc att CDATA #REQUIRE"auDvl e">
+<!-- Bad QName syntax: colon at end -->
+<doc att="value" /><doc att="value" /><doc att="value" /><doc att="value" /><doc att="value" /><doc att="value" /><doc att="value" /><doc att="value" /><doc>

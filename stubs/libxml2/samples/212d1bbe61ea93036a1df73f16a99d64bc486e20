@@ -1,0 +1,10 @@
+<Stats>
+  <Name>LavaPit</Name>
+  <Terrain_deterioration_time>14225</Terrain_deterioration_time>
+  <Tile_random_time_min>19000</Tile_random_time_min>
+  <Tile_random_time_max>30000</Tile_random_time_max>
+  <Tile_random_low_change>7</Tile_random_low_change>
+  <Tile_random_high_change>5</Tile_random_high_change>
+  <Tile_random_high_height>1.5</Tile_random_high_height>
+  <Tile_random_low_height>1</Tile_random_low_height>
+</Stats>

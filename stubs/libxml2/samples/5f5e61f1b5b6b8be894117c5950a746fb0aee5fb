@@ -1,0 +1,19 @@
+<shapes>
+  <polygon kind="square">
+    <a>10</a>  
+    <b>10</b>
+    <c>10</c>
+    <d>10</d>
+  </polygon>
+  <polygon kind="rectangle">
+    <a>10</a>  
+    <b>8</b>
+    <c>10</c>
+    <d>8</d>
+  </polygon>
+  <polygon kind="triangle">
+    <a>5</a>  
+    <b>10</b>
+    <c>15</c>
+  </polygon>
+</shapes>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="3d test" blending="false" >
+	
+	<varying type="vec3" name="$blah"/>
+
+	<shader type="vertex">
+
+	
+	<functions>
+	varying vec3 normal, lightDir, eyeVec;
+	uniform float time;
+	uniform float deformv;
+	</functions>
+	
+		<main>
+				<![CDATA[ 
+			normal = gl_NormalMatrix * gl_Normal;
+			vec4 vVertex = gl_ModelViewMatrix * gl_Vertex;
+
+			lightDir = vec3(gl_LightSource[1].position.xyz - vVertex);
+			eyeVec = -vVertex;
+ 
+
+			vec4 twistedPosition = vVertex;
+			
+	
+	
+  			
+  			vec4 v = vec4(gl_Vertex);
+  	color= gl_ModelViewProjectionMatrix * v;		
+  	
+  	if(v.y>110.0 && v.y<1202.0)
+  	{
+  	
+  	color.z=3*320.0;
+  			color.x+=sin(3*20+(color.z+color.x)/40)*3*110.0;
+  			color.y+=cos(3*0+(color.x+color.z)/40)*110.0*3;
+  	
+  	}
+  			
+
+]]>
+		</main>
+	</shader>
+	
+	<shader type="fragment">
+		<functions>
+		varying vec3 normal, lightDir, eyeVec;
+		
+		
+		</functions>
+
+		<main>
+		<![CDATA[ 
+	vec4 final_color = 
+	(gl_FrontLightModelProduct.sceneColor * gl_FrontMaterial.ambient) + 
+	(gl_LightSource[1].ambient * gl_FrontMaterial.ambient);
+							
+	vec3 N = normalize(normal);
+	vec3 L = normalize(lightDir);
+	
+	float lambertTerm = dot(N,L);
+	
+	if(lambertTerm > 0.0)
+	{
+		final_color += gl_LightSource[1].diffuse * 
+		               gl_FrontMaterial.diffuse * 
+					   lambertTerm;	
+		
+		vec3 E = normalize(eyeVec);
+		vec3 R = reflect(-L, N);
+		float specular = pow( max(dot(R, E), 0.0), 
+		                 gl_FrontMaterial.shininess );
+		final_color += gl_LightSource[1].specular * 
+		               gl_FrontMaterial.specular * 
+					   specular;	
+	}
+
+	color = final_color;	
+
+	]]>		
+		</main>
+	</shader>
+
+</sumoshader>

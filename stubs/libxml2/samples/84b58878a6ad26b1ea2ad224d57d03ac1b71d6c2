@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA|e)*>
+<!ELEMENT e EMPTY>
+<!ENTITY e SYSTEM "---65537.en="
+<!ENTITY e SYSTEM "--0.en="
+    idref =	" standaloDne doc

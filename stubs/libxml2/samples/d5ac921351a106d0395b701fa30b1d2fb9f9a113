@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Example 2.5 from the P3P spec as an RDF model
+
+    $Id: ex-2-5.xml,v 1.1 2002/01/25 16:42:53 dom Exp $
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY p3p     "http://www.w3.org/2002/01/p3prdfv1#">
+]>
+
+<rdf:RDF
+  xmlns:rdf ="&rdf;" 
+  xmlns:rdfs="&rdfs;"
+  xmlns:p3p ="&p3p;">
+
+  <rdf:Seq rdf:type="&p3p;PolicyReferences">
+
+    <rdf:li>
+      <p3p:PolicyRef p3p:about="/P3P/Policies.xml#first">
+        <p3p:includeCookies p3p:cookieName="*"
+                            p3p:cookieValue="*"
+                            p3p:cookieDomain="*"
+                            p3p:cookiePath="*"/>
+      </p3p:PolicyRef>
+    </rdf:li>
+
+  </rdf:Seq>
+</rdf:RDF>
+
+<!--
+  $Log: ex-2-5.xml,v $
+  Revision 1.1  2002/01/25 16:42:53  dom
+  Installed for publication
+
+  Revision 1.2  2002/01/24 17:08:42  rigo
+  copy pasted schema into the note and added all the xml-files.
+
+  Revision 1.1  2002/01/24 10:36:09  rigo
+  revision after bugfixes and issue resolution with Brian McBride
+
+  
+  Revisions prior to loading into W3C CVS repository
+
+  Revision 1.2  2001/12/02 20:18:25  bwm
+  fixed typo
+
+  Revision 1.1  2001/12/02 20:10:46  bwm
+  Initial version
+
+-->
+
+
+
+
+
+

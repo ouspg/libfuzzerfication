@@ -1,0 +1,214 @@
+<!-- $Id: references.xml,v 1.1.1.1 2004/12/21 16:01:27 sp106478 Exp $ -->
+
+<part id="docbook-reference"><title>Reference</title>
+<?dbhtml filename="part2.html"?>
+<?ORApage height="4.93352"?>
+<?ORApage height="7.5625"?>
+<?ORA last-page-blank?>
+
+<reference id='ref-element' role='folders'>
+<title>DocBook Element Reference</title>
+<?dbhtml filename="ref-elements.html"?>
+
+&intro.elements;
+
+&abbrev.element;
+&abstract.element;
+&accel.element;
+&ackno.element;
+&acronym.element;
+&action.element;
+&address.element;
+&affiliation.element;
+&alt.element;
+&anchor.element;
+&answer.element;		<!--3.1-->
+&appendix.element;
+&appendixinfo.element;		<!--4.0-->
+&application.element;
+&area.element;
+&areaset.element;
+&areaspec.element;
+&arg.element;
+&article.element;
+&articleinfo.element;		<!--4.0-->
+&artpagenums.element;
+&attribution.element;
+&audiodata.element;		<!--3.1-->
+&audioobject.element;		<!--3.1-->
+&author.element;
+&authorblurb.element;
+&authorgroup.element;
+&authorinitials.element;
+&beginpage.element;
+&bibliocoverage.element;	<!--4.2-->
+&bibliodiv.element;
+&biblioentry.element;
+&bibliography.element;
+&bibliographyinfo.element;	<!--4.0-->
+&biblioid.element;		<!--4.2-->
+&bibliomisc.element;
+&bibliomixed.element;
+&bibliomset.element;
+&bibliorelation.element;	<!--4.2-->
+&biblioset.element;
+&bibliosource.element;		<!--4.2-->
+&blockinfo.element;		<!--4.2-->
+&blockquote.element;
+&book.element;
+&bookinfo.element;
+&bridgehead.element;
+&callout.element;
+&calloutlist.element;
+&caption.element;		<!--3.1-->
+&caution.element;
+&chapter.element;
+&chapterinfo.element;		<!--4.0-->
+&citation.element;
+&citebiblioid.element;		<!--4.2-->
+&citerefentry.element;
+&citetitle.element;
+&city.element;
+&classname.element;
+&classsynopsis.element;		<!--4.0-->
+&classsynopsisinfo.element;	<!--4.0-->
+&cmdsynopsis.element;
+&co.element;
+&code.element;                  <!--4.3-->
+&col.element;                   <!--4.3-->
+&colgroup.element;              <!--4.3-->
+&collab.element;
+&collabname.element;
+&colophon.element;		<!--3.1-->
+&colspec.element;
+&command.element;
+&computeroutput.element;
+&confdates.element;
+&confgroup.element;
+&confnum.element;
+&confsponsor.element;
+&conftitle.element;
+&constant.element;		<!--3.1-->
+&constraint.element;		<!--EBNF-->
+&constraintdef.element;		<!--EBNF-->
+&constructorsynopsis.element;	<!--4.0-->
+&contractnum.element;
+&contractsponsor.element;
+&contrib.element;
+&copyright.element;
+&coref.element;			<!--4.2-->
+&corpauthor.element;
+&corpcredit.element;            <!--4.3-->
+&corpname.element;
+&country.element;
+&database.element;
+&date.element;
+&dedication.element;
+&destructorsynopsis.element;	<!--4.0-->
+&edition.element;
+&editor.element;
+&email.element;
+&emphasis.element;
+&entry.element;
+&entrytbl.element;
+&envar.element;
+&epigraph.element;
+&equation.element;
+&errorcode.element;
+&errorname.element;
+&errortext.element;		<!--4.2-->
+&errortype.element;
+&example.element;
+&exceptionname.element;		<!--4.0-->
+&fax.element;
+&fieldsynopsis.element;		<!--4.0-->
+&figure.element;
+&filename.element;
+&firstname.element;
+&firstterm.element;
+&footnote.element;
+&footnoteref.element;
+&foreignphrase.element;
+&formalpara.element;
+&funcdef.element;
+&funcparams.element;
+&funcprototype.element;
+&funcsynopsis.element;
+&funcsynopsisinfo.element;
+&function.element;
+&glossary.element;
+&glossaryinfo.element;		<!--4.0-->
+&glossdef.element;
+&glossdiv.element;
+&glossentry.element;
+&glosslist.element;
+&glosssee.element;
+&glossseealso.element;
+&glossterm.element;
+&graphic.element;
+&graphicco.element;
+&group.element;
+&guibutton.element;
+&guiicon.element;
+&guilabel.element;
+&guimenu.element;
+&guimenuitem.element;
+&guisubmenu.element;
+&hardware.element;
+&highlights.element;
+&holder.element;
+&honorific.element;
+&html-form.element;		<!--htmlforms-->
+&imagedata.element;		<!--3.1-->
+&imageobject.element;		<!--3.1-->
+&imageobjectco.element;		<!--3.1-->
+&important.element;
+&index.element;
+&indexdiv.element;
+&indexentry.element;
+&indexinfo.element;		<!--4.0-->
+&indexterm.element;
+&informalequation.element;
+&informalexample.element;
+&informalfigure.element;	<!--3.1-->
+&informaltable.element;
+&initializer.element;		<!--4.0-->
+&inlineequation.element;
+&inlinegraphic.element;
+&inlinemediaobject.element;	<!--3.1-->
+&interface.element;
+&interfacename.element;		<!--4.0-->
+&invpartnumber.element;
+&isbn.element;
+&issn.element;
+&issuenum.element;
+&itemizedlist.element;
+&itermset.element;
+&jobtitle.element;
+&keycap.element;
+&keycode.element;
+&keycombo.element;
+&keysym.element;
+&keyword.element;
+&keywordset.element;
+&label.element;			<!--3.1-->
+&legalnotice.element;
+&lhs.element;			<!--EBNF-->
+&lineage.element;
+&lineannotation.element;
+&link.element;
+&listitem.element;
+&literal.element;
+&literallayout.element;
+&lot.element;
+&lotentry.element;
+&manvolnum.element;
+&markup.element;
+&medialabel.element;
+&mediaobject.element;		<!--3.1-->
+&mediaobjectco.element;		<!--3.1-->
+&member.element;
+&menuchoice.element;
+&methodname.element;		<!--4.0-->
+&methodparam.element;		<!--4.0-->
+&methodsyno

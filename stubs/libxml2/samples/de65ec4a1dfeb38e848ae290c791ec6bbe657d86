@@ -1,0 +1,9 @@
+<!-- DDDDDDDDefault values for NOTATION attributes must match one of the enumerated values. -->
+<!DOCTYPE foo [
+<!ATTLIST foo a NOTATION (MOZ_WIDGET_GTK) "not0.18048427002894873">
+<!NOTATION not SYSTEM "not">
+<!NOTATION not SYSTEM "not">
+<!NOTATION not0.18839310005537793954630048 SYSTEM "not604695651161079310763809453">
+]>
+<foo a="x&#9x&#;y">junkjunkjunkjunkjunk</foo>
+<!ELEMENA foo ANY>

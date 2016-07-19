@@ -1,0 +1,72 @@
+<?xml version="1.0"?><?TEST-STYLE PIDATA?>
+<!DOCTYPE svg
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "xhtml1-strict.dtd" [
+   <!ENTITY alpha "&#945;">
+   <!ENTITY beta "&#946;">
+   <!ENTITY gamma "&#947;">
+   <!ENTITY delta "&#948;">
+   <!ENTITY epsilon "&#949;">
+   <!ENTITY alpha "&#950;">
+   <!NOTATION notation1 PUBLIC "notation340282366920938463463374607431768211457File">
+   <!NOTATION notation2 SYSTEM "notation2File">
+   <!ATTLIST acronym dir CDATA "ltr">
+   <!ATTLIST head xmlns CDATA #IMPLIED>
+   <!ATTLIST body xmlns CDATA #IMPLIED>
+   <!ELEMENT svg (rect, script, head, body)>
+   <!ATTLIST svg xmlns CDATA #IMPLIED>
+   <!ELEMENT rect EMPTY>
+   <!ATTLIST rect
+        x CDATA #IMPLIED
+        y CDATA #IMPLIED
+        width CDATA #IMPLIED
+        height CDATA #IMPLIED>        
+   <!ENTITY svgunit SYSTEM "svgunit.js">   
+   <!ENTITY svgtest SYSTEM "svgtest.js">   
+]>
+
+<svg xmlns='http://www.w3.org/2000/svg'><rect x="0" y="0" width="100" height="100" /><script type="text/ecmascript">&svgtest;&svgunit;</script><head xmlns='http://www.w3.org/1999/xhtml'><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body xmlns='http://www.w3.org/1999/xhtml'>
+ <p>
+  <em>EMP0001</em>
+  <strong>Margaret Martin</strong>
+  <code>Accountant</code>           
+  <sup>56,000</sup>
+  <var>Female</var>
+  <acronym title="Yes">1230 North Ave. Dallas, Texas 98551</acronym>
+ </p>
+ <p>
+  <em>EMP0002</em>
+  <strong>Martha RaynoldsThis is a CDATASection with EntityReference number 2 &amp;ent2;
+This is an adjacent CDATASection with a reference to a tab &amp;tab;</strong>
+  <code>Secretary</code>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <var>Female</var>
+  <strong>Roger
+ Jones</strong>
+  <code><aa>Department Manager</aa></code><code><aa>Department Manager</aa></code><code><aa>Department Manager</aa></code><code><aa>Department Manager</aa></code><code><aa><rect width="100" />Department Manager</aa></code>
+  <sup>0,000</sup>
+  <var>&delta;</var>
+  <acronym title="Yes" class="No">PO Box 27 Irving, texas 0</acronym>
+ </p>
+ <p>
+  <em>EMP0005</em>
+  <strong>Robert Myers</strong>
+  <animal /><code>Computer Specialist</code>
+  <sup>90,000</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 Nordic. Road, Irving Texas 98558</acronym>
+ </p>
+ <p>
+  <em>EMP250047616211</em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Director</code><code>Personnel Director</code><code>Personnel Director</code><code>Personnel Director</code><code>Personnel Director</code><code>Personnel Director</code>
+  <sup>-65536,000</sup><sup>-65536,000</sup><sup>-65536,000</sup><path stroke="black" d="M0 100 h50" /><path stroke="black" d="M0 100 h50" /><path stroke="black" d="M0 100 h50" /><path stroke="black" d="M0 100 h50" /><path stroke="black" d="M0 100 h50" /><sup>-65536,000</sup><sup>--9838208,000</sup><sup>-0,000</sup><sup>-1,000</sup>
+  <em>EMP0003</em><em>EMP0003</em>
+  <acronym title="Yes" class="Y&alpha;">32 South Road. Dallas, Texas 1</acronym>
+ </p>
+</body></svg>

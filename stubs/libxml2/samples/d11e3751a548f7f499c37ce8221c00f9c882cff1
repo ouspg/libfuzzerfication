@@ -1,0 +1,10 @@
+<module name="OSR">
+	<params>
+		<string name="Tex">
+			<def></def>
+		</string>
+		<vec3 name="TexScale">
+			<def>1 1 0</def>
+		</vec3>
+	</params>
+</module>

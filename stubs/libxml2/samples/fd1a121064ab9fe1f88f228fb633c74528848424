@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.2+WSDL//EN" "xmlspec.dtd">
+<!--
+/*
+ * Copyright © 2007 World Wide Web Consortium,
+ *
+ * (Massachusetts Institute of Technology, European Research Consortium for
+ * Informatics and Mathematics, Keio University). All Rights Reserved. This
+ * work is distributed under the W3C® Document License [1] in the hope that
+ * it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * [1] http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
+ */
+    -->
+<?xml-stylesheet type='text/xsl' href='xmlspec-wsdl.xsl'?><spec xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:z="http://www.w3.org/2004/zml" w3c-doctype="pr" role="public" xml:space="default">
+	<header xml:space="default">
+		<title xml:space="default">Web Services Description Language (WSDL) Version 2.0 Part 0: Primer</title>
+		<w3c-designation xml:space="default">http://www.w3.org/TR/2007/PR-wsdl20-primer-20070523</w3c-designation>
+		<w3c-doctype xml:space="default">W3C Proposed Recommendation</w3c-doctype>
+		<pubdate xml:space="default">
+			<day xml:space="default">23</day>
+			<month xml:space="default">May</month>
+			<year xml:space="default">2007</year>
+		</pubdate>
+		<publoc xml:space="default">
+			<loc href="http://www.w3.org/TR/2007/PR-wsdl20-primer-20070523" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/2007/PR-wsdl20-primer-20070523</loc>
+		</publoc>
+		<altlocs xml:space="default">
+	<loc role="pdf" href="wsdl20-primer.pdf" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">PDF</loc>
+	<loc role="postscript" href="wsdl20-primer.ps" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">PostScript</loc>
+	<loc role="xml" href="wsdl20-primer.xml" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">XML</loc>
+	<loc role="plain" href="wsdl20-primer.txt" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">plain text</loc>
+    </altlocs>
+    <prevlocs xml:space="default">
+    <loc href="http://www.w3.org/TR/2007/WD-wsdl20-primer-20070326" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/2007/WD-wsdl20-primer-20070326</loc>
+  </prevlocs>
+		<latestloc xml:space="default">
+			<loc href="http://www.w3.org/TR/wsdl20-primer" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/wsdl20-primer</loc>
+		</latestloc>
+		<authlist xml:space="default">
+			<author xml:space="default">
+				<name xml:space="default">David Booth</name>
+				<affiliation xml:space="default">W3C Fellow / Hewlett-Packard</affiliation>
+			</author>
+			<author xml:space="default">
+				<name xml:space="default">Canyang Kevin Liu</name>
+				<affiliation xml:space="default">SAP Labs</affiliation>
+			</author>
+		</authlist>
+		<abstract id="Abstract" xml:space="default">
+			<p xml:space="default">
+				This document is a companion to the WSDL 2.0
+				specification (<emph xml:space="default">Web Services Description Language (WSDL) Version 2.0 Part 1: Core Language</emph>
+				<bibref ref="WSDL-PART1" xml:space="default"/>,
+				<emph xml:space="default">Web Services Description Language (WSDL) Version 2.0 Part 2: Adjuncts</emph>
+				<bibref ref="WSDL-PART2" xml:space="default"/>). It is intended for readers who wish to have an
+				easier, less technical introduction to the main features
+				of the language.
+			</p>
+			<p xml:space="default">
+				This primer is only intended to be a starting point
+				toward use of WSDL 2.0, and hence does not describe
+				every feature of the language. Users are expected to
+				consult the WSDL 2.0 specification if they wish to make
+				use of more sophisticated features or techniques.
+			</p>
+			<p xml:space="default">
+				Finally, this primer is
+				<emph xml:space="default">non-normative</emph>.
+				Any specific questions of what WSDL 2.0 requires or
+				forbids should be referred to the WSDL 2.0
+				specification.
+			</p>
+		</abstract>
+		
+<status id="Status" xml:space="default">
+
+  <p xml:space="default">
+    <emph xml:space="default">This section describes the status of this document at the time
+    of its publication. Other documents may supersede this document. A
+    list of current W3C publications and the latest revision of this
+    technical report can be found in the <loc href="http://www.w3.org/TR/" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">W3C technical reports index</loc> at
+    http://www.w3.org/TR/.</emph>
+  </p>
+
+   <p xml:space="default">This is the <loc href="http://www.w3.org/2005/10/Process-20051014/tr.html#RecsPR" xml:space="default" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">W3C
+   Proposed Recomm

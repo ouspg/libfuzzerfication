@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+  <!ENTITY entity1 SYSTEM "http://www.example.com/images/book1.gif" NDATA GIF>
+  <!ENTITY entity2 SYSTEM "http://www.example.com/images/book2.gif" NDATA GIF>
+  <!NOTATION GIF SYSTEM "/Utils/Gifview.exe">   
+]>
+<doc>
+  <para/>
+</doc>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moki xmlns="http://www.w3.org/2007/05/moki">
+   <aboutMe>
+      <name>mobileOK Basic Reference Implementation</name>
+      <URI>http://www.w3.org/2005/MWI/BPWG/Group/TaskForces/Checker/Overview.html</URI>
+      <version>1.0</version>
+      <callingIP>127.0.1.1</callingIP>
+      <timestamp>1292274908459</timestamp>
+   </aboutMe>
+   <primaryDoc>
+      <URI>http://localhost:8080/PopUpsTest/6/index.xhtml</URI>
+      <retrieval>
+         <retrievedURI>http://localhost:8080/PopUpsTest/6/index.xhtml</retrievedURI>
+         <HTTPRequest>
+            <rawHeaders>Accept: application/xhtml+xml,text/html;q=0.1,application/vnd.wap.xhtml+xml;q=0.1,text/css,image/jpeg,image/gif
+Accept-Charset: UTF-8
+Host: localhost:8080
+User-Agent: W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)
+</rawHeaders>
+            <method>GET</method>
+            <URI>http://localhost:8080/PopUpsTest/6/index.xhtml</URI>
+            <protocol>HTTP/1.1</protocol>
+            <header name="accept">
+               <element name="application/xhtml+xml"/>
+               <element name="text/html">
+                  <parameter name="q" value="0.1"/>
+               </element>
+               <element name="application/vnd.wap.xhtml+xml">
+                  <parameter name="q" value="0.1"/>
+               </element>
+               <element name="text/css"/>
+               <element name="image/jpeg"/>
+               <element name="image/gif"/>
+            </header>
+            <header name="accept-charset">
+               <element name="utf-8"/>
+            </header>
+            <header name="host" value="localhost:8080"/>
+            <header name="user-agent"
+                    value="W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)"/>
+         </HTTPRequest>
+         <HTTPResponse>
+            <rawHeaders>Content-Length: 592
+Content-Type: application/xhtml+xml
+Date: Mon, 13 Dec 2010 21:15:07 GMT
+Server: Apache-Coyote/1.1
+</rawHeaders>
+            <protocol>HTTP/1.1</protocol>
+            <status code="200" reason="OK"/>
+            <header name="content-length" value="592"/>
+            <header name="content-type">
+               <element name="application/xhtml+xml"/>
+            </header>
+            <header name="date" value="Mon, 13 Dec 2010 21:15:07 GMT"/>
+            <header name="server" value="Apache-Coyote/1.1"/>
+            <entity size="592">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;POP_UPS test Pass&lt;/title&gt;
+    &lt;link rel="Start" title="Blah" type="text/html" href="" /&gt;
+    &lt;base href="" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;form action=""&gt;
+    &lt;div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+  &lt;div&gt;
+    &lt;a href="" target="_self"&gt;This link is not a pop-up&lt;/a&gt;, nor &lt;a href="" target="_parent"&gt;is this one&lt;/a&gt; or &lt;a href="" target="_top"&gt;this one&lt;/a&gt;.
+  &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</entity>
+         </HTTPResponse>
+      </retrieval>
+      <XHTMLDocInfo>
+         <validity>
+            <UTF-8Validity valid="true"/>
+            <MarkupValidity valid="VALID"/>
+            <MobileValidity valid="VALID"/>
+         </validity>
+         <chars extraneous="40" total="592"/>
+         <xmlDecl declaration="true" encoding="UTF-8"/>
+         <xmlNamespace declaration="true"/>
+         <doctypeDecl present="true" publicID="-//W3C//DTD XHTML Basic 1.1//EN"
+                      systemID="http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd"/>
+         <docContent tidied="false">
+            <html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/2007/05/moki"
+                  m:line="3"
+                  xml:lang="en">
+               <head m:line="4">
+                  <title m:line="5">POP_UPS test Pass</title>
+                  <link href="" m:line="6" rel="Start" title="Blah" type="text/html"/>
+                  <base href="" m:line="7"/>
+               </head>
+               <body m:line="9">
+                  <form action="" enctype="application/x-www-form-urlencoded" m:line="10" method="get">
+                     <div m:line="11">
+    </div>
+                  </form>
+                  <div m:line="14">
+                     <a href="" m:line="15" target="_self">This link is not a pop-up</a>, nor <a href="" m:line="15" target="_parent">is this one</a> or <a href="" m:line="15" target="_top">this one</a>.
+  </div>
+               </body>
+            </html>
+         </docContent>
+      </XHTMLDocInfo>
+   </primaryDoc>
+   <stylesheets/>
+   <images/>
+   <objects/>
+   <links/>
+</moki>

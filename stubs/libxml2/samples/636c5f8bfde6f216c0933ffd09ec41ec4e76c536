@@ -1,0 +1,124 @@
+<!--
+Illustration of a Denial of Serivce Attack - complex Xpath transform
+====================================================================
+
+This document has a 100 namespaces ns0 to ns99 and a 100 <e2> elements
+Since XPath expands all the namespaces for each element, it means that there are 100x100 = 10,000 NamespaceNodes.
+Now the XPath expression simple counts all the nodes in the document, however this XPath expression is evaluated for every node in the document. 
+
+So it takes 10,000 x 10,000 = 100,000,000 operations to evaluate this document
+
+HMAC password = sample
+-->
+<ns0:e0 
+xmlns:ns0="http://www.w3.org/ns0"
+xmlns:ns1="http://www.w3.org/ns1"
+xmlns:ns2="http://www.w3.org/ns2"
+xmlns:ns3="http://www.w3.org/ns3"
+xmlns:ns4="http://www.w3.org/ns4"
+xmlns:ns5="http://www.w3.org/ns5"
+xmlns:ns6="http://www.w3.org/ns6"
+xmlns:ns7="http://www.w3.org/ns7"
+xmlns:ns8="http://www.w3.org/ns8"
+xmlns:ns9="http://www.w3.org/ns9"
+xmlns:ns10="http://www.w3.org/ns10"
+xmlns:ns11="http://www.w3.org/ns11"
+xmlns:ns12="http://www.w3.org/ns12"
+xmlns:ns13="http://www.w3.org/ns13"
+xmlns:ns14="http://www.w3.org/ns14"
+xmlns:ns15="http://www.w3.org/ns15"
+xmlns:ns16="http://www.w3.org/ns16"
+xmlns:ns17="http://www.w3.org/ns17"
+xmlns:ns18="http://www.w3.org/ns18"
+xmlns:ns19="http://www.w3.org/ns19"
+xmlns:ns20="http://www.w3.org/ns20"
+xmlns:ns21="http://www.w3.org/ns21"
+xmlns:ns22="http://www.w3.org/ns22"
+xmlns:ns23="http://www.w3.org/ns23"
+xmlns:ns24="http://www.w3.org/ns24"
+xmlns:ns25="http://www.w3.org/ns25"
+xmlns:ns26="http://www.w3.org/ns26"
+xmlns:ns27="http://www.w3.org/ns27"
+xmlns:ns28="http://www.w3.org/ns28"
+xmlns:ns29="http://www.w3.org/ns29"
+xmlns:ns30="http://www.w3.org/ns30"
+xmlns:ns31="http://www.w3.org/ns31"
+xmlns:ns32="http://www.w3.org/ns32"
+xmlns:ns33="http://www.w3.org/ns33"
+xmlns:ns34="http://www.w3.org/ns34"
+xmlns:ns35="http://www.w3.org/ns35"
+xmlns:ns36="http://www.w3.org/ns36"
+xmlns:ns37="http://www.w3.org/ns37"
+xmlns:ns38="http://www.w3.org/ns38"
+xmlns:ns39="http://www.w3.org/ns39"
+xmlns:ns40="http://www.w3.org/ns40"
+xmlns:ns41="http://www.w3.org/ns41"
+xmlns:ns42="http://www.w3.org/ns42"
+xmlns:ns43="http://www.w3.org/ns43"
+xmlns:ns44="http://www.w3.org/ns44"
+xmlns:ns45="http://www.w3.org/ns45"
+xmlns:ns46="http://www.w3.org/ns46"
+xmlns:ns47="http://www.w3.org/ns47"
+xmlns:ns48="http://www.w3.org/ns48"
+xmlns:ns49="http://www.w3.org/ns49"
+xmlns:ns50="http://www.w3.org/ns50"
+xmlns:ns51="http://www.w3.org/ns51"
+xmlns:ns52="http://www.w3.org/ns52"
+xmlns:ns53="http://www.w3.org/ns53"
+xmlns:ns54="http://www.w3.org/ns54"
+xmlns:ns55="http://www.w3.org/ns55"
+xmlns:ns56="http://www.w3.org/ns56"
+xmlns:ns57="http://www.w3.org/ns57"
+xmlns:ns58="http://www.w3.org/ns58"
+xmlns:ns59="http://www.w3.org/ns59"
+xmlns:ns60="http://www.w3.org/ns60"
+xmlns:ns61="http://www.w3.org/ns61"
+xmlns:ns62="http://www.w3.org/ns62"
+xmlns:ns63="http://www.w3.org/ns63"
+xmlns:ns64="http://www.w3.org/ns64"
+xmlns:ns65="http://www.w3.org/ns65"
+xmlns:ns66="http://www.w3.org/ns66"
+xmlns:ns67="http://www.w3.org/ns67"
+xmlns:ns68="http://www.w3.org/ns68"
+xmlns:ns69="http://www.w3.org/ns69"
+xmlns:ns70="http://www.w3.org/ns70"
+xmlns:ns71="http://www.w3.org/ns71"
+xmlns:ns72="http://www.w3.org/ns72"
+xmlns:ns73="http://www.w3.org/ns73"
+xmlns:ns74="http://www.w3.org/ns74"
+xmlns:ns75="http://www.w3.org/ns75"
+xmlns:ns76="http://www.w3.org/ns76"
+xmlns:ns77="http://www.w3.org/ns77"
+xmlns:ns78="http://www.w3.org/ns78"
+xmlns:ns79="http://www.w3.org/ns79"
+xmlns:ns80="http://www.w3.org/ns80"
+xmlns:ns81="http://www.w3.org/ns81"
+xmlns:ns82="http://www.w3.org/ns82"
+xmlns:ns83="http://www.w3.org/ns83"
+xmlns:ns84="http://www.w3.org/ns84"
+xmlns:ns85="http://www.w3.org/ns85"
+xmlns:ns86="http://www.w3.org/ns86"
+xmlns:ns87="http://www.w3.org/ns87"
+xmlns:ns88="http://www.w3.org/ns88"
+xmlns:ns89="http://www.w3.org/ns89"
+xmlns:ns90="http://www.w3.org/ns90"
+xmlns:ns91="http://www.w3.org/ns91"
+xmlns:ns92="http://www.w3.org/ns92"
+xmlns:ns93="http://www.w3.org/ns93"
+xmlns:ns94="http://www.w3.org/ns94"
+xmlns:ns95="http://www.w3.org/ns95"
+xmlns:ns96="http://www.w3.org/ns96"
+xmlns:ns97="http://www.w3.org/ns97"
+xmlns:ns98="http://www.w3.org/ns98"
+xmlns:ns99="http://www.w3.org/ns99"
+>
+ <ns0:e1 xml:id="e1"> 
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/>
+  <ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns0:e2/><ns

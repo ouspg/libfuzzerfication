@@ -1,0 +1,221 @@
+<!--
+    From: "Henry S. Thompson" <ht@cogsci.ed.ac.uk>
+
+    I'd be interested in reports from validating parsers wrt the
+    following:
+-->
+
+<!DOCTYPE foo [
+<!ELEMENT foo (a+)>
+<!ENTITY empty ''>
+<!ENTITY space ' '>
+<!ELEMENT a EMPTY>]>
+<foo>
+&empty;
+<a /><a /><a /><a /><foo>
+&empty;
+<a /><foo><foo>
+&empty;
+<a /><foo>
+&empty;
+<a /><a />
+&space;
+<a />
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a /><a /><a /><a /><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a /><a />
+<![CDATA[ ]]>
+<a />
+</foo><foo><a />
+&empty;
+<a /><foo>
+&empty;
+<a /><foo><a />
+&empty;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a /><foo>
+&space;
+<a />
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a />
+<![CDATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|bar)	#IMPLIED
+	nmtoken		NMTOKEN		#IMPLIED
+	nm󠀼tokens	NMTOKENS	#IMPLIED
+	id		ID		#IMPLIED
+	idref		IDRE doc
+[
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a /><a />
+<![CDATA[ ]]>
+<a />
+</foo><a /><foo>
+&empty;
+<a />
+&space;
+<a />
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a /><a />
+<![CDATA[ ]]>
+<a />
+</foo><a /><foo>
+&empty;
+<a />
+&space;
+<a /><a /><a />
+<![CDATA[]]>
+<a-0
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a /><a />
+<![CDATA[ ]]>
+<a />
+</foo><a />
+<![CDATA[]]>
+<a />
+<![CDATA[ ]]>
+<a />
+</foo>

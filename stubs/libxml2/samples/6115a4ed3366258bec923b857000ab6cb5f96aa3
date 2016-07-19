@@ -1,0 +1,11 @@
+<root>
+    <a at1="value1"></a>
+    <a at2="value2"></a>
+	<a at1="value2"></a>
+	<a at3="value2"></a>
+	<b at2="XXX"></b>
+	<b at1="value1"></b>
+	<b at1="YYY"></b>
+	<b at2="XXX"></b> 
+	<x at1="YYY"></x>
+</root>

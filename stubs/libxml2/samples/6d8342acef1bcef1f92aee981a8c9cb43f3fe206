@@ -1,0 +1,27 @@
+<testCaseGroup xmlns="http://www.sun.com/japex/testSuite" xmlns:xi="http://www.w3.org/2001/XInclude"
+    name="Schema-Informed Declared Production tests - &apos;all&apos; group">
+    <param name="schemaInformedDataDir" value="${japex.exi.ttfms.testCasesDir}/interop/schemaInformedGrammar"/>
+
+    <param name="groupId" value="${groupId} | allGroupGrammar"/>
+
+    <param name="org.w3c.exi.ttf.useSchemas" value="true" />
+    <param name="org.w3c.exi.ttf.schemaLocation" value="${schemaInformedDataDir}/acceptance.xsd"/>
+    <param name="reference" value="http://www.w3.org/TR/exi/#allGroupTerms"/>
+
+    <testCase name="schemaInformed.declared.all-01">
+        <param name="testDescription"  value="&apos;all&apos; instance with optional elements present"/>
+        <param name="japex.inputFile" value="${schemaInformedDataDir}/declaredProductions/all-01.xml" />
+    </testCase>
+
+    <testCase name="schemaInformed.declared.all-02">
+        <param name="testDescription"  value="&apos;all&apos; instance with optional elements omitted"/>
+        <param name="japex.inputFile" value="${schemaInformedDataDir}/declaredProductions/all-02.xml" />
+    </testCase>
+
+    <testCase name="schemaInformed.declared.all-03">
+        <param name="testDescription"  value="&apos;all&apos; instance with repeated elements"/>
+        <param name="japex.inputFile" value="${schemaInformedDataDir}/declaredProductions/all-03.xml" />
+    </testCase>
+
+</testCaseGroup>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE xyz:widget [
+<!ENTITY widgets-ns "http://www.w3.org/ns/widgets">
+]>
+<xyz:widget xmlns:xyz="&widgets-ns;">
+	<xyz:name>bw</xyz:name>
+	<xyz:author>PASS</xyz:author>
+</xyz:widget>

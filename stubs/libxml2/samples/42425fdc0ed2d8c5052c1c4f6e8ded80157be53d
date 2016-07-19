@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="no" ?>
+
+<demoproject>
+
+<engineDEMO name="Decadence" version="1.2" mp3name="escena\test.mp3" mp3="1" v="9" h="16" loadactions="1" interactive="0" starttime="0">
+	<FX type='2d' class='flash' name='negrolento' start='0.0' end='0.50' fadein='1' fadeout='0.02' blendfunc='3'/>
+	<FX type='3d' name='octopus' start='0.0' end='0.0'/>
+	<FX type='3d' name='Camera03' start='0.0' end='0.0'/>
+	<FX type='2d' class='skin' name='tittle' start='4.80' end='9.8' fadein='0.2' fadeout='0.2' blendfunc='3' maxalpha='0.5'/>
+	<FX type='2d' class='skin' name='tit01' start='10.414' end='15.414' fadein='0.2' fadeout='0.2' blendfunc='3' maxalpha='0.5'/>
+	<FX type='2d' class='flash' name='negrolento' start='19.5' end='20.500' fadein='1' fadeout='1' blendfunc='4'/>
+	<FX type='3d' name='cripta' start='20.501' end='0.0'/>
+	<FX type='3d' name='Camera03' start='20.502' end='0.0'/>
+	<FX type='2d' class='flash' name='blanco' start='20.503' end='20.503' fadein='1' fadeout='1' blendfunc='1'/>
+	<FX type='2d' class='skin' name='b01' start='19.62' end='48.0' fadein='1' fadeout='1' maxalpha='1.0' blendfunc='3'/>
+	<FX type='3d' name='Camera02' start='25.443' end='0.0'/>
+	<FX type='3d' name='Camera03' start='30.162' end='0.0'/>
+	<FX type='2d' class='flash' name='blancoslow' start='40.444' end='40.445' fadein='0.95' fadeout='0.95' blendfunc='1'/>
+	<FX type='3d' name='Camera02' start='40.443' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.8' strenght='0.01' start='40.444' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.8' strenght='0.01' start='48.0' end='0.0'/>
+	<FX type='3d' name='head' start='48.024' end='0.0'/>
+	<FX type='2d' class='skin' name='flashead' start='48.025' end='80.649' fadein='1' fadeout='1' blendfunc='3'/>
+	<FX type='2d' class='flash' name='blanco' start='48.024' end='48.025' fadein='1' fadeout='1' blendfunc='0'/>
+	<FX type='3d' name='Camera02' start='49.917' end='0.0'/>	
+	<FX type='2d' class='flash' name='blanco' start='49.917' end='49.91700001' fadein='1' fadeout='1' blendfunc='1'/>
+	<FX type='3d' name='Camera05' start='50.537' end='0.0'/>
+	<FX type='2d' class='flash' name='blanco' start='50.5372' end='50.5373' fadein='1' fadeout='1' blendfunc='0'/>
+	<FX type='3d' name='Camera04' start='51.1540001' end='0.0'/>
+	<FX type='3d' name='Camera02' start='51.4850001' end='0.0'/>
+	<FX type='3d' name='Camera04' start='51.9580001' end='0.0'/>
+	<FX type='3d' name='Camera01' start='52.4480001' end='0.0'/>
+	<FX type='3d' name='Camera02' start='53.070' end='0.0'/>	
+	<FX type='3d' name='Camera05' start='53.691' end='0.0'/>		
+	<FX type='3d' name='Camera01' start='54.02720001' end='0.0'/>
+	<FX type='3d' name='Camera02' start='54.4830001' end='0.0'/>
+	<FX type='3d' name='Camera04' start='54.9750001' end='0.0'/>
+	<FX type='3d' name='Camera01' start='55.6120001' end='0.0'/>
+	<FX type='3d' name='Camera02' start='56.2330001' end='0.0'/>
+	<FX type='3d' name='Camera05' start='56.5510001' end='0.0'/>
+	<FX type='3d' name='Camera01' start='57.4730001' end='0.0'/>
+	<FX type='3d' name='Camera04' start='58.1370001' end='0.0'/>
+	<FX type='3d' name='Camera05' start='58.7490001' end='0.0'/>
+	<FX type='3d' name='Camera04' start='59.05940001' end='0.0'/>
+	<FX type='3d' name='Camera01' start='60.0' end='0.0'/>
+	<FX type='3d' name='tube' start='60.646' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.8' strenght='0.01' start='60.646' end='0.0'/>
+	<FX type='3d' name='Camera02' start='70.762' end='0.0'/>
+	<FX type='3d' name='Camera01' start='75.813' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.8' strenght='0.01' start='80.649' end='0.0'/>
+	<FX type='2d' class='skin' name='b03' start='80.649' end='90.6505' fadein='1' fadeout='1' blendfunc='3'/>
+	<FX type='3d' name='thing' start='80.650' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.9' strenght='0.9' start='80.6515' end='0.0'/>
+	<FX type='3d' name='Camera03' start='80.651' end='0.0'/>
+	<FX type='3d' name='Camera01' start='83.394' end='0.0'/>
+	<FX type='3d' name='Camera02' start='85.913' end='0.0'/>
+	<FX type='3d' name='Camera01' start='88.441' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.9' strenght='0.9' start='90.969' end='0.0'/>
+	<FX type='2d' class='skin' name='b02' start='90.969' end='111.176' fadein='1' fadeout='1' blendfunc='3'/>
+	<FX type='3d' name='octopus' start='90.970' end='0.0'/>
+	<FX type='3d' name='Camera01' start='90.972' end='0.0'/>
+	<FX type='3d' class='hitcam' name='Camera01' start='90,972' end='0.0'/>
+	<FX type='3d' name='Camera02' start='93.498' end='0.0'/>
+	<FX type='3d' class='hitcam' name='Camera02' start='93.498' end='0.0'/>
+	<FX type='3d' name='Camera04' start='96.024' end='0.0'/>
+	<FX type='3d' class='hitcam' name='Camera04' start='96.024' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.9' strenght='0.9' start='96.025' end='0.0'/>
+	<FX type='2d' class='glow' blur='0.9' strenght='0.9' start='98.545' end='0.0'/>
+	<FX type='3d' name='Camera02' start='98.545' end='0.0'/>
+	<FX type='3d' class='hitc

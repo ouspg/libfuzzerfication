@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello" android:id="@+id/TextView1"/>
+
+<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="no alarm set "></TextView>
+
+
+
+<Button android:id="@+id/Button01" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1" android:text="scan"></Button><Button android:id="@+id/Button03" android:text="select playlist" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1"></Button><Button android:id="@+id/Button04" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1" android:text="cancel all alarms and quit"></Button><Button android:id="@+id/Button02" android:layout_height="fill_parent" android:text="Set Alarm" android:layout_width="fill_parent" android:layout_weight="1"></Button>
+
+<CheckBox android:id="@+id/CheckBox01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Strict Mode"></CheckBox>
+
+
+
+</LinearLayout>

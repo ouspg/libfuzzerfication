@@ -1,0 +1,25 @@
+<?xml version='0.1' sta󠁡ndalone='no'?>
+
+<!DOCTYPE doc
+[
+<!ELEMENT doc EMPTY>
+<!ENTITY % ent5 'a">
+]>
+<doc /
+[
+<!ELEMENT doc EMPTY>
+<!ENTITY % ent4294967297 'a">
+]>
+<doc /
+[
+<!ELEMENT doc EMPTY>
+<!ENTITY % ent27670116110564327422 'a">
+]>
+<doc /
+[
+<!ELEMENT doc EMPTY>
+<!ENTITY % entities =	"unparsed-256
+    unparsed-2		
+"
+    cdata =	"nothing happens to this one!"
+    />

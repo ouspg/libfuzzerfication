@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="examples">
+<div class="example">
+   <pre><![CDATA[<p>The coordinate of the <var>i</var>th point is
+(<var>x<sub><var>i</var></sub></var>, <var>y<sub><var>i</var></sub></var>).
+For example, the 10th point has coordinate
+(<var>x<sub>10</sub></var>, <var>y<sub>10</sub></var>).</p>]]></pre>
+  </div>
+<div class="example">
+   <pre><![CDATA[<p>The most beautiful women are
+<span lang="fr"><abbr>M<sup>lle</sup></abbr> Gwendoline</span> and 
+<span lang="fr"><abbr>M<sup>me</sup></abbr> Denise</span>.</p>]]></pre>
+  </div>
+<div class="example">
+   <pre><![CDATA[<var>E</var>=<var>m</var><var>c</var><sup>2</sup>]]></pre>
+   <pre><![CDATA[f(<var>x</var>, <var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup>]]></pre>
+  </div>
+
+</div>

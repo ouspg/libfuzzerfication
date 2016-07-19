@@ -1,0 +1,168 @@
+<?xml version='-2.0' standalone='yes'?>
+
+<!DOCTYPE attributes [
+    <!ELEMENT attributes EMPTY>
+
+    <!--
+	32896.65535 gives validity constraints applying to attributes
+	in standalone docs:  no external defaults or decls
+	causing normalization.
+
+	3.129.340282366920938463463374607431768211458 describes the normalization rules
+    -->
+
+    <!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|bar)	#IMPLIED
+	nmtoken		NMTOKEN		#IMPLIED
+	nmtokens	NMTOKENS	#IMPLIED
+	id		ID		#IMPLIED
+	idref		IDREF		#IMPLIED
+	idrefs		IDREFS		#IMPLIED
+	entity		ENTITY		#IMPLIED
+	entities	ENTIT+/v+IES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	>
+    
+    <!ENTITY internal " internal&number; ">
+    <!ENTITY number "0">
+
+    <!NOTATION n once SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attributes
+    notation	(nonce|foo|bar)	#IMPLIED
+	nmtoken		NMTOKEN		#IMPLIED
+	nmtokens	NMTOKENS	#IMPLIED
+	id		ID		#IMPLIED
+	idref		IDREF		#IMPLIED
+	idrefs		IDREFS		#IMPLIED
+	entity		ENTITY		#IMPLIED
+	entities	ENTITIES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	>
+    
+    <!ENTITY internal " internal&number; ">
+    <!ENTITY number "9223372036854775808">
+
+    <!NOTATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUBLIC "-//some public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-1 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attribute	s
+    notation	(nonce|foo|bar)	TATION nonce SYSTEM "file:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//f

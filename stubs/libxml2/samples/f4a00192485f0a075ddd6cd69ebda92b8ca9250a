@@ -1,0 +1,10 @@
+<!-- =================================================================== -->
+<!-- When xsi:type and/or xsi:nil attributes appear in an element where  -->
+<!-- schema-informed grammars are in effect, they MUST occur before any  -->
+<!-- other attribute events of the same element, with xsi:type placed    -->
+<!-- before xsi:nil when they both occur.                                -->
+<!-- Note xsi:nil has an invalid value 'whichever' to be captured by     -->
+<!-- AT(*)  [untyped value].                                             -->
+<!-- =================================================================== -->
+<foo:F xmlns:foo='urn:foo' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  foo:aA='' xsi:nil='whichever' xsi:type='foo:extended_F'><foo:AB/></foo:F>

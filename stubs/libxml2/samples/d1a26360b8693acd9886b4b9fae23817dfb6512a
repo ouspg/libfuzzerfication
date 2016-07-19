@@ -1,0 +1,39 @@
+
+<effect>
+
+
+<diffuse>
+  <file>data/tiny_rocks.jpg</file>
+  <file>data/valko.png</file>
+  <intensity>1.43</intensity>
+  <texcoord_scale>1.0, 1.0</texcoord_scale>
+  <texcoord_ofs loop="-1" fadeIn="1.0" curve="linear" end="1.0">1.0, 0.0</texcoord_ofs>
+  <texcoord_ofs clear="1">0.50, 0.50, 0.0</texcoord_ofs>
+</diffuse>
+
+<height>
+  <file>data/tiny_rocks.jpg</file>
+  <intensity>-0.00750</intensity>
+  <texcoord_scale>1.0, 1.0</texcoord_scale>
+  <texcoord_ofs>0.0, 0.0</texcoord_ofs>
+</height>
+
+<specular>
+  <file>data/valko.png</file>
+  <intensity>0.950</intensity>
+  <exponent>12.0</exponent>
+  <texcoord_scale>4.0, 4.0</texcoord_scale>
+  <texcoord_ofs>0.0, 0.0</texcoord_ofs>
+</specular>
+<ambience_intensity>0.50</ambience_intensity>
+<diffuse_intensity>1.0</diffuse_intensity>
+<specular_intensity>1.0</specular_intensity>
+
+
+<tech>
+<name>march_f3</name> <!-- bump, parallax, march -->
+<param_float> <name>g_march_depth</name> <value>0.250</value> </param_float>
+</tech>
+ 
+
+</effect>

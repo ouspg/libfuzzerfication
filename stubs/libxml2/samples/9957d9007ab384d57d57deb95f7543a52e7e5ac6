@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<dv:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:dv="http://xstest-tns/schema11_S3_4_6"
+        xsi:schemaLocation="http://xstest-tns/schema11_S3_4_6 s3_4_6v01.xsd">
+ <wildcard>1</wildcard>
+ <a>1</a>
+ <wildcard2>hi.123</wildcard2>
+ <wildcard3>
+  <hello>
+   moo
+  </hello>
+ </wildcard3>
+</dv:root>
+
+<!-- 
+	Test Case Type: valid test (Structures 3.4.6) 
+	Base Type     : Restriction of complex types
+	Description   : Wildcards are now allowed in xs:all
+-->

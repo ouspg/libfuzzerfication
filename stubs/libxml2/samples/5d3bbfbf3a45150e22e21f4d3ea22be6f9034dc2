@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='xmlspec-wsdl.xsl'?>
+<!DOCTYPE spec PUBLIC
+    "-//W3C//DTD Specification V2.2+WSDL//EN"
+    "xmlspec.dtd" [
+	<!ENTITY prefix "wsdl20-primer">
+	<!ENTITY % entities SYSTEM "entities.dtd">
+	%entities;
+	<!ENTITY document.status "Editors' copy $Date: 2007-06-22 19:30:13 $">
+<!ENTITY thisdoc.title "&part0.title;">
+	<!ENTITY status SYSTEM "status-primer.xml">
+<!ENTITY prevloc "http://www.w3.org/TR/2007/PR-wsdl20-primer-20070523">
+]>
+
+<spec shortname='&part0.prefix;' w3c-doctype="&document.type;" role="&document.role;" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<header>
+		<title>&part0.title;</title>
+		<w3c-designation>&w3c-designation-part0;</w3c-designation>
+		<w3c-doctype>&document.status;</w3c-doctype>
+		<pubdate>
+			<day>&draft.day;</day>
+			<month>&draft.month;</month>
+			<year>&draft.year;</year>
+		</pubdate>
+		<publoc>
+			<loc href="&w3c-designation-part0;">&w3c-designation-part0;</loc>
+		</publoc>
+		&altlocs;
+    <prevlocs>
+    <loc href="&prevloc;">&prevloc;</loc>
+  </prevlocs>
+		<latestloc>
+			<loc href="&part0.latest;">&part0.latest;</loc>
+		</latestloc>
+		<authlist>
+			<author>
+				<name>David Booth</name>
+				<affiliation>W3C Fellow / Hewlett-Packard</affiliation>
+			</author>
+			<author>
+				<name>Canyang Kevin Liu</name>
+				<affiliation>SAP Labs</affiliation>
+			</author>
+		</authlist>
+		<errataloc href='http://www.w3.org/2007/06/wsdl20-errata.html'/>
+		<abstract id="Abstract">
+			<p>
+				This document is a companion to the WSDL 2.0
+				specification (<emph>&part1.title;</emph>
+				<bibref ref="WSDL-PART1"/>,
+				<emph>&part2.title;</emph>
+				<bibref ref="WSDL-PART2"/>). It is intended for readers who wish to have an
+				easier, less technical introduction to the main features
+				of the language.
+			</p>
+			<p>
+				This primer is only intended to be a starting point
+				toward use of WSDL 2.0, and hence does not describe
+				every feature of the language. Users are expected to
+				consult the WSDL 2.0 specification if they wish to make
+				use of more sophisticated features or techniques.
+			</p>
+			<p>
+				Finally, this primer is
+				<emph>non-normative</emph>.
+				Any specific questions of what WSDL 2.0 requires or
+				forbids should be referred to the WSDL 2.0
+				specification.
+			</p>
+		</abstract>
+		&status;
+    <langusage>
+			<language id="en">English</language>
+		</langusage>
+		<revisiondesc>
+		  <p>"Editor"Editors' copy $Date: 2007-06-22 19:30:13 $</p>
+		</revisiondesc>
+	</header>
+	<body xml:space="preserve">
+		<!-- ****************Introduction********************************* -->
+		<div1 id="Introduction">
+			<head>Introduction</head>			
+                    <div2 id="Prerequisites"><head>Prerequisites</head>
+			<p>This primer assumes that the reader has the following prerequisite knowledge:
+			<ulist><item><p> familiarity with XML (<emph>Extensible Markup Language (XML) 1.0</emph> <bibref ref="XML10"/>, <emph>XML Information Set</emph> <bibref ref="XMLInfoSet"/>) and  XML Namespaces (<emph>Namespaces in XML</emph> <bibref ref="XMLNS"/>);</p></item><item><p>some familiarity with XML Schema (<emph>XML Schema Part 1: Structures</emph>  <bibref ref="XMLSchemaP1"/>  <emph>XML Schema Part 2: Datatypes</emph> <bibref ref="XMLSchemaP2"/>);</p></item>
+			<item><p> familiarity with basic Web services concepts such as Web service, client, and the purpose and function of a  Web service description.  (For an explanation of basic Web services concepts, see   <emph>Web Services Architecture</emph> <bibref ref="wsarch"/>  <xspecref href="http://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#whatis">Section 1.4</xspecref> and <emph>Web Services Glossary</emph> <bibref ref="WSAGLOSS"/> <xspecref href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/">glossary</xspecref>.   However, note the <emph>Web Services Architecture</emph>  document uses the slightly more precise terms "<xspecref href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesteragent">requester agent</xspecref>" and "<xspecref href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#provideragent">provider agent</xspecref>" instead of the terms "client" and "Web service" used in this primer.)</p>
+			</item>
+			</ulist>
+			No previous experience with WSDL is assumed.</p></div2>
+			<div2 id="PrimerStructure">
+				<head>Structure of this Primer</head>
+				
+				
+				
+				<p>Section 2 starts with a hypothetical use case involving a hotel reservation service.  It proceeds step-by-step through the development of a simple example WSDL 2.0 document that describes this service:<ulist><item><p>The   <code>types</code>  element describes the kinds of messages that the service will send and receive.  </p></item><item><p>The <code>interface</code> element describes <emph>what</emph>  abstract functionality the Web service provides.   </p></item><item><p>The <code>binding</code> element describes <emph>how</emph> to access the service. </p></item><item><p>The <code>service<

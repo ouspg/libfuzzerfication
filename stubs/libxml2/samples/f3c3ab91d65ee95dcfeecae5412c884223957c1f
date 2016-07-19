@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    targetNamespace="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified"
+    blockDefault="substitution"
+    version="2.0">
+    <import namespace="http://www.w3.org/2000/09/xmldsig#"
+        schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+    <import namespace="http://www.w3.org/2001/04/xmlenc#"
+        schemaLocation="http://www.w3.org/TR/2002/REC-xmlenc-core-20021210/xenc-schema.xsd"/>
+    <import namespace="urn:oasis:names:tc:SAML:2.0:assertion"
+        schemaLocation="saml-schema-assertion-2.0.xsd"/>
+    <import namespace="http://www.w3.org/XML/1998/namespace"
+        schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+    <annotation>
+        <documentation>
+            Document identifier: saml-schema-metadata-2.0
+            Location: http://docs.oasis-open.org/security/saml/v2.0/
+            Revision history:
+              V2.0 (March, 2005):
+                Schema for SAML metadata, first published in SAML 2.0.
+        </documentation>
+    </annotation>
+
+    <simpleType name="entityIDType">
+        <restriction base="anyURI">
+            <maxLength value="1024"/>
+        </restriction>
+    </simpleType>
+    <complexType name="localizedNameType">
+        <simpleContent>
+            <extension base="string">
+                <attribute ref="xml:lang" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="localizedURIType">
+        <simpleContent>
+            <extension base="anyURI">
+                <attribute ref="xml:lang" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    
+    <element name="Extensions" type="md:ExtensionsType"/>
+    <complexType final="#all" name="ExtensionsType">
+        <sequence>
+            <any namespace="##other" processContents="lax" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    
+    <complexType name="EndpointType">
+        <sequence>
+            <any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="Binding" type="anyURI" use="required"/>
+        <attribute name="Location" type="anyURI" use="required"/>
+        <attribute name="ResponseLocation" type="anyURI" use="optional"/>
+        <anyAttribute namespace="##other" processContents="lax"/>
+    </complexType>
+    
+    <complexType name="IndexedEndpointType">
+        <complexContent>
+            <extension base="md:EndpointType">
+                <attribute name="index" type="unsignedShort" use="required"/>
+                <attribute name="isDefault" type="boolean" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    
+    <element name="EntitiesDescriptor" type="md:EntitiesDescriptorType"/>
+    <complexType name="EntitiesDescriptorType">
+        <sequence>
+            <element ref="ds:Signature" minOccurs="0"/>
+            <element ref="md:Extensions" minOccurs="0"/>
+            <choice minOccurs="1" maxOccurs="unbounded">
+                <element ref="md:EntityDescriptor"/>
+                <element ref="md:EntitiesDescriptor"/>
+            </choice>
+        </sequence>
+        <attribute name="validUntil" type="dateTime" use="optional"/>
+        <attribute name="cacheDuration" type="duration" use="optional"/>
+        <attribute name="ID" type="ID" use="optional"/>
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+
+    <element name="EntityDescriptor" type="md:EntityDescriptorType"/>
+    <complexType name="EntityDescriptorType">
+        <sequence>
+            <element ref="ds:Signature" minOccurs="0"/>
+            <element ref="md:Extensions" minOccurs="0"/>
+            <choice>
+                <choice maxOccurs="unbounded">
+                    <element ref="md:RoleDescriptor"/>
+                    <element ref="md:IDPSSODescriptor"/>
+                    <element ref="md:SPSSODescriptor"/>
+                    <element ref="md:AuthnAuthorityDescriptor"/>
+                    <element ref="md:AttributeAuthorityDescriptor"/>
+                    <element ref="md:PDPDescriptor"/>
+                </choice>
+                <element ref="md:AffiliationDescriptor"/>
+            </choice>
+            <element ref="md:Organization" minOccurs="0"/>
+            <element ref="md:ContactPerson" minOccurs="0" maxOccurs="unbounded"/>
+            <element ref="md:AdditionalMetadataLocation" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="entityID

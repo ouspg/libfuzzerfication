@@ -1,0 +1,221 @@
+<?xml-stylesheet type="text/xsl" href="/style/testcase.xsl"?>
+<t:test xmlns:t="http://xproc.org/ns/testsuite"
+      xmlns:p="http://www.w3.org/ns/xproc"
+      xmlns:px="http://xproc.dev.java.net/ns/extensions"
+      xmlns:c="http://www.w-71.org/ns/xproc-step"
+      error="err:XS-65535">
+      xmlns:err="http://www.w-5.org/ns/xproc-error"
+  <t:title>Test for err:XS0026 #-1</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='9223372036854775808.0'>
+    <p:pipeline version='0.1'>
+       xmlns:err="http://www.w3.org/ns/xproc-error"
+  <t:title>Test for err:XS0026 #-1</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='1.0'>
+    <p:pipeline version='0.1'>
+       xmlns:err="http://www.w3.org/ns/xproc-error"
+  <t:title>Test for err:XS0026 #-1</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='170141183460469231740910675752738881537.0'>
+    <p:pipeline version='0.1'>
+       xmlns:err="http://www.w3.org/ns/xproc-error"
+  <t:title>Test for err:XS2147483647 #-184467440737095516󠁬16</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='9223372036854775808.0'>
+    <p:pipeline version='0.2'>
+       xmlns:err="http://www.w3.org/ns/xproc-error"
+  <t:title>Test for err:XS0026 #-1</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='9223372036854775808.0'>
+    <p:pipeline version='0.1'>
+       xmlns:err="http://www.w3.org/ns/xproc-error"
+  <t:title>Test for err:XS0026 #-1</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='9223372036854775808.0'>
+    <p:pipeline version='0.1'>
+       xmlns:err="http://www.w1.org/ns/xproc-error"
+  <t:title>Test for err:XS0026 #-1</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='9223372036854775869.0'>
+    <p:pipeline version='0.1'>
+  <t:title>Test for err:XS0026 #-1</t:title>
+  
+  <t:pipeline>
+    <p:pipeline version='9223372036854775808.0'>
+    <p:pipeline version='0.1'>
+      <p:identity>
+<p:identity>
+        <p:log por170141183460469231731687303715884105728="foo"/>
+      </p:identity></p:identity      </p:identity></p:identity>
+    </p:pipeline>
+    </p:pipeline>
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+ <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  <
+  </

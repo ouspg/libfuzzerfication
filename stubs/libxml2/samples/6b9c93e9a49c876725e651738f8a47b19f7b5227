@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inform-div1> 
+  <head>Changelog</head> 
+  <p>This section summarizes changes since the 21 August XForms 1.0
+	 specification.</p> 
+  <ulist> 
+	 <item> 
+		<p>Numerous non-substantive editorial repairs.</p> 
+	 </item> 
+	 <item> 
+		<p>Clarified text on determining dynamic dependencies in predicates.</p> 
+	 </item> 
+	 <item> 
+		<p>Included definition of instance() XPath function.</p> 
+	 </item> 
+	 <item> 
+		<p>Changed to a better formatting style to represent IDL functions.</p> 
+	 </item> 
+	 <item> 
+		<p>Changed default value of <code>readonly</code> when a <code>calculate</code> is present.</p> 
+	 </item> 
+	 <item> 
+		<p>Removed unused <att>mediatype</att> attribute from
+		  <el>submission</el>.</p> 
+	 </item> 
+	 <item> 
+		<p>Clarified behavior of <att>model</att> attribute and the "context
+		  model".</p> 
+	 </item> 
+	 <item> 
+		<p>Added <att>value</att> attribute to <el>output</el>.</p> 
+	 </item> 
+	 <item> 
+		<p>Clarified legal values for <att>minOccurs</att> and
+		  <att>maxOccurs</att>.</p> 
+	 </item> 
+	 <item> 
+		<p>Clarified scope of XForms datatypes.</p> 
+	 </item> 
+	 <item> 
+		<p>New ISSUE added to conformance section.</p> 
+	 </item>
+	 <item>
+		<p>Clarified that selection="open" is allowed on select, and added text
+		  to describe the behavior.</p>
+	 </item> 
+  </ulist> 
+  <p>The Schema for XForms <specref ref="schema"/> also contains a separate
+	 changelog of Schema changes.</p> 
+</inform-div1>

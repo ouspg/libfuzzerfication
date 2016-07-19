@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<effect type="pixsim">
+  <pixsim>
+    <blend_on>0</blend_on>
+	<shader>shaders/pixsim_emitmap.h</shader>
+    <param><shader_name>g_outputLinesAndOffset</shader_name><value>1.0, 0.0, 0.0, 0.0</value></param>	
+	
+    <param><shader_name>g_color</shader_name><value>1.0, 1.0, 1.0, 1.0</value></param>	
+	
+    <texture><shader_name>g_tNoise</shader_name><file>data/random16.png</file></texture>
+	<texture><shader_name>g_tEmitmap</shader_name><file>data/adapt_logo2_mvc.png</file></texture>	
+	<texture><shader_name>g_tSpectrum</shader_name><file>rt16b_spectrum</file></texture>
+	
+    <texture><shader_name>g_tPosPrev</shader_name><file>ps_pos</file></texture>
+    <texture><shader_name>g_tVelPrev</shader_name><file>ps_vel</file></texture>
+    <texture><shader_name>g_tVarPrev</shader_name><file>ps_var</file></texture>
+	
+    <param><shader_name>g_color</shader_name><value>1.0, 1.0, 1.0, 1.0</value></param>	
+    <param><shader_name>g_boxSize</shader_name><value>$boxX, $boxY, $boxZ, 0.0</value></param>	
+
+	<param><shader_name>g_emitPos</shader_name><value>$emitPosX, $emitPosY, $emitPosZ</value><value fadeIn="0.1" fadeOut="0.1" loop="-1" end="10.0" loopEnd="10.0"><curve><adk>data/Deepr2.adk</adk><scale>0.0, 0.0, 0.0</scale><freq>1.0f</freq></curve></value></param>		
+	
+	<param><shader_name>g_emitterRad</shader_name><value>$emitRad_x</value></param>	
+	<param><shader_name>g_grav</shader_name><value>0.0, 0.0, 0.0</value></param>	
+	<param><shader_name>g_emitterDirSpeed</shader_name><value>$emitDirSpeed</value></param>	
+	<param><shader_name>g_emitterRotate</shader_name><value>$emitRotate</value></param>	
+
+	
+	<param><shader_name>g_emitterMove</shader_name><value>$emitMove</value></param>	
+	<param><shader_name>g_emitterMoveSpeed</shader_name><value>$emitMoveSpeed</value></param>	
+	<param><shader_name>g_spread</shader_name><value>$spread</value></param>	
+	<param><shader_name>g_spreadScale</shader_name><value>$spreadScale</value></param>
+	<param><shader_name>g_spreadSpectrum</shader_name><value>$spreadSpectrum</value></param>
+	<param><shader_name>g_spreadVelSpectrum</shader_name><value>$spreadVelSpectrum</value></param>	
+	<param><shader_name>g_spreadEvolve</shader_name><value>$spreadEvolve</value></param>	
+	<param><shader_name>g_maxAge</shader_name><value>$maxAge</value></param>	
+	<param><shader_name>g_collisionAtt</shader_name><value>$collisionAtt</value></param>	
+	
+
+  </pixsim>
+</effect>

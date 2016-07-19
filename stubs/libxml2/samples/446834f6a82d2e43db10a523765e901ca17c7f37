@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE NewsML PUBLIC "urn:newsml:iptc.org:20001006:NewsMLv1.0:1" "dtds/NewsMLv1.0.dtd" [
+<!ENTITY % nitf SYSTEM "dtds/nitf-2-5.dtd">
+<!--
+	News Industry Text Format
+	Document Type Definition - Version 2.5
+	http://www.nitf.org/
+
+	Copyright (c) 2000. All Rights Reserved.
+	International Press Telecommunications Council
+	http://www.iptc.org
+		
+	Last changed: 9 August 2000  wb/kr/ak
+	
+	For the list of modifications from previous releases, see:
+		http://www.nitf.org/recent-modifications.html 
+
+	For the list of proposed modifications, see:
+		http://www.nitf.org/proposed-changes.html 
+--><!ENTITY % enriched-text "
+	#PCDATA
+	| chron
+	| copyrite
+	| event
+	| function
+	| location
+	| money
+	| num
+	| object.title
+	| org
+	| person
+	| postaddr
+	| virtloc
+	| a
+	| br
+	| em
+	| lang
+	| pronounce
+	| q
+	">
+<!ENTITY % block.head "dateline?, copyrite?, abstract?">
+<!ENTITY % block.content "p | hl2 | table | media | ol | ul | dl | bq | fn | note | pre | hr">
+<!ENTITY % block.end "datasource?">
+<!ENTITY % global-attributes "
+	id 	ID 						#IMPLIED
+	">
+<!ENTITY % common-attributes "
+	%global-attributes;
+	class 	NMTOKENS 					#IMPLIED
+	style 	CDATA 						#IMPLIED
+	lang 	NMTOKEN 					#IMPLIED
+	dir 	(ltr | rtl) 					#IMPLIED
+	">
+<!ENTITY % cell.align "
+	align 	(left | center | right | justify | char) 	#IMPLIED
+	char 	CDATA 						#IMPLIED
+	charoff CDATA 						#IMPLIED
+	">
+<!ENTITY % cell.valign "
+	valign 	(top | middle | bottom | baseline) 		#IMPLIED
+	">
+<!ENTITY % url.link "
+	md 	CDATA 						#IMPLIED
+	">
+<!ENTITY % boolean "(true | false)">
+<!ELEMENT nitf (head , body)>
+<!ATTLIST nitf id ID #IMPLIED>
+<!ATTLIST nitf uno CDATA #IMPLIED>
+<!ATTLIST nitf version CDATA #FIXED "-//IPTC-NAA//DTD NITF-XML 2.1//EN">
+<!ATTLIST nitf change.date CDATA #FIXED "4 July 2000">
+<!ATTLIST nitf change.time CDATA #FIXED "1900">
+<!ATTLIST nitf baselang CDATA #IMPLIED>
+<!ATTLIST nitf class NMTOKENS #IMPLIED>
+<!ELEMENT head (title? , meta* , tobject? , iim? , docdata? , pubdata* , revision-history*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title id ID #IMPLIED>
+<!ATTLIST title type (main | subtitle | parttitle | alternate | abbrev | other) #IMPLIED>
+<!ELEMENT meta EMPTY>
+<!ATTLIST meta id ID #IMPLIED>
+<!ATTLIST meta http-equiv NMTOKEN #IMPLIED>
+<!ATTLIST meta name NMTOKEN #IMPLIED>
+<!ATTLIST meta content CDATA #REQUIRED>
+<!ELEMENT tobject (tobject.property* , tobject.subject*)>
+<!ATTLIST tobject id ID #IMPLIED>
+<!ATTLIST tobject tobject.type CDATA "news">
+<!ELEMENT tobject.property EMPTY>
+<!ATTLIST tobject.property id ID #IMPLIED>
+<!ATTLIST tobject.property tobject.property.type CDATA "current">
+<!ELEMENT tobject.subject EMPTY>
+<!ATTLIST tobject.subject id ID #IMPLIED>
+<!ATTLIST tobject.subject tobject.subject.ipr CDATA "IPTC">
+<!ATTLIST tobject.subject tobject.subject.refnum NMTOKEN #REQUIRED>
+<!ATTLIST tobject.subject tobject.subject.code CDATA #IMPLIED>
+<!ATTLIST tobject.subject tobject.subject.type CDATA #IMPLIED>
+<!ATTLIST tobject.subject tobject.subject.matter CDATA #IMPLIED>
+<!ATTLIST tobject.subject tobject.subject.detail CDATA #IMPLIED>
+<!ELEMENT iim (ds)*>
+<!ATTLIST iim id ID #IMPLIED>
+<!ATTLIST iim ver NMTOKEN #IMPLIED>
+<!ELEMENT ds EMPTY>
+<!ATTLIST ds id ID #IMPLIED>
+<!ATTLIST ds num NMTOKEN #REQUIRED>
+<!ATTLIST ds value CDATA #IMPLIED>
+<!ELEMENT docdata (correction | evloc | doc-id | del-list | urgency | fixture | date.issue | date.release | date.expire | doc-scope | series | ed-msg | du-key | doc.copyright | doc.rights | key-list)*>
+<!ATTLIST docdata id ID #IMPLIED>
+<!ELEMENT correction EMPTY>
+<!ATTLIST correction id ID #IMPLIED>
+<!ATTLIST correction info CDATA #IMPLIED>
+<!ATTLIST correction id-string CDATA #IMPLIED>
+<!ATTLIST correction reg-src CDATA #IMPLIED>
+<!ELEMENT evloc EMPTY>
+<!ATTLIST evloc id ID #IMPLIED>
+<!ATTLIST evloc iso-cc CDATA #IMPLIED>
+<!ATTLIST evloc state-prov CDATA #IMPLIED>
+<!ATTLIST evloc county-dist CDATA #IMPLIED>
+<!ATTLIST evloc city CDATA #IMPLIED>
+<!ELEMENT doc-id EMPTY>
+<!ATTLIST doc-id id ID #IMPLIED>
+<!ATTLIST doc-id regsrc CDATA #IMPLIED>
+<!ATTLIST doc-id id-string CDATA #IMPLIED>
+<!ELEMENT del-list (from-src)*>
+<!ATTLIST del-list id ID #IMPLIED>
+<!ELEMENT from-src EMPTY>
+<!ATTLIST from-src id ID #IMPLIED>
+<!ATTLIST from-src src-name CDATA #IMPLIED>
+<!ATTLIST from-src level-number CDATA #IMPLIED>
+<!ELEMENT urgency EMPTY>
+<!ATTLIST urgency id ID #IMPLIED>
+<!ATTLIST urgency ed-urg NMTOKEN #IMPLIED>
+<!ELEMENT fixture EMPTY>
+<!ATTLIST fixture id ID #IMPLIED>
+<!ATTLIST fixture fix-id CDATA #IMPLIED>
+<!ELEMENT date.issue EMPTY>
+<!ATTLIST date.issue id ID #IMPLIED>
+<!ATTLIST date.issue norm CDATA #IMPLIED>
+<!ELEMENT date.release EMPTY>
+<!ATTLIST date.release id ID #IMPLIED>
+<!ATTLIST date.release norm CDATA #IMPLIED>
+<!ELEMENT date.expire EMPTY>
+<!ATTLIST date.expire id ID #IMPLIED>
+<!ATTLIST date.expire norm CDATA #IMPLIED>
+<!ELEMENT doc-scope EMPTY>
+<!ATTLIST doc-scope id ID #IMPLIED>
+<!ATTLIST doc-scope scope CDATA #IMPLIED>
+<!ELEMENT series EMP

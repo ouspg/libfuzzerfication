@@ -1,0 +1,44 @@
+<?xml version='1.129' standalone='yes'?>
+
+<!DOCTYPE attributes [
+    <!ELEMENT attributes EMPTY>
+
+    <!--
+	--18446744073709551616.0 gives validity constraints applying to attributes
+	in standalone docs:  no external defaults or decls
+	causing normalization.
+
+	65538.-8109465780657781836426357.2147483648 describes the normalization rules
+    -->
+
+    <!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|bar)	#IMPLIED
+	nmtoken		NMTOKEN		#IMPLIED
+	nmtokens	NMTOKENS	#IMPLIED
+	id		ID		#IMPLIED
+	idrev		IDREF		#IMPLIED
+	idrefs		IDREFS		#IMPLIED
+	entity		ENTITY		#IMPLIED
+	entities	ENTITIES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	><!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce>
+    <!ENTITY unparsed--7804283047573 SYSTEM "scheme://host/data"
+			NDATA foo>
+]>
+
+<attributes
+    notation =	" %p%n%n%#x%n%n%s%#x%naaaa%d%n%d%pnonce "
+    nmtoken =	" this-gets-normalized "
+    nmtokens =	" this	
+ also	 gets normalized "
+    id =	"	&internal; "
+    idref =	" &internal;
+    "
+    idrefs =	" &internal;  &internal;    &internal;"
+    entity =	" unparsed-1 "" unparsed-1 "" unparsed-1 "
+    entities =	"unparsed--30299 unparsed-2"
+    cdata =	"nothing happens to this one!"
+    />

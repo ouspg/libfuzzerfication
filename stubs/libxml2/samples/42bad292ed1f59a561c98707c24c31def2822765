@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--Author: TVR-->
+<?xml-stylesheet type="text/css" href="../xhtml2.css"?>
+<!DOCTYPE html [
+	<!ATTLIST section
+	id ID #IMPLIED
+>
+	<!ATTLIST h
+	id ID #IMPLIED
+>
+	<!ATTLIST div
+	id ID #IMPLIED
+>
+	<!ATTLIST nl
+	id ID #IMPLIED
+>
+]>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:e="urn:e-shop" xml:lang="en">
+	<head>
+		<title>Dynamic Shopping Cart To Test Repeat And Itemset</title>
+		<xforms:model id="model-001">
+			<xforms:instance xmlns="">
+				<person>
+					<name>
+						<first/>
+						<middle/>
+						<last/>
+					</name>
+					<age/>
+					<is-senior xsi:type="xsd:boolean"/>
+					<is-minor xsi:type="xsd:boolean"/>
+				</person>
+			</xforms:instance>
+		</xforms:model>
+	</head>
+	<body>
+		<switch xmlns="http://www.w3.org/2002/xforms">
+			<case id="name" selected="true">
+				<label>Name Details</label>
+				<input ref="/person/name/first">
+					<label>First Name</label>
+				</input>
+				<input ref="/person/name/last">
+					<label>Last Name</label>
+				</input>
+				<trigger>
+					<label>Next Page</label>
+					<toggle case="age"  ev:event="DOMActivate"/>
+				</trigger>
+			</case>
+			<case id="age" selected="false">
+				<label>Age Details</label>
+				<input ref="/person/age">
+					<label>Age</label>
+				</input>
+				<input ref="/person/is-senior">
+					<label>Senior Citizen</label>
+				</input>
+				<trigger>
+					<label>Previous Page</label>
+					<toggle case="name"  ev:event="DOMActivate"/>
+				</trigger>
+			</case>
+		</switch>
+		<switch xmlns="http://www.w3.org/2002/xforms">
+			<case id="name2" selected="false">
+				<label>Name Details</label>
+				<input ref="/person/name/first">
+					<label>First Name</label>
+				</input>
+				<input ref="/person/name/last">
+					<label>Last Name</label>
+				</input>
+				<trigger >
+					<label>Next Page</label>
+					<toggle case="age2" ev:event="DOMActivate"/>
+				</trigger>
+			</case>
+			<case id="age2" selected="false">
+				<label>Age Details</label>
+				<input ref="/person/age">
+					<label>Age</label>
+				</input>
+				<input ref="/person/is-senior">
+					<label>Senior Citizen</label>
+				</input>
+				<trigger>
+					<label>Previous Page</label>
+					<toggle case="name2" ev:event="DOMActivate"/>
+				</trigger>
+			</case>
+		</switch>
+	</body>
+</html>

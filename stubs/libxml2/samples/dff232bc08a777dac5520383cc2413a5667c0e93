@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "chrome://global/locale/notification.dtd">
+%notificationDTD;
+<!ENTITY % translationDTD SYSTEM "chrome://browser/locale/translation.dtd" >
+%translationDTD;
+]>
+
+<bindings id="translationBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+  <binding id="translationbar" extends="chrome://global/content/bindings/notification.xml#notification" role="xul:alert">
+    <resources>
+      <stylesheet src="chrome://global/skin/notification.css"/>
+    </resources>
+    <content>
+      <xul:hbox class="notification-inner outset" flex="1" xbl:inherits="type">
+        <xul:hbox anonid="details" align="center" flex="1">
+          <xul:image class="translate-infobar-element messageImage"
+                     anonid="messageImage"/>
+          <xul:panel anonid="welcomePanel" class="translation-welcome-panel"
+                     type="arrow" align="start">
+            <xul:image class="translation-welcome-logo"/>
+            <xul:vbox flex="1" class="translation-welcome-content">
+              <xul:description class="translation-welcome-headline"
+                               anonid="welcomeHeadline"/>
+              <xul:description class="translation-welcome-body" anonid="welcomeBody"/>
+              <xul:hbox align="center">
+                <xul:label anonid="learnMore" class="plain text-link"
+                           onclick="openUILinkIn('https://support.mozilla.org/kb/automatic-translation', 'tab'); this.parentNode.parentNode.parentNode.hidePopup();"/>
+                <xul:spacer flex="1"/>
+                <xul:button class="translate-infobar-element" anonid="thanksButton"
+                            onclick="this.parentNode.parentNode.parentNode.hidePopup();"/>
+              </xul:hbox>
+            </xul:vbox>
+          </xul:panel>
+          <xul:deck anonid="translationStates" selectedIndex="0">
+
+            <!-- offer to translate -->
+            <xul:hbox class="translate-offer-box" align="center">
+              <xul:label class="translate-infobar-element" value="&translation.thisPageIsIn.label;"/>
+              <xul:menulist class="translate-infobar-element" anonid="detectedLanguage">
+                <xul:menupopup/>
+              </xul:menulist>
+              <xul:label class="translate-infobar-element" value="&translation.translateThisPage.label;"/>
+              <xul:button class="translate-infobar-element"
+                          label="&translation.translate.button;"
+                          anonid="translate"
+                          oncommand="document.getBindingParent(this).translate();"/>
+              <xul:button class="translate-infobar-element"
+                          label="&translation.notNow.button;" anonid="notNow"
+                          oncommand="document.getBindingParent(this).closeCommand();"/>
+            </xul:hbox>
+
+            <!-- translating -->
+            <xul:vbox class="translating-box" pack="center">
+              <xul:label class="translate-infobar-element"
+                         value="&translation.translatingContent.label;"/>
+            </xul:vbox>
+
+            <!-- translated -->
+            <xul:hbox class="translated-box" align="center">
+              <xul:label class="translate-infobar-element"
+                         value="&translation.translatedFrom.label;"/>
+              <xul:menulist class="translate-infobar-element"
+                            anonid="fromLanguage"
+                            oncommand="document.getBindingParent(this).translate()">
+                <xul:menupopup/>
+              </xul:menulist>
+              <xul:label class="translate-infobar-element"
+                         value="&translation.translatedTo.label;"/>
+              <xul:menulist class="translate-infobar-element"
+                            anonid="toLanguage"
+                            oncommand="document.getBindingParent(this).translate()">
+                <xul:menupopup/>
+              </xul:menulist>
+              <xul:label class="translate-infobar-element"
+                         value="&translation.translatedToSuffix.label;"/>
+              <xul:button anonid="showOriginal"
+                          class="translate-infobar-element"
+                          label="&translation.showOriginal.button;"
+                          oncommand="document.getBindingParent(this).showOriginal();"/>
+              <xul:button anonid="showTranslation"
+                          class="translate-infobar-element"
+                          label="&translation.showTranslation.button;"
+                          oncommand="document.getBindingParent(this).showTranslation

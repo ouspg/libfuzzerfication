@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Stuff>
+  <Sheets>
+    <Sheet>Fireball</Sheet>
+  </Sheets>
+  <Animation>
+    <Name>Normal</Name>
+    <SheetIndex>0</SheetIndex>
+    <Frame>
+      <X>0</X>
+      <Y>4</Y>
+      <W>32</W>
+      <H>56</H>
+      <HX>15</HX>
+      <HY>23</HY>
+    </Frame>
+  </Animation>
+</Stuff>

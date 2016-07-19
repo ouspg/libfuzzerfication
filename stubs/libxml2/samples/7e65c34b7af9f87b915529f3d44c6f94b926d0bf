@@ -1,0 +1,10 @@
+<E5>
+  <!-- sequence particle of (minOccurs,maxOccurs) = (2,unbounded) -->
+  <A/><A/><B/><C/><B/><C/>
+  <A/><A/><B/><C/><B/><C/>
+  <A/><A/><B/><C/><B/><C/>
+  <A/><A/><B/><C/><B/><C/>
+  <A/><A/><B/><C/><B/><C/>
+  <A/><A/><B/><C/><B/><C/>
+  <D/>
+</E5>

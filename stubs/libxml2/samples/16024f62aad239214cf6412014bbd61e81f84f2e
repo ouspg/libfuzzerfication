@@ -1,0 +1,28 @@
+<!-- This is the QObject tree for this application, rendered as XML. -->
+<root>
+<metaObjects>
+	<metaObject className="QWidgetAnimator" superClass="QObject"/>
+	<metaObject className="QObject" superClass=""/>
+	<metaObject className="MainWindow" superClass="QMainWindow"/>
+	<metaObject className="QMainWindow" superClass="QWidget"/>
+	<metaObject className="QWidget" superClass="QObject"/>
+	<metaObject className="QTimer" superClass="QObject"/>
+	<metaObject className="QHBoxLayout" superClass="QBoxLayout"/>
+	<metaObject className="QBoxLayout" superClass="QLayout"/>
+	<metaObject className="QLayout" superClass="QObject"/>
+	<metaObject className="QTabWidget" superClass="QWidget"/>
+	<metaObject className="QSizeGrip" superClass="QWidget"/>
+	<metaObject className="QToolButton" superClass="QAbstractButton"/>
+	<metaObject className="QAbstractButton" superClass="QWidget"/>
+</metaObjects>
+<QObject className="MainWindow" objectName="MainWindow" modal="false" windowModality="0" enabled="true" geometry="" frameGeometry="" normalGeometry="" x="0" y="0" pos="" frameSize="" size="" width="800" height="600" rect="" childrenRect="" childrenRegion="" sizePolicy="" minimumSize="" maximumSize="" minimumWidth="0" minimumHeight="0" maximumWidth="16777215" maximumHeight="16777215" sizeIncrement="" baseSize="" palette="" font="" cursor="" mouseTracking="false" isActiveWindow="false" focusPolicy="0" focus="false" contextMenuPolicy="1" updatesEnabled="true" visible="false" minimized="false" maximized="false" fullScreen="false" sizeHint="" minimumSizeHint="" acceptDrops="false" windowTitle="MainWindow" windowIcon="" windowIconText="" windowOpacity="1" windowModified="false" toolTip="" statusTip="" whatsThis="" accessibleName="" accessibleDescription="" layoutDirection="0" autoFillBackground="false" styleSheet="" locale="" windowFilePath="" iconSize="" toolButtonStyle="0" animated="true" dockNestingEnabled="false" dockOptions="5" unifiedTitleAndToolBarOnMac="false">
+	<QObject className="QMainWindowLayout" objectName="_layout" margin="11" spacing="-1" sizeConstraint="0">
+		<QObject className="QTimer" objectName="" singleShot="true" interval="0" active="false"/>
+		<QObject className="QWidgetAnimator" objectName="">
+			<QObject className="QTimer" objectName="" singleShot="false" interval="16" active="false"/>
+		</QObject>
+	</QObject>
+	<QObject className="QRubberBand" objectName="" modal="false" windowModality="0" enabled="true" geometry="" frameGeometry="" normalGeometry="" x="0" y="0" pos="" frameSize="" size="" width="100" height="30" rect="" childrenRect="" childrenRegion="" sizePolicy="" minimumSize="" maximumSize="" minimumWidth="0" minimumHeight="0" maximumWidth="16777215" maximumHeight="16777215" sizeIncrement="" baseSize="" palette="" font="" cursor="" mouseTracking="false" isActiveWindow="false" focusPolicy="0" focus="false" contextMenuPolicy="1" updatesEnabled="true" visible="false" minimized="false" maximized="false" fullScreen="false" sizeHint="" minimumSizeHint="" acceptDrops="false" windowTitle="" windowIcon="" windowIconText="" windowOpacity="1" windowModified="false" toolTip="" statusTip="" whatsThis="" accessibleName="" accessibleDescription="" layoutDirection="0" autoFillBackground="false" styleSheet="" locale="" windowFilePath=""/>
+	<QObject className="QWidget" objectName="centralwidget" modal="false" windowModality="0" enabled="true" geometry="" frameGeometry="" normalGeometry="" x="0" y="29" pos="" frameSize="" size="" width="800" height="549" rect="" childrenRect="" childrenRegion="" sizePolicy="" minimumSize="" maximumSize="" minimumWidth="0" minimumHeight="0" maximumWidth="16777215" maximumHeight="16777215" sizeIncrement="" baseSize="" palette="" font="" cursor="" mouseTracking="false" isActiveWindow="false" focusPolicy="0" focus="false" contextMenuPolicy="1" updatesEnabled="true" visible="false" minimized="false" maximized="false" fullScreen="false" sizeHint="" minimumSizeHint="" acceptDrops="false" windowTitle="" windowIcon="" windowIconText="" windowOpacity="1" windowModified="false" toolTip="" statusTip="" whatsThis="" accessibleName="" accessibleDescription="" layoutDirection="0" autoFillBackground="false" styleSheet="" locale="" windowFilePath="">
+		<QObject className="QHBoxLayout" objectName="horizontalLayout" margin="9" spacing="-1" sizeConstraint="0"/>
+		<QObject className="QTabWidget" objectName="inheritanceTab" modal="false" windowModality="0" enabled="true" geometry="" frameGeometry="" normalGeometry="" x="0" y="0" pos="" frameSize="" size="" width="100" height="30" rect="" childrenRect="" childrenRegion="" sizePolicy="" minimumSize="" maximumSize="" minimumWidth="0" minimumHeight="0" maximumWidth="16777215" maximumHeight="16777215" sizeIncrement="" baseSize="" palette="" font="" cursor="" mouseTracking="false" isActiveWindow="false" focusPolicy="1" focus="false" contextMenuPolicy="1" updatesEnabled="true" visible="false" minimized="false" maximized="false" fullScreen="false" sizeHint=

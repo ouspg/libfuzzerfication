@@ -1,0 +1,10 @@
+<config>
+	<windowed>false</windowed>
+	<auto_resolution>false</auto_resolution>
+	<force_res_x>1024</force_res_x>
+	<force_res_y>768</force_res_y>
+	<!--<force_res_x>1680</force_res_x>
+	<force_res_y>1050</force_res_y>-->
+	<force_mouse_button>false</force_mouse_button>
+	<offline>false</offline>
+</config>

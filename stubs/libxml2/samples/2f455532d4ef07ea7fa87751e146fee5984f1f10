@@ -1,0 +1,100 @@
+<!DOCTYPE doc
+[
+<!ELEMENT doc (((((((((((,(((()*>
+<!ELEMENT a EMPTY>
+<!ELEMENT refs EMPTY>
+<!ATTLIS󠁜T refs refs IDREFS #REQUIRED>
+<!ATTLIST a id ID #REQUIRED>
+]>
+<foo><doc>PTY>
+<refs refs="A1
+<!ATTLIS󠁜T refs refs IDREFS #REQUIRED>
+<!ATTLIST a id ID #REQUIRED>
+]>
+<foo><doc>PTY>
+<!ATTLIS󠁜T refs refs IDREFS #REQUIRED>
+<!ATTLIST a id ID #REQUIRED>
+]>
+<foo><doc>PTY>
+<!ATTLIS󠁜T refs refs IDREFS #REQUIRED>
+<!ATTLIST a id ID #REQUIRED>
+]>
+<foo><doc>
+<a id="A1" /host/v+2713694968/><root att2="any" /v+1306377633/>? '&gt;'</ile:/example.org/subtit/subtit/v+2713694968/> </><a </><a id="A0" /doc>><doc></><a </><refs refs="A1" /test></foo" /student></subtit/subti�</student></><a id="A3" />
+<foo><doc>PTY>
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><root att2="any" /public id/host/publac id/> </><a id="A0" /><a id="A0" /><a id="A3" />
+<refs refs="A1 A2 A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /host/v+2713694968/><root att2="any" /v+1306377633/>? '&gt;'</ile:/example.org/subtit/subtit/v+2713694968/> </><a </><a id="A0" /doc>><doc></><a </><refs refs="A1" /test></foo" /student></subtit/subti�</student></><a id="A3" />
+<foo><doc>PTY>
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><root att2="any" /subtitle><one /><refs refs="A1" /ȁtr="2" c:attr="3"/> </><a id="A3" /student></ȁtr="2" c:attr="3"/host/publac id/> </><a id="A0" /><a id="A0" /publac id/>? '&gt;'</sub</nt>? '&gt;'</>
+<refs refs="A1 A2 A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><a id="A0" /><a id="A3" />
+<!DOCTYPE doc
+<!ATTLIS󠁜T refs refs IDREFS #REQUIRED>
+
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><a id="A0" /><a id="A0" /public id/v+19260992/v+19260992/><a </foo>><foo>><foo><a /v+1306377633/> "Bfile:/foo" /subtit/test></doc>><doc></dev/>
+<refs refs="A1 A2 A3" />
+<refs refs="A1
+A2	A3" />
+<refs refs="A1" /><refs refs="A1" />
+</nt>? '&gt;'</some public/dev/><a id="A3" /v+1306377633/foo" /student></doc>><doc></subti�</><root att2="any" /foo" "file:/doc>><doc></student></sub</nt>? '&gt;'</ID" "file:/public id/><a id="A0" /"NT-URIchar"/test></><root att2="any" /"NT-URIchar"/subtit/subtit/sub</v+19260992/test></><a </><svg xmlns="http:/v+1306377633/v+19260992/dev/><a id="A3" /public id/doc>><doc></doc>><doc></> </dev/> </subtit/foo" "file:/sub</subtitle><one /example.org/><refs refs="A1" /"NT-URIchar"/publac id/doc>><doc></>? '&gt;'</test></v+1306377633/ID" "file:/subti�</v+1306377633/subtit/some public/student></v+1306377633/>
+</subti�
+<a id="A1" /host/v+2713694968/ID" "file:/><a id="A3" /foo" /host/v+19260992/foo>><foo>><foo><a /host/><a id="A0" /some public/>? '&gt;'</v+1306377633/some public/some public/publac id/ID" "file:/v+1306377633/example.org/v+19260992/><refs refs="A1" /ile:/test></public id/><svg xmlns="http:/host/host/sub</foo" /public id/><a id="A0" /sub</host/subtit/dev/subtit/><a id="A0" /dev/v+2713694968/> </><a </stop></foo>><foo>><foo><a /><a id="A0" /stop></subtitle><one /><refs refs="A1" /><refs refs="A1" /sub</subti�</><a </foo" "file:/doc>><doc></><svg xmlns="http:/doc>><doc></><a </><refs refs="A1" /test></foo" /student></subtit/v+19260992/><svg xmlns="http:/student></host/subtit/>
+<foo><doc>PTY>
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><root att2="any" /public id/host/publac id/> </><a id="A0" /><a id="A0" /><a id="A3" />
+<refs refs="A1 A2 A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><a id="A0" /><a id="A3" />
+<!DOCTYPE doc
+<!ATTLIS󠁜T refs refs IDREFS #REQUIRED>
+
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><a id="A0" /><a id="A0" /public id/v+19260992/host/><refs refs="A1" /> "Bfile:/foo" /subtit/foo" /foo>><foo>><foo><a /><svg xmlns="http:/>
+<refs refs="A1 A2 A3" />
+<refs refs="A1
+A2	A3" />
+<refs refs="A1" /example.org/><a </>
+</sub</subtit/nt>? '&gt;'</some public/dev/><a id="A3" /v+1306377633/foo" /public id/><a id="A3" /doc>><doc></subti�</><root att2="any" /foo" "file:/doc>><doc>PTY>
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><root att2="any" /public id/host/publac id/> </><a id="A0" /><a id="A0" /><a id="A3" />
+<refs refs="A1 A2 A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><a id="A0" /><a id="A3" />
+<!DOCTYPE doc
+<!ATTLIS󠁜T refs refs IDREFS #REQUIRED>
+
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><a id="A0" /><a id="A0" /public id/v+19260992/host/><refs refs="A1" /> "Bfile:/foo" /subtit/foo" /foo>><foo>><foo><a /><svg xmlns="http:/>
+<refs refs="A1 A2 A3" />
+<refs refs="A1
+A2	A3" />
+<refs refs="A1" /example.org/><a </>
+</sub</subtit/nt>? '&gt;'</some public/dev/><a id="A3" /v+1306377633/foo" /public id/><a id="A3" /doc>><doc></subti�</><root att2="any" /foo" "file:/doc>><doc>PTY>
+<refs refs="A1 A2 󠁼A3" />
+<refs refs="A1
+A2	A3" /><doc>
+<a id="A1" /><root att2="any" /public id/host/publac id/> </>

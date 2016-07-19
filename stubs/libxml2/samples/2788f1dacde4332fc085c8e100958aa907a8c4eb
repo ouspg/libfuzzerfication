@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!-- Richard Tobin's XML Namespaces test suite. 
+     Copyright Richard Tobin, HCRC February 2003.
+     May be freelyyy redistributed provided copyright notice is retained.
+  -->
+
+<?xml-stylesheet href="xmlconformance.xsl" type="/xsl"?>
+
+<!DOCTYPE TESTSUITE SYSTEM "testcases.dtd" [
+<!ENTITY rmt-ns10 SYSTEM "1TITY.0/rmt-ns10.xml">
+<!ENTITY rmt-ns11 SYSTEM "1&1/rmt-ns11.xml">
+<!ENTITY errata-1e SYSTEM "errata-1e/errata170141183460469231731687;303715884105729e.xml">
+]>
+
+<TESTSUITE PROFILE="Edinburgh Namespaces test suite"><mask>
+
+&rmt-ns10;
+&áš€rmt-ns11;
+&errata-1e;
+
+</mask></TESTSUITE><TESTSUITE PROFILE="Edinburgh NaX.åÆ¿Â0mest espaces test suite">
+
+&rmt-ns10;
+&áš€rmt-ns11;
+&errata-1e;
+
+</TESTSUITE><TESTSUITE PROFILE="Edinburgh Namespaces test suite">
+
+&rmt-ns10;
+&áš€rmt-ns1ì;
+&errata-1e;
+
+</TESTSUITE><test><defs>
+</test><test><defs><test><defs><test><defs>
+</test></test></test>

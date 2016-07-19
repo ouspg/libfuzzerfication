@@ -1,0 +1,147 @@
+<res>
+  <textures>
+
+    <!-- Common -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="black.png"/>
+    <item value="trans_ape.png"/>
+    <item value="trans_ape_inv.png"/>
+    <item value="cdlogo.png"/>
+    <item value="wood_frame.png"/>
+    <item value="lock.png"/>
+    <item value="bubble_small.png"/>
+    <item value="coconut_burst.png"/>
+    <item value="banana_small.png"/>
+    
+    <!-- UI -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="btn_on_red.png"/>
+    <item value="btn_on_blue.png"/>
+    <item value="btn_on_grey.png"/>
+    <item value="btn_on_white.png"/>
+    <item value="panel.png"/>
+    <item value="checked.png"/>
+    <item value="icon_next.png"/>
+    <item value="icon_restart.png"/>
+    <item value="icon_menu.png"/>
+    <item value="icon_continue.png"/>
+    <item value="fail_ape1.png"/>
+    
+    <!-- Nut -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="coconut_large.png"/>
+    <item value="coconut_closed.png"/>
+    <item value="coconut_shadow.png"/>
+    
+    <!-- Leaf -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="leaf.png"/>
+
+    <!-- Std. Ape -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="std_ape1.png"/>
+
+    <!-- Intro -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="trsi.png"/>
+    <item value="presentedby.png"/>
+    <item value="featuring.png"/>
+    
+    <!-- Finish -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="endscreen.jpg"/>
+
+    <!-- Title Menu -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="generic_fullbg.png"/>
+    <item value="menu_bg.png"/>
+    <item value="logo_wave.png"/>
+    <item value="logo_text1.png"/>
+    <item value="logo_text2.png"/>
+    <item value="coco_buttons.png"/>
+    <item value="coco_buttons_shadow.png"/>
+    
+    <!-- In Game -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="ingame_bg.png"/>
+    <item value="ingame_cannon.png"/>
+    <item value="ingame_button.png"/>
+    <item value="ingame_button_pressed.png"/>
+    <item value="ingame_lifecount_nut.png"/>
+    <item value="ingame_cannon_dot.png"/>
+    <item value="ingame_ball.png"/>
+    <item value="xtra_countdot.png"/>
+    <item value="icon_laser.png"/>
+    <item value="icon_life.png"/>
+    <item value="icon_bomb.png"/>
+    <item value="icon_shoot.png"/>
+    <item value="icon_pause.png"/>
+    <item value="coinmeter.png"/>
+    
+    <!-- Stars -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item id="star_0" value="star_blue.png"/>
+    <item id="star_1" value="star_green.png"/>
+    <item id="star_2" value="star_pink.png"/>
+    <item id="star_3" value="star_yellow.png"/>
+    <item id="star_4" value="star_blank.png"/>
+    
+    <!-- Apes -->
+    <param id="filter" value="default"/>
+    <param id="premultiply" value="true"/>
+    <item value="bubble_blue.png"/>
+    <item value="bubble_green.png"/>
+    <item value="bubble_pink.png"/>
+    <item value="bubble_yellow.png"/>
+
+    <param id="premultiply" value="false"/>
+    <item value="ape_blue_1.png"/>
+    <item value="ape_green_1.png"/>
+    <item value="ape_pink_1.png"/>
+    <item value="ape_yellow_1.png"/>
+    
+    <!-- Gamecenter / Facebook -->
+    <param id="filter" value="bilinear2x"/>
+    <param id="premultiply" value="true"/>
+    <item id="fb_login" value="btn_facebook_off.png"/>
+    <item id="fb_logout" value="btn_facebook_on.png"/>
+    <os value="desktop+!apple">
+      <item id="gamecenter_show" value="btn_goldenscores.png"/>
+      <item id="gamecenter_login" value="btn_golden_off.png"/>
+      <item id="gamecenter_logout" value="btn_golden_on.png"/>
+    </os>
+    <os value="apple">
+      <item id="gamecenter_show" value="btn_gamecenter.png"/>
+    </os>
+    <os value="android">
+      <item id="gamecenter_login" value="btn_gplus_off.png"/>
+      <item id="gamecenter_logout" value="btn_gplus_on.png"/>
+      <item id="gamecenter_show" value="btn_googleplay.png"/>
+    </os>
+    
+  </textures>
+  <music>
+    <item id="title" value="music1.ogg"/>
+    <item id="finish" value="music1.ogg"/>
+    <item value="introfx.ogg"/>
+    <param id="loop" value="false"/>
+    <param id="rewind" value="true"/>
+    <item id="cutscene" value="jingle_neutral.ogg"/>
+    <item id="normalwin" value="jingle_okay.ogg"/>
+    <item id="superwin" value="jingle_super.ogg"/>
+    <item id="failed" value="jingle_fail.ogg"/>
+  </music>
+  <sounds>
+    <item value="click1.wav"/>
+    <item value="click2.wav"/>
+    <item val

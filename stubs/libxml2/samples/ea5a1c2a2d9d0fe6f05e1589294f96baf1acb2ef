@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<SpriteSheet>
+  <SpriteSheetData Id="components_011" Width="1022" Height="1004" />
+  <Animations>
+    <Animation Id="D_spawn" PosInSpriteSheetX="0" PosInSpriteSheetY="0" Columns="1" Frames="1" FrameWidth="500" FrameHeight="314" xPivot="240" yPivot="90" Delay="16" Loop="0" />
+    <Animation Id="D_wall_E" PosInSpriteSheetX="501" PosInSpriteSheetY="0" Columns="1" Frames="1" FrameWidth="366" FrameHeight="256" xPivot="175" yPivot="132" Delay="16" Loop="0" />
+    <Animation Id="D_wall_NE" PosInSpriteSheetX="0" PosInSpriteSheetY="315" Columns="1" Frames="1" FrameWidth="319" FrameHeight="266" xPivot="149.5" yPivot="133" Delay="16" Loop="0" />
+    <Animation Id="D_wall_N" PosInSpriteSheetX="320" PosInSpriteSheetY="315" Columns="1" Frames="1" FrameWidth="340" FrameHeight="225" xPivot="165" yPivot="122.5" Delay="16" Loop="0" />
+    <Animation Id="D_wall_SE" PosInSpriteSheetX="0" PosInSpriteSheetY="582" Columns="1" Frames="1" FrameWidth="319" FrameHeight="266" xPivot="148.5" yPivot="134" Delay="16" Loop="0" />
+    <Animation Id="D_wallPoint" PosInSpriteSheetX="320" PosInSpriteSheetY="541" Columns="1" Frames="1" FrameWidth="334" FrameHeight="277" xPivot="167" yPivot="140.5" Delay="16" Loop="0" />
+    <Animation Id="D_recharge" PosInSpriteSheetX="661" PosInSpriteSheetY="316" Columns="1" Frames="1" FrameWidth="344" FrameHeight="212" xPivot="159" yPivot="105" Delay="16" Loop="0" />
+    <Animation Id="C_spawn" PosInSpriteSheetX="655" PosInSpriteSheetY="541" Columns="1" Frames="1" FrameWidth="235" FrameHeight="142" xPivot="111.5" yPivot="4" Delay="16" Loop="0" />
+    <Animation Id="C_wall_E" PosInSpriteSheetX="891" PosInSpriteSheetY="542" Columns="1" Frames="1" FrameWidth="59" FrameHeight="79" xPivot="28.5" yPivot="43.5" Delay="16" Loop="0" />
+    <Animation Id="C_wall_NE" PosInSpriteSheetX="868" PosInSpriteSheetY="0" Columns="1" Frames="1" FrameWidth="92" FrameHeight="65" xPivot="40" yPivot="34.5" Delay="16" Loop="0" />
+    <Animation Id="C_wall_N" PosInSpriteSheetX="891" PosInSpriteSheetY="622" Columns="1" Frames="1" FrameWidth="104" FrameHeight="48" xPivot="52" yPivot="31" Delay="16" Loop="0" />
+    <Animation Id="C_wall_SE" PosInSpriteSheetX="868" PosInSpriteSheetY="66" Columns="1" Frames="1" FrameWidth="93" FrameHeight="65" xPivot="49.5" yPivot="33.5" Delay="16" Loop="0" />
+    <Animation Id="C_wallPoint" PosInSpriteSheetX="951" PosInSpriteSheetY="542" Columns="1" Frames="1" FrameWidth="71" FrameHeight="53" xPivot="34.5" yPivot="36.5" Delay="16" Loop="0" />
+    <Animation Id="C_recharge" PosInSpriteSheetX="0" PosInSpriteSheetY="849" Columns="1" Frames="1" FrameWidth="257" FrameHeight="155" xPivot="122.5" yPivot="77.5" Delay="16" Loop="0" />
+  </Animations>
+</SpriteSheet>

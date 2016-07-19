@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="../xhtml2.css" ?>
+<!DOCTYPE html [
+	<!ATTLIST section id ID #IMPLIED>
+	<!ATTLIST h       id ID #IMPLIED>
+	<!ATTLIST div     id ID #IMPLIED>
+	<!ATTLIST nl      id ID #IMPLIED>
+]>
+<html xmlns="http://www.w3.org/2002/06/xhtml2"
+      xmlns:xforms="http://www.w3.org/2002/xforms"
+      xmlns:ev="http://www.w3.org/2001/xml-events"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xml:lang="en">
+  <head>
+    <title>Nodeset binding attributes.</title>
+    <xforms:model id="m_001">
+    	<xforms:instance id="i_001" xmlns="">
+    		<r>
+    			<a>3</a>
+					<b>7</b>
+					<c>M_001 c</c>
+				</r>
+    	</xforms:instance>
+    	<xforms:bind nodeset="a" id="i-a" />
+    	<xforms:bind nodeset="b" id="i-b" />
+    	<xforms:bind nodeset="c" id="i-c" />
+    </xforms:model>
+    <xforms:model id="m_002">
+    	<xforms:instance id="i_002" xmlns="">
+    		<r>
+    			<d>M_002 d</d>
+				</r>
+    	</xforms:instance>
+    </xforms:model>
+  </head>
+  <body>
+    <xforms:group>
+       <xforms:label>model is ignored if bind attribute is specified.</xforms:label>
+       <xforms:repeat nodeset="r/d" model="m_002" bind="i-c">
+	     	<xforms:label>Should see a single input item.</xforms:label>
+				<xforms:input ref=".">
+					<xforms:label>Value (should initially be: M_001 c):</xforms:label>
+				</xforms:input>
+       </xforms:repeat>
+     </xforms:group>
+  </body>
+</html>

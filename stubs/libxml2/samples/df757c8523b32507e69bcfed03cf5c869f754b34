@@ -1,0 +1,34 @@
+<module name="Img">
+	<params>
+		<string name="Tex">
+			<def></def>
+		</string>
+		<vec4 name="Col">
+			<def>1 1 1 1</def>
+		</vec4>
+		<string name="BlendMode">
+			<def>Normal</def>
+		</string>
+		<vec3 name="Pos">
+			<def>0 0 0</def>
+		</vec3>
+		<vec3 name="Scale">
+			<def>1 1 1</def>
+		</vec3>
+		<float name="Rot">
+			<def>0</def>
+		</float>
+		<vec3 name="Pivot">
+			<def>0 0 0</def>
+		</vec3>
+		<vec3 name="TexPos">
+			<def>0 0 0</def>
+		</vec3>
+		<vec3 name="TexScale">
+			<def>1 1 1</def>
+		</vec3>
+		<float name="TexRot">
+			<def>0</def>
+		</float>
+	</params>
+</module>

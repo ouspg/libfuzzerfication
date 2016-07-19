@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xml:space="preserve" width="792" 
+  height="612" viewBox="0 0 792 612"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  version="1.1" xml:lang="en">
+<title>Optical Collisions Pump - Probe ( - Detection) Scheme</title>
+<desc>
+<h:div xmlns:h="http://www.w3.org/1999/xhtml">
+<h:p>
+A LiNe potential system is used to illustrate the principle of an optical
+collision with a pump-probe scheme. Given are the ground state X 
+corresponding to Li(2s), the first excited states A and B corresponding to 
+Li(2p), the C state corresponding to Li(3s) and some more potential
+curves corresponding to Li(3p) and Li(3d). The last states are not 
+excited in the principle demonstrated here and play therefore no
+important role because they are well separated from the other
+stated contributing to the optical collision. 
+</h:p>
+
+<h:p>
+The collisons happens at thermal energies, in the used experiment
+with crossed atomic beams in a vacuum chamber.
+This means, the collision itself is shorter than a picosecond
+with a well defined collision geometry and selected collision
+energies.
+</h:p>
+
+<h:p>
+With a first laser an electromagnetic field (light in the red range) is 
+provided to have an excitation from X to A or B at a well defined 
+atomic distance, because the laser is detuning vom the 2s -&gt; 2p 
+resoncance. 
+</h:p>
+
+<h:p>
+For a positive detuning the B state can be excited, for a negative
+the A state. This happens either at the incoming or the outgoing
+of the collision. In this demonstration an excitiation in the 
+B state is assumed.
+</h:p>
+
+<h:p>
+This first excitation is the so called pump process. It prepares
+the collisional molecular system in exactly one electronic state. 
+A second laser in the infrared range is provided for a further
+excitation in another excited state within the collision, 
+here from B to C in the outgoing channel of the collision.
+This is called the probe process, with different detunings
+and polarisations of the second laser the collisional system
+can be analysed.
+</h:p>
+
+<h:p>
+After the analysis and after the collision the still excited
+Li(3s) is detected using a third laser to transfer it into a
+Rydberg state, Li(25p) for example. This state lives long 
+enough to survive the travel to a rotatable detector using 
+field ionisation to detect each single atom finally.
+</h:p>
+
+<h:p>
+The text inside the rendered content of the graphics is
+mainly lettering and contains no further information without
+the rendered graphics.<h:br />
+<h:a h:href="./LiNepot_6.xgr">'./LiNepot_6.xgr' is a grace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc = "http://purl.org/dc/elements/1.1/" >
+ <rdf::::::::Description rdf:about="">
+   <dc:title>Optical Collisions Pump - Probe ( - Detection) Scheme</dc:title>
+   <dc:creator>Dr. Olaf Hoffmann, Hannover, Germany</dc:creator>
+   <dc:date>2008-02-12</dc:date>
+   <dc:format>image/svg+xml</dc:format>
+   <dc:language>en</dc:language>
+   <dc:relation>
+      <rdf:Description rdf:about="LiNepot_6.xgr'">
+         <dc:description>grace file including the raw data</dc:description>
+      </rdf:Description>
+   </dc:relation>
+   <dc:description>Illustration of a pump probe experiment using optical collisions.</dc:description>
+ </rdf:Description>
+</rdf:RDF>
+</metadata>
+
+ <g transform="translate(0,612) scale(1,-1)" fill="none">
+  <path  fill="#fff" d="M0,0L0,612L792,612L792,0z"/>
+<g class="GraphData" stroke-width="2" stroke="#000">
+<path d="
+M136.8926,520.2612L139.9202,510.1179L145.2,496.9844L150.4802,487.2964
+L155.7602,480.2805L161.0402,475.2437L166.3202,471.6978L171.6,469.3220
+L176.8802,467.7834L182.1602,466.8801L187.4402,466.4187L192.7202,466.3085
+L198,466.4395L203.2802,466.7381L208.5602,467.1494L213.8402,467.6108
+L219.1202,468.1029L229.6802,469.1323L250.8,471.0074L271.9202,472.3979
+L293.0401,473.3820L314.1601,474.0075L335.2801,474.4187L356.4,474.6525
+L377.5201,474.7761L398.6401,474.8398L419.7601,474.8704L440.8801,474.8667
+L462,474.8398L483.1201,474.8031L525.3601,474.7357L567.6,474.7039
+L609.8400,474.6709L652.0800,474.6599L673.2612,474.6464"/>
+<path d="
+M135.2031,520.2612L139.9202,504.7507L145.2,491.9415L150.4802,482.5632
+L155.7602,475.8214L161.0402,471.0234L166.3202,467.7271L171.6,465.5533
+L176.8802,464.2130L182.1602,463.4933L187.4402,463.1922L192.7202,463.2167
+L198,463.4737L203.2802,463.8960L208.5602,464.3954L213.8402,464.9523
+L430.3201,91.8537L435.6,91.8269L440.8801,91.8L446.1601,91.7731
+L219.1202,465.5398L229.6802,466.7271L250.8,468.8336L271.9202,470.4346
+L293.0401,471.6060L314.1601,472.4285L335.2801,473.0026L356.4,473.4138
+L377.5201,473.7088L398.6401,473.9328L419.7601,474.0907L440.8801,474.2094
+L462,474.3086L483.1201,474.3759L525.3601,474.4665L567.6,474.5313
+L609.8400,474.5668L652.0800,474.5962L673.2612,474.6017"/>
+<path d="
+M118.7390,233.2177L118.8,232.9957L124.0802,212.7941L129.3602,192.7538
+L134.6402,174

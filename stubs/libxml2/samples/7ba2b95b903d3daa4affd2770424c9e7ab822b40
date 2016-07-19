@@ -1,0 +1,5 @@
+<messages xmlns="http://cta0002/" xmlns:c="http://cta0002/">
+  <message c:min="0"><e>1</e><e>2</e><e>3</e></message>
+  <message c:min="1"><e>1</e><e>2</e><e>3</e></message>
+  <message c:min="0"></message>
+</messages>  

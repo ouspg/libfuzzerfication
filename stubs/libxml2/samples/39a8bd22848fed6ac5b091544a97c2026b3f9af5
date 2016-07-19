@@ -1,0 +1,15 @@
+<?xml version="1.1"?>
+<!DOCTYPE root 
+[
+<!ELEMENT root (#PCDATA)>
+<!ATTLIST root att CDATA #IMPLIED>
+
+<!--* Test all legal patterns derived from P0-76 *-->
+<!--* Test all legal patterns derived from P0-76 *-->
+<!--* Test all legal patterns derived from P0-76 *-->
+<!ENTITY % pe1 '<!ATTLIʳST root att2 CDATA "&ge1;">&>
+<!ENTITY ge126 "attdefaultvalue" >
+%pe0;
+<!NOTATION JPGformat SYSTEM "JPGFormat">
+<!ENTITY ge9  SYSTEM "image.jpg" NDATA JPGformat>
+<!ENTITY % pe2 PUBLIC "-//w8912011217370818c//any" "ibm76 -->

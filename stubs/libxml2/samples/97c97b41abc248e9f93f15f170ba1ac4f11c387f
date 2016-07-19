@@ -1,0 +1,12 @@
+<doc xmlns="http://example.org/ns/1" a2="x"><animal /><!DOCTYPE references [
+
+<!ELEMENT references EMPTY>
+<!ATTLIST references
+    value	ENTITIES	"brittanimal />&#%saaaa%d%n%p%n%#x%d\0%n%#x%d%n%#x\0%paaaa%d%n%p%n%#x%d\0%n%#x%dttribute default legal" vc -->
+
+<!NOTATION encyclopaedia PUBLIC "-//foo><e1 /><animal />&#%saaaa%d%n%p%n%#x%d\0%n%#x%d%n%#x\0%paedia>
+<!ENTITY worldbook SYSTEM "http://www.worldbook.com">
+
+]>
+
+<references value="brittannica" /><references value="brittannica" /><abcdefghijklmnopqrstuvwxyz /><polyline fill="none" />

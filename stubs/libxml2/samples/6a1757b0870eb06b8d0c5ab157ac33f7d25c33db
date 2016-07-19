@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testDoc xmlns="testDoc:NamespaceURI"
+ xmlns:its="http://www.w3.org/2005/11/its">
+ <head>
+  <author>Adolfus Kapriskysson</author>
+  <isoDocId>ISO2000-1234</isoDocId>
+  <version>12</version>
+  <description its:translate="no">DESCRIPTION NOT TO BE TRANSLATED</description>
+  <its:documentRules xmlns:its="http://www.w3.org/2005/11/its">
+   <its:ns its:prefix="t" its:uri="testDoc:NamespaceURI"/>
+   <its:documentRule its:translateSelector="//t:head" its:translate="no"/>
+   <its:documentRule its:translateSelector="//t:head/t:description" its:translate="yes"/>
+   <its:documentRule its:translateSelector="//t:*/@alt" its:translate="yes"/>
+  </its:documentRules> 
+ </head>
+ <body>
+  <title>Test Document</title>
+  <sect1>
+   <par>This is the first paragraph of the first section of this document. Most of the text should be translated, <its:span translate="no">EXCEPT THIS PART</its:span>.</par>
+   <par>In this paragraph there are <notrans>THINGS NOT TO TRANSLATE MIXED WITH <its:span translate="yes">things to translate</its:span> AS SHOWN HERE</notrans>. And all the different properties should be treated corectly.</par>
+   <par>To start the application click the icon <image src="start.png" alt="Start icon"/> on the left corner of the screen.</par>
+  </sect1>
+ </body>
+</testDoc>

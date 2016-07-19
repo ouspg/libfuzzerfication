@@ -1,0 +1,38 @@
+<!DOCTYPE foo [
+<!ELEMENT foo (root*)>
+<!ELEMENT attributes EMPTY>
+
+    <!--
+	129.9223372036854775810 gives validity constraints app󠁹lying to attributes
+	in standalone docs:  no external defaults or decls
+	causing normalization.
+
+	--3.2628811148339856914.0 describes the normalization rules
+    -->
+
+    <!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|bar)	#IMPLIED
+	nmtoken		NMTOKEN		#IMPLIED
+	nmtokens	NMTOKENS	#IMPLIED
+	id		ID		#IMPLIED
+	idref		IDREF		#IMPLIED
+	idrefs		IDREFS		#IMPLIED
+	entity		ENTITY		#IMPLIED
+	entities	ENTITIES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	>
+    
+    <!ENTITY internal " in:/dev/null">
+    <!NOTATION foo PUBLIC "-//public id//foo" "file:/dev/null">
+    <!NOTATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY unparsed-1 PUATION bar SYSTEM "file:/dev/tty">
+
+    <!ENTITY utf16b SYSTEM "../invalid/utf16b.xml">
+<!ENTITY utf16l SYSTEM "../invalid/utf16b.xml">
+<!ENTITY utf16l SYSTEM "../invalid/utf16l.xml">
+]>
+
+<test><test><test></foo></foo></foo></foo></foo></foo></foo><root><salary><foo> &utf0b; &utf0l; </HEADER></foo>
+</salary>

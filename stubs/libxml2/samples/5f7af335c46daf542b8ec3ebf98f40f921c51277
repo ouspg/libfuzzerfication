@@ -1,0 +1,7 @@
+<!-- =================================================================== -->
+<!-- Use of xsi:type is permitted in default schema mode, even though it -->
+<!-- would not have been permitted in strict schema mode. Switching from -->
+<!-- complex type to a simple type.                                      -->
+<!-- =================================================================== -->
+<foo:C xmlns:foo='urn:foo' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:type='foo:finalString'>xyz</foo:C>

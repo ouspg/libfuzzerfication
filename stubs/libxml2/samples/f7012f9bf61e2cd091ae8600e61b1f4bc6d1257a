@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Produced by $Id: metadata.xml,v 1.1 2002/03/21 13:53:09 dom Exp $-->
+<rdf:RDF xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2001/02pd/rec54">
+<WD rdf:about="http://www.w3.org/TR/2002/WD-rdf-primer-20020319/">
+<dc:date>2002-03-19</dc:date>
+<dc:title>RDF Primer</dc:title>
+<ActivityStatement rdf:resource="http://www.w3.org/2001/sw/Activity"/>
+<doc:versionOf rdf:resource="http://www.w3.org/TR/rdf-primer/"/>
+<editor rdf:parseType="Resource">
+<contact:fullName>Frank Manola</contact:fullName>
+</editor>
+<editor rdf:parseType="Resource">
+<contact:fullName>Eric Miller</contact:fullName>
+</editor>
+</WD>
+</rdf:RDF>

@@ -1,0 +1,63 @@
+<!DOCTYPE project [
+  <!ENTITY properties.xml SYSTEM "./properties.xml" >
+]>
+<project name="candidate-openexi" default="dist" basedir=".">
+
+<property name="debug" value="off"/>
+
+&properties.xml;
+
+<property environment="env"/>
+
+<property name="app.jar" value="${ant.project.name}.jar"/>
+
+<property name="build.dir" value="build"/>
+<property name="build.dest" value="${build.dir}/classes"/>
+
+<property name="dist.dir" value="dist"/>
+
+<property name="japex.lib.dir" value="../../japex/lib"/>
+<property name="framework.dir" value="../../framework/dist"/>
+
+<available property="libraryFound" file="lib/nagasena.jar"/>
+
+<path id="framework.class.path">
+  <fileset dir="${japex.lib.dir}" includes="*.jar"/>
+  <fileset dir="${framework.dir}" includes="*.jar"/>
+</path>
+
+<path id="openexi.class.path">
+  <pathelement location="${regexi.jar}"/>
+  <pathelement location="${xercesImpl.jar}"/>
+  <pathelement location="${nagasena.jar}"/>
+  <pathelement location="${nagasena-rta.jar}"/>
+</path>
+
+<path id="compile.class.path">
+  <path refid="framework.class.path"/>
+  <path refid="openexi.class.path"/>
+</path>
+
+<target name="prepare">
+  <mkdir dir="${build.dir}"/>
+  <mkdir dir="${build.dir}/classes"/>
+  <mkdir dir="${dist.dir}"/>
+</target>
+
+<target name="clean">
+  <delete dir="${dist.dir}"/>
+  <delete dir="${build.dir}"/>
+</target>
+
+<target name="compile" depends="prepare" if="libraryFound">
+  <javac srcdir="src" destdir="${build.dir}/classes" debug="${debug}" optimize="on">
+    <classpath refid="compile.class.path"/>
+  </javac>
+</target>
+
+<target name="dist" depends="compile">
+  <delete file="${dist.dir}/${app.jar}"/>
+  <jar jarfile="${dist.dir}/${app.jar}" basedir="${build.dir}/classes"/>
+</target>
+
+</project>

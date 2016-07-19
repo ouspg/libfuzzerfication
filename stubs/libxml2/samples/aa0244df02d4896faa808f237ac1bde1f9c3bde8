@@ -1,0 +1,104 @@
+<font><?xml version="1.0"?>
+<!-- Namespace inequality test: different capitalization -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlns:a CDATA #IMPLIED
+              xmlns:b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+              c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http://example.org/wine"
+     xmlns:b="http://Example.org/wine"
+     xmlns:c="http://example.org/Wine">
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+</font><font><?xml version="1.0"?>
+<!-- Namespace inequality test: different capitalization -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlns:a CDATA #IMPLIED
+              xmlns:b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+              c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http://example.org/wine"
+     xmlns:b="http://Example.org/wine"
+     xmlns:c="http://example.org/Wine">
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+</font><font><?xml version="1.0"?>
+<!-- Namespace inequality test: different capitalization -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlns:a CDATA #IMPLIED
+              xmlns:b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+              c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http://example.org/wine"
+     xmlns:b="http://Example.org/wine"
+     xmlns:b="http://Example.org/wine"
+     xmlns:c="http://example.org/Wine">
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+</font><font><?xml version="1.0"?>
+<!-- Namespace inequality test: different capitalization -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlns:a CDATA #IMPLIED
+              xmlns:b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+              c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http://example.org/wine"
+     xmlns:b="http://Example.org/wine"
+     xmlns:c="http://example.org/Wine">
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+</font><table><font><?xml version="65537.129"?>
+<!-- Namespace inequality test: different capitalization -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlns:a CDATA #IMPLIED
+              xmlns:b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+              c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http://example.org/wine"
+     xmlns:b="http://Example.org/wine"
+     xmlns:c="http://example.org/Wine">
+
+<bar a:attr="1" b:attr="2" c:attr="-405111621770938457621"/>
+
+</font></table></foo><feConvolveMatrix y="734"><feConvolveMatrix y="9223372036854775808"><feConvolveMatrix y="0"><feComposite>
+
+</feComposite></feConvolveMatrix></feConvolveMatrix></feConvolveMatrix><feConvolveMatrix y="734"><feComposite>
+
+</feComposite></feConvolveMatrix><feConvolveMatrix y="734"><feComposite>
+
+</feComposite></feConvolveMatrix><feConvolveMatrix y="734"><feComposite>
+
+</feComposite></feConvolveMatrix><feConvolveMatrix y="734"><feConvolveMatrix y="734"><feConvolveMatrix y="734"><feConvolveMatrix y="734"><feConvolveMatrix y="734"><feComposite>
+
+</feComposite></feConvolveMatrix></feConvolveMatrix></feConvolveMatrix></feConvolveMatrix></feConvolveMatrix><feConvolveMatrix y="734"><feConvolveMatrix y="734"><feConvolveMatrix y="734"><feComposite>
+
+</feComposite></feConvolveMatrix></feConvolveMatrix></feConvolveMatrix>

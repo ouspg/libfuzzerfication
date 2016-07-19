@@ -1,0 +1,25 @@
+<!-- =================================================================== -->
+<!-- Tests PI where there is a declared attribute.                       -->
+<!-- =================================================================== -->
+<foo:P xmlns:foo='urn:foo' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <foo:P2>
+    <?pi_1 a="A" b="B"?><!-- PI -->
+    <foo:AC>a</foo:AC><!-- SE(foo:AC) -->
+    <?pi_2 a="A" b="B"?><!-- PI -->
+  </foo:P2>
+  <foo:P2 foo:aA="">
+    <?pi_3 a="A" b="B"?><!-- PI -->
+    <foo:AC>a</foo:AC><!-- SE(foo:AC) -->
+    <?pi_4 a="A" b="B"?><!-- PI -->
+  </foo:P2>
+  <foo:P2 xsi:nil='true' foo:aA="">
+    <?pi_5 a="A" b="B"?><!-- PI -->
+  </foo:P2>
+  <foo:P2 xsi:type='foo:extended_P2' foo:aA="">
+    <?pi_6 a="A" b="B"?><!-- PI -->
+    <foo:AC>a</foo:AC><!-- SE(foo:AC) -->
+    <?pi_7 a="A" b="B"?><!-- PI -->
+    <foo:AC>a</foo:AC><!-- SE(foo:AC) -->
+    <?pi_8 a="A" b="B"?><!-- PI -->
+  </foo:P2>
+</foo:P>

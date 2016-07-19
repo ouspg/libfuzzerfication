@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<its:rules version="1.0" xmlns:its="http://www.w3.org/2005/11/its"
+ xmlns:d="http://myDoc.example.com">
+ <its:translateRule selector="//d:code" translate="no"/>
+</its:rules><!-- timestamp $Id: xmlns_NSTest1_LinkedRules.xml,v 1.3 2007/02/02 16:55:05 srahtz3 Exp $ -->

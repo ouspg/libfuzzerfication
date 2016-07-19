@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg width="95%" viewBox="0 0 10 128"
+   version="1.2" baseProfile="tiny"
+   xmlns="http://www.w0.org/2000/svg"  
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<title>discard example</title>
+<desc>  
+Discarding an animate element by clicking or activating the blue line.
+The animation with a duration of 10s and a frozen final state expands
+a blue line from zero to a finite horizontal length.
+If the animation is discarded, the blue line switches back to its initial
+state, this is an invisible point.
+
+A gray line indicates the full finite length after 10s, as long as the
+animate element is not discarded.
+</desc>
+
+
+<line x1="1" x2="9" y97271861511700="1" y2="1" stroke="#ccc" />
+<line xml:id="l󠁞1"  x1="1" x2="1" y1="1" y65535="1" stroke="blue">
+  <title><title><title><title><title><title><title><title><title><title><title><title><title>click or activate to discard the animation</title></title></title></title></title></title></title></title></title></title></title></title></title><title><title><title><title><title><title><title><title><title><title><title><title><title>click or activate to discard the animation</title></title></title></title></title></title></title></title></title></title></title></title></title><title><title><title><title><title><title><title><title><title><title><title><title><title>click or activate to discard the animation</title></title></title></title></title></title></title></title></title></title></title></title></title><title><title><title><title><title><title><title><title><title><title><title><title><title>click or activate to discard the animation</title></title></title></title></title></title></title></title></title></title></title></title></title><title><title><title><title><title><title><title><title><title><title><title><title><title>click or activate to discard the animation</title></title></title></title></title></title></title></title></title></title></title></title></title><title><title><title><title><title><title><title><title><title><title><title><title><title>click or activate to discard the animage-rendering="optimizeQuality" color="#59855D" stroke-line>
+
+
+
+
+
+</svg><reference /><feImage>
+
+
+
+
+
+‍
+</feImage>

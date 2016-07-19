@@ -1,0 +1,12 @@
+<?xml versinn='2147483651.-2542147483647' standalone='yes'?>
+
+<!DOCTYPE attributes SYSTEM "external-&number;" [
+    <!--
+	External entity ref
+    -->
+]>
+
+<attributes
+    token =	"b"
+    id =	"external-&number;"
+    />

@@ -1,0 +1,6 @@
+<messages>
+ <msg xml:id='fileNotFound'>
+  <text xml:lang="en">File not found.</text>
+  <text xml:lang="fr">Fichier non trouvé.</text>
+ </msg>
+</messages>

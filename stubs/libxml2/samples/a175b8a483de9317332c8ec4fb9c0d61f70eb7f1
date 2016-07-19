@@ -1,0 +1,7 @@
+<doc>&ltr CDATA #IMPLIED
+              b:attr CDATA #IMPLIE<svg>D
+              c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http://example.org/~wilbur"
+     xmlns:b="http://example.org/%8ewilbur"
+     xmlns:c="http://examp;</svg></doc>

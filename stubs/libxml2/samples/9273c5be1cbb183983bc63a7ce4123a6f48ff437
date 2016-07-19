@@ -1,0 +1,114 @@
+<DEMO>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+  <D3DXVECTOR3 id="Haxxe_Camera_Position" x="-267.92" y="-29.78" z="163.03" />
+  <D3DXVECTOR3 id="Haxxe_Camera_LookAt" x="565.35" y="-29.78" z="-389.85" />
+  <D3DXVECTOR3 id="Haxxe_Camera_Up" x="0.00" y="-1.00" z="0.00" />
+
+  <D3DXVECTOR4 id="Haxxe_Overlay_Color" x="100" y="100" z="140" w="200" />
+
+
+  <FLOAT id="Haxxe_ExplosionSpeed" value="40.0" />
+  <FLOAT id="Haxxe_RotationSpeed" value="0.4" />
+  <FLOAT id="Haxxe_LightStrength" value="0.0" />
+  <FLOAT id="Haxxe_ExplosionTime" value="0.3" />
+  <FLOAT id="Haxxe_WaitTime" value="7.4" />
+  <FLOAT id="Haxxe_AssembleTime" value="37" />
+  <FLOAT id="Haxxe_TimeToStart" value="0" />
+
+
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+  <!-- Fade from black -->
+
+  <FLOAT id="Haxxe_FadeFromBlack_Start" value="0" />
+  <FLOAT id="Haxxe_FadeFromBlack_Duration" value="1.0" />
+  <ANIMATOR_D3DXVECTOR4 id="Haxxe_FadeFromBlack"
+                      type="COS"
+                      renderBin="100"
+                      starttime="Haxxe_FadeFromBlack_Start"
+                      duration="Haxxe_FadeFromBlack_Duration">
+    <D3DXVECTOR4 id="" x="0" y="0" z="0" w="0" />
+    <D3DXVECTOR4 id="" x="255" y="255" z="255" w="255" />
+  </ANIMATOR_D3DXVECTOR4>
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+
+  <FLOAT id="Haxxe_Distortion_Start" value="0" />
+  <FLOAT id="Haxxe_Distortion_Duration" value="0.5" />
+  <ANIMATOR_FLOAT id="Haxxe_Distortion"
+                      type="COS"
+                      renderBin="50"
+                      starttime="Haxxe_Distortion_Start"
+                      duration="Haxxe_Distortion_Duration">
+    <FLOAT id="" value="0.0" />
+    <FLOAT id="" value="1.0" />
+    <FLOAT id="" value="0.0" />
+  </ANIMATOR_FLOAT>
+
+
+  <!--- Boom  3:22.7 = 202.7    = 1.7 -->
+  <!--- Boom  3:28.0 = 208.0    = 7.0 -->
+  <!--- Boom  3:33.4 = 213.4	  = 12.4 -->
+  <!--- Boom  3:38.7 = 218.7	  = 17.7 -->
+  <!--- Boom  3:44.0 = 224.0	  = 23.0 -->
+  <!--- Boom  3:49.4 = 229.4	  = 28.4 -->
+  <!--- Boom  3:54.7 = 234.7	  = 33.7 -->
+  <!--- Boom  4:00.0 = 240.0	  = 39.0 -->
+  <!--- Boom  4:05.4 = 245.4	  = 44.4 -->
+
+  <FLOAT id="Haxxe_DistortionTime_0" value="1.7" />
+  <FLOAT id="Haxxe_DistortionTime_1" value="7.0" />
+  <FLOAT id="Haxxe_DistortionTime_2" value="12.4" />
+  <FLOAT id="Haxxe_DistortionTime_3" value="17.7" />
+  <FLOAT id="Haxxe_DistortionTime_4" value="23.0" />
+  <FLOAT id="Haxxe_DistortionTime_5" value="28.4" />
+  <FLOAT id="Haxxe_DistortionTime_6" value="33.7" />
+  <FLOAT id="Haxxe_DistortionTime_7" value="39.0" />
+
+  <FLOAT id="Haxxe_DistortionScale_0" value="0.2" />
+  <FLOAT id="Haxxe_DistortionScale_1" value="0.2" />
+  <FLOAT id="Haxxe_DistortionScale_2" value="0.3" />
+  <FLOAT id="Haxxe_DistortionScale_3" value="0.4" />
+  <FLOAT id="Haxxe_DistortionScale_4" value="0.6" />
+  <FLOAT id="Haxxe_DistortionScale_5" value="1.0" />
+  <FLOAT id="Haxxe_DistortionScale_6" value="1.0" />
+  <FLOAT id="Haxxe_DistortionScale_7" value="1.0" />
+
+  <FLOAT id="Haxxe_SphereColorBlur" value="0.29" />
+  <FLOAT id="Haxxe_SphereColor" value="0.45" />
+
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+  <!-- Greetz -->
+
+  <FLOAT id="Haxxe_Greetz_Start_0" value="1" />
+  <FLOAT id="Haxxe_Greetz_Start_1" value="5" />
+  <FLOAT id="Haxxe_Greetz_Start_2" value="9" />
+  <FLOAT id="Haxxe_Greetz_Start_3" value="13" />
+  <FLOAT id="Haxxe_Greetz_Start_4" value="17" />
+  <FLOAT id="Haxxe_Greetz_Start_5" value="21" />
+  <FLOAT id="Haxxe_Greetz_Start_6" value="25" />
+  <FLOAT id="Haxxe_Greetz_Start_7" value="29" />
+  <FLOAT id="Haxxe_Greetz_Start_8" value="33" />
+  <FLOAT id="Haxxe_Greetz_Start_9" value="37" />
+
+
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+  <!-- Cam 0 -->
+
+  
+  <FLOAT id="Haxxe_StartTime_0" value="0" />
+  <FLOAT id="Haxxe_StartTimeDuration_0" value="44.4" />
+  <ANIMATOR_D3DXVECTOR3 id="Haxxe_Position_0"
+                        type="CATMULLROM"
+                        renderBin="50"
+                        starttime="Haxxe_StartTime_0"
+                        duration="Haxxe_StartTimeDuration_0">
+    <D3DXVECTOR3 id="" x="-128.81" y="-50.34" z="56.81" />
+    <D3DXVECTOR3 id="" x="42.14" y="-30.07" z="368.53" />
+    <D3DXVECTOR3 id="" x="246.08" y="-27.78" z="159.42" />
+    <D3DXVECTOR3 id="" x="277.00" y="-25.62" z="-56.58" />
+    <D3DXVECTOR3 id="" x="-30.85" y="-43.15" z="320.72" />
+    <D3DXVECTOR3 id="" x=

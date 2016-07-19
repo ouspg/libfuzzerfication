@@ -1,0 +1,7 @@
+<!--
+testing the UA's ability to collapse the following unicode points into a single space character (x0020): 
+
+--> 
+<widget id="aq:" xmlns="http://www.w3.org/ns/widgets">
+<name>&#x0020;&#x00A0;&#x1680;&#x180E;&#x2000;&#x2001;&#x2002;&#x2003;&#x2004;&#x2005;&#x2006;&#x2007;&#x2008;&#x2009;&#x200A;&#x202F;&#x205F;&#x3000;PASS&#x0020;&#x00A0;&#x1680;&#x180E;&#x2000;&#x2001;&#x2002;&#x2003;&#x2004;&#x2005;&#x2006;&#x2007;&#x2008;&#x2009;&#x200A;&#x202F;&#x205F;&#x3000;</name>
+</widget>

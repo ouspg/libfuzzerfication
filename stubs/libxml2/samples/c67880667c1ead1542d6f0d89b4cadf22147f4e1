@@ -1,0 +1,8 @@
+<!DOCTYPE results [
+<!ENTITY dom3-ls-oracle SYSTEM '../build/dom3-ls-oracle.xml'>
+<!ENTITY dom3-ls-xerces SYSTEM '../build/dom3-ls-xerces_dom3.xml'>
+]>
+<results>
+&dom3-ls-oracle;
+&dom3-ls-xerces;
+</results>

@@ -1,0 +1,76 @@
+<?xml-stylesheet type="text/xsl" href="pmathml.xsl"?>
+
+<!--
+Copyright David Carlisle 2001, 2002.
+
+Use and distribution of this code are permitted under the terms of the <a
+href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+>W3C Software Notice and License</a>.
+-->
+
+<!--
+  pref:renderer="techexplorer-plugin"
+  pref:renderer="techexplorer"
+  pref:renderer="css"
+  pref:renderer="mathplayer"
+  pref:renderer="mathplayer-dl"
+-->
+<html
+ xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:math="http://www.w3.org/1998/Math/MathML"
+ >
+<head>
+<title>Presentation Examples</title>
+</head>
+<body>
+
+<h1>Presentation MathML</h1>
+<p>yyy</p>
+
+<p>inline: <math:math>
+ <math:mrow>
+   <math:msup>
+     <math:mfenced open="[" close="]">
+       <math:mrow>
+         <math:mi>a</math:mi>
+         <math:mo>+</math:mo>
+         <math:mi>b</math:mi>
+       </math:mrow>
+     </math:mfenced>
+     <math:mn>260</math:mn>
+   </math:msup>
+<math:mo>+</math:mo>
+   <math:msub>
+     <math:mfenced open="{" close="}">
+       <math:mrow>
+         <math:mi>a</math:mi>
+         <math:mo>+</math:mo>
+         <math:mi>b</math:mi>
+       </math:mrow>
+     </math:mfenced>
+     <math:mi>i</math:mi>
+   </math:msub>
+ </math:mrow>
+</math:math> text text text</p>
+
+<p>
+xxx
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+   <msup>
+     <msqrt>
+       <mrow>
+         <mi>a</mi>
+         <mo>+</mo>
+         <mi>b</mi>
+       </mrow>
+     </msqrt>
+     <mn>27</mn>
+   </msup>
+ </mrow>
+</math>
+
+
+</body>
+</html>

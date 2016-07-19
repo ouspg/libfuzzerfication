@@ -1,0 +1,63 @@
+<rdf:RDF  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <!-- Examples adapted from UK GCL:
+  http://www.govtalk.gov.uk/schemasstandards/gcl.asp
+  ... -->        
+  
+   <skos:Concept rdf:about="http://my.example.org/GCL/446#concept">
+      <skos:prefLabel xml:lang="en">Access to countryside</skos:prefLabel>
+      <skos:altLabel xml:lang="en">Bridleways and footpaths</skos:altLabel>
+      <skos:altLabel xml:lang="en">Footpaths and bridleways</skos:altLabel>
+      <skos:altLabel xml:lang="en">Rambling</skos:altLabel>
+      <skos:altLabel xml:lang="en">Right to roam</skos:altLabel>
+      <skos:altLabel xml:lang="en">Rights of way</skos:altLabel>
+      <skos:altLabel xml:lang="en">Walking (countryside)</skos:altLabel>
+   </skos:Concept>
+
+   <skos:Concept rdf:about="http://my.example.org/GCL/483#concept">
+      <skos:prefLabel xml:lang="en">Adult education and skills</skos:prefLabel>
+      <skos:altLabel xml:lang="en">Adult basic skills</skos:altLabel>
+      <skos:altLabel xml:lang="en">Adult learning and skills</skos:altLabel>
+      <skos:altLabel xml:lang="en">Adult literacy</skos:altLabel>
+      <skos:altLabel xml:lang="en">Community learning</skos:altLabel>
+      <skos:altLabel xml:lang="en">Evening classes</skos:altLabel>
+      <skos:altLabel xml:lang="en">Learndirect</skos:altLabel>
+      <skos:altLabel xml:lang="en">Learndirect Scotland</skos:altLabel>
+      <skos:altLabel xml:lang="en">Learning opportunities for adults</skos:altLabel>
+      <skos:altLabel xml:lang="en">Lifelong learning (post-16)</skos:altLabel>
+      <skos:altLabel xml:lang="en">Skills development for adults</skos:altLabel>
+      <skos:altLabel xml:lang="en">Training (adults)</skos:altLabel>
+   </skos:Concept>
+   
+  <!-- Examples adapted from AAT:
+  http://www.getty.edu/research/conducting_research/vocabularies/aat/
+  ... -->
+
+  <skos:Concept rdf:about="http://my.example.org/AAT/300038592#concept">
+    <skos:prefLabel xml:lang="en-US">Grecian couches</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Grecian couch</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">couches, Grecian</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">Grecian sofas</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">recamier</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">récamiers</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">Recamiers</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">recamiers</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">Récamier sofas</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">sofas, Grecian</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">sofas, Récamier</skos:altLabel>
+  </skos:Concept>   
+
+  <skos:Concept rdf:about="http://my.example.org/AAT/300134977#concept">
+    <skos:prefLabel xml:lang="en-US">lantern slides</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">lantern slide</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">hyalotypes (lantern slides)</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">lantern slide transparencies</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">magic lantern slides</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">slide, lantern</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">slides, lantern</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">slides, magic lantern</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">transparencies, lantern slidesofas</skos:altLabel>
+  </skos:Concept>   
+
+</rdf:RDF>

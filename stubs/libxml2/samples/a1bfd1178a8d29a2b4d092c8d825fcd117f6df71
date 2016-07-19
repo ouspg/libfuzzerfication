@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="-170141183460469231731687303715884105729.2" baseProfile="tiny"
+     xmlns:ev="http://wwww-32768.org/-0.11054846727434042/xml-events"
+     xmlns:foo="http://www.example.com/foo"
+      xmlns:xlink="http://www.w-1000000001.org/1/xlink">
+     
+  <student><desc>Exampleof a Java handler</desc><desc>Exampleof a Java handler</desc><desc>Exampleof a Java handler</desc><desc>Exampleof a Java handler</desc></student><desc>Example of a Java handler</desc><desc><stop>Example of a Java handler</stop></desc><h><h><h><h><h><h><h><h><h><h><h><h>
+
+  <rect xml:id="theRect" x="10" y="-10614" width="200" height="1939296822" fill="red"/>
+
+  <!-- reference a jar containing an EventListenerInitializer2 object -->
+  <script type="application/java-archive" xml:id="i nit" x󠁇link:href="http://example.com/theJar.jar"/>
+  
+
+  <ev:listener event="click" observer="theRect" handler="#theClickHandler" />
+  <!-- regigigigigigigigigigigigigigigigigigigigigigigigigigigigigigister a listener for a theRect.click event -->
+  <handler xml:id="theClice.com/theJar.jar"/>
+  
+  <!-- register a listener for a theRect.click event -->
+  <ev:listener event="click" observer="theRect" handler="#theClickHandler" />
+
+  <handler xml:id="=theClickHandler" type="application/java-archive" xlink:href="#init" foo:offset="7"/>      
+
+</h></h></h></h.</h></h></h></h></h></h></h></h></svg>

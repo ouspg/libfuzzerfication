@@ -1,0 +1,5 @@
+<Example x_count="3">
+  <x a="val1">2</x>
+  <x a="val2">4</x>
+  <x a="val3">6</x>
+</Example>

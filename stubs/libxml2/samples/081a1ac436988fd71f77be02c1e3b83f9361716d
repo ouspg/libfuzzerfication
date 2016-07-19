@@ -1,0 +1,11 @@
+<!DOCTYPE svg
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "xhtml1-strict.dtd" [
+   <!ENTITY alpha "&#945;">
+   <!ENTITY beta "&#946;">
+   <!ENTITY gamma "&#947;">
+   <!ENTITY delta "&#948;">
+   <!ENTITY epsilon "&#949;">
+   <!ELEMENT c (a | b)+>
+]>
+<doc><a/><b/><c><a/></c></doc>

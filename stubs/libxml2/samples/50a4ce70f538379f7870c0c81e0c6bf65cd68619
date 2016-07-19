@@ -1,0 +1,53 @@
+<rp210>
+	<element key="06.0A.2B.34.01.01.01.01.01.01.01.10.00.00.00.00" value="36a87260-1102-11df-8a39-0800200c9a66" /> <!-- UMID Video -->
+	<element key="06.0E.2B.34.01.01.01.01.01.05.02.00.00.00.00.00" value="Sample Programme" /> <!-- Main title -->
+	<element key="06.0E.2B.34.01.01.01.04.03.01.01.02.03.01.00.00" value="en-us" /> <!-- Primary language -->
+	<element key="06.0E.2B.34.01.01.01.01.01.02.01.01.01.00.00.00" value="http://somewhere.com/othermaterial.mov" /> <!-- URL -->
+	<element key="06.0E.2B.34.02.53.01.01.0D.01.04.01.01.18.01.00"> <!-- Participant -->
+		<element key="06.0E.2B.34.01.01.01.03.02.30.05.01.01.00.00.00" value="Actor" /> <!--Job function -->
+		<element key="06.0E.2B.34.01.01.01.05.06.01.01.04.03.40.14.00"> <!-- Person Sets -->
+			<element key="06.0E.2B.34.02.53.01.01.0D.01.04.01.01.1A.02.00"> <!-- Person  -->
+				<element key="06.0E.2B.34.01.01.01.01.02.30.06.03.01.01.00.00" value="Doe" /> <!-- Family Name -->
+				<element key="06.0E.2B.34.01.01.01.01.02.30.06.03.01.02.00.00" value="John" /> <!-- First Given Name --> 
+			</element>
+		</element>					
+	</element>
+	<element key="06.0E.2B.34.02.53.01.01.0D.01.04.01.01.18.01.00"> <!-- Participant -->
+		<element key="06.0E.2B.34.01.01.01.03.02.30.05.01.01.00.00.00" value="Director" /> <!--Job function -->
+		<element key="06.0E.2B.34.01.01.01.05.06.01.01.04.03.40.14.00"> <!-- Person Sets -->
+			<element key="06.0E.2B.34.02.53.01.01.0D.01.04.01.01.1A.02.00"> <!-- Person  -->
+				<element key="06.0E.2B.34.01.01.01.01.02.30.06.03.01.01.00.00" value="Foo" /> <!-- Family Name -->
+				<element key="06.0E.2B.34.01.01.01.01.02.30.06.03.01.02.00.00" value="Jim" /> <!-- First Given Name --> 
+			</element>
+		</element>					
+	</element>
+	<element key="06.0E.2B.34.01.01.01.01.07.02.01.10.01.01.00.00" value="1994" /> <!-- Creation date -->
+	<element key="06.0E.2B.34.01.01.01.03.07.01.20.01.01.01.01.00" value="south pole" /> <!-- Place Keyword -->
+	<element key="06.0E.2B.34.01.01.01.07.07.01.20.01.04.01.15.00" value="0082000a00000000000000f9" /> <!-- Geographical Coordinates (12byte according to SMPTE 330M) -->
+	<element key="06.0E.2B.34.01.01.01.03.03.02.01.06.03.01.00.00" value="This is the synopsis of the story." /> <!-- Description -->
+	<element key="06.0E.2B.34.01.01.01.03.03.02.01.01.03.01.00.00" value="Horror" /> <!-- Genre -->
+	<element key="06.0E.2B.34.01.01.01.03.03.02.01.02.04.02.00.00" value="about" /> <!-- Subject -->
+	<element key="06.0E.2B.34.01.01.01.02.02.20.03.04.00.00.00.00" value="99.0" /> <!-- Audience appreciation -->
+	<element key="06.0E.2B.34.01.01.01.03.06.03.05.01.00.00.00.00" value="http://docs.company.com/scripts/123.pdf" /> <!-- Production Script Reference -->
+	<element key="06.0E.2B.34.01.01.01.03.01.10.03.02.01.00.00.00" value="The 99 Example Series" /> <!-- Programming Group Title -->
+	<element key="06.0E.2B.34.01.01.01.01.02.05.02.02.00.00.00.00" value="All rights reserved." /> <!-- IP Right -->
+	<element key="06.0E.2B.34.01.01.01.03.02.04.01.01.00.00.00.00" value="http://creativecommons.org/licenses/by-nc-nd/3.0" /> <!-- Contract Type Code -->
+	<element key="06.0E.2B.34.01.01.01.04.02.10.02.01.01.01.00.00" value="W3 Pictures Inc." /> <!-- Name of the publishing organisation -->
+	<element key="06.0E.2B.34.01.01.01.03.03.02.01.01.10.00.00.00" value="U" /> <!-- Programme material classification Code -->
+	<element key="06.0E.2B.34.01.01.01.04.02.10.02.01.04.01.00.00" value="US" /> <!-- Publishing Region Name -->
+	
+	<!-- fragments are defined as part of the container structure -->
+	
+	<element key="06.0E.2B.34.01.01.01.01.04.01.05.01.03.00.00.00" value="720" /> <!-- Total Samples per Line -->
+	<element key="06.0E.2B.34.01.01.01.01.04.01.03.02.01.00.00.00" value="576" /> <!-- Total Lines per Frame -->
+	<element key="06.0E.2B.34.01.01.01.02.04.01.06.01.00.00.00.00" value="AVC" /> <!-- Compression Schemes (Video) -->
+	<element key="06.0E.2B.34.01.01.01.01.07.02.02.01.02.01.00.00" value="1:30:02:22" /> <!-- Material Absolute Duration (Days, Hours, minutes, seconds, fractions of seconds) -->
+	<element key="06.0E.2B.34.01.01.01.03.04.09.02.01.00.00.00.00" value="video/mp4" /> <!-- MIME media type -->
+	<element key="06.0E.2B.34.01.01.01.05.04.02.03.01.01.01.00.00" value="1/44100" /> <!-- Audio Sample Rate -->
+	<element key="06.0E.2B.34.01.01.01.01.04.01.03.01.03.00.00.00" value="25" /> <!-- Frame Rate -->
+	<element key="06.0E.2B.34.01.01.01.02.04.02.03.01.02.00.00.00" value="128000" /> <!-- Audio average bitrate -->
+	<element key="06.0E.2B.34.01.01.01.03.04.01.05.01.11.00.00.00" value="5000000" /> <!-- Video average bitrate -->
+	<element key="06.0E.2B.34.01.01.01.05.04.02.01.01.04.00.00.00" value="2" /> <!-- Channel Count (Audio) -->
+</rp210>
+
+

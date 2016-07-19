@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!ENTITY rfc2119 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml'>
+<!ENTITY rfc3550 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.3550.xml'>
+<!ENTITY rfc3711 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.3711.xml'>
+<!ENTITY rfc3551 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.3551.xml'>
+<!ENTITY rfc4288 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.4288.xml'>
+<!ENTITY rfc4855 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.4855.xml'>
+<!ENTITY rfc4566 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.4566.xml'>
+<!ENTITY rfc3264 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.3264.xml'>
+<!ENTITY rfc2974 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.2974.xml'>
+<!ENTITY rfc2326 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.2326.xml'>
+<!ENTITY rfc3555 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.3555.xml'>
+<!ENTITY rfc5576 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.5576.xml'>
+<!ENTITY rfc6562 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.6562.xml'>
+<!ENTITY rfc6716 PUBLIC '' 'http://xml.resource.org/public/rfc/bibxml/reference.RFC.6716.xml'>
+<!ENTITY nbsp "&#160;">
+  ]>
+
+  <rfc category="std" ipr="trust200902" docName="draft-ietf-payload-rtp-opus-01">
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+
+<?rfc strict="yes" ?>
+<?rfc toc="yes" ?>
+<?rfc tocdepth="3" ?>
+<?rfc tocappendix='no' ?>
+<?rfc tocindent='yes' ?>
+<?rfc symrefs="yes" ?>
+<?rfc sortrefs="yes" ?>
+<?rfc compact="no" ?>
+<?rfc subcompact="yes" ?>
+<?rfc iprnotified="yes" ?>
+
+  <front>
+    <title abbrev="RTP Payload Format for Opus Codec">
+      RTP Payload Format for Opus Speech and Audio Codec
+    </title>
+
+    <author fullname="Julian Spittka" initials="J." surname="Spittka">
+      <address>
+        <email>jspittka@gmail.com</email>
+      </address>
+    </author>
+
+    <author initials='K.' surname='Vos' fullname='Koen Vos'>
+      <organization>Skype Technologies S.A.</organization>
+      <address>
+        <postal>
+          <street>3210 Porter Drive</street>
+          <code>94304</code>
+          <city>Palo Alto</city>
+          <region>CA</region>
+          <country>USA</country>
+        </postal>
+        <email>koenvos74@gmail.com</email>
+      </address>
+    </author>
+
+    <author initials="JM" surname="Valin" fullname="Jean-Marc Valin">
+      <organization>Mozilla</organization>
+      <address>
+        <postal>
+          <street>650 Castro Street</street>
+          <city>Mountain View</city>
+          <region>CA</region>
+          <code>94041</code>
+          <country>USA</country>
+        </postal>
+        <email>jmvalin@jmvalin.ca</email>
+      </address>
+    </author>
+
+    <date day='2' month='August' year='2013' />
+
+    <abstract>
+      <t>
+        This document defines the Real-time Transport Protocol (RTP) payload
+        format for packetization of Opus encoded
+        speech and audio data that is essential to integrate the codec in the
+        most compatible way. Further, media type registrations
+        are described for the RTP payload format.
+      </t>
+    </abstract>
+  </front>
+
+  <middle>
+    <section title='Introduction'>
+      <t>
+        The Opus codec is a speech and audio codec developed within the
+        IETF Internet Wideband Audio Codec working group (codec). The codec
+        has a very low algorithmic delay and it
+        is highly scalable in terms of audio bandwidth, bitrate, and
+        complexity. Further, it provides different modes to efficiently encode speech signals
+        as well as music signals, thus, making it the codec of choice for
+        various applications using the Internet or similar networks.
+      </t>
+      <t>
+        This document defines the Real-time Transport Protocol (RTP)
+        <xref target="RFC3550"/> payload format for packetization
+        of Opus encoded speech and audio data that is essential to
+        integrate the Opus codec in the
+        most compatible way. Further, media type registrations are described for
+        the RTP payload format. More information on the Opus
+        codec can be obtained from <xref target="RFC6716"/>.
+      </t>
+    </section>
+
+    <section title='Conventions, Definitions and Acronyms used in this document'>
+      <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+      "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+      document are to be interpreted as described in <xref target="RFC2119"/>.</t>
+      <t>
+      <list style='hanging'>
+          <t hangText="CBR:"> Constant bitrate</t>
+          <t hangText="CPU:"> Central Processing Unit</t>
+          <t hangText="DTX:"> Discontinuous transmission</t>
+          <t hangText="FEC:"> Forward error correction</

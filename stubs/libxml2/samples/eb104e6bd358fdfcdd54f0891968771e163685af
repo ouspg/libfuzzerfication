@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.10//EN" "xmlspec.dtd" [
+
+<!ENTITY % common SYSTEM "common.dtd" >
+%common;
+
+]>
+<?xml-stylesheet type='text/xsl' href='/2002/xmlspec/xhtml/1.13/xmlspec.xsl'?>
+<spec w3c-doctype="&status;">
+    <header>
+        <title>&sml-if-title;</title>
+
+        <w3c-designation>ignore me, modify /spec/@w3c-doctype instead</w3c-designation>
+        <w3c-doctype>ignore me, modify /spec/@w3c-doctype instead</w3c-doctype>
+
+        <pubdate>
+            <day>&draft.day;</day>
+            <month>&draft.month;</month>
+            <year>&draft.year;</year>
+        </pubdate>
+        <publoc>
+            <loc href="http://www.university.example.org/">http://www.university.example.org/</loc>
+        </publoc>
+    <altlocs>
+      <loc role="xml" href="sml-if.xml">XML</loc>
+    </altlocs>
+    <prevlocs>
+            <loc href="http://www.w3.org/TR/2009/PR-sml-if-20090212/">http://www.w3.org/TR/2009/PR-sml-if-20090212/</loc>
+    </prevlocs>
+        <latestloc>
+            <loc href="http://www.w3.org/TR/sml-if/">http://www.w3.org/TR/sml-if/</loc>
+        </latestloc>
+    <authlist>
+      <author role="editor">
+        <name>Bhalchandra Pandit</name>
+        <affiliation>Microsoft Corporation</affiliation>
+      </author>
+      <author role="editor">
+        <name>Valentina Popescu</name>
+        <affiliation>IBM Corporation</affiliation>
+      </author>
+      <author role="editor">
+        <name>Virginia Smith</name>
+        <affiliation>HP</affiliation>
+      </author>
+    </authlist>
+    <abstract>
+      <p>This specification defines the interchange format for
+      &sml-title; (SML) models. This format identifies the
+      model being interchanged, distinguishes between model
+      definition documents and model instance documents, and defines the binding of
+      rule documents with other documents in the interchange model. </p>
+    </abstract>
+    <status id='status'>
+
+      <p><emph>This section describes the status of this document at the
+      time of its publication. Other documents may supersede this
+      document. A list of current W3C publications and the latest revision
+      of this technical report can be found in the <loc
+      href="http://www.w3.org/TR/">W3C technical reports index</loc> at
+      http://www.w3.org/TR/.</emph></p>
+
+      <p>This is the 30 April 2009 W3C Recommendation of the &sml-if-title;
+specification.  This document has been developed by the <loc href="http://www.w3.org/XML/SML/">Service Modeling Language
+          (SML) Working Group</loc>, which is a part of the <loc href="http://www.w3.org/XML/">Extensible Markup Language (XML) Activity</loc>.</p>
+      <p>Comments on this document are welcome via the Working Group’s
+          <loc href="mailto:public-sml@w3.org">public mailing list</loc>
+          (<loc href="http://lists.w3.org/Archives/Public/public-sml/">public
+archive</loc>).  An <loc href="http://www.w3.org/XML/SML/SMLPRFeatureImplementationReport.html">implementation report</loc> is available.</p>
+     <p>The design of SML has been widely reviewed and satisfies the Working 
+Group's technical requirements.  Only minor editorial changes have 
+been made since the <loc href="http://www.w3.org/TR/2009/PR-sml-if-20090212/">12 February 2009 Proposed Recommendation</loc>.</p>
+     <p>This document has been reviewed by W3C Members, by software 
+developers, and by other W3C groups and interested parties, and is 
+endorsed by the Director as a W3C Recommendation. It is a stable 
+document and may be used as reference material or cited from another 
+document. W3C's role in making the Recommendation is to draw attention 
+to the specification and to promote its widespread deployment. This 
+enhances the functionality and interoperability of the Web.</p>
+      <p>This document was produced by a group operating under the
+          <loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 
+          2004 W3C Patent Policy</loc>.
+          W3C maintains a <loc href="http://www.w3.org/2004/01/pp-impl/41079/status">public list of
+          any patent disclosures</loc> made in connection with the deliverables
+          of the group; that page also includes instructions for
+          disclosing a patent. An individual who has actual knowledge of a
+          patent which the individual believes contains <loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</loc>
+          must disclose the information in accordance with
+          <loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">
+      section 6 of the W3C Patent Policy</loc>.
+      </p>
+    </status>
+
+    <langusage>
+
+            <language id="en-US">English</language>
+        </langusage>
+        <revisiondesc>
+            <p>Last Modified: $Date: 2009-04-22 11:19:09 $</p>
+        </revisiondesc>
+    </header>
+    <body>
+<div1 id='Introduction'>
+<head>Introduction (Non-Normative)<

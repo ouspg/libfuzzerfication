@@ -1,0 +1,5 @@
+<widget xmlns="http://www.w3.org/ns/widgets"
+ id		 ="tests:ak">
+ <name short=" 	 	 	widget 	 	 	short  	 	 	 name 	 	 	 	">Test ak</name>
+ <description>testing assertion ta-ac</description> 
+</widget>

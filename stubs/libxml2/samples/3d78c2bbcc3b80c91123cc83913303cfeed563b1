@@ -1,0 +1,108 @@
+<?xml-stylesheet href="spec.xsl" type="text/xsl"?><specification xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cs="http://www.w3.org/XML/XProc/2006/04/components#" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" class="note" version="5.0-extension">
+<info>
+<title>XInclude 1.1 Requirement and Use Cases</title>
+<w3c-shortname>xinclude-11-requirements</w3c-shortname>
+<pubdate>2012-02-14</pubdate>
+<bibliorelation type="isformatof" xlink:href="Overview.xml">XML</bibliorelation>
+<!--
+<bibliorelation type="isformatof" xlink:href="diff.html">Revision markup</bibliorelation>
+<bibliorelation type="replaces" xlink:href="http://www.w3.org/TR/2010/PR-xproc-20100309/"/>
+-->
+<authorgroup>
+  <author>
+    <personname>Norman Walsh</personname>
+    <affiliation>
+      <orgname>MarkLogic Corporation</orgname>
+    </affiliation>
+    <email>norman.walsh@marklogic.com</email>
+  </author>
+</authorgroup>
+
+<abstract>
+<para>This document summarizes requirements and use cases for possible enhancements
+to XInclude.</para>
+</abstract>
+
+<legalnotice role="status">
+
+<para>Implementation experience has led users of XInclude to suggest a
+number of enhancements. These enhancements would allow XInclude to support
+the needs of richer applications by providing mechanisms to address
+uniqueness constraints, to communicate with processes that occur after
+XInclude, and to take advantage of the fragment identifier scheme
+for <code>text/plain</code> documents.
+This document attempts to enumerate these enhancements.</para>
+
+<para><emphasis>This section describes the status of this document at
+the time of its publication. Other documents may supersede this
+document. A list of current W3C publications and the latest revision
+of this technical report can be found in the <link xlink:href="http://www.w3.org/TR/">W3C technical reports index</link>
+at http://www.w3.org/TR/.</emphasis></para>
+
+<para>This requirements document is being published as a Working Group
+Note. Publication as a Working Group Note does not imply endorsement
+by the W3C Membership. This is a draft document and may be updated,
+replaced or obsoleted by other documents at any time. It is
+inappropriate to cite this document as other than work in
+progress.</para>
+
+<para>This document
+is a product of the <link xlink:href="http://www.w3.org/XML/Core/">W3C XML
+Core Working Group</link> as part of the
+<link xlink:href="http://www.w3.org/XML/">XML Activity</link>.</para>
+
+<para>Please submit any comments on this document to
+<link xlink:href="mailto:www-xml-xinclude-comments@w3.org">www-xml-xinclude-comments@w3.org</link>;
+<link xlink:href="http://lists.w3.org/Archives/Public/www-xml-xinclude-comments/">public
+archives</link> are available.</para>
+
+<para>This document was produced by a group operating under the
+<link xlink:href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5
+February 2004 W3C Patent Policy</link>. W3C maintains a
+<link xlink:href="http://www.w3.org/2004/01/pp-impl/18796/status#disclosures">public
+list of any patent disclosures</link> made in connection with the
+deliverables of the group; that page also includes instructions for
+disclosing a patent. An individual who has actual knowledge of a
+patent which the individual believes contains
+<link xlink:href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
+Claim(s)</link> must disclose the information in accordance with
+<link xlink:href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
+6 of the W3C Patent Policy</link>.</para>
+</legalnotice>
+</info>
+
+<section xml:id="introduction">
+<title>Introduction</title>
+
+<para>It has been several years since the XInclude Recommendation
+was published. This document outlines the requirements and use cases for
+to changes to XInclude: support for
+<biblioref linkend="rfc-5147"/>
+and improved communication between the pre- and post-inclusion Infosets.</para>
+</section>
+
+<section xml:id="rfc5147">
+<title>Support for RFC 5147</title>
+
+<para>XInclude offers facilities for both XML inclusion and plain text
+inclusion. In its current design, the use of fragment identifiers (in
+the <tag class="attribute">xpointer</tag> attribute) is forbidden when
+performing plain text inclusion.</para>
+
+<para>The publication of RFC 5147 introduces a fragment identifier
+syntax for text/plain content. It would be very useful to be able to extract
+portions of a text document with RFC 5147 fragment identifiers just as it is
+useful to be able to extract portions of an XML document with XPointer.</para>
+
+<para>XInclude should be extended to support RFC 5147 fragment identifiers
+when <code>parse="text"</code> is specified.</para>
+
+<section xml:id="text-pointer-design">
+<title>Text pointer design</title>
+
+<para>It's worth considering, briefly, the possible design choices that
+could be made in adding support for RFC 5147. Three seem apparent:</para>
+
+<orderedlist>
+<listitem>
+<pa

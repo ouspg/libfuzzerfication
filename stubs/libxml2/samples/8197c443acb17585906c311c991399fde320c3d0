@@ -1,0 +1,110 @@
+<hei>
+	<Command Type="DemoName" Name="GTA San Egense"/>
+	<Command Type="FadeColor" Time="0" Color="FFFFFF"/>  <!-- synlig -->
+	
+	<Command Type="DefineOverlay" Texture="slide01.png" Id="1"/>
+	<Command Type="DefineOverlay" Texture="slide02.png" Id="2"/>
+	<Command Type="DefineOverlay" Texture="slide03.png" Id="3"/>
+	<Command Type="DefineOverlay" Texture="slide04.png" Id="4"/>
+
+	<Command Type="DefineOverlay" Texture="mission1.jpg" Id="10"/>
+	<Command Type="DefineOverlay" Texture="mission2.jpg" Id="20"/>
+	<Command Type="DefineOverlay" Texture="mission3.jpg" Id="30"/>
+	<Command Type="DefineOverlay" Texture="mission4.jpg" Id="40"/>
+
+	
+	<Command Time="0" Type="SetCamera" Name="Camera01"/>
+
+	<Command Type="FadeColor" Time="0" Color="000000"/>  <!-- synlig -->
+	<Command Type="OverlayShow" Id="1" Opacity="255" Time="0"/>
+	<Command Time="0" Type="Fade" Value="255"/>
+	<Command Time="10" Type="Fade" Value="0"/>
+	<Command Type="OverlayShow" Id="1" Opacity="255" Time="10"/>
+	<Command Type="FadeColor" Time="10" Color="FFFFFF"/>  <!-- synlig -->
+
+	<Command Time="19" Type="Fade" Value="0"/>
+	<Command Type="OverlayShow" Id="1" Opacity="255" Time="20"/>
+	<Command Type="OverlayShow" Id="1" Opacity="0" Time="21"/>
+	<Command Type="OverlayShow" Id="2" Opacity="0" Time="20"/>
+	<Command Type="OverlayShow" Id="2" Opacity="255" Time="21"/>
+	<Command Time="20" Type="Fade" Value="255"/>
+	<Command Time="21" Type="Fade" Value="0"/>
+
+
+
+
+
+
+	<Command Type="OverlayShow" Id="2" Opacity="255" Time="40"/>
+	<Command Type="OverlayShow" Id="2" Opacity="0" Time="41"/>
+	<Command Type="OverlayShow" Id="3" Opacity="0" Time="40"/>
+	<Command Type="OverlayShow" Id="3" Opacity="255" Time="41"/>
+
+	<Command Type="OverlayShow" Id="3" Opacity="255" Time="49"/>
+	<Command Type="OverlayShow" Id="3" Opacity="0" Time="50"/>
+
+
+
+	<Command Type="OverlayShow" Id="10" Opacity="0" Time="95"/>
+	<Command Type="OverlayShow" Id="10" Opacity="255" Time="96"/>
+
+	<Command Type="OverlayShow" Id="10" Opacity="255" Time="125"/>
+	<Command Type="OverlayShow" Id="10" Opacity="0" Time="126"/>
+
+
+
+	<Command Type="OverlayShow" Id="20" Opacity="0" Time="130"/>
+	<Command Type="OverlayShow" Id="20" Opacity="255" Time="131"/>
+
+	<Command Type="OverlayShow" Id="20" Opacity="255" Time="165"/>
+	<Command Type="OverlayShow" Id="20" Opacity="0" Time="166"/>
+
+
+	<Command Type="OverlayShow" Id="30" Opacity="0" Time="170"/>
+	<Command Type="OverlayShow" Id="30" Opacity="255" Time="171"/>
+
+	<Command Type="OverlayShow" Id="30" Opacity="255" Time="215"/>
+	<Command Type="OverlayShow" Id="30" Opacity="0" Time="216"/>
+
+
+	<Command Type="OverlayShow" Id="40" Opacity="0" Time="220"/>
+	<Command Type="OverlayShow" Id="40" Opacity="255" Time="221"/>
+
+	<Command Type="OverlayShow" Id="40" Opacity="255" Time="265"/>
+	<Command Type="OverlayShow" Id="40" Opacity="0" Time="266"/>
+
+
+	<Command Type="OverlayShow" Id="4" Opacity="0" Time="300"/>
+	<Command Type="OverlayShow" Id="4" Opacity="255" Time="301"/>
+
+	<Command Time="320" Type="Fade" Value="0"/>
+	<Command Time="325" Type="Fade" Value="255"/>
+
+
+
+	<Command Type="OverlayShow" Id="1" Opacity="255" Time="0"/>
+	<Command Type="OverlayShow" Id="2" Opacity="0" Time="0"/>
+	<Command Type="OverlayShow" Id="3" Opacity="0" Time="0"/>
+	<Command Type="OverlayShow" Id="4" Opacity="0" Time="0"/>
+	<Command Type="OverlayShow" Id="10" Opacity="0" Time="0"/>
+	<Command Type="OverlayShow" Id="20" Opacity="0" Time="0"/>
+	<Command Type="OverlayShow" Id="30" Opacity="0" Time="0"/>
+	<Command Type="OverlayShow" Id="40" Opacity="0" Time="0"/>
+
+	<Command Type="OverlayShow" Id="1" Opacity="0" Time="1000"/>
+	<Command Type="OverlayShow" Id="2" Opacity="0" Time="1000"/>
+	<Command Type="OverlayShow" Id="3" Opacity="0" Time="1000"/>
+	<Command Type="OverlayShow" Id="4" Opacity="255" Time="1000"/>
+	<Command Type="OverlayShow" Id="10" Opacity="0" Time="1000"/>
+	<Command Type="OverlayShow" Id="20" Opacity="0" Time="1000"/>
+	<Command Type="OverlayShow" Id="30" Opacity="0" Time="1000"/>
+	<Command Type="OverlayShow" Id="40" Opacity="0" Time="1000"/>
+
+
+
+</hei>
+
+
+
+
+

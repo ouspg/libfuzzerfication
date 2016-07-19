@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="XQTSCatalog.xsl" ?>
+<!DOCTYPE test-suite [
+
+<!ELEMENT GroupInfo ( title, description ) >
+
+<!ELEMENT citation-spec ( description | note | spec-URI )* >
+<!ATTLIST citation-spec name NMTOKEN #REQUIRED >
+
+<!ELEMENT citations ( citation-spec+ ) >
+
+<!ELEMENT collection ( description, input-document+ ) >
+<!ATTLIST collection Creator CDATA #REQUIRED >
+<!ATTLIST collection ID NMTOKEN #REQUIRED >
+
+<!ELEMENT comparison ( description ) >
+<!ATTLIST comparison name NMTOKEN #REQUIRED >
+
+<!ELEMENT comparisons ( comparison+ ) >
+
+<!ELEMENT context-properties ( context-property+ ) >
+
+<!ELEMENT context-property EMPTY >
+<!ATTLIST context-property context-type ( dynamic | static ) #REQUIRED >
+<!ATTLIST context-property name CDATA #REQUIRED >
+
+<!ELEMENT contextItem ( #PCDATA ) >
+<!ATTLIST contextItem role NMTOKEN #FIXED "principal-data" >
+
+<!ELEMENT defaultCollection ( #PCDATA ) >
+<!ATTLIST defaultCollection role NMTOKEN #REQUIRED >
+
+<!ELEMENT description ( #PCDATA ) >
+<!ATTLIST description last-mod NMTOKEN #IMPLIED >
+
+<!ELEMENT expected-error ( #PCDATA ) >
+<!ATTLIST expected-error input-document NMTOKEN #IMPLIED >
+<!ATTLIST expected-error spec-version NMTOKENS #IMPLIED >
+
+<!ELEMENT feature EMPTY >
+<!ATTLIST feature name CDATA #REQUIRED >
+
+<!ELEMENT features ( feature+ ) >
+
+<!ELEMENT implementation-defined-item ( description ) >
+<!ATTLIST implementation-defined-item name ID #REQUIRED >
+<!ATTLIST implementation-defined-item spec ( DataModel | FuncOps | Serialization | XQuery ) #REQUIRED >
+
+<!ELEMENT implementation-defined-items ( implementation-defined-item+ ) >
+
+<!ELEMENT input-URI ( #PCDATA ) >
+<!ATTLIST input-URI role NMTOKEN #FIXED "principal-data" >
+<!ATTLIST input-URI variable ( input-context | input-context1 | input-context2 ) #REQUIRED >
+
+<!ELEMENT input-document ( #PCDATA ) >
+
+<!ELEMENT input-file ( #PCDATA ) >
+<!ATTLIST input-file role NMTOKEN #FIXED "principal-data" >
+<!ATTLIST input-file variable ( input-context | input-context1 | input-context2 | input-context3 | inputDocument | var ) #REQUIRED >
+
+<!ELEMENT input-query EMPTY >
+<!ATTLIST input-query date CDATA #REQUIRED >
+<!ATTLIST input-query name ID #REQUIRED >
+<!ATTLIST input-query variable NMTOKEN #FIXED "x" >
+
+<!ELEMENT module ( #PCDATA | description )* >
+<!ATTLIST module Creator CDATA #IMPLIED >
+<!ATTLIST module FileName CDATA #IMPLIED >
+<!ATTLIST module ID ID #IMPLIED >
+<!ATTLIST module namespace CDATA #IMPLIED >
+
+<!ELEMENT note ( #PCDATA ) >
+
+<!ELEMENT output-file ( #PCDATA ) >
+<!ATTLIST output-file compare ( Fragment | Ignore | Inspect | Text | XML ) #REQUIRED >
+<!ATTLIST output-file input-document NMTOKEN #IMPLIED >
+<!ATTLIST output-file spec-version NMTOKENS #IMPLIED >
+<!ATTLIST output-file role NMTOKEN #FIXED "principal" >
+
+<!ELEMENT query ( description? ) >
+<!ATTLIST query date CDATA #REQUIRED >
+<!ATTLIST query name NMTOKEN #REQUIRED >
+<!ATTLIST query static-name NMTOKEN #IMPLIED >
+
+<!ELEMENT reflects-resolution ( #PCDATA ) >
+
+<!ELEMENT role ( description, note? ) >
+<!ATTLIST role name NMTOKEN #REQUIRED >
+
+<!ELEMENT roles ( role+ ) >
+
+<!ELEMENT scenario ( description ) >
+<!ATTLIST scenario name NMTOKEN #REQUIRED >
+
+<!ELEMENT scenarios ( scenario+ ) >
+
+<!ELEMENT schema ( description ) >
+<!ATTLIST schema FileName CDATA #REQUIRED >
+<!ATTLIST schema ID ID #REQUIRED >
+<!ATTLIST schema uri CDATA #REQUIRED >
+
+<!ELEMENT source ( description, note* ) >
+<!ATTLIST source Creator CDATA #REQUIRED >
+<!ATTLIST source FileName CDATA #REQUIRED >
+<!ATTLIST source ID ID #REQUIRED >
+<!ATTLIST source schema NMTOKEN #IMPLIED >
+
+<!ELEMENT sources ( source+, schema+, collection+, module+ ) >
+
+<!ELEMENT spec-URI ( #PCDATA ) >
+
+<!ELEMENT spec-citation EMPTY >
+<!ATTLIST spec-citation section-number NMTOKEN #REQUIRED >
+<!ATTLIST spec-citation section-pointer NMTOKEN #REQUIRED >
+<!ATTLIST spec-citation section-title CDATA #REQUIRED >
+<!ATTLIST spec-citation spec ( DataModel | FuncOps | UseCases | XQuery ) #REQUIRED >
+
+<!ELEMENT test-case ( contextItem | defaultCollection | description | expected-error | input-URI | input-file | input-query | module | output-file | query | reflects-resolution | spec-citation )* >
+<!ATTLIST test-case Creator CDATA #REQUIRED >
+<!ATTLIST test-case FilePath CDATA #REQUIRED >
+<!ATTLIST test-case is-XPath2 ( false | true ) #IMPLIED >
+<!ATTLIST test-case name ID #REQUIRED >
+<!ATTLIST test-case scenario ( parse-error | runtime-error | standard ) #REQUIRED >
+
+<!ELEMENT test-group ( GroupInfo | test-case | test-group )* >
+<!ATTLIST test-group featureOwner CDATA #IMPLIED >
+<!ATTLIST test-group is-XPath2 ( false | true ) #IMPLIED >
+<!ATTLIST test-group name ID #REQUIRED >
+<!ATTLIST test-group xmlns CDATA #IMPLIED >
+
+<!ELEMENT test-suite ( test-suite-info, citations, comparisons, roles, scenarios, sources, implementation-defined-items, features, context-propert

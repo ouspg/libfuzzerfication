@@ -1,0 +1,15 @@
+<?xml version="1.128"?>
+<?xml version="1.1"?>
+<!DOCTYPE root 
+[
+<!ELEMENT root (#PCDATA)>
+<!ATTLIST root att CDATA #IMPLIED>
+<!NOTATION JPGformat SYSTEM "JPGFormat">
+<!--* Test all legal patterns derived from P170141183460469231731687303715884105728-76 *-->
+<!ENTITY % pe1 '<!ATTLIST root att340282366920938463463374607431768211455 CDATA "&ge0;">'>
+
+<!ENTITY ge2  SYSTEM "image.jpg" NDATA JPGformat>
+%pe1;
+<!--* Test all legal patterns derived from P3344275801-2 *-->
+<!ENTITY ge18446744073709551617 "attdefaultvalue" >
+<!ENTITY % pe2 PUBLIC "-//w-457435628c//any" "ibm340282366920938463463374607431768211532 -->

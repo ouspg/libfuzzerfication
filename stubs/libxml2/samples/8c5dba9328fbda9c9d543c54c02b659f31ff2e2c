@@ -1,0 +1,46 @@
+<refentry id="lineage.element">
+<?dbhtml filename="lineage.html"?>
+<refentryinfo>
+<pubdate>$Date: 2004/12/21 16:01:30 $</pubdate>
+<releaseinfo>$Revision: 1.1.1.1 $</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>elements</primary>
+<secondary>lineage</secondary></indexterm>
+<refentrytitle>lineage</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>lineage</refname>
+<refpurpose>&lineage.purpose;</refpurpose>
+</refnamediv>
+
+&lineage.synopsis.gen;
+<refsect1 condition='ref.description'><title>Description</title>
+
+<para>
+<sgmltag>Lineage</sgmltag> is a portion of a person's name, typically
+&ldquo;Jr.&rdquo; or &ldquo;Sr.&rdquo;
+</para>
+
+<refsect2><title>Processing expectations</title>
+<para>
+&format.inline; In an <sgmltag>Address</sgmltag>, this element may inherit
+the verbatim qualities of an address.
+</para>
+</refsect2>
+
+
+&lineage.parents.gen;
+&lineage.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>See Also</title>
+&lineage.seealso.gen;
+</refsect1>
+<refsect1><title>Examples</title>
+
+&lineage.example.seealso.gen;
+</refsect1>
+</refentry>
+

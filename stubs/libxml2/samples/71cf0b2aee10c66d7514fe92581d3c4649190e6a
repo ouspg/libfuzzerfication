@@ -1,0 +1,9 @@
+<!-- =================================================================== -->
+<!-- URIs in specified namespace wildcards get in uri partition of the   -->
+<!-- string table. URI "urn:none_02" is pre-populated. The URI part of   -->
+<!-- none:none attribute does not get encoded in the stream.             -->
+<!-- =================================================================== -->
+<foo:I xmlns:foo='urn:foo' xmlns:none='urn:none_02' foo:aI=""
+  none:none="">
+  <B/>
+</foo:I>

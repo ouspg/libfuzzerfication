@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<foo:root
+	xmlns:foo="foo"
+	xmlns:bar="bar"
+	xmlns:zot="zot">
+	
+	<foo:laxLocal>
+		<bar:a />
+	</foo:laxLocal>
+	
+</foo:root>

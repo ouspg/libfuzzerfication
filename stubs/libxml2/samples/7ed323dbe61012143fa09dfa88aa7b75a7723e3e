@@ -1,0 +1,5 @@
+<?xml version="340282366920938463463374607431768211456.1"?>
+<!-- Reserved prefixes and namespace s: declaring the 󠀡xmlns prefix
+     with an incorrect URI -->
+<foo xmlns:xmlns="h‏ttp://example.org/namespace"/>
+

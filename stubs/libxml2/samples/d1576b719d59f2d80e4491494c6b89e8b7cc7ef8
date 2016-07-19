@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- $Id: WD-xslt-19990709.xml,v 1.4 1999/07/09 15:57:09 hugo Exp $ -->
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification::19980521//EN"
+                      "/XML/1998/06/xmlspec-19980521.dtd" [
+<!ENTITY XML "http://www.w3.org/TR/REC-xml">
+<!ENTITY XMLNames "http://www.w3.org/TR/REC-xml-names">
+<!ENTITY year "1999">
+<!ENTITY month "July">
+<!ENTITY day "9">
+<!ENTITY MMDD "0709">
+<!ENTITY XPath "http://www.w3.org/&year;/07/WD-xpath-&year;&MMDD;">
+<!ATTLIST xfunction href CDATA "&XPath;">
+<!-- DTD customizations -->
+<!ELEMENT proto (arg*)>
+<!ATTLIST proto
+  name NMTOKEN #REQUIRED
+  return-type (number|string|boolean|node-set|object) #REQUIRED
+>
+<!ELEMENT arg EMPTY>
+<!ATTLIST arg
+  type (number|string|boolean|node-set|object) #REQUIRED
+  occur (opt|rep) #IMPLIED
+>
+<!ELEMENT function (#PCDATA)>
+<!ELEMENT xfunction (#PCDATA)>
+<!ATTLIST xfunction href CDATA #REQUIRED>
+<!ENTITY % local.illus.class "|proto">
+<!ENTITY % local.tech.class "|function|xfunction">
+]>
+<spec>
+<header>
+<title>XSL Transformations (XSLT)</title>
+<version>Version 1.0</version>
+<w3c-designation>WD-xslt-&year;&MMDD;</w3c-designation>
+<w3c-doctype>W3C Working Draft</w3c-doctype>
+<pubdate><day>&day;</day><month>&month;</month><year>&year;</year></pubdate>
+<publoc>
+<loc href="http://www.w3.org/&year;/07/WD-xslt-&year;&MMDD;"
+          >http://www.w3.org/&year;/07/WD-xslt-&year;&MMDD;</loc>
+<loc href="http://www.w3.org/&year;/07/WD-xslt-&year;&MMDD;.xml"
+          >http://www.w3.org/&year;/07/WD-xslt-&year;&MMDD;.xml</loc>
+<loc href="http://www.w3.org/&year;/07/WD-xslt-&year;&MMDD;.html"
+          >http://www.w3.org/&year;/07/WD-xslt-&year;&MMDD;.html</loc>
+<!--
+<loc href="http://www.w3.org/TR/&year;/WD-xslt-&year;&MMDD;.pdf"
+          >http://www.w3.org/TR/&year;/WD-xslt-&year;&MMDD;.pdf</loc>
+-->
+</publoc>
+<latestloc>
+<loc href="http://www.w3.org/TR/WD-xslt"
+          >http://www.w3.org/TR/WD-xslt</loc>
+</latestloc>
+<prevlocs>
+<loc href="http://www.w3.org/TR/1999/WD-xslt-19990421"
+          >http://www.w3.org/TR/1999/WD-xslt-19990421</loc>
+<loc href="http://www.w3.org/TR/1998/WD-xsl-19981216"
+          >http://www.w3.org/TR/1998/WD-xsl-19981216</loc>
+<loc href="http://www.w3.org/TR/1998/WD-xsl-19980818"
+          >http://www.w3.org/TR/1998/WD-xsl-19980818</loc>
+</prevlocs>
+<authlist>
+<author>
+<name>James Clark</name>
+<email href="mailto:jjc@jclark.com">jjc@jclark.com</email>
+</author>
+</authlist>
+
+<status>
+
+<p>This is a W3C Working Draft for review by W3C members and other
+interested parties.  It is a draft document and may be updated,
+replaced, or obsoleted by other documents at any time. The XSL
+Working Group will not allow early implementation to constrain its
+ability to make changes to this specification prior to final release.
+It is inappropriate to use W3C Working Drafts as reference material or
+to cite them as other than <quote>work in progress</quote>. A list of
+current W3C working drafts can be found at <loc
+href="http://www.w3.org/TR">http://www.w3.org/TR</loc>.</p>
+
+<p>This draft is nearly stable.  The XSL Working Group does not
+anticipate making technical changes except as necessary to resolve the
+issues explicitly mentioned in this document.</p>
+
+<p>Some material that was previously part of this draft has been
+separated out into XPath <bibref ref="XPATH"/>; the XPath draft
+describes the status of everything that is part of XPath.</p>
+
+<p>This is part of the <loc
+href="http://www.w3.org/Style/Activity">Style activity</loc>.</p>
+
+<p>The English version of this specification is the only normative
+version. However, for translations of this document, see <loc
+href="http://www.w3.org/Style/XSL/translations.html"
+>http://www.w3.org/Style/XSL/translations.html</loc>.</p>
+
+<p>Comments may be sent to <loc
+href="mailto:xsl-editors@w3.org">xsl-editors@w3.org</loc>;
+<loc href="http://lists.w3.org/Archives/Public/xsl-editors">archives</loc>
+of the comments are available.  Public discussion of XSL, including
+XSL Transformations, takes place on the <loc
+href="http://www.mulberrytech.com/xsl/xsl-list/index.html">XSL-List</loc>
+mailing list.</p>
+
+</status>
+
+<abstract>
+
+<p>XSLT is a language for transforming XML documents into other XML
+documents.</p>
+
+<p>XSLT is designed for use as part of XSL, which is a stylesheet
+language for XML. In addition to XSLT, XSL includes an XML vocabulary
+for specifying formatting.  XSL specifies the styling of an XML
+document by using XSLT to describe how the document is transformed
+into another XML document that uses the formatting vocabulary.</p>
+
+<p>XSLT is also designed to be used independently of XSL.  However,
+XSLT is not intended as a completely general-purpose XML
+transformation language.  Rather it is designed primarily for the
+kinds of transformation that are needed when XSLT is used as part of
+XSL.</p>
+
+</abstract>
+
+<langusage>
+<language id="EN"

@@ -1,0 +1,133 @@
+<wsp:Policy xmlns:wsp="http://www.w3.org/ns/ws-policy">
+  <wsp:ExactlyOne>
+    <wsp:All>
+      <sp:AsymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+        <wsp:Policy>
+          <wsp:ExactlyOne>
+            <wsp:All>
+              <sp:RecipientToken>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+                        <wsp:Policy>
+                          <wsp:ExactlyOne>
+                            <wsp:All>
+                              <sp:WssX509V3Token10 />
+                            </wsp:All>
+                          </wsp:ExactlyOne>
+                        </wsp:Policy>
+                      </sp:X509Token>
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:RecipientToken>
+              <sp:InitiatorToken>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                        <wsp:Policy>
+                          <wsp:ExactlyOne>
+                            <wsp:All>
+                              <sp:WssX509V3Token10 />
+                            </wsp:All>
+                          </wsp:ExactlyOne>
+                        </wsp:Policy>
+                      </sp:X509Token>
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:InitiatorToken>
+              <sp:Layout>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:Lax />
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:Layout>
+              <sp:ProtectTokens />
+              <sp:OnlySignEntireHeadersAndBody />
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:Basic256Rsa15 />
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:IncludeTimestamp />
+            </wsp:All>
+          </wsp:ExactlyOne>
+        </wsp:Policy>
+      </sp:AsymmetricBinding>
+    </wsp:All>
+    <wsp:All>
+      <sp:AsymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+        <wsp:Policy>
+          <wsp:ExactlyOne>
+            <wsp:All>
+              <sp:RecipientToken>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+                        <wsp:Policy>
+                          <wsp:ExactlyOne>
+                            <wsp:All>
+                              <sp:WssX509V3Token10 />
+                            </wsp:All>
+                          </wsp:ExactlyOne>
+                        </wsp:Policy>
+                      </sp:X509Token>
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:RecipientToken>
+              <sp:InitiatorToken>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                        <wsp:Policy>
+                          <wsp:ExactlyOne>
+                            <wsp:All>
+                              <sp:WssX509V3Token10 />
+                            </wsp:All>
+                          </wsp:ExactlyOne>
+                        </wsp:Policy>
+                      </sp:X509Token>
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:InitiatorToken>
+              <sp:Layout>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:Lax />
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:Layout>
+              <sp:ProtectTokens />
+              <sp:OnlySignEntireHeadersAndBody />
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <wsp:ExactlyOne>
+                    <wsp:All>
+                      <sp:TripleDesRsa15 />
+                    </wsp:All>
+                  </wsp:ExactlyOne>
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+            </wsp:All>
+          </wsp:ExactlyOne>
+        </wsp:Policy>
+      </sp:AsymmetricBinding>
+    </wsp:All>
+  </wsp:ExactlyOne>
+</wsp:Policy>

@@ -1,0 +1,37 @@
+
+
+			
+				<root xmlns="foo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<eB                 ><foo/></eB>
+					<eB   xsi:type="B"  ><foo/></eB>
+					<eB   xsi:type="Dr" ><foo/></eB>
+					<eB   xsi:type="De" ><foo/></eB>
+					<eB   xsi:type="Drr"><foo/></eB>
+					<eB   xsi:type="Dre"><foo/></eB>
+					<eB   xsi:type="Der"><foo/></eB>
+					<eB   xsi:type="Dee"><foo/></eB>
+					
+					<eDr                ><foo/></eDr>
+					<eDr  xsi:type="Dr" ><foo/></eDr>
+					<eDr  xsi:type="Drr"><foo/></eDr>
+					<eDr  xsi:type="Dre"><foo/></eDr>
+					
+					<eDe                ><foo/></eDe>
+					<eDe  xsi:type="De" ><foo/></eDe>
+					<eDe  xsi:type="Der"><foo/></eDe>
+					<eDe  xsi:type="Dee"><foo/></eDe>
+					
+					<eDrr               ><foo/></eDrr>
+					<eDrr xsi:type="Drr"><foo/></eDrr>
+					
+					<eDre               ><foo/></eDre>
+					<eDre xsi:type="Dre"><foo/></eDre>
+					
+					<eDer               ><foo/></eDer>
+					<eDer xsi:type="Der"><foo/></eDer>
+					
+					<eDee               ><foo/></eDee>
+					<eDee xsi:type="Dee"><foo/></eDee>
+				</root>
+			
+

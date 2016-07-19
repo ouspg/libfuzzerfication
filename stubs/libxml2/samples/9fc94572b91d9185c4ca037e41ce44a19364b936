@@ -1,0 +1,8 @@
+<columnlist>
+<column name="R%E9pertoire%20local" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="180" remotewidth="180" />
+<column name="Remarques" align="center" show="TRUE" share="FALSE" builtin="TRUE" localwidth="36" remotewidth="36" />
+<column name="Taille" align="right" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-2" remotewidth="-2" />
+<column name="Type" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="60" remotewidth="60" />
+<column name="Modifi%E9" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="102" remotewidth="102" />
+<column name="Extrait%20par" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-1" remotewidth="-1" />
+</columnlist>

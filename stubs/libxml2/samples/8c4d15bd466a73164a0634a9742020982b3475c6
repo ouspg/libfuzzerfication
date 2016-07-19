@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="examples">
+<div class="example">
+
+   <p>In this example, each ideograph in the text <span lang="ja">斎藤信男</span> is annotated with
+   its reading.</p>
+
+   <pre lang="ja">... <ruby>
+ 斎 <rt> さい </rt>
+ 藤 <rt> とう </rt>
+ 信 <rt> のぶ </rt>
+ 男 <rt> お         </rt>
+</ruby> ...]]></pre>
+
+   <p>This might be rendered as:</p>
+
+   <p><img alt="The four main ideographs, each with its reading annotation rendered in a smaller font above it." src="images/sample-ruby.png"/></p>
+
+  </div>
+
+</div>

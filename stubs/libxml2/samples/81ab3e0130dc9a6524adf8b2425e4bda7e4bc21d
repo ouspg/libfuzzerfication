@@ -1,0 +1,19 @@
+<doc>
+    <e value=" 12       "/>
+    <e value=" 12.02    "/>
+    <e value=" 0.001    "/>
+    <e value=" 12.      "/>
+    <e value=" .001     "/>
+    <e value=" 12.000   "/>
+    <e value=" .001000  "/>
+    <e value=" 12e8     "/>
+    <e value=" 12e-8    "/>
+    <e value=" -123.456 "/>
+    <e value=" +123.456 "/>
+    <e value=" INF      "/>
+    <e value=" +INF     "/>
+    <e value=" -INF     "/>
+    <e value=" NaN      "/>
+    <e value=" -0       "/>
+    <e value=" -0.00    "/>
+</doc>

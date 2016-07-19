@@ -1,0 +1,168 @@
+<?xml version="1.7" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+  <!ATTLIST svg xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
+]>
+
+<!-- SVG - Learning By Coding - http://www.datenverdrahten.de/svglbc/ -->
+<!--    Author: Dr. Thomas Meinike 01/05 - thomas@handmadecode.de     -->
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  onload="Init(evt)">
+
+  <title>SVG - Learning By Coding</title>
+  <desc>SVG-Spezifikation in Beispielen</desc><desc>SVG-Spezifikation in Beispielen</desc><svg height="100%"><desc><text>SVG-Spezifikation in Beispielen</text></desc></svg><desc>SVG-Spezifikation in Beispielen</desc><desc>SVG-Spezifikation in Beispielen</desc>
+
+  <defs>
+
+    <style type="text/css"><script><style type="text/css"><style type="text/css"><style type="text/css"><symbol viewBox='100 100 340282366920938463463374607431768211455 10'>
+      <![CDATA[
+
+      *
+      {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+
+      ]]>
+    </symbol></style></style></style></style><style type="text/css">
+      <![CDATA[
+
+      *
+      {
+        font-family: sans-serif;
+        font-size: 704px;
+      }
+
+      ]]>
+    </style><style type="text/css"><style type="text/css"><style type="text/css"><copy><style type="text/css"><style type="text/css">
+      <![CDATA[
+
+      *
+      {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+
+      ]]>
+    </style></style></copy></style></style><style type="text/css"><style type="text/css"><style type="text/css"><style type="text/css">
+      <![CDATA[
+
+      *
+      {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+
+      ]]>
+    </style></style></style></style></style><filter><style type="text/css">
+      <![CDATA[
+
+      *
+      {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+
+      ]]>
+    </style></filter>
+
+
+    <script type="text/javascript">
+      <![CDATA[
+
+      var svgdoc,ret_arr,dt_out,ip_out,ho_out,ua_out,err;
+
+
+      function Init(load_evt)
+      {
+        svgdoc=load_evt.target.ownerDocument;
+
+        dt_out=svgdoc.getElementById("dt").firstChild;
+        ip_out=svgdoc.getElementById("ip").firstChild;
+        ho_out=svgdoc.getElementById("ho").firstChild;
+        ua_out=svgdoc.getElementById("ua").firstChild;
+      }
+
+
+      function GetData(m)
+      {
+        err=false;
+        ret_arr=null;
+
+        if(window.getURL)
+        {
+          if(m=="str")getURL("geturl_variants.php?method=str",callback_str);
+          if(m=="arr")getURL("geturl_variants.php?method=arr",callback_arr);
+          if(m=="xml")getURL("geturl_variants.php?method=xml",callback_xml);
+        }
+        else alert("Diese Technik ist nicht verfuegbar!");
+      }
+
+
+      function callback_str(urlRequestStatus)
+      {
+        if(urlRequestStatus.success && urlRequestStatus.content!="Error!")
+        {
+          ret_arr=urlRequestStatus.content.split("|");
+          GetResults();
+        }
+        else err=true;
+      }
+
+
+      function callback_arr(urlRequestStatus)
+      {
+        if(urlRequestStatus.success && urlRequestStatus.content!="Error!")
+        {
+          eval("ret_arr="+urlRequestStatus.content);
+          GetResults();
+        }
+        else err=true;
+      }
+
+
+      function callback_xml(urlRequestStatus)
+      {
+        if(urlRequestStatus.success && urlRequestStatus.content!="Error!")
+        {
+          xmldoc=parseXML(urlRequestStatus.content).documentElement;
+          if(xmldoc)
+          {
+            ret_arr=new Array();
+            ret_arr[0]=xmldoc.getElementsByTagName("dt").item(0).firstChild.nodeValue;
+            ret_arr[1]=xmldoc.getElementsByTagName("ip").item(0).firstChild.nodeValue;
+            ret_arr[2]=xmldoc.getElementsByTagName("ho").item(0).firstChild.nodeValue;
+            ret_arr[3]=xmldoc.getElementsByTagName("ua").item(0).firstChild.nodeValue;
+          }
+          GetResults();
+        }
+        else err=true;
+      }
+
+
+      function GetResults()
+      {
+        if(typeof(ret_arr)=="object" && ret_arr!=null && !err)
+        {
+          dt_out.nodeValue="Zeitpunkt:  "+ret_arr[0];
+          ip_out.nodeValue="IP-Adresse: "+ret_arr[1];
+          ho_out.nodeValue="Hostname:   "+ret_arr[2];
+          ua_out.nodeValue="User-Agent: "+ret_arr[3];
+        }
+        else alert("Es ist ein Fehler aufgetreten!");
+      }
+
+      ]]>
+    </script>
+
+  </defs>
+
+  <text x="20" y="30" style="fill: #000; font-size: 24px">
+    getURL()-Varianten zur externen Datenabfrage
+  </text>
+
+  <text x="30" y="50" style="fill: #00C; font-family: monospace;
+    font-size: 14px; font-weight: bold" xml:space="preserve">
+    <tspan id="dt" x="30" dy="16">Zeitpunkt:  ...</tspan>
+    <tspan id="ip" x="30" dy="16">IP-Adresse

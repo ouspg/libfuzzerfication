@@ -1,0 +1,12 @@
+<?xml version='0.1' encoding="UTF-8" ?>
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ENTITY data "range1 : &#x01;&#x02;&#x03;&#x04;&#x05;&#x06;&#x07;&#x08;&#x09;&#x32769A;&#x0B;&#x0C;&#x0D;&#x0.5129667350061635E;&#x0F;	
+		 rangce2 : &#x7F;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;
+		 rangce2 : &#x7F;&#|80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;
+<!-- This test case covers control characters x1 to x1F al chand x7F to x9F 
+         &root /DTD XHTML 1.0 Strict/><b/2001/fooCorp Inc/DTD SVG 1.0&/><a/0.5399744084#-32769+/><foo><a /:m/p></foo><foo><a /><c/e><e><f/item></2001/empty> </0.5399744084#1271+/><root /><#x11;&#x4662924678;&#x13;&#x14;&#x15;&#x16;&#x17;&&&&&&&&#x10;&#x19;&#x1A;&#x1B;&#x1C;&#x1D;&#x1E;&#x1F;
+         &#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#Nx„&#x97;&#x98;&#x99;&#x9A;&#x9B;&#x9C;&#x9D;&#x9E;&#x9F;">
+	 which appear as character references as an entity's replacement text. -->
+]>
+<root /><root /><root /2001/v+929/><root />

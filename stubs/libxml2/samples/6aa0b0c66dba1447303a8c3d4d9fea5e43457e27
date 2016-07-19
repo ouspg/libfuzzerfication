@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!-- 
+    Web Services Addressing Logs
+    $Header$
+-->
+
+<logs xmlns="http://www.w3.org/2002/ws/addr/testsuite/logs/">
+    <participants>
+        <participant>Axis</participant>
+        <participant>IBM</participant>
+        <participant>JBoss</participant>
+        <participant>Microsoft</participant>
+        <participant>Sun</participant>
+        <participant>WSO2</participant>
+    </participants>
+        <log xml:id="IBM-IBM-Axis" file="../report/IBM-IBM-Axis.xml" source="IBM" client="IBM" server="Axis">
+	    <title>IBM capture from IBM to Axis.</title>
+	</log>
+
+        <log xml:id="IBM-IBM-IBM" file="../report/IBM-IBM-IBM.xml" source="IBM" client="IBM" server="IBM">
+	    <title>IBM capture from IBM to IBM.</title>
+	</log>
+
+        <log xml:id="IBM-IBM-JBoss" file="../report/IBM-IBM-JBoss.xml" source="IBM" client="IBM" server="JBoss">
+	    <title>IBM capture from IBM to JBoss.</title>
+	</log>
+
+        <log xml:id="IBM-IBM-Microsoft" file="../report/IBM-IBM-Microsoft.xml" source="IBM" client="IBM" server="Microsoft">
+	    <title>IBM capture from IBM to Microsoft.</title>
+	</log>
+
+        <log xml:id="IBM-IBM-Sun" file="../report/IBM-IBM-Sun.xml" source="IBM" client="IBM" server="Sun">
+	    <title>IBM capture from IBM to Sun.</title>
+	</log>
+
+        <log xml:id="WSO2-IBM-WSO2" file="../report/WSO2-IBM-WSO2.xml" source="WSO2" client="IBM" server="WSO2">
+	    <title>WSO2 capture from IBM to WSO2.</title>
+	</log>
+
+        <log xml:id="JBoss-JBoss-Axis" file="../report/JBoss-JBoss-Axis.xml" source="JBoss" client="JBoss" server="Axis">
+	    <title>JBoss capture from JBoss to Axis.</title>
+	</log>
+
+        <log xml:id="JBoss-JBoss-IBM" file="../report/JBoss-JBoss-IBM.xml" source="JBoss" client="JBoss" server="IBM">
+	    <title>JBoss capture from JBoss to IBM.</title>
+	</log>
+
+        <log xml:id="JBoss-JBoss-JBoss" file="../report/JBoss-JBoss-JBoss.xml" source="JBoss" client="JBoss" server="JBoss">
+	    <title>JBoss capture from JBoss to JBoss.</title>
+	</log>
+
+        <log xml:id="JBoss-JBoss-Microsoft" file="../report/JBoss-JBoss-Microsoft.xml" source="JBoss" client="JBoss" server="Microsoft">
+	    <title>JBoss capture from JBoss to Microsoft.</title>
+	</log>
+
+        <log xml:id="JBoss-JBoss-Sun" file="../report/JBoss-JBoss-Sun.xml" source="JBoss" client="JBoss" server="Sun">
+	    <title>JBoss capture from JBoss to Sun.</title>
+	</log>
+
+        <log xml:id="JBoss-JBoss-WSO2" file="../report/JBoss-JBoss-WSO2.xml" source="JBoss" client="JBoss" server="WSO2">
+	    <title>JBoss capture from JBoss to WSO2.</title>
+	</log>
+
+        <log xml:id="Microsoft-Microsoft-Axis" file="../report/Microsoft-Microsoft-Axis.xml" source="Microsoft" client="Microsoft" server="Axis">
+	    <title>Microsoft capture from Microsoft to Axis.</title>
+	</log>
+
+        <log xml:id="Microsoft-Microsoft-IBM" file="../report/Microsoft-Microsoft-IBM.xml" source="Microsoft" client="Microsoft" server="IBM">
+	    <title>Microsoft capture from Microsoft to IBM.</title>
+	</log>
+
+        <log xml:id="Microsoft-Microsoft-JBoss" file="../report/Microsoft-Microsoft-JBoss.xml" source="Microsoft" client="Microsoft" server="JBoss">
+	    <title>Microsoft capture from Microsoft to JBoss.</title>
+	</log>
+
+        <log xml:id="Microsoft-Microsoft-Microsoft" file="../report/Microsoft-Microsoft-Microsoft.xml" source="Microsoft" client="Microsoft" server="Microsoft">
+	    <title>Microsoft capture from Microsoft to Microsoft.</title>
+	</log>
+
+        <log xml:id="Microsoft-Microsoft-Sun" file="../report/Microsoft-Microsoft-Sun.xml" source="Microsoft" client="Microsoft" server="Sun">
+	    <title>Microsoft capture from Microsoft to Sun.</title>
+	</log>
+
+        <log xml:id="Microsoft-Microsoft-WSO2" file="../report/Microsoft-Microsoft-WSO2.xml" source="Microsoft" client="Microsoft" server="WSO2">
+	    <title>Microsoft capture from Microsoft to WSO2.</title>
+	</log>
+
+        <log xml:id="IBM-Sun-Axis" file="../report/IBM-Sun-Axis.xml" source="IBM" client="Sun" server="Axis">
+	    <title>IBM capture from Sun to Axis.</title>
+	</log>
+
+        <log xml:id="IBM-Sun-IBM" file="../report/IBM-Sun-IBM.xml" source="IBM" client="Sun" server="IBM">
+	    <title>IBM capture from Sun to IBM.</title>
+	</log>
+
+        <log xml:id="IBM-Sun-JBoss" file="../report/IBM-Sun-JBoss.xml" source="IBM" client="Sun" server="JBoss">
+	    <title>IBM capture from Sun to JBoss.</title>
+	</log>
+
+        <log xml:id="IBM-Sun-Microsoft" file="../report/IBM-Sun-Microsoft.xml" source="IBM" client="Sun" server="Microsoft">
+	    <title>IBM capture from Sun to Microsoft.</title>
+	</log>
+
+        <log xml:id="Sun-Sun-Sun" file="../report/Sun-Sun-Sun.xml" source="Sun" client="Sun" server="Sun">
+	    <title>Sun capture from Sun to Sun.</title>
+	</log>
+
+        <log xml:id="WSO2-Sun-WSO2" file="../report/WSO2-Sun-WSO2.xml" source="WSO2" client="Sun" server="WSO2">
+	    <title>WSO2 capture from Sun to WSO2.</title>
+	</log>
+
+        <log xml:id="WSO2-WSO2-Axis" file="../report/WSO2-WSO2-A

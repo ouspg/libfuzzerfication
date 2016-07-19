@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="../test.css" ?>
+<!DOCTYPE html [
+	<!ATTLIST section id ID #IMPLIED>
+	<!ATTLIST h       id ID #IMPLIED>
+	<!ATTLIST div     id ID #IMPLIED>
+	<!ATTLIST nl      id ID #IMPLIED>
+
+  <!-- for the model attribute to work -->
+  <!ATTLIST xforms:model id ID #IMPLIED>
+
+  <!-- for the bind attribute to work -->
+  <!ATTLIST xforms:bind id ID #IMPLIED>
+
+  <!-- for the instance() function to work -->
+  <!ATTLIST xforms:instance id ID #IMPLIED>
+
+  <!-- for submit to work -->
+  <!ATTLIST xforms:submission id ID #IMPLIED>
+
+  <!-- for setfocus and other events to work -->
+  <!ATTLIST xforms:input id ID #IMPLIED>
+  <!ATTLIST xforms:secret id ID #IMPLIED>
+  <!ATTLIST xforms:textarea id ID #IMPLIED>
+  <!ATTLIST xforms:output id ID #IMPLIED>
+  <!ATTLIST xforms:upload id ID #IMPLIED>
+  <!ATTLIST xforms:range id ID #IMPLIED>
+  <!ATTLIST xforms:trigger id ID #IMPLIED>
+  <!ATTLIST xforms:submit id ID #IMPLIED>
+  <!ATTLIST xforms:select id ID #IMPLIED>
+  <!ATTLIST xforms:select1 id ID #IMPLIED>
+
+  <!-- for toggle to work -->
+  <!ATTLIST xforms:case id ID #IMPLIED>
+
+  <!-- for repeat stuff to work -->
+  <!ATTLIST xforms:repeat id ID #IMPLIED>
+
+  <!-- (also any element with xforms:repeat-* attributes -->
+ 	<!ATTLIST table      id ID #IMPLIED>
+  <!ATTLIST td         id ID #IMPLIED>
+]>
+<html xmlns="http://www.w3.org/2002/06/xhtml2"
+      xmlns:xforms="http://www.w3.org/2002/xforms"
+      xmlns:ev="http://www.w3.org/2001/xml-events"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:my="http://example.com"
+      xml:lang="en">
+  <head>
+    <title>The action element (2)</title>
+
+    <xforms:model id="mymodel">
+        <xforms:instance>
+	        <my:root>
+                <my:test>10</my:test>
+            </my:root>
+	    </xforms:instance>
+        <xforms:message level="modal" ev:event="xforms-rebuild">xforms-rebuild dispatched</xforms:message>
+    </xforms:model>
+
+  </head>
+  <body>
+    <h>The action element (2)</h>
+    <p>Assertions tested by this test case:</p>
+    <nl>
+        <li href="!-- TBD: insert URI to assertion here">rebuild actions must be processed immediately.</li>
+        <li href="!-- TBD: insert URI to assertion here">If a rebuild is flagged to occur and the rebuild action is processed, the rebuild action MUST NOT occur at the end of &lt;action&gt; processing.</li>
+    </nl>
+
+    <xforms:repeat nodeset="my:test">
+        <xforms:input ref=".">
+            <xforms:label>Test input</xforms:label>
+        </xforms:input>
+    </xforms:repeat>
+            
+    <xforms:trigger>
+        <xforms:label>Run Test</xforms:label>
+        <xforms:hint>Should dispatch an xforms-rebuild and then a message</xforms:hint>
+        <xforms:action ev:event="xforms-activate">
+            <xforms:insert nodeset="my:test" at="last()" position="after"/>
+            <xforms:rebuild model="mymodel"/>
+            <xforms:message level="modal">If xforms-rebuild was dispatched before this message and it won't be dispatched again after this message, the test is passed.</xforms:message>
+        </xforms:action>
+    </xforms:trigger>
+    
+  </body>
+</html>

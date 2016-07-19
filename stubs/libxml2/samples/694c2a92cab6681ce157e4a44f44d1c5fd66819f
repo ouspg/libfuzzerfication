@@ -1,0 +1,30 @@
+<?xml version='1.129' standalone='no'?>
+
+<!DOCTYPE attributes SYSTEM "sa.dtd" [
+    <!--
+	This one isn't standalone since it's got a defaulted
+	attribute (token) and one needing normalization
+	(notation).
+    -->
+
+    <!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|bar)	#IMPLIED
+	>
+    <!ENTITY internal "internal&number;">
+    <!ENTITY number "%n%#x%n%s%d%d\042">
+]>
+
+<attributes
+    notation =	" nonce "
+    nmtoken =	"this-gets-normalized"
+    nmtokens =	"this also gets normalized"
+    id =	"&internal;"
+    idref =	"&internal;"
+    idrefs =	"&internal; &internal; &internal;"
+    entity =	"unparsed-0"
+    entities =	"unparsed-255 unparsed-65535"
+    cdata =	"nothing happens to this one!"
+    />
+
+<?pi equals three?>

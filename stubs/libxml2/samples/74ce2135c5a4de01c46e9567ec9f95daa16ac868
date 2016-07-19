@@ -1,0 +1,12 @@
+<!-- =================================================================== -->
+<!-- Tests CM and PI in element fragment grammar when xsi:nil='true'.    -->
+<!-- =================================================================== -->
+<foo:C xmlns:foo="urn:foo" xmlns:goo="urn:goo" xmlns:aoo="urn:aoo" 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  none="Welcome to the world of element fragment grammar!"
+  xsi:nil="true"
+  aoo:b="2010-04-28"
+  foo:d="12:34:58" >
+  <!-- CM -->
+  <?eg a="A" b="B"?>
+</foo:C>

@@ -1,0 +1,23 @@
+<soap12:Envelope
+   xmlns:soap12="http://www.w3.org/2003/05/soap-envelope"
+   xmlns:soapjms="http://www.w3.org/2010/soapjms/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+   xsl:version="1.0">
+ <soap12:Body>
+  <soap12:Fault>
+   <soap12:Code>
+     <soap12:Value>soap12:Sender</soap12:Value>
+     <soap12:Subcode>
+      <soap12:Value><xsl:value-of select="Testdef/Fault/Subcode"/></soap12:Value>
+     </soap12:Subcode>
+   </soap12:Code>
+   <soap12:Reason>
+   <soap12:Text xml:lang="en">
+   </soap12:Text>
+    </soap12:Reason>
+   <soap12:Detail>
+   </soap12:Detail>    
+  </soap12:Fault>
+ </soap12:Body>
+</soap12:Envelope>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<prf:Profile xmlns:prf="http://www.example.com/schema#">
+    <prf:HardwarePlatfom>
+        <prf:displayWidth>320x200</prf:displayWidth>
+        <prf:displayHeight>320x200</prf:displayHeight>
+    </prf:HardwarePlatform>
+    <prf:SoftwarePlatform>
+        <prf:name>EPOC</prf:name>
+        <prf:version>2.0</prf:version>
+        <prf:vendor>Symbian</prf:vendor>
+    </prf:SoftwarePlatform>
+    <prf:BrowserUA>
+        <prf:name>Mozilla</prf:name>
+        <prf:version>5.0</prf:version>
+        <prf:vendor>Symbian</prf:vendor>
+        <prf:htmlVersionsSupported>
+            <prf:li>3.0</prf:li>
+            <prf:li>4.0</prf:li>
+        </prf:htmlVersionsSupported>
+    </prf:BrowserUA>
+</prf:Profile>
+

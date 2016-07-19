@@ -1,0 +1,120 @@
+<!-- ANT Build Script for the CTLX -->
+<!-- $Id: tools-UltraDev-4.0-ctlx-build.xml,v 1.1.1.1 2004/10/22 15:09:03 sp106478 Exp $ -->
+
+<project name="ultradev4" default="main" basedir=".">
+
+    <!-- ******************** Adjustable Properties *********************** -->
+
+    <!--
+
+        The following property values should be examined and customized
+	for each custom tag library subproject.
+
+	ant.home                    Home directory for the ANT build tool
+	                            This is normally defaulted from the
+				    ANT_HOME environment variable in the
+				    build script.
+
+	servlet.jar		    Pathname to the "servlet.jar" file
+	                            from the Servletapi distribution.
+
+        taglib.name		    Base name of this tag library subproject.
+
+	xalan.jar                   Pathname to the "xalan.jar" file from the
+	                            Xalan distribution.
+
+	xerces.jar		    Pathname to the "xerces.jar" file from the
+	                            Xerces or Xalan distribution.
+
+    -->
+
+    <property name="taglib.name"      value="ultradev4"/>
+    <property name="ant.home"       value="../../../../../jakarta-ant"/>
+    <property name="servlet.jar"    value="../../../../../jakarta-servletapi/lib/servlet.jar"/>
+    <property name="xerces.jar"     value="../../../../../xml-xalan/xerces.jar"/>
+
+
+    <!-- ****************** Project Standard Properties ******************* -->
+
+    <!--
+	build.dir                   Base directory for build targets
+	dist.dir                    Base directory for distribution targets
+    -->
+
+    <property name="build.dir"      value="../../../../build"/>
+    <property name="dist.dir"	    value="../../../../dist"/>
+    <property name="taglibs.xsl"    value="../../../../src/doc/stylesheets/taglibs.xsl"/>
+
+    <!-- *********************** Default Properties ********************** -->
+
+    <!--
+
+	conf.src                    TLDParser configuration source directory
+        doc.src                     Documentation source directory
+        tutorial.src		    ultradev4-tutorial application
+        library.src                 Library Java source directory
+	lib.src			    Directory for Xerces XML processor
+	ext.src			    UltraDev extension files source directory
+
+    -->
+
+    <property name="conf.src"       value="conf"/>
+    <property name="doc.src"        value="doc"/>
+    <property name="tutorial.src"   value="examples/ctlx-tutorial.war"/>
+    <property name="library.src"    value="src"/>
+    <property name="lib.src"        value="lib"/>
+    <property name="ext.src"	    value="ext/ctlx.mxp"/>
+
+    <!-- ********************* Derived Properties ************************* -->
+
+    <!--
+
+        These property values are derived from the previously defined values,
+	and should not normally be overridden from the command line.
+
+        build.doc                   Target directory for documentation app
+        build.parser		    Target directory for TLDParser sevlet
+	dist.doc                    Destination for documentation
+	dist.parser		    Destination WAR for TLDParser servlet
+	dist.tutorial               Destination for tutorial WAR
+	dist.ext                    Destination for .mxp extension file
+
+    -->
+
+    <property name="build.doc"      value="${build.dir}/${taglib.name}/${taglib.name}-doc"/>
+    <property name="build.parser"   value="${build.dir}/${taglib.name}/TLDParser" />
+    <property name="dist.doc"       value="${dist.dir}/${taglib.name}/${taglib.name}-doc.war"/>
+    <property name="dist.parser"    value="${dist.dir}/${taglib.name}/TLDParser.war"/>
+    <property name="dist.tutorial"  value="${dist.dir}/${taglib.name}/${taglib.name}-tutorial.war"/>
+    <property name="dist.ext"	    value="${dist.dir}/${taglib.name}/ctlx.mxp"/>
+    <property name="taglibs.doc"    value="${dist.dir}/doc/doc/${taglib.name}-doc"/>
+
+  <!-- ********************** Destination Preparation ********************* -->
+
+  <target name="prepare">
+    <!-- Set up build directories -->
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${build.doc}"/>
+    <mkdir dir="${build.doc}/WEB-INF"/>
+    <mkdir dir="${build.doc}/WEB-INF/classes"/>
+    <mkdir dir="${build.doc}/WEB-INF/lib"/>
+    <mkdir dir="${build.parser}"/>
+    <mkdir dir="${build.parser}/tlds"/>
+    <mkdir dir="${build.parser}/WEB-INF"/>
+    <mkdir dir="${build.parser}/WEB-INF/classes"/>
+    <mkdir dir="${build.parser}/WEB-INF/lib"/>
+    <!-- Set up distribution directory -->
+    <mkdir dir="${dist.dir}"/>
+    <mkdir dir="${dist.dir}/${taglib.name}"/>
+  </target>
+
+  <!-- Compile the documentation application -->                               
+  <target name="documentation" depends="prepare">
+    <copy file="${doc.src}/ctlxmanual.html" tofile="${build.doc}/index.html"/>
+    <copy todir="${build.doc}/WEB-INF">
+      <fileset dir="${doc.src}/conf"/>
+    </copy>
+    <!-- intro.xml isn't part of the documentation application,
+         this is just a handy place to build it for the web site. -->
+    <style in="xml/intro.xml"
+           destd

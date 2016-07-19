@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xqx:module xmlns:xqx="http://www.w3.org/2005/XQueryX"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.w3.org/2005/XQueryX
+                                http://www.w3.org/2005/XQueryX/xqueryx.xsd">
+  <xqx:mainModule>
+    <xqx:prolog>
+      <xqx:namespaceDecl>
+        <xqx:prefix>output</xqx:prefix>
+        <xqx:uri>http://www.w3.org/2010/xslt-xquery-serialization</xqx:uri>
+      </xqx:namespaceDecl>
+      <xqx:optionDecl>
+        <xqx:optionName xqx:prefix="output">method</xqx:optionName>
+        <xqx:optionContents>html</xqx:optionContents>
+      </xqx:optionDecl>
+      <xqx:optionDecl>
+        <xqx:optionName xqx:prefix="output">indent</xqx:optionName>
+        <xqx:optionContents>no</xqx:optionContents>
+      </xqx:optionDecl>
+      <xqx:optionDecl>
+        <xqx:optionName xqx:prefix="output">include-content-type</xqx:optionName>
+        <xqx:optionContents>no</xqx:optionContents>
+      </xqx:optionDecl>
+      <xqx:optionDecl>
+        <xqx:optionName xqx:prefix="output">media-type</xqx:optionName>
+        <xqx:optionContents>text/html</xqx:optionContents>
+      </xqx:optionDecl>
+      <xqx:optionDecl>
+        <xqx:optionName xqx:prefix="output">encoding</xqx:optionName>
+        <xqx:optionContents>UTF-8</xqx:optionContents>
+      </xqx:optionDecl>
+      <xqx:optionDecl>
+        <xqx:optionName xqx:prefix="output">version</xqx:optionName>
+        <xqx:optionContents>5.0</xqx:optionContents>
+      </xqx:optionDecl>
+    </xqx:prolog>
+    <xqx:queryBody>
+      <xqx:elementConstructor>
+        <xqx:tagName>html</xqx:tagName>
+        <xqx:elementContent>
+          <xqx:elementConstructor>
+            <xqx:tagName>head</xqx:tagName>
+          </xqx:elementConstructor>
+        </xqx:elementContent>
+      </xqx:elementConstructor>
+    </xqx:queryBody>
+  </xqx:mainModule>
+</xqx:module>

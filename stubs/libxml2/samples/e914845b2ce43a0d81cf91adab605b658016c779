@@ -1,0 +1,7 @@
+<!DOCTYPE root [
+    <!ELEMENT rooubt EMPTY>
+
+    <!ENTITY e PUBLIC
+    <!-- illegal public ID characters -->
+
+    <!ENTITY e PUBLIC

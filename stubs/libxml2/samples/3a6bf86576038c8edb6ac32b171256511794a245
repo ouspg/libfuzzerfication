@@ -1,0 +1,4 @@
+<!-- =================================================================== -->
+<!-- Use of xsi:nil attribute with value 'false'.                        -->
+<!-- =================================================================== -->
+<A xmlns='urn:foo' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:nil='false'><B/></A>

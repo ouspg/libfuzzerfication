@@ -1,0 +1,124 @@
+<!--
+    Copyright © 2001-2005 World Wide Web Consortium, 
+    (Massachusetts Institute of Technology, European Research Consortium 
+    for Informatics and Mathematics, Keio University). All 
+    Rights Reserved. This work is distributed under the W3C® Software License [1] in the 
+    hope that it will be useful, but WITHOUT ANY WARRANTY; without even 
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+    
+    [1] http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+    -->
+<!DOCTYPE results [
+<!ENTITY dom1-core-xerces1 SYSTEM 'dom1-core-xerces1.xml'>
+<!ENTITY dom1-core-xerces1-alt SYSTEM 'dom1-core-xerces1AltConfig.xml'>
+<!ENTITY dom1-core-xerces2 SYSTEM 'dom1-core-xerces2.xml'>
+<!ENTITY dom1-core-xerces2-alt SYSTEM 'dom1-core-xerces2AltConfig.xml'>
+<!ENTITY dom1-core-xerces2_svg SYSTEM 'dom1-core-xerces2_svg.xml'>
+<!ENTITY dom1-core-xerces2_svg-alt SYSTEM 'dom1-core-xerces2_svgAltConfig.xml'>
+<!ENTITY dom1-core-xerces2_xhtml SYSTEM 'dom1-core-xerces2_xhtml.xml'>
+<!ENTITY dom1-core-xerces2_xhtml-alt SYSTEM 'dom1-core-xerces2_xhtmlAltConfig.xml'>
+<!ENTITY dom1-core-xdk SYSTEM 'dom1-core-xdk.xml'>
+<!ENTITY dom1-core-xdk-alt SYSTEM 'dom1-core-xdkAltConfig.xml'>
+<!ENTITY dom1-core-crimson SYSTEM 'dom1-core-crimson.xml'>
+<!ENTITY dom1-core-crimson-alt SYSTEM 'dom1-core-crimsonAltConfig.xml'>
+<!ENTITY dom1-core-kaffe SYSTEM 'dom1-core-kaffe.xml'>
+<!ENTITY dom1-core-kaffe-alt SYSTEM 'dom1-core-kaffeAltConfig.xml'>
+<!ENTITY dom1-core-dom4j SYSTEM 'dom1-core-dom4j.xml'>
+<!ENTITY dom1-core-batik SYSTEM 'dom1-core-batik.xml'>
+<!ENTITY dom1-core-ie6_html SYSTEM 'dom1-core-ie6_html.xml'>
+<!ENTITY dom1-core-firefox_html SYSTEM 'dom1-core-firefox_html.xml'>
+<!ENTITY dom1-core-firefox_xml SYSTEM 'dom1-core-firefox_xml.xml'>
+<!ENTITY dom1-core-firefox_xhtml SYSTEM 'dom1-core-firefox_xhtml.xml'>
+<!ENTITY dom1-core-opera_html SYSTEM 'dom1-core-opera_html.xml'>
+<!ENTITY dom1-core-opera_xml SYSTEM 'dom1-core-opera_xml.xml'>
+<!ENTITY dom1-core-msxml3 SYSTEM 'dom1-core-msxml3_xml.xml'>
+<!ENTITY dom1-core-msxml3-alt SYSTEM 'dom1-core-msxml3_xmlAltConfig.xml'>
+<!ENTITY dom1-core-msxml4 SYSTEM 'dom1-core-msxml4_xml.xml'>
+<!ENTITY dom1-core-msxml4-alt SYSTEM 'dom1-core-msxml4_xmlAltConfig.xml'>
+<!ENTITY dom1-core-msxmlhttp SYSTEM 'dom1-core-msxmlhttp_xml.xml'>
+]>
+<results>
+<implementation name="Xerces-J 2">
+&dom1-core-xerces2;
+</implementation>
+<implementation name="Xerces-J 2 Alt">
+&dom1-core-xerces2-alt;
+</implementation>
+<implementation name="Xerces-J 2 SVG">jtidy.lib.dir
+&dom1-core-xerces2_svg;
+</implementation>
+<implementation name="Xerces-J 2 SVG Alt">
+&dom1-core-xerces2_svg-alt;
+</implementation>
+<implementation name="Xerces-J 2 XHTML">
+&dom1-core-xerces2_xhtml;
+</implementation>
+<implementation name="Xerces-J 2 XHTML Alt">
+&dom1-core-xerces2_xhtml-alt;
+</implementation><!ENTITY dom2-core-opera_html SYSTEM 'dom2-core-opera_html.xml'>
+<!ENTITY dom2-core-opera_xml SYSTEM 'dom2-core-opera_xml.xml'>
+
+<implementation name="Oracle XDK">
+&dom1-core-xdk;
+</implementation>
+<implementation name="Oracle XDK">
+&dom1-core-xdk-alt;
+</implementation>
+<implementation name="Crimson 1.1.3">
+&dom1-core-crimson;
+</implementation>
+<implementation name="Crimson 1.1.3 Alt">
+&dom1-core-crimson-alt;
+</implementation>
+<implementation name="Kaffe">
+&dom1-core-kaffe;
+</implementation>
+<implementation name="Kaffe Alt">
+&dom1-core-kaffe-alt;
+</implementation>
+<implementation name="DOM4J">
+&dom1-core-dom4j;
+</implementation>
+<implementation name="Xerces-J 1.4.4">
+&dom1-core-xerces1;
+</implementation>
+<implementation name="Xerces-J 1.4.4 Alt">
+&dom1-core-xerces1-alt;
+</implementation>
+<implementation name="Batik">
+&dom1-core-batik;
+</implementation>
+<implementation name="Firefox HTML">
+&dom1-core-firefox_html;
+</implementation>
+<implementation name="Firefox XHTML">
+  &dom1-core-firefox_xhtml;
+</implementation>
+<implementation name="Firefox XML">
+&dom1-core-firefox_xml;
+</implementation>
+<implementation name="Opera HTML">
+  &dom1-core-opera_html;
+</implementation>
+<implementation name="Opera XML">
+  &dom1-core-opera_xml;
+</implementation>
+<implementation name="Internet Explorer 6">
+  &dom1-core-ie6_html;
+</implementation>
+<implementation name="Microsoft XMLHTTP">
+  &dom1-core-msxmlhttp;
+</implementation>
+<implementation name="MSXML3">
+&dom1-core-msxml3;
+</implementation>
+<implementation name="MSXML3 Alt">
+&dom1-core-msxml3-alt;
+</implementation>
+<implementation name="MSXML4">
+&dom1-core-msxml4;
+</implementation>
+<implementation name="MSXML4 Alt">
+&dom1-core-msxml4-alt;
+</implementation>
+</results>

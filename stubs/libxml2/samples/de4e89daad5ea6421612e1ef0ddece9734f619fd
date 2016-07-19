@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<game>
+	<bigfont size="100" name="font\\Jolana.ttf">
+	</bigfont>
+	<font size="32" name="font\\Jolana.ttf">
+	</font>
+	<delays splash_screen="6000" first_round="10000" second_round="10000" game_over="10000">
+	</delays>
+	<invaders collision_size="30" rows="3" cols="6" movex="4" movey="20" gapx="125" gapy="100" offsetx="0" offsety="125" bullet_speed="6" max_bullet="3">
+	</invaders>
+	<turret collision_size="30" bullet_offset="24" posy="80" bullet_speed="6" max_bullet="3">
+	</turret>
+	<score enemy_hit="1000" turret_hit="600" invasion="1000">
+	</score>
+	<menu font_size="64" font_name="font\\Jolana.ttf" offsetx="420" offsety="150" gapy="128">
+	</menu>
+	<round_one>
+		<line font="0" text="Round One"									x="320" y="100" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Player 1: Turret -- arrow keys, up --"		x= "300" y="250" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Player 2: Invaders -- mouse --"	x= "300" y="300" r="1.0f" g="1.0" b="1.0"></line>
+		<countdown 														x="480" y="360" r="1.0f" g="1.0" b="1.0"></countdown>
+	</round_one>
+	<round_two>
+		<line font="0" text="Round Two"											x= "320" y="100" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Player 1: Invaders -- mouse --"	x= "300" y="250" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Player 2: Turret -- A, W, D keys --"				x= "300" y="300" r="1.0f" g="1.0" b="1.0"></line>
+		<countdown 																x="480" y="360" r="1.0f" g="1.0" b="1.0"></countdown>
+	</round_two>
+	<game_over>
+		<game_over	font="0" text="GAME OVER"			x="320" y="100" r="1.0f" g="1.0" b="1.0"></game_over>
+		<winner		font="1" text="Player %d wins!"		x="440" y="230" r="1.0f" g="1.0" b="1.0"></winner>
+		<tie		font="1" text="Tie Fighters!"		x="440" y="230" r="1.0f" g="1.0" b="1.0"></tie>
+		<player1	font="1" text="Player 1:  %.6d"		x="400" y="350" r="1.0f" g="1.0" b="1.0"></player1>
+		<player2	font="1" text="Player 2:  %.6d"		x="400" y="400" r="1.0f" g="1.0" b="1.0"></player2>
+	</game_over>
+	<hud>
+		<player1_score	font="1" text="Score: %.6d"		x=  "0" y=  "0" r="1.0f" g="1.0" b="1.0"></player1_score>
+		<player1_lives	font="1" text="Lives: %d"		x=  "0" y= "35" r="1.0f" g="1.0" b="1.0"></player1_lives>
+		<player2_score	font="1" text="Score: %.6d"		x="850" y=  "0" r="1.0f" g="1.0" b="1.0"></player2_score>
+		<player2_lives	font="1" text="Lives: %d"		x="850" y= "35" r="1.0f" g="1.0" b="1.0"></player2_lives>
+	</hud>
+	<credits>
+		<line font="0" text="Space Invaders 2P"		x="200" y= "50" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Credits:"				x="400" y="300" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Code: pohar"			x="400" y="400" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Graphics: grass"		x="400" y="450" r="1.0f" g="1.0" b="1.0"></line>
+		<line font="1" text="Music: teo"			x="400" y="500" r="1.0f" g="1.0" b="1.0"></line>
+	</credits>
+</game>
+
+

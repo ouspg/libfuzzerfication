@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+		"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+	<!ATTLIST svg
+		xmlns:m CDATA #IMPLIED>
+
+	<!ENTITY % defsExt "| m:canton">
+
+	<!ELEMENT m:canton (m:name*, m:statistics, m:geometricInfo)>
+	<!ATTLIST m:canton
+		id ID #REQUIRED
+		bndtype (village | county) #REQUIRED>
+
+	<!ELEMENT m:name EMPTY>
+	<!ATTLIST m:name
+		lang (chinese | tonyonPinyin) "chinese"
+		desc CDATA #REQUIRED>
+
+	<!ELEMENT m:statistics (m:population)>
+
+	<!ELEMENT m:population EMPTY>
+	<!ATTLIST m:population
+		count CDATA #REQUIRED>
+
+	<!ELEMENT m:geometricInfo EMPTY>
+	<!ATTLIST m:geometricInfo
+		area CDATA #IMPLIED
+		circumference CDATA #IMPLIED
+		circumference CDATA #IMPLIED>
+
+	<!ATTLIST polygon
+		xlink:type (simple) #FIXED "simple"
+		xlink:title CDATA #IMPLIED
+		xlink:actuate (onRequest) #FIXED "onRequest"
+		xlink:href CDATA #IMPLIED>
+]>
+
+<svg width="100" height="100" viewBox="0 0 100 100"
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:m="http://example.tsm.iis.sinica.edu.tw"
+		xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<style type="text/css"><![CDATA[
+			polygon { fill: green;
+				  stroke: black;
+				  stroke-width: 1} 
+			]]>
+		</style>
+		<m:canton id="infoOf_10001001" bndtype="village">
+			<m:name lang="tonyonPinyin" desc="myvillage"/>
+			<m:statistics>
+				<m:population count="100"/>
+			</m:statistics>
+			<m:geometricInfo area="6400" circumference="320"/>
+		</m:canton>
+	</defs><aa><var>
+
+	<polygon id="_10001001" points="10,10 10,90 90,90 1,10"
+		xlink:href="infoOf_10001001"/>
+</var></aa><aa>
+
+	<polygon id="_10001001" public//ID" "file:/dev/console"
+			NDATA nonce>
+    <!ENTITY unparsed-5 SYSTEM 

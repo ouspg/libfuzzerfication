@@ -1,0 +1,10 @@
+<!-- 
+Assertion ta-8
+
+If origin is not a valid IRI, if it has components other than scheme and iauthority, if it has no host component, or if it has a iuser info component, then this element is in error and the user agent MUST ignore this element.
+
+ -->
+<widget xmlns='http://www.w3.org/ns/widgets'>
+  <name>hk</name>
+  <access origin="http:"/>
+</widget>

@@ -1,0 +1,11 @@
+<driverGroup xmlns="http://www.sun.com/japex/testSuite" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="../../drivers/">
+    <xi:include href="sax/xml-document.xml"/>
+    <xi:include href="typed/x694perfi-document.xml"/>
+    <xi:include href="sax/xebu-document.xml"/>
+    <xi:include href="sax/xsbc-document.xml"/> 
+    <xi:include href="sax/fxdi-document.xml"/>
+    <xi:include href="sax/fastinfoset-document.xml"/>
+    <xi:include href="sax/efficientxml-document.xml"/>
+    <xi:include href="sax/esxml-document.xml"/>
+</driverGroup>
+

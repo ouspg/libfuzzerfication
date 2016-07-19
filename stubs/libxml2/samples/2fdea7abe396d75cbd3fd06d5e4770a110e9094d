@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE NISTXMLSchemaTestSuite [
+
+<!ELEMENT NISTXMLSchemaTestSuite (Title, Author, Date, Summary, Description, Tests)>
+
+  <!ATTLIST NISTXMLSchemaTestSuite xml:base CDATA #REQUIRED>
+
+<!ELEMENT Title (#PCDATA)>
+
+<!ELEMENT Author (#PCDATA)>
+
+<!ELEMENT Date (#PCDATA)>
+
+<!ELEMENT Summary (#PCDATA)>
+
+<!ELEMENT Description (Objectives, Scope, Form, Omissions, IPR, Contact)>
+
+<!ELEMENT Objectives (P*)>
+
+<!ELEMENT Scope (P*)>
+
+<!ELEMENT Form (P*)>
+
+<!ELEMENT Omissions (P*)>
+
+<!ELEMENT IPR (P*)>
+
+<!ELEMENT Contact (P*)>
+
+<!ELEMENT P (#PCDATA)>
+
+<!ELEMENT Tests (Link*)>
+
+<!ELEMENT Link (#PCDATA)>
+
+  <!ATTLIST Link name CDATA #REQUIRED>
+  <!ATTLIST Link href CDATA #REQUIRED>
+
+]>
+
+<NISTXMLSchemaTestSuite xml:base="">
+
+<Title>
+NIST conformance test suite for XMLSchema Part 2: Datatypes.
+
+</Title>
+
+<Author>
+The National Institute of Standards and Technology
+
+</Author>
+
+<Date>
+Sep 24, 2001
+</Date>
+
+<Summary>
+This is a conformance test suite for XML Schema built-in simple datatypes,
+as defined in W3C Recommendation "XML Schema, Part 2: Datatypes" of
+May 02, 2001 (see http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/).
+
+</Summary>
+
+<Description>
+<Objectives>
+<P>
+The objective of this test suite is to provide a collection
+of conformance tests for the built-in simple datatypes defined
+in the W3C Recommendation for XML Schema Part 2: Datatypes (see
+http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/). All the built-in
+primitive datatypes are represented, as are all the built-in derived
+datatypes whose derivation is by restriction and which may appear alone in
+an instance document with no internal or external references to entities
+other than a defining schema document and the XML Schema namespace for
+instances (http://www.w3.org/2001/XMLSchema-instance).
+</P>
+</Objectives>
+
+<Scope>
+<P>
+The scope of this test suite covers all built-in primitive datatypes,
+as well as all built-in derived datatypes which satisfy the following
+conditions:
+
+</P>
+<P>
+
+1. Derivation is by restriction, and 
+
+</P>
+<P>
+
+2. A value of the datatype may appear alone in an instance document
+with no internal or external references to entities other than a
+defining schema document and the XML Schema namespace for instances
+(http://www.w3.org/2001/XMLSchema-instance).
+
+</P>
+
+<P>
+All constraining facets defined in the Recommendation are tested against
+the types to which they apply.
+</P>
+</Scope>
+
+<Form>
+
+<P>
+The form of the tests is as follows: for each built-in datatype, for each
+applicable constraining facet, a number of schemas are provided. Each
+schema defines a new type by restricting the built-in type by some value
+of the facet. For each of these schemas, a number of instance documents
+are provided. Each instance contains a single value from within the
+value space defined by its defining schema.
+</P>
+<P>
+
+In general, five schemas are provided for each valid type/facet
+combination.  When it is not possible to derive five distinct restriction
+values for a particular type/facet combination (e.g. byte/totalDigits,
+where only three distinct values for totalDigits are permissible) the
+number of schemas will be fewer.
+</P>
+<P>
+
+Five instances are provided for each schema except in those circumstances
+where the value space of the restricted type contains fewer than five
+distinct values (e.g. a type derived from byte with the facet maxExclusive
+== -127 has only one value in its value space).
+</P>
+<P>
+
+For those facets which are scalar in nature, such as length, maxExclusive,
+totalDigits, etc., the upper and lower bounds on the value space as
+defined in the Recommendation are always tested in the provided schemas,
+and the upper and lower bounds on the restricted value space as defined
+in the provided schemas are always tested in the provided instances.
+</P>
+<P>
+
+The tests in this collection contain only legal values of the lexical
+representations of datatypes, as defined in the Recommendation. For
+schema-conformant parsers, no errors should be expected  in the processing
+of the provided tests.
+</P>
+
+</Form>
+
+<Omissions>
+<P>
+No tests are provided for the following built-in types, for reasons
+outlined above: IDREF; ENTITY; NOTATION; IDREFS; ENTITIES; NMTOKENS.
+
+</P>
+<P>
+For built-in types double and float, the special values NaN, INF, -INF,
+-0 and 0 are not tested.
+
+</P>
+</Omissions>
+
+<IPR>
+<P>
+This test suite was produced by the National Institute of Standards and
+Technology, an agency of the United States government, and as such is
+not subject to copyright within the United States of America.
+</P>
+</IPR>
+
+<Contact>
+
+<P>
+John Tebbutt
+</P>
+<P>
+The National Institute of Standards and Technology
+</P>
+<P>
+tebbutt@nist.gov
+</P>
+
+</Contact>
+
+</Description>
+
+<Tests>
+
+
+<Link name="decimal" href="decimal.xml">
+This is a link to the set of tests for built-in type decimal
+</Link>
+
+<Link name="integer" href="integer.xml">
+This is a link to the set of tests for built-in type integer
+</Link>
+
+<Link name="nonPositiveInteger" href="nonPositiveInteger.xml">

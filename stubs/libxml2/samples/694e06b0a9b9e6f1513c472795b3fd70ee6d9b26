@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<f:root
+	xmlns:f="foo"
+	xmlns:b="bar"
+	xmlns:z="zot"
+	xmlns:u="undeclared">
+	
+	<f:laxLocal b:b="9" />
+	
+</f:root>

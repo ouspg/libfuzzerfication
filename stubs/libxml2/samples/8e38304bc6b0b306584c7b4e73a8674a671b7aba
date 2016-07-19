@@ -1,0 +1,10 @@
+<sg:test xmlns:sg="http://www.w3.org/XML/2008/xsdl-exx/ns1" >
+  <sg:e1 xsi:type="xsd:int"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	>41</sg:e1>
+  <sg:e1 xsi:type="xsd:token"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	>41</sg:e1>
+</sg:test>

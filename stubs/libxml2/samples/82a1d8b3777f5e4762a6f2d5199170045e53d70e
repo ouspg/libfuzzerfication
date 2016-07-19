@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- 
+Tests support of XML, XMLNS, and UTF-8. To pass, the user agent must load pass.html.
+-->
+<!DOCTYPE widget [
+<!ENTITY widgets-ns "http://www.w3.org/ns/widgets">
+<!ENTITY pass "pass&amp;.html">
+]>
+<xyz:widget xmlns:xyz="&widgets-ns;">
+  <xyz:content src="&pass;"/>
+  <xyz:name>bv</xyz:name>
+</xyz:widget>

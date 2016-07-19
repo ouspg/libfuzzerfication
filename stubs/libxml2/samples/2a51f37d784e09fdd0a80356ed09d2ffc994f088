@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0"
+ xmlns:xyz="http://www.w3.org/2005/11/its" xmlns:its2="http://www.w3.org/2005/11/its">
+  <w3cits:documentRules xmlns:w3cits="http://www.w3.org/2005/11/its" xmlns:t="http://docbook.org/ns/docbook">
+   <w3cits:documentRule w3cits:translateSelector="//t:preface" w3cits:translate="no" />
+  </w3cits:documentRules>
+  <bookinfo>
+    <title>An Example Book in DocBook v5.0</title>
+    <author>
+      <firstname xyz:translate="yes">Doe</firstname>
+      <surname>John</surname>
+      <affiliation>
+        <address><email>jdoe@example.com</email></address>
+      </affiliation>
+    </author>
+    <its2:documentRules xmlns:z="http://docbook.org/ns/docbook">
+     <its2:documentRule its2:translateSelector="//z:title" its2:translate="no" />
+    </its2:documentRules>
+    <copyright>
+      <year>2000</year>
+      <holder>Copyright (c) Gandalf Incorporated</holder>
+    </copyright>
+    <abstract>
+      <para>If your book has an abstract then it should go here.</para>
+    </abstract>
+  </bookinfo>
+  <preface>
+    <title>Preface</title>
+    <para>Your book may have a preface, in which case it should be placed
+      here.</para>
+  </preface>
+  <chapter>
+    <title>My first chapter</title>
+    <para xyz:locInfo="This must be translated with the right tone.">This is the first chapter in my book.</para>
+    <db:para xmlns:db="http://docbook.org/ns/docbook" xmlns="http://www.w3.org/2005/11/its" translate="no">And this paragraph should not be translated.</db:para>
+    <para xyz:translate="no">And this paragraph should not be translated.</para>
+    <sect1>
+      <title xyz:translate="yes" xyz:locInfo="this is a title, make sure caps are OK." xyz:locInfoType="alert">My first section</title>
+      <para>This is the first section in my book.</para>
+    </sect1>
+  </chapter>
+</book>

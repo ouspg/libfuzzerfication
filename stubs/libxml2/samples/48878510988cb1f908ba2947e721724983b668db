@@ -1,0 +1,4 @@
+<?xml encoding='ASCII' TYPE animal [
+<!ELEMENT animal ANY>
+<?÷ an illegal char #x0f7
+ info and EncodingDecl in XMLDecl -->

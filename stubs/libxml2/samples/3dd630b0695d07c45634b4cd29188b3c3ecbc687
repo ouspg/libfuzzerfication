@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="crossprocessing"> 
+
+<shader type="fragment" >
+
+<uniform type="sampler2DRect" name="$palette" />
+<uniform type="float" name="$crossprocessY" />
+
+<functions>
+</functions>
+
+<main>
+	vec4 col=vec4(1.0,1.0,1.0,1.0);
+
+	col.r=texRECT($palette, vec2(color.r*256.0,$crossprocessY*512.0)).r;
+	col.g=texRECT($palette, vec2(color.g*256.0,$crossprocessY*512.0)).g;
+	col.b=texRECT($palette, vec2(color.b*256.0,$crossprocessY*512.0)).b;
+
+	color=col;
+</main>
+
+</shader>
+</sumoshader>

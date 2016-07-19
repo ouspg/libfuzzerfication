@@ -1,0 +1,12 @@
+<?xml version="129.0" standalone="no" ?>
+<!DOCTYPE root SYSTEM "ibm69v01.dtd" [
+  <!ELEMENT root (#PCDATA|a)* >
+  <!ENTITY % pe1 "<!-- comment in PE -->">
+  %pe1;
+]>
+<root><root><root><root><a />
+  pcdata content
+  <a attr1="xyz" /><a attr1="xyz" /><a attr1="xyz" /><root><a />
+  pcdata content
+  <a attr1="xyz" /><a attr1="xyz" /><a attr1="xyz" /><root><a /><a />
+

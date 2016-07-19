@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><myMetaDoc xmlns:cml="myChineseMakupLanguage" itsTve="yes">
+ <head itsTve="yes">
+  <its:rules xmlns:its="http://www.w3.org/2005/11/its" itsTve="yes" version="1.0">
+   <its:translateRule itsTve="yes" selector="//img/@alt" translate="yes"/>
+   <its:translateRule itsTve="yes" selector="//*/@title" translate="yes"/>
+   <its:translateRule itsTve="yes" selector="//verbatim" translate="no"/>
+   <its:translateRule itsTve="yes" selector="//verbatim/@*" translate="no"/>
+   <its:translateRule itsTve="yes" selector="//verbatim//*/@*" translate="no"/>
+   <its:withinTextRule itsTve="yes" selector="//img|//verbatim" withinText="yes"/>
+  </its:rules>
+ </head>
+ <body itsTve="yes">
+  <par itsTve="yes">Text with an image: <img alt="Image description" itsTva="#alt#" itsTve="yes" src="img.png"/>.</par>
+  <par id="100" itsTva="#title#" itsTve="yes" title="Text">This is the first paragraph. It has some <verbatim itsTve="no">un-translatable 
+   code with an image: <img alt="Image description" itsTva="#alt#" itsTve="no" src="test.png"/></verbatim>.</par>
+  <insert xmlns:i="http://www.w3.org/2005/11/its" xmlns:z="myChineseMakupLanguage" itsTve="yes">
+   <z:书籍 itsTve="yes">
+    <z:封面 itsTve="yes">
+     <z:汇集 itsTve="yes">The Lord of the Rings</z:汇集>
+     <z:标题 itsTve="yes">The Return of the King</z:标题>
+     <z:作者 itsTve="no">J.R.R. Tolkein</z:作者>
+    </z:封面>
+    <z:章节 itsTve="yes" 数="1">
+     <z:头注 itsTve="yes">Minas Tirith</z:头注>
+     <z:段落识别 id="A34B" itsTve="yes"><z:姓名 itsTve="no">Pippin</z:姓名> looked out from the shelter of <z:姓名 itsTve="no">Gandalf</z:姓名>'s cloak.</z:段落识别>
+    </z:章节>
+    <z:躯 itsTve="yes">
+     <i:rules itsTve="yes" version="1.0">
+      <i:translateRule itsTve="yes" selector="//cml:作者" translate="no"/>
+      <i:translateRule itsTve="yes" selector="//cml:姓名" translate="no"/>
+      <i:withinTextRule itsTve="yes" selector="//cml:姓名" withinText="yes"/>
+     </i:rules>
+    </z:躯>
+   </z:书籍>
+  </insert>
+ </body>
+</myMetaDoc><!-- timestamp $Id: Translate1-output1.xml,v 1.1 2008/05/21 09:23:42 fsasaki Exp $ -->

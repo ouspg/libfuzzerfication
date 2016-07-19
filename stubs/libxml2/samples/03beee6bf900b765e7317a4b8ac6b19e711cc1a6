@@ -1,0 +1,7 @@
+<eden xmlns:c="http://genesis.com/">
+  <adam>m</adam>
+  <evil:eve xmlns:evil="http://devil.com/">f</evil:eve>
+  <c:cain>m</c:cain>
+  <c:abel>m</c:abel>
+  <xml:id>N001</xml:id>
+</eden>

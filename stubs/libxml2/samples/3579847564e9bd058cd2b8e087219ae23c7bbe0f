@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spec>
+<header>
+<title>Extensible Stylesheet Language (XSL)</title>
+<version>Version 1.0</version>
+<w3c-designation>xsl-20001121</w3c-designation>
+<w3c-doctype>W3C Candidate Recommendation</w3c-doctype>
+<pubdate><day>21</day><month>November</month><year>2000</year></pubdate>
+<publoc>
+<loc href="http://www.w3.org/TR/2000/CR-xsl-20001121/" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">http://www.w3.org/TR/2000/CR-xsl-20001121/</loc>
+<otherversions>
+<loc href="http://www.w3.org/TR/2000/CR-xsl-20001121/xslspecRX.pdf" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">PDF by RenderX</loc>,
+<loc href="http://www.w3.org/TR/2000/CR-xsl-20001121/xslspec.xml" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">XML file</loc>,
+<loc href="http://www.w3.org/TR/2000/CR-xsl-20001121/xslspec.html" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">HTML (one large file)</loc>,
+<loc href="http://www.w3.org/TR/2000/CR-xsl-20001121/xs001121.zip" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">ZIP file</loc>
+</otherversions>
+
+</publoc>
+<latestloc>
+<loc href="http://www.w3.org/TR/xsl/" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">http://www.w3.org/TR/xsl/</loc>
+</latestloc>
+<prevlocs>
+<loc href="http://www.w3.org/TR/2000/WD-xsl-20001018" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">http://www.w3.org/TR/2000/WD-xsl-20001018</loc>
+</prevlocs>
+<authlist>
+<author>
+<name>Sharon Adler</name>
+<affiliation>IBM</affiliation>
+<email href="mailto:sca@us.ibm.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">sca@us.ibm.com</email>
+</author>
+<author>
+<name>Anders Berglund</name>
+<affiliation>IBM</affiliation>
+<email href="mailto:alrb@us.ibm.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">alrb@us.ibm.com</email>
+</author>
+<author>
+<name>Jeff Caruso</name>
+<affiliation>Pageflex</affiliation>
+<email href="mailto:jcaruso@pageflexinc.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">jcaruso@pageflexinc.com</email>
+</author>
+<author>
+<name>Stephen Deach</name>
+<affiliation>Adobe</affiliation>
+<email href="mailto:sdeach@adobe.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">sdeach@adobe.com</email>
+</author>
+<author>
+<name>Paul Grosso</name>
+<affiliation>ArborText</affiliation>
+<email href="mailto:paul@arbortext.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">paul@arbortext.com</email>
+</author>
+<author>
+<name>Eduardo Gutentag</name>
+<affiliation>Sun</affiliation>
+<email href="mailto:eduardo.gutentag@eng.sun.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">eduardo.gutentag@eng.sun.com</email>
+</author>
+<author>
+<name>Alex Milowski</name>
+<affiliation>Lexica</affiliation>
+<email href="mailto:alex@milowski.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">alex@milowski.com</email>
+</author>
+<author>
+<name>Scott Parnell</name>
+<affiliation>Xerox</affiliation>
+<email href="mailto:Scott.Parnell@usa.xerox.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">Scott.Parnell@usa.xerox.com</email>
+</author>
+<author>
+<name>Jeremy Richman</name>
+<affiliation>BroadVision</affiliation>
+<email href="mailto:Jeremy.Richman@BroadVision.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">Jeremy.Richman@BroadVision.com</email>
+</author>
+<author>
+<name>Steve Zilles</name>
+<affiliation>Adobe</affiliation>
+<email href="mailto:szilles@adobe.com" show="new" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">szilles@adobe.com</email>
+</author>
+</authlist>
+
+<status>
+
+<p>This document is a W3C Candidate Recommendation.
+The XSL WG considers this specification to be stable and
+encourges implementation and comment during the CR review period.
+The Candidate Recommendation review period ends on February 28, 2001.</p>
+
+<p>Please send detailed comments and reports of implementation
+experience to <loc href="mailto:xsl-editors@w3.org" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">xsl-editors@w3.org</loc> before
+the end of the CR review period. <loc href="http://lists.w3.org/Archives/Public/xsl-editors" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">Archives</loc>
+of the comments are available.
+More general public discussion of XSL takes place
+on the <loc href="http://www.mulberrytech.com/xsl/xsl-list/index.html" show="replace" actuate="user" xmlns:xlink="http://www.w3.org/TR/WD-xlink">XSL-List</loc>
+mailing list.</p>
+
+<p>Should this specification prove impossible to implement,
+the Working Group will return the document to Working Draft status
+and make necessary changes. Otherwise, the Working Gro

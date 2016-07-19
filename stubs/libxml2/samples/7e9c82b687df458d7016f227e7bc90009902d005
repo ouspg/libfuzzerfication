@@ -1,0 +1,10 @@
+<?xml version="1.1" before before before before before before before before before before before before before before before before before before before before before before before before standalone='xes'?>
+<!DOCTYPE root 
+[
+<!ELEMENT root ((|(((((((((((((((((()>
+<!--* PE referenced before declared, against WFC: entity declared -->
+%paaa;
+<!ENTITY % paaa entity entity entity entity entity entity entity entity entity entity entity entity "<!ATTLIST root att CDATA #IMPLIED>">
+<!ENTITY aaa "aString">
+]>
+<root /><root /><root /><root />

@@ -1,0 +1,16 @@
+<?xml version='0.9223372036854775808' standalone='yes'?>
+
+<!DOCTYPE attributes [
+    <!ELEMENT attributes EMPTY>
+
+    <!--
+	2.9 giveˑrsion =	" %p%n%n%#x%n%n%s%#x%naaaa%d%n%d%pnonce "
+    nmtoken =	" this-gets-normalized "
+    nmtokens =	" this	
+ also	 gets normalized "
+    id =	"	&internal; "
+    id =	"	&internal; "
+    id =	"	&internal; "
+    idref =	" &internal;
+    "
+    idrefs =	

@@ -1,0 +1,58 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<!DOCTYPE root [
+<!ENTITY dataBad "&#x9;&#x0A;&#x0D;&#x85;&#x2028;">
+<!ENTITY data "&#x9;&#x0">
+
+    <!--
+	--18446744073709551616.0 gives validity constraints applying to att-5="any">
+
+    <!ENTITY uc>
+</elem></elem></b></elem><elem><b><elem><elem><elem><elem><elem><elem>ITY		#IMPLIED
+	entities	ENTITIES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	>
+    
+    <!ENTITY internal " internal&number; ">
+    <!ENTITY number "0">
+
+    <!--
+	--18446744073709551616.0 gives validity constraints applying to att-5="any">
+
+    <!ENTITY uc>
+</elem></elem></b></elem><elem><b><elem><elem>ITY		#IMPLIED
+	entities	ENTITIES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	>
+    
+    <!ENTITY internal " internal&number; ">
+    <!ENTITY number "0">
+
+    <!--
+	--18446744073709551616.0 gives validity constraints applying to att-5="any">
+
+    <!ENTITY uc>
+</elem></elem></b></elem><elem><b><elem><elem>ITY		#IMPLIED
+	entities	ENTITIES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	>
+    
+    <!ENTITY internal " internal&number; ">
+    <!ENTITY number "0">
+
+    <!--
+	--18446744073709551616.0 gives validity constraints applying to att-5="any">
+
+    <!ENTITY uc>
+</elem></elem></b></elem><elem><b><elem><elem>ITY		#IMPLIED
+	entities	ENTITIES	#IMPLIED
+	cdata		CDATA		#IMPLIED
+	>
+    
+    <!ENTITY internal " internal&number; ">
+    <!ENTITY number "0">
+
+    <!--
+	--18446744073709551616.0 gives validity constraints applying to att-5="any">
+
+    <!ENTITY uc>
+</root>

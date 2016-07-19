@@ -1,0 +1,132 @@
+<!--
+
+CHANGES: 31 Aug 2005
+
+See:
+http://lists.w3.org/Archives/Member/w3c-xml-query-wg/2005Jul/0022
+
+
+
+CHANGES: 12 July 2005
+
+### Mike Kay changes:
+### Carmelo changes:
+
+http://www.w3.org/Member/bugzilla/show_bug.cgi?id=119
+
+Test rdb-queries-results-q9 (from use case R) uses the obsolete function names
+get-month-from-date() and get-year-from-date(). The "get-" prefix has been removed.
+
+##
+
+http://www.w3.org/Member/bugzilla/show_bug.cgi?id=121
+
+Use case q5 (named as xmp-queries-results-q5) copies a text node from the source
+document to the result document using the construct
+
+<price-bstore2>{ $a/price/text() }</price-bstore2>
+
+The relevant element in the source document is
+
+<price> 65.95</price>
+
+but in the reference results it appears as
+
+<price>65.95</price>
+
+Removing the leading space would be legitimate in a schema-aware query that
+validates the price element as a decimal; but there is no schema in this
+example, so the value is untypedAtomic, and the leading space should therefore
+be present in the result (or absent from the source!)
+
+## I removed the space from the source.
+
+http://www.w3.org/Member/bugzilla/show_bug.cgi?id=124
+
+Use case NS q5 copies a <record> element from the source document to the result
+document. There are two <remark> elements in this <record>, one English and one
+German: the text of both remarks contain significant trailing whitespace in the
+source document which is wrongly omitted from the expected results.
+
+## Removed trailing whitespace from source.
+
+http://www.w3.org/Member/bugzilla/show_bug.cgi?id=148
+
+Use case STRING results for q1 and q2 are incorrect: the expected results omit
+whitespace that is present in the source document.
+
+Q1:
+
+Disagree - this looks correct. Source is indented.
+
+<title>Foobar Corporation releases its new line of Foo
+products today</title>
+   <title>Foobar Corporation releases its new line of Foo products
+   today</title>
+<title>Foobar Corporation is suing Gorilla Corporation for patent
+infringement </title> 
+   <title>Foobar Corporation is suing Gorilla Corporation for
+   patent infringement </title>
+
+Q2:
+
+<news_item>
+    <title> Gorilla Corporation acquires YouNameItWeIntegrateIt.com </title>
+    <date>1-20-2000</date>
+</news_item>
+<news_item>
+    <title>Foobar Corporation releases its new line of Foo products today</title>
+    <date>1-20-2000</date>
+</news_item>
+<news_item>
+    <title>Foobar Corporation is suing Gorilla Corporation for patent
+    infringement </title>
+    <date>1-20-2000</date>
+</news_item>
+
+Results for q4 and q5 are OK after normalize-space() is applied - but that isn't
+supposed to be allowed.
+
+### Changed get-XXX-() date functions to current names in Q9.
+
+--><spec w3c-doctype="wd">
+    <header>
+        <title>XML Query Use Cases</title>
+        <version/>
+        <w3c-designation>WD-xquery-use-cases-20050915</w3c-designation>
+        <w3c-doctype>W3C Working Draft</w3c-doctype>
+        <pubdate>
+            <day>15</day>
+            <month>September</month>
+            <year>2005</year>
+        </pubdate>
+        <publoc>
+            <loc xmlns:xlink="http://www.w3.org/TR/WD-xlink" href="http://www.w3.org/TR/2005/WD-xquery-use-cases-20050915/" show="replace" actuate="user">http://www.w3.org/TR/2005/WD-xquery-use-cases-20050915/</loc>
+        </publoc>
+<altlocs>
+            <loc xmlns:xlink="http://www.w3.org/TR/WD-xlink" href="http://www.w3.org/TR/2005/WD-xquery-use-cases-20050915/xquery-use-cases.xml" show="replace" actuate="user">XML</loc>
+</altlocs>
+        <latestloc>
+            <loc xmlns:xlink="http://www.w3.org/TR/WD-xlink" href="http://www.w3.org/TR/xquery-use-cases/" show="replace" actuate="user">http://www.w3.org/TR/xquery-use-cases/</loc>
+        </latestloc>
+        <prevlocs>
+            <loc xmlns:xlink="http://www.w3.org/TR/WD-xlink" href="http://www.w3.org/TR/2005/WD-xquery-use-cases-20050404/" show="replace" actuate="user">http://www.w3.org/TR/2005/WD-xquery-use-cases-20050404/</loc>
+        </prevlocs>
+        <authlist>
+            <author>
+                <name>Don Chamberlin</name>
+                <affiliation>IBM Almaden Research Center</affiliation>
+                <email xmlns:xlink="http://www.w3.org/TR/WD-xlink" href="mailto:chamberlin@almaden.ibm.com" show="new" actuate="user">chamberlin@almaden.ibm.com </email>
+            </author>
+            <author>
+                <name>Peter Fankhauser</name>
+                <affiliation>Infonyte GmbH</affiliation>
+                <email xmlns:xlink="http://www.w3.org/TR/WD-xlink" href="mailto:fankhauser@infonyte.com" show="new" actuate="user">fankhauser@infonyte.com</email>
+            </author>
+            <author>
+                <name>Daniela Florescu</name>
+                <affiliation>Oracle corporation</affiliation>
+                <email xmlns:xlink="http://www.w3.org/TR/WD-xlink" href="mailto:dana.florescu@oracle.com" show="new" actuate="user">dana.florescu@oracle.com</email>
+            </author>
+            <author>
+                <name>Massimo Marchior

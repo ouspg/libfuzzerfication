@@ -1,0 +1,8 @@
+<!-- =================================================================== -->
+<!-- Tests CM and PI in element fragment grammar.                        -->
+<!-- =================================================================== -->
+<foo:C xmlns:foo="urn:foo" xmlns:goo="urn:goo" xmlns:aoo="urn:aoo" 
+  none="Welcome to the world of element fragment grammar!">
+  <!-- CM -->
+  <?eg a="A" b="B"?>
+</foo:C>

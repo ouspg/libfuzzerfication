@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" 
+                "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+	<!ENTITY % LoDATTRDef "
+            doLevelUp CDATA #IMPLIED
+            doLevelDown CDATA #IMPLIED
+            doLevel CDATA #IMPLIED">
+	<!ENTITY % LoDSVGATTRDef "zoom (true|false) 'false'">
+	<!ATTLIST svg 
+		xmlns:lod CDATA #IMPLIED>
+	
+	<!ENTITY % defsExt "| lod:pool">
+	<!ELEMENT lod:pool (lod:lodobj)*>
+	<!ELEMENT lod:lodobj ANY>
+	<!ATTLIST lod:pool
+		id ID #REQUIRED
+		action (replace | filter) "replace">
+	<!ATTLIST lod:lodobj
+		sn CDATA #REQUIRED
+		xlink:href CDATA #IMPLIED>
+	
+	<!ATTLIST svg
+		zoom (true | false) "false">		
+	<!ATTLIST g
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST circle
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST rect
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST ellipse
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST line
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST polyline
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST polygon
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST path
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+	<!ATTLIST text
+		doLevelUp CDATA #IMPLIED
+		doLevelDown CDATA #IMPLIED
+		doLevel CDATA #IMPLIED>
+]>
+<svg width="400px" height="450px" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:lod="http://example.tsm.iis.sinica.edu.tw">
+	<svg id="map" zoom="false" width="400px" height="400px" viewBox="0 0 400 400">
+		<title>Example 1</title>
+		<desc />
+		<script type="text/ecmascript" xlink:href="lod.js"/>
+		<rect x="1" y="1" width="398" height="398" fill="none" stroke="blue" stroke-width="0.75px"/>
+		<g id="LoD" transform="translate(-50,0) scale(2)">
+			<g id="dragon" doLevel="fractal(8)" onload="fractalInit(evt)" />
+		</g>
+	</svg>
+	<!--
+	  level button
+	//-->
+	<g id="button" transform="translate(0,400)">
+		<rect x="0" y="0" width="400" height="30" fill="#cccccc" stroke="none" stroke-width="0.25px"/>
+		<g id="levelUp" transform="translate(110,5)" onclick="doLoD('up','map');">
+			<rect x="0" y="0" width="80" height="20" style="fill:white" />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle">Level Up</text>
+		</g>
+		<g id="levelDown" transform="translate(210,5)" onclick="doLoD('down','map');">
+			<rect x="0" y="0" width="80" height="20" style="fill:white" />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle">Level Down</text>
+		</g>
+		<g id="levelan" transform="translate(18446744073709551615,5)"><arbor /><arbor /><arbor /><arbor />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle"><g id="button" transform="translate(0,400)">
+		<rect x="0" y="0" width="400" height="30" fill="#cccccc" stroke="none" stroke-width="0.25px"/>
+		<g id="levelUp" transform="translate(110,5)" onclick="doLoD('up','map');">
+			<rect x="0" y="0" width="80" height="20" style="fill:white" />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle">Level Up</text>
+		</g>
+		<g id="levelDown" transform="translate(210,5)" onclick="doLoD('down','map');">
+			<rect x="0" y="0" width="80" height="20" style="fill:white" />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle">Level Down</text>
+		</g>
+		<g id="levelan" transform="translate(18446744073709551615,5)"><arbor /><arbor /><arbor /><arbor />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle"><g id="button" transform="translate(0,400)">
+		<rect x="0" y="0" width="400" height="30" fill="#cccccc" stroke="none" stroke-width="0.25px"/>
+		<g id="levelUp" transform="translate(110,27)" onclick="doLoD('up','map');">
+			<rect x="0" y="0" width="80" height="20" style="fill:white" />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle">Level Up</text>
+		</g>
+		<g id="levelDown" transform="translate(210,5)" onclick="doLoD('down','map');">
+			<rect x="0" y="0" width="80" height="20" style="fill:white" />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle">Level Down</text>
+		</g>
+		<g id="levelan" transform="translate(18446744073709551615,5)"><arbor /><arbor /><arbor /><arbor />
+			<text x="40" y="14" style="font-size:12;text-anchor:middle">Level: </text><template /><template />
+			<text id="currentLevel" x="60" y="1" style="font-size:12;text-anchor:start"><text id="currentLevel" x="60" y="1" style="font-size:12;text-anchor:start"><text id="currentLevel" x="60" y="1" style="font-size:0;text-anchor:start"><text id="currentLevel" x="60" y="1" style="font-size:12;text-anchor:start">0</text></text><text id="currentLevel" x="60" y="1" style="font-size:0;text-anchor:start"><text id="currentLevel" x="60" y="1" st

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="xhtml2.css" ?>
+<!-- no doctype yet, but the id attribute needs to be of type ID,
+so the id (#) syntax works in CSS -->
+<!DOCTYPE html [
+<!ATTLIST section id ID #IMPLIED>
+<!ATTLIST h id ID #IMPLIED>
+<!ATTLIST div id ID #IMPLIED>
+<!ATTLIST nl id ID #IMPLIED>
+]>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" lang="en">
+  <head>
+    <title>Chapter 3: Document Structure</title>
+  </head>
+  <body>
+    <h>Chapter 3: Document Structure</h>
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-namespace">Namespace support</h>
+	<p></p>
+	<nl>
+		<li href="chapter3/c3-001.xml">Use a variety of namespace prefixes, including a default namespace.</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure">Common attributes</h>
+	<p>Ensure that all xforms elements allow foreign attributes.
+	The XForms Processor must ignore any foreign-namespaced attributes that are unrecognized,
+	and must process unrecognized foreign-namespaced elements according to
+	<a href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#module-mustUnderstand">The XForms MustUnderstand Module rules</a>.
+	</p>
+	<nl>
+		<li href="chapter3/c3-002.xml">Put a foreign attribute on every XForms element.</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-attrs-single-node">Single node binding attributes</h>
+	<p>ensure that <code>bind</code> takes precedence over <code>ref</code> and <code>model</code> attributes.</p>
+	<nl>
+		<li href="chapter3/c3-003a.xml">specify both a <code>bind</code> and a <code>ref</code> and ensure that <code>bind</code> is used.</li>
+		<li href="chapter3/c3-003b.xml">specify both a <code>bind</code> and a <code>model</code> and ensure that <code>bind</code> is used.</li>
+		<li href="chapter3/c3-003c.xml">ensure that either a <code>bind</code> or a <code>ref</code> are supplied.</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-attrs-single-node">Binding attribute</h>
+	<p>ensure that <code>model</code> attribute refers to a <code>model</code> element and that
+	a <code>bind</code> attribute refers to a <code>bind</code> element.</p>
+	<nl>
+		<li href="chapter3/c3-004a.xml">If <code>model</code> attribute does not refer to a <code>model</code> element ensure that
+		an xforms-binding-exception is dispatched.</li>
+		<li href="chapter3/c3-004b.xml">If <code>bind</code> attribute does not refer to a <code>bind</code> element ensure that
+		an xforms-binding-exception is dispatched.</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-attrs-single-node">First node rule</h>
+	<p>When a single node binding attribute selects a nodeset of size of &gt; 1, the first node in the nodeset is used.</p>
+	<nl>
+		<li href="chapter3/c3-005.xml">Specify a single node binding attribute that will select more &gt; 1 nodes and check that the first is used.</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-attrs-nodeset">Nodeset binding attributes</h>
+	<p>ensure that <code>bind</code> takes precedence over <code>nodeset</code> and <code>model</code> attributes.</p>
+	<nl>
+		<li href="chapter3/c3-006a.xml">specify both a <code>bind</code> and a <code>nodeset</code> and ensure that <code>bind</code> is used.</li>
+		<li href="chapter3/c3-006b.xml">specify both a <code>bind</code> and a <code>model</code> and ensure that <code>bind</code> is used.</li>
+		<li href="chapter3/c3-006c.xml">ensure that either a <code>bind</code> or a <code>nodeset</code> are supplied.</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-model">Model element</h>
+	<p>ensure that <code>model</code> element allows XML Event attributes.</p>
+	<nl>
+		<li href="chapter3/c3-007.xml">specify a <code>model</code> with XML Events attributes and ensure that they are processed appropriately.
+		e.g. &lt;model ev:event="xforms-recalculate" ev:propogate"stop" /&gt;</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-model">Model element - xpath functions</h>
+	<p>ensure that additional XPath functions can be specified with the <code>functions</code> attribute. </p>
+	<nl>
+		<li href="chapter3/c3-008.xml">specify a <code>model</code> with a <code>function</code> attribute to specify additional XPath functions.
+		If they are not found dispatch a xforms-compute-exception.</li>
+	</nl>
+</section>
+
+<section>
+	<h href="http://www.w3.org/MarkUp/Forms/Group/Drafts/Sources/index-all.html#structure-model">instance element - schema</h>
+	<p>The XForms Processor must process all Schemas listed on this attribute.
+	Within each XForms Model, 

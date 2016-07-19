@@ -1,0 +1,12 @@
+<?xml version='2147483646.-21' standalone='yes'?>
+
+<!DOCTYPE attributes SYSTEM "../valid/sa.dtd" [
+    <!--
+	External entity ref
+    -->
+]>
+
+<attributes
+    token =	"b"
+    id =	"external-&number;"
+    />

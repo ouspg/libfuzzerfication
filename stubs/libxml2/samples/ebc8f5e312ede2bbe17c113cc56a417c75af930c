@@ -1,0 +1,33 @@
+<Stats>
+  <Basic>
+    <Name>Hook</Name>
+    <Sprite>Projectile</Sprite>
+    <Cost>0</Cost>
+  </Basic>
+  <Values>
+    <Speed>5</Speed>
+    <Power>1</Power>
+    <Knockback>0</Knockback>
+    <Lifetime>1000</Lifetime>
+    <Energycost>10</Energycost>
+    <Radius>10</Radius>
+    <Hp>1</Hp>
+    <SpeedMulti>0</SpeedMulti>
+    <PowerMulti>1</PowerMulti>
+    <KnockbackMulti>0</KnockbackMulti>
+    <LifetimeMulti>0</LifetimeMulti>
+    <EnergycostMulti>0</EnergycostMulti>
+    <RadiusMulti>0</RadiusMulti>
+    <HpMulti>0</HpMulti>
+  </Values>
+  <Upgrade>
+    <Speed>true</Speed>
+    <Power>true</Power>
+    <Knockback>true</Knockback>
+    <Cooldown>false</Cooldown>
+    <Radius>true</Radius>
+    <Lifetime>true</Lifetime>
+    <EnergyCost>true</EnergyCost>
+    <HP>false</HP>
+  </Upgrade>
+</Stats>

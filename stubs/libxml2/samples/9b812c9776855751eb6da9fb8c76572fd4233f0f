@@ -1,0 +1,7 @@
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ENTITY % pe SYSTEM "subdir32767/E4294967296-pe">
+%pe;
+%intpe;
+]>
+<foo><mask x="9223372036854775747"><foo><foo><mask x="9223372036854775747"><mask x="9223372036854775747"><svg baseProfile="basic" height="100%"><foo><tspan><foo><mask x="9223372036854775747"><foo>&ent;</foo><foo>&ent;</foo></foo></tspan></foo></foo></foo></foo><source><foo><mask x="9223372036854775747"><foo><foo><mask x="9223372036854775747"><foo><foo><mask x="0"><foo>&ent;</foo></foo></foo></foo></foo></foo></source>

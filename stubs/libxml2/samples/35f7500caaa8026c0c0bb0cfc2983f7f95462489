@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bio="http://purl.org/vocab/bio/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:wot="http://xmlns.com/wot/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:_13="http://www.w3.org/People/Ivan/" xmlns:xhtml="http://www.w3.org/1999/xhtml#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <foaf:Person rdf:about="http://www.w3.org/People/Ivan/#me">
+    <foaf:mbox rdf:resource="mailto:ivan@w3.org"/>
+    <foaf:workInfoHomepage rdf:resource="http://www.w3.org/Consortium/Offices"/>
+    <foaf:workInfoHomepage rdf:resource="http://www.iw3c2.org"/>
+    <foaf:workInfoHomepage rdf:resource="http://www.w3.org/2001/sw"/>
+    <foaf:name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Ivan Herman</foaf:name>
+    <foaf:workplaceHomepage rdf:resource="http://www.w3.org"/>
+    <foaf:schoolHomepage rdf:resource="http://www.elte.hu/"/>
+    <foaf:holdsAccount>
+      <foaf:OnlineChatAccount>
+        <foaf:accountServiceHomepage rdf:resource="http://www.freenode.net/irc_servers.shtml"/>
+        <foaf:accountName rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">IvanHerman</foaf:accountName>
+      </foaf:OnlineChatAccount>
+    </foaf:holdsAccount>
+    <wot:pubkeyAddress rdf:resource="http://www.cwi.nl/%7Eivan/AboutMe/pgpkey.html"/>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">5ac8032d5f6012aa1775ea2f63e1676bafd5e80b</foaf:mbox_sha1sum>
+    <bio:olb rdf:resource="http://www.w3.org/People/Ivan/#bio"/>
+    <foaf:homepage rdf:resource="http://www.ivan-herman.net"/>
+    <owl:sameAs rdf:resource="http://ivan-herman.net/Ivan_Herman"/>
+    <owl:sameAs rdf:resource="http://ivan-herman.net/foaf.rdf#me"/>
+    <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/dblp/resource/person/103481"/>
+    <foaf:phone rdf:resource="tel:+31-20-5924163"/>
+    <foaf:phone rdf:resource="tel:+31-641044153"/>
+    <rdfs:seeAlso rdf:resource="http://www.ivan-herman.net/foaf.rdf"/>
+  </foaf:Person>
+  <rdf:Description rdf:about="">
+    <_13:transformation rdf:resource="http://www-sop.inria.fr/acacia/soft/RDFa2RDFXML.xsl"/>
+    <_13:transformation rdf:resource="http://www.w3.org/2002/12/cal/glean-hcal.xsl"/>
+    <dc:date rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">$Date: 2007/01/29 15:06:00 $</dc:date>
+    <_13:meta rdf:resource="http://www.ivan-herman.net/foaf.rdf"/>
+    <xhtml:stylesheet rdf:resource="http://www.w3.org/People/Ivan/StyleSheets/Private.css"/>
+    <dc:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Ivan Herman</dc:creator>
+  </rdf:Description>
+</rdf:RDF>

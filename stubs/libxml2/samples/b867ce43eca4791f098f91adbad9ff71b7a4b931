@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="examples">
+<div class="example">
+
+   <p>In this example the footer contains contact information and a
+   copyright.</p>
+
+   <pre><![CDATA[<footer>
+ <address>
+  For more details, contact
+  <a href="mailto:js@example.com">John Smith</a>.
+ </address>
+ <p><small>© copyright 2038 Example Corp.</small></p>
+</footer>]]></pre>
+
+   <p>In this second example, the <code><a href="#the-small-element">small</a></code> element is used
+   for a side comment.</p>
+
+   <pre><![CDATA[<p>Example Corp today announced record profits for the
+second quarter <small>(Full Disclosure: Foo News is a subsidiary of
+Example Corp)</small>, leading to speculation about a third quarter
+merger with Demo Group.</p>]]></pre>
+
+   <p>In this last example, the <code><a href="#the-small-element">small</a></code> element is marked
+   as being <em>important</em> small print.</p>
+
+   <pre><![CDATA[<p><strong><small>Continued use of this service will result in a kiss.</small></strong></p>]]></pre>
+
+  </div>
+
+</div>

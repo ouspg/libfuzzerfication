@@ -1,0 +1,13 @@
+<root>
+    <a>value1</a>
+    <a>value1</a><!-- local value hit if localValuePartitions == 1 -->
+    <a>value2</a>
+    <a>value3</a>
+    <a>value4</a>
+    <a>value2</a><!-- another local value hit if localValuePartitions == 1 -->
+	<b>XXX</b>
+	<b>YYY</b>
+	<b>XXX</b><!-- local-hit -->
+	<b>value4</b> <!-- global-hit -->
+	<x>value2</x> <!-- another global-hit -->
+</root>

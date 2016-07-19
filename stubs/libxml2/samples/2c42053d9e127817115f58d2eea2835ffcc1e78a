@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!-- 
+    Web Services Addressing Features 
+    $Date: 2007-07-09 20:33:16 $ 
+-->
+
+<features xmlns="http://www.w3.org/2002/ws/addr/testsuite/features/">
+
+  <feature xml:id="core01" cr="REQUIRED" document="core" section="eprinfomodel">
+    <title>"none" URI</title>
+  </feature>
+
+  <feature xml:id="core02" cr="REQUIRED" document="core" section="eprinfoset">
+    <title>Endpoint Reference Infoset Representation</title>
+  </feature>
+
+  <feature xml:id="core03" cr="REQUIRED" document="core" section="eprextensibility">
+    <title>Endpoint Reference Extensibility</title>
+  </feature>
+
+  <feature xml:id="core04" cr="REQUIRED" document="core" section="msgaddrpropsinfoset">
+    <title>XML Infoset Representation of Message Addressing Properties</title>
+  </feature>
+
+  <feature xml:id="core05" cr="REQUIRED" document="core" section="msgaddrpropsinfoset">
+    <title>wsa:To defaulting</title>
+  </feature>
+
+  <feature xml:id="core06" cr="REQUIRED" document="core" section="msgaddrpropsinfoset">
+    <title>wsa:ReplyTo defaulting</title>
+  </feature>
+
+  <feature xml:id="core07" cr="REQUIRED" document="core" section="msgaddrpropsinfoset">
+    <title>wsa:RelatesTo/@RelationshipType defaulting</title>
+  </feature>
+
+<!-- removed following discussion at the Yokohama F2F
+  <feature xml:id="core08" cr="REQUIRED" document="core" section="formreplymsg">
+    <title>Comparing IRIs</title>
+  </feature>
+-->
+
+  <feature xml:id="core09" cr="REQUIRED" document="core" section="formreplymsg">
+    <title>Formulating a normal Reply</title>
+  </feature>
+
+  <feature xml:id="core10" cr="REQUIRED" document="core" section="formreplymsg">
+    <title>Formulating a Fault Reply</title>
+  </feature>
+
+  <feature xml:id="soap01" cr="REQUIRED" document="soap" section="s12featureinteractions">
+    <title>SOAP 1.2 feature interaction with Action</title>
+  </feature>
+
+  <feature xml:id="soap02" cr="REQUIRED" document="soap" section="bindrefp">
+    <title>SOAP 1.2 Message Addressing Property binding</title>
+  </feature>
+
+  <feature xml:id="soap03" cr="REQUIRED" document="soap" section="soaphttp">
+    <title>SOAP 1.2 Anonymous Address</title>
+  </feature>
+
+  <feature xml:id="soap04" cr="REQUIRED" document="soap" section="s11extdesc">
+    <title>SOAP 1.1 Message Addressing Property binding</title>
+  </feature>
+
+  <feature xml:id="soap05" cr="REQUIRED" document="soap" section="s11extdesc">
+    <title>SOAP 1.1 interaction with Action</title>
+  </feature>
+
+  <feature xml:id="soap06" cr="REQUIRED" document="soap" section="soaphttp">
+    <title>SOAP 1.1 Anonymous Address</title>
+  </feature>
+
+  <feature xml:id="soap07" cr="OPTIONAL" document="soap" section="soapfaults">
+    <title>Faults</title>
+  </feature>
+
+  <feature xml:id="soap08" cr="REQUIRED" document="soap" section="invalidmapfault">
+    <title>InvalidAddressingFailure Fault</title>
+  </feature>
+
+</features>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!--
+      The National Institute of Standards and Technology.
+      Conformance test for W3C XML Schema Part 2: Datatypes.
+      Date: Jan 13, 2004.
+
+      File name: NISTXML-SV-II-list-QName-maxLength-4-4.xml
+      Description: XML instance number 4 in a series of 5.
+      Schema location:
+      NISTSchema-SV-II-list-QName-maxLength-4.xsd
+      This instance is intended to be invalid with
+      regard to the defining schema.
+-->
+
+<nist:NISTSchema-SV-II-list-QName-maxLength-4
+    xmlns:nist="NISTSchema-SV-II-list-QName-maxLength-4-NS"
+    xmlns:_which_both.and-utilities="http://www.nist.gov/xsdNS"
+    xmlns:telectronic-and_tha="http://www.nist.gov/xsdNS"
+    xmlns:cprocess-groups_i="http://www.nist.gov/xsdNS"
+    xmlns:dof_rapid-="http://www.nist.gov/xsdNS"
+    xmlns="http://www.nist.gov/xsdDefaultNS"
+    xmlns:_for.groups_prototype_for-con="http://www.nist.gov/xsdNS"
+    xmlns:orevo="http://www.nist.gov/xsdNS"
+    xmlns:othan-in-of.electronic.i="http://www.nist.gov/xsdNS"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="NISTSchema-SV-II-list-QName-maxLength-4-NS NISTSchema-SV-II-list-QName-maxLength-4.xsd">_which_both.and-utilities:ikey-f telectronic-and_tha:bbeing cprocess-groups_i:va_reg dof_rapid-:xof-we fin_si geffor _for.groups_prototype_for-con:dtime_ orevo:_is_be othan-in-of.electronic.i:jwhich ca-wil</nist:NISTSchema-SV-II-list-QName-maxLength-4>

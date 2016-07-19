@@ -1,0 +1,25 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE NMtokenName [
+<!ELEMENT NMtokenName ANY>
+<!ATTLIST NMtokenName thistoken0 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken1 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken170141183460469231731687303715884105729 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken3 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken0 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken5 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken0 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken-1 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken8 NMTOKE� #IMPLIED
+	idrefs	IDREFS	#IMPLIED
+	>
+]>
+
+<attributes
+    token33 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken34 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken35 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken36 NMTOKEN #IMPLIED>
+<!ATTLIST NMtokenName thistoken37 NMTOKEN #IMPLIED>
+]>
+<!-- LegalNameChar  0x300,0x333,0x369,0x37E,0x2000,0x2001,0x2002,0x2005,0x200B,0x200E,x200F,0x2069,0x2190,0x23FF,0x280F,0x2A00,0x2EDC,0x2FED,0x2FFF,0x3000,0xD800,0xD801,0xDAFF,0xDFFF,0xEFFF,0xF1FF,0xF8FF,0xFFFFF; _, ., 0, B7, C0, 2FFF in P07 -->
+<NMtokenName thistoken0=":" thistoken1="À" thistoken2="Á" thistoken3="˾" thistoken4="À" thistoken5="Á" thistoken6="˾" thistoken7="˿" thistoken8="Ͱ" thistoken9="ͱ" thistoken10="ͼ" thistoken11="ͽ" thistoken12="Ϳ" thistoken13="΀" thistoken14="῾" thistoken15="῿" thistoken16="‌" thistoken17="‍" thistoken18="⁰" thistoken19="ⁱ" thistoken20="↎" thistoken21="↏" thistoken22="Ⰰ" thistoken23="Ⰱ" thistoken24="⿮" thistoken25="⿯" thistoken26="、" thistoken27="。" thistoken28="퟾" thistoken29="퟿" thistoken30="豈" thistoken31="更" thistoken32="_" thistoken33="." thistoken34="0" thistoken35="·" thistoken36="À" thistoken37="ͼ" /><NMtokenName thistoken0=":" thistoken1="À" thistoken2="Á" thistoken3="˾" thistoken4="À" thistoken5="Á" thistoken6="˾" thistoken7="˿" thistoken8="Ͱ" thistoken9="ͱ" thistoken10="ͼ" thistoken11="ͽ" thistoken12="Ϳ" thistoken13="΀" thistoken14="῾" thistoken15="῿" thistoken16="‌" thistoken17="‍" thistoken18="⁰" thistoken19="ⁱ" thistoken20="↎" thistoken21="↏" thistoken22="Ⰰ" thistoken23="Ⰱ" thistoken24="⿮" thistoken25="⿯" thistoken26="、" thistoken27="。" thistoken28="퟾" thistoken29="퟿" thistoken30="豈" thistoken31="更" thistoken32="_" thistoken33="." thistoken34="0" thistoken35="·" thistoken36="À" thistoken37="ͼ" />

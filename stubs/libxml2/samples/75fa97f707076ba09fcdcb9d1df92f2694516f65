@@ -1,0 +1,12 @@
+<!DOCTYPE root [
+    <!ATTLIST root💩
+	id0	ID	"x0"
+	>
+]>
+
+<!-- an ID attribute must have a declared default
+    of #IMPLIED or #REQUIRED
+-->
+
+<root /><root />
+

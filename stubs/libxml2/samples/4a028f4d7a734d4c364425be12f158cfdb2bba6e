@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<SpriteSheet>
+  <SpriteSheetData Id="barGreen" Width="470" Height="225" />
+  <Animations>
+    <Animation Id="barGreen" PosInSpriteSheetX="0" PosInSpriteSheetY="0" Columns="1" Frames="1" FrameWidth="470" FrameHeight="75" xPivot="215" yPivot="252" Delay="16" Loop="0" />
+    <Animation Id="barGreenScale" PosInSpriteSheetX="0" PosInSpriteSheetY="75" Columns="1" Frames="1" FrameWidth="470" FrameHeight="75" xPivot="215" yPivot="252" Delay="16" Loop="0" />
+    <Animation Id="barGreenTransparant" PosInSpriteSheetX="0" PosInSpriteSheetY="150" Columns="1" Frames="1" FrameWidth="470" FrameHeight="75" xPivot="215" yPivot="252" Delay="16" Loop="0" />
+  </Animations>
+</SpriteSheet>

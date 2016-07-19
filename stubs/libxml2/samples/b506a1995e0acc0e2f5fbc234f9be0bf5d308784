@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="examples">
+<div class="example">
+
+   <p>The following example shows how an aside is used to mark up
+   background material on Switzerland in a much longer news story on Europe.</p>
+
+   <pre><![CDATA[<aside>
+ <h1>Switzerland</h1>
+ <p>Switzerland, a land-locked country in the middle of geographic
+ Europe, has not joined the geopolitical European Union, though it is
+ a signatory to a number of European treaties.</p>
+</aside>]]></pre>
+
+  </div>
+<div class="example">
+
+   <p>The following example shows how an aside is used to mark up
+   a pull quote in a longer article.</p>
+
+   <pre><![CDATA[...
+
+<p>He later joined a large company, continuing on the same work.
+<q>I love my job. People ask me what I do for fun when I'm not at
+work. But I'm paid to do my hobby, so I never know what to
+answer. Some people wonder what they would do if they didn't have to
+work... but I know what I would do, because I was unemployed for a
+year, and I filled that time doing exactly what I do
+now.</q></p>
+
+<aside>
+ <q> People ask me what I do for fun when I'm not at work. But I'm
+ paid to do my hobby, so I never know what to answer. </q>
+</aside>
+
+<p>Of course his work — or should that be hobby? —
+isn't his only passion. He also enjoys other pleasures.</p>
+
+...]]></pre>
+
+  </div>
+
+</div>

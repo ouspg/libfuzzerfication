@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding='utf-8'?>
+<!DOCTYPE spec SYSTEM "../schema/xsl-query.dtd" [
+
+<!ENTITY status-section SYSTEM "../etc/status-REC.xml">
+
+<!ENTITY Document SYSTEM "document.xml">
+<!ENTITY Element  SYSTEM "element.xml">
+<!ENTITY Attribute  SYSTEM "attribute.xml">
+<!ENTITY Namespace  SYSTEM "namespace.xml">
+<!ENTITY ProcessingInstruction  SYSTEM "processing-instruction.xml">
+<!ENTITY Comment  SYSTEM "comment.xml">
+<!ENTITY Text  SYSTEM "text.xml">
+<!ENTITY ChangeLog  SYSTEM "changelog.xml">
+
+<!ENTITY documentNode "Document Node">
+<!ENTITY elementNode "Element Node">
+<!ENTITY attributeNode "Attribute Node">
+<!ENTITY namespaceNode "Namespace Node">
+<!ENTITY processingInstructionNode "Processing Instruction Node">
+<!ENTITY commentNode "Comment Node">
+<!ENTITY textNode "Text Node">
+
+<!ENTITY dm-example.xml SYSTEM "build/dm-example.xml.cdata">
+<!ENTITY dm-example.xsd SYSTEM "build/dm-example.xsd.cdata">
+<!ENTITY dm-example.tbl SYSTEM "build/dm-example.tbl.xml">
+<!ENTITY xdt-schema-app SYSTEM "xdt-schema-app.xml">
+<!ENTITY xdt-datatypes  SYSTEM "xdt-datatypes.xml">
+<!ENTITY xdt-isoref     '<bibref ref="ISO8601"/>'>
+
+<!ENTITY date.year "2007">
+<!ENTITY date.month "January">
+<!ENTITY date.MM "01">
+<!ENTITY date.day "23">
+<!ENTITY date.DD "23">
+<!ENTITY doc.date "&date.year;&date.MM;&date.DD;">
+<!ENTITY doc.prefix "REC-xpath-datamodel">
+<!ENTITY url.group "http://www.w3.org/XML/Group/">
+<!ENTITY url.group.ql "&url.group;xmlquery/">
+<!ENTITY url.publoc "&url.group;&date.year;/&date.MM;/&doc.prefix;-&doc.date;.html">
+<!ENTITY url.internal "http://www.w3.org/Style/XSL/Group/xpath2-tf/&doc.prefix;-&doc.date;.html">
+<!ENTITY url.external "http://www.w3.org/TR/&date.year;/&doc.prefix;-&doc.date;/">
+<!ENTITY url.this "&url.external;">
+
+<!ENTITY dm.prop.attributes   "<emph role='dm-node-property'>attributes</emph>">
+<!ENTITY dm.prop.base-uri     "<emph role='dm-node-property'>base-uri</emph>">
+<!ENTITY dm.prop.node-kind    "<emph role='dm-node-property'>node-kind</emph>">
+<!ENTITY dm.prop.children     "<emph role='dm-node-property'>children</emph>">
+<!ENTITY dm.prop.content      "<emph role='dm-node-property'>content</emph>">
+<!ENTITY dm.prop.namespaces   "<emph role='dm-node-property'>namespaces</emph>">
+<!ENTITY dm.prop.nilled	      "<emph role='dm-node-property'>nilled</emph>">
+<!ENTITY dm.prop.node-name    "<emph role='dm-node-property'>node-name</emph>">
+<!ENTITY dm.prop.parent	      "<emph role='dm-node-property'>parent</emph>">
+<!ENTITY dm.prop.prefix	      "<emph role='dm-node-property'>prefix</emph>">
+<!ENTITY dm.prop.string-value "<emph role='dm-node-property'>string-value</emph>">
+<!ENTITY dm.prop.target	      "<emph role='dm-node-property'>target</emph>">
+<!ENTITY dm.prop.type-name    "<emph role='dm-node-property'>type-name</emph>">
+<!ENTITY dm.prop.uri          "<emph role='dm-node-property'>uri</emph>">
+<!ENTITY dm.prop.typed-value  "<emph role='dm-node-property'>typed-value</emph>">
+
+<!ENTITY % status-entities SYSTEM "../etc/status-entities.dtd">
+%status-entities;
+<!ENTITY status-section-id "status">
+<!ENTITY spec-devby    "&dm-devby;">
+<!ENTITY changelog-id  "&dm-changelog-id;">
+<!ENTITY changes-para  "&post.PR.nochanges;">
+<!ENTITY implementation-para  "&no-implementation-report-exists;">
+<!ENTITY Bugzilla-key "[&dm-Bugzilla-key;]">
+<!ENTITY patent-policy-paragraph "&dm-ppp;">
+
+]>
+<spec w3c-doctype="rec">
+<header>
+  <title>XQuery 1.0 and XPath 2.0 Data Model (XDM)</title>
+  <version/>
+  <w3c-designation>&doc.prefix;-&doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+    <day>&date.day;</day>
+    <month>&date.month;</month>
+    <year>&date.year;</year>
+  </pubdate>
+  <publoc>
+     <loc href="&url.this;">&url.this;</loc>
+  </publoc>
+  <altlocs>
+    <loc href="&url.this;data-model.xml">XML</loc>
+    <!--* <loc href="&url.this;diff-from-20061121.html">Recent revisions</loc> *-->
+  </altlocs>
+  <latestloc>
+    <loc href="http://www.w3.org/TR/xpath-datamodel/">http://www.w3.org/TR/xpath-datamodel/</loc>
+  </latestloc>
+  <prevlocs>
+    <loc href="http://www.w3.org/TR/2006/PR-xpath-datamodel-20061121/"/>
+    <!--*
+    <loc href="http://www.w3.org/TR/2006/CR-xpath-datamodel-20060711/"/>
+    <loc href="http://www.w3.org/TR/2006/CR-xpath-datamodel-20060608/"/>
+    <loc href="http://www.w3.org/TR/2005/CR-xpath-datamodel-20051103/"/>
+    *-->
+  </prevlocs>
+  <authlist>
+    <author>
+      <name>Mary Fernández (XML Query WG)</name>
+      <affiliation>AT&amp;T Labs</affiliation>
+      <email href="mailto:mff@research.att.com">mff@research.att.com</email>
+    </author>
+    <author>
+      <name>Ashok Malhotra (XML Query and XSL WGs)</name>
+      <affiliation>Oracle Corporation</affiliation>
+      <email href="mailto:ashok.malhotra@alum.mit.edu">ashok.malhotra@alum.mit.edu</email>
+    </author>
+    <author>
+      <name>Jonathan Marsh (XSL WG)</name>
+      <affiliation>M

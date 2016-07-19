@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<sitemap>
+
+    <path>../sample_data</path>
+    <!-- String:
+         top path to start site-mapping.
+         Default is application path
+    -->
+
+    <prePath></prePath>
+    <!-- String:
+         precede file-paths with this URL
+         (like http://www.outer-court.com/tech/)
+    -->
+
+    <maxDepth></maxDepth>
+    <!-- Integer:
+         maximum folder depth to recurse.
+         Default (-1) is without limit
+    -->
+
+    <maxLength></maxLength>
+    <!-- Integer:
+         maximum folder/ file length to process in each folder.
+         Default (-1) is without limit
+    -->
+
+    <transform>xhtml_simple.xsl</transform>
+    <!-- String:
+         alternative transformation (XSL) file-path
+         Default is "xhtml.xsl"
+    -->
+
+    <fileExclusions></fileExclusions>
+    <!-- String:
+         path to file-exclusion XML document.
+         Default is "file_exclusions.xml"
+    -->
+
+    <fileTypes></fileTypes>
+    <!-- String:
+         path to file-types XML document.
+         Default is "file_types.xml"
+    -->
+
+    <includeDetails></includeDetails>
+    <!-- Boolean:
+         wether to add certain more detailed file/ folder
+         attributes to the XML tree. Default is false
+    -->
+
+    <includeLocalPath>true</includeLocalPath>
+    <!-- Boolean:
+         wether to include the absolute path on
+         the server file-system. Default is false
+    -->
+
+</sitemap>

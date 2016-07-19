@@ -1,0 +1,57 @@
+
+<?xml version="1.0"?>
+<content>
+	<!--
+
+			this is flo : GlaxoSmithKLine
+			and demo also
+			made for simulaatio 3d 2005
+			requires multitexturing opengl device 
+			astu at luutia dot info
+			i really dont enjoy watching same scene for 3 minutes
+			bretton woods is devil
+			
+			just woke up after sleeping a moment
+			before that there was some nice coding session lasting over 20 hours
+			too bad i didn't had enough time to make this demo polish/polished
+			and maybe i would have done couple of more things
+			see ya
+			
+			ps. terkkui vittu damonekselle
+	
+	-->
+	<init>
+	
+		<screen x="800" y="600" fullscreen="true" vsync="false">
+		
+			<!--
+			 only first settings are used.
+			 feel free to play with yourself and these
+			 supported colors: red, green, blue, cyan, magenta, yellow, white, black
+			 -->
+			
+			<stereo focallength="50" left="red" right="cyan"> </stereo>
+			
+			<!--
+
+			<stereo focallength="40" left="cyan" right="red"> </stereo>
+			-->
+			
+		</screen>
+	</init>
+
+	<stuff start="0">
+		
+		<effect num="3" cam="2" > </effect>
+		<effect num="0" cam="1" > </effect>
+		<effect num="2" cam="1" > </effect>
+		<effect num="1" cam="0" > </effect>
+		<!--
+		0 = tolpat
+		1 = kasvi
+		2 = laatit
+		3 = halli
+		haha. these don't have any effect.
+		-->
+	</stuff>
+</content>

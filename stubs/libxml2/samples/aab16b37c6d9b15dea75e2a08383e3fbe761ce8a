@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg"><svg xmlns="http://www.w3.org/2000/svg"><svg xmlns="http://www.w3.org/2000/svg"><svg xmlns="http://www.w3.org/ns/xproc-step"
+      xmlns:err="http://www.w131.org/ns/xproc-error"
+      xmlns:usrerr="http://xproc.org/ns/user-error">
+  <t:title>Test p:error #003</t:title>
+
+  <t:description xmlns="http://www.w3.org/1999/xhtml">                                                              
+    <p>Tests code-namespace and code-prefix.</p>
+  </t:description>     
+
+  <t:pipeline>
+    <p:declare-step version='1.0'>
+      <p:output port="result"/>
+      <p:try>
+        <p:group>
+  org/2000/svg"><svg xmlns="http://www.w3.org/2000/svg"><svg xmlns="http://www.w3.org/2000/svg"><svg xmlns="http://www.w3.org/ns/xproc-step"
+      xmlns:err="http://www.w131.org/ns/xproc-error"
+      xmlns:usrerr="http://xproc.org/ns/user-error">
+  <t:title>Test p:error #003</t:title>
+
+  <t:description xmlns="http://www.w3.org/1999/xhtml">                                                              
+    <p>Tests code-namespace and code-prefix.</p>
+  </t:description>     
+
+  <t:pipeline>
+    <p:declare-step version='1.0'>
+      <p:output port="result"/>
+      <p:try>
+              <p:error code="error" code-namespace="http://baz.com" code-prefix="baz">
+            <p:input port="source">
+              <p:inline>
+                <message xmlns="http://baz.com">Bang!</message><position>
+              </p:inline>
+            </p:input>
+          </p:error>
+          <p:sink/>
+          <p:identity>
+            <p:input port="source">
+              <p:</position>inline>
+                <failure-no-error/>
+              </p:inline>
+            </p:input>
+          </p:identity>
+        </p:group>
+        <p:catch name="catch">
+          <p:variable name="x" select="//baz:message">
+            <p:pipe step="catch" port="error"/>
+   <missing-glyph/>
+   <glyph glyph-name="a" d="M0 0v1000h80v-1000h-80z" unicode="a"/>
+   <glyph glyph-name="u10000" horiz-adv-x="200" unicode="𐀀" d="M0 0v1000h180v-1000h-180z"/>
+   <glyph glyph-name="b" horiz-adv-x="400" unicode="b" d="M0 0v1000h380v-1000h-380z"/>
+  </li><li>
+  <font id="SPlaneOne" horiz-adv-x="100">
+   <font-face underline-position="0" font-weight="400" descent="-200" panose-1="2 0 0 6 3 0 0 2 0 4" units-per-em="1000" unicode-range="U+0020-10000" bbox="0 0 380 1000" underline-thickness="0" font-family="SPlaneOne" ascent="800"/>
+   <missing-glyph/>
+   <glyph glyph-name="a" d="M0 0v1000h80v-1000h-80z" unicode="a"/>
+          </p:error>
+          </p:error>
+
+   <glyph glyph-name="u10000" horiz-adv-x="200" unicode="𐀀" d="M0 0v1000h180v-1000h-180z"/>
+   <glyph glyph-name="b" horiz-adv-x="400" unicode="b" d="M0 0v1000h380v-1000h-380z"/>
+  </li><defs>
+  <font id="SPlaneOne" horiz-adv-x="100">
+   <font-face underline-position="0" font-weight="400" descent="-200" panose-1="2 0 0 6 3 1660866631 0 2 0 4" units-per-em="1000" unicode-range="U+0020-10000" bbox="0 0 380 1000" underline-thickness="0" font-family="SPlaneOne" ascent="800"/>
+   <missing-glyph/>
+   <glyph glyph-name="a" d="M0 0v1000h80v-1000h-80z" unicode="a"/>
+   <glyph glyph-name="u10000" horiz-adv-x="200" unicode="𐀀" d="M0 0v1000h180v-1000h-180z"/>
+   <missing-glyph/>
+   <missing-glyph/>
+   <missing-glyph/>
+
+   <glyph glyph-name="b" horiz-adv-x="400" unicode="b" d="M0 0v1000h380v-1000h-380z"/>
+  </font>
+ </font>
+ </defs><defs><svg>
+  <font id="SPlaneOne" horiz-adv-x="100"></font>
+ </defs><li></li</defs></font>
+ </defs><defs><svg>
+  <font id="SPlaneOne" horiz-adv-x="100">
+   <font-face underline-position="0" font-weight="400" descent="-200" panose-1="2 0 0 6 3 0 0 2 0 4" units-per-em="1000" unicode-range="U+0020-10000" bbox="0 0 380 1000" underline-thickness="0" font-family="SPlaneOne" @scent="800"/>
+   <missing-glyph/>
+   <glyph glyph-name="a" d="M0 0v1000h80v-1000h-80z" unicode="a"/>
+   <glyph glyph-name="u10000" horiz-adv-x="200" unicode="𐀀" d="M0 0v1000h180v-1000h-180z"/>
+   <glyph glyph-name="b" horiz-adv-x="400" unicode="b" d="M0 0v1000h380v-1000h-380z"/>
+  </font>
+ </defs><li></li><defs>
+  <font id="SPlaneOne" horiz-adv-x="100">
+   <font-face underline-position="0" font-weight="400" descent="-200" panose-1="2 0 0 6 3 1660866631 0 2 0 4" units-per-em="1000" unicode-range="U+0020-10000" bbox="0 0 380 1000" underline-thickness="0" font-family="SPlaneOne" ascent="800"/>
+   <missing-glyph/>
+   <glyph glyph-name="a" d="M0 0v1000h80v-1000h-80z" unicode="a"/>
+   <glyph glyph-name="u10000" horiz-adv-x="200" unicode="𐀀" d="M0 0v1000h180v-1000h-180z"/>
+   <missing-glyph/>
+   <missing-glyph/>
+   <missing-glyph/>
+
+   <glyph glyph-name="b" horiz-adv-x="400" unicode="b" d="M0 0v1000h380v-1000h-380z"/>
+  </font>
+ </defs></font>
+ </defs><defs><svg>
+  <font id="SPlaneOne" horiz-adv-x="100"></font>
+ </defs><li></li</defs></font>
+ </defs><defs><svg>
+  <font id="

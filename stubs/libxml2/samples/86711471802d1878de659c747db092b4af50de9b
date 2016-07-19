@@ -1,0 +1,42 @@
+<!-- =================================================================== -->
+<!-- Tests SC event type. String table and grammars have to be saved     -->
+<!-- upon SC occurrences.                                                -->
+<!-- =================================================================== -->
+<foo:ANY xmlns:foo='urn:foo' xmlns:goo='urn:goo' xsi:type='foo:anyType' 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  foo:aB='mlllaiqt' foo:aA='mlllaiqt'>
+  <goo:none none="">
+    <goo:none>none</goo:none>
+  </goo:none>
+  <foo:ANY xmlns:foo='urn:foo' xmlns:goo='urn:goo' xsi:type='foo:anyType' 
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+    foo:aB='mlllaiqt' foo:aA='mlllaiqt'>
+    <goo:none none="">
+      <goo:none>none</goo:none>
+      <goo:none>none2</goo:none>
+    </goo:none>
+    <foo:ANY xmlns:foo='urn:foo' xmlns:goo='urn:goo' xsi:type='foo:anyType' 
+      xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+      foo:aB='mlllaiqt' foo:aA='mlllaiqt'/>
+    <foo:ANY xmlns:foo='urn:foo' xmlns:goo='urn:goo' xsi:type='foo:anyType' 
+      xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+      foo:aB='mlllaiqt' foo:aA='mlllaiqt'/>
+  </foo:ANY>
+  <foo:ANY xmlns:foo='urn:foo' xmlns:goo='urn:goo' xsi:type='foo:anyType' 
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+    foo:aB='mlllaiqt' foo:aA='mlllaiqt'>
+    <goo:none none="">
+      <goo:none>none</goo:none>
+      <goo:none>none2</goo:none>
+    </goo:none>
+    <foo:ANY xmlns:foo='urn:foo' xmlns:goo='urn:goo' xsi:type='foo:anyType' 
+      xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+      foo:aB='mlllaiqt' foo:aA='mlllaiqt'/>
+    <foo:ANY xmlns:foo='urn:foo' xmlns:goo='urn:goo' xsi:type='foo:anyType' 
+      xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+      foo:aB='mlllaiqt' foo:aA='mlllaiqt'/>
+  </foo:ANY>
+  <goo:none none="">
+    <goo:none>none</goo:none>
+  </goo:none>
+</foo:ANY>

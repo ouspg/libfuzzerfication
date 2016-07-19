@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:log xmlns:l="http://www.w3.org/2002/ws/addressing/logs/">
+  <l:message xmlns:wsi-log303="http://www.ws-i.org/testing/2003/03/log/" xmlns:wsi-log407="http://www.ws-i.org/testing/2004/07/log/" testcase="test1100" timestamp="2006-03-06T00:00:02.515" conversation="1" wsi-log303:ID="1" type="request" message="1">
+    <l:content><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing"><s:Header><a:Action s:mustUnderstand="1">http://example.org/action/notify</a:Action><a:To s:mustUnderstand="1">http://axis2.kicks-ass.net/axis2/services/wsaTestService</a:To></s:Header><s:Body><notify xmlns="http://example.org/notify">test1100</notify></s:Body></s:Envelope></l:content>
+    <senderHostAndPort xmlns:wsi-monConfig="http://www.ws-i.org/testing/2003/03/monitorConfig/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ws-i.org/testing/2003/03/log/">131.107.72.15:3169</senderHostAndPort>
+    <receiverHostAndPort xmlns:wsi-monConfig="http://www.ws-i.org/testing/2003/03/monitorConfig/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ws-i.org/testing/2003/03/log/">localhost:8080</receiverHostAndPort>
+    <httpHeaders xmlns:wsi-monConfig="http://www.ws-i.org/testing/2003/03/monitorConfig/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ws-i.org/testing/2003/03/log/">POST /axis2/services/wsaTestService HTTP/1.1&#13;
+SOAPAction: "http://example.org/action/notify"&#13;
+Content-Type: text/xml; charset="utf-8"&#13;
+Host: axis2.kicks-ass.net&#13;
+Content-Length: 385&#13;
+Expect: 100-continue&#13;
+Connection: Keep-Alive&#13;
+&#13;
+</httpHeaders>
+  </l:message>
+  <l:message xmlns:wsi-log303="http://www.ws-i.org/testing/2003/03/log/" xmlns:wsi-log407="http://www.ws-i.org/testing/2004/07/log/" testcase="test1100" timestamp="2006-03-06T00:00:02.656" conversation="1" wsi-log303:ID="2" type="response" message="2">
+    <l:content><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing"><soapenv:Header><wsa:ReplyTo><wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address></wsa:ReplyTo><wsa:MessageID>urn:uuid:55C04F242CEDF2E24A11416212028753</wsa:MessageID><wsa:Action>http://www.w3.org/2005/08/addressing/fault</wsa:Action></soapenv:Header><soapenv:Body><soapenv:Fault><faultcode>soapenv:Client</faultcode><faultstring>Invalid message addition , operation context completed</faultstring><detail><Exception xmlns="">org.apache.axis2.AxisFault: Invalid message addition , operation context completed
+	at org.apache.axis2.description.InOnlyAxisOperation.addMessageContext(InOnlyAxisOperation.java:52)
+	at org.apache.axis2.context.OperationContext.addMessageContext(OperationContext.java:85)
+	at org.apache.axis2.receivers.AbstractInOutSyncMessageReceiver.receive(AbstractInOutSyncMessageReceiver.java:35)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:394)
+	at org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest(HTTPTransportUtils.java:282)
+	at org.apache.axis2.transport.http.AxisServlet.doPost(AxisServlet.java:157)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:709)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:802)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:252)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:173)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:178)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:126)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:105)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:107)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:148)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:869)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:667)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:527)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:80)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:684)
+	at java.lang.Thread.run(Unknown Source)
+</Exception></detail></soapenv:Fault></soapenv:Body></soapenv:Envelope></l:content>
+    <senderHostAndPort xmlns:wsi-monConfig="http://www.ws-i.org/testing/2003/03/monitorConfig/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ws-i.org/testing/2003/03/log/">localhost:8080</senderHostAndPort>
+    <receiverHostAndPort xmlns:wsi-monConfig="http://www.ws-i.org/testing/2003/03/monitorConfig/" xmlns:xsi="http://www.w3.org/2001

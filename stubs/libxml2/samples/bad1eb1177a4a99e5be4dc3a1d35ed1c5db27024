@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- $Id: PR-xslt-19991008.xml,v 1.1 1999/10/08 08:49:30 quint Exp $ -->
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.0//EN"
+                      "/XML/1998/06/xmlspec-v20.dtd" [
+<!ENTITY XML "http://www.w3.org/TR/REC-xml">
+<!ENTITY XMLNames "http://www.w3.org/TR/REC-xml-names">
+<!ENTITY XSLT.ns "http://www.w3.org/1999/XSL/Transform">
+<!ENTITY XSLTA.ns "http://www.w3.org/1999/XSL/TransformAlias">
+<!ENTITY XSLFO.ns "http://www.w3.org/1999/XSL/Format">
+<!ENTITY XHTML.ns "http://www.w3.org/TR/xhtml1/strict">
+<!ENTITY year "1999">
+<!ENTITY month "October">
+<!ENTITY MM "10">
+<!ENTITY day "8">
+<!ENTITY DD "08">
+<!ENTITY YYYYMMDD "&year;&MM;&DD;">
+<!ENTITY LEV "PR">
+<!ENTITY XPath "http://www.w3.org/TR/xpath">
+<!ATTLIST xfunction href CDATA "&XPath;">
+<!-- DTD customizations -->
+<!ELEMENT proto (arg*)>
+<!ATTLIST proto
+  name NMTOKEN #REQUIRED
+  return-type (number|string|boolean|node-set|object) #REQUIRED
+>
+<!ELEMENT arg EMPTY>
+<!ATTLIST arg
+  type (number|string|boolean|node-set|object) #REQUIRED
+  occur (opt|rep) #IMPLIED
+>
+<!ELEMENT function (#PCDATA)>
+<!ELEMENT xfunction (#PCDATA)>
+<!ATTLIST xfunction href CDATA #REQUIRED>
+<!ELEMENT e:element-syntax
+  (e:in-category*, e:attribute*, (e:empty|e:text|e:element|e:model|e:sequence|e:choice))
+>
+<!ATTLIST e:element-syntax
+  name NMTOKEN #REQUIRED
+  xmlns:e CDATA #FIXED "http://www.jclark.com/XSLT/ElementSyntax"
+>
+
+<!ELEMENT e:in-category EMPTY>
+<!ATTLIST e:in-category name NMTOKEN #REQUIRED>
+
+<!ELEMENT e:attribute (e:attribute-value-template|(e:constant|e:data-type)+)>
+<!ATTLIST e:attribute
+  name NMTOKEN #REQUIRED
+  required (yes) #IMPLIED
+>
+
+<!ELEMENT e:attribute-value-template (e:constant|e:data-type)+>
+
+<!ELEMENT e:constant EMPTY>
+<!ATTLIST e:constant value CDATA #REQUIRED>
+
+<!ELEMENT e:data-type EMPTY>
+<!ATTLIST e:data-type name NMTOKEN #REQUIRED>
+
+<!ELEMENT e:empty EMPTY>
+<!ELEMENT e:text EMPTY>
+
+<!ELEMENT e:element EMPTY>
+<!ATTLIST e:element
+  name NMTOKEN #REQUIRED
+  repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED
+>
+<!ELEMENT e:model EMPTY>
+<!ATTLIST e:model
+  name NMTOKEN #REQUIRED
+  repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED
+>
+
+<!ELEMENT e:sequence (e:element|e:model|e:choice)+>
+<!ATTLIST e:sequence repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED>
+
+<!ELEMENT e:choice (e:element|e:model|e:sequence)+>
+<!ATTLIST e:choice repeat (zero-or-one|zero-or-more|one-or-more) #IMPLIED>
+
+<!ELEMENT e:element-syntax-summary EMPTY>
+<!ATTLIST e:element-syntax-summary 
+  xmlns:e CDATA #FIXED "http://www.jclark.com/XSLT/ElementSyntax">
+
+<!ENTITY % local.illus.class "|proto|e:element-syntax|e:element-syntax-summary">
+<!ENTITY % local.tech.class "|function|xfunction">
+<!ENTITY % local.loc.class "|var">
+<!ELEMENT var (#PCDATA)>
+]>
+<spec>
+<header>
+<title>XSL Transformations (XSLT)</title>
+<version>Version 1.0</version>
+<w3c-designation>&LEV;-xslt-&YYYYMMDD;</w3c-designation>
+<w3c-doctype>W3C Proposed Recommendation</w3c-doctype>
+<pubdate><day>&day;</day><month>&month;</month><year>&year;</year></pubdate>
+<publoc>
+<loc href="http://www.w3.org/TR/&year;/&LEV;-xslt-&YYYYMMDD;"
+          >http://www.w3.org/TR/&year;/&LEV;-xslt-&YYYYMMDD;</loc>
+<loc role="available-format"
+href="http://www.w3.org/TR/&year;/&LEV;-xslt-&YYYYMMDD;.xml">XML</loc>
+<loc role="available-format"
+href="http://www.w3.org/TR/&year;/&LEV;-xslt-&YYYYMMDD;.html">HTML</loc>
+<!--
+<loc href="http://www.w3.org/TR/&year;/&LEV;-xslt-&YYYYMMDD;.pdf"
+          >http://www.w3.org/TR/&year;/&LEV;-xslt-&YYYYMMDD;.pdf</loc>
+-->
+</publoc>
+<latestloc>
+<loc href="http://www.w3.org/TR/xslt"
+          >http://www.w3.org/TR/xslt</loc>
+</latestloc>
+<prevlocs>
+<loc href="http://www.w3.org/1999/08/WD-xslt-19990813"
+          >http://www.w3.org/1999/08/WD-xslt-19990813</loc>
+<loc href="http://www.w3.org/1999/07/WD-xslt-19990709"
+          >http://www.w3.org/1999/07/WD-xslt-19990709</loc>
+<loc href="http://www.w3.org/TR/1999/WD-xslt-19990421"
+          >http://www.w3.org/TR/1999/WD-xslt-19990421</loc>
+<loc href="http://www.w3.org/TR/1998/WD-xsl-19981216"
+          >http://www.w3.org/TR/1998/WD-xsl-19981216</loc>
+<loc href="http://www.w3.org/TR/1998/WD-xsl-19980818"
+          >http://www.w3.org/TR/1998/WD-xsl-19980818</loc>
+</prevlocs>
+<authlist>
+<author>
+<name>James Clark</name>
+<email href="mailto:jjc@jclark.com">jjc@jclark.com</email>
+</author>
+</authlist>
+
+<status>
+
+<p>This is a W3C Proposed Recommendation for review by W3C members and
+other interested parties. Please send detailed comments to <loc
+href="mailto:xsl-editors@w3.org">xsl-editors@w3.org</loc> before 5
+November 1999; <loc
+href="http://lists.w3.org/Archives/Public/xsl-editors">archives</loc>
+of the comments are available.  W3C members may send their formal
+comments, visible only to W3C staff, to <loc
+href="mailto:w3c-xslt-review@w3.org"
+>w3c-xslt-review@w3.org</

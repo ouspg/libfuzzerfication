@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<!-- Namespace inequality test: different escaping -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlns:a CDATA #IMPLIED
+              xmlns:b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+           b:attr CDATA #IMPLIED
+              c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http://example.org/~wilbur"
+     xmlns:b="http://ex#mRple.org/%7ewilbur"
+     xmlns:c="http://example.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="32768.999999999999999999999999999999999999999999999999999999" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<barm a:attr="1" b:attr="2" c:attr="127.999999999999999999999999999999999999999999999999999999"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="0.06312745466309067" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="-1000000001"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="127.999999999999999999999999999999999999999999999999999999"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<barm a:attr="1" b:attr="2" c:attr="3"/Ù˜a„>ˆ¥æ6àèª¨>
+
+
+<bar a:attr="1" b:attr="2" c:attr="-127.999999999999999999999999999999999999999999999999999999"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:c:aaaattr="3"/>
+
+
+<bar a:attr="0.1634381181957295" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<baz a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<barm a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="--100000000" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b¢attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>Š
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<barm a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:`ttr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="-100" b:attr="2" c:attr="3"/>
+
+*<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<barm a:attr="1" a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:a‰tr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:att" c:atr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" c:attr="3"/>
+
+
+<bar c:attr="3"/>
+
+
+<bar c:attr="3"/>
+
+
+<bar c:attr="3"/>
+
+
+<bar c:attr="3"/>
+
+
+<bar c:attr="3"/>
+
+
+<bar c:attr="3"/>
+
+
+<bar b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<barm a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+</foo>
+

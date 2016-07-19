@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="pmathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Intermission: the ChessGML stylesheets</title>
+      <link href="../Tools/slide-640.css" rel="stylesheet" type="text/css" title="W3C Talk" /><style xmlns:pref="http://www.w3.org/2002/Math/preference" type="text/css">
+      math { font-size: 30pt }
+    </style></head>
+   <body><a href="http://www.w3.org/"><img src="../Icons/w3c_home.gif" alt="W3C  " /></a><h1 class="slide">
+         <h2 xmlns:pref="http://www.w3.org/2002/Math/preference">Intermission: the ChessGML stylesheets</h2>
+      </h1>
+      <hr class="top" />
+      <div>
+         <h3 xmlns:pref="http://www.w3.org/2002/Math/preference">1. ChessGML</h3><pre xmlns:pref="http://www.w3.org/2002/Math/preference">
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;game type="chess" variant="classic"&gt;
+  &lt;gameinfo&gt;
+    &lt;eventinfo&gt;
+      &lt;event&gt;The Immortal Game&lt;/event&gt;
+      &lt;site&gt;London&lt;/site&gt;
+    &lt;/eventinfo&gt;
+    &lt;date year="1851"/&gt;
+    &lt;opponents&gt;
+      &lt;white&gt;
+	&lt;player&gt;
+	  &lt;person&gt;
+	    &lt;surname&gt;Anderssen&lt;/surname&gt;
+	    &lt;firstname&gt;Adolf&lt;/firstname&gt;
+	  &lt;/person&gt;
+	&lt;/player&gt;
+      &lt;/white&gt;
+      &lt;black&gt;
+	&lt;player&gt;
+	  &lt;person&gt;
+	    &lt;surname&gt;Kieseritzky&lt;/surname&gt;
+	    &lt;firstname&gt;Lionel&lt;/firstname&gt;
+	  &lt;/person&gt;
+	&lt;/player&gt;
+      &lt;/black&gt;
+    &lt;/opponents&gt;
+    &lt;result res="1-0" why="mate"/&gt;
+  &lt;/gameinfo&gt;
+  
+  &lt;moves ply-count="23"&gt;
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="p"/&gt;&lt;e2/&gt;&lt;e4/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="p"/&gt;&lt;e7/&gt;&lt;e5/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="p"/&gt;&lt;f2/&gt;&lt;f4/&gt;&lt;/m&gt;
+      &lt;m c="b" capt="1"&gt;&lt;p c="b" n="p"/&gt;&lt;e5/&gt;&lt;f4/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="b"/&gt;&lt;f1/&gt;&lt;c4/&gt;&lt;/m&gt;
+      &lt;m c="b" chk="1"&gt;&lt;p c="b" n="q"/&gt;&lt;d8/&gt;&lt;h4/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="k"/&gt;&lt;e1/&gt;&lt;f1/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="p"/&gt;&lt;b7/&gt;&lt;b5/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w" capt="1"&gt;&lt;p c="w" n="b"/&gt;&lt;c4/&gt;&lt;b5/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="n"/&gt;&lt;g8/&gt;&lt;f6/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="n"/&gt;&lt;g1/&gt;&lt;f3/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="q"/&gt;&lt;h4/&gt;&lt;h6/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="p"/&gt;&lt;d2/&gt;&lt;d3/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="n"/&gt;&lt;f6/&gt;&lt;h5/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="n"/&gt;&lt;f3/&gt;&lt;h4/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="q"/&gt;&lt;h6/&gt;&lt;g5/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="n"/&gt;&lt;h4/&gt;&lt;f5/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="p"/&gt;&lt;c7/&gt;&lt;c6/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="p"/&gt;&lt;g2/&gt;&lt;g4/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="n"/&gt;&lt;h5/&gt;&lt;f6/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="r"/&gt;&lt;h1/&gt;&lt;g1/&gt;&lt;/m&gt;
+      &lt;m c="b" capt="1"&gt;&lt;p c="b" n="p"/&gt;&lt;c6/&gt;&lt;b5/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="p"/&gt;&lt;h2/&gt;&lt;h4/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="q"/&gt;&lt;g5/&gt;&lt;g6/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="p"/&gt;&lt;h4/&gt;&lt;h5/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="q"/&gt;&lt;g6/&gt;&lt;g5/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="q"/&gt;&lt;d1/&gt;&lt;f3/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="n"/&gt;&lt;f6/&gt;&lt;g8/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w" capt="1"&gt;&lt;p c="w" n="b"/&gt;&lt;c1/&gt;&lt;f4/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="q"/&gt;&lt;g5/&gt;&lt;f6/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="n"/&gt;&lt;b1/&gt;&lt;c3/&gt;&lt;/m&gt;
+      &lt;m c="b"&gt;&lt;p c="b" n="b"/&gt;&lt;f8/&gt;&lt;c5/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="n"/&gt;&lt;c3/&gt;&lt;d5/&gt;&lt;/m&gt;
+      &lt;m c="b" capt="1"&gt;&lt;p c="b" n="q"/&gt;&lt;f6/&gt;&lt;b2/&gt;&lt;/m&gt;
+    &lt;/mp&gt;
+
+    &lt;mp&gt; 
+      &lt;m c="w"&gt;&lt;p c="w" n="b"/&gt;&lt;f4/&gt;&lt;d6/&gt;&lt;/m&gt;
+      &lt;m c=

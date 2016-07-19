@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Timeliner Name="" Path="timeline.xml">
+  <Ruler Name="1" FPS="30" Speed="1" Loop="true" LoopStart="0" LoopEnd="0" />
+  <Tracks>
+    <ValueTrack Name="0" Order="1" Height="75" Minimum="-1" Maximum="1">
+      <Keyframe Name="11" Time="2.9" Value="-0.2266666" />
+      <Keyframe Name="14" Time="5.6" Value="0.493333369" />
+      <Keyframe Name="225" Time="7.487338" Value="0.2533334" />
+      <Keyframe Name="18" Time="8.62" Value="-0.653333247" />
+      <Keyframe Name="205" Time="10.6167841" Value="0.120000049" />
+      <Keyframe Name="23" Time="12.26" Value="0.2266667" />
+      <Keyframe Name="44" Time="21.40006" Value="-0.0399999544" />
+      <Keyframe Name="53" Time="24.26" Value="0.680000067" />
+      <Keyframe Name="74" Time="25.16" Value="-0.946666539" />
+      <Keyframe Name="63" Time="25.28" Value="-0.119999945" />
+      <Keyframe Name="86" Time="26.12" Value="-0.73333323" />
+      <Keyframe Name="99" Time="27.22" Value="0.120000042" />
+      <Keyframe Name="113" Time="27.6" Value="0.733333349" />
+      <Keyframe Name="128" Time="27.92" Value="-0.253333271" />
+      <Keyframe Name="144" Time="28.3" Value="-0.7066666" />
+      <Keyframe Name="161" Time="31.1600018" Value="0.2533334" />
+    </ValueTrack>
+    <ValueTrack Name="1" Order="0" Height="75" Minimum="-1" Maximum="1">
+      <Keyframe Name="183" Time="4.31777143" Value="-0.333333254" />
+      <Keyframe Name="300" Time="11.7802954" Value="0.3066667" />
+      <Keyframe Name="304" Time="16.273859" Value="-0.119999945" />
+      <Keyframe Name="309" Time="23.9570484" Value="0.546666741" />
+    </ValueTrack>
+  </Tracks>
+</Timeliner>

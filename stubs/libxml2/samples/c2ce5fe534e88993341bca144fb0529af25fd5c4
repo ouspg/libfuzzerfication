@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Example of real P3P policy taken from AT&T site
+
+    $Id: ex-att.xml,v 1.1 2002/01/25 16:42:53 dom Exp $
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY p3p     "http://www.w3.org/2002/01/p3prdfv1#">
+]>
+
+<rdf:RDF
+  xmlns:rdf ="&rdf;" 
+  xmlns:rdfs="&rdfs;"
+  xmlns:p3p ="&p3p;">
+
+  <p3p:Policy rdf:ID="general">
+    <p3p:disclosure rdf:resource="http://www.att.com/privacy"/>
+    <p3p:optInstructions rdf:resource="http://www.att.com/privacy/consumer/"/>
+
+    <p3p:entity rdf:parseType="Resource">
+
+      <p3p:business.name rdf:value="AT&amp;T"/>
+      <p3p:business.contact-info.online.uri 
+        rdf:value="http://www.att.com/"/>
+      <p3p:business.contact-info.telecom.telephone.intcode 
+        rdf:value="1"/>
+      <p3p:business.contact-info.telecom.telephone.loccode 
+        rdf:value="888"/>
+      <p3p:business.contact-info.telecom.telephone.number
+        rdf:value="928-8932"/>
+    </p3p:entity>
+
+    <p3p:access rdf:resource="&p3p;AccessClass-contact-and-other"/>
+
+    <p3p:disputeResolution>
+      <p3p:DisputeResolution-independent-organization>
+        <p3p:service rdf:resource="http://www.bbbonline.org"/>
+        <p3p:shortDescription>BBBOnline</p3p:shortDescription>
+        <p3p:longDescription>BBBOnline Privacy Program</p3p:longDescription>
+        <p3p:img>
+          <p3p:Image 
+             rdf:about="http://www.att.com/CDA/images/privacyseal6.gif">
+            <p3p:imageAltText>BBBOnline Privacy Seal</p3p:imageAltText>
+          </p3p:Image>
+        </p3p:img>
+      </p3p:DisputeResolution-independent-organization>
+    </p3p:disputeResolution>
+
+    <p3p:disputeResolution>
+      <p3p:DisputeResolution>
+        <p3p:service rdf:resource="http://www.att.com/privacy/"/>
+        <p3p:shortDescription>Customer service</p3p:shortDescription>
+        <p3p:longDescription>
+           If you are a consumer with concerns about the AT online
+           privacy policy or its implementation you may contact us
+           at 1-888-9-ATT-WEB. If you are a business customer, please
+           call 1-877-744-4531.
+        </p3p:longDescription>
+        <p3p:remedy rdf:resource="&p3p;Remedy-correct"/>
+      </p3p:DisputeResolution>
+    </p3p:disputeResolution>
+
+    <p3p:disputeResolution>
+      <p3p:DisputeResolution-law>
+        <p3p:service rdf:resource="http://www.fcc.gov/ccb/ppp/Cpni/"/>
+        <p3p:shortDescription>
+          Privacy of Customer Information
+        </p3p:shortDescription>
+        <p3p:longDescription>
+           Customer Proprietary Network Information, Common Carrier 
+           Regulation, Section 222 of the Telecommunications Act of
+           1996, the Federal Communications Commission's Orders and Rules
+        </p3p:longDescription>
+        <p3p:remedy rdf:resource="&p3p;Remedy-law"/>
+      </p3p:DisputeResolution-law>
+    </p3p:disputeResolution>
+
+    <p3p:disputeResolution>
+      <p3p:DisputeResolution-law>
+        <p3p:service rdf:resource="http://www.fcc.gov/csb/facts/csgen.html"/>
+        <p3p:shortDescription>
+          Protection of Subscriber Privacy (Cable Act, as amended, Sec. 631
+        </p3p:shortDescription>
+        <p3p:remedy rdf:resource="&p3p;Remedy-law"/>
+      </p3p:DisputeResolution-law>
+    </p3p:disputeResolution>
+
+    <p3p:disputeResolution>
+      <p3p:DisputeResolution-law>
+        <p3p:service 
+  rdf:resource="http://www.ftc.gov/bcp/conline/edcams/kidzprivacy/index.html"/>
+        <p3p:shortDescription>
+          Children's Online Privacy Protection Act of 1998, and Federal
+          Trade Commission Rule
+        </p3p:shortDescription>
+        <p3p:remedy rdf:resource="&p3p;Remedy-law"/>
+      </p3p:DisputeResolution-law>
+    </p3p:disputeResolution>
+
+    <p3p:statement rdf:parseType="Resource">
+      
+      <p3p:extOptional rdf:parseType="Resource"
+        xmlns:ext="http://www.software.ibm.com/P3P/editor/extension-1.0.html">
+        <ext:group>general</ext:group>
+      </p3p:extOptional>
+
+      <p3p:consequence>
+        AT&amp;T uses your personally identifiable information for
+        billing purposes, to provide services to you, and to
+        inform you of services that may better meet your needs,
+        but we do not disclose your personally identifiable
+        information to third parties who want to market products to
+        you, period.
+      </p3p:consequence>
+        
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-admin"/>
+      <p3p:purposeOptOut rdf:resource="&p3p;Purpose-contact"/>
+      <p3p:purposeOptOut rdf:resource="&p3p;Purpose-current"/>
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-develop"/>
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-pseudo-analysis"/>
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-pseudo-decision"/>
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-individual-analysis"/>
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-individual-

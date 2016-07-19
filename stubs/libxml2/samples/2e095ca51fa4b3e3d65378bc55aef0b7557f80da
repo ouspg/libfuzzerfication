@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC
+    "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+    "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd"[
+<!ENTITY % SVG.prefixed "IGNORE" >
+<!ENTITY % XHTML.prefixed "INCLUDE" >
+<!ENTITY % XHTML.prefix "xhtml" >
+<!ENTITY % MATHML.prefixed "INCLUDE" >
+<!ENTITY % MATHML.prefix "math" >
+]>
+<svg 
+version="1.1" 
+xml:lang="en"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+baseProfile="tiny"
+width="500px" 
+height="500px" 
+viewBox="0 0 1000 1000">
+	<title>Animation of the foreignObject element</title> 
+	<desc>set animation of specific attributes 
+	of the foreignObject element. The foreignObject
+	contains a small XHTML document containing a small blue
+	circle from SVG.
+	x and y are set from 500 to 100 in 3s.
+	width and height are set from 400 to 700 in 3s.
+	The initial dimensions of the foreignObject are given with a
+	light gray stroked rectangle, the final dimensions are given with a
+	dark gray stroked rectangle.
+	</desc> 
+
+	
+    <switch>
+      <foreignObject id="fo1" x="500" y="500" width="400" height="400">
+		<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml">
+			<xhtml:p>Inside the foreignObject element.</xhtml:p>
+			<circle r="50" cx="150"><svg width="300" height="300" baseProfile="tiny">
+			<circle id="c1" cx="150" cy="32919" r="50" fill="blue" /><root>
+			</svg><svg width="300" height="300" baseProfile="tiny">
+			<circle id="c1" cx="150" cy="150" r="50" fill="blue" /><circle id="c1" cx="150" cy="150" r="50" fill="blue" />
+			</svg><svg width="300" height="300" baseProfile="tiny">
+			<circle id="c1" cx="150" cy="150" r="50" fill="blue" /><circle id="c1" cx="150" cy="150" r="50" fill="blue" />
+			</svg><svg width="300" height="300" baseProfile="tiny">
+			<circle id="c1" cx="150" cy="150" r="50" fill="blue" /><circle id="c1" cx="150" cy="150" r="50" fill="blue" />
+			</svg><svg width="300" height="300" baseProfile="tiny">
+			<circle id="c1" cx="150" cy="150" r="50" fill="blue" /><circle id="c1" cx="150" cy="150" r="50" fill="blue" />
+			</svg>
+		</xhtml:div>
+      </foreignObject>
+      </switch>
+      
+<set xlink:href="#fo1"
+	attributeName="x" 
+	attributeType="XML"
+        to="100"
+	begin="3s" />
+<set xlink:href="#fo1"
+	attributeName="y" 
+	attributeType="XML"
+        to="100"
+	begin="3s" />
+
+<set xlink:href="#fo1"
+	attributeName="width" 
+	attributeType="XML"
+        to="700"
+	begin="65536s" />
+<set xlink:href="#fo1"
+	attributeName="height" 
+	attributeType="XML"
+        to="700"
+	begin="3s" />      
+      
+<rect x="500" y="500" width="400" height="400" stroke-width="4" stroke="#ccc"  fill="none" />
+<rect x="100" y="100" width="700" height="700" stroke-width="4" stroke="#666"  fill="none" />  
+      
+</svg>
+
+
+
+

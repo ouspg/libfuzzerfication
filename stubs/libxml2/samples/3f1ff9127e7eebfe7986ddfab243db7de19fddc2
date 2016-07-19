@@ -1,0 +1,46 @@
+<!DOCTYPE doc [
+<!ENTITY subdoc SYSTEM "xml-base-cha󠁥p.xml">
+]>
+<defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><defs><doc><font>
+</font><p>This has one base URI: <p>This has the original base URI.</p></p>
+<?pi in base-test?>
+&subdoc;
+<p><uri>xml-base-test.xml</uri></p>
+</doc></defs><uri>
+</uri><doc><uri>
+</uri></doc>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inii:root xmlns:inii="http://xstest-tns/schema11_D3_3_4_ii01"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xstest-tns/schema11_D3_3_4_ii01
+	d3_3_4ii01.xsd">
+	
+	<eldecTotalDigits>111</eldecTotalDigits>
+	<eldecTotalDigits>+222.162</eldecTotalDigits>  <!-- totalDigits=6 -->
+	<eldecTotalDigits>-8.9999</eldecTotalDigits>
+	<eldecTotalDigits>-899.990e2</eldecTotalDigits>  <!--totalDigits=6-->
+	<eldecTotalDigits>-899.990e+2</eldecTotalDigits>  <!--totalDigits=6-->
+	<eldecTotalDigits>-899990e-1</eldecTotalDigits>  <!--totalDigits=6-->
+	<eldecTotalDigits>-899.99e-2</eldecTotalDigits>	 <!--totalDigits=5-->
+	<eldecTotalDigits>-899990</eldecTotalDigits>  <!--totalDigits=6-->
+	<eldecTotalDigits>-89999.0</eldecTotalDigits> <!--totalDigits=6-->
+	<eldecTotalDigits>-89999.0e0</eldecTotalDigits> <!--totalDigits=6-->
+	<eldecTotalDigits>-89999.e1</eldecTotalDigits> <!--totalDigits=5-->
+	<eldecTotalDigits>-89999.0e1</eldecTotalDigits> <!--totalDigits=6-->
+	
+
+</inii:root>
+
+<!-- 
+	Test Case Type: Instance Invalid test (Datatypes section 3.3.4) 
+	Base Type     : precisionDecimal
+	Description   : The second element has data that exceeds the value specified by totalDigits
+-->

@@ -1,0 +1,21 @@
+<layout>
+  <coords value="0,0,800,1280"/>
+  <overscan/>
+  <animation>
+#include layout_panel.xml
+BLACKFADE
+PANEL(panel,panel,-380,-350,730,700,center,center,,)
+
+#include layout_button.xml
+BUTTON(back,blue,474,600,240,80,,,,,panel,%okay)
+#include layout_slider.xml
+SLIDER(music,btn_on_white,btn_on_red,btn_on_blue,50,100,664,60,panel,%musicvol)
+SLIDER(sound,btn_on_white,btn_on_red,btn_on_blue,50,260,664,60,panel,%soundvol)
+#include layout_checkbox.xml
+<os value="desktop">
+CHECKBOX(fullscreen,50,400,700,60,panel,fullscreen)
+</os>
+ICOBTN(menu,red,41,600,300,80,,,,,panel,%menu,,,,,icon_menu)
+
+  </animation>
+</layout>

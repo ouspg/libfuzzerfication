@@ -1,0 +1,7 @@
+<?xml version='1.0'?>
+<a:a a='a' a:a='a' xmlns:a='http://example.org/ns1'>
+  <b:a a='a' b:a='a' a:a='a' xmlns:b='http://example.org/ns2'/>
+  <a xml:space='default' xml:lang='af'/>
+  <a space='default' lang='af'/>
+  <b xsi:nil='true' nil='true' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'/>
+</a:a>

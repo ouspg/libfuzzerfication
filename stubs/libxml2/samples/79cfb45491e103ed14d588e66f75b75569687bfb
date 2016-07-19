@@ -1,0 +1,8 @@
+<!DOCTYPE results [
+<!ENTITY dom3-val-oracle SYSTEM '../build/dom3-validation-oracle.xml'>
+<!ENTITY dom3-val-oracle-alt SYSTEM '../build/dom3-validation-oracleAltConfig.xml'>
+]>
+<results>
+&dom3-val-oracle;
+&dom3-val-oracle-alt;
+</results>

@@ -1,0 +1,6 @@
+<doc>
+  <elem att="a"/>
+  <elem att="&amp;"/>
+  <elem att="&#x0301;"/>
+  <elem att="&#x10000;"/>
+</doc>

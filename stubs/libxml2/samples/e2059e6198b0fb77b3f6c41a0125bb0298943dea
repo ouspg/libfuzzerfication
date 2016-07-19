@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- The Line Age -->
+
+
+<demo start="0" end="180000" tune="tla.ogg" debug="0" fullscreen="1" predemo="1">
+
+  <!-- press TAB to toggle debug display if debug mode is enabled -->
+  
+  <font name="f1" image="font48.png" data="font48.fnt" />
+  <font name="f2" image="font32.png" data="font32.fnt" />
+  <image name="i1" image="test.jpg" />
+  <image name="sb1" image="sky1.jpg" />
+  <image name="sb2" image="sky2.jpg" />
+  <image name="sb3" image="sky3.jpg" />
+  <image name="sb4" image="sky4.jpg" />
+  <image name="sb5" image="sky5.jpg" />
+  <image name="sb6" image="sky6.jpg" />
+  <image name="armada" image="armada.png" />
+  <image name="cred" image="creds.png" />
+  <image name="logo" image="logo.png" />
+  <image name="trauma" image="trauma.png" />
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+  <effect type="skybox" start="7100" end="125000" sort="0">
+    <pic image="sb1" />
+    <pic image="sb2" />
+    <pic image="sb3" />
+    <pic image="sb4" />
+    <pic image="sb5" />
+    <pic image="sb6" />
+  </effect> 
+
+  <effect type="skybox" start="170000" end="180000" sort="0">
+    <pic image="sb1" />
+    <pic image="sb2" />
+    <pic image="sb3" />
+    <pic image="sb4" />
+    <pic image="sb5" />
+    <pic image="sb6" />
+  </effect> 
+
+  <effect type="ftb" start="124000" end="125000" sort="5">
+    <opt direction="1" />
+  </effect>
+
+  <effect type="ftb" start="125000" end="126000" sort="5">
+    <opt direction="-1" />
+  </effect>
+  
+  <effect type="voronoi" start="125000" end="170000" sort="0" >
+    <opt color="06161a" />
+  </effect>
+
+  <effect type="ftb" start="169000" end="170000" sort="3">
+    <opt direction="1" />
+  </effect>
+
+  <effect type="ftb" start="170000" end="171000" sort="3">
+    <opt direction="-1" />
+  </effect>
+
+
+  <effect type="texwf" start="0" end="19400" sort="2"> 
+    <pic image="armada" w="512" h="256" in="0" out="1" />
+  </effect>
+  
+  <effect type="ftb" start="7100" end="13000" sort="1">
+    <opt direction="-1" />
+  </effect>
+
+  <effect type="texwf" start="9100" end="28500" sort="3">
+    <pic image="trauma" w="512" h="512" in="3" out="2" />
+  </effect>
+
+  <effect type="texwf" start="18200" end="39600" sort="4">
+    <pic image="logo" w="512" h="256" in="1" out="3" />
+  </effect>
+  
+    <effect type="texwf" start="31300" end="50700" sort="5">
+    <pic image="cred" w="512" h="512" in="4" out="4" />
+  </effect>
+
+  <effect type="lsys" start="20000" end="51000" sort="1">
+    <lsys file="gways2.l" track="1" />
+  </effect>
+
+  <effect type="landscape" start="50000" end="99500" sort="1" >
+    <opt color1="ffffff" color2="7fff7f" color3="004dff" />
+  </effect>
+
+  <effect type="3dfrac" start="53000" end="65000" sort="2">
+    <opt color1="000033" color2="001ab3" />
+  </effect>
+
+  <effect type="text" start="55000" end="60000" sort="3">
+    <text font="f2" value="3d multifractal landscapes" xpos="40" ypos="240" alpha="1" color="ffffff" />
+  </effect>  
+
+  <effect type="text" start="69000" end="74000" sort="3">
+    <text font="f2" value="Various L-system fractal plants" xpos="40" ypos="240" alpha="1" color="ffffff" />
+  </effect>  
+
+  <effect type="text" start="83000" end="88000" sort="3">
+    <text font="f2" value="Line sketch in 3d with haloed lines" xpos="40" ypos="240" alpha="1" color="ffffff" />
+  </effect>  
+
+  <effect type="projector" start="100000" end="125000" sort="1">
+    <opt color="001ab3" />
+  </effect>
+
+  <effect type="text" start="112000" end="117000" sort="3">
+    <text font="f2" value="IFS fractal dragon projection" xpos="40" ypos="240" alpha="1" color="ffffff" />
+  </effect>  
+
+  <effect type="gem" start="125000" end="139500" sort="2">
+    <opt color0="000000" color1="1a0000" color2="7f7f7f" />
+  </effect>
+
+  <effect type="text" start="127000" end="132000" sort="3">
+    <text font="f2" value="Volumetric gemstone on Voronoi graph" xpos="40" ypos="240" alpha="1" color="ffffff" />
+  </effect>  
+
+  <effect type="torus" start="139000" end="144000" sort="1" >
+    <parms p="2" q="1" steps="100" facets="9" id="0" color="e61a1a" />
+  </effect>
+  <effect type="torus" start="140000" end="145000" sort="1" >
+    <parms p="1" q="2" steps="100" facets="9" id="1" color="e61a1a" />
+  </effect>
+  <effect type="torus" start="141000" end="146000" sort="1" >
+    <parms p="3" q="1" steps="100" facets="9" id="0" color="e61a1a" />
+  </effect>
+  <effect type="torus" start="142000" end="147000" sort="1" >
+    <parms p="2" q="3" steps="100" facets="9" id="1" color="e61a1a" />
+  </effect>
+  <effect type="torus" start="143000" end="148000" sort="1" >
+    <parms p="1" q="5" steps="100" facets="9" id="0" color="e61a1a" />
+  </effect>
+  <effect type="torus" start="144000" end="149000" sort="1" >
+    <parms p="5" q="2" steps="100" facets="9" id="1" color="e61a1a" />
+  </effect>
+  <effect type="torus" star

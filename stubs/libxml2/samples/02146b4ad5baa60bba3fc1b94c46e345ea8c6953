@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="examples">
+<div class="example">
+   <p>The following examples are conforming HTML fragments:</p>
+   <pre><![CDATA[<p>The little kitten gently seated himself on a piece of
+carpet. Later in his life, this would be referred to as the time the
+cat sat on the mat.</p>]]></pre>
+   <pre><![CDATA[<fieldset>
+ <legend>Personal information</legend>
+ <p>
+   <label>Name: <input name="n"></label>
+   <label><input name="anon" type="checkbox"> Hide from other users</label>
+ </p>
+ <p><label>Address: <textarea name="a"></textarea></label></p>
+</fieldset>]]></pre>
+   <pre><![CDATA[<p>There was once an example from Femley,<br>
+Whose markup was of dubious quality.<br>
+The validator complained,<br>
+So the author was pained,<br>
+To move the error from the markup to the rhyming.</p>]]></pre>
+  </div>
+<div class="example">
+
+   <p>The following example is technically correct:</p>
+
+<pre><![CDATA[<section>
+ <!-- ... -->
+ <p>Last modified: 2001-04-23</p>
+ <p>Author: fred@example.com</p>
+</section>]]></pre>
+
+   <p>However, it would be better marked-up as:</p>
+
+<pre><![CDATA[<section>
+ <!-- ... -->
+ <footer>Last modified: 2001-04-23</footer>
+ <address>Author: fred@example.com</address>
+</section>]]></pre>
+
+   <p>Or:</p>
+
+<pre><![CDATA[<section>
+ <!-- ... -->
+ <footer>
+  <p>Last modified: 2001-04-23</p>
+  <address>Author: fred@example.com</address>
+ </footer>
+</section>]]></pre>
+
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<root xmlns="http://www.publishing.org">
+
+	<keys>
+		<a>
+			<a>
+				<b id="id1">
+					<b id="id2" />
+				</b>
+			</a>
+		</a>
+	</keys>
+	
+	<keyref>id1</keyref>
+	<keyref>id2</keyref>
+</root>

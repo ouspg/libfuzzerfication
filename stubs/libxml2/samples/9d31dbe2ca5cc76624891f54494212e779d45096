@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="blur" blending="true">
+	
+	<shader type="fragment" >
+	
+	<uniform type="sampler2DRect" name="$texture" />
+	
+	<functions>
+	</functions>
+	
+	<main>
+	<![CDATA[
+
+		color=texRECT($texture, vec2(gl_TexCoord[0].s,gl_TexCoord[0].t));
+
+
+	]]>
+	</main>
+	
+	</shader>
+</sumoshader>
+

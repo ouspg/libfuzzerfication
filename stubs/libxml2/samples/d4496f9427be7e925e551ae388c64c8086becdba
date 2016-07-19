@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="valid example">
+  <p>A hyperlink that contains a paragraph.</p>
+  <pre><![CDATA[<a href="javascript:void(0);"
+  onmouseover="return anno('Note: This paragraph is informative only.')
+  onmouseout="return anno_bye();">
+<p>The following is introductory information…</p>
+</a>]]></pre>
+</div>

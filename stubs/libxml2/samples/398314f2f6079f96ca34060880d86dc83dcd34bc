@@ -1,0 +1,84 @@
+<testSuiteReport name="Processing-encoding-SAX:Neither, Restricted tests v1" xmlns="http://www.sun.com/japex/testSuiteReport">
+  <chartType>barchart</chartType>
+  <classPath>/home/carine/WWW/XML/Group/EXI/TTFMS/framework/lib/faxma-xas.jar
+/home/carine/WWW/XML/Group/EXI/TTFMS/framework/lib/faxma.jar
+/home/carine/WWW/XML/Group/EXI/TTFMS/framework/lib/kxml2.jar</classPath>
+  <configFile>processing-encoding-sax-neither.xml,all-v1.xml</configFile>
+  <dateTime>03 Nov 2006/07:49:32 PST</dateTime>
+  <exi.ttfms.candidatesDir>candidates</exi.ttfms.candidatesDir>
+  <exi.ttfms.dataSourceSink.URI>network://localhost:9753</exi.ttfms.dataSourceSink.URI>
+  <exi.ttfms.frameworkLibDir>framework/dist</exi.ttfms.frameworkLibDir>
+  <exi.ttfms.testCasesConfigDir>/home/carine/WWW/XML/Group/EXI/TTFMS/config/testCases</exi.ttfms.testCasesConfigDir>
+  <exi.ttfms.testCasesDir>data</exi.ttfms.testCasesDir>
+  <home>./japex</home>
+  <numberOfCpus>4</numberOfCpus>
+  <numberOfThreads>1</numberOfThreads>
+  <osArchitecture>amd64</osArchitecture>
+  <osName>Linux</osName>
+  <plotDrivers>false</plotDrivers>
+  <plotGroupSize>5</plotGroupSize>
+  <reportsDirectory>reports/property/processing/encoding/sax/neither</reportsDirectory>
+  <resultAxis>normal</resultAxis>
+  <resultAxisX>normal</resultAxisX>
+  <resultUnit>tps</resultUnit>
+  <runTime>15</runTime>
+  <runsPerDriver>1</runsPerDriver>
+  <version>1.0.19</version>
+  <vmInfo>Sun Microsystems Inc. 1.5.0_05-b05</vmInfo>
+  <warmupTime>5</warmupTime>
+  <warmupsPerDriver>0</warmupsPerDriver>
+  <org.w3c.exi.ttf.dataSourceSink.URI xmlns="">network://localhost:9753</org.w3c.exi.ttf.dataSourceSink.URI>
+  <org.w3c.exi.ttf.measurementProperty xmlns="">encode</org.w3c.exi.ttf.measurementProperty>
+  <driver name="X694PERFINeitherTyped">
+    <classPath>/home/carine/WWW/XML/Group/EXI/TTFMS/framework/lib/faxma-xas.jar
+/home/carine/WWW/XML/Group/EXI/TTFMS/framework/lib/faxma.jar
+/home/carine/WWW/XML/Group/EXI/TTFMS/framework/lib/kxml2.jar
+framework/dist/*.jar
+candidates/c/x694perfi/dist/candidate-x694perfi.jar</classPath>
+    <driverClass>org.w3c.exi.ttf.candidate.x694perfi.X694PERFINativeDriver</driverClass>
+    <resultAritMean>28462.259</resultAritMean>
+    <resultAritMeanX>-1.000</resultAritMeanX>
+    <resultGeomMean>3197.735</resultGeomMean>
+    <resultGeomMeanX>NaN</resultGeomMeanX>
+    <resultHarmMean>13.155</resultHarmMean>
+    <resultHarmMeanX>-1.000</resultHarmMeanX>
+    <description xmlns="">PER or Fast Infoset compaction in 'neither' mode</description>
+    <libraryName xmlns="">candidate-x694perfi-PER</libraryName>
+    <org.w3c.exi.ttf.applicationClass xmlns="">neither</org.w3c.exi.ttf.applicationClass>
+    <org.w3c.exi.ttf.candidate.fxdi.debug xmlns="">n/a</org.w3c.exi.ttf.candidate.fxdi.debug>
+    <org.w3c.exi.ttf.driver.candidateName xmlns="">x694perfi</org.w3c.exi.ttf.driver.candidateName>
+    <ossx.precompiledSchemaPath xmlns="">candidates/c/x694perfi/lib/Linux/amd64</ossx.precompiledSchemaPath>
+    <ossx.precompiledSchemas xmlns="">candidates/c/x694perfi/dist/schemas.properties</ossx.precompiledSchemas>
+    <testCase name="AVCL/telemCompTest10M.xml">
+      <inputFile>data/AVCL/telemCompTest10M.xml</inputFile>
+      <resultValue>1.688</resultValue>
+      <resultValueX>-1.000</resultValueX>
+      <org.w3c.exi.ttf.preserve xmlns="">n/a</org.w3c.exi.ttf.preserve>
+      <org.w3c.exi.ttf.schemaDeviations xmlns="">n/a</org.w3c.exi.ttf.schemaDeviations>
+      <org.w3c.exi.ttf.schemaLocation xmlns="">data/AVCL/AVCL.xsd</org.w3c.exi.ttf.schemaLocation>
+      <testsDir xmlns="">data</testsDir>
+    </testCase>
+    <testCase name="AVCL/telemCompTest1M.xml">
+      <inputFile>data/AVCL/telemCompTest1M.xml</inputFile>
+      <resultValue>24.748</resultValue>
+      <resultValueX>-1.000</resultValueX>
+      <org.w3c.exi.ttf.preserve xmlns="">n/a</org.w3c.exi.ttf.preserve>
+      <org.w3c.exi.ttf.schemaDeviations xmlns="">n/a</org.w3c.exi.ttf.schemaDeviations>
+      <org.w3c.exi.ttf.schemaLocation xmlns="">data/AVCL/AVCL.xsd</org.w3c.exi.ttf.schemaLocation>
+      <testsDir xmlns="">data</testsDir>
+    </testCase>
+    <testCase name="CBMS/fragments/cbms.20060101BBCAsian_pi.xml.Content0.frag">
+      <inputFile>data/CBMS/fragments/cbms.20060101BBCAsian_pi.xml.Content0.frag</inputFile>
+      <resultValue>37941.420</resultValue>
+      <resultValueX>-1.000</resultValueX>
+      <org.w3c.exi.ttf.fragments xmlns="">true</org.w3c.exi.ttf.fragments>
+      <org.w3c.exi.ttf.preserve xmlns="">n/a</org.w3c.exi.ttf.preserve>
+      <org.w3c.exi.ttf.schemaDeviations xmlns="">n/a</org.w3c.exi.ttf.schemaDeviations>
+      <org.w3c.exi.ttf.schemaLocation xmlns="">data/CBMS/schema/dvb_ipdc_esg.xsd</org.w3c.exi.ttf.schemaLocation>
+      <testsDir xmlns="">data</testsDir>
+    </testCase>
+    <testCase name="CBMS/fragments/cbms.20060101BBCCBBC_pi.xml.Content0.frag">
+      <inputFile>data/CBMS/fragments/cbms.20060101BBCCBBC_pi.xml.Content0.frag</inputFile>
+      <resultValue>80507.757</resultValue>
+      <resultValueX>-1.000</resultValueX>
+   

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<SpriteSheet>
+  <SpriteSheetData Id="particle_pvp" Width="812" Height="520" />
+  <Animations>
+    <Animation Id="particle_pvp" PosInSpriteSheetX="0" PosInSpriteSheetY="0" Columns="14" Frames="69" FrameWidth="58" FrameHeight="104" xPivot="29" yPivot="140" Delay="16" Loop="0" />
+  </Animations>
+</SpriteSheet>

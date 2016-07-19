@@ -1,0 +1,74 @@
+<!DOCTYPE root SYSTEM "dtdtest.dtd">
+<root>
+    <!--
+	This primarily bangs on different ways of expressing
+	optionality in content models.
+    -->
+    <once><e/></once>
+
+    <twice><e/><e/></twice>
+
+
+    <once-or-twice-a><e/></once-or-twice-a>
+    <once-or-twice-b><e/></once-or-twice-b>
+    <once-or-twice-c><e/></once-or-twice-c>
+    <once-or-twice-d><e/></once-or-twice-d>
+    <once-or-twice-e><e/></once-or-twice-e>
+
+    <once-or-twice-a><e/><e/></once-or-twice-a>
+    <once-or-twice-b><e/><e/></once-or-twice-b>
+    <once-or-twice-c><e/><e/></once-or-twice-c>
+    <once-or-twice-d><e/><e/></once-or-twice-d>
+    <once-or-twice-e><e/><e/></once-or-twice-e>
+
+
+    <once-or-more-1a><e/></once-or-more-1a>
+    <once-or-more-1b><e/></once-or-more-1b>
+    <once-or-more-1c><e/></once-or-more-1c>
+    <once-or-more-1d><e/></once-or-more-1d>
+    <once-or-more-1e><e/></once-or-more-1e>
+
+    <once-or-more-1a><e/><e/></once-or-more-1a>
+    <once-or-more-1b><e/><e/></once-or-more-1b>
+    <once-or-more-1c><e/><e/></once-or-more-1c>
+    <once-or-more-1d><e/><e/></once-or-more-1d>
+    <once-or-more-1e><e/><e/></once-or-more-1e>
+
+    <once-or-more-1a><e/><e/><e/></once-or-more-1a>
+    <once-or-more-1b><e/><e/><e/></once-or-more-1b>
+    <once-or-more-1c><e/><e/><e/></once-or-more-1c>
+    <once-or-more-1d><e/><e/><e/></once-or-more-1d>
+    <once-or-more-1e><e/><e/><e/></once-or-more-1e>
+
+    <once-or-more-1a><e/><e/><e/><e/></once-or-more-1a>
+    <once-or-more-1b><e/><e/><e/><e/></once-or-more-1b>
+    <once-or-more-1c><e/><e/><e/><e/></once-or-more-1c>
+    <once-or-more-1d><e/><e/><e/><e/></once-or-more-1d>
+    <once-or-more-1e><e/><e/><e/><e/></once-or-more-1e>
+
+
+    <once-or-more-2a><e/></once-or-more-2a>
+    <once-or-more-2b><e/></once-or-more-2b>
+    <once-or-more-2c><e/></once-or-more-2c>
+    <once-or-more-2d><e/></once-or-more-2d>
+    <once-or-more-2e><e/></once-or-more-2e>
+
+    <once-or-more-2a><e/><e/></once-or-more-2a>
+    <once-or-more-2b><e/><e/></once-or-more-2b>
+    <once-or-more-2c><e/><e/></once-or-more-2c>
+    <once-or-more-2d><e/><e/></once-or-more-2d>
+    <once-or-more-2e><e/><e/></once-or-more-2e>
+
+    <once-or-more-2a><e/><e/><e/></once-or-more-2a>
+    <once-or-more-2b><e/><e/><e/></once-or-more-2b>
+    <once-or-more-2c><e/><e/><e/></once-or-more-2c>
+    <once-or-more-2d><e/><e/><e/></once-or-more-2d>
+    <once-or-more-2e><e/><e/><e/></once-or-more-2e>
+
+    <once-or-more-2a><e/><e/><e/><e/></once-or-more-2a>
+    <once-or-more-2b><e/><e/><e/><e/></once-or-more-2b>
+    <once-or-more-2c><e/><e/><e/><e/></once-or-more-2c>
+    <once-or-more-2d><e/><e/><e/><e/></once-or-more-2d>
+    <once-or-more-2e><e/><e/><e/><e/></once-or-more-2e>
+
+</root>

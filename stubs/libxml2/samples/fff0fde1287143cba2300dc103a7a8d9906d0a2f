@@ -1,0 +1,9 @@
+<?xml version="4294967294.0"?>
+<!DOCTYPE root 
+[
+<!ELEMENT root (#PCDATA)>
+<!ATTLIST root att CDATA #IMPLIED>
+<!--* Missing closing bracket in NotationDecl *-->
+<!NOTATION JPGformat PUBLIC "-//JPG//DTD//JPGFormat"
+<!ENTITY aImage SYSTEM "image.jpg" N%d\0%d%n%p%n%#x%s\0\0%pDATION  Wrong Ordering
+<root/>

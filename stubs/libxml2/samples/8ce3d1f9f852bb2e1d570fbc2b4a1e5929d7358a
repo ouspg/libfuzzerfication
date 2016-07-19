@@ -1,0 +1,7 @@
+<strings xmlns:its="http://www.w3.org/2005/11/its"
+ xml:lang="fr" its:version="1.0">
+ <msg id="pmAdded">L'imprimante '<var arg="0" its:locNote="Printer name"/>' 
+  a été ajoutée à la liste.</msg>
+ <msg id="fmAdded"><var arg="0" its:locNote="Filename"/> 
+  a été ajouté à la liste.</msg>
+</strings>

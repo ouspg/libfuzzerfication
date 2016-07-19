@@ -1,0 +1,6 @@
+<root>
+    <a a="value1">val1</a>
+    <a a="value2">val2</a>
+    <a a="val1">value1</a>
+    <a a="val2">value2</a>
+</root>

@@ -1,0 +1,63 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint">
+ <p:presentation notessizex="4406" notessizey="5845">
+  <p:master id="10" type="main" href="master10.htm" xmlhref="master10.xml"
+   template="Vodafone" layout="title_body"
+   slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"/>
+    <p:colorscheme
+     colors="#0000FF,#FFFFFF,#000000,#FFFF00,#FF9900,#00FFFF,#FF0000,#969696"/>
+    <p:colorscheme
+     colors="#FFFFCC,#000000,#666633,#808000,#339933,#800000,#0033CC,#FFCC66"/>
+    <p:colorscheme
+     colors="#FFFFFF,#000000,#333333,#000000,#DDDDDD,#808080,#4D4D4D,#EAEAEA"/>
+    <p:colorscheme
+     colors="#FFFFFF,#000000,#808080,#000000,#FFCC66,#0000FF,#CC00CC,#C0C0C0"/>
+    <p:colorscheme
+     colors="#FFFFFF,#000000,#808080,#000000,#C0C0C0,#0066FF,#FF0000,#009900"/>
+    <p:colorscheme
+     colors="#FFFFFF,#000000,#808080,#000000,#3399FF,#99FFCC,#CC00CC,#B2B2B2"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="11" type="title" href="master11.htm" xmlhref="master11.xml"
+   layout="title_subtitle"
+   slots="centerTitle,subTitle,dateTime,footer,slideNumber"/>
+  <p:master id="1" type="notes" href="master01.htm" layout="notes"
+   slots="header,dateTime,slideImage,body,footer,slideNumber"/>
+  <p:master id="2" type="handout" href="master02.htm" layout="handout"
+   slots="header,dateTime,footer,slideNumber"/>
+  <p:slide id="68" href="slide0068.htm" masterhref="master11.htm"
+   layout="title_subtitle" slots="centerTitle,subTitle"/>
+  <p:slide id="70" href="slide0070.htm" layout="title_body" slots="title,body"/>
+  <p:slide id="71" href="slide0071.htm" layout="title_body" slots="title,body"/>
+  <p:slide id="69" href="slide0069.htm" layout="title_body" slots="title,body"/>
+  <p:slide id="72" href="slide0072.htm" layout="title_body" slots="title,body"/>
+  <p:slide id="73" href="slide0073.htm" layout="2_columns"
+   slots="title,body,body"/>
+  <p:slide id="74" href="slide0074.htm" layout="title_body" slots="title,body"/>
+  <p:slide id="76" href="slide0076.htm" layout="title_body" slots="title,body"/>
+  <p:slide id="75" href="slide0075.htm" layout="title_body" slots="title,body"/>
+  <p:viewstate type="slideView" vertbarstate="0" horizbarstate="2"/>
+  <p:slideshowsettings pencolor="schemeText" manualadvance="t"/>
+  <p:kinsoku language="Japanese" level="levelCustom"
+   leading="‘“（〔［｛〈《「『【￥＄$([\{｢￡"
+   following="、。，．・：；？！゛゜ヽヾゝゞ々ー’”）〕］｝〉》」』】°‰′″℃￠％ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶ!%),.:;?]}｡｣､･ｧｨｩｪｫｬｭｮｯｰﾞﾟ"/>
+  <p:font name="Times New Roman" charset="0" type="6" family="18"/>
+  <p:font name="Arial" charset="0" type="6" family="34"/>
+  <p:headersfooters slidenumber="t" noheader="t"/>
+  <p:headersfooters notes="t" slidenumber="t" formatid="7" nouserdate="t"
+   todaydate="t"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hidenavigation="t"
+   hideslideanimation="t"/>
+  <p:htmlpublishsettings browsersupport="dual"
+   href="D:\My Documents\Standards\W3C\Content Adaptation Workshop.htm"
+   hidespeakernote="t" noloadinbrowser="t"/>
+ </p:presentation>
+ <o:shapedefaults v:ext="edit" spidmax="351246">
+  <v:stroke weight=".5pt"/>
+  <o:colormru v:ext="edit" colors="red,#fafd00,#003e00,white,#00c,#009,#039,#03c"/>
+  <o:colormenu v:ext="edit" fillcolor="none" strokecolor="none"/>
+ </o:shapedefaults></xml>

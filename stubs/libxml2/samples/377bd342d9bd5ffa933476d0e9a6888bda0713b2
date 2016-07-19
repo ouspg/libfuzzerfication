@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game
+  update-freq="10.0"
+  player0-energy="10.0"
+  player1-energy="0.0"
+  player2-energy="0.0"
+  player3-energy="0.0"
+  plant-speed="0.1"
+  plant-cost="6.0"
+  plant-income="0.2"
+  fruit-cost="8.0"
+  destroy-multiply="2.0">
+</game>

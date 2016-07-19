@@ -1,0 +1,22 @@
+<foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apple+s"><<tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="ht%s%n%p󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan><tspan><tspan>foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁙>
+<!ELEMENT e (doc+)>
+    </tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan></tspan><doc ANY><doc ANY><defs><defs><defs><doc ANY><foo />
+<!ELEMENT g ((a,b)*)>
+⁦<!ELEMENT h ((a,b)?)>
+<!ELEMENT i ((a,b)+)>
+]>
+<doc ANY>

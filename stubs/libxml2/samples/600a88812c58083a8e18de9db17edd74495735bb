@@ -1,0 +1,33 @@
+<?xml-stylesheet href="css3-modsel-d3.css" type="text/css"?>
+<test>
+
+ <div xmlns="http://www.w3.org/1999/xhtml">
+
+  <script>
+   <![CDATA[
+
+    function test() {
+      document.getElementsByTagNameNS('', 'test')[1].setAttributeNS('', 'attribute', 'start middle end');
+    }
+
+    window.setTimeout("test()", 100);
+   ]]>
+  </script>
+
+  <p> The following block should be green. </p>
+
+  <!-- root of selector -->
+  <stub xmlns=""></stub>
+
+  <!-- middle part of selector does not match this -->
+  <test xmlns="" attribute="fake"></test>
+
+  <!-- middle part of selector matches this once attribute is fixed -->
+  <test xmlns="" attribute="start mid dle end"></test>
+
+  <!-- subject of selector -->
+  <test xmlns=""></test>
+
+ </div>
+
+</test>

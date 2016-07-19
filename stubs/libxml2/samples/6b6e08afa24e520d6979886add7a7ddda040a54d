@@ -1,0 +1,110 @@
+<refentry id="link.element">
+<?dbhtml filename="link.html"?>
+<refentryinfo>
+<pubdate>$Date: 2004/12/21 16:01:30 $</pubdate>
+<releaseinfo>$Revision: 1.1.1.1 $</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>elements</primary>
+<secondary>link</secondary></indexterm>
+<refentrytitle>link</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>link</refname>
+<refpurpose>&link.purpose;</refpurpose>
+</refnamediv>
+
+&link.synopsis.gen;
+<refsect1 condition='ref.description'><title>Description</title>
+
+<para>
+<sgmltag>Link</sgmltag> is a general purpose hypertext element.
+Usually, <sgmltag>Link</sgmltag> surrounds the text that should be made
+&ldquo;hot,&rdquo; (unlike <sgmltag>XRef</sgmltag> which must generate the text) but
+the <sgmltag class='attribute'>EndTerm</sgmltag> attribute can be used to copy
+text from another element.
+</para>
+
+<refsect2 id="dbreproc.link"><title>Processing expectations</title>
+<para>
+&format.inline;
+</para>
+<para>
+If the <sgmltag>Link</sgmltag> element has content,
+then that content is processed for output
+as the &ldquo;hot&rdquo; text.
+If the <sgmltag>Link</sgmltag> element has content
+and an
+<sgmltag class='attribute'>EndTerm</sgmltag> attribute, then the
+content is used and the
+<sgmltag class='attribute'>EndTerm</sgmltag> is ignored.
+If the <sgmltag>Link</sgmltag> element has an
+<sgmltag class='attribute'>EndTerm</sgmltag> attribute and
+no content, then the
+content of the element pointed to by <sgmltag class='attribute'>EndTerm</sgmltag>
+should be repeated at the location of the <sgmltag>Link</sgmltag> and used
+as the &ldquo;hot&rdquo; text.
+</para>
+<para>
+Linking elements must not be nested within other linking
+elements (including themselves).  Because DocBook is harmonizing
+towards &XML;, this restriction cannot easily be enforced by the &DTD;. The
+processing of nested linking elements is undefined.
+</para>
+</refsect2>
+
+<refsect2 role='fu' revision="4.0"><title>&FutureChanges;</title>
+<para>
+<!--do not index this occurance-->
+&fu.interfacedefinition;
+</para>
+</refsect2>
+
+
+&link.parents.gen;
+&link.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.attrdesc'><title>Attributes</title>
+<variablelist>
+<varlistentry><term>endterm</term>
+<listitem>
+<para>
+<sgmltag class="attribute">Endterm</sgmltag> points to the element whose content
+is to be used as the text of the link. If <sgmltag class="attribute">Endterm</sgmltag>
+is supplied on a <sgmltag>Link</sgmltag> which has content, the value of
+<sgmltag class="attribute">Endterm</sgmltag> should be ignored.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>linkend</term>
+<listitem>
+<para>
+<sgmltag class="attribute">Linkend</sgmltag> points to the target of the link.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>type</term>
+<listitem>
+<para>
+<sgmltag class="attribute">Type</sgmltag> is available for application-specific
+customization of the linking behavior.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>See Also</title>
+&link.seealso.gen;
+</refsect1>
+<refsect1><title>Examples</title>
+
+<informalexample role="example-source">
+<programlisting>&link.example.1.txt;</programlisting>
+</informalexample>
+
+&link.example.seealso.gen;
+</refsect1>
+</refentry>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE results [
+<!ENTITY dom3-core-xerces SYSTEM '../build/dom3-core-xerces_dom3.xml'>
+<!ENTITY dom3-core-xerces-alt SYSTEM '../build/dom3-core-xerces_dom3AltConfig.xml'>
+<!ENTITY dom3-core-xerces-svg SYSTEM '../build/dom3-core-xerces_dom3_svg.xml'>
+<!ENTITY dom3-core-xerces-xhtml SYSTEM '../build/dom3-core-xerces_dom3_xhtml.xml'>
+<!ENTITY dom3-core-ls SYSTEM '../build/dom3-core-xerces_ls.xml'>
+<!ENTITY dom3-core-ls-alt SYSTEM '../build/dom3-core-xerces_lsAltConfig.xml'>
+]>
+<results>
+<implementation name="Xerces-J CVS">
+&dom3-core-xerces;
+</implementation>
+<implementation name="Xerces-J CVS Alt">
+&dom3-core-xerces-alt;
+</implementation>
+<implementation name="Xerces-J CVS XHTML">
+&dom3-core-xerces-xhtml;
+</implementation>
+<implementation name="Xerces-J CVS SVG">
+&dom3-core-xerces-svg;
+</implementation>
+<implementation name="Xerces-J CVS LS">
+&dom3-core-ls;
+</implementation>
+<implementation name="Xerces-J CVS LS Alt">
+&dom3-core-ls-alt;
+</implementation>
+</results>

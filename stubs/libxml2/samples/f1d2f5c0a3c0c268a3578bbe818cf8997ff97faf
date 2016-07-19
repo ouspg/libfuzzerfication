@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>MIT</ShortName>
+	<Description>Search MIT - Massachusetts Institute of Technology</Description>
+	<Image height="16" width="16" type="image/x-icon">http://web.mit.edu/favicon.ico</Image>
+	<Url type="text/html" method="get" template="http://search.mit.edu/search?client=mithome&amp;site=mit&amp;output=xml_no_dtd&amp;proxystylesheet=mithome&amp;num=15&amp;as_q={searchTerms}" />
+</OpenSearchDescription>

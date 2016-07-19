@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="earl-xform.css" type="text/css"?>
+
+<html:html xmlns="http://www.w3.org/2002/xforms/cr" 
+	xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+	xmlns:ev="http://www.w3.org/2001/xml-events" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wcag="http://www.w3.org/TR/WCAG10/#"
+	xmlns:earl="http://www.w3.org/WAI/ER/EARL/nmg-strawman#">
+
+  <html:head>
+    <html:title>WCAG 1.0 evaluation in EARL</html:title>
+    <model id="foaf">
+      <instance src="./earlform.xml" id="default"/>
+      <submission action="./dummy.xml" id="submit1" method="put"/> 
+    </model>
+  </html:head>
+  <html:body>
+  <html:h1>forms to generate forms</html:h1>
+
+
+
+    <group class="section">
+      <input ref="instance('default')/html:head/xforms:model/xforms:submission/@action" class="uri">
+        <label>A URI or filename for your results</label>
+      </input>
+      <input ref="earl:Assertor/earl:email/@rdf:resource" class="uri">
+        <label>Your email address</label>
+      </input>
+    </group>
+
+
+
+      <group>
+        <submit submission="submit1">
+          <label>next step - results form</label> 
+        </submit>
+      </group>			
+  </html:body>
+</html:html>
+

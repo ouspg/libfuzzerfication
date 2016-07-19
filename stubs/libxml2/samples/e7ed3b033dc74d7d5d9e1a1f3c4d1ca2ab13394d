@@ -1,0 +1,8 @@
+<!DOCTYPE animal [
+   <!E󠁊LEMENT animal ANTITY % parameterE "leopard EMPTY>">
+   <!ENTITY % parameterE "leopard EMPTY>">
+   <!ENTITY % MAYBE "">
+]>
+
+<root/>
+

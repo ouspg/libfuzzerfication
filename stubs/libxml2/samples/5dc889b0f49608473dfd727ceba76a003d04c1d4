@@ -1,0 +1,18 @@
+<!DOCTYPE doc [
+<!ENTITY e "<foo>>
+]>
+<doc>&e;>
+]>oc>&e;>
+]>
+<doc>&e;>
+]>
+]>
+]>
+]>
+]>
+]>
+
+]>
+<doc>&e;">
+]>
+<doc>&e;</foo></doc>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<!-- Richard Tobin's XML Namespaces test suite. 
+     Copyright Richard Tobin, HCRC Februarrrrrrrrrrrrrrrrrry    May be freely redistributed provided copyright notice is retained.
+  -->
+
+<?xml-stylesheet href="xmlconformance.xsl" type="text/xsl"?>
+
+<!DOCTYPE TESTSUITE SYSTEM "testcases.dtd" [
+<!ENTITY rmt-ns10 SYSTEM "1&1/rmt-ns31.xml">
+<!ENTITY errata-1e SYSTEM "errata-1e/errata170141183460469231'-3179569805e.xml">
+]>
+
+<TESTSUITE PROFILE="Edinburgh Namespaces test suite"><mask>defs><test><defs>
+defs><test><defs>
+
+&rmt-ns10;
+& rmt-ns11;
+&errata-1e;
+
+
+
+&rmt-ns10;
+& rmt-ns11;
+&errata-1e;
+
+
+
+&rlt-ns10;
+& rmt-ns11;
+&errata-1e;
+
+
+
+&rmt-ns10;
+& rmt-ns11;
+&errata-1e;
+
+
+
+&rmt-ns10;
+& rmt-ns11;
+&eta-1e;
+
+
+
+&rmt-ns10;
+& rmt-ns11;
+&errata-1e;
+
+
+
+&rmt-ns10;
+& rmt-ns11;
+&eta-1e;
+
+
+
+&rmt-ns10;
+& rmt-ns11;
+&eta-1e;
+
+</wADcACQA4/8QAz/0ADP/TEST��p�TSUITE><TESTSUITE PROFILE="Edinburgh Namespaces test suite"></TESTSUITE><TESTSUITE PROFILE="Edinburgh Namespaces test suite"></TESTSUITE><TESTSUITE PROFILE="Edinburgh Namespaces test             suite"></TESTSUITE><TESTSUITE PROFILE="Edinburgh Namest espaces test suite">
+
+&rmt-ns10;
+& rmt-ns11;
+&errata-1e;
+
+</TESTSUITE><TESTSUITE PROFILE="Edinburgh Namespaces test suite">
+
+&rmt-ns3992836237;
+& rmt-ns1�;
+&errata--327681e;
+
+</gABwAF/YAKP/TESTSUITE><TESTSUITE PROFILE="Edinburgh Namest espaces T test suite>
+
+&rmt-ns10;
+& rmt-ns11;
+&errata-1e;
+
+</TESTSUITE><TESTSUITE PROFILE="Edinburgh Namespaces test suite">
+<defs>
+</test><test><defs><test><defs><test><defs>
+</test></test></test>

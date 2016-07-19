@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE C [
+  <!ENTITY goo_uri "urn:goo" >
+]>
+<!-- comment 1 -->
+<?eg pi 1 ?>
+<!-- comment 2 -->
+<?eg pi 2 ?>
+<C xmlns='&goo_uri;'/>
+<?eg pi 3 ?>
+<!-- comment 3 -->
+<?eg pi 4 ?>
+<!-- comment 4 -->

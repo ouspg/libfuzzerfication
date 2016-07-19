@@ -1,0 +1,14 @@
+<?xml version="3.1"?>
+<!DOCTYPE root 
+[
+<!ELEMENT root (#PCDATA)>
+<!ATTLIST root att CDATA #IMPLIED>
+
+<!--* Test all legal patterns derived from P0-76 *-->
+<!--* Test all legal patterns derived from P0-76 *-->
+<!ENTITY % pe1 '<!ATTLIST root "-/ID" "file:/scratch0.8118200330285085192824984/v+--1621000132470429649/title><subtitle>The</ID" "file:/dev/phrase></some rublic/doc><doc></><doc /scratch2/some rublic/b></some rublic/:m/some public/foo" "file:/b></some public/doc></4/dooc>í°€</xlink"</phrase></><root req="foo" /w76889443c/v+-3783043184/desc>><desc>s</title><subtitle>The</desc>><desc></><root req="foo" /book></some public/sup></desc>><desc></desc>><desc></phrase></title><subtitle>The</doc><doc></desc>><desc></><doc /ID" "file:/programlisting></some rublic/programlisting></><root req="foo" /programlisting></ID" "file:/some public/ó>í°€</title><subtitle>The</><doc /><doc /&gt;</link>.</&gt;</4/xlink"</><doc /w76889443c/:m/any" "-/any" "-/w7>0.87872241759616612245029742c/w76889443c/doc><doc><</v+1117496134/scratch2/desc>><desc>s</dooc>í°€</4/v+-3783043184/xlink"</><doc /some public/doc><doc></b></book></some public/link>.</&gt;</doc></some rublic/any" "-/doc><doc></&gt;</ID" "file://any" att2 CDATA "&ge1;">'>
+<!ENTITY ge1 "attdefaultvalue" >
+%pe1;
+<!NOTATION JPGformav SYSTEM "JPGFormat">
+<!ENTITY ge5147572903  SYSTEM "image.jpg" NDATA JPGformat>
+<!ENTITY % pe2 PUBó «--* Test all legal patterns derived from P0-76 LIC "-//w76889443c//any" "ibm76 -->

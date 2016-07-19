@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="PageMaster"><fo:region-body border-style="solid" border-width="thin" margin-top="8mm" margin-right="8mm" margin-bottom="8mm" margin-left="8mm"/><fo:region-before border-style="solid" border-width="thin" extent="5mm" display-align="after"/><fo:region-after border-style="solid" border-width="thin" extent="5mm" display-align="before"/><fo:region-start border-style="solid" border-width="thin" reference-orientation="270" extent="5mm"/><fo:region-end border-style="solid" border-width="thin" reference-orientation="90" extent="5mm"/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-name="PageMaster"><fo:static-content flow-name="xsl-region-before"><fo:block text-align="center" font-size="small">6.4 Declarations and Pagination and Layout Formatting Objects</fo:block></fo:static-content><fo:static-content flow-name="xsl-region-after"><fo:block text-align="center" font-size="small">
+- <fo:page-number/> -
+</fo:block></fo:static-content><fo:static-content flow-name="xsl-region-start"><fo:block text-align="center" font-size="small">
+	region-start</fo:block></fo:static-content><fo:static-content flow-name="xsl-region-end"><fo:block text-align="center" font-size="small">
+				region-end</fo:block></fo:static-content><fo:flow flow-name="xsl-region-body">
+<fo:block><fo:block font-size="large" font-weight="bold" space-before="1em" space-after="1em" keep-with-next="always">6.4.17 fo:region-end </fo:block>
+
+<fo:block start-indent="5mm" end-indent="5mm" space-before="0.5em" space-after="0.5em" text-indent="1em" text-align="justify">実施テスト項目</fo:block>
+<fo:list-block provisional-distance-between-starts="15mm" provisional-label-separation="5mm">
+<fo:list-item><fo:list-item-label start-indent="inherit + 5mm" end-indent="label-end()"><fo:block>
+        ●
+      </fo:block></fo:list-item-label><fo:list-item-body start-indent="body-start()"><fo:block>テスト項目1</fo:block></fo:list-item-body></fo:list-item>
+</fo:list-block>
+<fo:block font-size="large" font-weight="bold" space-before="1em" space-after="1em" keep-with-next="always">テスト項目1</fo:block>
+
+<fo:block font-size="large" font-weight="bold" space-before="1em" space-after="1em" keep-with-next="always">テスト項目の目的</fo:block>
+
+<fo:block start-indent="5mm" end-indent="5mm" space-before="0.5em" space-after="0.5em" text-indent="1em" text-align="justify">The end-edge of the content-rectangle</fo:block>
+
+
+<fo:block font-size="large" font-weight="bold" space-before="1em" space-after="1em" keep-with-next="always">テスト方法</fo:block>
+
+<fo:block start-indent="5mm" end-indent="5mm" space-before="0.5em" space-after="0.5em" text-indent="1em" text-align="justify">content-rectangle of the page-reference-areaと一致すること</fo:block>
+<fo:block start-indent="5mm" end-indent="5mm" space-before="0.5em" space-after="0.5em" text-indent="1em" text-align="justify">block-progression-dimension はextentによって決定されること</fo:block>
+
+
+<fo:block font-size="large" font-weight="bold" space-before="1em" space-after="1em" keep-with-next="always">テストデータファイル名</fo:block>
+
+<fo:block start-indent="5mm" end-indent="5mm" space-before="0.5em" space-after="0.5em" text-indent="1em" text-align="justify">未記入</fo:block>
+
+
+<fo:block font-size="large" font-weight="bold" space-before="1em" space-after="1em" keep-with-next="always">確認すべき事項</fo:block>
+
+<fo:block start-indent="5mm" end-indent="5mm" space-before="0.5em" space-after="0.5em" text-indent="1em" text-align="justify">？</fo:block>
+
+
+<fo:block font-size="large" font-weight="bold" space-before="1em" space-after="1em" keep-with-next="always">履歴</fo:block>
+
+<fo:block start-indent="5mm" end-indent="5mm" space-before="0.5em" space-after="0.5em" text-indent="1em" text-align="justify">未記入</fo:block>
+
+
+
+
+</fo:block>
+
+</fo:flow></fo:page-sequence></fo:root>

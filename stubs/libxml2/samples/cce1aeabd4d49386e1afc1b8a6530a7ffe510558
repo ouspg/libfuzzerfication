@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE g:grammar SYSTEM "grammar.dtd">
+
+<!--
+Copyright (c) 2002 W3C(r) (http://www.w3.org/) (MIT (http://www.lcs.mit.edu/), 
+INRIA (http://www.inria.fr/), Keio (http://www.keio.ac.jp/)), 
+All Rights Reserved.
+See http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright.
+W3C liability 
+(http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Legal_Disclaimer), 
+trademark 
+(http://www.w3.org/Consortium/Legal/ipr-notice-20000612#W3C_Trademarks), 
+document use 
+(http://www.w3.org/Consortium/Legal/copyright-documents-19990405), 
+and software licensing rules 
+(http://www.w3.org/Consortium/Legal/copyright-software-19980720) 
+apply.
+-->
+
+<g:grammar xmlns:g="http://www.w3.org/2001/03/XPath/grammar">
+
+  <!-- ====================== Meta Information ==================== -->
+  <g:language id="xpath" display-name="XPath 2.0" if="xpath"/>
+  <g:language id="pathx1" display-name="XPath 1.0" if="pathx1"/>
+  <g:language id="xquery" display-name="XQuery 1.0" if="xquery"/>
+  <g:language id="core"
+    display-name="XML Processing Formal Semantics Core Language 1.0" if="core"/>
+  <g:language id="match" display-name="XSLT 2.0 Match Patterns" if="xpath"/>
+	
+  <!-- ====================== Entry Point Information ==================== -->
+  <g:start name="ExprSingle" state="DEFAULT" if="pathx1"/>
+  <g:start name="XPath" state="DEFAULT" if="xpath"/>
+  <g:start name="QueryList" state="DEFAULT" if="core"/>
+  <g:start name="QueryList" state="DEFAULT" if="xquery"/>
+  <g:start name="Pattern" state="DEFAULT" if="xpath" sub-spec="xslt-patterns"/>
+
+  <!-- ====================== Lexical Specifications ==================== -->
+
+  <g:token name="Pragma" if="xquery" special="yes" 
+		inline="false" type="skip-token"
+    comment-id="parens">
+    <g:ref name="ExtensionStart"/>
+    <g:ref name="PragmaKeyword"/>
+    <g:ref name="PragmaQName"/>
+    <g:zeroOrMore>
+      <g:ref name="PragmaContents"/>
+    </g:zeroOrMore>
+    <g:ref name="ExtensionEnd"/>
+  </g:token>
+
+  <g:token name="MUExtension" if="xquery" special="yes" 
+		inline="false" type="skip-token"
+    comment-id="parens">
+    <g:ref name="ExtensionStart"/>
+    <g:ref name="Extension"/>
+    <g:ref name="ExtensionQName"/>
+    <g:zeroOrMore>
+      <g:ref name="ExtensionContents"/>
+    </g:zeroOrMore>
+    <g:ref name="ExtensionEnd"/>
+  </g:token>
+
+  <g:token name="ExtensionStart" if="xquery" special="yes" 
+		inline="true" type="skip-token"
+    comment-id="parens">
+    <g:string>(::</g:string>
+  </g:token>
+
+  <g:token name="ExprComment" if="xquery core xpath" special="yes" 
+		inline="false" type="skip-token"
+    comment-id="comments">
+    <g:ref name="ExprCommentStart"/>
+    <g:zeroOrMore>
+      <g:choice>
+        <g:ref name="ExprCommentContent"/>
+        <!-- We only want to show the nesting in the notation.
+             This kind of nesting fails in a regular expression. -->
+        <g:ref name="ExprComment" notational-only="yes"/>
+      </g:choice>
+    </g:zeroOrMore>
+    <g:ref name="ExprCommentEnd"/>
+  </g:token>
+
+  <g:token name="ExprCommentStart" if="xquery core xpath" special="yes" 
+		inline="true" type="skip-token"
+    comment-id="comments">
+    <g:string>(:</g:string>
+  </g:token>
+
+  <g:token name="ExprCommentContent" if="xquery core xpath" special="yes" 
+		inline="false" type="skip-token" comment-id="parens">
+    <g:ref name="Char"/> 
+  </g:token>
+
+  <g:token name="PragmaContents" if="xquery" special="yes" 
+		inline="false" type="skip-token">
+    <g:ref name="Char"/> 
+  </g:token>
+
+  <g:token name="ExtensionContents" if="xquery" special="yes" 
+		inline="false" type="skip-token">
+    <g:ref name="Char"/>
+  </g:token>
+
+  <g:token name="ExtensionEnd" if="xquery" special="yes" 
+		inline="true" type="skip-token">
+    <g:string>::)</g:string>
+  </g:token>
+
+  <g:token name="ExprCommentEnd" if="xquery core xpath" special="yes" 
+		inline="true" type="skip-token">
+    <g:string>:)</g:string>
+  </g:token>
+
+  <g:token name="PragmaKeyword" inline="true" special="yes" if="xquery" type="skip-token">
+    <g:string>pragma</g:string>
+  </g:token>
+
+  <g:token name="Extension" inline="true" special="yes" if="xquery" type="skip-token">
+    <g:string>extension</g:string>
+  </g:token>
+
+	<g:token name="XmlCommentStart" if="xquery core">
+		<g:string>&lt;!--</g:string>
+  </g:token>
+	
+  <g:token name="XmlCommentEnd" if="xquery core">
+    <g:string>--></g:string>
+  </g:token>
+
+  <g:token name="IntegerLiteral" inline="false" value-type="number" type="literal">
+    <g:ref name="Digits"/>
+  </g:token>
+	
+  <g:token name="DecimalLiteral" inline="false" value-type="number" type="literal"
+           whitespace-spec="explicit">
+    <g:choice>
+      <g:sequence>
+        <g:string>.</g:string>
+        <g:ref name="Digits"/>
+      </g:sequence>
+      <g:sequence>
+        <g:ref name="Digits"/>
+        <g:string>.</g:string>
+				<g:zeroOrMore>
+					<g:cha

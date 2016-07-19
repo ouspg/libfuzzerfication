@@ -1,0 +1,101 @@
+<!DOCTYPE LegalName [
+<!ELEMENT LegalName ANY>
+<!ELEMENT LegalName: ANY%#x%#x%d%#x LegalNameÀ ANY>
+<!ELEMENT LegalNameÁ ANY>
+<!ELEMENT LegalName˾ ANY>
+<!ELEMENT LegalNameÂ ANY>
+<!ELEMENT LegalNameÃ ANY>
+<!ELEMENT LegalName˽ ANY>
+<!ELEMENT LegalName˿<foo /> ANY>
+<!ELEMENT LegalNameͰ ANY>
+<!ELEMENT LegalNameͱ ANY>
+<!ELEMENT LegalNameͼͽ ANY>
+<!ELEMENT LegalNameͽͿ ANY>
+<!ELEMENT LegalNameͿ΀ ANY>
+<!ELEMENT LegalName΀῾ ANY>
+<!ELEMENT LegalName῾῿ ANY>
+<!ELEMENT LegalName῿‌ ANY>
+<!ELEMENT LegalName‌‍ ANY>
+<!ELEMENT LegalName‍⁰ ANY>
+<!ELEMENT LegalName⁰ⁱ ANY>
+<!ELEMENT LegalNameⁱ↎ ANY>
+<!ELEMENT LegalName↎↏Ⰰ ANY>
+<!ELEMENT LegalName↏ⰀⰁ ANY>
+<!ELEMENT LegalNameⰀⰁ⿮ ANY>
+<!ELEMENT LegalNameⰁ⿮⿯ ANY>
+<!ELEMENT LegalName⿮⿯、 ANY>
+<!ELEMENT LegalName⿯、。 ANY>
+<!ELEMENT LegalName、。퟾ ANY>
+<!ELEMENT LegalName。퟾퟿ ANY>
+<!ELEMENT LegalName퟾퟿豈 ANY>
+<!ELEMENT LegalName퟿豈更 ANY>
+<!ELEMENT LegalName豈퟿퟾。 ANY>
+<!ELEMENT LegalName更豈퟿퟾ ANY>
+<!ELEMENT LegalName�更豈퟿ ANY>
+<!ELEMENT LegalName-�更豈 ANY>
+<!ELEMENT LegalName.-�更 ANY>
+<!ELEMENT LegalNameA.-� ANY>
+<!ELEMENT LegalNamezA.- ANY>
+<!ELEMENT LegalName0zA. ANY>
+<!ELEMENT LegalName·0zA ANY>
+<!ELEMENT LegalNamè·0z ANY>
+<!ELEMENT LegalNamé̀·0 ANY>
+<!ELEMENT LegalNameͮ́̀· ANY>
+<!ELEMENT LegalNameͯͮ́̀ ANY>
+<!ELEMENT LegalName‿ͯͮ́ ANY>
+<!ELEMENT LegalName⁀‿ͯͮ ANY>
+<!ELEMENT LegalNamenull⁀‿ͯ ANY>
+<!ELEMENT LegalNamenullnull⁀‿ ANY>
+<!ELEMENT LegalNamenullnullnull⁀ ANY>
+]>
+<!-- LegalName  0x300,0x333,0x369,0x37E,0x2000,0x2001,0x2002,0x2005,0x200B,0x200E,x200F,0x2069,0x2190,0x23FF,0x280F,0x2A00,0x2EDC,0x2FED,0x2FFF,0x3000,0xD800,0xD801,0xDAFF,0xDFFF,0xEFFF,0xF1FF,0xF8FF,0xFFFFF,0x2D,0x2E, 0x41,0x7A ,0x30, 0xB7, 0x0300, 0x0301, 0xx036E, 0x036F, 0x203F, 0x203E, 0x2039, 0x2040; 
+in p02:   -->
+<LegalName>	<LegalName:/>
+	<LegalNameÀ/>
+	<LegalNameÁ/>
+	<LegalName˾/>
+	<LegalNameÂ/>
+	<LegalNameÃ/>
+	<LegalName˽/>
+	<LegalName˿/>
+	<LegalNameͰ/>
+	<LegalNameͱ/>
+	<LegalNameͼͽ/>
+	<LegalNameͽͿ/>
+	<LegalNameͿ΀/>
+	<LegalName΀῾/>
+	<LegalName῾῿/>
+	<LegalName῿‌/>
+	<LegalName‌‍/>
+	<LegalName‍⁰/>
+	<LegalName⁰ⁱ/>
+	<LegalNameⁱ↎/>
+	<LegalName↎↏Ⰰ/>
+	<LegalName↏�<font><font><book><animal>��Ⰱ/>
+	<LegalNameⰀⰁ⿮/>
+	<LegalNameⰁ⿮⿯/>
+	<LegalName⿮⿯、/>
+	<LegalName⿯、。/>
+	<LegalName、。퟾/>
+	<LegalName。퟾퟿/>
+	<LegalName퟾퟿豈/>
+	<LegalName퟿豈更/>
+	<LegalName豈퟿퟾。/>
+	<LegalName更豈퟿퟾/>
+	<LegalName�更豈퟿/>
+	<LegalName-�更豈/>
+	<LegalName.-�更/>
+	<LegalNameA.-�/>
+	<LegalNamezA.-/>
+	<LegalName0zA./>
+	<LegalName·0zA/>
+	<LegalNamè·0z/>
+	<LegalNamé̀·1/>
+	<LegalNameͮ́̀·/>
+	<LegalNameͯͮ́̀/>
+	<LegalName‿ͯͮ́/>
+	<LegalName⁀‿ͯͮ/>
+	<LegalNamenull⁀‿ͯ/>
+	<LegalNamenullnull⁀‿/>
+	<LegalNamenullnullnull⁀/>
+</animal></book></font></font></LegalName>

@@ -1,0 +1,19 @@
+<testCaseGroup xmlns="http://www.sun.com/japex/testSuite" xmlns:xi="http://www.w3.org/2001/XInclude"
+    name="Schema-Informed Declared Production tests - element term">
+    <param name="schemaInformedDataDir" value="${japex.exi.ttfms.testCasesDir}/interop/schemaInformedGrammar"/>
+
+    <param name="groupId" value="${groupId} | elementTermGrammar"/>
+
+    <param name="org.w3c.exi.ttf.useSchemas" value="true" />
+    <param name="org.w3c.exi.ttf.schemaLocation" value="${schemaInformedDataDir}/declaredProductions/substitutionGroup.xsd"/>
+    <!-- schemaDeviations is not necessary because abstract elements  -->
+    <!-- are accepted even in strict mode.                            -->
+    <!-- param name="org.w3c.exi.ttf.schemaDeviations" value="true" / -->
+    <param name="reference" value="http://www.w3.org/TR/exi/#elementTerms"/>
+
+    <testCase name="schemaInformed.declared.elementTerm-01">
+        <param name="testDescription" value="Substitution group test"/>
+        <param name="japex.inputFile" value="${schemaInformedDataDir}/declaredProductions/elementTerm-01.xml" />
+    </testCase>
+
+</testCaseGroup>

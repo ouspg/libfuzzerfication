@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scene>
+	<object id="planssi">
+		<filename>data/strokes/planssi.xml</filename>
+		<transform>
+			<pos>
+				<x>1.55</x>
+				<y>0.5</y>
+				<z>1.3</z>
+			</pos>
+			<rot>
+				<axis>1</axis>
+				<angle>-10</angle>
+			</rot>
+		</transform>
+	</object>
+	<object id="text">
+		<empty/>
+		<transform>
+			<pos>
+				<x>0.42</x>
+				<y>0.65</y>
+				<z>1.2</z>
+			</pos>
+			<rot>
+				<axis>1</axis>
+				<angle>40</angle>
+			</rot>
+			<rot>
+				<axis>2</axis>
+				<angle>13</angle>
+			</rot>
+		</transform>
+	</object>
+	<object id="anchor">
+		<filename>data/strokes/robot_2.xml</filename>
+		<transform>
+			<pos>
+				<x>0.0</x>
+				<y>0.3</y>
+				<z>1.0</z>
+			</pos>
+			<rot>
+				<axis>1</axis>
+				<angle>20</angle>
+			</rot>
+		</transform>
+	</object>
+	<!--<object id="anchor">
+	<filename>data/strokes/robot_1.xml</filename>
+	<transform>
+	<pos>
+	<x>0.0</x>
+	<y>0.3</y>
+	<z>1.0</z>
+	</pos>
+	<rot>
+	<axis>1</axis>
+	<angle>20</angle>
+	</rot>
+	</transform>
+	</object>--> <object id="commentator">
+	<filename>data/strokes/robot_2.xml</filename>
+	<transform>
+		<pos>
+			<x>1.1</x>
+			<y>0.3</y>
+			<z>0.2</z>
+		</pos>
+		<rot>
+			<axis>1</axis>
+			<angle>90</angle>
+		</rot>
+	</transform>
+</object>
+
+
+</scene>

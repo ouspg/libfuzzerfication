@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="noise">
+	<shader type="fragment" >
+
+	<functions> 
+
+	float rand(vec2 co)
+	{
+	  return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453*(1.0)); //*time)
+	}
+	</functions>
+	
+	<main>
+		float noisestr=0.7;
+		float f=rand(gl_FragCoord)*0.5; 
+		color=vec4(color.r+noisestr*f,color.g+noisestr*f,color.b+noisestr*f,1.0);
+		
+		
+			
+	</main>
+	
+	</shader>
+</sumoshader>

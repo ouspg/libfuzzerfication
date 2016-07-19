@@ -1,0 +1,6 @@
+<effect name="AFlower">
+	<value name="numLayers"		type="int"		default="15"		/>
+	<value name="numPetals"		type="int"		default="5"			/>
+
+	<var name="open"	min="0"		max="1"		default="1"			/>
+</effect>

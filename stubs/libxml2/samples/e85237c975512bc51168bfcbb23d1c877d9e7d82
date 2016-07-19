@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+
+<!--
+  An RDF Schema for P3P
+
+  $Id: p3p-rdf-schema.xml,v 1.1 2002/01/25 16:42:53 dom Exp $
+
+This version is based on the P3P 1.0 Working Draft dated
+28 September 2001:
+
+  http://www.w3.org/TR/2001/WD-P3P-20010928
+
+Changes noted in:
+
+  http://www.w3.org/P3P/updates.html
+
+have been reflected.
+
+and on the RDF Model and Syntax Specification
+
+  http://www.w3.org/TR/1999/REC-rdf-syntax-19990222/
+
+and RDF Schema Candidate Recommendation dated 27th March 2000
+
+  http://www.w3.org/TR/2000/CR-rdf-schema-20000327
+
+Thanks to Pat Hayes for suggesting the relativeTo mechanism for
+handling relative classes.
+
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY p3p     "http://www.w3.org/2002/01/p3prdfv1#">
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:p3p ="&p3p;">
+
+<!--
+      PolicyReferences - A sequence of PolicyRef resources
+-->
+
+<rdfs:Class rdf:about="&p3p;PolicyResource">
+  <rdfs:label xml:lang="en">Policy Resource</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    A PolicyReference or a Policy
+  </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="&p3p;PolicyRefResource">
+  <rdfs:label xml:lang="en">Policy Reference Resource</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    A collection of, or a single, PolicyReference
+  </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="&rdfs;PolicyResource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="&p3p;PolicyReferences">
+  <rdfs:label xml:lang="en">policy references</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    A collection of Policy References
+  </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="&rdf;Seq"/>
+  <rdfs:subClassOf rdf:resource="&p3p;PolicyRefResource"/>
+</rdfs:Class>
+
+<rdf:Property rdf:about="&p3p;expiry">
+  <rdfs:label xml:lang="en">expiry</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    States how long the policy reference file (or policy) 
+    remains valid.
+  </rdfs:comment>
+  <rdfs:domain rdf:resource="&p3p;PolicyResource"/>
+  <rdfs:range  rdf:resource="&p3p;Expiry"/>
+</rdf:Property>
+
+<rdfs:Class rdf:about="&p3p;Expiry">
+  <rdfs:label xml:lang="en">expiry</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    States how long the policy reference file (or policies) 
+    remains valid.
+  </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+
+<rdf:Property rdf:about="&p3p;abs-date">
+  <rdfs:label xml:lang="en">absolute date</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    An absolute date in http format.
+  </rdfs:comment>
+  <rdfs:domain rdf:resource="&p3p;Expiry"/>
+  <rdfs:range  rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="&p3p;max-age">
+  <rdfs:label xml:lang="en">maximum age</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    The maximum time before expiry.
+  </rdfs:comment>
+  <rdfs:domain rdf:resource="&p3p;Expiry"/>
+  <rdfs:range  rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+
+<!--
+     p3p:start-time is an "extra" property, not directly included
+     in the original p3p specification.  It enables an RDF model
+     to represent the time at which a policy was last revalidated.
+-->
+
+<rdf:Property rdf:about="&p3p;start-time">
+  <rdfs:label xml:lang="en">start time</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    The time in http date format that the policy was validated.
+  </rdfs:comment>
+  <rdfs:domain rdf:resource="&p3p;Expiry"/>
+  <rdfs:range  rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+
+<!--
+      PolicyRef
+-->
+
+<rdfs:Class rdf:about="&p3p;PolicyRef">
+  <rdfs:label xml:lang="en">policy reference</rdfs:label>
+  <rdfs:comment xml:lang="en">A Policy Reference</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="&p3p;PolicyRefResource"/>
+</rdfs:Class>
+
+<!--
+
+     The P3P about attribute takes a URI reference as a value.
+     If that URI reference is accessed, one presumes that a P3P
+     file will be returned.
+
+     In RDF terms, this URI reference is considered to denote
+     an abstract policy.  If the URI is dereferenced, then content
+     negotiation is assumed to be used to return a representation
+     of that policy in an appropriate format.  Thus the same URI
+     can be used to access a p3p representation of the policy,
+     or an RDF representation of the policy.
+-->
+
+
+<rdf:Property rdf:about="&p3p;about">
+  <rdfs:label xml:lang="en">about</rdfs:label>
+  <rdfs:comment xml:lang="en">
+    The policy being referenced.
+  </rdfs:comment>
+  <rdfs:domain rdf:resource="&p3p;PolicyRef"/>
+  <rdfs:range  rdf:resource="&p3p;Policy"/>
+</rdf:Property>
+
+<!--
+    This is an extra property not directly specified in the 
+    p3p spec. INCLUDE and EXCLUDE elements specify a policy
+    relative to some site.  The p3p:base attribute has been
+    added so that that site can be represented in the RDF graph.
+
+    The value of the p3p:base property is a literal.  
+    p3p:include and p3p:exclude property values are interpreted
+    as abso

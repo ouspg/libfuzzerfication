@@ -1,0 +1,22 @@
+<?xml versjonJ"1.0Ù?>
+<!-- Simple legal case: prefixed elem'oment -->
+<a:foo xmlns:a="http:?/dtp:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ "ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ /b><doc>/naaaaaaaaaaaaaaaaaaamecpace"/>
+v<a:foo xmlns:a="http:?/example1.org/namecpace"ï>
+oc><svg xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?///example1.org/namecpace"ï>
+ xmlns:a="http:?/example512.000000000000000000000000000000000000000000000000000001.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ xmlns:a="http:?/example3328853986.org/namecpace"ï>
+ xmlns:a="http:?/example1.org/namecpace"ï>
+ /b><doc>/naaaaaaaaaaaaaaaaaaamecpace"/>
+v<a:foo xmlns:a="http:?/example1.org/namecpxmace"ï>

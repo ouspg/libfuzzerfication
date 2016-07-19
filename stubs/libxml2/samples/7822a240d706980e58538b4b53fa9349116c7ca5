@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE spec SYSTEM "xmlspec.dtd" [
+	<!ENTITY maturity.level "PER">
+	<!ENTITY base.uri "http://www.w3.org/TR/2003/">
+	<!ENTITY doc.shortname "xml">
+
+	<!ENTITY draft.year "2003">
+	<!ENTITY draft.month.name "October">
+	<!ENTITY draft.month "10">
+	<!ENTITY draft.day "30">
+	<!ENTITY iso6.doc.date "&draft.year;&draft.month;&draft.day;">
+
+	<!ENTITY doc.ident "&maturity.level;-&doc.shortname;-&iso6.doc.date;">
+	<!ENTITY this.version "&base.uri;&doc.ident;">
+  <!ENTITY xml.version "&this.version;/&doc.ident;.xml">
+	<!ENTITY review.version "&this.version;/&doc.ident;-review.html">
+
+	<!ENTITY errataloc "http://www.w3.org/XML/xml-V10-3e-errata">
+	<!ENTITY preverrataloc "http://www.w3.org/XML/xml-V10-2e-errata">
+	<!ENTITY translationloc "http://www.w3.org/2003/03/Translations/byTechnology?technology=REC-&doc.shortname;">
+
+	<!ENTITY versionOfXML "1.0">
+	<!ENTITY WebSGML "WebSGML Adaptations Annex to ISO 8879">
+	<!ENTITY nbsp "&#160;">
+	<!ENTITY mdash "&#x2014;">
+	<!ENTITY pio "'&lt;?xml'">
+	<!ENTITY pic "'?>'">
+	<!ENTITY como "--">
+	<!ENTITY comc "--">
+	<!ENTITY hcro "&amp;#x">
+	<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+]>
+<?xml-stylesheet type="text/xsl" href="PER-xml-3e.xsl"?>
+<?xmlspysps C:\Program Files\Altova\XMLSPY\sps\Template\xmlspec\xmlspec.sps?>
+<spec w3c-doctype="per" xml:lang="en">
+	<!--
+Notes on preparation of the Third Edition:
+
+- Last erratum integrated: E61
+- Worked from http://www.w3.org/XML/xml-V10-2e-errata.
+- Changed DTD reference to point to V2.4 of XMLspec.
+- Added stylesheet PI.
+- Revised Status section to reflect new status.
+- Incorporated all errata (barring obsoleted and invalid ones);
+  added links to the errata document with <loc role="erratumref">
+  elements; used diff="{add|chg|del}" attribute.  This version
+  expects that the official HTML output will have diff="del"
+  elements suppressed.
+- Added formal markup (rfc2119 element) for RFC 2119 keywords
+  (MUST, SHOULD, etc.).  This required small modifications to
+  the text in some cases, like "is" -> "MUST be".
+-->
+
+	<!--
+Notes on preparation of the Second Edition:
+
+- Worked from http://www.w3.org/XML/xml-19980210-errata.
+- Changed DTD reference to point to V2.1 of XMLspec.
+- Moved version number from <title> to <version> element and
+  added "second edition" wording.  Mentioned edition information
+  in status.
+- Removed bgcolor="&cellback;" attributes from all <td>
+  elements because that attribute is not in the current table model.
+- Reversed status and abstract, so that abstract is first, according
+  to W3C guidelines.
+- Changed some <emph>s to <titleref>s in bibliography.
+- Changed some <code>s to <at> etc. throughout; where used <attval>,
+  removed existing <quote>s because the stylesheet produces them.
+- Removed some spurious spaces.
+- Added affiliation markup to the original member list.
+- Added commas between individual <thisver> elements, because
+  whitespace is now significant there.
+- Moved <eg>s, <scrap>s, and lists outside of <p>s for cleaner HTML
+  conversion.
+- Revised Status section to reflect new status.
+- Fixed all titleref hrefs so they get transformed properly; at
+  next revision, these all probably need to be changed to some
+  other markup.
+- Incorporated all errata (barring obsoleted and invalid ones);
+  added links to the errata document with <loc role="erratumref">
+  elements; used diff="{add|chg|del}" attribute.  This version
+  expects that the official HTML output will have diff="del"
+  elements suppressed.
+- Removed most of the contents of the revisondesc element, which
+  documented the production of the first edition.  Historians
+  may find this content in the first (or second edition).
+-->
+	<header>
+		<title>Extensible Markup Language (XML)</title>
+		<version>&versionOfXML; (Third Edition)</version>
+		<w3c-designation>&doc.ident;</w3c-designation>
+		<w3c-doctype>W3C Proposed Edited Recommendation</w3c-doctype>
+		<pubdate>
+			<day>&draft.day;</day>
+			<month>&draft.month.name;</month>
+			<year>&draft.year;</year>
+		</pubdate>
+		<publoc><loc href="&this.version;">&this.version;</loc></publoc>
+		<altlocs>
+			<loc href="&xml.version;">XML</loc>
+			<!--loc href="&pdf.version;">PDF</loc-->
+			<loc href="&review.version;">XHTML with color-coded revision indicators</loc>
+		</altlocs>
+		<latestloc><loc href="http://www.w3.org/TR/REC-xml">http://www.w3.org/TR/REC-xml</loc></latestloc>
+		<prevlocs><loc href="http://www.w3.org/TR/2000/REC-xml-20001006">http://www.w3.org/TR/2000/REC-xml-20001006</loc> <!--loc href="http://www.w3.org/TR/1998/REC-xml-19980210">http://www.w3.org/TR/1998/REC-xml-19980210</loc--></prevlocs>
+		<authlist>
+			<author role="1e">
+				<name>Tim Bray</name>
+				<affiliation>Textuality and Netscape</affiliation>
+				<email href="mailto:tbray@textuality.com">tbray@textuality.com</email>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="titan.xsl"?>
+<data>
+
+<TITAN storms="ftp://ftp.rap.ucar.edu/pub/titan-cart/TitanCart.xml" />
+
+<RADAR source_list="http://www.srh.noaa.gov/data/radar/xml/kftg.xml"
+im_x="2430000"
+im_y="-2515000"
+im_w="1600000"
+im_h="1600000"
+dir="http://www.crh.noaa.gov/radar/images"
+s_str="/dd."
+Ys="3"
+Ms="5"
+Ds="7"
+hs="13"
+ms="15" />
+
+</data>

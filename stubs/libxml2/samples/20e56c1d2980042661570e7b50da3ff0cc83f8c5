@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://xstest-tns/schema11_S3_4_2_4"
+        xmlns:dv="http://xstest-tns/schema11_S3_4_2_4"
+        xsi:schemaLocation="http://xstest-tns/schema11_S3_4_2_4 s3_4_2_4v02.xsd"
+		>
+ <e1/>
+</root>
+
+<!-- 
+	Test Case Type: valid test (Structures 3.4.2.4) 
+	Base Type     : attributeGroup
+	Description   : test defaultAttributesApply = false
+-->

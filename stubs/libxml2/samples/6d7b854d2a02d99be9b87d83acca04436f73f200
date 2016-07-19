@@ -1,0 +1,18 @@
+<section xmlns='http://berjon.com/ns/re-spec/' xml:id='bibref' type='appendix'>
+  <title>References</title>
+
+  <bibliography>
+    <bibentry xml:id='XMLSpec'>
+      <title>XML Spec</title>
+      <link>http://www.w3.org/2002/xmlspec/</link>
+      <date version='2.9'>2005-05-06</date>
+      <authors>
+        <person>
+          <name>Norman Walsh</name>
+          <email>norman.walsh@sun.com</email>
+          <url>http://nwalsh.com/people/ndw/</url>
+        </person>
+      </authors>
+    </bibentry>
+  </bibliography>
+</section>

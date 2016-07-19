@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="texturewipe" >
+	
+	<shader type="fragment" name="texture">
+	
+	<uniform type="sampler2DRect" name="$texture" />
+	<uniform type="sampler2DRect" name="$wipe" />
+	<uniform type="float" name="$cap" />
+	
+	<functions>
+	</functions>
+	
+	<main>
+	<![CDATA[
+	
+		vec4 col=texRECT($texture, vec2(gl_TexCoord[0].s,gl_TexCoord[0].t));
+		vec4 wipe=texRECT($wipe, vec2(gl_TexCoord[0].s,gl_TexCoord[0].t));
+		//if($cap>=wipe.r)
+		color=col;//*(wipe-$cap);
+		
+		float cap=($cap*1.2f)-0.1;
+		
+		
+		float blendsize=0.02;
+		float blendsize2=0.04;
+		
+		if(cap<=wipe.r)
+		{
+			color.a=color.a;
+			
+		}
+		else if(cap-blendsize<=wipe.r)
+		{
+			color.a=col.a*0.5;
+		}
+		else if(cap-blendsize2<=wipe.r)
+		{
+			color.a=col.a*0.1;
+		}
+		else
+		{
+			color.a=0.0f;
+		}
+
+		//color.a=(wipe.r*$cap*2.2)*color.a;
+
+	]]>
+	</main>
+	
+	</shader>
+</sumoshader>

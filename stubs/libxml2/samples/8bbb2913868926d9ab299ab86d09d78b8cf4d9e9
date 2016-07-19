@@ -1,0 +1,1 @@
+<FIXML xmlns="http://www.fixprotocol.org/FIXML-4-4" v="4.4" r="20030618" s="20040109"><Order ID="123456" Side="2" TxnTm="2001-09-11T09:30:47-05:00" Typ="2" Px="93.25" Acct="26522154"><Hdr Snt="2001-09-11T09:30:47-05:00" PosDup="N" PosRsnd="N" SeqNum="521" SID="AFUNDMGR" TID="ABROKER"/><Instrmt Sym="IBM" ID="459200101" Src="1"/><OrdQty Qty="1000"/></Order></FIXML>

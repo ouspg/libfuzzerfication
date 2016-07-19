@@ -1,0 +1,40 @@
+<refentry id="ooclass.element" revision='4.0'>
+<?dbhtml filename="ooclass.html"?>
+<refentryinfo>
+<pubdate>$Date: 2004/12/21 16:01:30 $</pubdate>
+<releaseinfo>$Revision: 1.1.1.1 $</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>elements</primary>
+<secondary>ooclass</secondary></indexterm>
+<refentrytitle>ooclass</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>ooclass</refname>
+<refpurpose>&ooclass.purpose;</refpurpose>
+</refnamediv>
+
+&ooclass.synopsis.gen;
+<refsect1 condition='ref.description'><title>Description</title>
+
+<para>
+The <sgmltag>OOClass</sgmltag> element identifies programming
+language classes, generally from object-oriented programming languages.
+The <sgmltag>OOClass</sgmltag> is a wrapper for the
+<sgmltag>ClassName</sgmltag> plus some <sgmltag>Modifier</sgmltag>s.
+</para>
+
+<refsect2><title>Processing expectations</title>
+<para>
+&format.inline;
+</para>
+</refsect2>
+
+
+&ooclass.parents.gen;
+&ooclass.children.gen;
+</refsect1>
+</refentry>
+

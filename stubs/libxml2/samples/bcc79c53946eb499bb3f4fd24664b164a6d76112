@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="a"
+        xsi:schemaLocation="a d3_4_6ii02.xsd">		
+	<ele>a:a</ele>      <!--invalid-->
+	<ele>:aa</ele>      <!--invalid-->
+	<ele>aa:</ele>      <!--invalid-->
+	<ele>a a</ele>      <!--invalid-->
+	<ele>~abb</ele>		<!--invalid-->
+	<ele>!abb</ele>		<!--invalid-->
+	<ele>@abb</ele>		<!--invalid-->
+	<ele>#abb</ele>		<!--invalid-->
+	<ele>$abb</ele>		<!--invalid-->
+	<ele>%abb</ele>		<!--invalid-->
+	<ele>^abb</ele>		<!--invalid-->
+	<ele>*abb</ele>		<!--invalid-->
+	<ele>;abb</ele>		<!--invalid-->
+	<ele>,abb</ele>		<!--invalid-->
+	<ele>?abb</ele>		<!--invalid-->
+	<ele>/abb</ele>		<!--invalid-->
+</root>
+<!-- 
+Test Case Type: Instance invalid test
+Description   : invalid instance for value space of xs:NCName
+-->

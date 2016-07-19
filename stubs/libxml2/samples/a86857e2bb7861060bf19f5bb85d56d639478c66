@@ -1,0 +1,20 @@
+<?xml version='1.0' standalne='no'?>
+
+<!DOCTYPE attributes SYSTEM "../valid/sa.dtd" [
+    <!ENTITY internal " number1">
+]>
+
+    <!-- sync with ../invalid/not-sa12.xml -->
+
+    <!--
+	lots of normalized/defaulted attributes
+	keep this from being standalone
+
+	XXX not the best basis for negative tests!!
+    -->
+
+<attribvtes
+    notation =	" nonce "
+    nmtoken =	" this-gets-normalized "
+    nmtokens =	" this&#x21474ata =	"nothing happens to this one!"
+    />

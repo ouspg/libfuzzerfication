@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="xmlspec.xsl"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.1//EN" "xmlspec.dtd" [
+	<!ENTITY abstract 'The XPointer &scheme-phrase; is intended to be used with the XPointer Framework <bibref ref="xptr-framework"/> to allow basic addressing of XML elements.'>
+	<!ENTITY day "25">
+	<!ENTITY month "March">
+	<!ENTITY monthno "03">
+	<!ENTITY year "2003">
+	<!ENTITY trpath "http://www.w3.org/TR/">
+	<!ENTITY W3C-path "&trpath;&year;/">
+	<!ENTITY doctype "REC">
+	<!ENTITY shortname "element">
+	<!ENTITY isodate "&year;&monthno;&day;">
+	<!ENTITY schemename "element">
+	<!ENTITY scheme-phrase "<code>&schemename;()</code> scheme">
+	<!ENTITY media-types "one of <code>text/xml</code>, 
+<code>application/xml</code>, 
+<code>text/xml-external-parsed-entity</code>,
+or <code>application/xml-external-parsed-entity</code>">
+	<!ENTITY dirname "&W3C-path;&doctype;-xptr-&shortname;-&isodate;/">
+	<!ENTITY xptr-framework-file "&W3C-path;&doctype;-xptr-framework-&isodate;/">
+	<!ENTITY XML "http://www.w3.org/TR/REC-xml">
+	<!ENTITY XMLNames "http://www.w3.org/TR/REC-xml-names/">
+        <!-- override xmlspec.dtd -->
+        <!ENTITY % header.mdl
+        "title, subtitle?, version?, w3c-designation, w3c-doctype,
+        pubdate, notice*, publoc, altlocs?, ((prevlocs, latestloc?) |
+        (latestloc, prevlocs?))?, authlist, errataloc?, translationloc?, copyright?,
+        ((status, abstract) | (abstract, status)), pubstmt?,
+        sourcedesc?, langusage, revisiondesc">
+        <!ELEMENT errataloc EMPTY>
+        <!ATTLIST errataloc href CDATA #REQUIRED>
+        <!ELEMENT translationloc EMPTY>
+        <!ATTLIST translationloc href CDATA #REQUIRED>
+        <!ENTITY % local.div.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.obj.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.entry.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.p.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.hdr.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.termdef.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.p.pcd.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.head.pcd.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.label.pcd.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.eg.pcd.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.termdef.pcd.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.bibl.pcd.mix " "> <!-- compensate for IE bug -->
+        <!ENTITY % local.tech.pcd.mix " "> <!-- compensate for IE bug -->
+]>
+<spec w3c-doctype="rec">
+	<header>
+		<title>XPointer &schemename;() Scheme</title>
+		<w3c-designation>&doctype;-xptr-&shortname;-&isodate;</w3c-designation>
+		<w3c-doctype>W3C Recommendation</w3c-doctype>
+		<pubdate>
+			<day>&day;</day>
+			<month>&month;</month>
+			<year>&year;</year>
+		</pubdate>
+		<publoc>
+			<loc href="&dirname;">&dirname;</loc>
+		</publoc>
+		<altlocs>
+			<loc href="&dirname;xptr-&shortname;.xml">XML</loc>
+		</altlocs>
+		<latestloc>
+			<loc href="&trpath;xptr-&shortname;/">&trpath;xptr-&shortname;/</loc>
+		</latestloc>
+		<prevlocs>
+			<loc href="http://www.w3.org/TR/2002/PR-xptr-element-20021113/">http://www.w3.org/TR/2002/PR-xptr-element-20021113/</loc>
+			<!--
+			<loc href="http://www.w3.org/TR/2001/CR-xptr-20010911/">http://www.w3.org/TR/2001/CR-xptr-20010911/</loc>
+-->
+		</prevlocs>
+		<authlist>
+			<author>
+				<name>Paul Grosso</name>
+				<affiliation>Arbortext, Inc.</affiliation>
+				<email href="mailto:paul@arbortext.com">paul@arbortext.com</email>
+			</author>
+			<author>
+				<name>Eve Maler</name>
+				<affiliation>Sun Microsystems</affiliation>
+				<email href="mailto:eve.maler@sun.com">eve.maler@sun.com</email>
+			</author>
+			<author>
+				<name>Jonathan Marsh</name>
+				<affiliation>Microsoft</affiliation>
+				<email href="mailto:jmarsh@microsoft.com">jmarsh@microsoft.com</email>
+			</author>
+			<author>
+				<name>Norman Walsh</name>
+				<affiliation>Sun Microsystems</affiliation>
+				<email href="mailto:Norman.Walsh@Sun.COM">Norman.Walsh@Sun.COM</email>
+			</author>
+		</authlist>
+  <errataloc href="http://www.w3.org/&year;/&monthno;/&doctype;-xptr-&isodate;-errata"/>
+  <translationloc href="http://www.w3.org/&year;/&monthno;/xptr-translations"/>
+		<abstract>
+			<p>&abstract;</p>
+		</abstract>
+		<status>
+   <p><emph>This section describes the status of this document at the time of its publication. Other documents may supersede this document. The latest status of this document series is maintained at the W3C.</emph></p>
+			<p>This document is a <loc href="http://www.w3.org/Consortium/Process-20010719/#RecsW3C">Recommendation (REC)</loc> of the W3C.	It has been reviewed by W3C Members and other interested parties and has been endorsed by the Director as a W3C Recommendation. It is a stable document and may be used as reference material or cited as a normative referen

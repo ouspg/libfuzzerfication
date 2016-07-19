@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ENTITY e "&#9223372036854775821;&#2147483638;">
+<!ATTLIST doc a CDATA #IMPLIED>
+]>
+<doc a="x&e;y"></doc>

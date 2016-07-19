@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<f:root
+	xmlns:f="foo"
+	xmlns:b="bar"
+	xmlns:z="zot"
+	xmlns:u="undeclared">
+
+	<f:skipAny f:a="bra" f:b="bra" u:something="also allowed" />
+	<f:skipAny />
+	
+	<f:laxAny  f:a="5" f:undeclared="OK" b:b="2" u:something="also allowed" />
+	<f:laxAny />
+	
+	<f:strictAny f:b="5" b:c="2" z:a="52" />
+	<f:strictAny />
+	
+	<f:skipOther b:a="brabra" b:undeclared="OK" u:something="OK" local="OK" />
+	<f:skipOther />
+	
+	<f:laxLocal att="whatever" />
+	<f:laxLocal />
+	
+	<f:strictTarget f:a="1" f:b="2" f:c="3" />
+	<f:strictTarget />
+	
+	<f:skipBar b:b="invali" b:undeclared="ok" />
+	<f:skipBar />
+</f:root>

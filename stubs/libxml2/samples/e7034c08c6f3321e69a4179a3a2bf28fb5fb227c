@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderCancellation xmlns:stat="urn:oasis:names:specification:ubl:schema:xsd:DocumentStatusCode-1.0" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-1.0" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-1.0" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-1.0 ../../xsd/maindoc/UBL-OrderCancellation-1.0.xsd">
+	<ID>20031654-X</ID>
+	<IssueDateTime>2003-03-09T09:30:47</IssueDateTime>
+	<CancellationNote>order replaced</CancellationNote>
+	<cac:OrderReference>
+		<cac:BuyersID>20031654-1</cac:BuyersID>
+		<cbc:IssueDate>2003-03-07</cbc:IssueDate>
+	</cac:OrderReference>
+	<cac:BuyerParty>
+		<cac:Party>
+			<cac:PartyName>
+				<cbc:Name>Bills Microdevices</cbc:Name>
+			</cac:PartyName>
+		</cac:Party>
+	</cac:BuyerParty>
+	<cac:SellerParty>
+		<cac:Party>
+			<cac:PartyName>
+				<cbc:Name>Joes Office Supply</cbc:Name>
+			</cac:PartyName>
+		</cac:Party>
+		<cac:OrderContact>
+			<cbc:Name>Betty Jo Beoloski</cbc:Name>
+		</cac:OrderContact>
+	</cac:SellerParty>
+</OrderCancellation>

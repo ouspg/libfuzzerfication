@@ -1,0 +1,5 @@
+<root>
+	<parent>
+		<child>42</child>
+	</parent>
+</root>

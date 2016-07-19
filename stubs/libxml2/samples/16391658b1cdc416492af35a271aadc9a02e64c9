@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+<!--
+  XMLSpec entity
+ -->
+
+  <system
+    systemId='http://www.w3.org/XML/1998/06/xmlspec-v21.dtd'
+    uri='xmlspec.dtd' />
+
+  <public
+    publicId="-//W3C//DTD Specification V2.1//EN"
+    uri='xmlspec.dtd' />
+  
+
+</catalog>

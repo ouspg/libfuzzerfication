@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<?publication-root http://www.w3.org/XML/XProc/docs/?>
+<?latest-version http://www.w3.org/XML/XProc/docs/langspec.html?>
+-->
+<?oxygen RNGSchema="../schema/dbspec.rnc" type="compact"?>
+<!DOCTYPE specification [
+<!ENTITY serialization-options '<p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="byte-order-mark" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="cdata-section-elements" select="&apos;&apos;" e:type="ListOfQNames"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="doctype-public" e:type="xsd:string"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="doctype-system" e:type="xsd:anyURI"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="encoding" e:type="xsd:string"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="escape-uri-attributes" select="&apos;false&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="include-content-type" select="&apos;true&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="indent" select="&apos;false&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="media-type" e:type="xsd:string"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="method" select="&apos;xml&apos;" e:type="xsd:QName"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="normalization-form" select="&apos;none&apos;" e:type="NormalizationForm"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="omit-xml-declaration" select="&apos;true&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="standalone" select="&apos;omit&apos;" e:type="true|false|omit"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="undeclare-prefixes" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="version" select="&apos;1.0&apos;" e:type="xsd:string"/>'>
+<!ENTITY serialization-options-for-escape-markup '<p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="cdata-section-elements" select="&apos;&apos;" e:type="ListOfQNames"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="doctype-public" e:type="xsd:string"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="doctype-system" e:type="xsd:anyURI"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="escape-uri-attributes" select="&apos;false&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="include-content-type" select="&apos;true&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="indent" select="&apos;false&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="media-type" e:type="xsd:string"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="method" select="&apos;xml&apos;" e:type="xsd:QName"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="omit-xml-declaration" select="&apos;true&apos;" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="standalone" select="&apos;omit&apos;" e:type="true|false|omit"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="undeclare-prefixes" e:type="xsd:boolean"/>
+  <p:option xmlns:p="http://www.w3.org/ns/xproc" xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" name="version" select="&apos;1.0&apos;" e:type="xsd:string"/>'>
+]>
+<specification xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cs="http://www.w3.org/XML/XPro

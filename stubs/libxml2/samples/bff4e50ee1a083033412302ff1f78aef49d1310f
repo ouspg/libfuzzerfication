@@ -1,0 +1,20 @@
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<chapter id="ch-publish">
+<chapterinfo>
+<beginpage pagenum="64"/> <!-- first edition -->
+</chapterinfo>
+<title>Publishing DocBook Documents</title>
+
+<para>Creating and editing &SGML;/&XML; documents is usually only half the
+battle. After you've composed your document, you'll want to publish
+it. Publishing, for our purposes, means either print or web
+publishing. For &SGML; and &XML; documents, this is usually
+accomplished with some kind of <glossterm>stylesheet</glossterm>.  In
+the (not too distant) future, you may be able to publish an &XML;
+document on the Web by simply putting it online with a stylesheet, but
+for now you'll probably have to translate your document into &HTML;.
+</para>
+
+<!-- ... -->
+</chapter>

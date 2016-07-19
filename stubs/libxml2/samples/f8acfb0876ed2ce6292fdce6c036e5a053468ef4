@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- Namespace inequality test: different escaping -->
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlns:a CDATA #IMPLIED
+              xmlns::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+              /valid/script></title></wwu.w5.org/><script type="text/0.539974084#982199+/www.w-1.org/guid></0.539974084#982199+/tokenizer></script></code></><script type="text/example.org/www.w3.org/><script type="text/www.w-7Å1.org/www.w64.org/www.w-71.org/valid/feConvolveMatrix></0.539974084#982199+/wwu.w5.org/feConvolveMatrix></feConvolveMatrix></script></wwu.w5.org/xproc.org/><root /feConvolveMatrix></wwu.w5.org/feConvolveMatrix type="text/title></><root /code></www.w3.org/1999/0.539974084#982199+/"I134">><,ë
+<foo><a /xproc.org/0.539974084#982199+/"I134">><foo><a /xproc.org/www.w-1.org/www.w-1.org/"I134">><foo><a /xproc.org/0.539974084#982199+/"I134">><foo><a /xproc.org/0.539974084#982199+/"I134">><foo><a /xproc.org/0.539974084#982199+/code></wwu.w5.org/wwu.w5.org/><guid><table>><table><guid><guid><feConvolveMatrix><guid><guDATid>
+
+</www.w-1.org/feConvolveMatrix></www.w0.482505939830811253449716683.org/www.w0.org/www.w3.org/xproc.dev.java.net/guid></guid></www.w3.org/valid/guid></script></guid></www.w65540.org/xprov.java.net/www.w0.org/guid></xproc.org/wwu.w5.org/table><guid><guid><feConvolveMatrix><guiNè½Î,ö,]\H±5trix><guid><guid>
+
+</www.w3.org/valid/BadChildren/title></><root /xproc.dev.java.net/wwu.w5.org/ww/www.w3.org/script></example.org/www.w0.org/svg><reference /xproc.dev.java.net/example.org/wwu.w5.or:::::::::::::::::::::::::::b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+              /valid/script></title></wwu.w5.org/><script type="text/0.539974084#982199+/www.w-1.org/guid></0.539974084#982199+/tokenizer></script></code></><script type="text/example.org/www.w3.org/><script type="text/www.w-7Å1.org/www.w64.org/www.w-71.org/valid/feConvolveMatrix></0.539974084#982199+/wwu.w5.org/feConvolveMatrix></feConvolveMatrix></script></wwu.w5.org/xproc.org/><root /feConvolveMatrix></wwu.w-0.5457359117205204.org/feConvolveMatrix></valid/><script type="text/title></><root /code></www.w3.org/1999/0.539974084#982199+/"I134">><,ë
+<foo><a /xproc.org/0.539974084#982199+/"I134">><foo><a /xproc.org/www.w-1g/www.w3.org.org/www.w-1.org/"I134">><foo><a /xproc.org/0.539974084#982199+/"I134">><foo><a /xproc.org/0.539974084#982199+/"I134">><foo><a /xproc.org/0.539974084#982199+/code></wwu.w5.org/wwu.w5.org/><guid><table>><table><guid><guid><feConvolveMatrix><guid><guDATid>
+
+</www.w-1.org/feConvolveMatrix></www.w0.482505939830811253449716683.org/www.w0.org/www.w3.org/xproc.dev.java.net/guid></guid></www.w3.org/valid/guid></script></guid></www.w65540.org/xprov.java.net/www.w0.org/guid></xproc.org/wwu.w5.org/www.w3.org/1999/title></1999/www.w3.org/www.w0.org/xproc.dev.java.net/www.w-71.org/www.w-71.org/www.w-71.org/code></svg><reference /www.w65540.org/svg><reference /www.w64.org/www.w-1.org/example.org/guid></tokenizer></www.w64.org/wwu.w5.org/guid></feConvolvvvvvvvvvvvvvvvvvvvvvvvveMatrix></guid></guid><table><guid><guid><feConvolveMatrix><guid><guíDATid>
+
+</xprov.java.net/www.w64.org/www.w0.org/www.w-1.org/BadChildren/xprov.java.net/guid></feConvolveMatrix></www.w3.org/table>><table><guid><guid><feConvolveMatrix><guS8¤æid><guid>
+
+</www.w64.org/www.w-1.org/valid/guid></script></guid></www.w.org/xprov.java.net/valid/www.w3.org/guid></guid></table><guid><guid><feConvolveMatrix><guiNè½Î,ö,]\H±5trix><guid><guid>
+
+</guid></guid></feConvolveMatrix></guid></guid><table><guid><guid><feConvolveMatrix><guid><guíDATid>
+
+</xprov.java.net/www.w64.org/www.w0.org/www.w--0.18240661492160748.org/BadChildren/xprov.java.net/guid></feConvolveMat18240661492160748.orix></xproc.org/title></www.w-1.org/title></aww.w65540&org/www.w-1.org/valid/"I134">><foo><a /wwu.w5.org/guid></guid></www.w3.org/valid/guid></guid></table>><table><guid><guid><feConvolveMatrix><guid><guid>
+
+</BadChildren/guid></script></guid></script></tokenizer></guid></guid></table><guid><guid><feConvolveMatrix><guid><guid>
+
+</guid></guid></feConvolveMatrix></guid></><script type="application/www.w3.org/xproc.org/guid></table><guid><guid><feConvolveMatrix><guid><guid>
+
+</guid></guid></xproc.org/BadChildren/xproc.org/www.w64.org/xproc.dev.java.net/www.w3.org/wwu.w5.org/www.w-1.org/xproc.dev.java.net/title></www.w0.org/www.w64.org/1999/valid/><script type="scale"/title></wwu.w5.org/www.w64.org/example.org/www.w-1.org/guid></www.w64.org/wwu.w5.org/0.539974084#982199+/example.org/wwu.w5.org/guid></0.539974084#982199+/script></table></guid>

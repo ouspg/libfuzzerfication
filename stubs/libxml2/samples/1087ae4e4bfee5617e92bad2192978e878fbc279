@@ -1,0 +1,10 @@
+<item><!DOCTYPE doc
+[
+<!ENTITY ent SYSTEM "nop.eó nts:b="http://example.org/&#x150;"
+     xmlns:c="http://example.org/&#x150;"
+     xmlns:b="http://example.org/&#x150;"
+              "PublicID"
+              "nop.ent"
+              >
+]>
+<doc /><doc /><oc /><doc />

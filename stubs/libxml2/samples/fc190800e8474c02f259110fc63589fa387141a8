@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification Version 2.1//EN" "xmlspec-v21.dtd"[
+  <!ENTITY cellback '#d0d9fa'>
+  <!ENTITY xformsWG "<loc href='http://www.w3.org/MarkUp/Forms/'>W3C XForms Working Group</loc>">
+  <!ENTITY year "2001">
+  <!ENTITY mm "06">
+  <!ENTITY MM "June">
+  <!ENTITY dd "08">
+  <!ENTITY MMDD "&mm;&dd;">
+  <!ENTITY iso.doc.date "&year;&MMDD;">
+  <!ENTITY order "&#163;">
+  <!ENTITY le "&#8804;">
+  <!-- less than or equal to, U+2264 ISOtech -->
+  <!ENTITY ne "&#8800;">
+  <!-- not equal to, U+2260 ISOtech -->
+  <!ENTITY infin "&#8734;">
+  <!-- infinity, U+221E ISOtech -->
+  <!ENTITY times "&#215;">
+  <!-- multiplication, U+00D7 -->
+  <!ENTITY sect "&#xa7;">
+  <!ENTITY eacute "&#xe9;">
+  <!ENTITY ouml "&#xf6;">
+  <!ENTITY copy "&#xa9;">
+  
+  <!-- entities for embedding -->
+  <!ENTITY binding SYSTEM "binding.xml" >
+  <!ENTITY concepts SYSTEM "concepts.xml" >
+  <!ENTITY controls SYSTEM "controls.xml" >
+  <!ENTITY datatypes SYSTEM "datatypes.xml" >
+  <!ENTITY expr SYSTEM "expr.xml" >
+  <!ENTITY intro SYSTEM "intro.xml" >
+  <!ENTITY model SYSTEM "model.xml" >
+  <!ENTITY rpm SYSTEM "rpm.xml" >
+  <!ENTITY structure SYSTEM "structure.xml" >
+  <!ENTITY terms SYSTEM "terms.xml" >
+  <!ENTITY ui SYSTEM "ui.xml" >
+  
+  <!ENTITY acks SYSTEM "acks.xml" >
+  <!ENTITY changes SYSTEM "changes.xml" >
+<!--  <!ENTITY example SYSTEM "example.xml" > -->
+<!--  <!ENTITY optional SYSTEM "optional.xml" > -->
+  <!ENTITY prod-notes SYSTEM "prod-notes.xml" >
+  <!ENTITY references SYSTEM "references.xml" >
+  <!ENTITY schema SYSTEM "schema.xml" >
+
+  <!-- we'll see if anyone has a sense of humor --> <!-- note: I tried to do this with conditional sections, but XT seems to get confused and reports a syntax error --> <!ENTITY % sense-of-humor "INCLUDE"> <!ENTITY % no-sense-of-humor "IGNORE"> <!-- <![%sense-of-humor[ <!ENTITY long "Homer"> <!ENTITY int "Sideshow-Bob"> <!ENTITY short "Bart"> <!ENTITY byte "Troy-McClure"> <!ENTITY unsignedLong "Apu-Nahasapeemapetilon"> <!ENTITY unsignedInt "Chief-Wiggums"> <!ENTITY unsignedShort "Mr-Burns"> <!ENTITY unsignedByte "Krusty-the-Clown"> --> <!-- ]]> <![%no-sense-of-humor[ --> <!ENTITY long "long"> <!ENTITY int "int"> <!ENTITY short "short"> <!ENTITY byte "byte"> <!ENTITY unsignedLong "unsignedLong"> <!ENTITY unsignedInt "unsignedInt"> <!ENTITY unsignedShort "unsignedShort"> <!ENTITY unsignedByte "unsignedByte"> <!-- ]]> --> <!ATTLIST eg text CDATA #IMPLIED> <!-- experimental pointer to out-of-line example text --> <!ELEMENT propdef ANY> <!-- best we can do without editing xml-spec --> <!ATTLIST propdef id ID #REQUIRED name CDATA #REQUIRED> <!ELEMENT propref EMPTY> <!ATTLIST propref ref IDREF #REQUIRED> <!ELEMENT xpropref (#PCDATA)> <!ATTLIST xpropref href CDATA #IMPLIED> <!ELEMENT compdef (proplist)> <!ATTLIST compdef name CDATA #REQUIRED ref IDREF #REQUIRED> <!ELEMENT compref EMPTY> <!ATTLIST compref ref IDREF #REQUIRED> <!ELEMENT proplist (propdef*)> <!ELEMENT reprdef (reprelt*,reprcomp*)> <!ATTLIST reprdef eltname NMTOKENS #REQUIRED local NMTOKEN #IMPLIED> <!ELEMENT reprelt EMPTY> <!ATTLIST reprelt eltname NMTOKENS #REQUIRED type NMTOKEN #IMPLIED> <!ELEMENT reprcomp (reprdep?,propmap*)> <!ATTLIST reprcomp ref IDREF #REQUIRED abstract CDATA #REQUIRED> <!ELEMENT reprdep ANY> <!-- best we can do without editing xml-spec --> <!ELEMENT propmap ANY> <!-- best we can do without editing xml-spec --> <!ATTLIST propmap name IDREF #REQUIRED> <!ELEMENT eltref EMPTY> <!ATTLIST eltref ref NMTOKEN #REQUIRED> <!ELEMENT stale ANY> <!ELEMENT dtref EMPTY> <!ATTLIST dtref ref NMTOKEN #REQUIRED> <!ELEMENT baseref EMPTY> <!ELEMENT itemTyperef EMPTY> <!ELEMENT fundamental-facets EMPTY> <!ENTITY % local.p.class "|stale|facets|subtypes| inverse-facets|open-issues|revisions|fundamental-facets|applicable-facets"> <!ENTITY % local.termdef.class "|propdef"> <!ENTITY % local.ref.class "|propref|xpropref|eltref|compref|dtref|baseref|itemTyperef"> <!ENTITY % local.illus.class "|compdef|reprdef|proplist"> <!ENTITY i-attribute "&nbsp;<xpropref href='http://www.w3.org/TR/xml-infoset#infoitem.attribute'>attribute</xpropref>"> <!ENTITY i-children "&nbsp;<xpropref href='http://www.w3.org/TR/xml-infoset#infoitem.element'>children</xpropref>"> <!ENTITY i-child "&nbsp;<xpropref href='http://www.w3.org/TR/xml-infoset#infoitem.element'>child</xpropref>"> <!ENTITY i-attributes "&nbsp;<xpropref href='http://www.w3.org/TR/xml-infoset#infoitem.element'>attributes</xpropref>"> <!ENTITY i-attrChildren "&nbsp;<xpropref href='http://www.w3.org/TR/xml-infoset#infoitem.attribute'>children</xpropref>"> <!ENTITY i-value "&nbsp;<xpropref href='http://www.w3.org/TR/xml-infoset#infoitem.attribute'>value</xpropref>"> <!ENTITY i-ccode "&nbsp;<xpropref href='http://www.w3.org/TR/xml-infoset#infoitem.character'>character code</xpropref>"> <!ELEMENT applicable-facets EMPTY> <!ELEMENT facets EMPTY> <!ELEMENT subtypes EMPTY> <!ELEMENT inverse-facets EMPTY> <!ATTLIST inverse-fac

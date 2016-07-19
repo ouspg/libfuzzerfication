@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="xmlspec.xsl"?>
+<!DOCTYPE spec SYSTEM "xmlspec.dtd" [
+<!ENTITY DD "30">
+<!ENTITY LatestWSi18nUS "http://www.w3.org/TR/ws-i18n-scenarios">
+<!ENTITY MM "07">
+<!ENTITY PreviousWSi18nUS "http://www.w3.org/TR/2004/WD-ws-i18n-scenarios-20040512">
+<!ENTITY WSi18nUS "http://www.w3.org/International/ws/ws-i18n-scenarios-edit">
+<!ENTITY month "July">
+<!ENTITY status "Editors' copy $Date: 2004/07/28 09:38:26 $">
+
+<!ENTITY year "2004">
+]>
+
+<!--<!ENTITY WSi18nUS "http://www.w3.org/TR/2004/NOTE-ws-i18n-scenarios-20040730">-->
+<!--<!ENTITY status "W3C Working Group Note">-->
+
+<spec w3c-doctype="wd" role="editors-copy" status="int-review">
+
+<header>
+  <title>Web Services Internationalization Usage Scenarios</title>
+
+  <w3c-designation>ws-i18n-scenarios-&year;&MM;&DD;</w3c-designation>
+  <w3c-doctype>&status;</w3c-doctype>
+  <pubdate><day>&DD;</day><month>&month;</month><year>&year;</year></pubdate>
+
+
+  <publoc>
+    <loc href="&WSi18nUS;/">&WSi18nUS;</loc>
+  </publoc>
+
+  <altlocs>
+    <loc role="available-format" href="Overview.xml">XML</loc>
+<!--    
+    <loc role="available-format" href="Overview.html">XHTML</loc>
+ -->
+  </altlocs>
+  <prevlocs>
+     <loc href="&PreviousWSi18nUS;/">&PreviousWSi18nUS;</loc>
+  </prevlocs>
+  <latestloc>
+    <loc href="&LatestWSi18nUS;/">&LatestWSi18nUS;</loc>
+  </latestloc>
+
+  <authlist>
+  <author><name>Debasish Banerjee</name><affiliation>IBM</affiliation></author>
+  <author><name>Martin J. Dürst</name><affiliation>W3C</affiliation><email href="mailto:duerst@w3.org">duerst@w3.org</email></author>
+  <author><name>Mike McKenna</name><affiliation>University of California</affiliation></author>
+  <author><name>Addison Phillips</name><affiliation>webMethods</affiliation>
+    <email href="mailto:aphillips@webmethods.com">aphillips@webmethods.com</email>	 
+  </author>
+  <author><name>Takao Suzuki</name><affiliation>Microsoft</affiliation>
+    <email href="mailto:takaos@belltree.org">takaos@microsoft.com</email>	 
+  </author>
+  <author>
+    <name>Tex Texin</name>
+    <affiliation>XenCraft</affiliation>
+  </author><author><name>Mary Trumble</name><affiliation>IBM</affiliation></author>
+  <author><name>Andrea Vine</name><affiliation>Sun Microsystems</affiliation></author>
+    <author>
+    <name>Kentaroh Noji</name>
+    <affiliation>IBM</affiliation>
+  </author>
+  </authlist>
+
+  <status>
+  <p><emph>This section describes the status of this document at the time of its
+     publication. Other documents may supersede this document. A list of current
+	  W3C publications and the latest revision of this technical report can be found
+	  in the <loc href="http://www.w3.org/TR/">W3C technical reports index</loc>
+	  at http://www.w3.org/TR/.</emph></p>
+
+  <p>This document is a <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#WGNote">W3C Working Group Note</loc>, made available by the  of the
+     <loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://www.w3.org/International/" xlink:show="replace" xlink:actuate="onRequest">W3C Internationalization Working Group</loc> (<loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://www.w3.org/International/ws/" xlink:show="replace" xlink:actuate="onRequest">Web Services Internationalization
+     Task Force</loc>) as part of the <loc href="http://www.w3.org/International/Activity">W3C Internationalization Activity</loc>. It describes internationalization usage scenarios for Web services and  is intended for review by W3C Members and other
+     interested parties. It is also intended to serve as a basis for future work on Web service internationalization.</p><p>The Internationalization Working Group (Web Services Internationalization Task Force)  thinks that this document has reached a sufficient level of maturity to be published as a Working Group Note, and does not intend to issue new versions in the near future. This does not exclude that the document may be updated at a later stage, after more experience  has been gained with the internationalization of Web services.</p><p>The Internationalization Working Group or its successor will keep track of any further comments and discussion relating to this document, and invites any such comments or discussion.  Discussion of this document takes place on the public mailing list 
+     <loc href="mailto:public-i18n-ws@w3.org">public-i18n-ws@w3.org</loc>.
+     To contribute, please subscribe by sending mail to 
+     <loc href="mailto:public-i18n-ws-request@w3.org">public-i18n-ws-request@w3.org</loc>
+     with <code>subscribe</code> as the subject. The 
+     <loc xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" href="http://lists.w3.org/Archives/Public/public-i18n-ws/" xlink:show="replace" xlink:actuate="onRequest">archive</loc> of this list can be read 
+     by the general public. Please send comments on this document to the
+	  <loc href="mailto:www-i18n-comments@w3.org">www-i1

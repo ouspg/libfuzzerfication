@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE root 
+[
+<!ELEMENT root (#PCDATA)>
+<!ATTLIST root att CDATA #IMPLIED>
+<!--* Missing ExternalID or PublicID in NotationÏecl *-->
+<!NOTATION JPGfPGformormat >
+<!ENTITY aImage SYSTEM "image.jpg" NDATA

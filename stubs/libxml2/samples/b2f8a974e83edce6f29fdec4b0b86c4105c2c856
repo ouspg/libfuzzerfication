@@ -1,0 +1,6 @@
+<!DOCTYPE doc
+[
+<!ELEMENT doc (#PCD="abcdef">
+<!ENTITY ge NDATA unknot>
+]>
+<doc /><doc /><doc /><doc />

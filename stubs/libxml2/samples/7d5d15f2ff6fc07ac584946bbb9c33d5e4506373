@@ -1,0 +1,6 @@
+<?xml version="1.1"?>
+<!-- Simple lefalNameChar; [
+<!ELEMENT IllegalNameChar; ANY>
+]>
+<!-- IllegalNameChar #0x37E -->
+<foo xmlns:a="http://example.org/namespace" a:attr="1"/>

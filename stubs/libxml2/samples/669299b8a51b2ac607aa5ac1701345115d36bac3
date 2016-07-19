@@ -1,0 +1,58 @@
+<xsl:stylesheet version="1.0" 
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:param name="MessageDir"/>
+<xsl:param name="Id"/>
+<xsl:param name="SOAPVer"/>
+<xsl:param name="Mep"/>
+<xsl:variable name="DocumentOut"><xsl:value-of  select="$MessageDir"/>/<xsl:value-of select="Testdef/DocumentOut"/></xsl:variable>
+<xsl:variable name="DocumentIn"><xsl:value-of  select="$MessageDir"/>/<xsl:value-of select="Testdef/DocumentIn"/></xsl:variable>
+<xsl:variable name="request_message_id">${request_message_id}</xsl:variable>
+<xsl:variable name="response_message_id">${response_message_id}</xsl:variable>
+<xsl:variable name="jms_response_dest">${jms_response_dest}</xsl:variable>
+<xsl:variable name="jms_request_dest">${jms_request_dest}</xsl:variable>
+<xsl:variable name="soap_request_msg">${soap_request_msg}</xsl:variable>
+<xsl:variable name="soap_response_msg">${soap_response_msg}</xsl:variable>
+<xsl:output method="xml" omit-xml-declaration="yes" />
+<xsl:template match="/">
+  
+<testcase xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xsl:version="1.0" xml:id="{$Id}" origin="" cr="REQUIRED" xml:space="preserve">
+    <title><xsl:value-of select="$SOAPVer"/> <xsl:value-of select="Testdef/Title"/></title> 
+    <description><xsl:value-of select="$SOAPVer"/> <xsl:value-of select="Testdef/Desc"/></description> 
+    <assertions>
+<xsl:for-each select="/Testdef/Assertions/assertion">        <xsl:copy-of select="."/>
+</xsl:for-each>
+     </assertions> 
+    <message-exchange type="{$Mep}">
+        <message from="A" to="B" document="{$DocumentIn}" name="message" 
+                 endpointURI="jms:jndi:jms/MyQueue&amp;jndiConnectionFactoryName=jms/MyCF&amp;targetService=EchoPort"> 
+            <assert test="jmsmsg:MessageID = {$request_message_id}"/> 
+            <assert test="jmsmsg:JMSDeliveryMode = 2"/> 
+            <assert test="jmsmsg:JMSPriority = 4"/> 
+            <assert test="jmsmsg:JMSExpiration = 0"/> 
+            <assert test="jmsmsg:JMSReplyTo = {$jms_response_dest}"/> 
+            <assert test="jmsmsg:JMSCorrelationID = null"/> 
+            <assert test="jmsmsg:JMSDestination = {$jms_request_dest}"/> 
+            <assert test="jmsmsg:JMSRedelivered = false"/> 
+            <assert test="jmsmsg:JMSMessageBody = {$soap_request_msg}"/> 
+<xsl:for-each select="/Testdef/PropsIn/assert">           <xsl:copy-of select="."/>
+</xsl:for-each>
+        </message> 
+        <message from="B" to="A" document="{$DocumentOut}" name="message"> 
+            <assert test="jmsmsg:MessageID = {$response_message_id}"/> 
+            <assert test="jmsmsg:JMSDeliveryMode = 2"/> 
+            <assert test="jmsmsg:JMSPriority = 4"/> 
+            <assert test="jmsmsg:JMSExpiration = 0"/> 
+            <assert test="jmsmsg:JMSReplyTo = null"/> 
+            <assert test="jmsmsg:JMSCorrelationID = {$request_message_id}"/> 
+            <assert test="jmsmsg:JMSDestination = {$jms_response_dest}"/> 
+            <assert test="jmsmsg:JMSRedelivered = false"/> 
+            <assert test="jmsmsg:SOAPJMS_contentType = 'text/xml'"/> 
+            <assert test="jmsmsg:JMSMessageBody = {$soap_response_msg}"/> 
+<xsl:for-each select="/Testdef/PropsOut/assert">            <xsl:copy-of select="."/>
+</xsl:for-each>
+         </message> 
+    </message-exchange> 
+  </testcase> 
+
+</xsl:template>
+</xsl:stylesheet>

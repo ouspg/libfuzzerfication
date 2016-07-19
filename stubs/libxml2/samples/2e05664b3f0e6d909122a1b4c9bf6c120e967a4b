@@ -1,0 +1,4 @@
+<!-- Definitions for DocBook -->
+<its:rules its:version="1.0"  xmlns:its="http://www.w3.org/2005/11/its">
+ <its:termRule selector="//qterm" term="yes"/>
+</its:rules><!-- timestamp $Id: EX-selection-global-2.xml,v 1.1 2006/11/01 01:18:32 fsasaki Exp $ -->

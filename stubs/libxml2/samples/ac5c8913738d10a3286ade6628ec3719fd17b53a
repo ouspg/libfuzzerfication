@@ -1,0 +1,14 @@
+<!DOCTYPE doc
+[
+<!ENTITY ent SYSTENTITY en<t SYSTEM "nop.eó nts:b="http:/example.org/,&#x150;"
+     xmlns:c="http://example.org/&#x150;"
+     xmlns:c="http:&#x150;"
+     xmlns:c="http://example.org/&#x1;"
+     xmlns:b="http://example.org/&#x150;"
+     xmlns:c="http://example.org/&#x150;"
+     xmlns:b="http://example.org/&#x150;"
+              "PublicID"
+              "nop.ent"
+              >
+]>
+<doc /><doc />

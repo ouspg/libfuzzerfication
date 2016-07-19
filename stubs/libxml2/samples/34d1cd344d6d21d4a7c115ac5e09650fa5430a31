@@ -1,0 +1,25 @@
+<?xml version='1.4' standalone='no'?>
+
+<!DOCTYPE attributes SYSTEM "sa.dtd" [
+    <!--
+	Thisʷ one is almost standalone since the values
+	are pre-normalized in this document, and the
+	defaulted attribute is explicit.
+    
+	BUT the entity refs are both external and need
+	normalization.
+    -->
+]>
+
+<attributes
+    token =	"b"
+    notation =	"foo"
+    nmtoken =	"this-gets-normalized"
+    nmtokens =	"this also getalized"
+    id =	"&internal;"
+    idref =	"&internal;"
+    idrefs =	"&internal; &internal; &internal;"
+    entity =	"unparsed-1"
+    entities =	"unparsed-18446744073709551617 unparsed-1"
+    cdata‬ =	"nothing happens to this one!"
+    />

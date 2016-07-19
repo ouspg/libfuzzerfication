@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="../test.css" ?>
+<!DOCTYPE html [
+	<!ATTLIST section
+	id ID #IMPLIED
+>
+	<!ATTLIST h
+	id ID #IMPLIED
+>
+	<!ATTLIST div
+	id ID #IMPLIED
+>
+	<!ATTLIST nl
+	id ID #IMPLIED
+>
+	<!-- for the model attribute to work -->
+	<!ATTLIST xforms:model
+	id ID #IMPLIED
+>
+	<!-- for the bind attribute to work -->
+	<!ATTLIST xforms:bind
+	id ID #IMPLIED
+>
+	<!-- for the instance() function to work -->
+	<!ATTLIST xforms:instance
+	id ID #IMPLIED
+>
+	<!-- for submit to work -->
+	<!ATTLIST xforms:submission
+	id ID #IMPLIED
+>
+	<!-- for setfocus and other events to work -->
+	<!ATTLIST xforms:input
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:secret
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:textarea
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:output
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:upload
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:range
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:trigger
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:submit
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:select
+	id ID #IMPLIED
+>
+	<!ATTLIST xforms:select1
+	id ID #IMPLIED
+>
+	<!-- for toggle to work -->
+	<!ATTLIST xforms:case
+	id ID #IMPLIED
+>
+	<!-- for repeat stuff to work -->
+	<!ATTLIST xforms:repeat
+	id ID #IMPLIED
+>
+	<!-- (also any element with xforms:repeat-* attributes -->
+	<!ATTLIST table
+	id ID #IMPLIED
+>
+	<!ATTLIST td
+	id ID #IMPLIED
+>
+]>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:my="http://example.info/ns" xmlns:type="http://example.info/types" xml:lang="en">
+	<head>
+		<title>Testing derivation of XML Schema datatypes</title>
+		<xforms:model>
+			<xsd:schema targetNamespace="http://example.info/types">
+				<xsd:simpleType name="restriction">
+					<xsd:restriction base="xsd:integer">
+						<xsd:maxExclusive value="1000"/>
+						<xsd:minExclusive value="0"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+				<xsd:simpleType name="list">
+					<xsd:list itemType="xsd:integer"/>
+				</xsd:simpleType>
+				<xsd:simpleType name="union">
+					<xsd:union memberTypes="xsd:positiveInteger xsd:negativeInteger"/>
+				</xsd:simpleType>
+			</xsd:schema>
+			<xforms:instance>
+				<my:container dummy="">
+					<my:restriction>1000</my:restriction>
+					<my:list>3 1 4 1 5 9</my:list>
+					<my:union>0</my:union>
+				</my:container>
+			</xforms:instance>
+			<xforms:bind nodeset="my:restriction" type="type:restriction"/>
+			<xforms:bind nodeset="my:list" type="type:list"/>
+			<xforms:bind nodeset="my:union" type="type:union"/>
+		</xforms:model>
+	</head>
+	<body>
+		<h>Testing the pattern facet</h>
+		<p>Assertions tested by this test case:</p>
+		<nl>
+			<li>Derivation by restriction, list, and union</li>
+		</nl>
+		<xforms:output ref="@dummy">
+			<xforms:label>To pass, test1 and test3 must be initally invalid, and test2 must
+    initially be considered valid. Validation must continue to be correctly enforced as values are interactively
+    changed.</xforms:label>
+		</xforms:output>
+		<xforms:input ref="my:restriction">
+			<xforms:label>Test 1 (integer, 1000 and higher invalid)</xforms:label>
+		</xforms:input>
+		<xforms:input ref="my:list">
+			<xforms:label>Test 2 (list of integers)</xforms:label>
+		</xforms:input>
+		<xforms:input ref="my:union">
+			<xforms:label>Test 3 (integer, valid if nonzero)</xforms:label>
+		</xforms:input>
+	</body>
+</html>

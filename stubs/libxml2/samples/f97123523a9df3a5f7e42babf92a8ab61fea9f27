@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- config -->
+<main>
+    <!--                  -->
+    <!-- Conexión         -->
+    <!--                  -->
+    <!-- IP del servidor -->
+    <ipservidor>127.0.0.1</ipservidor>
+    <!-- login y password de la cuenta -->
+    <login>login</login>
+    <password>password</password>
+    <!-- cliente autónomo -->
+    <standalone>true</standalone>
+    <!--                  -->
+    <!-- Jugador          -->
+    <!--                  -->
+    <textura>0</textura>
+    <!--                  -->
+    <!-- Gráficos         -->
+    <!--                  -->
+    <!-- usar modelos de alta resolución -->
+    <modelosAltaResolucion>true</modelosAltaResolucion>
+    <!-- terreno poblado de árboles -->
+    <arboles>true</arboles>
+    <!-- resolución de la geometría del terreno: (512-256-128-64-32) -->
+    <resolucionTerreno>32</resolucionTerreno>
+    <!-- bump mapping -->
+    <useBumpMap>true</useBumpMap>
+    <!-- detail Textures -->
+    <useDetailTextures>true</useDetailTextures>
+    <!-- desactiva la transparencia del canvas de los minijuegos -->
+    <canvasTransparentes>true</canvasTransparentes>
+    <!-- mipmapping -->
+    <mipmapping>true</mipmapping>
+    <!-- resolución -->
+    <resx>800</resx>
+    <resy>600</resy>
+    <windowed>false</windowed>
+</main>

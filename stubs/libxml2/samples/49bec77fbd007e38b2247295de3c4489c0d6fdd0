@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- METS: Metadata Encoding and Transmission Standard -->
+<!-- Copyright © 2001, 2002, 2003, 2004, 2005, 2006 Digital Library Federation -->
+<!-- Prepared for the Digital Library Federation by Jerome McDonough, New York University,
+with the assistance of Michael Alexander (British Library), Rick Beaubien (University of California), Morgan Cundiff (Library of Congress), Susan Dahl (University of Alberta), Markus Enders (State and University Library, Göttingen),  Richard Gartner (Bodleian Library at Oxford), Nancy Hoebelheirich (Stanford University), Mark Kornbluh (Michigan State University), Cecilia Preston (Preston & Lynch), Merrilee Proffitt (Research Libraries Group), Richard Rinehart (Berkeley Art Museum/Pacific Film Archive), Mackenzie Smith (Massachusetts Institute of Technology), Taylor Surface (OCLC), Brian Tingle (California Digital Library) and Robin Wendler (Harvard University).
+-->
+<!-- October 2006 -->
+<!-- Version 1.6 -->
+<!-- Change History -->
+<!-- April 23, 2001: Alpha Draft completed -->
+<!-- June 7, 2001: Beta completed -->
+<!-- 6/7/2001 Beta Changes: 
+	1. add 'Time' as a possible time code value, as well as TCF.
+	2. Make dmdSec ID attribute required; make ID attribute optional on MDRef/MDWrap.
+	3. Add 'Label' attribute to StructMap, along with 'Type'.
+	4. Add DDI and FGDC as potential metadata schemes to enumeration.
+	5. Enable an "otherMDtype" attribute for MDWrap/MDRef and any other element where
+	    there's an 'other' in the enumerated possibilities.
+	6. Add a "profile" attribute to METS element.
+	7. Revised mptr declaration so that it's like FLocat/MDRef (and not like XLink)
+	8. Extend internal documentation of <area> attributes.
+	9. Add "other" to the possible set of LOCTYPEs.
+	10. Change ADMIDS to ADMID on FileGrp.
+	11. Change "N" to "Order" on <div> element.
+	12. Change "Number" to "order label" on <div> element
+	13. Add createdate and lastmoddate attributes to mets element.
+	14. Allow <div> and <area> elements to link to administrative metadata sections.
+	15. Normalize attribute pointing facilities for file element and mdRef.
+	16. Provide a LOCTYPE of "other" and an "otherloctype" attribute for pointing to external files.
+	17. Drop PDI from enumeration of LOCTYPES.
+	18. Make MDTYPE required in mdRef and mdWrap.
+	19. Rename preservationMD to digiprovMD.
+	20. Add optional CHECKSUM attribute to FContent element.
+	21. Modularize declarations of fileGrpType and mdSecType attributes and enumerations to
+		simplify maintenance.
+	22. Add TYPE attribute to structMap.
+	23. Declare structMap element using structMapType rather than direct declaration.
+	24. Add area element as possible subelement to <div>, along with par and seq.
+	25. Change mdSec model to ALL, to enable differing order of mdRef/mdWrap elements.
+	26. Extend documentation on <par> and <seq> elements.
+ -->
+<!-- October 22, 2001: Gamma completed -->
+<!-- 10/22/2001 Gamma changes:
+ 	1. Added optional fileSec element beneath METS root element to contain fileGrps.
+ 	2. Created subsidiary schema file xlink.xsd for XLink attributes, restored XLink attributes
+ 	to mptr element, and added XLink support to mdRef and FLocat.
+ 	3. Created new element metsHdr to handle metadata regarding METS document
+ 	itself (analogous to TEI Header).  Moved CREATEDATE and LASTMODDATE attributes
+ 	to metsHdr, and added new RECORDSTATUS attribute.  Added new subsidiary elements
+ 	agent and altRecordID to metsHdr.
+ 	4. Made CREATEDATE and LASTMODDATE attributes type xsd:dateTime to allow more precise
+ 	recording of when work was done.
+ 	5. Changed all attributes using data type of xsd:binary to xsd:base64Binary to conform to final
+ 	W3C schema recommendations.
+ 	6. Cleaned up annotations/documentation.
+ -->
+<!-- December 19, 2001: Epsilon and PROTOFINAL completed-->
+<!-- 12/19/2001 Epsilon changes:
+ 	1. Changed sequence operator for StructMap so that only 1 root div element is permitted.
+	2. Add new roles to agent element's role attribute and support for extensible 'other' role.
+	3. Add support for extensible 'other' type attribute on agent element.
+	4. Yet more documentation clean up.
+	5. Relocate CHECKSUM attribute from FContent to File element.
+	6. Change the file element's CREATED attribute and fileGroup's VERSDATE attribute to 
+	a type of xsd:dateTime
+	7. Change attribute name DMD for div element to DMDID for consistency's sake.
+	8. Added new behaviorSec for support of referencing executable code from METS object
+ -->
+<!-- February 8, 2002: Zeta bug fix to final -->
+<!-- 2/8/2002 Zeta changes:
+ 
+ 	1. Eliminated redundant VRA in metadata type enumeration.
+ 	2. Changed mdWrap content model, adding xmlData element to eliminate
+ 		ambiguous content model
+ -->
+<!-- June 3, 2002: Version 1.1 -->
+<!-- 6/3/2002 v1.1 changes:
+ 
+  	1. Add new structLink section for recording hyperlinks between media represented by structMap nodes.
+	2. Allow a 

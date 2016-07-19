@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright (c) 2007-2009 IBM Corporation and others. All rights reserved -->
+
+<!-- Test data file for string search  -->
+<!DOCTYPE stringsearch-tests [
+<!ELEMENT stringsearch-tests (test-case+)>
+<!ATTLIST stringsearch-tests debug IDREF #IMPLIED >
+<!ELEMENT test-case (pattern, pre?, m?, post?)>
+<!ATTLIST test-case 
+          id ID #REQUIRED
+          locale CDATA "en" 
+          strength (PRIMARY | SECONDARY | TERTIARY | QUATERNARY | IDENTICAL) "TERTIARY" 
+          norm (ON | OFF) "OFF"
+          alternate_handling (NON_IGNORABLE | SHIFTED) "NON_IGNORABLE"
+          >
+
+<!ELEMENT pattern (#PCDATA)>
+<!ELEMENT pre  (#PCDATA)>
+<!ELEMENT m    (#PCDATA)>
+<!ELEMENT post (#PCDATA)>
+]>
+
+<stringsearch-tests>
+  <!-- debug="test11"     (for copying into the above element)  -->
+    
+    <!-- Very simple match  -->
+    <test-case id="test01" >
+       <pattern>abc</pattern>
+       <pre>xxx</pre><m>abc</m><post>yyy</post>
+    </test-case>
+    
+    <!-- Very simple no-match  -->
+    <test-case id="test02" >
+       <pattern>abc</pattern>
+       <pre>xxx</pre><post>yyy</post>
+    </test-case>
+
+    <!-- Match after several near-misses. -->
+    <test-case id="test03" >
+       <pattern>string</pattern>
+       <pre>silly spring stling strxng strilg strinx stri</pre><m>string</m><post> fling</post>
+    </test-case>
+    
+    <test-case id="test04" strength="PRIMARY" >
+       <pattern>FUSS</pattern>
+       <pre>abc</pre><m>fuss</m><post>sss</post>
+    </test-case>
+    
+    <test-case id="test05" strength="PRIMARY" >
+       <pattern>FUSS</pattern>
+       <pre>abc</pre><m>fuß</m><post>sss</post>
+    </test-case>
+
+  <test-case id="test05.5" strength="PRIMARY" >
+    <pattern>fuss</pattern>
+    <pre>a </pre>
+    <m>fuß</m>
+    <post>ball table</post>
+  </test-case>
+
+  <test-case id="test06" strength="PRIMARY" >
+      <pattern>fuß</pattern>
+       <pre>abc</pre><m>fuss</m><post>xyz</post>
+    </test-case>
+    
+    <test-case id="test07" strength="SECONDARY" >
+      <pattern>fuß</pattern>
+      <pre>abcfussxyz</pre>
+    </test-case>
+    
+    <test-case id="test08" strength="PRIMARY" >
+      <pattern>fus</pattern>
+      <pre>abcfuß</pre><post>xyz</post>
+    </test-case>
+    
+    <!-- A good match following an initial match that failed because
+         of not ending on a character boundary -->
+    <test-case id="test09" strength="PRIMARY">
+      <pattern>fus</pattern>
+      <pre>fuß  </pre><m>fus</m><post>sss</post>
+    </test-case>
+
+
+    <!-- Test cases from usrchdat.c  BREAKITERATOREXACT -->
+
+    <test-case id="test10" strength="TERTIARY">
+      <pattern>fox</pattern>
+      <m>fox</m><post>y fox</post>
+    </test-case>
+
+    <test-case id="test11" strength="PRIMARY" locale="de_DE@collation=phonebook">
+      <pattern>toe</pattern>
+      <pre>This is a </pre><m>Tö</m><post>ne</post>
+    </test-case>
+    
+    <test-case id="test11a" strength="SECONDARY" locale="de_DE@collation=phonebook">
+      <pattern>toe</pattern>
+      <pre>This is a </pre><post>Töne</post>
+    </test-case>
+    
+    <test-case id="test12" strength="TERTIARY">
+      <pattern>e</pattern>
+      <pre>tésting that é doés not match </pre><m>e</m><post></post>
+    </test-case>
+    
+    <test-case id="test13" strength="PRIMARY" locale="fr">
+      <pattern>e</pattern>
+      <pre></pre><m>É</m><post>É</post>
+    </test-case>
+    
+    <test-case id="test14" strength="PRIMARY" locale="fr">
+      <pattern>O</pattern>
+      <pre>C</pre><m>O\u0302</m><post>TÉ</post>
+    </test-case>
+
+
+    <!-- Test cases from usrchdat.c  STRENGTH -->
+
+
+    <test-case id="test15" strength="PRIMARY" locale="en">
+      <pattern>fox</pattern>
+      <pre>The quick brown </pre><m>fox</m><post> jumps over the lazy foxes</post>
+    </test-case>
+    
+    <test-case id="test16" strength="PRIMARY" locale="fr">
+      <pattern>peche</pattern>
+      <pre>blackbirds pat </pre><m>p\u00E9ch\u00E9</m><post> </post>
+    </test-case>
+    
+    <test-case id="test17" strength="PRIMARY" locale="fr">
+      <pattern>peche</pattern>
+      <pre>blackbirds pat </pre><m>p\u00EAche</m><post> </post>
+    </test-case>
+    
+    <test-case id="test18" strength="PRIMARY" locale="fr">
+      <pattern>peche</pattern>
+      <pre>blackbirds pat </pre><m>p\u00E9che</m><post>r </post>
+    </test-case>
+    
+    <test-case id="test19" strength="PRIMARY" locale="fr">
+      <pattern>peche</pattern>
+      <pre>blackbirds pat </pre><m>p\u00EAche</m><post>r </post>
+    </test-case>
+    
+    <test-case id="test20" strength="PRIMARY" locale="es">
+      <pattern>channel</pattern>
+      <pre>A </pre><m>channel</m><post>, </post>
+    </test-case>
+    
+    <test-case id="test21" strength="PRIMARY" locale="es">
+      <pattern>channel</pattern>
+      <pre>A </pre><m>CHANNEL</m><post>, </post>
+    </test-case>
+    
+    <test-case id="test22" strength="PRIMARY" locale="es">
+      <pattern>channel</pattern>
+      <pre>A </pre><m>Channel</m><post>s, </post>
+    </test-case>
+    
+    <test-case id="test23" s

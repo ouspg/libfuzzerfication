@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<effect type="pemit">
+  <pemit>
+    <file>x/anim1p.x</file>
+    <emitters>Cube</emitters>
+
+    <position>0.0f, -80.0f, 20.0f</position>
+    <scale>6.0f, 6.0f, 2.0f</scale>
+    <rotate>0.0f, 0.0f, 0.0f</rotate>
+
+
+    <image>images/pallo_h.png</image>
+    <height>images/pallo_hn.png</height>
+		
+    <image>images/valko.png</image>
+    <height>images/bumpclipmap1.jpg</height>
+
+
+
+    <image>images/seitsenkulmio77_g.jpg</image>
+    <height>images/seitsenkulmio77_g.jpg</height>
+	
+	<use_global_tex_change>1</use_global_tex_change>
+
+	<depth_clip_mul>10.0</depth_clip_mul>
+    <def_height>0.20</def_height>
+    <def_bumpness>3.0</def_bumpness>
+
+    <blend>add</blend> <!-- add, normal -->
+	
+	<color fadeIn=2.0 fadeOut=2.0 end=4.0 loopEnd=4.0 loop=-1>1.0, 0.0, 0.0</color>
+	<color fadeIn=2.0 fadeOut=2.50 end=4.50 loopEnd=4.50 loop=-1>0.0, 1.0, 0.0</color>
+	<color fadeIn=2.0 fadeOut=3.0 end=5.0 loopEnd=5.0 loop=-1>0.0, 0.0, 1.0</color>
+	<color clear="1">0.80, 0.80, 0.80</color>
+
+    <particle_angle>0.0</particle_angle>
+    <particle_angle_var>90.0</particle_angle_var>
+    <particle_angle_grow>0.20</particle_angle_grow>
+    <particle_size>1.0f, 1.0f</particle_size>
+    <particle_size_var>2.05f, 0.05f</particle_size_var>
+    <particles_max>100</particles_max>
+    <intensity>1000.50</intensity>
+    <emits_per_second>1</emits_per_second>
+    <power>1.0</power>
+    <power_var>1.0f</power_var>
+	<age>15.0f</age>
+    <age_variance>1.0f</age_variance>
+    <age_size_grow>0.40f, 0.40f</age_size_grow>
+    <visible_age>1.0</visible_age>
+    <age_alpha_mul>2.5</age_alpha_mul>
+    <force>2.0, 3.0, 2.0</force>
+    <force_var>-4.30, -2.0, -4.0</force_var>
+  </pemit>
+  <deferred>1</deferred>
+  <zsort>1</zsort>
+  <global_position>0.0, 0.0, 0.0</global_position>
+</effect>

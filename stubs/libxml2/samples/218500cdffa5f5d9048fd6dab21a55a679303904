@@ -1,0 +1,37 @@
+<rdf:RDF  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+          xmlns:ex="http://www.example.com/predicates#">
+  
+  <!-- 
+  Example of defining and using a CollectableProperty ...
+  -->
+  
+  <!-- 
+  First define the new collectable property:
+  -->
+  
+  <rdf:Property rdf:about="http://www.example.com/predicates#subRegion">
+    <rdfs:label>sub-region</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#CollectableProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+  </rdf:Property>
+  
+  <!--
+  Now use it with a collection:
+  -->
+  
+  <skos:Concept rdf:about="http://www.example.com/concepts#England">
+    <ex:subRegion>
+      <skos:OrderedCollection>
+        <rdfs:label>Counties by population</rdfs:label>
+        <skos:memberList rdf:parseType="Collection">
+          <skos:Concept rdf:about="http://www.example.com/concepts#Norfolk"/>
+          <skos:Concept rdf:about="http://www.example.com/concepts#Suffolk"/>
+          <skos:Concept rdf:about="http://www.example.com/concepts#Devon"/>
+          <skos:Concept rdf:about="http://www.example.com/concepts#Hampshire"/>
+        </skos:memberList>
+      </skos:OrderedCollection>
+    </ex:subRegion>
+  </skos:Concept>
+  
+</rdf:RDF>

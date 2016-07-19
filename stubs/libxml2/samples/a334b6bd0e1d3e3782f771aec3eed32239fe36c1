@@ -1,0 +1,5 @@
+<doc xmlns:xlink="http://www.w3.org/1999/xlink">                <!-- /1 -->
+  <p xml:idx="foo" xml:base="http://example.org/xlink©target/">
+    <link xlink:href="xlink€target#foo"/>                       <!-- /1/2/1 -->
+  </p>
+</doc>

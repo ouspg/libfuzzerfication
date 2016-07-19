@@ -1,0 +1,27 @@
+<!--XSLT Processor: SAXON 9.1.0.2 from Saxonica SAXON SA 9.1.0.2--><!--XSLT Processor: SAXON 9.1.0.2 from Saxonica SAXON SA 9.1.0.2--><!--  ================================================================================  --><!--  Errata applied:                                                                   --><!--    XQX.E4 - Editorial (Bugzilla Bug 5323)                                          --><!--  ================================================================================  --><!-- Remove the status attribute when publishing a public WD or later stage of progression --><spec xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax" id="spec-top" w3c-doctype="wd" status="int-review"><header id="spec-header"><title>XQueryX 3.0</title><version/><w3c-designation>WD-xqueryx-30</w3c-designation><!--    <w3c-doctype>W3C Internal Draft</w3c-doctype> --><w3c-doctype>W3C Working Draft</w3c-doctype><pubdate><day>14</day><month>June</month><year>2011</year></pubdate><publoc diff="chg">
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2011/WD-xqueryx-30-20110614/" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/2011/WD-xqueryx-30-20110614/</loc>
+      </publoc><!-- These altlocs URIs are computed from the concatenation of doc.public, doc.shortname, and either '.xml' or
+     '-diff-from-yyyymmdd.html', where 'yyyymmdd' is the earlier version of the spec from which a diff has been produced --><altlocs diff="chg"><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2011/WD-xqueryx-30-20110614/xqueryx-30.xml" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">XML</loc><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2011/WD-xqueryx-30-20110614/xqueryx-30-diff.html" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">Change markings relative to previous Working Draft</loc></altlocs><!-- The latestloc URI is computed from doc.latestloc --><latestloc diff="chg">
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/xqueryx-30/" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/xqueryx-30/</loc>
+      </latestloc><!-- These prevlocs URIs are always hard-coded and are never computed from entities --><prevlocs diff="chg">
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2010/WD-xqueryx-30-20101214/" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/2010/WD-xqueryx-30-20101214/, </loc>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2009/WD-xqueryx-11-20091215/" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/2009/WD-xqueryx-11-20091215/, </loc>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/WD-xqueryx-11-20081203/" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">http://www.w3.org/TR/2008/WD-xqueryx-11-20081203/</loc>
+      </prevlocs><authlist><author><name>Jim Melton</name><affiliation diff="chg">Oracle</affiliation><email xmlns:xlink="http://www.w3.org/1999/xlink" href="mailto:jim.melton@oracle.com" xlink:type="simple" xlink:show="new" xlink:actuate="onRequest">jim.melton@oracle.com</email></author></authlist><!-- No errata for a document until it reaches Recommendation status
+    <errataloc diff="chg" href="http://www.w3.org/XML/2009/qt-errata/xqueryx-errata.html" xlink:type="simple"/>
+--><translationloc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/2003/03/Translations/byTechnology?technology=xqueryx-30" xlink:type="simple"/><abstract><p>This document defines an XML Syntax for <phrase diff="chg">
+               <bibref ref="xquery-30"/>
+            </phrase>.</p></abstract><!--* Common status section for QT specs.
+    * Use is currently not required, but it simplifies things.
+    * 
+    * Revisions:
+    * 2007-01-15 : CMSMcQ : made file, to simplify publication of Rec.
+    * 2008-02-15 : JimMelton : cloned from MSM's REC-only material
+                     to generalize for all stages
+    *--><status id="status"><!-- ************************************************************************** --><!-- * All Status sections must start with the standard boilerplate paragraph * --><!-- *   This entity is defined in status-entities.dtd                        * --><!-- ************************************************************************** --><p>
+            <emph>This section describes the status of this
+         document at the time of its publication.
+         Other documents may supersede this document.
+         A list of current W3C publications and the latest
+         revision of this technical report can be found in the
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/" xlink:type="simple" xlink:show="replace" xlink:actuate="onReque

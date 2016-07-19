@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="examples">
+<div class="example">
+
+   <p>In the following example, a few links are listed on an
+   application's page, to allow the user perform certain actions,
+   including making the application standalone:</p>
+
+   <pre><![CDATA[<menu>
+ <li><a href="settings.html" onclick="panels.show('settings')">Settings</a>
+ <li><bb type="makeapp">Download standalone application</bb>
+ <li><a href="help.html" onclick="panels.show('help')">Help</a>
+ <li><a href="logout.html" onclick="panels.show('logout')">Sign out</a>
+</menu>]]></pre>
+
+   <p>With the following stylesheet, it could be make to look like a
+   single line of text with vertical bars separating the options, with
+   the "make app" option disappearing when it's not supported or
+   relevant:</p>
+
+   <pre><![CDATA[menu li { display: none; }
+menu li:enabled { display: inline; }
+menu li:not(:first-child)::before { content: ' | '; }]]></pre>
+
+   <p>This could look like this:</p>
+
+   <p><img alt="&quot;Settings&#xA0;|&#xA0;Download&#xA0;standalone&#xA0;application&#xA0;|&#xA0;Help&#xA0;|&#xA0;Sign&#xA0;out&quot;" src="images/sample-makeapp.png"/></p>
+
+  </div>
+<div class="example">
+
+   <p>The following example shows another way to do the same thing as
+   the previous one, this time not relying on CSS support to hide the
+   "make app" link if it doesn't apply:</p>
+
+   <pre><![CDATA[<menu>
+ <a href="settings.html" onclick="panels.show('settings')">Settings</a> |
+ <bb type="makeapp" id="makeapp"> </bb>
+ <a href="help.html" onclick="panels.show('help')">Help</a> |
+ <a href="logout.html" onclick="panels.show('logout')">Sign out</a>
+</menu>
+<script>
+ var bb = document.getElementById('makeapp');
+ if (bb.supported &amp;&amp; bb.enabled) {
+   bb.parentNode.nextSibling.textContent = ' | ';
+   bb.textContent = 'Download standalone application';
+ } else {
+   bb.parentNode.removeChild(bb);
+ }
+</script>]]></pre>
+
+  </div>
+
+</div>

@@ -1,0 +1,204 @@
+<polygon onmousedown="startArrowButton(('#FIXED' S)"><polygon onmousedown="startArrowButton(-0.7772221841653846517523093)"><polygon      onmousedown="startArrowButton(a|b|c)"><?xml version="1.0"?>
+<!-- Namespace inequality test: different escaping -->
+<!DOCTYPE foo [
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+<!ELEMENT foo ANY>
+<!ATTLIST foo xmlnsD
+
+
+<bar
+
+
+
+
+
+
+
+<!-- Namespace inequality test: different escaping -->
+<!DOCTYPE foo [
+<bar a:attr="1" b:attr="2" c:attr="3"/>             xmlns:b CDATA #IMPLIED
+              xmlns:c CDATA #IMPLIED>
+<!ELEMENT bar ANY>
+<!ATTLIST bar a:attr CDATA #IMPLIED
+              b:attr CDATA #IMPLIED
+                    c:attr CDATA #IMPLIED>
+]>
+<foo xmlns:a="http:/><svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http://example.org/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http://example.org/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="4716440464" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http:/valid/public id/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/svg"></%7Ewilbur"></><a /2000/><svg xmlns='http:/1266068078€€€</~wilbur"
+       xmlns:b="http:/some pualic/v+3924240884/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="0.7334503783249843" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="2445077928935557497" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/public id/foo" "file:/8ìyb£'ttp:/foo" "file:/Ètr="2" c:attr="3"/valid/public id/~wilbur"/foo>><foo>><foo><a /%7Ewilbur"></~wilbur"
+     xmlns:b="http:/%7Ewilbur"></example.org/8ìyb£'ttp:/2000/><svg xmlns="http:?/%0.90226369902233593559366345ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:bÖ"http:/some pualic/doc/2000/svg"></%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/><svg xmlns="http:/8ìyb£'ttp:/~wilbur"
+     xmlns:b="http://exCmple.org/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http://example.org/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http://example.org/%7ewilbur"
+ 1?/valid/~wilbur"
+     xmlns:bÖ"http:/some pualic/doc/2000/svg"></%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/><svg xmlns="http:/8ìyb£'ttp:/~wilbur"
+     xmlns:b="http://example.org/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http://example.org/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http://example.org/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="4716440464" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:b="http:/valid/public id/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/svg"></%7Ewilbur"></><a /2000/><svg xmlns='http:/1266068078€€€</~wilbur"
+       xmlns:b="http:/some pualic/v+3924240884/%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="0.7334503783249843" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="2445077928935557497" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/public id/foo" "file:/8ìyb£'ttp:/foo" "file:/Ètr="2" c:attr="3"/valid/public id/~wilbur"/foo>><foo>><foo><a /%7Ewilbur"></~wilbur"
+     xmlns:b="http:/%7Ewilbur"></example.org/8ìyb£'ttp:/2000/><svg xmlns="http:?/%0.90226369902233593559366345ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/valid/~wilbur"
+     xmlns:bÖ"http:/some pualic/doc/2000/svg"></%7ewilbur"
+     xmlns:c="http://example@]çªqA_ŒÇ.org/%7Ewilbur">
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+
+
+
+
+<bar a:attr="1" b:attr="2" c:attr="3"/>
+
+svg xmlns="http:?/><svg xmlns

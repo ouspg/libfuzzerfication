@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="effect.xsl"?> 
+<effect name="FallingParticles" description="intro effect of twinkling particles"> 	
+	<value name="numParticles"		default="20000"	type="int"		description="number of particles"/>
+	<value name="particleSize"		default="0.1"	type="float"	description="size of each particle"/>
+	<value name="rotationMin"		default="1"		type="float"	description="minimum amount a particle rotation speed can be"/>
+	<value name="rotationMax"		default="6.27"	type="float"	description="maximum amount a particle rotation speed can be"/>
+	<value name="fallSpeedMin"		default="1"		type="float"	description="minimum falling speed"/>
+	<value name="fallSpeedMax"		default="5"		type="float"	description="maximum falling speed"/>
+	<value name="glowSpecular"		default="1"		type="float"	description="shininess when rendering the glow"/>
+	<value name="specular"			default="1"		type="float"	description="shininess when rendering the normal view"/>
+	<value name="letterboxAmt"		default="0.2"	type="float"	description="amount to crop"/>
+	<value name="col"				default="0.1, 0.1, 0.1" type="array3"	description="color to add to each particle"/>
+	<value name="glowCol"			default="0.1, 0.1, 0.1" type="array3"	description="color to add to each particle when rendering the glow"/>
+	
+	<var name="imageAlpha"			default="0"						description="crossfade amount for the logo"/>
+</effect>

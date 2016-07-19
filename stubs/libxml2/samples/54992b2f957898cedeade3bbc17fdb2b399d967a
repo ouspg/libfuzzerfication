@@ -1,0 +1,124 @@
+<!-- ANT Build Script for the "utility" Custom Tag Library -->
+<!-- $Id: utility-build.xml,v 1.1.1.1 2004/10/22 15:09:03 sp106478 Exp $ -->
+<project name="utility" default="main" basedir=".">
+
+    <!-- ******************** Adjustable Properties *********************** -->
+
+    <!--
+
+        The following property values should be examined and customized
+	for each custom tag library subproject.
+
+	ant.home                    Home directory for the ANT build tool
+	                            This is normally defaulted from the
+				    ANT_HOME environment variable in the
+				    build script.
+
+	servlet.jar                 Pathname of the servlet API classes
+	                            you are using to compile, such as the
+				    one that comes with Tomcat.  This is
+				    normally defaulted from the SERVLET_JAR
+				    environment variable in the build script.
+
+        taglib.name		    Base name of this tag library subproject.
+
+    -->
+
+    <property name="taglib.name"    value="utility"/>
+    <property name="servlet.jar"    value="../../jakarta-servletapi/lib/servlet.jar"/>
+
+    <!-- ****************** Project Standard Properties ******************* -->
+
+    <!--
+
+        The following property values reflect the standard directory
+	organization for the jakarta-taglibs project, and should not
+	be changed or overridden.
+
+	build.dir                   Base directory for build targets
+	dist.dir                    Base directory for distribution targets
+        taglibs.xsl                 Taglibs stylesheet
+
+    -->
+
+    <property name="build.dir"      value="../build"/>
+    <property name="dist.dir"       value="../dist"/>
+    <property name="taglibs.xsl"    value="../src/doc/stylesheets/taglibs.xsl"/>
+
+    <!-- *********************** Default Properties ********************** -->
+
+    <!--
+
+        The following property values reflect the recommended directory
+	structure for each custom tag library subproject.  You should only
+	need to adjust or override them if you use a different organization.
+
+	conf.src                    Library configuration source directory
+        doc.src                     Documentation app source directory
+        examples.src                Examples app source directory
+        library.src                 Library Java source directory
+
+    -->
+
+    <property name="conf.src"       value="conf"/>
+    <property name="doc.src"        value="doc"/>
+    <property name="examples.src"   value="examples"/>
+    <property name="library.src"    value="src"/>
+
+
+    <!-- ********************* Derived Properties ************************* -->
+
+    <!--
+
+        These property values are derived from the previously defined values,
+	and should not normally be overridden from the command line.
+
+        build.doc                   Target directory for documentation app
+        build.examples		    Target directory for examples app
+        build.library               Target directory for tag library
+	dist.doc                    Destination WAR for documentation app
+	dist.examples		    Destination WAR for examples app
+	dist.library                Destination JAR for tag library
+	dist.tld                    Destination TLD file for tag library
+
+    -->
+
+    <property name="build.doc"      value="${build.dir}/${taglib.name}/${taglib.name}-doc"/>
+    <property name="build.examples" value="${build.dir}/${taglib.name}/${taglib.name}-examples"/>
+    <property name="build.library"  value="${build.dir}/${taglib.name}/${taglib.name}"/>
+    <property name="dist.doc"       value="${dist.dir}/${taglib.name}/${taglib.name}-doc.war"/>
+    <property name="dist.examples"  value="${dist.dir}/${taglib.name}/${taglib.name}-examples.war"/>
+    <property name="dist.library"   value="${dist.dir}/${taglib.name}/${taglib.name}.jar"/>
+    <property name="dist.tld"       value="${dist.dir}/${taglib.name}/${taglib.name}.tld"/>
+    <property name="taglibs.doc"    value="${dist.dir}/doc/doc/${taglib.name}-doc"/>
+
+
+  <!-- ********************** Destination Preparation ********************* -->
+
+  <target name="prepare">
+    <!-- Set up build directories -->
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${build.doc}"/>
+    <mkdir dir="${build.doc}/WEB-INF"/>
+    <mkdir dir="${build.doc}/WEB-INF/classes"/>
+    <mkdir dir="${build.doc}/WEB-INF/lib"/>
+    <mkdir dir="${build.examples}"/>
+    <mkdir dir="${build.examples}/WEB-INF"/>
+    <mkdir dir="${build.examples}/WEB-INF/classes"/>
+    <mkdir dir="${build.examples}/WEB-INF/lib"/>
+    <mkdir dir="${build.library}"/>
+    <mkdir dir="${build.library}/META-INF"/>
+    <!-- Set up distribution directory -->
+    <mkdir dir="${dist.dir}"/>
+    <mkdir dir="${dist.dir}/${taglib.name}"/>
+  </target>
+
+
+  <!-- **************** Compile Tag Library Components ******************** -->
+
+  <!-- Compile the documentation application -->
+  <target name="documentation" depends="prepare">
+    <copy todir="${build.doc}/WEB-INF">
+      <fileset dir="${doc.src}/conf"/>
+    </copy>
+    <!-- intro.xml isn't p

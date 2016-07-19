@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="a"
+        xsi:schemaLocation="a d3_4_6ii04.xsd">	
+	<ele>a'</ele>		<!--invalid-->
+	<ele>a,</ele>		<!--invalid-->
+	<ele>a(</ele>		<!--invalid-->
+	<ele>a*</ele>		<!--invalid-->
+	<ele>a^</ele>		<!--invalid-->
+	<ele>a%</ele>		<!--invalid-->
+	<ele>a$</ele>		<!--invalid-->
+	<ele>a#</ele>		<!--invalid-->
+	<ele>a@</ele>		<!--invalid-->
+	<ele>a!</ele>		<!--invalid-->
+	<ele>a </ele>		<!--invalid-->
+	<ele>a~</ele>	    <!--invalid-->
+</root>
+<!-- 
+Test Case Type: Instance invalid test
+Description   : invalid instance for effect of \c in regular expressions
+-->

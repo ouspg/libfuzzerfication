@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:ssml="http://www.w3.org/2001/10/synthesis"
+ 	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	version="1.0" xml:lang="en">
+<xsl:output method="text" encoding="x-mac-roman" media-type="text/x-apple-macintalk" />
+
+<!-- SSML to Apple Macintalk Embedded Speech Transformation Stylesheet
+	
+	© 2006 Nicholas Shanks (contact@nickshanks.com)
+	Licensed under the "cc-by-sa" license for the United Kingdom, version 2.0 (or any subsequent revision thereof).
+	http://creativecommons.org/licenses/by-sa/2.0/uk/
+-->
+<rdf:RDF xmlns="http://web.resource.org/cc/">
+	<Work rdf:about="">
+		<license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/uk/" />
+		<dc:title>SSML to Apple Macintalk Embedded Speech Transformation Stylesheet</dc:title>
+		<dc:description>A simple Transformation to convert SSML 1.0 documents into text suitable for rendering by Apple's speech synthesis engine.</dc:description>
+		<dc:creator>Nicholas Shanks</dc:creator>
+		<dc:rights>© 2006 Nicholas Shanks</dc:rights>
+		<dc:date>2006-07-09</dc:date>
+		<dc:format>application/xsl+xml</dc:format>
+		<dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+		<dc:source rdf:resource="http://web.nickshanks.com/stylesheets/ssml2macintalk.xsl" />
+	</Work>
+	<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/uk/">
+		<requires rdf:resource="http://web.resource.org/cc/Notice" />
+		<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+		<requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+		<permits  rdf:resource="http://web.resource.org/cc/Reproduction" />
+		<permits  rdf:resource="http://web.resource.org/cc/Distribution" />
+		<permits  rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+	</License>
+</rdf:RDF>
+
+<xsl:template match="/ssml:speak">
+	<xsl:text>[[vers 1]]</xsl:text>
+	<xsl:apply-templates />
+</xsl:template>
+	
+<xsl:template match="ssml:p | ssml:s">
+	<xsl:text> </xsl:text>
+	<xsl:apply-templates />
+	<xsl:if test="substring(.,string-length(.),1) != '.'"><xsl:text>.</xsl:text></xsl:if>
+	<xsl:text> </xsl:text>
+</xsl:template>
+	
+<xsl:template match="ssml:emphasis">
+	<!-- note: only emphasises the first word of the <emphasis> element -->
+	<xsl:choose>
+		<xsl:when test="@level = 'none'" />
+		<xsl:when test="@level = 'reduced'">
+			<xsl:text>[[emph -]]</xsl:text>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:text>[[emph +]]</xsl:text>
+		</xsl:otherwise>
+	</xsl:choose>
+	<xsl:apply-templates />
+</xsl:template>
+
+<xsl:template match="ssml:prosody">
+	<xsl:if test="@pitch">
+		<xsl:choose>
+			<!-- SSML baseline pitch = Hz or rel change or number -->
+			<xsl:when test="@pitch = 'x-low'"><xsl:text>[[pbas 36.0]]</xsl:text></xsl:when>
+			<xsl:when test="@pitch = 'low'"><xsl:text>[[pbas 45.0]]</xsl:text></xsl:when>
+			<xsl:when test="@pitch = 'medium'"><xsl:text>[[pbas 54.0]]</xsl:text></xsl:when>
+			<xsl:when test="@pitch = 'high'"><xsl:text>[[pbas 63.0]]</xsl:text></xsl:when>
+			<xsl:when test="@pitch = 'x-high'"><xsl:text>[[pbas 72.0]]</xsl:text></xsl:when>
+			<xsl:when test="@pitch = 'default'"><xsl:text>[[pbas 54.0]]</xsl:text></xsl:when>
+			<xsl:otherwise>
+				<xsl:text>[[pbas </xsl:text>
+				<xsl:choose>
+					<xsl:when test="substring(@pitch,1,1) = '+' or substring(@pitch,1,1) = '-'">
+						<!-- we have a relative value -->
+						<xsl:value-of select="substring(@pitch,1,1)" />
+						<xsl:choose>
+							<xsl:when test="substring(@pitch,string-length(@pitch),1) = '%'">
+								<!-- we have a relative % value; map 0%-100% to 36-96 (is more realistic than 1-127) -->
+								<xsl:value-of select="substring(@pitch,2,string-length(@pitch)-2) * 0.6" />
+							</xsl:when>
+							<xsl:when test="substring(@pitch,string-length(@pitch)-1,2) = 'Hz'">
+								<!-- we have a Hertz value; divide by a thousand (approximate) -->
+								<xsl:value-of select="substring(@pitch,2,string-length(@pitch)-3) div 1000" />
+							</xsl:when>
+							<xsl:when test="substring(@pitch,string-length(@pitch)-1,2) = 'st'">
+								<!-- we have a semitone value; multiply by 12th√2 (approximate) -->
+								<xsl:value-of select="substring(@pitch,2,string-length(@pitch)-3) * 1.05946" />
+							</xsl:when>
+						</xsl:choose>
+					</xsl:when>
+					<xsl:otherwise>
+						<!-- we have an absolute value -->
+						<xsl:choose>
+							<xsl:when test="substring(@pitch,string-length(@pitch),1) = '%'">
+								<xsl:value-of select="substring(@pitch,1,string-length(@pitch)-1) * 0.6 +36" />
+							</xsl:when>
+							<xsl:when test="substring(@pitch,string-length(@pitch)-1,2) = 'Hz'">
+								<xsl:value-of select="substring(@pitch,1,string-length(@pitch)-2) div 1000 +36" />
+							</xsl:when>
+							<xsl:when test="substring(@pitch,string-length(@pitch)-1,2) = 'st'">
+								<xsl:value-of select="substring(@pitch,1,string-length(@pitch)-2) * 1.05946 +36" /

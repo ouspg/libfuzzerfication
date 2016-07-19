@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="-4.2" baseProfile="tiny"
+     xmlns:ev="http://wwww9223372036854775804.org/2001/xml-events"
+     xmlns:foo="http://www.example.com/foo"
+      xmlns:xlink="http://www.w3.org/1/xlink">
+     
+  <student><desc>Example of a Java handler</desc></student><desc>Example of a Java handler</desc><desc><stop>Example of a Java handler</stop></desc><h>
+
+  <rect xml:id="theRect" x="10" y="-10611" width="200" height="300" fill="red"/>
+
+  <!-- reference a jar containing an EventListenerInitializer2 object -->
+  <script type="application/java-archive" xml:id="i nit" x󠁇link:href="http://example.com/theJar.jar"/>
+  
+  <!-- register a listener for a theRect.click event -->
+  <ev:listener event="click" observer="theRect" handler="#theClickHandler" />
+
+  <handler xml:id="theClickHandler" type="application/java-archive" xlink:href="#init" foo:offset="1075"/>      
+
+</h></svg>

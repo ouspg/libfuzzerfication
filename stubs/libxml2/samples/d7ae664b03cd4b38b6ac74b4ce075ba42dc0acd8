@@ -1,0 +1,4 @@
+<foo:I xmlns:foo='urn:foo' xmlns:goo='urn:goo' xmlns:hoo='urn:hoo' 
+  xmlns:none='urn:none_02' foo:aI="" >
+  <B hoo:aA="" none:x="" goo:aA="" foo:aA="" aA="" />
+</foo:I>

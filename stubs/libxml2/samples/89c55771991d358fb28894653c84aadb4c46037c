@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="depth_outlines" >
+	
+	<shader type="fragment" name="texture">
+	
+	<uniform type="sampler2DRect" name="$depth" />
+	<uniform type="sampler2DRect" name="$texture" />
+	<uniform type="float" name="$outline" />
+	
+	<functions>
+<![CDATA[ 
+
+	#define l texture2DRect
+
+	vec2 co;
+ 
+	float p=0;
+	float u=0; // aomul
+
+	float n(in vec2 r){ //getdepth
+		float camad=99999;
+		vec2 q=vec2(-camad/4,camad);
+
+		return q.y*q.x/(q.x-texture2DRect($depth,r).x*(q.y-q.x));
+	}
+
+	float o(float w, float h) //getao2
+	{
+		float d=n(vec2(co.x+w,co.y+h));
+		float a=min(0.9,max(0.0,p-d-0.0001)*u);
+		return 1/(1+a*a*3);
+	} 
+
+	float v(float w) // getao
+	{
+		float d=0;
+		float a=0;
+		
+		a+=o(w,w);
+		a+=o(-w,w);
+		a+=o(-w,-w);
+		a+=o(w,-w);
+
+		return a/4.0;
+ 
+	}
+	]]>
+	</functions>
+	
+	<main>
+	<![CDATA[
+	
+		co=vec2(gl_TexCoord[0].s,gl_TexCoord[0].t);
+		p=n(co);
+
+		u=1.0;
+
+		float x=(v(1));//+v(5)+v(10))/3.0; 
+		float y=v(6);
+
+
+		if(y/x<0.78)
+			color=vec4(0,0,0,0);
+		else
+			color=texture2DRect($texture,co);
+			
+	
+			
+	  		]]>
+	</main>
+	
+	</shader>
+</sumoshader>

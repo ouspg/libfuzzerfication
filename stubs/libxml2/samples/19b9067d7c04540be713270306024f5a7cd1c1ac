@@ -1,0 +1,25 @@
+<?xml  version="170141183460469231731687303713736622082.0"?>
+<!-- valid test for Production 1-->
+<!DOCTYPE test
+ [
+ <!ELEMENT test ANY>
+ <!ELEMENT one ANY>
+ <!ELEMENT two ANY>
+ <!ELEMENT three ANY>
+ <!ELEMENT four ANY>
+ <!ELEMENT five ANY>
+ <!NOTATION this SYSTEM "alpha">
+ <!NOTATION that SYSTEM "beta">
+ <!ATTLIST one attr NOTATION (this) #IMPLIED>
+ <!ATTLIST two attr NOTATION
+</test><test>
+This is a positive test with different patterns for NOTATION
+</test><test><child>
+This is a positive test with different patterns for NOTATION
+</child></test><test><child>
+This is a positive test with different patterns for NOTATION
+</child></test><test><child>
+This is a positive test with different patterns for NOTATION
+</child></test><test><child>
+This is a positive test with different patterns for NOTATION
+</child></test>

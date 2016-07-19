@@ -1,0 +1,80 @@
+
+<!-- Processed by Id: cwm.py,v 1.83 2002/01/04 16:16:10 timbl Exp -->
+<!--     using base file:/cygdrive/c/devel/WWW/2000/10/swap/pim/track.n3-->
+
+
+<r:RDF xmlns="file:/cygdrive/c/devel/WWW/2000/10/swap/pim/track#"
+    xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+    xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#"
+    xmlns:log="http://www.w3.org/2000/10/swap/log#"
+    xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:s="http://www.w3.org/2000/01/rdf-schema#">
+
+    <s:Class r:about="#Issue">
+    </s:Class>
+
+    <r:Property r:about="#acceptance">
+        <r:range r:resource="http://www.w3.org/2000/10/swap/pim/doc#Work"/>
+        <s:comment>The document which accepts the this issue, creating it as
+ an issue. That document is expected (today) to include information about where
+it was raised (URI), who raised it (the issue author), and on what date.</s:comment>
+        <s:domain r:resource="#Issue"/>
+        <s:label>acceptance</s:label>
+    </r:Property>
+
+    <r:Property r:about="#annotation">
+        <r:range r:resource="http://www.w3.org/2000/10/swap/pim/doc#Work"/>
+        <s:comment>No semantics apart from human understanding. no state change</s:comment>
+        <s:domain r:resource="#Issue"/>
+    </r:Property>
+
+    <r:Property r:about="#documentConcerned">
+        <s:comment>The spec that has this problem</s:comment>
+        <s:domain r:resource="#Issue"/>
+        <s:range r:resource="http://www.w3.org/2000/10/swap/pim/doc#Work"/>
+    </r:Property>
+
+    <r:Property r:about="#onBehalfOf">
+        <s:comment>The entity who raised the issue, who could be a Working Group, Person, Member organization, Liaison, etc.</s:comment>
+        <s:domain r:resource="#Issue"/>
+        <s:range r:resource="http://www.w3.org/2000/10/swap/pim/contact#SocialEntity"/>
+    </r:Property>
+
+    <r:Property r:about="#rejection">
+        <r:range r:resource="http://www.w3.org/2000/10/swap/pim/doc#Work"/>
+        <s:comment>This document rejects the issue, which must have been open</s:comment>
+        <s:domain r:resource="#Issue"/>
+    </r:Property>
+
+    <r:Property r:about="#reopener">
+        <r:range r:resource="http://www.w3.org/2000/10/swap/pim/doc#Work"/>
+        <s:comment>A closed issue is re-openned.</s:comment>
+        <s:domain r:resource="#Issue"/>
+    </r:Property>
+
+    <r:Property r:about="#resolution">
+        <r:range r:resource="http://www.w3.org/2000/10/swap/pim/doc#Work"/>
+        <s:comment>This document closes (resolves) the issue, which must have been open</s:comment>
+        <s:domain r:resource="#Issue"/>
+    </r:Property>
+
+    <r:Property r:about="#source">
+        <s:comment>The source of the issue (e.g., URI to mail message where raised)</s:comment>
+        <s:domain r:resource="#Issue"/>
+        <s:range r:resource="http://www.w3.org/2000/10/swap/pim/doc#Work"/>
+    </r:Property>
+
+    <r:Property r:about="#summary">
+        <s:comment>A summary of a message eg a description of a 
+             problem from an opening message or a description of
+          a resolution from a closing message</s:comment>
+        <s:domain r:resource="#Issue"/>
+        <s:range r:resource="http://www.w3.org/2000/10/swap/log#String"/>
+    </r:Property>
+
+    <r:Property r:about="#title">
+        <s:comment>Short title, less than one line</s:comment>
+        <s:domain r:resource="#Issue"/>
+        <s:range r:resource="http://www.w3.org/2000/10/swap/log#String"/>
+    </r:Property>
+</r:RDF>

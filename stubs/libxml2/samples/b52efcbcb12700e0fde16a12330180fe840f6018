@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sumoshader name="alpha_from_red" blending="false">
+	
+	<shader type="fragment">
+	
+	<uniform type="sampler2DRect" name="$texture" />
+	<uniform type="float" name="$threshold" />
+	
+	
+	<functions>
+	</functions>
+	
+	<main>
+	<![CDATA[
+		float r=texRECT($texture, vec2(gl_TexCoord[0].s,gl_TexCoord[0].t)).r;
+		
+		if(r<$threshold)
+		{
+			color.a=1.0;
+		}
+		else
+		{
+			color.a=0.0;
+		}
+	]]>
+	</main>
+		
+	</shader>
+</sumoshader>

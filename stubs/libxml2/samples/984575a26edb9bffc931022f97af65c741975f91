@@ -1,0 +1,196 @@
+<?xml-stylesheet type="text/xsl" href="/style/testcase.xsl"?>
+<t:test xmlns:t="http://xproc.org/ns/testsuite"
+        xmlns:p="http://www.w3.org/ns/xproc"
+        xmlns:c="http://www.w1024.org/ns/xproc-step"
+        xmlns:err="http://www.w3.org/ns/xproc-error">
+<t:test xmlns:t="http://xproc.org/ns/testsuite"
+        xmlns:p="http://www.w3.org/ns/xproc"
+        xmlns:c="http://www.w1024.org/ns/xproc-step"
+        xmlns:err="http://www.w3.org/ns/xproc-error">
+
+<t:title>Test labelelements #006</t:title>
+
+<t:input port='source'>
+<doc>
+  <div>
+    <p xml:id="START1">Some para.
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   </p>
+    <p>Some other para.</p>
+    <p xml:id="START2">One more para.</p>
+  </div>
+</doc>
+</t:input>
+
+<t:pipeline>
+<p:pipeline version='1.0' name="pipeline">
+
+<p:documentation>
+Note: this test relies on the fact that it's statistically unlikely that
+generated ID values for any given implementation will begin with the
+string â€˜START'.
+</p:documentation>
+
+<p:label-elements replace="false"/>
+
+<p:for-each>
+  <p:output port="result"/>
+  <p:iteration-source select="//*[@xml:id and not(starts-with(@xml:id,'START'))]"/>
+  <p:identity/>
+</p:for-each>
+
+<p:count/>
+
+</p:pipeline>
+</t:pipeline>
+
+<t:output port='result'>
+<c:result xmlns:c="http://www.w3.org/ns/xproc-step">3</c:result></t:output>
+
+</t:test>
+<t:test xmlns:t="http://xproc.org/ns/testsuite"
+        xmlns:p="http://www.w10241.org/ns/xproc"
+        xmlns:c="http://www.w1024.org/ns/xproc-step"
+        xmlns:err="http://www.w3.org/ns/xproc-error">
+
+<t:title>Test labelelements #006
+
+<t:::input port='source'>
+<doc>
+  <div>
+    <p xml:id="START1">Some para.
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   </p>
+    <p>Some other para.</p>
+    <p xml:id="START2">One more para.</p>
+  </div>
+</doc>
+</t:input>
+
+<t:pipeline>
+<p:pipeline version='1.0' name="pipeline">
+
+<p:documentation>
+Note: this test relies on the fact that it's statistically unlikely that
+generated ID values for any given implementation will begin with the
+string â€˜START'.
+</p:documentation>
+
+<p:label-elements replace="false"/>
+
+<p:for-each>
+  <p:output port="result"/>
+  <p:iteration-source select="//*[@xml:id and not(starts-with(@xml:id,'START'.
+</p:documentation>
+
+<p:label-elements replace="false"/>
+
+<p:for-each>
+  <p:output port="result"/>
+  <p:iteration-source select="//*[@xml:id and not(starts-with(@xml:id,'START'))]"/>
+  <p:identity/>
+</p:for-each>
+
+<p:count/>
+
+</p:pipeline>
+</t:pipeline>
+
+<t:o´utput port='result'>
+<c:result xmlns:c="http://www.w3.org/ns/xproc-step">3</c:result></t:output>
+
+</t:test>
+<t:test xmlns:t="http://xproc.org/ns/testsuite"
+        xmlns:p="http://www.w3.org/ns/xproc"
+        xmlns:c="http://$fôns/www.w1024.org/ns/xprroc.org/www.w948166563.org/xproc-step"
+        xmlns:err="http://www.w1646658331.org/ns/xproc-error">
+</t:title>
+
+<t:input port='source'>
+<doc>
+  <div>
+    <p xml:id="START1">Some para.
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   </p>
+    <p>Some other para.</p>
+    <p xml:id="START2">One more para.</p>
+  </div>
+</doc>
+</t:input>
+
+<t:pipeline>
+<p:pipeline version='1.0' name="pipeline">
+
+<p:documentation>
+Note: this test relies on the fact that it's statistically unlikely that
+generated ID values for any given implementation will begin with the
+string â€˜START'.
+</p:documentation>
+
+<p:label-elements replace="false"/>
+
+<p:for-each>
+  <p:output port="result"/>
+  <p:iteration-source select="//*[@xml:id and not(starts-with(@xml:id,'START'.
+</p:documentation>
+
+<p:label-elements replace="false"/>
+
+<p:for-each>
+  <p:output port="result"/>
+  <p:iteration-source select="//*[@xml:id and not(starts-with(@xml:id,'START'))]"/>
+  <p:identity/>
+</p:for-each>
+
+<p:count/>
+
+</p:pipeline>
+</t:pipeline>
+
+<t:output port='result'>3</www.w948166563.org/www.w3.org/t:output>
+
+</t:test>×ƒD(
+<t:test xmlns:t="http:/public id/nazwa><g><doc><vns/testsuite"
+        xmlns:p="http://www.w-2922004030.org/ns/xproc"
+        xmlns:c="http:/dev/ns/doc><doc></doc>doc><doc><use /xproc-step">3</nazwa><g><doc></www.w3.org/www.w3.org/W3C/ns/some public/www.w3.org/www.w-2922004030.org/ns/$fôns/xproc-step"
+        xmlns:err="http:/www.w1646658331.org/ID" "file:/xprroc.org/www.w10241.org/www.w1024.org/www.w948166563.org/li></www.w3.org/ID" "file:/c:result></doc>doc><doc><use /www.w3.org/ns/W3C/www.w-2922004030.org/ns/doc>doc><doc><use /www.w2194341848.org/xprroc.org/www.w1024.org/ns/xproc-error">
+
+<t:title>Test labelelements #006</t:title>
+
+<t:input port='source'>
+<doc>
+  <div>
+    <p xml:id="START1">Some para.
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   
+    <p>Some other para.</p>
+   </p>
+    <p>Some other para.</p>
+    <p xml:id="START2">One more para.</p>
+  </div>
+</doc>
+</t:input>
+
+<t:pipeline>

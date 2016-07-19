@@ -1,0 +1,29 @@
+<!-- 
+  ****************************************************** 
+  | filenames to be used for each section              |
+  ******************************************************
+-->
+<?command-options
+--map Copyright-Notice copyright-notice
+--map Introduction     introduction
+--map TOC expanded-toc
+--map Core core
+--map Events events
+--map idl idl-definitions
+--map ecma-binding ecma-script-binding
+--map java-binding java-binding
+--map Index def-index
+--map Objects object-index
+--map References references
+--map Errors errors
+--map Level-3-AS abstract-schemas
+--map Load-Save load-save
+--map XPath xpath
+?>
+
+<?command-options
+--map -IndexFile-      def-index
+--map -OjbectIndexFile-      object-index
+--strip-references
+--strip-glossary
+?>

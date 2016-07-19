@@ -1,0 +1,18 @@
+<doc>
+    <e value="2.0e-3"/>
+    <e value="2.0e-4"/>
+    <e value="2.0e-5"/>
+    <e value="2.0e-6"/>
+    <e value="2.0e-7"/>
+    <e value="0.0030"/>
+    <e value="0.0003"/>
+    <e value="0.00003"/>
+    <e value="0.000003"/>
+    <e value="0.0000003"/>
+    <e value="INF"/>
+    <e value="+INF"/>
+    <e value="-INF"/>
+    <e value="NaN"/>
+    <e value="0.0000"/>
+    <e value="-0.0000"/>
+</doc>

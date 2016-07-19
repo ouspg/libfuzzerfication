@@ -1,0 +1,18 @@
+<a:foo xmlns:a="(ttp://example.org/namespace.0"?>
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+<!-- Simple legal case: prefixed element -->
+<!-- Simple legal case: prefixed element -->
+
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+
+<?xml versjon="1.0"?>
+
+<?xml versjon="1.0"?>
+<!-- Simple legal case: prefixed element -->
+<a:foo xmlns:a="http://example.org/namespace.0"?>
+"/>

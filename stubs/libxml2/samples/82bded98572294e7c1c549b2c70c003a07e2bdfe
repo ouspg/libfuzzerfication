@@ -1,0 +1,100 @@
+<?xml version='1.0'?>
+<?xml:stylesheet type='text/xsl' href='../xmlschema.msxsl'?>
+<!-- $Id: structures.xml,v 1.1 1999/09/24 18:18:56 hugo Exp $ -->
+<!DOCTYPE spec PUBLIC "-//HST//DTD Specification::19990423//EN" "../xmlspec-19990429.dtd" [
+   <!ENTITY SchemaWG "<loc
+href='http://www.w3.org/XML/Activity#schema-wg'>W3C XML Schema Working
+Group</loc>">
+   <!ENTITY XSP1 "<emph>XML Schema: Structures</emph>">
+   <!ENTITY XSP2 "<emph>XML Schemas: Datatypes</emph>">
+   <!ENTITY draft.year "1999">
+   <!ENTITY draft.month "September">
+   <!ENTITY draft.day "24">
+   <!ENTITY doc.date "&draft.day; &draft.month; &draft.year;">
+   <!ENTITY w3c.doc.date "&draft.day;-&draft.month;-&draft.year;">
+   <!ENTITY draft.YY "1999">
+   <!ENTITY draft.MM "09">
+   <!ENTITY draft.DD "24">
+   <!ENTITY iso.doc.date "&draft.YY;&draft.MM;&draft.DD;">
+   <!ENTITY draft.base "http://www.w3.org/&draft.year;/&draft.MM;/&draft.DD;-xmlschema">
+   <!ENTITY WD-XSP1 "structures">
+   <!ENTITY XSP1.base "&draft.base;">
+   <!ENTITY XSP1.URI "&XSP1.base;/&WD-XSP1;/structures">
+   <!ENTITY XSP1.version "0.7">
+   <!ENTITY WD-XSP2 "datatypes">
+   <!ENTITY XSP2.base "&draft.base;">
+   <!ENTITY XSP2.URI "&XSP2.base;/&WD-XSP2;/datatypes">
+   <!ENTITY doc.audience "and external review.">
+   <!ENTITY doc.distribution "For distribution">
+ ]>
+<spec xmlns:e='http://www.jclark.com/XSLT/ElementSyntax'>
+  <header>
+    <title>XML Schema Part 1: Structures</title>
+    <version>&XSP1.version;</version>
+    <w3c-designation>&WD-XSP1;-&iso.doc.date;</w3c-designation>
+    <w3c-doctype>W3C Working Draft</w3c-doctype>
+    <pubdate>
+      <day>&draft.day;</day>
+      <month>&draft.month;</month>
+      <year>&draft.year;</year>
+    </pubdate>
+    <notice role='publoc'><ednote><edtext>The following SHOULD be in the publoc, but
+the DTD doesn't currently allow it: the stylesheet fakes it.</edtext></ednote>
+     <p>(in <loc href='&XSP1.URI;.xml'>XML</loc> (with its own <loc href='&draft.base;/xmlspec-19990429.dtd'>DTD</loc>, <loc href='&draft.base;/xmlschema.xsl'>XSL stylesheet</loc> (July
+XSL WD version)
+and <loc href='&draft.base;/xmlschema.msxsl'>IE5 stylesheet</loc> (XSL as supported by version 5 of
+Microsoft's Internet Explorer)) and <loc href='&XSP1.URI;.html'>HTML</loc>, with separate provision of the <loc href='&XSP1.URI;.xsd'>schema</loc> and <loc href='&XSP1.URI;.dtd'>DTD</loc> for schemas described herein.</p>
+</notice>
+    <publoc> <loc href='&XSP1.base;/&WD-XSP1;/'>&XSP1.base;/&WD-XSP1;/</loc> </publoc>
+   <latestloc>   
+    <loc href='http://www.w3.org/TR/xmlschema-1/'>http://www.w3.org/TR/xmlschema-1/</loc>   
+ </latestloc>   
+   <prevlocs>
+     <loc href='http://www.w3.org/1999/05/06-xmlschema-1/'>http://www.w3.org/1999/05/06-xmlschema-1/</loc>
+    </prevlocs>
+    <authlist>
+      <author>
+        <name>Henry S. Thompson</name>
+        <affiliation>University of Edinburgh</affiliation>
+        <email href='mailto:ht@cogsci.ed.ac.uk'>ht@cogsci.ed.ac.uk</email>
+      </author>
+      <author>
+        <name>David Beech</name>
+        <affiliation>Oracle</affiliation>
+        <email href='dbeech@us.oracle.com'>dbeech@us.oracle.com</email>
+      </author>
+      <author>
+        <name>Murray Maloney</name>
+        <affiliation>Commerce One</affiliation>
+        <email href='mailto:murray@muzmo.com'>murray@muzmo.com</email>
+      </author>
+      <author>
+        <name>Noah Mendelsohn</name>
+        <affiliation>Lotus</affiliation>
+        <email href='mailto:noah_mendelsohn@lotus.com'>noah_mendelsohn@lotus.com</email>
+      </author>
+    </authlist>
+    <status>
+      <p>This is a W3C Working Draft for review by members of the W3C and other
+        interested parties in the general public.</p> 
+      <p>It has been reviewed by the XML Schema Working Group and the Working
+        Group has agreed to its publication. Note that not that all sections of the
+        draft represent the current consensus of the WG. Different sections of the
+        specification may well command different levels of consensus in the WG. Public
+        comments on this draft will be instrumental in the WG&apos;s deliberations.</p>
+      
+      <p>Please review and send comments to
+        <loc
+         href="http://lists.w3.org/Archives/Public/www-xml-schema-comments/">www-xml-schema-comments@w3.org</loc>
+(<loc href='http://lists.w3.org/Archives/Public/www-xml-schema-comments/'>archive</loc>).   
+        </p> 
+      <p>This draft incorporates a substantial change to the concrete
+syntax from the previous <loc href="http://www.w3.org/1999/05/06-xmlschema-1/">public working draft</loc>,
+intended to simplify it and make it easier to use (the full text of
+the proposal
+from the
+working group's task force <bibref ref='ref-simple-prop'/>, along with a cover note
+containing a discussion of alternatives considered and outstanding
+issues <bibref ref='ref-simple-back'/>, are available as background).</p>
+      <p>Three major components of this document are marked below as
+out-of-date and/or under construc

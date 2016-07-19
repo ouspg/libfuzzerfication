@@ -1,0 +1,73 @@
+<refentry id="quote.element">
+<?dbhtml filename="quote.html"?>
+<refentryinfo>
+<pubdate>$Date: 2004/12/21 16:01:31 $</pubdate>
+<releaseinfo>$Revision: 1.1.1.1 $</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>elements</primary>
+<secondary>quote</secondary></indexterm>
+<refentrytitle>quote</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>quote</refname>
+<refpurpose>&quote.purpose;</refpurpose>
+</refnamediv>
+
+&quote.synopsis.gen;
+<refsect1 condition='ref.description'><title>Description</title>
+
+<para>
+<sgmltag>Quote</sgmltag> surrounds an inline quotation. Using an
+element for quotations is frequently more convenient than
+entering the <link linkend="s-specchar">character entities</link>
+for the quotation marks by hand, and makes it possible for
+a presentation system to alter the format of the quotation
+marks.
+</para>
+<para>
+Block quotations are properly identified as
+<sgmltag>BlockQuote</sgmltag>s.
+</para>
+
+<refsect2><title>Processing expectations</title>
+<para>
+&format.inline; The <sgmltag>Quote</sgmltag> element is expected to generate
+the proper quotation marks.  These may be influenced by the 
+<sgmltag class='attribute'>Lang</sgmltag> attribute on an ancestor element.
+For example,
+a quote in French might use &laquo;guillments&raquo; instead of
+English &ldquo;quote marks.&rdquo;
+</para>
+</refsect2>
+
+<refsect2 role='fu' revision="4.0"><title>&FutureChanges;</title>
+<para>
+<!--do not index this occurance-->
+&fu.interfacedefinition;
+</para>
+</refsect2>
+
+
+&quote.parents.gen;
+&quote.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>See Also</title>
+&quote.seealso.gen;
+</refsect1>
+<refsect1><title>Examples</title>
+
+<informalexample role="example-source">
+<programlisting>&quote.example.1.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.quote.1" role="HACK-ex.out.start"/>
+&quote.example.1.gen;
+<anchor id="ex.oe.quote.1" role="HACK-ex.out.end"/>
+
+&quote.example.seealso.gen;
+</refsect1>
+</refentry>
+

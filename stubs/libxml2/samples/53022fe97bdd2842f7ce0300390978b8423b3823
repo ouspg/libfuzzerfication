@@ -1,0 +1,65 @@
+<!DOCTYPE html
+  SYSTEM "mathml.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<pre>
+"("                                  form="prefix"  fence="true" stretchy="true"  lspace="0em" rspace="0em"
+")"                                  form="postfix" fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"["                                  form="prefix"  fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"]"                                  form="postfix" fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"{"                                  form="prefix"  fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"}"                                  form="postfix" fence="true" stretchy="true"  lspace="0em" rspace="0em"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&CloseCurlyDoubleQuote;"            form="postfix" fence="true"  lspace="0em" rspace="0em"
+"&CloseCurlyQuote;"                  form="postfix" fence="true"  lspace="0em" rspace="0em"
+"&LeftAngleBracket;"                 form="prefix"  fence="true" stretchy="true"  lspace="0em" rspace="0em""
+"&LeftCeiling;"                      form="prefix"  fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"&LeftDoubleBracket;"                form="prefix"  fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"&LeftFloor;"                        form="prefix"  fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"&OpenCurlyDoubleQuote;"             form="prefix"  fence="true"  lspace="0em" rspace="0em"
+"&OpenCurlyQuote;"                   form="prefix"  fence="true"  lspace="0em" rspace="0em"
+"&RightAngleBracket;"                form="postfix" fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"&RightCeiling;"                     form="postfix" fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"&RightDoubleBracket;"               form="postfix" fence="true" stretchy="true"  lspace="0em" rspace="0em"
+"&RightFloor;"                       form="postfix" fence="true" stretchy="true"  lspace="0em" rspace="0em"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&InvisibleComma;"                   form="infix"   separator="true"  lspace="0em" rspace="0em"
+&nbsp;&nbsp;&nbsp;&nbsp;
+","                                  form="infix"   separator="true"  lspace="0em" rspace="verythickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&HorizontalLine;"                   form="infix"   stretchy="true" minsize="0"  lspace="0em" rspace="0em"
+"&VerticalLine;"                     form="infix"   stretchy="true" minsize="0"  lspace="0em" rspace="0em"
+&nbsp;&nbsp;&nbsp;&nbsp;
+";"                                  form="infix"   separator="true"  lspace="0em" rspace="thickmathspace"
+";"                                  form="postfix" separator="true"  lspace="0em" rspace="0em"
+&nbsp;&nbsp;&nbsp;&nbsp;
+":="                                 form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+"&Assign;"                           form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&Because;"                          form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+"&Therefore;"                        form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&VerticalSeparator;"                form="infix"   stretchy="true"  lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"//"                                 form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&Colon;"                            form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&amp;"                              form="prefix"   lspace="0em" rspace="thickmathspace"
+"&amp;"                              form="postfix"  lspace="thickmathspace" rspace="0em"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"*="                                 form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+"-="                                 form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+"+="                                 form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+"/="                                 form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"-&gt;"                                 form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+":"                                  form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+".."                                 form="postfix"  lspace="mediummathspace" rspace="0em"
+"..."                                form="postfix"  lspace="mediummathspace" rspace="0em"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&SuchThat;"                         form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+&nbsp;&nbsp;&nbsp;&nbsp;
+"&DoubleLeftTee;"                    form="infix"    lspace="thickmathspace" rspace="thickmathspace"
+"&DoubleRightTee;"                   form="infix"    lspace="thickmathspace" rspace="t

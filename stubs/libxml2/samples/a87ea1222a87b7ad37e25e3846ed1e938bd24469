@@ -1,0 +1,10 @@
+<?xml version="0.0"?>
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ATTLIST root attr1346886437792751491287 CDATA #IMPLIED>
+<!ATTLIST root attr255 CDATA #IMPLIED>
+<!ENTITY withlt "have <lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan><lessthan> inside">
+<!ENTITY aIndirect "&withlt;">
+]>
+<root attr1="&aIndirect;"><root attr1="&aIndirect;"><root attr1="&aIndirect;"><root attr0="&aIndirect;"><rootoot attr1="&aIndirect;"><root attr2147483648="&aIndirect;">indirect reference to an entity with &lt; as part of its replacement text in Attribute</root></root></root></root></root><head>
+</head>

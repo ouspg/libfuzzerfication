@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>
+	<!-- overrides don't affect the red/green graph automatically.
+		 Add the following attributes to tweak it manually:
+			adjust-required-failures (adds to the total number of failures of required cases)
+			adjust-required-passes (adds to the total number of passes of required cases)
+			adjust-optional-failures (adds to the total number of failures of optional cases)
+			adjust-optional-passes (adds to the total number of passes of optional cases)
+		 For instance, when overriding a required testcase from failing to passing, add
+			adjust-required-failures='-1'
+			adjust-required-passes='1'
+		 When overriding an optional testcase from failing to not implemented, add
+			adjust-optional-failures='-1'
+	-->
+	<testcase id="test1247" client="IBM" server="IBM" result="" adjust-optional-failures="-1">
+		Optional feature not supported.
+	</testcase>
+	<testcase id="test1247" client="JBoss" server="IBM" result="" adjust-optional-failures="-1">
+		Optional feature not supported.
+	</testcase>
+	<testcase id="test1247" client="Microsoft" server="IBM" result="" adjust-optional-failures="-1">
+		Optional feature not supported.
+	</testcase>
+	<testcase id="test1247" client="Sun" server="IBM" result="" adjust-optional-failures="-1">
+		Optional feature not supported.
+	</testcase>
+</overrides>

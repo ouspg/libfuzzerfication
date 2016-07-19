@@ -1,0 +1,115 @@
+<refentry id="address.element">
+<?dbhtml filename="address.html"?>
+<refentryinfo>
+<pubdate>$Date: 2004/12/21 16:01:27 $</pubdate>
+<releaseinfo>$Revision: 1.1.1.1 $</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>elements</primary>
+<secondary>address</secondary></indexterm>
+<refentrytitle>address</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>address</refname>
+<refpurpose>&address.purpose;</refpurpose>
+</refnamediv>
+
+&address.synopsis.gen;
+<refsect1 condition='ref.description'><title>Description</title>
+
+<para>
+An address is generally a postal address, although it does contain
+elements for <sgmltag>FAX</sgmltag> and <sgmltag>Email</sgmltag> addresses as well 
+as the catch-all <sgmltag>OtherAddr</sgmltag>.
+</para>
+
+<para>
+The <sgmltag class='attvalue'>linespecific</sgmltag> notation on the <sgmltag
+class='attribute'>Format</sgmltag> attribute makes line breaks and other spaces
+significant in an <sgmltag>Address</sgmltag>.
+</para>
+
+<refsect2><title>Processing expectations</title>
+<para>
+&format.block; &pexp.linespecific;
+</para>
+</refsect2>
+
+<refsect2 role='fu' revision="5.0"><title>&FutureChanges;</title>
+<para>The <literal>xml:space</literal> attribute is automatically
+provided in the XML DTD.
+</para>
+</refsect2>
+
+
+&address.parents.gen;
+&address.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.attrdesc'><title>Attributes</title>
+<variablelist>
+<varlistentry><term>continuation</term>
+<listitem>
+<para revision="4.3">If <sgmltag class="attribute">continuation</sgmltag> is specified,
+it indicates how line numbering should begin relative to the
+immediately preceding <sgmltag>address</sgmltag>.
+<literal>Restarts</literal>, the default, indicates that numbering should begin
+again at 1. <literal>Continues</literal> indicates that numbering should begin
+where the preceding element left off.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>format</term>
+<listitem>
+<para>
+The <sgmltag class="attribute">format</sgmltag> attribute applies the 
+<literal>linespecific</literal> notation to all <sgmltag>address</sgmltag>es.
+All white space and line breaks must be preserved.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>linenumbering</term>
+<listitem>
+<para revision="4.0">Line numbering indicates whether or not the lines
+of an <sgmltag>Address</sgmltag> are to be automatically numbered. The details
+of numbering (every line or only selected lines, on the left or right, etc.)
+are left up to the processing application. Be aware that not all processors
+are capable of numbering lines.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>See Also</title>
+&address.seealso.gen;
+</refsect1>
+<refsect1><title>Examples</title>
+
+<informalexample role="example-source">
+<programlisting>&address.example.1.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.address.1" role="HACK-ex.out.start"/>
+&address.example.1.gen;
+<anchor id="ex.oe.address.1" role="HACK-ex.out.end"/>
+
+<informalexample role="example-source">
+<programlisting>&address.example.2.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.address.2" role="HACK-ex.out.start"/>
+&address.example.2.gen;
+<anchor id="ex.oe.address.2" role="HACK-ex.out.end"/>
+
+<informalexample role="example-source">
+<programlisting>&address.example.3.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.address.3" role="HACK-ex.out.start"/>
+&address.example.3.gen;
+<anchor id="ex.oe.address.3" role="HACK-ex.out.end"/>
+
+&address.example.seealso.gen;
+</refsect1>
+</refentry>
+

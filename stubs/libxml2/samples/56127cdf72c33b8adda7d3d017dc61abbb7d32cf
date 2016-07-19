@@ -1,0 +1,4 @@
+<foo:H3 xmlns:foo='urn:foo' xmlns:none='urn:none_01'>
+  <foo:AB/> <!-- xsd:element name="A" / -->
+  <none:AB/> <!-- xsd:any namespace="##any" minOccurs="0" / -->
+</foo:H3>

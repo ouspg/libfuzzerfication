@@ -1,0 +1,34 @@
+<!DOCTYPE results [
+<!ENTITY dom2-html-firefox_html SYSTEM 'dom2-html-firefox_html.xml'>
+<!ENTITY dom2-html-firefox_xhtml SYSTEM 'dom2-html-firefox_xhtml.xml'>
+<!ENTITY dom2-html-opera_html SYSTEM 'dom2-html-opera_html.xml'>
+<!ENTITY dom2-html-opera_xhtml SYSTEM 'dom2-html-opera_xhtml.xml'>
+<!ENTITY dom2-html-ie6_html SYSTEM 'dom2-html-ie6_html.xml'>
+]>
+<!--
+    Copyright © 2001-2005 World Wide Web Consortium, 
+    (Massachusetts Institute of Technology, European Research Consortium 
+    for Informatics and Mathematics, Keio University). All 
+    Rights Reserved. This work is distributed under the W3C® Software License [1] in the 
+    hope that it will be useful, but WITHOUT ANY WARRANTY; without even 
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+    
+    [1] http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+    -->
+<results>
+<implementation name="Firefox HTML">
+&dom2-html-firefox_html;
+</implementation>
+<implementation name="Firefox XHTML">
+  &dom2-html-firefox_xhtml;
+</implementation>
+<implementation name="Opera HTML">
+  &dom2-html-opera_html;
+</implementation>
+<implementation name="Opera XHTML">
+  &dom2-html-opera_xhtml;
+</implementation>
+<implementation name="Internet Explorer 6">
+  &dom2-html-ie6_html;
+</implementation>
+</results>

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE testsuite SYSTEM "http://www.w3.org/WAI/UA/TS/dtd/uaag-testsuite-2.dtd">
+
+
+<testsuite id="ts0909-headings">
+	
+	<metaInfo>
+		<testTitle>Heading navigation</testTitle>
+		<shortTitle>Structured heading navigation</shortTitle>		
+		<testElement>
+			<elementName>H*</elementName>
+			<hlink href="http://www.w3.org/TR/html4/struct/global.html#h-7.5.5">&hspec; H*</hlink>
+		</testElement>
+		<creator>Colin Koteles</creator>		
+		
+				
+		<metaElement></metaElement>
+		<testStyle></testStyle>
+	</metaInfo>
+	
+	<requirementInfo>
+		<checkpoints>
+			<checkpoint xref="tech-nav-structure">
+            <provisions>
+            	<provision xref="tech-nav-structure-1"/>
+					<provision xref="tech-nav-structure-2"/>				
+			   </provisions>
+         </checkpoint>
+		</checkpoints>
+	</requirementInfo>
+	
+	<content>
+		
+		
+		
+		<test section="1">
+			<procedure>
+				<list>
+					<item>Using the keyboard or an assistive technology that emulates the keyboard, navigate forward and backward through the headings on this page.</item>
+				</list>
+			</procedure>
+			<testCode>
+			   <h1 class="test-code">Heading level 1 - 1</h1>
+			  	<p>Non-heading text.</p>
+			  	<h1 class="test-code">Heading level 1 - 2</h1>
+			  	<p>Non-heading text.</p>
+			  	<h1 class="test-code">Heading level 1 - 3</h1>
+			  	<p>Non-heading text.</p> 
+			  	<h2 class="test-code">Heading level 2</h2>
+			  	<p>Non-heading text.</p>
+			  	<h3 class="test-code">Heading level 3</h3>
+			  	<p>Non-heading text.</p>
+			  	<h4 class="test-code">Heading level 4</h4>
+			  	<p>Non-heading text.</p>
+			  	<h5 class="test-code">Heading level 5</h5>
+			  	<p>Non-heading text.</p>
+			  	<h6 class="test-code">Heading level 6</h6>
+			  	<p>Non-heading text.</p>
+			  	<h1 class="test-code">Heading level 1 - 4</h1>
+			  	<p>Non-heading text.</p>      
+			</testCode>
+      	<exResults>
+				<list>
+					<item>The user should be able to navigate sequentially through the headings on this page while skipping non-structural text.</item>
+				   <item>The user can navigate both forward and backward through the headings.</item>
+				</list>
+			</exResults>
+			<source>
+				<div>
+				&lt;h1&gt;Heading level 1 - 1&lt;/h1&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/>
+			  	&lt;h1&gt;Heading level 1 - 2&lt;/h1&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/>
+			  	&lt;h1&gt;Heading level 1 - 3&lt;/h1&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/> 
+			  	&lt;h2&gt;Heading level 2&lt;/h2&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/>
+			  	&lt;h3&gt;Heading level 3&lt;/h3&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/>
+			  	&lt;h4&gt;Heading level 4&lt;/h4&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/>
+			  	&lt;h5&gt;Heading level 5&lt;/h5&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/>
+			  	&lt;h6&gt;Heading level 6&lt;/h6&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;<br/>
+			  	&lt;h1&gt;Heading level 1 - 4&lt;/h1&gt;<br/>
+			  	&lt;p&gt;Non-heading text.&lt;/p&gt;      
+				</div>
+			</source>
+		</test>
+						
+	</content>
+
+</testsuite>

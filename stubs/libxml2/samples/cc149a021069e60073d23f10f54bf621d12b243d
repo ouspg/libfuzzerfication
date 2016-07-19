@@ -1,0 +1,5 @@
+<eden a:abel="abel" m:adam="adam" e:eve="eve" c:cain="cain"
+      xmlns:a="http://abel.com/" 
+      xmlns:c="http://cain.com/" 
+      xmlns:m="http://adam.com/"
+      xmlns:e="http://eve.com/"/>

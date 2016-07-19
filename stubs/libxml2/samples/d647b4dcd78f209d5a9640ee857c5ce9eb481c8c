@@ -1,0 +1,63 @@
+<layout>
+    <setvar id="finished" value="0"/>
+
+    <coords value="0,0,640,960"/>
+    
+    <item id="splash">
+      <picture value="joyinn_splash"/>
+      <alpha value="1"/>
+      <opaque/>
+    </item>
+
+    <animation id="main">
+      
+<!--      
+    <item id="up">
+      <picture value="opener_oben"/>
+      <alpha value="1"/>
+    </item>
+    <item id="down">
+      <picture value="opener_unten"/>
+      <alpha value="1"/>
+    </item>
+      <interpolation value="sqr"/>
+      <item value="up">
+        <key value="0.0">
+          <position value="0,0"/>
+        </key>
+        <key value="1.5">
+          <position value="0,0"/>
+        </key>
+        <key value="1.0">
+          <position value="0,-482"/>
+        </key>
+        <key value="0.1">
+          <setvar id="finished" value="1"/>
+        </key>
+      </item>
+      <item value="down">
+        <key value="0.0">
+          <position value="0,292"/>
+        </key>
+        <key value="1.5">
+          <position value="0,292"/>
+        </key>
+        <key value="1.0">
+          <position value="0,960"/>
+        </key>
+      </item>
+-->    
+      <interpolation value="lerp"/>
+      <item value="splash">
+        <key value="0">
+          <alpha value="1"/>
+        </key>
+        <key value="0.5">
+          <alpha value="0"/>
+        </key>
+      </item>
+      
+    </animation>
+
+
+</layout>

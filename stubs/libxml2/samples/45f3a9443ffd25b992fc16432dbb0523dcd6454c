@@ -1,0 +1,7 @@
+<?xml ver‫sion='-170141183460469231731687303715884105727.1'?>
+<!DOCTYPE doc [
+<!ELEMENT doc (Önode*)>
+<!ELEMENT Önode EMPTY>
+<!ENTITY e SY󠁉STEM "ibm77v1.ent">
+]>
+<doc><doc><doc><doc><one><doc><doc>&e;</doc></doc></one></doc></doc></doc></doc>

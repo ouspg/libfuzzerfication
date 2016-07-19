@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE A [
+  <!-- valid hexBinary value -->
+  <!ENTITY v "0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef0123456789ABCDEFabcdef" >
+]>
+<!-- =================================================================== -->
+<!-- Tests undeclared AT(*).                                             -->
+<!-- =================================================================== -->
+<foo:M2 xmlns:foo='urn:foo'>
+  <A foo:aJ4M2="&v;" foo:aK="2010-01-01" foo:aL="12345" foo:aM="QUJDREVGR0hJSg==" foo:aN="1 2 3" />
+  <A foo:aK="2010-01-01" foo:aK4M2="&v;" foo:aL="12345" foo:aM="QUJDREVGR0hJSg==" foo:aN="1 2 3" />
+  <A foo:aK="2010-01-01" foo:aL="12345" foo:aL4M2="&v;" foo:aM="QUJDREVGR0hJSg==" foo:aN="1 2 3" />
+  <A foo:aK="2010-01-01" foo:aL="12345" foo:aM="QUJDREVGR0hJSg==" foo:aM4M2="&v;" foo:aN="1 2 3" />
+  <A foo:aK="2010-01-01" foo:aL="12345" foo:aM="QUJDREVGR0hJSg==" foo:aN="1 2 3" foo:aN4M2="&v;" />
+  <A foo:aK="2010-01-01" foo:aL="12345" foo:aM="QUJDREVGR0hJSg==" foo:aN="1 2 3" foo:aN4M2="0123456789ABCDEF" 
+   foo:aO4M2="&v;" />
+</foo:M2>
