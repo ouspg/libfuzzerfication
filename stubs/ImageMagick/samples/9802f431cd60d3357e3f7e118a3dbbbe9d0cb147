@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC
+	"-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Pberndt V4 - Bild Akane Tendo SW.jpg</title>
+		<link rel="stylesheet" title="standard style" href="/frontend/style.php" type="text/css" media="projection,screen" />
+		<link rel="stylesheet" title="standard style" href="/frontend/print.css" type="text/css" media="print" />
+		<script type="text/javascript" src="/frontend/prototype.js"></script>
+		<script type="text/javascript" src="/frontend/pberndt.js"></script>
+		<!-- <script type="text/javascript" src="/frontend/script.js"></script> -->
+		
+	</head>
+	<body>
+		<h1><span>Pberndt</span> V4</h1>
+		<p id="jumpInfo">
+			<a href="#contentBegin">Direkt zum Inhalt springen</a>
+		</p>
+		<ul id="menu">
+			<li><a href="/">Startseite</a>
+			<ul>
+				<li><a
