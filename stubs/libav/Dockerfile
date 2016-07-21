@@ -8,9 +8,8 @@ ENV TARGET "libav"
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y libavcodec-dev pkg-config && apt-get build-dep libavcodec-dev -y
 RUN cd /src && git clone git://git.libav.org/libav.git libav
-ADD libav_fuzzer.c /src/libav/
+ADD libav-fuzzer.c /src/libav/
 
-ADD libav_fuzzer.c /src/libav/
 RUN mkdir -p /work/libav/
 
 #Build

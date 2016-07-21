@@ -17,6 +17,6 @@ fi
 echo =========== MAKE
 make -j 16
 
-$CXX $CXXFLAGS -std=c++11 libxml2_fuzzer.cc \
+$CXX $CXXFLAGS -std=c++11 libxml2-fuzzer.cc \
                -Iinclude -L.libs -lxml2 -llzma -lFuzzer \
                -o /src/libxml2/libxml2-fuzzer
