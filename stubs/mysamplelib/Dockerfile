@@ -6,5 +6,5 @@ WORKDIR /src
 COPY build.sh dictionary.txt fuzzer.c mysamplelib.h mysamplelib.c /src/samplelib/
 
 WORKDIR /src/samplelib
-COPY corpus corpus/
+COPY samples samples/
 RUN ./build.sh
