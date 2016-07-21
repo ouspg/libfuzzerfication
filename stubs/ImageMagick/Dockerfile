@@ -1,6 +1,10 @@
 FROM ouspg/libfuzzer-base
 
-#Install dependencies and fetch the source.
+# Enviroment variables used by the fuzzer
+
+ENV TARGET "ImageMagick"
+
+# Install dependencies and fetch the source.
 
 RUN apt-get update && \
     apt-get upgrade -y && \
@@ -16,7 +20,7 @@ RUN cd /src && git clone https://github.com/ImageMagick/ImageMagick.git
 ADD ImageMagick_fuzzer.c /src/ImageMagick/
 RUN mkdir -p /work/ImageMagick/
 
-#Build
+# Build
 
 ADD build.sh /src/scripts/
 RUN bash /src/scripts/build.sh

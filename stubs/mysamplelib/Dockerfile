@@ -1,5 +1,9 @@
 FROM ouspg/libfuzzer-base
 
+# Enviroment variables used by the fuzzer
+
+ENV TARGET "mysamplelib"
+
 RUN apt-get update && apt-get upgrade -y
 
 WORKDIR /src

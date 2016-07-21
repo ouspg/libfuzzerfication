@@ -1,5 +1,9 @@
 FROM ouspg/libfuzzer-base
 
+# Enviroment variables used by the fuzzer
+
+ENV TARGET "libxslt"
+
 MAINTAINER https://github.com/ouspg/libfuzzerification
 
 RUN apt-get update && apt-get install -y liblzma-dev
