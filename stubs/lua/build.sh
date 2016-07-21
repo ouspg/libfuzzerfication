@@ -8,7 +8,7 @@ export CFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls -fPIC"
 export CC="clang"
 export LDFLAGS="-fsanitize=address -fsanitize-coverage=edge,indirect-calls"
 
-cd /src/${TARGET}-${TARGET_VERSION}
+cd /src/lua-5.3.3
 ls -la
 
 # build lua
