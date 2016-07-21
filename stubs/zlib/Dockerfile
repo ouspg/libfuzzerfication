@@ -1,5 +1,9 @@
 FROM ouspg/libfuzzer-base
 
+# Enviroment variables used by the fuzzer
+
+ENV TARGET "zlib"
+
 MAINTAINER https://github.com/ouspg/libfuzzerification
 ENV TARGET 'zlib'
 
