@@ -19,7 +19,7 @@ make install
 $CXX $CFLAGS -std=c++11 -I$(pwd) /usr/lib/libMagick*.so -lxml2 -lm -lpthread -lz -lX11 -lfontconfig \
             -lfreetype -llzma -fopenmp -lpng -ltiff -lXext -lrt -ljbig -ljpeg -lcairo -lpango-1.0 \
             -lgobject-2.0 -lbz2 -lpangocairo-1.0 -llcms2 -llqr-1 -lfftw3 -lltdl \
-            -lFuzzer -o ImageMagick_fuzzer ImageMagick_fuzzer.c
+            -lFuzzer -o ImageMagick-fuzzer ImageMagick-fuzzer.c
 
 #Ghostcript is annoying
 

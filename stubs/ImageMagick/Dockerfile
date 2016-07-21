@@ -17,7 +17,7 @@ RUN apt-get update && \
 
 RUN cd /src && git clone https://github.com/ImageMagick/ImageMagick.git
 
-ADD ImageMagick_fuzzer.c /src/ImageMagick/
+ADD ImageMagick-fuzzer.c /src/ImageMagick/
 RUN mkdir -p /work/ImageMagick/
 
 # Build
