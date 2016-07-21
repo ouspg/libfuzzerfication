@@ -1,7 +1,7 @@
 # libfuzzerfication
 LibFuzzerfication project uses libFuzzer for fuzzing popular applications and libraries.
 
-<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/doc/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action">
+<img src="https://raw.githubusercontent.com/ouspg/libfuzzerfication/master/doc/pictures/fuzzing_lua.gif" width="716" height="393" alt="Fuzzing in action">
 
 # About
 Purpose of fuzzing is to automatically generate lots of test input and to make code crash and increase code coverage. [libFuzzer](http://llvm.org/docs/LibFuzzer.html) is a library for in-process, coverage-guided evolutionary fuzzing of other libraries. It is similiar to [American Fuzzy Lop (AFL)](http://lcamtuf.coredump.cx/afl/) but performs fuzzing inside single process and is much faster.
