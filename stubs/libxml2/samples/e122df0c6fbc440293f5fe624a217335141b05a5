@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet type="text/xsl" href="rainfall.xsl"?>
-<data
-	system="http://alert.udfcd.org/"
-	connection="cgi-bin/reportgen.new?"
-	templet_file="TPT=/usr/FSL/xml_rain.tpt"
-	config_file="&amp;CFG=/usr/FSL/fslrain.cfg"
-	time_file="&amp;TIM=/usr/FSL/xml_raintime.cfg"
-	historic="&amp;YE=&amp;ME=&amp;DE=&amp;HE=" />

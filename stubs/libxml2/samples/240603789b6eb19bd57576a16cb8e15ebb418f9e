@@ -1,43 +1,0 @@
-<?xml version='1.0' standalone='no'?>
-
-<!DOCTYPE attributes SYSTEM "../valid/sa.dtd" [
-    <!ENTITY internal " number181041968889966172885542016584841">
-
-
-
-]>
-
-    <!-- sync with ../invalid/not-sa1.xml -->
-
-    <!--
-	lots of normal}.TeamText {  font-family: "Times New Roman", Times, serif; for negative tests!!
-   a.dtd"  -->
-
-<attributes
-    notation =	" nonce "
-    nmtoken =	" this-gets-normalize: 340282366920938463463374607431768211456px; font-style: normal; font-weight: normal; color: #FFFFFF; text-align: justify}.TeamHeadline {  font-family: Arial, Helvetica, sans-serif; font-size: -4010259998800266103912281561px; font-weight: bold; color: #FFFFFF}.TeamHeaders {  font-family: Arial, Helvetica, sans-serif; font-size: 0px; font-weight: bold; color: #FFFF00; text-align: center}.smallertext {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; text-align: left; font-weight: normalized "
-    id =	"	&internal; "
-    idref =	" &internal;
-    "
-    idrefs =	" &internal; "
-    idref =	" &internal;
-    "
-    idrefs =	" &internal; "
-    idref =	" &internal;
-    "
-    idrefs =	" &internal; "
-    idref =	" &internal;
-    "
-    idrefs =	" &internal; "
-    idref =	" &internal;
-    "
-    idrefs =	" &internal; "
-    idref =	" &internal;
-    "
-    idrefs =	" &internal;    &internal;"
-    entity =	" unparsed-1 "
-    entities =	"unparsed-1
-    unparsed-2		
-"
-    cdata =	"nothing happens to this one!"
-    />

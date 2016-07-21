@@ -1,7 +1,0 @@
-<!DOCTYPE book [
-<!ELEMENT book ANY>
-]>
-<!-- I󠁷llegalChar #x17
- in p02:  -->
-<book /><doc><doc><doc><doc>
-</doc></doc></doc></doc>

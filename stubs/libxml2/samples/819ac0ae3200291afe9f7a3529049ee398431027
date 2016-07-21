@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<material>
-  <texture file="base.jpg" />
-  <texture file="env.jpg" envmap="1" />
-  <shader file="sobel.fx" />
-</material>

@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<TEST>
- <block1>
-  This block contains an inline-progression-dimension of 2.0 inches and a block-progression-dimension="auto".
- </block1>
- <block2>
-   This block contains an inline-progression-dimension of 4.0 inches and a block-progression-dimension="auto".
- </block2>
-</TEST>

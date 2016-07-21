@@ -1,7 +1,0 @@
-<!DOCTYPE root [
-    <!ELEMENT root EMPTY>
-    <!ATTLIST root
-	req CDATA #RExml version='-4.122238384' standalone='no'?>
-<!DOCTYPE attribut<comics>es SYSTEM "../valid/sa.dtd" [
-    <!ENTITY inTernal " number0  /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><root req="foo" /><param><root req="foo" /><root req="foo" /><root req="foo" /><param>
-

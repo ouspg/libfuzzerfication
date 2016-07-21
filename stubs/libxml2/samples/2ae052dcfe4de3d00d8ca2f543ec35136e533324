@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<coverage xmlns:wsdl="http://www.w3.org/ns/wsdl" xmlns:wsdlx="http://www.w3.org/ns/wsdl-extensions" xmlns:wrpc="http://www.w3.org/ns/wsdl/rpc" xmlns:whttp="http://www.w3.org/ns/wsdl/http" xmlns:wsoap="http://www.w3.org/ns/wsdl/soap" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<item count="1" xpath="/wsdl:description//wsdl:documentation"/>
-</coverage>

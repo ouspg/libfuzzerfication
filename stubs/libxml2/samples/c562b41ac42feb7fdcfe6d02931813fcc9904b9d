@@ -1,47 +1,0 @@
-<?xml version='1.0' standalone document declaration has the value "yes", there is an 
- external markup declaration of element with a element only content type, and 
- white space occurs directly within the mixed content.
--->
-<animal><animal><animal><animal><animal><animal><animal><a><a><a>This is a 
-
-yellow tiger</a></a></a> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal><animal><animal><a><a><a>This is a 
-
-yellow tiger</a></a></a> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal><animal><animal><a><a><a>This is a 
-
-yellow tiger</a></a><mixed3 /><a><a>This is a 
-
-yellow tiger</a></a></a> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal><animal><animal><a><a><a>This is a 
-
-yellow tiger</a></a></a> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal /><animal /><animal />
-ê</animal><animal><animal><a><a><a>This is a 
-
-yellow tiger</a></a></a> <b/[
-<c /><c /><animal /><root />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><animal />
-ê</animal> <b/[
-<c /><c /><c /><animal />
-ê</animal><b battr0="def" /><desc><path />

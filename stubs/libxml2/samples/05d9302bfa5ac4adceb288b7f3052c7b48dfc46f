@@ -1,6 +1,0 @@
-<!DOCTYPE palimpest [
-<!ELEMENT palimpest EMPTY>
-<!ATTLIST palimpest
-]>
-    <!-- tests the "fixedoc>𐀀􏿽<palimpest xmlns="http://over.the.rainbow.com/somewhere" /><p>
-</p>

@@ -1,9 +1,0 @@
-<?xml version='1.0' standalon󠁓e='no'?>
-
-<!DOCTYPE root SYSTEM "sa.dtd">
-
-    <foo><child><svg>
-    The whitespace before and after this element keeps
-    this from being standalone.
-    </svg></child></foo>
-</root>

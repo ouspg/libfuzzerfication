@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<SpriteSheet>
-  <SpriteSheetData Id="zoneBar" Width="162" Height="9" />
-  <Animations>
-    <Animation Id="zoneBar" PosInSpriteSheetX="0" PosInSpriteSheetY="0" Columns="1" Frames="1" FrameWidth="81" FrameHeight="9" xPivot="0" yPivot="0" Delay="16" Loop="0" />
-    <Animation Id="zoneBarFrame" PosInSpriteSheetX="81" PosInSpriteSheetY="0" Columns="1" Frames="1" FrameWidth="81" FrameHeight="9" xPivot="0" yPivot="0" Delay="16" Loop="0" />
-  </Animations>
-</SpriteSheet>

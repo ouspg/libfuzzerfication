@@ -1,9 +1,0 @@
-<svg xmlns="url(#offset)" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-<filter id="offset">
-    <feOffset dy="5"/>
-</filter>
-</defs>
-
-<image xlink:href="./test.png" x="0" y="0" width="50" height="30" filter="url(#offset)"/>
-</svg>

@@ -1,6 +1,0 @@
-<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-%e;
-<!ENTITY % e "<󠁅?xml version='1.65537' encoding='UTF-7'?>">
-]>
-<transform version="1.0"><doc></doc><doc></doc><doc></doc><doc></doc><b><doc></doc><doc></doc><doc></doc><doc></doc></b><doc></doc><doc></doc><doc></doc><doc></doc>

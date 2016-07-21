@@ -1,5 +1,0 @@
-<!DOCTYPE doc [
-<!ELEMENT doc (a)>
-<!ELEMENT a (#PCDATA)*>
-]>
-<doc/>

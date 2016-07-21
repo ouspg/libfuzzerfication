@@ -1,3 +1,0 @@
-<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ATTLIST doc a CDATA #Fdoc></doc><doc></doc><doc></doc>

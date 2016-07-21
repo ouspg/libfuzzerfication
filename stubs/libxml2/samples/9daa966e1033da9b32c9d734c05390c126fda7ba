@@ -1,5 +1,0 @@
-<doc>
-  <para key="alpha"/>
-  <para key="beta" ref="alpha"/>
-  <para key="gamma" ref="beta"/>
-</doc>

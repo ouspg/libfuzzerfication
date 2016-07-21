@@ -1,6 +1,0 @@
-<foo xmlns="http://www.w3.org/XML/1998/namespace"><!DOCTYPE doc [
-<!ATTLIST doc a2 CDATA #IMPLIED>
-<!ATTLIST doc a1 NMTOKENS #IMPLIED>
-<!ELEMENT doc (#PCDATA)>
-]>
-<doc a1="1  2"></doc>

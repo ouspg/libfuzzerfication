@@ -1,6 +1,0 @@
-<!DOCTYPE chapter [
-<!ATTLIST chapter   id       ID    #IMPLIED>
-]>
-<chapter id="chap1">
-It was a dark and stormy night.
-</chapter>

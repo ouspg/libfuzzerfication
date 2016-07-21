@@ -1,6 +1,0 @@
-<!-- Defult values for enumerated attributes must match one f the enumerated values. -->
-<!DOCTYPE foo [
-<!ELEMENT foo EMPTY>
-<!ATTLIST foo a (one|tvo|three) "four">
-]>
-<foo a="oneUà

@@ -1,5 +1,0 @@
-<!DOCTYPE doc [
-
-<!ENTITY foo "&bar;">
-]>
-<doc a="v"></doc>
