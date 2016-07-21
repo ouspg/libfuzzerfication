@@ -1,4 +1,0 @@
-<foo:F xmlns:foo='urn:foo'
-  foo:aA="" >
-  <foo:AB/>
-</foo:F>

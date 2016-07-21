@@ -1,9 +1,0 @@
-<E4>
-  <!-- sequence particle of (minOccurs,maxOccurs) = (2,5) -->
-  <A/><A/><B/><C/><B/><C/>
-  <A/><A/><B/><C/><B/><C/>
-  <A/><A/><B/><C/><B/><C/>
-  <A/><A/><B/><C/><B/><C/>
-  <A/><A/><B/><C/><B/><C/>
-  <D/>
-</E4>

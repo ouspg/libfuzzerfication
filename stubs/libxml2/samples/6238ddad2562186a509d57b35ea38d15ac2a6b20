@@ -1,3 +1,0 @@
-<driverGroup xmlns="http://www.sun.com/japex/testSuite" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="../../../../drivers/">
-    <xi:include href="sax/exificient-iot.xml"/>
-</driverGroup>

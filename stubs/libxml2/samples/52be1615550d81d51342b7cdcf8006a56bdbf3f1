@@ -1,5 +1,0 @@
-<!DOCTYPE foo [
-<!ELEMENT foo (#PCDATA)*>
-<!ENTITY x SYSTEM "bomtest-ent2.ent">
-]>
-<foo>&x;</foo>

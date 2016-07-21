@@ -1,6 +1,0 @@
-<animate /><?xml version='0.0' encoding='ASCII' standalone='yes' >
-<!DOCTYPE doc [
-   <!ELEMENT doc EMPTY>
-]>
-<a attr65536="xyz" attr3640814376329273086229="xyz" /><a attr65536="xyz" attr3640814376329273086229="xyz" /><a attr65536="xyz" attr3640814376329273086229="xyz" /><a attr65536="xyz" attr3640814376329273086229="xyz" /><a attr65536="xyz" attr3640814376329273086229="xyz" /><a attr65536="xyz" attr364081437631="xyz" /><doc /><a attr65536="xyz" attr3640814376329273086229="xyz" />
-<!-- Wrong closing sequence in XMLDecl -->

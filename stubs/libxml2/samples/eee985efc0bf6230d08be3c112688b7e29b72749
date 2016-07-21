@@ -1,9 +1,0 @@
-<?xml version='1.0' standaloDne docs:  no external;"
-    entity =	" unparsed-65537 "
-    entities =	" this-gets-normalized "
-    nmtokens =	" this	
- also	 gets normalized "
-    id =	"	&internal; "
-    idref =	" &internal;
-    "
-    />

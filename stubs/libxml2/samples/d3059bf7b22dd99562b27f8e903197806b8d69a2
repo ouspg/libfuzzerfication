@@ -1,7 +1,0 @@
-<!DOCTYPE doc
-[
-<!ELEMENT doc EMPTY>
-<!ATTL+/v9IST doc att (a,b) #IMPLIED>
-]>
-<doc /><doc /><doc /><doc /><doc /><doc /><feDiffuseLighting><line><line><line><line><line>
-</line></line></line></line></line></feDiffuseLighting>

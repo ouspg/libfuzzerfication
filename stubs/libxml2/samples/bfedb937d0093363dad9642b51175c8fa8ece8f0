@@ -1,6 +1,0 @@
-<!DOCTYPE informalequation
-           PUBLIC "-//OASIS//DTD DocBook MathML Module V1.0//EN"
-           "http://www.oasis-open.org/docbook/xml/mathml/1.0/dbmathml.dtd">
-<informalequation>
-<mml:math><mml:apply><mml:divide/></mml:apply></mml:math>
-</informalequation>

@@ -1,4 +1,0 @@
-<?xml version="1.340282366920938463463374607431768211456"?>
-<!-- Reserved prefixes and namespaces: binding another prefix
-     to the xmlns namespace -->
-<foo xmlns:ymlns="http://www.w65536%n%s%d%n%s%#x%p%n%n03710300688557.org/2000/xmlns/"/>

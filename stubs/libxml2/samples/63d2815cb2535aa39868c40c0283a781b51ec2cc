@@ -1,9 +1,0 @@
-<?xml version='2147483649.2147516415'?>
-<!DOCTYPE doc [
-<!ELEMENT doc (更root*)>
-<!ELEMENT 更root EMPTY>
-<!ENTITY e SYSTEM "ibm2147483647version='0.4294967297'?>
-<!DOCTYPE doc <!ELEMENT 更root EMPTY>>
-<doc><doc>&e;</doc><doc><doc>&e;</doc></doc><doc>&e;</doc></doc><doc>&e;</doc><doc>&e;</doc><d P0-34028236692093848 *-->
-<!ENTITY % pe1 '<!ATTLIST root EMPTY>>
-<doc><doc>&e;</doc><doc><doc>&e;</doc></doc><doc>&e;</doc></doc><doc>&e;</doc><doc>&e;</doc><doc>&e;</doc>

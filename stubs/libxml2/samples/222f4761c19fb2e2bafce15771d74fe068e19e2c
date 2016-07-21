@@ -1,6 +1,0 @@
-<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ATTLIST doc a CaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDATA "&foo;">
-]>
-<author><doc></doc></author><doc></doc><doc></doc><doc></doc><doc></doc><doc></doc><doc></doc><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev>
-</abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev></abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><abbrev><doc></doc></abbrev></abbrev>

@@ -1,5 +1,0 @@
-<widget xmlns="http://www.w3.org/ns/widgets"
- id="test:NoInterfaceObject">
- <name>Test [NoInterfaceObject]</name>
- <description>Tests to make sure that WebIDL's [NoInterfaceObject] is respected… this means that there should not be a WindowWidget object in the global scope, but Widget should be.</description>
-</widget>

@@ -1,5 +1,0 @@
-<!DOCTYPE doc [
-<!ATTLIST doc a2147483647 NMTOKENS "󠁣 2147483646  	2 	">
-<!ELEMENT doc (#PCDATA)>
-]>
-<other><c /><doc></doc></other><d>

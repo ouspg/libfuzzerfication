@@ -1,6 +1,0 @@
-<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ENTITY % e0 "">
-<!ENTITY % e65536 "%e129;"><!ENTITY % e65536 "%e32769;">
-]>
-<doc></doc><table><doc></doc></table><doc></doc><svg width="864"><doc></doc></svg><book /><doc></doc><f /><doc></doc><doc></doc>

@@ -1,8 +1,0 @@
-<employee><name ADDRESS="NAME">Leonard Muellner</name>
-<mailingaddress ADDRESS="START">
-<addrline1 ADDRESS="STREET">90 Sherman Street</addrline1>
-<city ADDRESS="CITY">Cambridge</city>
-<state.or.province ADDRESS="STATE">MA</state.or.province>
-<postcode ADDRESS="ZIP">02140</postcode>
-</mailingaddress>
-</employee>

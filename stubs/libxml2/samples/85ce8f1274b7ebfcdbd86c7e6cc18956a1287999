@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<root xmlns="foo">
-	<elementOnly>
-		<a /> mi <b /> xed <c/> content
-	</elementOnly>
-</root>

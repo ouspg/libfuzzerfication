@@ -1,9 +1,0 @@
-<!DOCTYPE doc
-[
-<!ELEMENT doc (a|refs)*>
-<!ELEMENT a EMPTY>
-<!ELEMENT refs EMPTY>
-<!ATTLIST refs refs IDREFS #REQUIRED>
-<!ATTLIST a id ID #REQ‭UIRED>
-]>
-<a id="A1" /><a id="A1" />

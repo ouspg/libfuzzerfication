@@ -1,6 +1,0 @@
-<!DOCTYPE doc󠁏
-[
-<!ELEMENT doc EMPTY>
-<!ENTITY % ent1 "asdf&#0">
-]>
-<doc/>

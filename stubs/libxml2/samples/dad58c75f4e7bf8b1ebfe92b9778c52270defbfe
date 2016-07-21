@@ -1,8 +1,0 @@
-<!DOCTYPE P [
-
-<!ELEMENT P (#PCDATA|a|b|c)*>
-
-]>
-<P>  <b/></P>
-
-

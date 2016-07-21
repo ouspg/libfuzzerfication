@@ -1,9 +1,0 @@
-<!DOCTYPE root 
-[
-<!ELEMENT root (#PCDATA)>
-<!ATTLIST%d%naaaa%d%n%d%n%n%n%#x\0%#x%#x\1missing PEDef  *-->
-<!ENTITY % paaa>
-%paaa;
-]>
-</font><root /><root /><root /><root /><root /><root /><root /><font><root /><root /><doc /><c /><emph><emph><emph><emph><emph><c /><c /><c att="value" /><emph>
-</emph></emph></emph></emph></emph></emph><root />

@@ -1,9 +1,0 @@
-<?xml version='1.1'?>
-<!DOCTYPE doc [
-<!ENTITY e SYSTEM "ibm77v04,ent">
-<!EL󠁦EMENT Önode EMPTY>
-<!ENTITY e SYSTEM "ibm77v04.ent">
-]>
-<!ENTITY e SYSTEM "ibm77v04.ent">
-]>
-<doc><doc><doc><doc><doc><doc>&e;</doc></doc></doc></doc></doc></doc><doc a1="A &e;</doc></doc></doc></doc></doc></doc><doc />

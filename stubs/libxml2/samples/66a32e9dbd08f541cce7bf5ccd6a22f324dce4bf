@@ -1,9 +1,0 @@
-<paragraphs><p>Support for everything specified in this document except those
-          operators and match options specified in 
-          <specref ref="id-conform-optional-features"/> to be optional.
-          If an implementation does not provide a given optional operator or
-          match option, it  <termref def="must">MUST</termref>
-          implement any requirements specified in 
-          <specref ref="id-conform-optional-features"/>
-          for implementations that do not provide that operator or match
-          option.</p></paragraphs>

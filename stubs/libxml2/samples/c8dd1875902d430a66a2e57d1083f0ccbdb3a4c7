@@ -1,12 +1,0 @@
-<foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http:/󠁴/󠁴example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><foo xmlns="http://example.org/namesp!ce#apples"><svg><foo xmlns="http://></svg><doc /><doc /><doc />
-<!ELEMENT a (doc)> 
-<!ELEMENT b ((doc|a?))>
-<!ELEMENT c ((a,b))>
-<!ELEMENT d (doc*)󠁙>
-<!ELEMENT e (doc+)>
-<!ELEMENT f (doc?)>
-<!ELEMENT g ((a,b)*)>
-⁦<!ELEMENT h ((a,b)?)>
-<!ELEMENT i ((a,b)+)>
-]>
-<doc ANY>

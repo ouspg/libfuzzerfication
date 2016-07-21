@@ -1,7 +1,0 @@
-<wsp:Policy xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:x="http://example.org/policy-test">
-   <x:Logging>
-    <wsp:Policy>
-       <x:Notify  wsp:Ignorable='true'/>    
-    </wsp:Policy>
-  </x:Logging>
-</wsp:Policy>
