@@ -1,4 +1,0 @@
-explain shortly about project
-
-pull image from dockerhub
-docker pull ouspg/libfuzzer-base
