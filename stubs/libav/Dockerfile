@@ -19,7 +19,7 @@ RUN bash /src/scripts/build.sh
 
 #Execute default commands
 ENTRYPOINT ["/src/scripts/fuzz.sh"]
-CMD ["/src/libav/libav_fuzzer",\
+CMD ["/src/libav/libav-fuzzer",\
      "-rss_limit_mb=4096",\
      "-detect_leaks=0",\
      "-exact_artifact_path=/dev/shm/repro-file",\
