@@ -17,4 +17,4 @@ make install
 #Build fuzzer
 $CXX $CFLAGS -std=c++11 -I$(pwd) $(pwd)/libavutil/*.so -lz -lvdpau -lX11  \
              -lFuzzer $(pwd)/libavcodec/*.o $(pwd)/libavresample/*.o \
-             -o libav_fuzzer libav_fuzzer.c
+             -o libav-fuzzer libav-fuzzer.c

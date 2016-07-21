@@ -16,7 +16,7 @@ the coverage guided fuzzing.
 What is included?
 
  * [`samplelib`](samplelib.c)-library with `mysamplefunction()`-function as test target
- * [`fuzzer`](fuzzer.c)-stub to act as the interface between the `libfuzzer` and the test target
+ * [`mysamplelib-fuzzer`](mysamplelib-fuzzer.c)-stub to act as the interface between the `libfuzzer` and the test target
  * [`build.sh`](build.sh)-script to build the library, and the stub and to link them with the fuzzer
  * [`dictionary.txt`](dictionary.txt)-file as a sample dictionary for dictionary aided fuzzing strategy
  * [`samples/`](samples/)-directory as a sample corpus for the corpus aided fuzzing strategy
