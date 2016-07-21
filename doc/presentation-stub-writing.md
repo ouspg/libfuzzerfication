@@ -71,7 +71,7 @@ Then you can start developing:
 Then you can implement a fuzzing target function that accepts a sequence of bytes, like this:
 
 ```
-// libxml2_fuzzer.cc
+// libxml2-fuzzer.cc
 #include "libxml/parser.h"
 void ignore(void *ctx, const char *msg, ...) {
   // Error handler to avoid spam of error messages from libxml parser.

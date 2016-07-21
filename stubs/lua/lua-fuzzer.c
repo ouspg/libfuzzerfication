@@ -1,5 +1,5 @@
 /*
- * lua_fuzzer.c
+ * lua-fuzzer.c
  * libfuzzer stub for fuzzing LUA
  */
 #include <stdint.h>
