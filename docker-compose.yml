@@ -20,7 +20,7 @@ services:
       image: ouspg/libfuzzer-imagemagick
       volumes:
         - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
+        #- ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       environment:
