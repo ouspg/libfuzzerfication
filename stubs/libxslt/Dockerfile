@@ -12,7 +12,7 @@ RUN cd /src && git clone git://git.gnome.org/libxslt
 
 RUN export LD_LIBRARY_PATH="/src/libxslt/libxslt/.libs/"
 
-ADD samples.tar /srv/fuzzer
+#ADD samples.tar /srv/fuzzer
 
 ADD libxslt-fuzzer.cc /src/libxslt/
 #ADD xslt.dict /src/libxslt/
