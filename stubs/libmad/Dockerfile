@@ -11,7 +11,7 @@ RUN apt-get update && apt-get build-dep libmad0 -y
 #Download source, extract and remove downloaded files.
 RUN mkdir -p /src/ && cd /src/ && apt-get source libmad0 && ls -p | grep -v / | xargs rm
 
-ADD samples.tar /srv/fuzzer
+#ADD samples.tar /srv/fuzzer
 
 #Copy stub
 ADD libmad-fuzzer.c /src/libmad-0.15.1b/

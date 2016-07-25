@@ -20,7 +20,7 @@ RUN cd /src && git clone https://github.com/ImageMagick/ImageMagick.git
 ADD ImageMagick-fuzzer.c /src/ImageMagick/
 RUN mkdir -p /work/ImageMagick/
 
-ADD samples.tar /srv/fuzzer
+#ADD samples.tar /srv/fuzzer
 
 # Build
 
