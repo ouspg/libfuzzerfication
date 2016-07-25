@@ -39,8 +39,8 @@ Optional features are: 8bit-counters,trace-cmp,indirect-calls
 You can start writing stubs without docker.
 
 # Getting started
-* You can get started by reading our [Getting started tutorial](https://github.com/ouspg/libfuzzerfication/tree/master/docker)
-* See example: [mysamplelib](https://github.com/ouspg/libfuzzerfication/tree/master/docker/stubs/mysamplelib)
+* You can get started by reading our [Getting started tutorial](https://github.com/ouspg/libfuzzerfication/blob/master/GETTING-STARTED.md)
+* See example: [mysamplelib](https://github.com/ouspg/libfuzzerfication/tree/master/stubs/mysamplelib)
 
 # Requirements
 * [docker-machine version 0.7.0](https://docs.docker.com/machine/)
