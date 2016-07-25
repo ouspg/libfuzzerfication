@@ -46,7 +46,7 @@ services:
       mem_limit: 4g
       volumes:
           - ~/results/:/srv/fuzzer/results/
-          #- ~/samples/:/srv/fuzzer/samples/
+          - ~/samples/:/srv/fuzzer/samples/
       environment:
           LD_LIBRARY_PATH: "/src/libxml2/.libs/"
       command: [
@@ -69,7 +69,7 @@ services:
       mem_limit: 4g
       volumes:
           - ~/results/:/srv/fuzzer/results/
-          #- ~/samples/:/srv/fuzzer/samples/
+          - ~/samples/:/srv/fuzzer/samples/
       environment:
           LD_LIBRARY_PATH: "/src/libxslt/libxslt/.libs/"
       command: [
