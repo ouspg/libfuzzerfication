@@ -1,6 +1,6 @@
 # Libfuzzer for Haskell libraries
 
-Libfuzzer stubb should be in test.hs and then:
+Libfuzzer stub should be in test.hs and then:
 
 ```
 # cd /src
