@@ -95,8 +95,8 @@ function parse_timeout_trace {
 
 # TODO: handle $TARGET env with a cleaner solution
 
-TARGET_FULL=$1
-TARGET=$(basename $1)
+#TARGET_FULL=$1
+#TARGET=$(basename $1)
 echo "Target: $TARGET"
 
 export ASAN_SYMBOLIZER_PATH='/usr/lib/llvm-3.8/bin/llvm-symbolizer'
