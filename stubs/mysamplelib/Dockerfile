@@ -7,7 +7,7 @@ ENV TARGET "mysamplelib"
 RUN apt-get update && apt-get upgrade -y
 
 WORKDIR /src
-COPY build.sh dictionary.txt mysamplelib-fuzzer.c mysamplelib.h mysamplelib.c /src/samplelib/
+COPY build.sh dictionary.txt fuzzer.c mysamplelib.h mysamplelib.c /src/samplelib/
 
 WORKDIR /src/samplelib
 COPY samples samples/
