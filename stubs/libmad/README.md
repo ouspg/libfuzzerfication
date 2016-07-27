@@ -4,6 +4,13 @@
 
 Libmad is MPEG audio decoder library. Libmad can be used to minimize mp3-sample collection but it cannot be currently used for fuzzing libmad because it's not currenlty in active development.
 
+What is included?
+
+ * [`libmad-fuzzer.c`](libmad-fuzzer.c)-stub to act as the interface between the `libfuzzer` and the test target
+ * [`build.sh`](build.sh)-script to build the library, and the stub and to link them with the fuzzer
+ * [`Dockerfile`](Dockerfile) to automate build of Docker image
+ * [`Samples`](samples.tar.gz) to provide sample files to get started with
+
 # Building
 
 ## Building container

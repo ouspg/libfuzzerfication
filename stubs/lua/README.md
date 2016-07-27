@@ -4,6 +4,13 @@
 
 Lua is a lightweight, embeddable scripting language. The fuzzer loads lua libraries and the file that has lua script that we're going to run and runs the script.
 
+What is included?
+
+* [`lua-fuzzer.c`](lua-fuzzer.c)-stub to act as the interface between the `libfuzzer` and the test target
+* [`build.sh`](build.sh)-script to build the library, and the stub and to link them with the fuzzer
+* [`Dockerfile`](Dockerfile) to automate build of Docker image
+* [`Samples`](samples/) to provide sample file to get started with
+
 # Building
 
 ## Building container
