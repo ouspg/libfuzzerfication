@@ -9,4 +9,18 @@ See presentation [Fuzzing beyond C](https://github.com/ouspg/libfuzzerfication/b
 
 # Building
 
+```console
+docker-compose build haskell-x509
+```
+
 # Running
+
+```console
+docker-compose run haskell-x509
+```
+
+Inside contaner:
+
+```console
+./test
+```
