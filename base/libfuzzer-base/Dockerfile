@@ -1,5 +1,7 @@
 FROM ubuntu:16.04
 
+# Get upgrades and install clang and nodejs
+
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git clang nodejs && \
@@ -23,7 +25,6 @@ RUN mkdir /src /work && \
     mv libFuzzer.a /usr/local/lib && \
     rm *.o && \
     rm -rf Fuzzer
-
 
 # Checkout minimizer
 
