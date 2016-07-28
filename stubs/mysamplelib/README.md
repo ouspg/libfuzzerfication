@@ -113,7 +113,7 @@ INFO: A corpus is not provided, starting from an empty corpus
 ## Coverage guided fuzzing with corpus (samples)
 
 ```console
-$ ./fuzzer -seed=2016 corpus | wc -l
+$ ./fuzzer -seed=2016 | wc -l
 INFO: Seed: 2016
 INFO: -max_len is not provided, using 64
 ...
