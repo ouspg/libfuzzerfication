@@ -14,7 +14,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-
 RUN cd /src && git clone https://github.com/ImageMagick/ImageMagick.git
 
 ADD ImageMagick-fuzzer.c /src/ImageMagick/
@@ -24,7 +23,3 @@ RUN mkdir -p /work/ImageMagick/
 
 ADD build.sh /src/scripts/
 RUN bash /src/scripts/build.sh
-
-#Entrypoint and default args
-#ENTRYPOINT /src/scripts/fuzz.sh
-#CMD ['/samples/libfuzzer-imagemagick']
