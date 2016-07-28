@@ -13,7 +13,6 @@ extern "C" {
 #define AUDIO_INBUF_SIZE 20480
 #define AUDIO_REFILL_THRESH 4096
 
-
 //TODO: Remove extra check etc.
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
     avcodec_register_all();
@@ -23,7 +22,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
     int len;
     AVPacket avpkt;
     AVFrame *decoded_frame = NULL;
-    //printf("New file.\n");
 
     av_init_packet(&avpkt);
 

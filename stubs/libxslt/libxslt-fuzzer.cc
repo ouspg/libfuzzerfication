@@ -51,143 +51,143 @@ static int html = 0;
 static int errorno = 0;
 
 void ignore(void *ctx, const char *msg, ...) {
-  // Error handler to avoid spam of error messages from libxml parser.
+    // Error handler to avoid spam of error messages from libxml parser.
 }
 
 void xsltProcess(xmlDocPtr doc, xsltStylesheetPtr cur) {
-  xmlDocPtr res;
-  xsltTransformContextPtr ctxt;
+    xmlDocPtr res;
+    xsltTransformContextPtr ctxt;
 
-  ctxt = xsltNewTransformContext(cur, doc);
-  if (ctxt == NULL)
-    return;
-  xsltSetCtxtParseOptions(ctxt, options);
-  res = xsltApplyStylesheetUser(cur, doc, params, NULL,
-				NULL, ctxt);
+    ctxt = xsltNewTransformContext(cur, doc);
+    if (ctxt == NULL)
+        return;
+    xsltSetCtxtParseOptions(ctxt, options);
+    res = xsltApplyStylesheetUser(cur, doc, params, NULL,
+                NULL, ctxt);
 
-  if (ctxt->state == XSLT_STATE_ERROR)
+    if (ctxt->state == XSLT_STATE_ERROR)
     errorno = 9;
-  else if (ctxt->state == XSLT_STATE_STOPPED)
+    else if (ctxt->state == XSLT_STATE_STOPPED)
     errorno = 10;
 
-  xsltFreeTransformContext(ctxt);
-  xmlFreeDoc(doc);
-  if (res == NULL) {
+    xsltFreeTransformContext(ctxt);
+    xmlFreeDoc(doc);
+    if (res == NULL) {
 #ifdef DEBUG_PRNT
     fprintf(stderr, "no result\n");
 #endif
     return;
-  }
+    }
 
-  xmlFreeDoc(res);
+    xmlFreeDoc(res);
 }
 
 static bool doInit() {
-  char *seed = getenv("XSLT_RAND_SEED");
-  srand(seed != NULL ? (unsigned int)strtoul(seed, NULL, 10) : 0);
+    char *seed = getenv("XSLT_RAND_SEED");
+    srand(seed != NULL ? (unsigned int)strtoul(seed, NULL, 10) : 0);
 
-  if(getenv("XSLT_HTML"))
-    html++;
+    if(getenv("XSLT_HTML"))
+        html++;
 #ifdef DEBUG_PRNT
-  fprintf(stderr, "Init Done\n");
+    fprintf(stderr, "Init Done\n");
 #endif
 
-  xmlSetGenericErrorFunc(NULL, &ignore);
+    xmlSetGenericErrorFunc(NULL, &ignore);
 
-  return true;
+    return true;
 }
 
 extern "C" int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
-  static bool init = doInit();
+    static bool init = doInit();
 
-  int i;
-  
-  xsltStylesheetPtr cur = NULL;
-  xmlDocPtr doc, style;
-  xsltSecurityPrefsPtr sec = NULL;
+    int i;
 
-  errorno = 0;
+    xsltStylesheetPtr cur = NULL;
+    xmlDocPtr doc, style;
+    xsltSecurityPrefsPtr sec = NULL;
 
-  xmlInitMemory();
+    errorno = 0;
 
-  LIBXML_TEST_VERSION
+    xmlInitMemory();
 
-  sec = xsltNewSecurityPrefs();
-  xsltSetDefaultSecurityPrefs(sec);
+    LIBXML_TEST_VERSION
 
-  const char *style_file = reinterpret_cast<const char *>(getenv("XSLT_STYLE_FILE"));
-  const char *input_file = reinterpret_cast<const char *>(getenv("XSLT_INPUT_FILE"));
+    sec = xsltNewSecurityPrefs();
+    xsltSetDefaultSecurityPrefs(sec);
 
-  if(style_file) {
-    style = xmlReadFile(style_file, NULL, xml_options);
-  } else {
-    style = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xsl", NULL, xml_options);
-  }
-  if(style == NULL) {
+    const char *style_file = reinterpret_cast<const char *>(getenv("XSLT_STYLE_FILE"));
+    const char *input_file = reinterpret_cast<const char *>(getenv("XSLT_INPUT_FILE"));
+
+    if(style_file) {
+        style = xmlReadFile(style_file, NULL, xml_options);
+    } else {
+        style = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xsl", NULL, xml_options);
+    }
+    if(style == NULL) {
 #ifdef DEBUG_PRNT
-    fprintf(stderr, "cannot parse %s\n", style_file);
+        fprintf(stderr, "cannot parse %s\n", style_file);
 #endif
-    cur = NULL;
-    errorno = 4;
-    goto done;
-  } else {
-    cur = xsltLoadStylesheetPI(style);
+        cur = NULL;
+        errorno = 4;
+        goto done;
+    } else {
+        cur = xsltLoadStylesheetPI(style);
     if (cur != NULL) {
       /* it is an embedded stylesheet */
-      xsltProcess(style, cur);
-      xsltFreeStylesheet(cur);
-      cur = NULL;
-      goto done;
+        xsltProcess(style, cur);
+        xsltFreeStylesheet(cur);
+        cur = NULL;
+        goto done;
     }
     cur = xsltParseStylesheetDoc(style);
     if (cur != NULL) {
-      if (cur->errors != 0) {
+        if (cur->errors != 0) {
 	errorno = 5;
 	goto done;
-      }
-      i++;
-    } else {
-      xmlFreeDoc(style);
-      errorno = 5;
-      goto done;
+        }
+        i++;
+      } else {
+        xmlFreeDoc(style);
+        errorno = 5;
+        goto done;
+        }
     }
-  }
 
-  if ((cur != NULL) && (cur->errors == 0)) {
-    doc = NULL;
+    if ((cur != NULL) && (cur->errors == 0)) {
+        doc = NULL;
 #ifdef LIBXML_HTML_ENABLED
-    if (html)
-      if(input_file)
+        if (html)
+        if(input_file)
 	doc = htmlReadFile(input_file, NULL, options);
-      else
+        else
 	doc = htmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.html", NULL, options);
-    else
+        else
 #endif
-      if(input_file)
+        if(input_file)
 	doc = xmlReadFile(input_file, NULL, xml_options);
-      else
+        else
 	doc = xmlReadMemory(reinterpret_cast<const char *>(data), size, "noname.xml", NULL, xml_options);
-    if (doc == NULL) {
+        if (doc == NULL) {
 #ifdef DEBUG_PRNT
-      fprintf(stderr, "unable to parse\n");
+        fprintf(stderr, "unable to parse\n");
 #endif
-      errorno = 6;
-    } else {
-      xsltProcess(doc, cur);
+        errorno = 6;
+        } else {
+        xsltProcess(doc, cur);
+        }
     }
-  }
 
 done:
 #ifdef DEBUG_PRNT
-  fprintf(stderr, "Done %d\n", errorno);
+    fprintf(stderr, "Done %d\n", errorno);
 #endif
-  if (cur != NULL)
-    xsltFreeStylesheet(cur);
+    if (cur != NULL)
+        xsltFreeStylesheet(cur);
 
-  xsltFreeSecurityPrefs(sec);
-  xsltCleanupGlobals();
-  xmlCleanupParser();
-  xmlMemoryDump();
+    xsltFreeSecurityPrefs(sec);
+    xsltCleanupGlobals();
+    xmlCleanupParser();
+    xmlMemoryDump();
 
-  return 0;
+    return 0;
 }
