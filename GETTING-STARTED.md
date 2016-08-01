@@ -1,9 +1,11 @@
 # Getting started
 
+##
+See the [screencast](https://www.youtube.com/watch?v=B46AMry7lHs&feature=youtu.be) about stub writing.
+
 ## Requirements
 
 Before getting started you need the following requirements:
-* [docker-machine version 0.7.0](https://docs.docker.com/machine/)
 * [Docker version 1.11.2](https://www.docker.com/)
 * [docker-compose version 1.8.0](https://github.com/docker/compose/releases)
 
@@ -27,7 +29,7 @@ Then you have to get the libfuzzer-base docker image.
 docker pull ouspg/libfuzzer-base
 ```
 
-Alternatively you can build libfuzzer-base yourself if you want but it takes longer time.
+**Alternatively** you can build libfuzzer-base yourself if you want but it takes longer time.
 
 ```console
 docker-compose build libfuzzer-base
@@ -40,6 +42,8 @@ In this example we are going to build ImageMagick image
 ```console
 docker-compose build ImageMagick
 ```
+
+## Running fuzzer
 
 Run the container
 
