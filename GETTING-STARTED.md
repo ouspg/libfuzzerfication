@@ -76,3 +76,5 @@ The pulse line shows current status and appears periodically
 
 You can start writing your own stubs in the top of the libfuzzer-base image. See [screencast](https://www.youtube.com/watch?v=B46AMry7lHs&feature=youtu.be) example of writing stub for libxml2.
 You can read about libFuzzer and find some examples from here: http://llvm.org/docs/LibFuzzer.html.
+
+If you want to write your own stub but don't know what you want to fuzz see our [target tracking sheet]h(ttps://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
