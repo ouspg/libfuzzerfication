@@ -58,9 +58,6 @@ You can start writing stubs without docker.
 * Joonas Kuorilehto ([@joneskoo](https://github.com/joneskoo))
 * Ari Kauppi ([@arikauppi](https://github.com/arikauppi))
 
-
-List of contributors: [Contributors](https://github.com/ouspg/libfuzzerfication/graphs/contributors)
-
 Visit #ouspg @ IRCnet if you're interested!
 
 This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
