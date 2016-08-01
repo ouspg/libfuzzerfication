@@ -1,19 +1,18 @@
 # Welcome!
-We are glad that you are reading this! If you are unsure about anything please feel free to ask.
 
 # How Can I Contribute?
 
+* See the [Getting started documentation](https://github.com/ouspg/libfuzzerfication/blob/master/GETTING-STARTED.md)
+* Check documentation and examples from stubs/ directory. [mysamplelib](https://github.com/ouspg/libfuzzerfication/tree/master/stubs/mysamplelib) is a good for learning purposes.
+* Write you own stub and add README.md file for it.
+* Create a pull request.
+* Comment the pull request if the default license is okay for you.
 * You find us from IRC channel #ouspg @ IRCnet
 * Read the [licence](https://github.com/ouspg/libfuzzerfication/blob/master/LICENSE)
 
 # Submitting pull requests
 
 * You can submit to this project by using [pull requests](https://help.github.com/articles/using-pull-requests/).
-* Write a good commit message
-
-# Coding conventions
-
-* We indent using four spaces (may be different in some programming languages)
 
 # Abandon-*lib*-ware
 
