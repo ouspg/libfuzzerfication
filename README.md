@@ -30,11 +30,6 @@ You can start writing stubs without docker.
 * You can get started by reading our [Getting started tutorial](https://github.com/ouspg/libfuzzerfication/blob/master/GETTING-STARTED.md)
 * See example: [mysamplelib](https://github.com/ouspg/libfuzzerfication/tree/master/stubs/mysamplelib)
 
-# Requirements
-* [docker-machine version 0.7.0](https://docs.docker.com/machine/)
-* [Docker version 1.11.2](https://www.docker.com/)
-* [docker-compose version 1.7.1](https://docs.docker.com/compose/)
-
 # Material
 * [libFuzzer](http://llvm.org/docs/LibFuzzer.html)
 * [SanitizerCoverage](http://clang.llvm.org/docs/SanitizerCoverage.html)
