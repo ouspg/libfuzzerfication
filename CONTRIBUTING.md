@@ -7,8 +7,6 @@
 * Write you own stub and add README.md file for it.
 * Create a pull request.
 * Comment the pull request if the default license is okay for you.
-* You find us from IRC channel #ouspg @ IRCnet
-* Read the [licence](https://github.com/ouspg/libfuzzerfication/blob/master/LICENSE)
 
 # Submitting pull requests
 
