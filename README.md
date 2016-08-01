@@ -49,14 +49,14 @@ You can start writing stubs without docker.
 
 # Contributors
 
-* Atte Kettunen ([@attekett](https://github.com/attekett)
-* Mikko Yliniemi ([@mikessu](https://github.com/mikessu)
+* Atte Kettunen ([@attekett](https://github.com/attekett))
+* Mikko Yliniemi ([@mikessu](https://github.com/mikessu))
 * Ossi Herrala ([@oherrala](https://github.com/oherrala))
 * Jani Kenttälä ([@evilon](https://github.com/evilon))
 * Marko Laakso ([@ikisusi](https://github.com/ikisusi))
 * Pauli Huttunen ([@WhiteEyeDoll](https://github.com/WhiteEyeDoll))
 * Joonas Kuorilehto ([@joneskoo](https://github.com/joneskoo))
-* Ari Kauppi ([@arikauppi](https://github.com/arikauppi)
+* Ari Kauppi ([@arikauppi](https://github.com/arikauppi))
 
 
 List of contributors: [Contributors](https://github.com/ouspg/libfuzzerfication/graphs/contributors)
