@@ -74,7 +74,7 @@ The pulse line shows current status and appears periodically
 
 ## Samples
 
-There is usually no point running fuzzers without samples. Currently samples are mounted from ~/samples/libfuzzer-<target> (ImageMagic example: ~/samples/libfuzzer-imagemagick) to /srv/fuzzer in container. Results are mounted from ~/results to /srv/fuzzer/results in container. Some sample files are provided in repository but larger sample sets should be used with fuzzers.
+There is usually no point running fuzzers without samples. Currently samples are mounted from ~/samples/libfuzzer-target (ImageMagic example: ~/samples/libfuzzer-imagemagick) to /srv/fuzzer in container. Results are mounted from ~/results to /srv/fuzzer/results in container. Some sample files are provided in repository but larger sample sets should be used with fuzzers.
 
 ## Writing your own stubs
 
