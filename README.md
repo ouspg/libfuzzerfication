@@ -9,8 +9,6 @@ Purpose of fuzzing is to automatically generate lots of test input and to make c
 # Motivation
 There have been lots of vulnerabilities in popular libraries that should have been (theoretically) easy to test. We want to offer easy way to fuzz-test these libraries and increase awareness about the situation. We also want this to be available to everyone.
 
-
-
 # About libfuzzer
 * LibFuzzer is open-source library (part of LLVM)
 * Relies on compiler instrumentation to get coverage feedback
