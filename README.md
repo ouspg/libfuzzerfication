@@ -9,8 +9,6 @@ Purpose of fuzzing is to automatically generate lots of test input and to make c
 # Motivation
 There have been lots of vulnerabilities in popular libraries that should have been (theoretically) easy to test. We want to offer easy way to fuzz-test these libraries and increase awareness about the situation. We also want this to be available to everyone.
 
-
-
 # About libfuzzer
 * LibFuzzer is open-source library (part of LLVM)
 * Relies on compiler instrumentation to get coverage feedback
@@ -31,11 +29,6 @@ You can start writing stubs without docker.
 # Getting started
 * You can get started by reading our [Getting started tutorial](https://github.com/ouspg/libfuzzerfication/blob/master/GETTING-STARTED.md)
 * See example: [mysamplelib](https://github.com/ouspg/libfuzzerfication/tree/master/stubs/mysamplelib)
-
-# Requirements
-* [docker-machine version 0.7.0](https://docs.docker.com/machine/)
-* [Docker version 1.11.2](https://www.docker.com/)
-* [docker-compose version 1.7.1](https://docs.docker.com/compose/)
 
 # Material
 * [libFuzzer](http://llvm.org/docs/LibFuzzer.html)
