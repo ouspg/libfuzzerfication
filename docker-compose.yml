@@ -28,7 +28,7 @@ services:
       entrypoint: '/src/scripts/fuzz.sh'
       command: [
         '/src/ImageMagick/ImageMagick-fuzzer',
-        '-rss_limit_mb=4096',
+        #'-rss_limit_mb=4096',
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=1000',
