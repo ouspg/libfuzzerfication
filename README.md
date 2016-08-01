@@ -9,18 +9,6 @@ Purpose of fuzzing is to automatically generate lots of test input and to make c
 # Motivation
 There have been lots of vulnerabilities in popular libraries that should have been (theoretically) easy to test. We want to offer easy way to fuzz-test these libraries and increase awareness about the situation. We also want this to be available to everyone.
 
-We have list of top 50 most used libraries from [Protecode SC](http://www.codenomicon.com/products/appcheck/).
-
-Currently our top targets are:
-* libxslt
-* speex
-* libflac
-* gstreamer
-
-This project is currently in very early stage of development. You're welcome to collaborate!
-
-This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
-
 # About libfuzzer
 * LibFuzzer is open-source library (part of LLVM)
 * Relies on compiler instrumentation to get coverage feedback
@@ -42,11 +30,6 @@ You can start writing stubs without docker.
 * You can get started by reading our [Getting started tutorial](https://github.com/ouspg/libfuzzerfication/blob/master/GETTING-STARTED.md)
 * See example: [mysamplelib](https://github.com/ouspg/libfuzzerfication/tree/master/stubs/mysamplelib)
 
-# Requirements
-* [docker-machine version 0.7.0](https://docs.docker.com/machine/)
-* [Docker version 1.11.2](https://www.docker.com/)
-* [docker-compose version 1.7.1](https://docs.docker.com/compose/)
-
 # Material
 * [libFuzzer](http://llvm.org/docs/LibFuzzer.html)
 * [SanitizerCoverage](http://clang.llvm.org/docs/SanitizerCoverage.html)
@@ -57,10 +40,17 @@ You can start writing stubs without docker.
 # Tracking
 [Target tracking sheet](https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
 
-# Core team
-* Mikko Yliniemi (@mikessu)
-* Atte Kettunen (@attekett)
+# Contributors
 
-List of contributors: [Contributors](https://github.com/ouspg/libfuzzerfication/graphs/contributors)
+* Atte Kettunen ([@attekett](https://github.com/attekett))
+* Mikko Yliniemi ([@mikessu](https://github.com/mikessu))
+* Ossi Herrala ([@oherrala](https://github.com/oherrala))
+* Jani Kenttälä ([@evilon](https://github.com/evilon))
+* Marko Laakso ([@ikisusi](https://github.com/ikisusi))
+* Pauli Huttunen ([@WhiteEyeDoll](https://github.com/WhiteEyeDoll))
+* Joonas Kuorilehto ([@joneskoo](https://github.com/joneskoo))
+* Ari Kauppi ([@arikauppi](https://github.com/arikauppi))
 
 Visit #ouspg @ IRCnet if you're interested!
+
+This is part of [OUSPG-open](https://github.com/ouspg/ouspg-open)
