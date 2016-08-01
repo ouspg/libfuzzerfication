@@ -67,3 +67,12 @@ INFO: Seed: 802690056
 #148    NEW    cov: 2454 bits: 5210 indir: 22 units: 47 exec/s: 0 L: 875 MS: 4 ChangeByte-ShuffleBytes-InsertByte-AddFromPersAutoDict- DE: "id=ImageMagick"-
 #157    NEW    cov: 2455 bits: 5211 indir: 22 units: 48 exec/s: 0 L: 408 MS: 3 ShuffleBytes-InsertByte-AddFromPersAutoDict- DE: "id=ImageMagick"-
 ```
+
+The NEW line appears when libFuzzer finds new interesting input.
+
+The pulse line shows current status and appears periodically
+
+## Writing your own stubs
+
+You can start writing your own stubs in the top of the libfuzzer-base image. See [screencast](https://www.youtube.com/watch?v=B46AMry7lHs&feature=youtu.be) example of writing stub for libxml2.
+You can read about libFuzzer and find some examples from here: http://llvm.org/docs/LibFuzzer.html.
