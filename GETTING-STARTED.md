@@ -72,6 +72,10 @@ The NEW line appears when libFuzzer finds new interesting input.
 
 The pulse line shows current status and appears periodically
 
+## Samples
+
+There is usually no point running fuzzers without samples. Currently samples are mounted from ~/samples/libfuzzer-<target> (ImageMagic example: ~/samples/libfuzzer-imagemagick) to /srv/fuzzer in container. Results are mounted from ~/results to /srv/fuzzer/results in container. Some sample files are provided in repository but larger sample sets should be used with fuzzers.
+
 ## Writing your own stubs
 
 You can start writing your own stubs in the top of the libfuzzer-base image. See [screencast](https://www.youtube.com/watch?v=B46AMry7lHs&feature=youtu.be) example of writing stub for libxml2.
