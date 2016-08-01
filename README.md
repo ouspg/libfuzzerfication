@@ -60,7 +60,6 @@ You can start writing stubs without docker.
 # Core team
 * Mikko Yliniemi (@mikessu)
 * Atte Kettunen (@attekett)
-* Pauli Huttunen (@WhiteEyeDoll)
 
 List of contributors: [Contributors](https://github.com/ouspg/libfuzzerfication/graphs/contributors)
 
