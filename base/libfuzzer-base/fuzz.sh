@@ -1,7 +1,20 @@
 #!/bin/bash
 
+rss_limit_mb=4096
+#detect_leaks=0
+#exact_artifact_path=/dev/shm/repro-file
+#use_counters=1
+#max_total_time=600
+
 #Print args for debug
 echo "fuzz.sh args: $@"
+
+#if [[ ! $1 ]]; then
+
+#    a=$1
+
+
+#fi
 
 #Use ramdisk for fuzzing.
 #Docker has default shm mounted at /dev/shm

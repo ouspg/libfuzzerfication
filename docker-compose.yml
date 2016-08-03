@@ -51,7 +51,7 @@ services:
           LD_LIBRARY_PATH: "/src/libxml2/.libs/"
       command: [
         '/src/libxml2/libxml2-fuzzer',
-        '-rss_limit_mb=4096',
+        #'-rss_limit_mb=4096',
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=5000',
@@ -74,7 +74,7 @@ services:
           LD_LIBRARY_PATH: "/src/libxslt/libxslt/.libs/"
       command: [
         '/src/libxslt/libxslt-fuzzer',
-        '-rss_limit_mb=4096',
+        #'-rss_limit_mb=4096',
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=5000',
@@ -96,7 +96,7 @@ services:
       entrypoint: '/src/scripts/fuzz.sh'
       command: [
         '/src/libav/libav-fuzzer',
-        '-rss_limit_mb=4096',
+        #'-rss_limit_mb=4096',
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=1000',
@@ -119,7 +119,7 @@ services:
       entrypoint: '/src/scripts/fuzz.sh'
       command: [
         '/lua-fuzzer',
-        '-rss_limit_mb=4096',
+        #'-rss_limit_mb=4096',
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=1000',
@@ -142,7 +142,7 @@ services:
       entrypoint: '/src/scripts/fuzz.sh'
       command: [
         '/src/libmad-0.15.1b/libmad-fuzzer',
-        '-rss_limit_mb=4096',
+        #'-rss_limit_mb=4096',
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=1000',
@@ -164,7 +164,7 @@ services:
       entrypoint: '/src/scripts/fuzz.sh'
       command: [
         '/src/zlib/zlib-fuzzer',
-        '-rss_limit_mb=4096',
+        #'-rss_limit_mb=4096',
         '-detect_leaks=0',
         '-exact_artifact_path=/dev/shm/repro-file',
         '-max_len=1000',
