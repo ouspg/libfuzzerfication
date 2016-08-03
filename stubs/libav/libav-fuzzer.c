@@ -25,7 +25,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 
     av_init_packet(&avpkt);
 
-    codec = avcodec_find_decoder(AV_CODEC_ID_MP2);
+    codec = avcodec_find_decoder(AV_CODEC_ID_H264);
     if (!codec) {
         fprintf(stderr, "codec not found\n");
         exit(1);
