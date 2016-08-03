@@ -83,29 +83,6 @@ services:
         '/srv/fuzzer/samples/libfuzzer-libxslt'
       ]
 
-## libav stub
-
-  libav:
-      build: ./stubs/libav
-      image: ouspg/libfuzzer-libav
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
-      mem_limit: 4g
-      shm_size: 512M
-      entrypoint: '/src/scripts/fuzz.sh'
-      command: [
-        '/src/libav/libav-fuzzer',
-        '-rss_limit_mb=4096',
-        '-detect_leaks=0',
-        '-exact_artifact_path=/dev/shm/repro-file',
-        '-max_len=1000',
-        '-timeout=5',
-        '-use_counters=1',
-        '-max_total_time=3600',
-        '/srv/fuzzer/samples/libfuzzer-libav'
-      ]
-
 ## lua stub
 
   lua:
