@@ -18,9 +18,6 @@ services:
   ImageMagick:
       build: ./stubs/ImageMagick
       image: ouspg/libfuzzer-imagemagick
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       environment:
@@ -44,9 +41,6 @@ services:
       image: ouspg/libfuzzer-libxml2
       shm_size: 512M
       mem_limit: 4g
-      volumes:
-          - ~/results/:/srv/fuzzer/results/
-          - ~/samples/:/srv/fuzzer/samples/
       environment:
           LD_LIBRARY_PATH: "/src/libxml2/.libs/"
       command: [
@@ -67,9 +61,6 @@ services:
       image: ouspg/libfuzzer-libxslt
       shm_size: 512M
       mem_limit: 4g
-      volumes:
-          - ~/results/:/srv/fuzzer/results/
-          - ~/samples/:/srv/fuzzer/samples/
       environment:
           LD_LIBRARY_PATH: "/src/libxslt/libxslt/.libs/"
       command: [
@@ -88,9 +79,6 @@ services:
   lua:
       build: ./stubs/lua
       image: ouspg/libfuzzer-lua
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -111,9 +99,6 @@ services:
   libmad:
       build: ./stubs/libmad
       image: ouspg/libfuzzer-libmad
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -133,9 +118,6 @@ services:
   zlib:
       build: ./stubs/zlib
       image: ouspg/libfuzzer-zlib
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
