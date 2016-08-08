@@ -40,6 +40,9 @@ You can start writing stubs without docker.
 # Tracking
 [Target tracking sheet](https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
 
+# Found issues
+* [ImageMagick UAF](http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=30245&sid=22eadb3cf9cce8ed28ba1aa8914f945d)
+
 # Contributors
 
 * Atte Kettunen ([@attekett](https://github.com/attekett))
