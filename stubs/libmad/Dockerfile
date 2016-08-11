@@ -14,7 +14,7 @@ RUN mkdir -p /src/ && cd /src/ && apt-get source libmad0 && ls -p | grep -v / | 
 #Copy stub
 ADD libmad-fuzzer.c /src/libmad-0.15.1b/
 
-ADD samples.tar /srv/fuzzer/
+ADD samples.tar.gz /
 
 #Add build script and build
 ADD build.sh /src/scripts/

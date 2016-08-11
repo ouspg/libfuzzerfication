@@ -14,7 +14,7 @@ RUN cd /src && git clone git://git.gnome.org/libxml2
 ADD libxml2-fuzzer.cc /src/libxml2/
 ADD xml.dict /src/libxml2/
 
-ADD samples.tar.gz /srv/fuzzer/
+ADD samples.tar.gz /
 
 ADD build.sh /src/scripts/
 RUN mkdir -p /work/libxml2/
