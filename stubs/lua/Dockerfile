@@ -13,7 +13,7 @@ RUN tar -C /src -zxf /src/lua-5.3.3.tar.gz
 
 ADD lua-fuzzer.c /src/lua-5.3.3
 
-ADD samples /samples/libfuzzer-lua
+ADD samples /srv/fuzzer/libfuzzer-lua
 
 #Build
 ADD build.sh /src/scripts/
