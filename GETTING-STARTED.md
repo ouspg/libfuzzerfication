@@ -78,6 +78,17 @@ There is usually no point running fuzzers without samples. Currently samples are
 
 ## Writing your own stubs
 
+### General
+
+1. Build libFuzzer itself without any compiler options (included in libfuzzer-base)
+2. Build target with fresh clang using:
+
+* one of the sanitizers (asan, msan, ubsan)
+* fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
+* Usually -O1 or -O2 for speed
+* But -O0 may be better for fuzzing
+
+
 You can start writing your own stubs in the top of the libfuzzer-base image. See [screencast](https://www.youtube.com/watch?v=B46AMry7lHs&feature=youtu.be) example of writing stub for libxml2.
 You can read about libFuzzer and find some examples from here: http://llvm.org/docs/LibFuzzer.html.
 
