@@ -18,9 +18,9 @@ services:
   ImageMagick:
       build: ./stubs/ImageMagick
       image: ouspg/libfuzzer-imagemagick
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
+      #volumes:
+        #- ~/results/:/srv/fuzzer/results/
+        #- ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       environment:
@@ -34,7 +34,7 @@ services:
         '-max_len=1000',
         '-use_counters=1',
         '-max_total_time=3600',
-        '/srv/fuzzer/samples/libfuzzer-imagemagick'
+        '/samples/libfuzzer-imagemagick'
       ]
 
 ## libxml2 stub
@@ -44,9 +44,9 @@ services:
       image: ouspg/libfuzzer-libxml2
       shm_size: 512M
       mem_limit: 4g
-      volumes:
-          - ~/results/:/srv/fuzzer/results/
-          - ~/samples/:/srv/fuzzer/samples/
+      #volumes:
+          #- ~/results/:/srv/fuzzer/results/
+          #- ~/samples/:/srv/fuzzer/samples/
       environment:
           LD_LIBRARY_PATH: "/src/libxml2/.libs/"
       command: [
@@ -57,7 +57,7 @@ services:
         '-max_len=5000',
         '-use_counters=1',
         '-max_total_time=600',
-        '/srv/fuzzer/samples/libfuzzer-libxml2/'
+        '/samples/libfuzzer-libxml2/'
       ]
 
 ## libxslt
@@ -67,9 +67,9 @@ services:
       image: ouspg/libfuzzer-libxslt
       shm_size: 512M
       mem_limit: 4g
-      volumes:
-          - ~/results/:/srv/fuzzer/results/
-          - ~/samples/:/srv/fuzzer/samples/
+      #volumes:
+          #- ~/results/:/srv/fuzzer/results/
+          #- ~/samples/:/srv/fuzzer/samples/
       environment:
           LD_LIBRARY_PATH: "/src/libxslt/libxslt/.libs/"
       command: [
@@ -80,7 +80,7 @@ services:
         '-max_len=5000',
         '-use_counters=1',
         '-max_total_time=600',
-        '/srv/fuzzer/samples/libfuzzer-libxslt'
+        '/samples/libfuzzer-libxslt'
       ]
 
 ## lua stub
@@ -88,9 +88,9 @@ services:
   lua:
       build: ./stubs/lua
       image: ouspg/libfuzzer-lua
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
+      #volumes:
+        #- ~/results/:/srv/fuzzer/results/
+        #- ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -103,7 +103,7 @@ services:
         '-timeout=5',
         '-use_counters=1',
         '-max_total_time=3600',
-        '/srv/fuzzer/samples/libfuzzer-lua'
+        '/samples/libfuzzer-lua'
       ]
 
 ## libmad stub
@@ -111,9 +111,9 @@ services:
   libmad:
       build: ./stubs/libmad
       image: ouspg/libfuzzer-libmad
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
+      #volumes:
+        #- ~/results/:/srv/fuzzer/results/
+        #- ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -125,7 +125,7 @@ services:
         '-max_len=1000',
         '-use_counters=1',
         '-max_total_time=3600',
-        '/srv/fuzzer/samples/libfuzzer-libmad'
+        '/samples/libfuzzer-libmad'
       ]
 
 ## zlib stub
@@ -133,9 +133,9 @@ services:
   zlib:
       build: ./stubs/zlib
       image: ouspg/libfuzzer-zlib
-      volumes:
-        - ~/results/:/srv/fuzzer/results/
-        - ~/samples/:/srv/fuzzer/samples/
+      #volumes:
+        #- ~/results/:/srv/fuzzer/results/
+        #- ~/samples/:/srv/fuzzer/samples/
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -147,7 +147,7 @@ services:
         '-max_len=1000',
         '-use_counters=1',
         '-max_total_time=3600',
-        '/srv/fuzzer/samples/libfuzzer-zlib'
+        '/samples/libfuzzer-zlib'
       ]
 
 ## Haskell base image

@@ -12,7 +12,8 @@ RUN apt-get update && \
 # Create fuzzer user
 
 RUN useradd --system --create-home --base-dir /srv/ --shell /bin/false fuzzer
-RUN mkdir -p /srv/fuzzer/samples /srv/fuzzer/results
+RUN mkdir -p /samples /results
+RUN chown fuzzer /samples && chown fuzzer /results
 
 # Checkout & build libFuzzer
 
