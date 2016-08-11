@@ -18,9 +18,12 @@ services:
   ImageMagick:
       build: ./stubs/ImageMagick
       image: ouspg/libfuzzer-imagemagick
+<<<<<<< HEAD
       #volumes:
         #- ~/results/:/srv/fuzzer/results/
         #- ~/samples/:/srv/fuzzer/samples/
+=======
+>>>>>>> 88ed0f52acd29794d044a313cd8a88c868e47d1c
       mem_limit: 4g
       shm_size: 512M
       environment:
@@ -44,9 +47,12 @@ services:
       image: ouspg/libfuzzer-libxml2
       shm_size: 512M
       mem_limit: 4g
+<<<<<<< HEAD
       #volumes:
           #- ~/results/:/srv/fuzzer/results/
           #- ~/samples/:/srv/fuzzer/samples/
+=======
+>>>>>>> 88ed0f52acd29794d044a313cd8a88c868e47d1c
       environment:
           LD_LIBRARY_PATH: "/src/libxml2/.libs/"
       command: [
@@ -67,9 +73,12 @@ services:
       image: ouspg/libfuzzer-libxslt
       shm_size: 512M
       mem_limit: 4g
+<<<<<<< HEAD
       #volumes:
           #- ~/results/:/srv/fuzzer/results/
           #- ~/samples/:/srv/fuzzer/samples/
+=======
+>>>>>>> 88ed0f52acd29794d044a313cd8a88c868e47d1c
       environment:
           LD_LIBRARY_PATH: "/src/libxslt/libxslt/.libs/"
       command: [
@@ -88,9 +97,12 @@ services:
   lua:
       build: ./stubs/lua
       image: ouspg/libfuzzer-lua
+<<<<<<< HEAD
       #volumes:
         #- ~/results/:/srv/fuzzer/results/
         #- ~/samples/:/srv/fuzzer/samples/
+=======
+>>>>>>> 88ed0f52acd29794d044a313cd8a88c868e47d1c
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -111,9 +123,12 @@ services:
   libmad:
       build: ./stubs/libmad
       image: ouspg/libfuzzer-libmad
+<<<<<<< HEAD
       #volumes:
         #- ~/results/:/srv/fuzzer/results/
         #- ~/samples/:/srv/fuzzer/samples/
+=======
+>>>>>>> 88ed0f52acd29794d044a313cd8a88c868e47d1c
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
@@ -133,9 +148,12 @@ services:
   zlib:
       build: ./stubs/zlib
       image: ouspg/libfuzzer-zlib
+<<<<<<< HEAD
       #volumes:
         #- ~/results/:/srv/fuzzer/results/
         #- ~/samples/:/srv/fuzzer/samples/
+=======
+>>>>>>> 88ed0f52acd29794d044a313cd8a88c868e47d1c
       mem_limit: 4g
       shm_size: 512M
       entrypoint: '/src/scripts/fuzz.sh'
