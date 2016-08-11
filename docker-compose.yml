@@ -34,7 +34,7 @@ services:
         '-max_len=1000',
         '-use_counters=1',
         '-max_total_time=3600',
-        '/samples/libfuzzer-imagemagick'
+        '/samples/'
       ]
 
 ## libxml2 stub
@@ -57,7 +57,7 @@ services:
         '-max_len=5000',
         '-use_counters=1',
         '-max_total_time=600',
-        '/samples/libfuzzer-libxml2/'
+        '/samples/'
       ]
 
 ## libxslt
@@ -80,7 +80,7 @@ services:
         '-max_len=5000',
         '-use_counters=1',
         '-max_total_time=600',
-        '/samples/libfuzzer-libxslt'
+        '/samples/'
       ]
 
 ## lua stub
@@ -125,7 +125,7 @@ services:
         '-max_len=1000',
         '-use_counters=1',
         '-max_total_time=3600',
-        '/samples/libfuzzer-libmad'
+        '/samples/'
       ]
 
 ## zlib stub
@@ -147,7 +147,7 @@ services:
         '-max_len=1000',
         '-use_counters=1',
         '-max_total_time=3600',
-        '/samples/libfuzzer-zlib'
+        '/samples/'
       ]
 
 ## Haskell base image
