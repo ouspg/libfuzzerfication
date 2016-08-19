@@ -14,9 +14,10 @@ There have been lots of vulnerabilities in popular libraries that should have be
 * Relies on compiler instrumentation to get coverage feedback
 * It is linked with the library under test
 * Works fully inside the running program (a process) -> Fast!
+* LibFuzzer itself can be built with any compiler and must be built without specific flags.
+* Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge[,8bit-counters,trace-cmp,indirect-calls]
 
-LibFuzzer itself can be built with any compiler without specific flags. Target code must be buit with Clang using [ASan](http://clang.llvm.org/docs/AddressSanitizer.html), [USan](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) or [MSan](http://clang.llvm.org/docs/MemorySanitizer.html) and -fsanitize-coverage=edge
-Optional features are: 8bit-counters,trace-cmp,indirect-calls
+Optional features are inside [].
 
 # How does this project work?
 * You pull container from Dockerhub
@@ -39,6 +40,9 @@ You can start writing stubs without docker.
 
 # Tracking
 [Target tracking sheet](https://docs.google.com/spreadsheets/d/1oj0L44gKTn3wlrJk6b554b9o8H0r1bVfb6LJrw62BEE/pubhtml)
+
+# Found issues
+* [ImageMagick UAF](http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=30245&sid=22eadb3cf9cce8ed28ba1aa8914f945d)
 
 # Contributors
 
