@@ -3,8 +3,7 @@
 #Print args for debug
 echo "fuzz.sh args: $@"
 
-
-
+#Define default arguments for fuzzing
 mem=`grep hierarchical_memory_limit /sys/fs/cgroup/memory/memory.stat | awk '{print $2}'`
 mem_limit_value=`bc <<< "$mem / 1024^2"`
 rss_limit_mb="-rss_limit_mb=$mem_limit_value"
@@ -15,18 +14,35 @@ use_counters="-use_counters=1"
 max_total_time="-max_total_time=3600"
 samples="/samples/"
 
-#if [[ ! $1 ]]; then
-
-#    a=$1
-
-
-#fi
+#Check if some variables have been specified instead of using default
+for var in "$@"
+do
+    if [[ "$var" == "-rss_limit_mb="* ]]; then
+        $value = `cut -d "=" -f 2 <<< "$var"`
+        rss_limit_mb="-rss_limit_mb=$value"
+    fi
+    if [[ "$var" == "-detect_leaks="* ]]; then
+        $value = `cut -d "=" -f 2 <<< "$var"`
+        detect_leaks="-detect_leaks=$value"
+    fi
+    if [[ "$var" == "-max_len="* ]]; then
+        $value = `cut -d "=" -f 2 <<< "$var"`
+        max_len="-max_len=$value"
+    fi
+    if [[ "$var" == "-use_counters="* ]]; then
+        $value = `cut -d "=" -f 2 <<< "$var"`
+        use_counters="-use_counters=$value"
+    fi
+    if [[ "$var" == "-max_total_time="* ]]; then
+        $value = `cut -d "=" -f 2 <<< "$var"`
+        max_total_time="-max_total_time=$value"
+    fi
+done
 
 #Use ramdisk for fuzzing.
 #Docker has default shm mounted at /dev/shm
 cd /dev/shm;
 mkdir fuzzed;
-
 
 #SIGINT trap
 function control_c {
