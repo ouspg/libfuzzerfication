@@ -1,13 +1,19 @@
 #!/bin/bash
 
-rss_limit_mb=4096
-#detect_leaks=0
-#exact_artifact_path=/dev/shm/repro-file
-#use_counters=1
-#max_total_time=600
-
 #Print args for debug
 echo "fuzz.sh args: $@"
+
+
+
+mem=`grep hierarchical_memory_limit /sys/fs/cgroup/memory/memory.stat | awk '{print $2}'`
+mem_limit_value=`bc <<< "$mem / 1024^2"`
+rss_limit_mb="-rss_limit_mb=$mem_limit_value"
+detect_leaks="-detect_leaks=0"
+exact_artifact_path="-exact_artifact_path=/dev/shm/repro-file"
+max_len="-max_len=1000"
+use_counters="-use_counters=1"
+max_total_time="-max_total_time=3600"
+samples="/samples/"
 
 #if [[ ! $1 ]]; then
 
@@ -20,6 +26,7 @@ echo "fuzz.sh args: $@"
 #Docker has default shm mounted at /dev/shm
 cd /dev/shm;
 mkdir fuzzed;
+
 
 #SIGINT trap
 function control_c {
@@ -116,10 +123,9 @@ export ASAN_SYMBOLIZER_PATH='/usr/lib/llvm-3.8/bin/llvm-symbolizer'
 #Fuzzers sometimes tries to allocate huge amounts of memory, when it does ASAN allocator fails.
 export ASAN_OPTIONS='allocator_may_return_null=1:detect_leaks=0:coverage=1:symbolize=1'
 
-
 while true; do
     echo "Round."
-        $@ 2>&1 | tee asan.txt
+        $1 $rss_limit_mb $detect_leaks $exact_artifact_path $max_len $use_counters $max_total_time $samples 2>&1 | tee asan.txt
         if [ "$(grep "ERROR: AddressSanitizer" ./asan.txt)" ]; then
             RESULT=$(parse_asan_trace ./asan.txt)
             echo "New crash: "$TARGET-$RESULT
