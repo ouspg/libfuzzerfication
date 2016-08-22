@@ -4,8 +4,8 @@
 echo "fuzz.sh args: $@"
 
 #Define default arguments for fuzzing
-mem=`grep hierarchical_memory_limit /sys/fs/cgroup/memory/memory.stat | awk '{print $2}'`
-mem_limit_value=`bc <<< "$mem / 1024^2"`
+mem=`awk '/^hierarchical_memory_limit / {print $2}' /sys/fs/cgroup/memory/memory.stat`
+mem_limit_value=`expr $mem / 1048576`
 rss_limit_mb="-rss_limit_mb=$mem_limit_value"
 detect_leaks="-detect_leaks=0"
 exact_artifact_path="-exact_artifact_path=/dev/shm/repro-file"
