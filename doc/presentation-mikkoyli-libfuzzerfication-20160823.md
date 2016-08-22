@@ -72,13 +72,13 @@ We have following stubs:
 * We have dockerfile for every fuzzer
 * Image can be built from dockerfile
 * Container can be run from image
-
+---
 # Findings
 
 * We fuzzed ImageMagick and found use after free
 * libxml and others were also fuzzed but nothing special was found (these are already heavily fuzzed)
 * Purpose is to fuzz rust also
-
+---
 # More info
 
 https://github.com/ouspg/libfuzzerfication
