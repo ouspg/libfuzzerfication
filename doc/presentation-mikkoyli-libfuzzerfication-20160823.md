@@ -19,10 +19,26 @@ Example of fuzz test running.
 
 ---
 
-# When
+# When?
 
-* I was working as summer trainee for 3 month in ouspg
-* During this time also people contributed this project
+* I was working as a summer trainee for 3 month in ouspg
+* Compulsory training that is part of my studies
+---
+
+# Who?
+
+* I was responsible for the project but had a lot of help from others. Atte Kettunen worked as specialist and participated mostly at the early summer.
+* Also other people contributed.
+
+* Atte Kettunen (@attekett)
+* Mikko Yliniemi (@mikessu)
+* Ossi Herrala (@oherrala)
+* Jani Kenttälä (@evilon)
+* Marko Laakso (@ikisusi)
+* Pauli Huttunen (@WhiteEyeDoll)
+* Joonas Kuorilehto (@joneskoo)
+* Ari Kauppi (@arikauppi)
+
 
 ---
 
