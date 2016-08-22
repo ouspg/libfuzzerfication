@@ -30,6 +30,7 @@ Example of fuzz test running.
 * I was responsible for the project but had a lot of help from others. Atte Kettunen worked as specialist and participated mostly at the early summer.
 * Also other people contributed.
 
+List of contributors:
 * Atte Kettunen (@attekett)
 * Mikko Yliniemi (@mikessu)
 * Ossi Herrala (@oherrala)
@@ -38,7 +39,6 @@ Example of fuzz test running.
 * Pauli Huttunen (@WhiteEyeDoll)
 * Joonas Kuorilehto (@joneskoo)
 * Ari Kauppi (@arikauppi)
-
 
 ---
 
