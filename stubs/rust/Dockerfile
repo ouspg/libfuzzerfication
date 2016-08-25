@@ -6,11 +6,9 @@ ENV TARGET "rust"
 
 #Install dependencies and fetch the source.
 
-RUN apt-get update && apt-get install cmake && apt-get -y build-dep rust
+RUN apt-get update && apt-get install rustc -y
 
-RUN cd /src && git clone https://github.com/rust-lang/rust.git
-
-ADD rust-fuzzer.c /src/rust/
+ADD rust-fuzzer.rs /src/rust/
 RUN mkdir -p /work/rust/
 
 #Build
