@@ -1,13 +1,8 @@
-// Copyright 2015 Keegan McAllister.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// See `LICENSE` in this repository.
-
 use std::io::{self, Read};
 
-fn main() {
-    let mut input = String::new();
+#[no_mangle]
+pub extern fn LLVMFuzzerTestOneInput(std::ffi::CString) -> *const u8 {
+let mut input = String::new();
     io::stdin().read_to_string(&mut input).unwrap();
 
     if input.starts_with("x") {
@@ -23,4 +18,4 @@ fn main() {
             }
         }
     }
-}
+} 
