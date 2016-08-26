@@ -14,9 +14,9 @@ RUN apt-get update && \
 
 RUN curl -f -L https://static.rust-lang.org/rustup.sh -O && sh rustup.sh --channel=nightly
 
-#ADD rust-fuzzer.rs /src/rust/
-#RUN mkdir -p /work/rust/
+ADD rust-fuzzer.rs /src/rust/
+RUN mkdir -p /work/rust/
 
 #Build
-#ADD build.sh /src/scripts/
-#RUN bash /src/scripts/build.sh
+ADD build.sh /src/scripts/
+RUN bash /src/scripts/build.sh
