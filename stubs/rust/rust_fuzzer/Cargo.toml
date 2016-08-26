@@ -1,7 +1,0 @@
-[package]
-name = "rust_fuzzer"
-version = "0.1.0"
-authors = ["Mikko Yliniemi <mikkoyli@paju.oulu.fi>"]
-
-[dependencies]
-libc = "0.2.0"
