@@ -20,6 +20,9 @@ RUN chown fuzzer /samples && chown fuzzer /results
 RUN mkdir /src /work && \
     cd /src && \
     git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer && \
+    cd Fuzzer && \
+    git checkout 34a77f5afc4efc03323a70e4f68b092f36f8a89b && \
+    cd /src && \
     clang++ -c -g -O2 -std=c++11 Fuzzer/*.cpp -IFuzzer && \
     ar ruv libFuzzer.a Fuzzer*.o && \
     mkdir -p /work/libfuzzer && \
